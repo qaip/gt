@@ -1,0 +1,106 @@
+sc_node_norole_relation->      
+    nrel_subgraph;
+    nrel_vertex_degree;
+    nrel_vertex_adjacency;
+    nrel_cycle;
+    nrel_sequence;
+    nrel_connected_component;
+    nrel_cut;
+    nrel_complement_graph;
+    nrel_circuit;
+    nrel_condensation_of_the_digraph;
+    nrel_face;;
+
+sc_node_role_relation->
+    rrel_vertex;
+    rrel_edge;
+    rrel_loop;
+    rrel_point_of_articulation;
+    rrel_center_of_graph;
+    rrel_hinge;
+    rrel_terminal_vertex;;
+
+nrel_complement_graph=> nrel_main_idtf: 
+		[ дополнение графа* ] (* <-lang_ru;; *);
+		[ graph complemention* ] (* <-lang_en;; *);;
+
+rrel_center_of_graph=>nrel_main_idtf:
+    [ центр графа' ]	(*<-lang_ru;;*);
+    [ center of the graph' ](*<-lang_en;;*);;
+
+nrel_condensation_of_the_digraph=>nrel_main_idtf:
+    [ конденсация орграфа* ]	(*<-lang_ru;;*);
+    [ condensation of the digraph* ](*<-lang_en;;*);;
+
+nrel_cut=> nrel_main_idtf:
+    [ разрез* ] (* <-lang_ru;; *);
+    [ cut* ] (* <-lang_en;; *);;
+
+nrel_vertex_degree => nrel_main_idtf:
+	[ степень вершины* ](* <-lang_ru;; *);
+	[ degree of a vertex* ](* <-lang_en;; *);;
+
+rrel_vertex
+=> nrel_main_idtf:
+	[ вершина' ] (* <-lang_ru;; *);
+	[ vertex' ] (* <-lang_en;; *);;
+
+rrel_edge
+=> nrel_main_idtf:
+    [ ребро' ] (* <-lang_ru;; *);
+    [ edge' ] (* <-lang_en;; *);;
+
+
+nrel_subgraph => nrel_main_idtf:
+	[ подграф* ](* <-lang_ru;; *);
+	[ subgraph* ](* <-lang_en;; *);;
+
+nrel_connected_component => nrel_main_idtf: 
+	[ компонета свзязности* ] (* <-lang_ru;; *);
+	[ connected component* ] (* <-lang_en;; *);;
+
+rrel_point_of_articulation => nrel_main_idtf:
+	[точка сочленения](* <-lang_ru;; *);
+	[point of articulation](* <-lang_en;; *);;
+
+nrel_vertex_adjacency
+=> nrel_main_idtf: 
+		[ смежность вершин* ] (* <-lang_ru;; *);
+		[ vertex adjacency* ] (* <-lang_en;; *);;
+
+nrel_cycle	=> nrel_main_idtf:
+	[ цикл в графе* ] (* <-lang_ru;; *);
+	[ cycle in the graph* ] (* <-lang_en;; *);;
+
+
+nrel_sequence
+=> nrel_main_idtf:
+    [маршрут в графе* ] (* <-lang_ru;; *);
+    [ sequence in the graph* ] (* <-lang_en;; *);;
+
+rrel_terminal_vertex
+=> nrel_main_idtf:
+    [ висячая вершина' ] (* <-lang_ru;; *);
+    [ terminal vertex' ] (* <-lang_en;; *);;
+
+
+nrel_face=>nrel_main_idtf:
+	[ грань* ]
+		(*<-lang_ru;;*);
+	[ face* ]
+		(*<-lang_en;;*);;
+
+
+rrel_hinge
+	=> nrel_main_idtf:
+	[ разделяющая вершина' ] (* <-lang_ru;; *);
+	[ шарнир' ] (* <-lang_ru;; *);
+	[ hinge' ] (* <-lang_en;; *);;
+
+nrel_circuit=>nrel_main_idtf:
+	[ контур графа* ](*<-lang_ru;;*);
+	[ circuit of graph* ](*<-lang_en;;*);;
+
+rrel_loop => nrel_main_idtf:
+	[петля'](* <-lang_ru;; *);
+	[loop'](* <-lang_en;; *);;

@@ -1,0 +1,97 @@
+SectionBasicConcepts=[*
+    section_subject_domain_of_basic_concepts=>nrel_main_idtf:
+        [Раздел.Предметная область базовых понятий]
+        (* <- lang_ru;; *);;
+    section_subject_domain_of_basic_concepts=>nrel_main_idtf:
+        [Section.Subject domain of basic consepts]
+        (* <- lang_en;; *);;
+
+
+    section_subject_domain_of_basic_concepts<-non_atomic_section;;
+
+    section_subject_domain_of_basic_concepts<=nrel_section_decomposition:{
+        section_subject_domain_of_graph_elements;
+        section_subject_domain_of_graph_components;
+        section_subject_domain_of_graph_types;
+        section_subject_domain_of_graph_specific_spots;
+        section_subject_domain_of_graph_specific_features
+    };;
+
+    section_subject_domain_of_basic_concepts->rrel_key_sc_element:subject_domain_of_basic_concepts;
+        rrel_vertex;
+        rrel_edge;
+        rrel_loop;
+        rrel_point_of_articulation;
+        rrel_center_of_graph;
+        rrel_hinge;
+        rrel_terminal_vertex;
+        
+        nrel_subgraph;
+        nrel_vertex_degree;
+        nrel_vertex_adjacency;
+        nrel_cycle;
+        nrel_sequence;
+        nrel_connected_component;
+        nrel_cut;
+        nrel_complement_graph;
+        nrel_circuit;
+        nrel_condensation_of_the_digraph;
+        nrel_face;
+
+        concept_graph;
+        concept_directed_graph;
+        concept_undirected_graph;
+        concept_graph_structure;
+        concept_complete_graph;
+        concept_bridge;
+        concept_bipartite_graph;
+        concept_multigraph;
+        concept_complete_graph;
+        concept_null_graph;
+        concept_psuedograph;
+        concept_network;
+        concept_super_graph;;
+
+    
+    subject_domain_of_basic_concepts => nrel_main_idtf:
+        [Предметная область базовых понятий]
+        (* <- lang_ru;; *);;
+    
+    subject_domain_of_basic_concepts => nrel_main_idtf:
+        [Subject domain of basic concepts]
+        (* <- lang_en;; *);;
+
+    
+    subject_domain_of_basic_concepts->rrel_maximum_studied_object_class:concept_graph_structure;;
+    subject_domain_of_basic_concepts->rrel_not_maximum_studied_object_class:concept_graph;;
+
+    subject_domain_of_basic_concepts<=nrel_private_subject_domain:subject_domain_of_graph_elements;
+        subject_domain_of_graph_components;
+        subject_domain_of_graph_types;
+        subject_domain_of_graph_specific_spots;
+        subject_domain_of_graph_specific_features;;
+
+    subject_domain_of_basic_concepts->rrel_explored_relation:
+        rrel_vertex;
+        rrel_edge;
+        rrel_loop;
+        rrel_point_of_articulation;
+        rrel_center_of_graph;
+        rrel_hinge;
+        rrel_terminal_vertex;
+        
+        nrel_subgraph;
+        nrel_vertex_degree;
+        nrel_vertex_adjacency;
+        nrel_cycle;
+        nrel_sequence;
+        nrel_connected_component;
+        nrel_cut;
+        nrel_complement_graph;
+        nrel_circuit;
+        nrel_condensation_of_the_digraph;
+        nrel_face;;
+
+    
+    subject_domain_of_basic_concepts<-subject_domain;;
+*];;
