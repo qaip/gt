@@ -20,6 +20,8 @@ SectionBasicConcepts=[*
     section_subject_domain_of_basic_concepts->rrel_key_sc_element:subject_domain_of_basic_concepts;
         rrel_vertex;
         rrel_edge;
+        rrel_oredge;
+        rrel_multiple_edge;
         rrel_loop;
         rrel_point_of_articulation;
         rrel_center_of_graph;
@@ -74,6 +76,8 @@ SectionBasicConcepts=[*
     subject_domain_of_basic_concepts->rrel_explored_relation:
         rrel_vertex;
         rrel_edge;
+        rrel_oredge;
+        rrel_multiple_edge;
         rrel_loop;
         rrel_point_of_articulation;
         rrel_center_of_graph;
