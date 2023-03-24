@@ -1,15 +1,17 @@
-SectionBasicConcepts=[*
-    section_subject_domain_of_basic_concepts=>nrel_main_idtf:
+SectionGraphDomain=[*
+    
+    section_subject_domain_of_graph=>nrel_main_idtf:
         [Раздел.Предметная область базовых понятий]
         (* <- lang_ru;; *);;
-    section_subject_domain_of_basic_concepts=>nrel_main_idtf:
+    section_subject_domain_of_graph=>nrel_main_idtf:
         [Section.Subject domain of basic consepts]
         (* <- lang_en;; *);;
 
 
-    section_subject_domain_of_basic_concepts<-non_atomic_section;;
+    section_subject_domain_of_graph<-non_atomic_section;;
 
-    section_subject_domain_of_basic_concepts<=nrel_section_decomposition:{
+
+    section_subject_domain_of_graph<=nrel_section_decomposition:{
         section_subject_domain_of_graph_elements;
         section_subject_domain_of_graph_components;
         section_subject_domain_of_graph_types;
@@ -17,10 +19,11 @@ SectionBasicConcepts=[*
         section_subject_domain_of_graph_specific_features
     };;
 
-    section_subject_domain_of_basic_concepts->rrel_key_sc_element:subject_domain_of_basic_concepts;
+
+    section_subject_domain_of_graph->rrel_key_sc_element:subject_domain_of_graph;
         rrel_vertex;
         rrel_edge;
-        rrel_oredge;
+        rrel_arc;
         rrel_multiple_edge;
         rrel_loop;
         rrel_point_of_articulation;
@@ -55,28 +58,28 @@ SectionBasicConcepts=[*
         concept_super_graph;;
 
     
-    subject_domain_of_basic_concepts => nrel_main_idtf:
+    subject_domain_of_graph => nrel_main_idtf:
         [Предметная область базовых понятий]
         (* <- lang_ru;; *);;
     
-    subject_domain_of_basic_concepts => nrel_main_idtf:
+    subject_domain_of_graph => nrel_main_idtf:
         [Subject domain of basic concepts]
         (* <- lang_en;; *);;
 
     
-    subject_domain_of_basic_concepts->rrel_maximum_studied_object_class:concept_graph_structure;;
-    subject_domain_of_basic_concepts->rrel_not_maximum_studied_object_class:concept_graph;;
+    subject_domain_of_graph->rrel_maximum_studied_object_class:concept_graph_structure;;
+    subject_domain_of_graph->rrel_not_maximum_studied_object_class:rrel_vertex;rrel_edge;;
 
-    subject_domain_of_basic_concepts<=nrel_private_subject_domain:subject_domain_of_graph_elements;
+    subject_domain_of_graph<=nrel_private_subject_domain:subject_domain_of_graph_elements;
         subject_domain_of_graph_components;
         subject_domain_of_graph_types;
         subject_domain_of_graph_specific_spots;
         subject_domain_of_graph_specific_features;;
 
-    subject_domain_of_basic_concepts->rrel_explored_relation:
+    subject_domain_of_graph->rrel_explored_relation:
         rrel_vertex;
         rrel_edge;
-        rrel_oredge;
+        rrel_arc;
         rrel_multiple_edge;
         rrel_loop;
         rrel_point_of_articulation;
@@ -97,5 +100,5 @@ SectionBasicConcepts=[*
         nrel_face;;
 
     
-    subject_domain_of_basic_concepts<-subject_domain;;
+    subject_domain_of_graph<-subject_domain;;
 *];;
