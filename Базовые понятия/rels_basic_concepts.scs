@@ -59,14 +59,12 @@ nrel_vertex_degree => nrel_main_idtf:
 	[ degree of a vertex* ](* <-lang_en;; *);;
 
 
-rrel_vertex
-=> nrel_main_idtf:
+rrel_vertex=> nrel_main_idtf:
 	[ вершина' ] (* <-lang_ru;; *);
 	[ vertex' ] (* <-lang_en;; *);;
 
 
-rrel_edge
-=> nrel_main_idtf:
+rrel_edge=> nrel_main_idtf:
     [ ребро' ] (* <-lang_ru;; *);
     [ edge' ] (* <-lang_en;; *);;
 
@@ -86,8 +84,7 @@ rrel_point_of_articulation => nrel_main_idtf:
 	[ point of articulation' ](* <-lang_en;; *);;
 
 
-nrel_vertex_adjacency
-=> nrel_main_idtf: 
+nrel_vertex_adjacency=>nrel_main_idtf: 
 	[ смежность вершин* ] (* <-lang_ru;; *);
 	[ vertex adjacency* ] (* <-lang_en;; *);;
 
@@ -97,14 +94,12 @@ nrel_cycle	=> nrel_main_idtf:
 	[ cycle in the graph* ] (* <-lang_en;; *);;
 
 
-nrel_sequence
-=> nrel_main_idtf:
+nrel_sequence=>nrel_main_idtf:
     [ маршрут в графе* ] (* <-lang_ru;; *);
     [ sequence in the graph* ] (* <-lang_en;; *);;
 
 
-rrel_terminal_vertex
-=> nrel_main_idtf:
+rrel_terminal_vertex=>nrel_main_idtf:
     [ висячая вершина' ] (* <-lang_ru;; *);
     [ terminal vertex' ] (* <-lang_en;; *);;
 
@@ -116,8 +111,7 @@ nrel_face=>nrel_main_idtf:
 		(*<-lang_en;;*);;
 
 
-rrel_hinge
-	=> nrel_main_idtf:
+rrel_hinge=>nrel_main_idtf:
 	[ разделяющая вершина' ] (* <-lang_ru;; *);
 	[ шарнир' ] (* <-lang_ru;; *);
 	[ hinge' ] (* <-lang_en;; *);;
@@ -128,6 +122,6 @@ nrel_circuit=>nrel_main_idtf:
 	[ circuit of graph* ](*<-lang_en;;*);;
 
 
-rrel_loop => nrel_main_idtf:
+rrel_loop=>nrel_main_idtf:
 	[ петля' ](* <-lang_ru;; *);
 	[ loop' ](* <-lang_en;; *);;
