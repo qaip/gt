@@ -43,8 +43,8 @@ SectionGraphDomain=[*
         nrel_condensation_of_the_digraph;
         nrel_face;
 
-        concepts_vertex;
-        concepts_edge;
+        concept_vertex;
+        concept_edge;
         concept_graph;
         concept_directed_graph;
         concept_undirected_graph;
