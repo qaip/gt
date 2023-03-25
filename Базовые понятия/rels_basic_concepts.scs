@@ -35,8 +35,8 @@ rrel_multiple_edge=>nrel_main_idtf:
 
 
 nrel_complement_graph=> nrel_main_idtf: 
-	[ дополнение графа* ] (* <-lang_ru;; *);
-	[ graph complemention* ] (* <-lang_en;; *);;
+    [ дополнение графа* ] (* <-lang_ru;; *);
+    [ graph complemention* ] (* <-lang_en;; *);;
 
 
 rrel_center_of_graph=>nrel_main_idtf:
@@ -55,13 +55,13 @@ nrel_cut=>nrel_main_idtf:
 
 
 nrel_vertex_degree => nrel_main_idtf:
-	[ степень вершины* ] (* <-lang_ru;; *);
-	[ degree of a vertex* ] (* <-lang_en;; *);;
+    [ степень вершины* ] (* <-lang_ru;; *);
+    [ degree of a vertex* ] (* <-lang_en;; *);;
 
 
 rrel_vertex=> nrel_main_idtf:
-	[ вершина' ] (* <-lang_ru;; *);
-	[ vertex' ] (* <-lang_en;; *);;
+    [ вершина' ] (* <-lang_ru;; *);
+    [ vertex' ] (* <-lang_en;; *);;
 
 
 rrel_edge=> nrel_main_idtf:
@@ -70,28 +70,28 @@ rrel_edge=> nrel_main_idtf:
 
 
 nrel_subgraph => nrel_main_idtf:
-	[ подграф* ] (* <-lang_ru;; *);
-	[ subgraph* ] (* <-lang_en;; *);;
+    [ подграф* ] (* <-lang_ru;; *);
+    [ subgraph* ] (* <-lang_en;; *);;
 
 
 nrel_connected_component => nrel_main_idtf: 
-	[ компонета свзязности* ] (* <-lang_ru;; *);
-	[ connected component* ] (* <-lang_en;; *);;
+    [ компонета свзязности* ] (* <-lang_ru;; *);
+    [ connected component* ] (* <-lang_en;; *);;
 
 
 rrel_point_of_articulation => nrel_main_idtf:
-	[ точка сочленения' ] (* <-lang_ru;; *);
-	[ point of articulation' ] (* <-lang_en;; *);;
+    [ точка сочленения' ] (* <-lang_ru;; *);
+    [ point of articulation' ] (* <-lang_en;; *);;
 
 
 nrel_vertex_adjacency=>nrel_main_idtf: 
-	[ смежность вершин* ] (* <-lang_ru;; *);
-	[ vertex adjacency* ] (* <-lang_en;; *);;
+    [ смежность вершин* ] (* <-lang_ru;; *);
+    [ vertex adjacency* ] (* <-lang_en;; *);;
 
 
 nrel_cycle=>nrel_main_idtf:
-	[ цикл в графе* ] (* <-lang_ru;; *);
-	[ cycle in the graph* ] (* <-lang_en;; *);;
+    [ цикл в графе* ] (* <-lang_ru;; *);
+    [ cycle in the graph* ] (* <-lang_en;; *);;
 
 
 nrel_sequence=>nrel_main_idtf:
@@ -105,21 +105,21 @@ rrel_terminal_vertex=>nrel_main_idtf:
 
 
 nrel_face=>nrel_main_idtf:
-	[ грань* ] (*<-lang_ru;;*);
-	[ face* ] (*<-lang_en;;*);;
+    [ грань* ] (*<-lang_ru;;*);
+    [ face* ] (*<-lang_en;;*);;
 
 
 rrel_hinge=>nrel_main_idtf:
-	[ разделяющая вершина' ] (* <-lang_ru;; *);
-	[ шарнир' ] (* <-lang_ru;; *);
-	[ hinge' ] (* <-lang_en;; *);;
+    [ разделяющая вершина' ] (* <-lang_ru;; *);
+    [ шарнир' ] (* <-lang_ru;; *);
+    [ hinge' ] (* <-lang_en;; *);;
 
 
 nrel_circuit=>nrel_main_idtf:
-	[ контур графа* ] (*<-lang_ru;;*);
-	[ circuit of graph* ] (*<-lang_en;;*);;
+    [ контур графа* ] (*<-lang_ru;;*);
+    [ circuit of graph* ] (*<-lang_en;;*);;
 
 
 rrel_loop=>nrel_main_idtf:
-	[ петля' ] (* <-lang_ru;; *);
-	[ loop' ] (* <-lang_en;; *);;
+    [ петля' ] (* <-lang_ru;; *);
+    [ loop' ] (* <-lang_en;; *);;
