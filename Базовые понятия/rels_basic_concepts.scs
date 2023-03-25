@@ -89,7 +89,7 @@ nrel_vertex_adjacency=>nrel_main_idtf:
 	[ vertex adjacency* ] (* <-lang_en;; *);;
 
 
-nrel_cycle	=> nrel_main_idtf:
+nrel_cycle=>nrel_main_idtf:
 	[ цикл в графе* ] (* <-lang_ru;; *);
 	[ cycle in the graph* ] (* <-lang_en;; *);;
 
