@@ -17,6 +17,14 @@ sc_node_class->
     concept_super_graph;;
 
 
+sc_node_struct->
+    subject_domain_of_graph_elements;
+    subject_domain_of_graph_components;
+    subject_domain_of_graph_types;
+    subject_domain_of_graph_specific_spots;
+    subject_domain_of_graph_specific_features;;
+    
+
 concept_vertex=>nrel_main_idtf:
     [вершина] (* <-lang_ru;; *);
     [vertex] (* <-lang_en;; *);;
@@ -37,16 +45,9 @@ concept_bridge=>nrel_main_idtf:
     [bridge] (* <-lang_en;; *);;
 
 
-sc_node_struct->
-    subject_domain_of_graph_elements;
-    subject_domain_of_graph_components;
-    subject_domain_of_graph_types;
-    subject_domain_of_graph_specific_spots;
-    subject_domain_of_graph_specific_features;;
-
 concept_graph => nrel_main_idtf:
-	[граф] (* <-lang_ru;; *);
-	[graph] (* <-lang_en;; *);;
+    [граф] (* <-lang_ru;; *);
+    [graph] (* <-lang_en;; *);;
 
 
 concept_directed_graph => nrel_main_idtf:
@@ -55,13 +56,13 @@ concept_directed_graph => nrel_main_idtf:
 
 
 concept_undirected_graph => nrel_main_idtf:
-	[неориентированный граф] (* <-lang_ru;; *);
-	[undirected graph] (* <-lang_en;; *);;
+    [неориентированный граф] (* <-lang_ru;; *);
+    [undirected graph] (* <-lang_en;; *);;
 
 
 concept_graph_structure => nrel_main_idtf:
-	[графовая структура] (* <-lang_ru;; *);
-	[graph structure] (* <-lang_en;; *);;
+    [графовая структура] (* <-lang_ru;; *);
+    [graph structure] (* <-lang_en;; *);;
 
 
 concept_complete_graph => nrel_main_idtf:
@@ -70,25 +71,25 @@ concept_complete_graph => nrel_main_idtf:
 
 
 concept_bipartite_graph=> nrel_main_idtf: 
-	[двудольный граф] (* <-lang_ru;; *);
-	[bipartite graph] (* <-lang_en;; *);;
+    [двудольный граф] (* <-lang_ru;; *);
+    [bipartite graph] (* <-lang_en;; *);;
 
 
 concept_multigraph => nrel_main_idtf:
-	[мультиграф] (* <- lang_ru;; *);
-	[multigraph] (* <- lang_en;; *);;
+    [мультиграф] (* <- lang_ru;; *);
+    [multigraph] (* <- lang_en;; *);;
 
 
 concept_network	=> nrel_main_idtf: 
-	[сеть] (* <-lang_ru;; *);
-	[network] (* <-lang_en;; *);;
+    [сеть] (* <-lang_ru;; *);
+    [network] (* <-lang_en;; *);;
 
 
 concept_null_graph=> nrel_main_idtf: 
     [нуль граф] (* <-lang_ru;; *);
-	[null graph] (* <-lang_en;; *);;
+    [null graph] (* <-lang_en;; *);;
 
 
 concept_psuedograph=> nrel_main_idtf: 
-	[псевдограф] (* <-lang_ru;; *);
-	[psuedograph] (* <-lang_en;; *);;
+    [псевдограф] (* <-lang_ru;; *);
+    [psuedograph] (* <-lang_en;; *);;
