@@ -88,8 +88,8 @@ rrel_point_of_articulation => nrel_main_idtf:
 
 nrel_vertex_adjacency
 => nrel_main_idtf: 
-		[ смежность вершин* ] (* <-lang_ru;; *);
-		[ vertex adjacency* ] (* <-lang_en;; *);;
+	[ смежность вершин* ] (* <-lang_ru;; *);
+	[ vertex adjacency* ] (* <-lang_en;; *);;
 
 
 nrel_cycle	=> nrel_main_idtf:
@@ -129,5 +129,5 @@ nrel_circuit=>nrel_main_idtf:
 
 
 rrel_loop => nrel_main_idtf:
-	[петля'](* <-lang_ru;; *);
-	[loop'](* <-lang_en;; *);;
+	[ петля' ](* <-lang_ru;; *);
+	[ loop' ](* <-lang_en;; *);;
