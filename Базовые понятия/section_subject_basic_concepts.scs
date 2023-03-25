@@ -73,7 +73,6 @@ SectionGraphDomain=[*
     subject_domain_of_graph->rrel_not_maximum_studied_object_class:rrel_vertex;rrel_edge;;
 
 
-
     subject_domain_of_graph<=nrel_private_subject_domain:subject_domain_of_graph_elements;
         subject_domain_of_graph_components;
         subject_domain_of_graph_types;
