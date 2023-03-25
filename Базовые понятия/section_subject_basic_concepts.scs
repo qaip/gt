@@ -24,8 +24,8 @@ SectionGraphDomain=[*
         rrel_vertex;
         rrel_edge;
         rrel_arc;
-        rrel_multiple_edge;
         rrel_loop;
+        rrel_multiple_edge;
         rrel_point_of_articulation;
         rrel_center_of_graph;
         rrel_hinge;
@@ -43,6 +43,8 @@ SectionGraphDomain=[*
         nrel_condensation_of_the_digraph;
         nrel_face;
 
+        concepts_vertex;
+        concepts_edge;
         concept_graph;
         concept_directed_graph;
         concept_undirected_graph;

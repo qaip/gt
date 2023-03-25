@@ -1,6 +1,8 @@
 sc_node_struct->section_subject_domain_of_graph;;
 
 sc_node_class->
+    concepts_vertex;
+    concepts_edge;
     concept_graph;
     concept_directed_graph;
     concept_undirected_graph;
@@ -13,6 +15,16 @@ sc_node_class->
     concept_psuedograph;
     concept_network;
     concept_super_graph;;
+
+
+concepts_vertex=>nrel_main_idtf:
+    [вершина] (* <-lang_ru;; *);
+    [vertex] (* <-lang_en;; *);;
+
+
+concepts_edge=>nrel_main_idtf:
+    [ребро] (* <-lang_ru;; *);
+    [edge] (* <-lang_en;; *);;
 
 
 concept_super_graph=>nrel_main_idtf:
