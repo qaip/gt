@@ -1,0 +1,101 @@
+SectionDirectedGraphDomain = [*
+
+    section_subject_domain_of_directed_graph => nrel_main_idtf:
+        [Раздел.Предметная область ориентированных графов]
+        (* <- lang_ru;; *);;
+
+
+    section_subject_domain_of_directed_graph => nrel_main_idtf:
+        [Section.Subject domain of directed graphs]
+        (* <- lang_en;; *);;
+
+
+    section_subject_domain_of_directed_graph<-non_atomic_section;;
+   
+
+    section_subject_domain_of_directed_graph<=nrel_section_decomposition:{
+        section_subject_domain_of_tournament_graph;
+        section_subject_domain_of_directed_forest;
+        section_subject_domain_of_directed_tree
+    };;
+
+    section_subject_domain_of_directed_graph->rrel_key_sc_element:subject_domain_of_directed_graph;
+        rrel_arc;
+        rrel_deadlock;
+        rrel_anti_deadlock;
+        rrel_route;
+        rrel_way;
+
+        nrel_adjacent_arcs;
+        nrel_adjacent_vretex;
+
+        concept_arc;
+        concept_vertex;
+        concept_graph;
+        concept_tournament_graph;
+        concept_directed_forest;
+        concept_directed_tree;;
+
+    subject_domain_of_directed_graph => nrel_main_idtf:
+        [Предметная область ориентированных графов]
+        (* <- lang_ru;; *);;
+    
+    subject_domain_of_directed_graph => nrel_main_idtf:
+        [Subject domain of directed graphs]
+        (* <- lang_en;; *);;
+
+    
+    subject_domain_of_directed_graph->rrel_maximum_studied_object_class:concept_graph;;
+    subject_domain_of_directed_graph->rrel_not_maximum_studied_object_class:concept_vertex;;
+    
+
+    subject_domain_of_directed_graph=>nrel_private_subject_domain:subject_domain_of_directed_graph;
+        subject_domain_of_tournament_graph;
+        subject_domain_of_directed_forest;
+        subject_domain_of_directed_tree;;
+        
+
+    subject_domain_of_directed_graph<=nrel_private_subject_domain:subject_domain_of_graph;;
+
+    
+    subject_domain_of_directed_graph->rrel_explored_relation:
+        rrel_arc;
+        rrel_deadlock;
+        rrel_anti_deadlock;
+        rrel_route;
+        rrel_way;
+
+        nrel_adjacent_arcs;
+        nrel_adjacent_vretex;;
+
+    subject_domain_of_directed_graph<-subject_domain;;
+
+*];;
+
+sc_node_struct->
+    section_subject_domain_of_directed_graph;
+    section_subject_domain_of_tournament_graph;
+    section_subject_domain_of_directed_forest;
+    section_subject_domain_of_directed_tree;
+    subject_domain_of_directed_graph;
+    subject_domain_of_tournament_graph;
+    subject_domain_of_directed_forest;
+    subject_domain_of_directed_tree;;
+    
+
+sc_node_role_relation->
+    rrel_deadlock;
+    rrel_anti_deadlock;
+    rrel_route;
+    rrel_way;;
+
+sc_node_norole_relation->
+    nrel_incidence;
+    nrel_adjacent_arcs;
+    nrel_adjacent_vretex;;
+
+sc_node_class->
+    concept_arc;
+    concept_tournament_graph;
+    concept_directed_forest;
+    concept_directed_tree;;
