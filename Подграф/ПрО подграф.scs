@@ -1,0 +1,90 @@
+SectionSubgraphDomain = [*
+	section_subject_domain_of_subgraph => nrel_main_idtf:
+		[Раздел.Предметная область подграфов](* <-lang_ru;; *);;
+	
+	section_subject_domain_of_subgraph => main_idtf:
+		[Section.Subject domain of subgraph](*<-lang_en;; *);;
+		
+	section_subject_domain_of_subgraph<-non_atomic_section;;
+	
+	section_subject_domain_of_subgraph<=nrel_section_decomposition:{
+		section_subject_domain_of_induced_subgraph;
+		section_subject_domain_of_isometric_subgraph
+	};;
+	
+	section_subject_domain_of_subgraph->rrel_key_sc_element:subject_domain_of_subgraph;
+		rrel_arc;
+		rrel_length_of_sequence;
+		rrel_sequence;
+		rrel_path;
+		
+		nrel_induced_subgraph;
+		nrel_adjacent_arcs;
+		nrel_semiroute_in_the_digraph;
+		nrel_vertex_indused_subgraph;
+		nrel_edge_induced _subgraph;
+		
+		concept_bicoloured_subgraph;
+		concept_isometric_subgraph;
+		concept_subgraph;
+		concept_path;
+		concept_arc;
+        concept_vertex;
+        concept_graph;;
+		
+	subject_domain_of_subgraph => nrel_main_idtf:
+		[Предметная область подграфов](* <-lang_ru;; *);;
+		
+	subject_domain_of_subgraph => nrel_main_idtf:
+		[Subject domain of subgraph](*<-lang_en;; *);;
+		
+	subject_domain_of_subgraph->rrel_maximum_studied_object_class:concept_graph;;
+	subject_domain_of_subgraph->rrel_not_maximum_studied_object_class:concept_vertex;;
+	
+	subject_domain_of_directed_graph=>nrel_private_subject_domain:subject_domain_of_directed_graph;
+        subject_domain_of_induced_subgraph;
+		subject_domain_of_isometric_subgraph;;
+		
+	subject_domain_of_subgraph <= nrel_private_subject_domain:subject_domain_of_path;;
+	
+	subject_domain_of_subgraph->rrel_explored_relation:
+		rrel_arc;
+		rrel_length_of_sequence;
+		rrel_sequence;
+		rrel_path;
+		
+		nrel_induced_subgraph;
+		nrel_adjacent_arcs;
+		nrel_semiroute_in_the_digraph;
+		nrel_vertex_indused_subgraph;
+		nrel_edge_induced _subgraph;;
+		
+	subject_domain_of_subgraph<-subject_domain;;
+	*];;
+	
+sc_node_struct->
+	section_subject_domain_of_subgraph;
+	subject_domain_of_subgraph;
+	section_subject_domain_of_induced_subgraph;
+	section_subject_domain_of_isometric_subgraph;
+	subject_domain_of_induced_subgraph;
+	subject_domain_of_isometric_subgraph;;
+	
+sc_node_role_relation->
+	rrel_arc;
+	rrel_length_of_sequence;
+	rrel_sequence;
+	rrel_path;;
+
+sc_node_norole_relation->
+	nrel_semiroute_in_the_digraph;;
+	nrel_induced_subgraph;
+	nrel_semiroute_in_the_digraph;
+	nrel_vertex_indused_subgraph;
+	nrel_edge_induced _subgraph;;
+	
+sc_node_class->
+	concept_bicoloured_subgraph;
+	concept_isometric_subgraph;
+	concept_subgraph;
+	
