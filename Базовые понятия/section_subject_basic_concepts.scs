@@ -1,10 +1,10 @@
 SectionGraphDomain=[*
 
     section_subject_domain_of_graph=>nrel_main_idtf:
-        [Раздел.Предметная область базовых понятий]
+        [Раздел.Предметная область графа]
         (* <- lang_ru;; *);;
     section_subject_domain_of_graph=>nrel_main_idtf:
-        [Section.Subject domain of basic consepts]
+        [Section.Subject domain of graph]
         (* <- lang_en;; *);;
 
 
@@ -61,11 +61,11 @@ SectionGraphDomain=[*
 
     
     subject_domain_of_graph => nrel_main_idtf:
-        [Предметная область базовых понятий]
+        [Предметная область графа]
         (* <- lang_ru;; *);;
     
     subject_domain_of_graph => nrel_main_idtf:
-        [Subject domain of basic concepts]
+        [Subject domain of graph]
         (* <- lang_en;; *);;
 
     
