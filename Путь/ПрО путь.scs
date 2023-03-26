@@ -8,9 +8,9 @@ SectionPathDomain = [*
 	section_subject_domain_of_path<-non_atomic_section;;
 	
 	section_subject_domain_of_path<=nrel_section_decomposition:{
-		section_subject_domain_of_chains;;
-		section_subject_domain_of_loops;;
-		section_subject_domain_of_hamiltonian_path;;	
+		section_subject_domain_of_chains;
+		section_subject_domain_of_loops;
+		section_subject_domain_of_hamiltonian_path	
 	};;
 	
 	section_subject_domain_of_path->rrel_key_sc_element:subject_domain_of_path;
@@ -35,7 +35,7 @@ SectionPathDomain = [*
 		[Предметная область путей](* <- lang_ru;; *);;
 		
 	subject_domain_of_path => nrel_main_idtf:
-		[Subject domain of path(*<-lang_en;; *);;
+		[Subject domain of path](*<-lang_en;; *);;
 		
 	subject_domain_of_path->rrel_maximum_studied_object_class:concept_graph;;
 	subject_domain_of_path->rrel_not_maximum_studied_object_class:concept_vertex;;
@@ -85,5 +85,5 @@ sc_node_norole_relation->
 	nrel_shortest_path;;
 	
 sc_node_class->
-	concept_path;
+	concept_path;;
 
