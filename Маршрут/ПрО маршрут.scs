@@ -9,7 +9,7 @@ SectionSequencesDomain = [*
 	
 	section_subject_domain_of_sequences<=nrel_section_decomposition:{
 		section_subject_domain_of_spanning_sequence;
-		section_subject_domain_of_directed_sequence;
+		section_subject_domain_of_directed_sequence
 	};;
 	
 	section_subject_domain_of_sequences->rrel_key_sc_element:subject_domain_of_sequences;
@@ -50,7 +50,7 @@ SectionSequencesDomain = [*
 		rrel_path;
 		
 		nrel_adjacent_arcs;
-		nrel_semiroute_in_the_digraph;
+		nrel_semiroute_in_the_digraph;;
 		
 	subject_domain_of_sequences<-subject_domain;;
 	*];;
@@ -74,4 +74,4 @@ sc_node_norole_relation->
 	
 sc_node_class->
 	concept_sequence;
-	concept_tightened_graph;
+	concept_tightened_graph;;
