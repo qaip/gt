@@ -108,26 +108,26 @@
 `Graphs > Graph Algorithms > Shortest Paths > Floyd-Warshall Algorithm`
 
 ## Distribution
-- Voitkus Stanislav Aleksandrovich:
+- Voitkus Stanislav:
   - Subject Domain of Domain of Graphs
   - Subject Domain of Connectivity
   - Subject Domain of Graph Operations
   - Subject Domain of Dual Graphs
-- Samokhval Evgeniy Sergeevich:
+- Samokhval Evgeniy:
   - Subject Domain of Shortest Sequence
   - Subject Domain of Graph Paths
   - Subject Domain of Graph Cycle
   - Subject Domain of Graph Chain
   - Subject Domain of Simple Graphs
   - Subject Domain of Subgraphs
-- Sharapov Artur Sergeevich:
+- Sharapov Artur:
   - Subject Domain of Acyclic Graphs
   - Subject Domain of Trees
   - Subject Domain of Binary Trees
   - Subject Domain of Quad Trees
   - Subject Domain of Heaps
   - Subject Domain of Graph Cuts
-- Shurmel Konstantin Aleksandrovich:
+- Shurmel Konstantin:
   - Subject Domain of Planar Graphs
   - Subject Domain of Graph Embeddings
   - Subject Domain of Graph Coloring
@@ -135,7 +135,7 @@
   - Subject Domain of Weighted Directed Graphs
   - Subject Domain of Graph Representation
   - Subject Domain of Graph Properties
-- Yakubovskiy Kirill Vasilievich:
+- Yakubovskiy Kirill:
   - Subject Domain of Graph Algorithms
   - Subject Domain of Graph Traversal
   - Subject Domain of Shortest Paths
