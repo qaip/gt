@@ -1,0 +1,44 @@
+type: domain
+system: directed_graphs
+en: Directed graphs
+ru: ориентированных графов
+
+parent: graphs
+
+children: |
+  Weighted Directed Graphs
+
+max: |
+  directed_graph
+
+concepts: |
+  arc
+  vertex
+  graph
+  directed_graph
+  tournament_graph
+  directed_forest
+  directed_tree
+  oriented_eulerian_graphs
+  normalized_graph
+  mixed_graph
+  component_of_directed_graph
+  orientable_graph
+  transport_network
+  oriented_multigraph
+  inverse_graph
+  complete_count_of_Berge
+  counterfunctional_graph    
+
+rrels: |
+  arc
+  deadlock
+  anti_deadlock
+  sequence
+  path
+
+nrels: |
+  adjacent_arcs
+  adjacent_vretex
+  
+  
