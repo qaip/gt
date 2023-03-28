@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run scs update
-        uses: qaip/scs-actions
+        uses: qaip/scs-action@v1
       - name: Remove trigger label
         if: ${{ github.event.label.name == 'run-update' }}
         uses: actions-ecosystem/action-remove-labels@v1
