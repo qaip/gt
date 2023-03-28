@@ -109,25 +109,38 @@
 
 ## Distribution
 - Voitkus Stanislav Aleksandrovich:
-  - Subject Domain of Basic Concepts `[Graphs, Multigraphs, Trees, Planar Graphs, Acyclic Graphs, Properties]`
-  - Subject Domain of Connectivity `[N/A]`
-  - Subject Domain of Graph Operations `[Graph Isomorphism, Dual Graphs, Graph Representation]`
+  - Subject Domain of Domain of Graphs
+  - Subject Domain of Connectivity
+  - Subject Domain of Graph Operations
+  - Subject Domain of Dual Graphs
 - Samokhval Evgeniy Sergeevich:
-  - Subject Domain of Shortest Paths `[Routes, Paths, Chains, Cycles]`
-  - Subject Domain of Simple Graphs `[Subgraph]`
+  - Subject Domain of Shortest Sequence
+  - Subject Domain of Graph Paths
+  - Subject Domain of Graph Cycle
+  - Subject Domain of Graph Chain
+  - Subject Domain of Simple Graphs
+  - Subject Domain of Subgraphs
 - Sharapov Artur Sergeevich:
-  - Subject Domain of Acyclic Graphs `[N/A]`
-  - Subject Domain of Trees `[N/A]`
-  - Subject Domain of Graph Cuts `[Cut of Trees]`
-  - Subject Domain of Directed Graphs `[Cut of Directed Acyclic Graphs]`
-  - Subject Domain of Shortest Paths `[Floyd-Warshall Algorithm]`
+  - Subject Domain of Acyclic Graphs
+  - Subject Domain of Trees
+  - Subject Domain of Binary Trees
+  - Subject Domain of Quad Trees
+  - Subject Domain of Heaps
+  - Subject Domain of Graph Cuts
+  - Subject Domain of Directed Graphs
+  - Subject Domain of Shortest Paths
 - Shurmel Konstantin Aleksandrovich:
-  - Subject Domain of Planar Graphs `[N/A]`
-  - Subject Domain of Directed Graphs `[N/A]`
-  - Subject Domain of Graph Representation `[N/A]`
-  - Subject Domain of Graph Properties `[N/A]`
+  - Subject Domain of Planar Graphs
+  - Subject Domain of Graph Embeddings
+  - Subject Domain of Graph Coloring
+  - Subject Domain of Directed Graphs
+  - Subject Domain of Weighted Directed Graphs
+  - Subject Domain of Graph Representation
+  - Subject Domain of Graph Properties
 - Yakubovskiy Kirill Vasilievich:
-  - Subject Domain of Graph Traversal `[Breadth-First Search, Depth-First Search]`
-  - Subject Domain of Shortest Paths `[Dijkstra's Algorithm]`
-  - Subject Domain of Tree Traversal `[Pre-order Traversal, In-order Traversal, Post-order Traversal]`
+  - Subject Domain of Graph Algorithms
+  - Subject Domain of Graph Traversal
+  - Subject Domain of Shortest Paths
+  - Subject Domain of Tree Traversal
   - Subject Domain of Multigraphs
+  - Subject Domain of Hypergraphs
