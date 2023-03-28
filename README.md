@@ -16,7 +16,10 @@
         - Subject Domain of Graph Coloring
     - Subject Domain of Acyclic Graphs
     - Subject Domain of Graph Cuts
-    - Subject Domain of Graph Paths
+    - Subject Domain of Graph Sequence
+        - Subject Domain of Graph Paths
+        - Subject Domain of Graph Cycle
+        - Subject Domain of Graph Chain
     - Subject Domain of Graph Properties
     - Subject Domain of Graph Representation
     - Subject Domain of Graph Operations
@@ -104,26 +107,3 @@
 
 - __Floyd-Warshall Algorithm__ [Алгоритм Флойда - Уоршелла]\
 `Graphs > Graph Algorithms > Shortest Paths > Floyd-Warshall Algorithm`
-
-## Distribution
-- Voitkus Stanislav Aleksandrovich:
-  - Subject Domain of Basic Concepts `[Graphs, Multigraphs, Trees, Planar Graphs, Acyclic Graphs, Properties]`
-  - Subject Domain of Connectivity `[N/A]`
-  - Subject Domain of Graph Operations `[Graph Isomorphism, Dual Graphs, Graph Representation]`
-- Samokhval Evgeniy Sergeevich:
-  - Subject Domain of Shortest Paths `[Routes, Paths, Chains, Cycles]`
-- Sharapov Artur Sergeevich:
-  - Subject Domain of Acyclic Graphs `[N/A]`
-  - Subject Domain of Trees `[N/A]`
-  - Subject Domain of Graph Cuts `[Cut of Trees]`
-  - Subject Domain of Directed Graphs `[Cut of Directed Acyclic Graphs]`
-  - Subject Domain of Shortest Paths `[Floyd-Warshall Algorithm]`
-- Shurmel Konstantin Aleksandrovich:
-  - Subject Domain of Graph Operations `[Dual Graphs, Ways of Graph Representation]`
-  - Subject Domain of Planar Graphs `[N/A]`
-  - Subject Domain of Directed Graphs `[Cut Vertices, Bridges and Blocks]`
-- Yakubovskiy Kirill Vasilievich:
-  - Subject Domain of Graph Traversal `[Breadth-First Search, Depth-First Search]`
-  - Subject Domain of Shortest Paths `[Dijkstra's Algorithm]`
-  - Subject Domain of Tree Traversal `[Pre-order Traversal, In-order Traversal, Post-order Traversal]`
-
