@@ -5,11 +5,6 @@ on:
     types: [opened, synchronize, labeled]
 
 jobs:
-  quick:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo ${{ github.event.action }}
-
   update:
     if: ${{ github.event.action != 'labeled' || github.event.label.name == 'run-update' }}
     runs-on: ubuntu-latest
