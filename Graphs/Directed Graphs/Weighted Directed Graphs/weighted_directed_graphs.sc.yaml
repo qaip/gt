@@ -1,0 +1,16 @@
+type: domain
+system: weighted_directed_graphs
+en: Weighted Directed graphs
+ru: взвешенных ориентированных графов
+
+parent: directed_graphs
+
+max: |
+  weighted_directed_graph
+
+concepts: |
+  weighted_directed_graph
+  weighted_edge  
+
+rrels: |
+  weighted_edge
