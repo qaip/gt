@@ -1,0 +1,23 @@
+name: Update SCs
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, labeled]
+
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event.action }}
+
+  update:
+    if: ${{ github.event.action != 'labeled' || github.event.label.name == 'run-update' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run scs update
+        uses: qaip/scs-actions
+      - name: Remove trigger label
+        if: ${{ github.event.label.name == 'run-update' }}
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: 'run-update'
