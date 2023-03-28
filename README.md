@@ -127,8 +127,6 @@
   - Subject Domain of Quad Trees
   - Subject Domain of Heaps
   - Subject Domain of Graph Cuts
-  - Subject Domain of Directed Graphs
-  - Subject Domain of Shortest Paths
 - Shurmel Konstantin Aleksandrovich:
   - Subject Domain of Planar Graphs
   - Subject Domain of Graph Embeddings
