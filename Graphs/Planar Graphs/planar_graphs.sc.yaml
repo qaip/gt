@@ -1,0 +1,33 @@
+type: domain
+system: planar_graphs
+en: Planar graphs
+ru: планарных графов
+
+parent: graphs
+
+children: |
+  Graph Embeddings
+  Graph Coloring
+
+max: |
+  planar_graph
+
+concepts: |
+  planar_graph
+  triangle
+  plane
+  triangular_graph
+  graph_diamond
+  median_graph
+  external_planar_graph
+  graph_Halina
+  external_graph  
+
+rrels: |
+  tree
+
+nrels: |
+  isomorphism
+  neighboring vertex
+  intersection
+  laying
