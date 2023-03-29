@@ -1,7 +1,7 @@
 type: domain
 system: graph_traversal 
 en: Graph traversal
-ru: Обход графа
+ru: обхода графа
 
 parent: graph_algorithms
 
@@ -13,7 +13,6 @@ max: |
     graph_traversal
     
 concepts: |
-    graph_traversal
     breadth_first_search
     depth_first_search
     subtask_level
@@ -21,3 +20,4 @@ concepts: |
 rrels: |
 
 nrels: |
+
