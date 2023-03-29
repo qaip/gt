@@ -1,7 +1,7 @@
 type: domain
 system: graphs_coloring
 en: Graph Coloring
-ru: Раскрасок Графов
+ru: раскрасок графов
 
 parent: planar_graphs
 
