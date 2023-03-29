@@ -1,0 +1,24 @@
+type: domain
+system: graph_cycles
+en: Graph Cycles
+ru: циклов графа
+
+parent: graph_sequences
+
+max: |
+  graph_cycle
+
+concepts: |
+  cyclic_graph
+  hamiltonian_cycle
+  eulerian_cycle
+  basic_cycle
+  elementary_cycle
+  minimum_weight_cycle
+  cycle_length
+  graph_girth
+  cycle_weight
+
+nrels: |
+  arcs_adjacency
+  graph_chord
