@@ -1,7 +1,7 @@
 type: domain
 system: graph_path
 en: Subject Domain of Path
-ru: предметная область путей
+ru: путей
 parent: graph_sequence
 children: |
     hamiltonian_path
