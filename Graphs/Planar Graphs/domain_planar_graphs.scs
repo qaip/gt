@@ -33,7 +33,7 @@ section_subject_domain_of_planar_graphs=[*
 	<- sc_node_struct;
 	<- subject_domain;
 	=> nrel_main_idtf:
-		[Предметная область планарных графов] (* <- lang_ru;; *);
+	[Предметная область планарных графов] (* <- lang_ru;; *);
 		[Subject Domain of Planar Graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:

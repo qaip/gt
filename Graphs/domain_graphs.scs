@@ -7,7 +7,6 @@ section_subject_domain_of_graphs
 	[Section. Subject Domain of Graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_graph;
 	section_subject_domain_of_simple_graphs;
 	section_subject_domain_of_directed_graphs;
 	section_subject_domain_of_multigraphs;
@@ -15,11 +14,11 @@ section_subject_domain_of_graphs
 	section_subject_domain_of_planar_graphs;
 	section_subject_domain_of_acyclic_graphs;
 	section_subject_domain_of_graph_cuts;
-	section_subject_domain_of_graph_sequence;
+	section_subject_domain_of_graph_sequences;
 	section_subject_domain_of_graph_properties;
 	section_subject_domain_of_graph_representation;
 	section_subject_domain_of_graph_operations;
-	section_subject_domain_of_graph_connectivity;
+	section_subject_domain_of_graph_connectivities;
 	section_subject_domain_of_graph_algorithms
 };
 
@@ -114,7 +113,6 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_graph_theory;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_graph;
 		subject_domain_of_simple_graphs;
 		subject_domain_of_directed_graphs;
 		subject_domain_of_multigraphs;
@@ -122,11 +120,11 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_planar_graphs;
 		subject_domain_of_acyclic_graphs;
 		subject_domain_of_graph_cuts;
-		subject_domain_of_graph_sequence;
+		subject_domain_of_graph_sequences;
 		subject_domain_of_graph_properties;
 		subject_domain_of_graph_representation;
 		subject_domain_of_graph_operations;
-		subject_domain_of_graph_connectivity;
+		subject_domain_of_graph_connectivities;
 		subject_domain_of_graph_algorithms;;
 *];;
 
