@@ -1,7 +1,7 @@
 type: domain
 system: graph_sequence
 en: Subject Domain of Sequences
-ru: предметная область маршрутов
+ru: маршрутов
 parent: graphs
 children: |
     graph_path
