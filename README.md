@@ -15,8 +15,8 @@
         - Subject Domain of Graph Coloring
     - Subject Domain of Acyclic Graphs
     - Subject Domain of Graph Cuts
-        - Subject Domain of Graph Minimum Cuts
-        - Subject Domain of Graph Maximum Cuts
+        - Subject Domain of Minimum Graph Cuts
+        - Subject Domain of Maximum Graph Cuts
         - Subject Domain of Graph Sparsest Cuts
         - Subject Domain of Graph Cut Space
         - Subject Domain of Graph Splits
