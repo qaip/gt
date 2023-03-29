@@ -1,0 +1,19 @@
+type: domain
+system: quadtrees
+en: Quadtrees
+ru: квадродеревьев
+
+parent: trees
+
+max: |
+  quadtree
+
+concepts: |
+  point_quadtree
+  polygonal_map_quadtree
+  quadtree
+
+
+rrels: |
+
+nrels: |
