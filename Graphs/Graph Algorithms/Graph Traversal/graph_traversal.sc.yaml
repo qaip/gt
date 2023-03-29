@@ -5,8 +5,6 @@ ru: обхода графа
 
 parent: graph_algorithms
 
-childrean: |
-
 max: |
     graph_traversal
     
