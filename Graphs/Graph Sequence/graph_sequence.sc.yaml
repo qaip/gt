@@ -1,0 +1,31 @@
+type: domain
+system: graph_sequence
+en: Subject domain of sequences
+ru: Предметная область маршрутов
+parent: graphs
+children: |
+	path
+	chains
+	loops
+	spanning_sequence
+	directed_sequence
+max: |
+	graph
+concepts: |
+	chain
+	loop
+	sequence
+	path
+	tightened_graph
+	arc
+	vertex
+rrels: |
+	arc
+	length_of_sequence
+	sequence
+	path
+	loop
+	chain
+nrels: |
+	adjacent_arcs
+	semiroute_in_the_digraph
