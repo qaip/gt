@@ -1,31 +1,28 @@
 type: domain
 system: graph_sequence
-en: Subject Domain of Sequences
-ru: маршрутов
+en: Graph Sequences
+ru: маршрутов графа
+
 parent: graphs
+
 children: |
     graph_path
     graph_chains
     graph_cycles
-    spanning_sequence
-    directed_sequence
+
 max: |
     graphs
+
 concepts: |
-    chain
-    cycle
     sequence
-    path
     tightened_graph
-    arc
-    vertex
+    spanning_sequence
+    directed_sequence
+
 rrels: |
-    arc
     length_of_sequence
     sequence
-    path
-    cycle
-    chain
+
 nrels: |
-    adjacent_arcs
+    arcs_adjacency
     semiroute_in_the_digraph
