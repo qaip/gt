@@ -3,7 +3,7 @@ section_subject_domain_of_graph_cycle
 <- non_atomic_section;
 
 => nrel_main_idtf:
-	[Раздел. Предметная область предметная область циклов] (* <- lang_ru;; *);
+	[Раздел. Предметная область циклов] (* <- lang_ru;; *);
 	[Section. Subject Domain of Subject Domain of Cycles] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
@@ -33,7 +33,7 @@ section_subject_domain_of_graph_cycle=[*
 	<- sc_node_struct;
 	<- subject_domain;
 	=> nrel_main_idtf:
-		[Предметная область предметная область циклов] (* <- lang_ru;; *);
+		[Предметная область циклов] (* <- lang_ru;; *);
 		[Subject Domain of Subject Domain of Cycles] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
