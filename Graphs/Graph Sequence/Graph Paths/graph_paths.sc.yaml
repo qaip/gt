@@ -1,19 +1,16 @@
 type: domain
 system: graph_path
-en: Subject domain of path
-ru: Предметная область путей
-parent: sequences
+en: Subject Domain of Path
+ru: предметная область путей
+parent: graph_sequence
 children: |
 	hamiltonian_path
 max: |
 	graph
 concepts: |
-	arc
 	path
-	vertex
 rrels: |
 	path
-	arc
 	sequence
 	length_path
 	path_weight
