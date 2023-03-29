@@ -7,7 +7,7 @@ section_subject_domain_of_shortest_paths
 	[Section. Subject Domain of Shortest Paths] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-...
+	...
 };
 
 <- rrel_key_sc_element:
@@ -15,7 +15,7 @@ section_subject_domain_of_shortest_paths
 	concept_shortest_path;
 	concept_dijkstra_algorithm;
 	concept_floyd_warshall_algorithm;
-...;
+	...;
 	nrel_shortest_path;;
 
 section_subject_domain_of_shortest_paths=[*
@@ -34,14 +34,14 @@ section_subject_domain_of_shortest_paths=[*
 		concept_floyd_warshall_algorithm;
 
 	-> rrel_explored_relation:
-...;
+		...;
 		nrel_shortest_path;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_algorithms;
 
 	=> nrel_private_subject_domain:
-...;;
+		...;;
 *];;
 
 
@@ -51,7 +51,7 @@ sc_node_class ->
 	concept_floyd_warshall_algorithm;;
 
 sc_node_role_relation ->
-...;;
+	...;;
 
 sc_node_norole_relation ->
 	nrel_shortest_path;;
