@@ -1,13 +1,13 @@
 section_subject_domain_of_dual_graphs
 
-<- non_atomic_section;
+<- atomic_section;
 
 => nrel_main_idtf:
-	[Раздел. Предметная область Двойственный граф] (* <- lang_ru;; *);
-	[Section. Subject Domain of Dual Graph] (* <- lang_en;; *);
+	[Раздел. Предметная область двойственных графов] (* <- lang_ru;; *);
+	[Section. Subject Domain of Dual Graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_dual_graphs
+	...
 };
 
 <- rrel_key_sc_element:
@@ -25,8 +25,8 @@ section_subject_domain_of_dual_graphs=[*
 	<- sc_node_struct;
 	<- subject_domain;
 	=> nrel_main_idtf:
-		[Предметная область Двойственный граф] (* <- lang_ru;; *);
-		[Subject Domain of Dual Graph] (* <- lang_en;; *);
+		[Предметная область двойственных графов] (* <- lang_ru;; *);
+		[Subject Domain of Dual Graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_dual_graph;
@@ -45,7 +45,7 @@ section_subject_domain_of_dual_graphs=[*
 		subject_domain_of_graph_operations;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_dual_graphs;;
+		...;;
 *];;
 
 
