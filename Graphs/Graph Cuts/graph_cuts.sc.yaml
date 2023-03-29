@@ -1,7 +1,7 @@
 type: domain
 system: graph_cuts
 en: Graph Cuts
-ru: сечений графа
+ru: разрезов графа
 
 parent: graphs
 
