@@ -5,18 +5,12 @@ ru: кратчайших путей
 
 parent: graph_algorithms 
 
-childrean: |
-
 max: |
     shortest_path
     
 concepts: |
     dijkstra_algorithm
     floyd_warshall_algorithm
-    
-    
-rrels: |
 
 nrels: |
     shortest_path
-
