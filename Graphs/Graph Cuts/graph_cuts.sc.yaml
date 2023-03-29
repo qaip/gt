@@ -6,9 +6,8 @@ ru: разрезов графа
 parent: graphs
 
 children: |
-  graph_minimum_cuts
-  graph_maximum_cuts
-  graph_sparsest_cuts
+  minimum_graph_cuts
+  maximum_graph_cuts
   graph_cut_space
   graph_splits
 
@@ -26,6 +25,7 @@ concepts: |
   network_flow
   max_flow_min_cut_theorem
   max_cut_problem
+  graph_sparsest_cuts
   
 nrels: |
   graph_cut

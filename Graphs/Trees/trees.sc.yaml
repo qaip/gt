@@ -7,7 +7,7 @@ parent: graphs
 
 children: |
   binary_trees
-  quad_trees
+  quadtrees
   heaps
 
 max: |

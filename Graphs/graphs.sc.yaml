@@ -6,7 +6,6 @@ ru: графов
 parent: graph_theory
 
 children: |
-  graph
   simple_graphs
   directed_graphs
   multigraphs
@@ -14,11 +13,11 @@ children: |
   planar_graphs
   acyclic_graphs
   graph_cuts
-  graph_sequence
+  graph_sequences
   graph_properties
   graph_representation
   graph_operations
-  graph_connectivity
+  graph_connectivities
   graph_algorithms
 
 max: |
