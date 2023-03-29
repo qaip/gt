@@ -5,11 +5,8 @@ ru: связности графа
 
 parent: graphs
 
-children: |
-  graph_connectivity
-
 max: |
-  graph_component
+  graph_connectivitie
 
 concepts: |
   concept_bridge
