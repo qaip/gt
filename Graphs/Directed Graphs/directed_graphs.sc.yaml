@@ -15,7 +15,6 @@ concepts: |
   arc
   vertex
   graph
-  directed_graph
   tournament_graph
   directed_forest
   directed_tree
