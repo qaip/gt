@@ -1,7 +1,7 @@
 type: domain
 system: shortest_paths
 en: Shortest Paths
-ru: Кратчайшие пути
+ru: кратчайших путей
 
 parent: graph_algorithms 
 
@@ -13,7 +13,6 @@ max: |
     shortest_path
     
 concepts: |
-    shortest_path
     dijkstra_algorithm
     floyd_warshall_algorithm
     
