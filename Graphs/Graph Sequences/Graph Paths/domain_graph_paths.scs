@@ -1,0 +1,69 @@
+section_subject_domain_of_graph_paths
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область путей графа] (* <- lang_ru;; *);
+	[Section. Subject Domain of Graph Paths] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_paths;
+	concept_graph_path;
+	concept_hamiltonian_path;
+	concept_path_length;
+	concept_graph_path_weight;
+	rrel_graph_path;
+	nrel_min_weight_path;
+	nrel_not_trivial_path;
+	nrel_shortest_path;
+	nrel_critical_path;;
+
+section_subject_domain_of_graph_paths=[*
+	subject_domain_of_graph_paths
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область путей графа] (* <- lang_ru;; *);
+		[Subject Domain of Graph Paths] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph_path;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_hamiltonian_path;
+		concept_path_length;
+		concept_graph_path_weight;
+
+	-> rrel_explored_relation:
+		rrel_graph_path;
+		nrel_min_weight_path;
+		nrel_not_trivial_path;
+		nrel_shortest_path;
+		nrel_critical_path;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graph_sequences;
+
+	=> nrel_private_subject_domain:
+		...;;
+*];;
+
+
+sc_node_class ->
+	concept_graph_path;
+	concept_hamiltonian_path;
+	concept_path_length;
+	concept_graph_path_weight;;
+
+sc_node_role_relation ->
+	rrel_graph_path;;
+
+sc_node_norole_relation ->
+	nrel_min_weight_path;
+	nrel_not_trivial_path;
+	nrel_shortest_path;
+	nrel_critical_path;;
