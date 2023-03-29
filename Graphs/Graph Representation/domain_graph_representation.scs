@@ -1,0 +1,69 @@
+section_subject_domain_of_graph_representation
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область представления графов] (* <- lang_ru;; *);
+	[Section. Subject Domain of Graph Representation] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_representation;
+	concept_graph;
+	concept_adjacency_list;
+	concept_incidence_list;
+	concept_adjacency_matrix;
+	concept_incidence_matrix;
+	concept_analytical_method;
+	concept_graphical_way;
+	...;
+	...;;
+
+section_subject_domain_of_graph_representation=[*
+	subject_domain_of_graph_representation
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область представления графов] (* <- lang_ru;; *);
+		[Subject Domain of Graph Representation] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_adjacency_list;
+		concept_incidence_list;
+		concept_adjacency_matrix;
+		concept_incidence_matrix;
+		concept_analytical_method;
+		concept_graphical_way;
+
+	-> rrel_explored_relation:
+		...;
+		...;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graphs;
+
+	=> nrel_private_subject_domain:
+		...;;
+*];;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_adjacency_list;
+	concept_incidence_list;
+	concept_adjacency_matrix;
+	concept_incidence_matrix;
+	concept_analytical_method;
+	concept_graphical_way;;
+
+sc_node_role_relation ->
+	...;;
+
+sc_node_norole_relation ->
+	...;;
