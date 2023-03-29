@@ -1,0 +1,57 @@
+section_subject_domain_of_dijkstra_algorithm
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область Алгоритм Дейкстры] (* <- lang_ru;; *);
+	[Section. Subject Domain of Dijkstra Algorithm] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_dijkstra_algorithm;
+	concept_dijkstra_algorithm;
+	concept_dijkstra_algorithm;
+	concept_visited_vertexes;
+...;
+...;;
+
+section_subject_domain_of_dijkstra_algorithm=[*
+	subject_domain_of_dijkstra_algorithm
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область Алгоритм Дейкстры] (* <- lang_ru;; *);
+		[Subject Domain of Dijkstra Algorithm] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_dijkstra_algorithm;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_dijkstra_algorithm;
+		concept_visited_vertexes;
+
+	-> rrel_explored_relation:
+...;
+...;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_shortest_paths;
+
+	=> nrel_private_subject_domain:
+...;;
+*];;
+
+
+sc_node_class ->
+	concept_dijkstra_algorithm;
+	concept_dijkstra_algorithm;
+	concept_visited_vertexes;;
+
+sc_node_role_relation ->
+...;;
+
+sc_node_norole_relation ->
+...;;
