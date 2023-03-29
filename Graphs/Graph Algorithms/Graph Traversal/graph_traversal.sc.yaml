@@ -6,8 +6,6 @@ ru: обхода графа
 parent: graph_algorithms
 
 childrean: |
-    breadth_first_search
-    depth_first_search
 
 max: |
     graph_traversal
