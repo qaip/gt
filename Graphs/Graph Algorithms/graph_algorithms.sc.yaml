@@ -1,7 +1,7 @@
 type: domain
 system: graph_algorithms
 en: Graph Alhorithms
-ru: Алгоритмы на графах
+ru: алгоритмов на графах
 
 parent: graphs
 
@@ -14,7 +14,6 @@ max: |
     graph_algorithm
     
 concepts: |
-    graph_algorithm
     graph_traversal
     shortest_paths
     tree_traversal
