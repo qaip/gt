@@ -48,7 +48,7 @@ section_subject_domain_of_subgraphs=[*
 		nrel_edge_induced_subgraph;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_simple_graphs;
+		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
 		...;;
