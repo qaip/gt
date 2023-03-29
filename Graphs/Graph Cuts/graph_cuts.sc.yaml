@@ -1,0 +1,30 @@
+type: domain
+system: graph_cuts
+en: Graph Cuts
+ru: сечений графа
+
+parent: graphs
+
+children: |
+  graph_minimum_cuts
+  graph_maximum_cuts
+  graph_sparsest_cuts
+  graph_cut_space
+  graph_splits
+
+max: |
+  graph_cut
+
+concepts: |
+  minimum_cut
+  maximum_cut
+  cut_space
+  vector_space
+  s_t_cut
+  bond
+  network_flow
+  max_flow_min_cut_theorem
+  max_cut_problem
+  
+nrels: |
+  graph_cut
