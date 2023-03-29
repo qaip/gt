@@ -1,0 +1,18 @@
+type: domain
+system: pre_order_traversal
+en: Pre-order traversal
+ru: Прямой обход
+
+parent: tree_traversal
+
+children: |
+
+max: |
+    pre_order_traversal
+
+concepts: |
+    pre_order_traversal
+
+rrels: |
+
+nrels: |

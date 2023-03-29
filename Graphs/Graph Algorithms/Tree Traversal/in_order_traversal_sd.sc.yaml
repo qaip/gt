@@ -1,0 +1,18 @@
+type: domain
+system: in_order_traversal
+en: In-order traversal
+ru: Центрированный обход
+
+parent: tree_traversal
+
+children: |
+
+max: |
+    in_order_traversal
+
+concepts: |
+    in_order_traversal
+
+rrels: |
+
+nrels: |
