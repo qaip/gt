@@ -1,0 +1,25 @@
+type: domain
+system: graph_path
+en: Subject domain of path
+ru: Предметная область путей
+parent: sequences
+children: |
+	hamiltonian_path
+max: |
+	graph
+concepts: |
+	arc
+	path
+	vertex
+rrels: |
+	path
+	arc
+	sequence
+	length_path
+	path_weight
+nrels: | 
+	adjacent_arcs
+	min_weight_path
+	not_trivial_path
+	shortest_path
+	critical_path
