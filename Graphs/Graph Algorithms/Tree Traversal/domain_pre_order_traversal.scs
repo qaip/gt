@@ -3,7 +3,7 @@ section_subject_domain_of_pre_order_traversal
 <- atomic_section;
 
 => nrel_main_idtf:
-	[Раздел. Предметная область Прямой обход] (* <- lang_ru;; *);
+	[Раздел. Предметная область прямого обхода] (* <- lang_ru;; *);
 	[Section. Subject Domain of Pre-order traversal] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
@@ -13,7 +13,7 @@ section_subject_domain_of_pre_order_traversal
 <- rrel_key_sc_element:
 	subject_domain_of_pre_order_traversal;
 	concept_pre_order_traversal;
-	concept_pre_order_traversal;
+...;
 ...;
 ...;;
 
@@ -22,14 +22,14 @@ section_subject_domain_of_pre_order_traversal=[*
 	<- sc_node_struct;
 	<- subject_domain;
 	=> nrel_main_idtf:
-		[Предметная область Прямой обход] (* <- lang_ru;; *);
+		[Предметная область прямого обхода] (* <- lang_ru;; *);
 		[Subject Domain of Pre-order traversal] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_pre_order_traversal;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_pre_order_traversal;
+...;
 
 	-> rrel_explored_relation:
 ...;
@@ -45,7 +45,7 @@ section_subject_domain_of_pre_order_traversal=[*
 
 sc_node_class ->
 	concept_pre_order_traversal;
-	concept_pre_order_traversal;;
+...;;
 
 sc_node_role_relation ->
 ...;;
