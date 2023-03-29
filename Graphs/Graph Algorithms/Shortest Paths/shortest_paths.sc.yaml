@@ -1,0 +1,24 @@
+type: domain
+system: shortest_paths
+en: Shortest Paths
+ru: Кратчайшие пути
+
+parent: graph_algorithms 
+
+childrean: |
+    dijkstra_algorithm
+    floyd_warshall_algorithm
+
+max: |
+    shortest_path
+    
+concepts: |
+    shortest_path
+    dijkstra_algorithm
+    floyd_warshall_algorithm
+    
+    
+rrels: |
+
+nrels: |
+    shortest_path
