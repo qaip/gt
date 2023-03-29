@@ -1,0 +1,25 @@
+type: domain
+system: graph_chain
+en: Subject domain of chains
+ru: Предметная область цепей
+parent: 
+	sequences
+children: |
+	hamiltonian_chains
+	alternating_chain
+	subchain
+	simple_chain
+max: |
+	sequences
+concepts: |
+	chain
+	arc
+	vertex
+	graph
+rrels: |
+	arc
+	chain
+	chain_weight
+nrels: | 
+	chain_in_the_digraph
+	adjacent_arcs
