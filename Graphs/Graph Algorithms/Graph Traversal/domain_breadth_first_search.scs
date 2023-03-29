@@ -7,15 +7,15 @@ section_subject_domain_of_breadth_first_search
 	[Section. Subject Domain of Breadth-first search] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-...
+	...
 };
 
 <- rrel_key_sc_element:
 	subject_domain_of_breadth_first_search;
 	concept_breadth_first_search;
-...;
-...;
-...;;
+	...;
+	...;
+	...;;
 
 section_subject_domain_of_breadth_first_search=[*
 	subject_domain_of_breadth_first_search
@@ -29,26 +29,26 @@ section_subject_domain_of_breadth_first_search=[*
 		concept_breadth_first_search;
 
 	-> rrel_not_maximum_studied_object_class:
-...;
+		...;
 
 	-> rrel_explored_relation:
-...;
-...;
+		...;
+		...;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_traversal;
 
 	=> nrel_private_subject_domain:
-...;;
+		...;;
 *];;
 
 
 sc_node_class ->
 	concept_breadth_first_search;
-...;;
+	...;;
 
 sc_node_role_relation ->
-...;;
+	...;;
 
 sc_node_norole_relation ->
-...;;
+	...;;

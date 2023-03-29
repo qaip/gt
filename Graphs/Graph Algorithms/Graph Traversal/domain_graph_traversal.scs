@@ -7,7 +7,7 @@ section_subject_domain_of_graph_traversal
 	[Section. Subject Domain of Graph traversal] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-...
+	...
 };
 
 <- rrel_key_sc_element:
@@ -17,8 +17,8 @@ section_subject_domain_of_graph_traversal
 	concept_breadth_first_search;
 	concept_depth_first_search;
 	concept_subtask_level;
-...;
-...;;
+	...;
+	...;;
 
 section_subject_domain_of_graph_traversal=[*
 	subject_domain_of_graph_traversal
@@ -38,14 +38,14 @@ section_subject_domain_of_graph_traversal=[*
 		concept_subtask_level;
 
 	-> rrel_explored_relation:
-...;
-...;
+		...;
+		...;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_algorithms;
 
 	=> nrel_private_subject_domain:
-...;;
+		...;;
 *];;
 
 
@@ -57,7 +57,7 @@ sc_node_class ->
 	concept_subtask_level;;
 
 sc_node_role_relation ->
-...;;
+	...;;
 
 sc_node_norole_relation ->
-...;;
+	...;;
