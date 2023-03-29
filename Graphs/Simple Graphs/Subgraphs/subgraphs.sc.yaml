@@ -1,0 +1,21 @@
+type: domain
+system: subgraph
+en: Subject Domain of Subgraph
+ru: подграфов
+parent: graphs
+children: |
+    induced_subgraph
+    isometric_subgraph
+max: |
+    subgraph
+concepts: |
+    bicoloured_subgraph
+    subgraph
+    isometric_subgraph
+rrels: |
+    subgraph
+nrels: |
+    induced_subgraph
+    vertex_adjacency
+    vertex_indused_subgraph
+    edge_induced_subgraph
