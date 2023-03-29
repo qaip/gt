@@ -19,8 +19,7 @@ section_subject_domain_of_graph_chains
 	concept_subchain;
 	rrel_chain_weight;
 	nrel_chain_in_the_digraph;
-	nrel_arcs_adjacency;
-	nrel_chain;;
+	nrel_arcs_adjacency;;
 
 section_subject_domain_of_graph_chains=[*
 	subject_domain_of_graph_chains
@@ -43,10 +42,9 @@ section_subject_domain_of_graph_chains=[*
 		rrel_chain_weight;
 		nrel_chain_in_the_digraph;
 		nrel_arcs_adjacency;
-		nrel_chain;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_sequence;
+		subject_domain_of_graph_sequences;
 
 	=> nrel_private_subject_domain:
 		...;;
@@ -65,5 +63,4 @@ sc_node_role_relation ->
 
 sc_node_norole_relation ->
 	nrel_chain_in_the_digraph;
-	nrel_arcs_adjacency;
-	nrel_chain;;
+	nrel_arcs_adjacency;;
