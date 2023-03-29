@@ -1,27 +1,30 @@
 type: domain
-system: graph_cycle
-en: Subject Domain of Cycles
+system: graph_cycles
+en: Graph Cycles
 ru: циклов
-parent: 
-    graph_sequence
-children: |
-    hamiltonian_cycles
-    eulerian_cycle
-    basic_cycle
-    elementary_cycle
+
+parent: graph_sequences
+
 max: |
-    graph
+    graph_cycles
+
 concepts: |
     graph_cycle
     cyclic_graph
     chorde
-    cycle
+    graph_cycles
+    hamiltonian_cycles
+    eulerian_cycle
+    basic_cycle
+    elementary_cycle
+
 rrels: |
     graph_sequence
-    cycle
+    graph_cycles
     length_of_a_cycle
     girth
     cycle_weight
+
 nrels: |
     minimum_weight_cycle
     adjacent_arcs
