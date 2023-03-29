@@ -7,8 +7,7 @@ section_subject_domain_of_graph_operations
 	[Section. Subject Domain of Graph Operations] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_graph_operations;
-	section_subject_domain_of_dual_graph
+	section_subject_domain_of_dual_graphs
 };
 
 <- rrel_key_sc_element:
@@ -54,8 +53,7 @@ section_subject_domain_of_graph_operations=[*
 		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_graph_operations;
-		subject_domain_of_dual_graph;;
+		subject_domain_of_dual_graphs;;
 *];;
 
 
