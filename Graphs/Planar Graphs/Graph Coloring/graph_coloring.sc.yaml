@@ -9,7 +9,6 @@ max: |
   graph_coloring
 
 concepts: |
-  graph_coloring
   vertex_coloring
   edge_coloring
   color_class
