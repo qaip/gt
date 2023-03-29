@@ -1,21 +1,25 @@
 type: domain
 system: graph_path
-en: Subject Domain of Path
+en: Graph Path
 ru: путей
-parent: graph_sequence
+
+parent: graph_sequences
+
 children: |
     hamiltonian_path
+
 max: |
-    graph
-concepts: |
     path
+
+concepts: |
+    hamiltonian_path
+
 rrels: |
     path
-    sequence
     length_path
     path_weight
+
 nrels: | 
-    adjacent_arcs
     min_weight_path
     not_trivial_path
     shortest_path
