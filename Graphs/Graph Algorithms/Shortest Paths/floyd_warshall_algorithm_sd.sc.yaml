@@ -1,0 +1,18 @@
+type: domain
+system: floyd_warshall_algorithm
+en: Floyd-Warshall Algorithm
+ru: Алгоритм Флойда — Уоршелла
+
+parent: shortest_paths
+
+children: |
+
+max: |
+    floyd_warshall_algorithm
+
+concepts: |
+    floyd_warshall_algorithm
+
+rrels: |
+
+nrels: |
