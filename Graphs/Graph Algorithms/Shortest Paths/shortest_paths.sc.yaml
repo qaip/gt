@@ -6,8 +6,6 @@ ru: кратчайших путей
 parent: graph_algorithms 
 
 childrean: |
-    dijkstra_algorithm
-    floyd_warshall_algorithm
 
 max: |
     shortest_path
