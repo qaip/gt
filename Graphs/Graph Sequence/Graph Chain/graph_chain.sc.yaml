@@ -1,7 +1,7 @@
 type: domain
 system: graph_chain
 en: Subject Domain of Chains
-ru: предметная область цепей
+ru: цепей
 parent: 
     graph_sequence
 children: |
