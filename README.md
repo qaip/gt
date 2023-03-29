@@ -15,6 +15,11 @@
         - Subject Domain of Graph Coloring
     - Subject Domain of Acyclic Graphs
     - Subject Domain of Graph Cuts
+        - Subject Domain of Graph Minimum Cuts
+        - Subject Domain of Graph Maximum Cuts
+        - Subject Domain of Graph Sparsest Cuts
+        - Subject Domain of Graph Cut Space
+        - Subject Domain of Graph Splits
     - Subject Domain of Graph Sequence
         - Subject Domain of Graph Paths
         - Subject Domain of Graph Cycle
@@ -124,9 +129,12 @@
   - Subject Domain of Acyclic Graphs
   - Subject Domain of Trees
   - Subject Domain of Binary Trees
-  - Subject Domain of Quad Trees
-  - Subject Domain of Heaps
   - Subject Domain of Graph Cuts
+  - Subject Domain of Graph Minimum Cuts
+  - Subject Domain of Graph Maximum Cuts
+  - Subject Domain of Graph Sparsest Cuts
+  - Subject Domain of Graph Cut Space
+  - Subject Domain of Graph Splits
 - Shurmel Konstantin:
   - Subject Domain of Planar Graphs
   - Subject Domain of Graph Embeddings
@@ -135,6 +143,8 @@
   - Subject Domain of Weighted Directed Graphs
   - Subject Domain of Graph Representation
   - Subject Domain of Graph Properties
+  - Subject Domain of Quad Trees
+  - Subject Domain of Heaps
 - Yakubovskiy Kirill:
   - Subject Domain of Graph Algorithms
   - Subject Domain of Graph Traversal
