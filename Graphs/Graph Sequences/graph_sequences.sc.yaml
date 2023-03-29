@@ -21,7 +21,6 @@ concepts: |
 
 rrels: |
     length_of_sequence
-    sequence
 
 nrels: |
     arcs_adjacency
