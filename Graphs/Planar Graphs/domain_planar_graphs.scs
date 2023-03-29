@@ -22,7 +22,7 @@ section_subject_domain_of_planar_graphs
 	concept_external_planar_graph;
 	concept_graph_Halina;
 	concept_external_graph  ;
-	rrel_tree;
+	...;
 	nrel_isomorphism;
 	nrel_neighboring vertex;
 	nrel_intersection;
@@ -50,7 +50,7 @@ section_subject_domain_of_planar_graphs=[*
 		concept_external_graph  ;
 
 	-> rrel_explored_relation:
-		rrel_tree;
+		...;
 		nrel_isomorphism;
 		nrel_neighboring vertex;
 		nrel_intersection;
@@ -77,7 +77,7 @@ sc_node_class ->
 	concept_external_graph  ;;
 
 sc_node_role_relation ->
-	rrel_tree;;
+	...;;
 
 sc_node_norole_relation ->
 	nrel_isomorphism;
