@@ -1,0 +1,18 @@
+type: domain
+system: breadth_first_search
+en: Breadth-first search
+ru: Поиск в ширину
+
+parent: graph_traversal 
+
+children: |
+
+max: |
+    breadth_first_search
+
+concepts: |
+    breadth_first_search
+
+rrels: |
+
+nrels: |

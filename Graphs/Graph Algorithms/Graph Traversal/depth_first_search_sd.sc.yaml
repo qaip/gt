@@ -1,0 +1,18 @@
+type: domain
+system: depth_first_search
+en: Depth-first search
+ru: Поиск в глубину
+
+parent: graph_traversal 
+
+children: |
+
+max: |
+    depth_first_search
+
+concepts: |
+    depth_first_search
+
+rrels: |
+
+nrels: |
