@@ -1,7 +1,7 @@
 type: domain
 system: planar_graphs
-en: planar graphs
-ru: планарных графов
+en: Planar Graphs
+ru: Планарных Графов
 
 parent: graphs
 
