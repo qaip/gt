@@ -1,18 +1,18 @@
 section_subject_domain_of_graph_connectivities
 
-<- non_atomic_section;
+<- atomic_section;
 
 => nrel_main_idtf:
 	[Раздел. Предметная область связности графа] (* <- lang_ru;; *);
 	[Section. Subject Domain of Graph Connectivities] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_graph_connectivity
+	...
 };
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_connectivities;
-	concept_graph_component;
+	concept_graph_connectivitie;
 	concept_concept_bridge;
 	concept_non_separable_graph;
 	concept_separable_graph;
@@ -36,7 +36,7 @@ section_subject_domain_of_graph_connectivities=[*
 		[Subject Domain of Graph Connectivities] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
-		concept_graph_component;
+		concept_graph_connectivitie;
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_concept_bridge;
@@ -59,12 +59,12 @@ section_subject_domain_of_graph_connectivities=[*
 		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_graph_connectivity;;
+		...;;
 *];;
 
 
 sc_node_class ->
-	concept_graph_component;
+	concept_graph_connectivitie;
 	concept_concept_bridge;
 	concept_non_separable_graph;
 	concept_separable_graph;
