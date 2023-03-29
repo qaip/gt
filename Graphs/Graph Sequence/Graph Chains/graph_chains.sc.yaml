@@ -3,7 +3,7 @@ system: graph_chains
 en: Graph Chains
 ru: цепей графа
 
-parent: graph_sequence
+parent: graph_sequences
 
 max: |
     chain
@@ -20,4 +20,3 @@ rrels: |
 nrels: | 
     chain_in_the_digraph
     arcs_adjacency
-    chain
