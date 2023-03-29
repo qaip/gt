@@ -1,7 +1,7 @@
 type: domain
 system: graphs_embeddings
 en: Graph Embedding
-ru: Вложений графов
+ru: Вложений Графов
 
 parent: planar_graphs
 
