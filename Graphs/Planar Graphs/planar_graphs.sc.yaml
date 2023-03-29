@@ -1,19 +1,18 @@
 type: domain
 system: planar_graphs
-en: Planar graphs
+en: planar graphs
 ru: планарных графов
 
 parent: graphs
 
 children: |
-  Graph Embeddings
-  Graph Coloring
+  graphs_embeddings
+  graphs_coloring
 
 max: |
   planar_graph
 
 concepts: |
-  planar_graph
   triangle
   plane
   triangular_graph
