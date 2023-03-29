@@ -1,0 +1,23 @@
+type: domain
+system: graph_traversal 
+en: Graph traversal
+ru: Обход графа
+
+parent: graph_algorithms
+
+childrean: |
+    breadth_first_search
+    depth_first_search
+
+max: |
+    graph_traversal
+    
+concepts: |
+    graph_traversal
+    breadth_first_search
+    depth_first_search
+    subtask_level
+    
+rrels: |
+
+nrels: |
