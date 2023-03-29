@@ -1,0 +1,30 @@
+type: domain
+system: graph_connectivity
+en: Graph Connectivity
+ru: связности графа
+
+parent: graphs
+
+children: |
+  graph_connectivity
+
+max: |
+  graph
+
+concepts: |
+  concept_bridge
+  non_separable_graph
+  separable_graph
+  trivial_graph
+  block_cutpoint_graph
+
+
+rrels: |
+
+nrels: |
+  vertex_connectivity
+  edge_connectivity
+  weakly_connected_component
+  strongly_connected_component
+  graph_block
+  
