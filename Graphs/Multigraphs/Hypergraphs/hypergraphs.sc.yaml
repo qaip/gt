@@ -6,7 +6,7 @@ ru: гиперграфов
 parent: multigraphs
 
 max: |
-    hypergraphs
+    hypergraph
 
 nrels: |
     vertexes_of_edge_set
