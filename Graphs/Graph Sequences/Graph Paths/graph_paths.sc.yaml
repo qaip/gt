@@ -1,23 +1,23 @@
 type: domain
 system: graph_paths
 en: Graph Paths
-ru: путей
+ru: путей графа
 
 parent: graph_sequences
 
 max: |
-    path
+  graph_path
 
 concepts: |
-    hamiltonian_path
+  hamiltonian_path
+  path_length
+  graph_path_weight
 
 rrels: |
-    path
-    length_path
-    path_weight
+  graph_path
 
-nrels: | 
-    min_weight_path
-    not_trivial_path
-    shortest_path
-    critical_path
+nrels: |
+  min_weight_path
+  not_trivial_path
+  shortest_path
+  critical_path
