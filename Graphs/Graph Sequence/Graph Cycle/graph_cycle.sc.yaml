@@ -1,27 +1,23 @@
 type: domain
 system: graph_cycle
-en: Subject domain of cycles
-ru: Предметная область циклов
+en: Subject Domain of Cycles
+ru: предметная область циклов
 parent: 
-	sequences
+	graph_sequence
 children: |
 	hamiltonian_cycles
 	eulerian_cycle
 	basic_cycle
 	elementary_cycle
 max: |
-	sequences
+	graph
 concepts: |
 	graph_cycle
 	cyclic_graph
 	chorde
-	arc
-	vertex
 	cycle
-	graph
 rrels: |
-	sequences
-	arc
+	graph_sequence
 	cycle
 	length_of_a_cycle
 	girth
