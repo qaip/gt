@@ -68,6 +68,9 @@ section_subject_domain_of_trees
 	concept_van_emde_boas_tree;
 	concept_vantage_point_tree;
 	concept_bipartite_graph;
+	concept_hypertree;
+	concept_multitree;
+	concept_pseudoforest;
 	...;
 	...;;
 
@@ -136,6 +139,9 @@ section_subject_domain_of_trees=[*
 		concept_van_emde_boas_tree;
 		concept_vantage_point_tree;
 		concept_bipartite_graph;
+		concept_hypertree;
+		concept_multitree;
+		concept_pseudoforest;
 
 	-> rrel_explored_relation:
 		...;
@@ -205,7 +211,10 @@ sc_node_class ->
 	concept_undirected_tree;
 	concept_van_emde_boas_tree;
 	concept_vantage_point_tree;
-	concept_bipartite_graph;;
+	concept_bipartite_graph;
+	concept_hypertree;
+	concept_multitree;
+	concept_pseudoforest;;
 
 sc_node_role_relation ->
 	...;;
