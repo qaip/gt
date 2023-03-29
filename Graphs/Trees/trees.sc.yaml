@@ -67,3 +67,6 @@ concepts: |
   van_emde_boas_tree
   vantage_point_tree
   bipartite_graph
+  hypertree
+  multitree
+  pseudoforest
