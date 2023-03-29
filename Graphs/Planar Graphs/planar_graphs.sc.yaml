@@ -24,6 +24,6 @@ concepts: |
 
 nrels: |
   isomorphism
-  neighboring vertex
+  neighboring_vertex
   intersection
   laying

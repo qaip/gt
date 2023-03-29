@@ -12,7 +12,7 @@ concepts: |
   vertex_coloring
   edge_coloring
   color_class
-  сhromatic_polynomial
+  chromatic_polynomial
   coloring_areas
   total_coloring
   chromatic_number
