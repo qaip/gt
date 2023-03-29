@@ -6,7 +6,7 @@ ru: ориентированных графов
 parent: graphs
 
 children: |
-  Weighted Directed Graphs
+  weighted_directed_graphs
 
 max: |
   directed_graph
