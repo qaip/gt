@@ -22,9 +22,6 @@ concepts: |
   graph_Halina
   external_graph  
 
-rrels: |
-  tree
-
 nrels: |
   isomorphism
   neighboring vertex
