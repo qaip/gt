@@ -16,7 +16,7 @@ section_subject_domain_of_graphs_coloring
 	concept_vertex_coloring;
 	concept_edge_coloring;
 	concept_color_class;
-	concept_сhromatic_polynomial;
+	concept_chromatic_polynomial;
 	concept_coloring_areas;
 	concept_total_coloring;
 	concept_chromatic_number;
@@ -40,7 +40,7 @@ section_subject_domain_of_graphs_coloring=[*
 		concept_vertex_coloring;
 		concept_edge_coloring;
 		concept_color_class;
-		concept_сhromatic_polynomial;
+		concept_chromatic_polynomial;
 		concept_coloring_areas;
 		concept_total_coloring;
 		concept_chromatic_number;
@@ -64,7 +64,7 @@ sc_node_class ->
 	concept_vertex_coloring;
 	concept_edge_coloring;
 	concept_color_class;
-	concept_сhromatic_polynomial;
+	concept_chromatic_polynomial;
 	concept_coloring_areas;
 	concept_total_coloring;
 	concept_chromatic_number;
