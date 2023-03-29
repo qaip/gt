@@ -1,0 +1,22 @@
+type: domain
+system: graph_operations
+en: Graph Operations
+ru: операции над графами
+
+parent: graphs
+
+children: |
+  dual_graphs
+
+max: |
+  graph_operation
+
+nrels: |
+  graph_union
+  intersection_of_graph
+  cartesian_sum_of_graphs
+  annular_sum_of_graphs
+  product_of_graphs
+  symmetric_difference_of_graphs
+  difference_of_graphs
+  complement_og_graph
