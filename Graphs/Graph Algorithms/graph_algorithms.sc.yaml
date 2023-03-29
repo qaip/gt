@@ -1,0 +1,28 @@
+type: domain
+system: graph_algorithms
+en: Graph Alhorithms
+ru: Алгоритмы на графах
+
+parent: graphs
+
+children: |
+    graph_traversal
+    shortest_paths
+    tree_traversal
+    
+max: |
+    graph_algorithm
+    
+concepts: |
+    graph_algorithm
+    graph_traversal
+    shortest_paths
+    tree_traversal
+    algorithm_complexity
+
+rrels: |
+    
+nrels: |
+    graph_traversal
+    shortest_paths
+    tree_traversal
