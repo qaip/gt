@@ -6,7 +6,7 @@ ru: маршрутов графа
 parent: graphs
 
 children: |
-  graph_path
+  graph_paths
   graph_chains
   graph_cycles
 
