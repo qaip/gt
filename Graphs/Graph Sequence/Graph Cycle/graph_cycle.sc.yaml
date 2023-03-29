@@ -1,7 +1,7 @@
 type: domain
 system: graph_cycle
 en: Subject Domain of Cycles
-ru: предметная область циклов
+ru: циклов
 parent: 
     graph_sequence
 children: |
