@@ -11,8 +11,8 @@ max: |
 concepts: |
   complete_bipartite_graph
   graph_split_decomposition
-  distance_hereditary_graphs
-  circle_graphs
+  distance_hereditary_graph
+  circle_graph
 
 nrels: |
   split_decomposition
