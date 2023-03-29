@@ -1,0 +1,20 @@
+type: domain
+system: hypergraphs
+en: Hypergraphs
+ru: гиперграфов
+
+parent: multigraphs
+
+children: |
+
+max: |
+    hypergraphs
+
+concepts: |
+
+rrels: |
+
+nrels: |
+    vertexes_of_edge_set
+    transvinsal
+
