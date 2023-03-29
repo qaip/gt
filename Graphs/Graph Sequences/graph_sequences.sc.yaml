@@ -6,22 +6,19 @@ ru: маршрутов графа
 parent: graphs
 
 children: |
-    graph_path
-    graph_chains
-    graph_cycles
+  graph_path
+  graph_chains
+  graph_cycles
 
 max: |
-    graphs
+  graph_sequence
 
 concepts: |
-    sequence
-    tightened_graph
-    spanning_sequence
-    directed_sequence
-
-rrels: |
-    length_of_sequence
+  tightened_graph
+  spanning_sequence
+  directed_sequence
+  length_of_sequence
 
 nrels: |
-    arcs_adjacency
-    semiroute_in_the_digraph
+  arcs_adjacency
+  semiroute_in_the_digraph
