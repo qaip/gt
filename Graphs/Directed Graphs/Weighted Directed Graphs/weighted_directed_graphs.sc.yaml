@@ -1,7 +1,7 @@
 type: domain
 system: weighted_directed_graphs
-en: Weighted Directed graphs
-ru: взвешенных ориентированных графов
+en: Weighted Directed Graphs
+ru: Взвешенных Ориентированных Графов
 
 parent: directed_graphs
 
