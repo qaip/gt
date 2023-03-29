@@ -19,7 +19,7 @@ section_subject_domain_of_graph_algorithms
 	concept_shortest_paths;
 	concept_tree_traversal;
 	concept_algorithm_complexity;
-...;
+	...;
 	nrel_graph_traversal;
 	nrel_shortest_paths;
 	nrel_tree_traversal;;
@@ -42,7 +42,7 @@ section_subject_domain_of_graph_algorithms=[*
 		concept_algorithm_complexity;
 
 	-> rrel_explored_relation:
-...;
+		...;
 		nrel_graph_traversal;
 		nrel_shortest_paths;
 		nrel_tree_traversal;
@@ -65,7 +65,7 @@ sc_node_class ->
 	concept_algorithm_complexity;;
 
 sc_node_role_relation ->
-...;;
+	...;;
 
 sc_node_norole_relation ->
 	nrel_graph_traversal;
