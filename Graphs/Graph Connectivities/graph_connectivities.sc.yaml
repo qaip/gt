@@ -6,7 +6,7 @@ ru: связности графа
 parent: graphs
 
 max: |
-  graph_connectivitie
+  graph_connectivity
 
 concepts: |
   concept_bridge
