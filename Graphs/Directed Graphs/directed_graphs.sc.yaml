@@ -1,6 +1,6 @@
 type: domain
 system: directed_graphs
-en: Directed graphs
+en: directed graphs
 ru: ориентированных графов
 
 parent: graphs
