@@ -1,0 +1,223 @@
+section_subject_domain_of_trees
+
+<- non_atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область деревьев] (* <- lang_ru;; *);
+	[Section. Subject Domain of Trees] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	section_subject_domain_of_binary_trees;
+	section_subject_domain_of_quad_trees;
+	section_subject_domain_of_heaps
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_trees;
+	concept_tree;
+	concept_2_3_tree;
+	concept_aa_tree;
+	concept_avl_tree;
+	concept_b_plus_tree;
+	concept_b_tree;
+	concept_balanced_tree;
+	concept_bicentre_tree;
+	concept_bichromatic_graph;
+	concept_binomial_tree;
+	concept_brother_tree;
+	concept_bsp_tree;
+	concept_cartesian_tree;
+	concept_cover_tree;
+	concept_dancing_tree;
+	concept_decision_tree;
+	concept_fenwick_tree;
+	concept_fibonacci_tree;
+	concept_forest;
+	concept_growing_tree;
+	concept_input_tree;
+	concept_irreducible_tree;
+	concept_justified_tree;
+	concept_k_d_tree;
+	concept_left_linear_tree;
+	concept_matrix_tree;
+	concept_minimum_spanning_tree;
+	concept_n_ary_tree;
+	concept_octree;
+	concept_output_tree;
+	concept_ordered_tree;
+	concept_perfectly_balanced_tree;
+	concept_polytree;
+	concept_polyforest;
+	concept_r_tree;
+	concept_radix_tree;
+	concept_range_maximum_tree;
+	concept_range_sum_query;
+	concept_red_black_tree;
+	concept_region_quadtree;
+	concept_rooted_tree;
+	concept_segment_tree;
+	concept_self_balancing_search_tree;
+	concept_sorting_tree;
+	concept_spanning_tree;
+	concept_star_tree;
+	concept_suffix_tree;
+	concept_t_tree;
+	concept_ternary_search_tree;
+	concept_trie;
+	concept_undirected_tree;
+	concept_van_emde_boas_tree;
+	concept_vantage_point_tree;
+	concept_bipartite_graph;
+	concept_hypertree;
+	concept_multitree;
+	concept_pseudoforest;
+	...;
+	...;;
+
+section_subject_domain_of_trees=[*
+	subject_domain_of_trees
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область деревьев] (* <- lang_ru;; *);
+		[Subject Domain of Trees] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_tree;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_2_3_tree;
+		concept_aa_tree;
+		concept_avl_tree;
+		concept_b_plus_tree;
+		concept_b_tree;
+		concept_balanced_tree;
+		concept_bicentre_tree;
+		concept_bichromatic_graph;
+		concept_binomial_tree;
+		concept_brother_tree;
+		concept_bsp_tree;
+		concept_cartesian_tree;
+		concept_cover_tree;
+		concept_dancing_tree;
+		concept_decision_tree;
+		concept_fenwick_tree;
+		concept_fibonacci_tree;
+		concept_forest;
+		concept_growing_tree;
+		concept_input_tree;
+		concept_irreducible_tree;
+		concept_justified_tree;
+		concept_k_d_tree;
+		concept_left_linear_tree;
+		concept_matrix_tree;
+		concept_minimum_spanning_tree;
+		concept_n_ary_tree;
+		concept_octree;
+		concept_output_tree;
+		concept_ordered_tree;
+		concept_perfectly_balanced_tree;
+		concept_polytree;
+		concept_polyforest;
+		concept_r_tree;
+		concept_radix_tree;
+		concept_range_maximum_tree;
+		concept_range_sum_query;
+		concept_red_black_tree;
+		concept_region_quadtree;
+		concept_rooted_tree;
+		concept_segment_tree;
+		concept_self_balancing_search_tree;
+		concept_sorting_tree;
+		concept_spanning_tree;
+		concept_star_tree;
+		concept_suffix_tree;
+		concept_t_tree;
+		concept_ternary_search_tree;
+		concept_trie;
+		concept_undirected_tree;
+		concept_van_emde_boas_tree;
+		concept_vantage_point_tree;
+		concept_bipartite_graph;
+		concept_hypertree;
+		concept_multitree;
+		concept_pseudoforest;
+
+	-> rrel_explored_relation:
+		...;
+		...;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graphs;
+
+	=> nrel_private_subject_domain:
+		subject_domain_of_binary_trees;
+		subject_domain_of_quad_trees;
+		subject_domain_of_heaps;;
+*];;
+
+
+sc_node_class ->
+	concept_tree;
+	concept_2_3_tree;
+	concept_aa_tree;
+	concept_avl_tree;
+	concept_b_plus_tree;
+	concept_b_tree;
+	concept_balanced_tree;
+	concept_bicentre_tree;
+	concept_bichromatic_graph;
+	concept_binomial_tree;
+	concept_brother_tree;
+	concept_bsp_tree;
+	concept_cartesian_tree;
+	concept_cover_tree;
+	concept_dancing_tree;
+	concept_decision_tree;
+	concept_fenwick_tree;
+	concept_fibonacci_tree;
+	concept_forest;
+	concept_growing_tree;
+	concept_input_tree;
+	concept_irreducible_tree;
+	concept_justified_tree;
+	concept_k_d_tree;
+	concept_left_linear_tree;
+	concept_matrix_tree;
+	concept_minimum_spanning_tree;
+	concept_n_ary_tree;
+	concept_octree;
+	concept_output_tree;
+	concept_ordered_tree;
+	concept_perfectly_balanced_tree;
+	concept_polytree;
+	concept_polyforest;
+	concept_r_tree;
+	concept_radix_tree;
+	concept_range_maximum_tree;
+	concept_range_sum_query;
+	concept_red_black_tree;
+	concept_region_quadtree;
+	concept_rooted_tree;
+	concept_segment_tree;
+	concept_self_balancing_search_tree;
+	concept_sorting_tree;
+	concept_spanning_tree;
+	concept_star_tree;
+	concept_suffix_tree;
+	concept_t_tree;
+	concept_ternary_search_tree;
+	concept_trie;
+	concept_undirected_tree;
+	concept_van_emde_boas_tree;
+	concept_vantage_point_tree;
+	concept_bipartite_graph;
+	concept_hypertree;
+	concept_multitree;
+	concept_pseudoforest;;
+
+sc_node_role_relation ->
+	...;;
+
+sc_node_norole_relation ->
+	...;;

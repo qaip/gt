@@ -1,0 +1,23 @@
+type: domain
+system: graph_properties
+en: Graph Properties
+ru: свойств графов
+
+parent: graphs
+
+max: |
+  graph
+
+rrels: |
+  multiple_edge
+
+nrels: |
+  reflexivity
+  anti_reflexivity
+  cyclicity
+  acyclicity
+  eccentricity
+  rib_weight
+  isomorphism
+  multiple_edge
+  chromatic_number

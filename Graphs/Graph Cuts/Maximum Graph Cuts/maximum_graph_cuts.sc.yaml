@@ -1,0 +1,18 @@
+type: domain
+system: maximum_graph_cuts
+en: Maximum Graph Cuts
+ru: максимальных разрезов графа
+
+parent: graph_cuts
+
+max: |
+  maximum_graph_cut
+
+concepts: |
+  max_cut_problem
+  bipartite_subgraph
+  weighted_max_cut
+  weighted_max_cut_problem
+
+nrels: |
+  graph_cut
