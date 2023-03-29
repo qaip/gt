@@ -1,0 +1,23 @@
+type: domain
+system: dual_graphs
+en: Dual Graph
+ru: Двойственный граф
+
+parent: graph_operations
+
+children: |
+  dual_graphs
+
+max: |
+  dual_graph
+
+concepts: |
+  self_dual_graph
+
+rrels: |
+
+nrels: |
+  abstract_dual_graph
+  self_dual_graph
+  dual_graph
+  product_of_graphs
