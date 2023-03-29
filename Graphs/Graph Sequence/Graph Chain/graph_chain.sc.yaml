@@ -1,5 +1,5 @@
 type: domain
-system: graph_chain
+system: graph_chains
 en: Graph Chains
 ru: цепей графа
 
@@ -15,7 +15,6 @@ concepts: |
     subchain
 
 rrels: |
-    arc
     chain_weight
 
 nrels: | 
