@@ -1,6 +1,6 @@
 type: domain
 system: graph_chain
-en: Chains
+en: Graph Chains
 ru: цепей графа
 
 parent: graph_sequence
