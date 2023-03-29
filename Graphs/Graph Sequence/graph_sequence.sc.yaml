@@ -1,19 +1,19 @@
 type: domain
 system: graph_sequence
-en: Subject domain of sequences
-ru: Предметная область маршрутов
+en: Subject Domain of Sequences
+ru: предметная область маршрутов
 parent: graphs
 children: |
-	path
-	chains
-	loops
+	graph_path
+	graph_chains
+	graph_cycles
 	spanning_sequence
 	directed_sequence
 max: |
-	graph
+	graphs
 concepts: |
 	chain
-	loop
+	cycle
 	sequence
 	path
 	tightened_graph
@@ -24,7 +24,7 @@ rrels: |
 	length_of_sequence
 	sequence
 	path
-	loop
+	cycle
 	chain
 nrels: |
 	adjacent_arcs
