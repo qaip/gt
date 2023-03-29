@@ -6,7 +6,6 @@ ru: операции над графами
 parent: graphs
 
 children: |
-  graph_operations
   dual_graph
 
 max: |
