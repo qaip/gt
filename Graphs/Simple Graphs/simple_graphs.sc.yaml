@@ -8,9 +8,15 @@ parent: graphs
 max: |
     simple_graph
 
+concepts: |
+    vertex
+    arc
+    edge
+
 rrels: |
     vertex
-    arcs
+    arc
+    edge
 
 nrels: |
     arcs_adjacency
