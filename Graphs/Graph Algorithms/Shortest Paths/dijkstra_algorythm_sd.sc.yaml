@@ -1,7 +1,7 @@
 type: domain
 system: dijkstra_algorithm
 en: Dijkstra Algorithm
-ru: Алгоритм Дейкстры
+ru: алгоритма Дейкстры
 
 parent: shortest_paths
 
@@ -11,9 +11,9 @@ max: |
     dijkstra_algorithm
 
 concepts: |
-    dijkstra_algorithm
     visited_vertexes
 
 rrels: |
 
 nrels: |
+
