@@ -1,0 +1,84 @@
+section_subject_domain_of_graph_connectivities
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область связности графа] (* <- lang_ru;; *);
+	[Section. Subject Domain of Graph Connectivities] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_connectivities;
+	concept_graph_connectivity;
+	concept_concept_bridge;
+	concept_non_separable_graph;
+	concept_separable_graph;
+	concept_trivial_graph;
+	concept_block_cutpoint_graph;
+	concept_weakly_connected_component;
+	concept_strongly_connected_component;
+	...;
+	nrel_vertex_connectivity;
+	nrel_edge_connectivity;
+	nrel_weakly_connected_component;
+	nrel_strongly_connected_component;
+	nrel_graph_block;;
+
+section_subject_domain_of_graph_connectivities=[*
+	subject_domain_of_graph_connectivities
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область связности графа] (* <- lang_ru;; *);
+		[Subject Domain of Graph Connectivities] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph_connectivity;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_concept_bridge;
+		concept_non_separable_graph;
+		concept_separable_graph;
+		concept_trivial_graph;
+		concept_block_cutpoint_graph;
+		concept_weakly_connected_component;
+		concept_strongly_connected_component;
+
+	-> rrel_explored_relation:
+		...;
+		nrel_vertex_connectivity;
+		nrel_edge_connectivity;
+		nrel_weakly_connected_component;
+		nrel_strongly_connected_component;
+		nrel_graph_block;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graphs;
+
+	=> nrel_private_subject_domain:
+		...;;
+*];;
+
+
+sc_node_class ->
+	concept_graph_connectivity;
+	concept_concept_bridge;
+	concept_non_separable_graph;
+	concept_separable_graph;
+	concept_trivial_graph;
+	concept_block_cutpoint_graph;
+	concept_weakly_connected_component;
+	concept_strongly_connected_component;;
+
+sc_node_role_relation ->
+	...;;
+
+sc_node_norole_relation ->
+	nrel_vertex_connectivity;
+	nrel_edge_connectivity;
+	nrel_weakly_connected_component;
+	nrel_strongly_connected_component;
+	nrel_graph_block;;
