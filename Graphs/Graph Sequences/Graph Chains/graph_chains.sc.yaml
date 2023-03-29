@@ -6,7 +6,7 @@ ru: цепей графа
 parent: graph_sequences
 
 max: |
-    chain
+    graph_chain
 
 concepts: |
     simple_chain
