@@ -9,7 +9,6 @@ max: |
   weighted_directed_graph
 
 concepts: |
-  weighted_directed_graph
   weighted_edge  
 
 rrels: |
