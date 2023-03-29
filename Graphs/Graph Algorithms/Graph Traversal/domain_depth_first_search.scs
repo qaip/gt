@@ -1,0 +1,54 @@
+section_subject_domain_of_depth_first_search
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область Поиск в глубину] (* <- lang_ru;; *);
+	[Section. Subject Domain of Depth-first search] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_depth_first_search;
+	concept_depth_first_search;
+	concept_depth_first_search;
+...;
+...;;
+
+section_subject_domain_of_depth_first_search=[*
+	subject_domain_of_depth_first_search
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область Поиск в глубину] (* <- lang_ru;; *);
+		[Subject Domain of Depth-first search] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_depth_first_search;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_depth_first_search;
+
+	-> rrel_explored_relation:
+...;
+...;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graph_traversal;
+
+	=> nrel_private_subject_domain:
+...;;
+*];;
+
+
+sc_node_class ->
+	concept_depth_first_search;
+	concept_depth_first_search;;
+
+sc_node_role_relation ->
+...;;
+
+sc_node_norole_relation ->
+...;;
