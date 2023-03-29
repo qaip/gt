@@ -1,0 +1,17 @@
+type: domain
+system: simple_graphs
+en: Simple Graphs
+ru: простого графа
+
+parent: graphs
+
+max: |
+    simple_graph
+
+rrels: |
+    vertex
+    arcs
+
+nrels: |
+    arcs_adjacency
+    parallelity
