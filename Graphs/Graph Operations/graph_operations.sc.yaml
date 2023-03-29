@@ -12,10 +12,6 @@ children: |
 max: |
   graph_operation
 
-concepts: |
-  
-rrels: |
-
 nrels: |
   graph_union
   intersection_of_graph
