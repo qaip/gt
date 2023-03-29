@@ -6,8 +6,6 @@ ru: обхода дерева
 parent: graph_algorithms
 
 childrean: |
-    pre_order_traversal
-    in_order_traversal
 
 max: |
     tree_traversal
