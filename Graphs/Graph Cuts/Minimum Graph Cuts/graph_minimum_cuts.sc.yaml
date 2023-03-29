@@ -14,6 +14,7 @@ concepts: |
   segmentation_based_object_categorization 
   graph_source
   graph_sink
+  weighted_min_cut
   weighted_min_cut_problem
 
 nrels: |
