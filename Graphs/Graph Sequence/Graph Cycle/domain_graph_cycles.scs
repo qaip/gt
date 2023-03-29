@@ -1,0 +1,90 @@
+section_subject_domain_of_graph_cycles
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область циклов] (* <- lang_ru;; *);
+	[Section. Subject Domain of Graph Cycles] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	...
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_cycles;
+	concept_graph_cycles;
+	concept_graph_cycle;
+	concept_cyclic_graph;
+	concept_chorde;
+	concept_graph_cycles;
+	concept_hamiltonian_cycles;
+	concept_eulerian_cycle;
+	concept_basic_cycle;
+	concept_elementary_cycle;
+	rrel_graph_sequence;
+	rrel_graph_cycles;
+	rrel_length_of_a_cycle;
+	rrel_girth;
+	rrel_cycle_weight;
+	nrel_minimum_weight_cycle;
+	nrel_adjacent_arcs;;
+
+section_subject_domain_of_graph_cycles=[*
+	subject_domain_of_graph_cycles
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область циклов] (* <- lang_ru;; *);
+		[Subject Domain of Graph Cycles] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph_cycles;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_graph_cycle;
+		concept_cyclic_graph;
+		concept_chorde;
+		concept_graph_cycles;
+		concept_hamiltonian_cycles;
+		concept_eulerian_cycle;
+		concept_basic_cycle;
+		concept_elementary_cycle;
+
+	-> rrel_explored_relation:
+		rrel_graph_sequence;
+		rrel_graph_cycles;
+		rrel_length_of_a_cycle;
+		rrel_girth;
+		rrel_cycle_weight;
+		nrel_minimum_weight_cycle;
+		nrel_adjacent_arcs;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graph_sequences;
+
+	=> nrel_private_subject_domain:
+		...;;
+*];;
+
+
+sc_node_class ->
+	concept_graph_cycles;
+	concept_graph_cycle;
+	concept_cyclic_graph;
+	concept_chorde;
+	concept_graph_cycles;
+	concept_hamiltonian_cycles;
+	concept_eulerian_cycle;
+	concept_basic_cycle;
+	concept_elementary_cycle;;
+
+sc_node_role_relation ->
+	rrel_graph_sequence;
+	rrel_graph_cycles;
+	rrel_length_of_a_cycle;
+	rrel_girth;
+	rrel_cycle_weight;;
+
+sc_node_norole_relation ->
+	nrel_minimum_weight_cycle;
+	nrel_adjacent_arcs;;
