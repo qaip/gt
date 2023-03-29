@@ -1,19 +1,18 @@
 type: domain
-system: quadtrees
-en: Quadtrees
-ru: квадродеревьев
+system: heaps
+en: Heaps
+ru: куч
 
 parent: trees
 
 max: |
-  quadtree
+  heap
 
 concepts: |
-  point_quadtree
-  polygonal_map_quadtree
-  quadtree
-
-
-rrels: |
-
-nrels: |
+  binary_heap
+  binomial_heap
+  biparental_heap
+  brodals_and_okasakis_priority_queue
+  d_ary_heap
+  fibonacci_heap
+  leftist_heap
