@@ -4,16 +4,15 @@ section_subject_domain_of_planar_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область планарных графов] (* <- lang_ru;; *);
-	[Section. Subject Domain of Planar graphs] (* <- lang_en;; *);
+	[Section. Subject Domain of planar graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_Graph Embeddings;
-	section_subject_domain_of_Graph Coloring
+	section_subject_domain_of_graphs_embeddings;
+	section_subject_domain_of_graphs_coloring
 };
 
 <- rrel_key_sc_element:
 	subject_domain_of_planar_graphs;
-	concept_planar_graph;
 	concept_planar_graph;
 	concept_triangle;
 	concept_plane;
@@ -35,13 +34,12 @@ section_subject_domain_of_planar_graphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область планарных графов] (* <- lang_ru;; *);
-		[Subject Domain of Planar graphs] (* <- lang_en;; *);
+		[Subject Domain of planar graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_planar_graph;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_planar_graph;
 		concept_triangle;
 		concept_plane;
 		concept_triangular_graph;
@@ -62,13 +60,12 @@ section_subject_domain_of_planar_graphs=[*
 		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_Graph Embeddings;
-		subject_domain_of_Graph Coloring;;
+		subject_domain_of_graphs_embeddings;
+		subject_domain_of_graphs_coloring;;
 *];;
 
 
 sc_node_class ->
-	concept_planar_graph;
 	concept_planar_graph;
 	concept_triangle;
 	concept_plane;
