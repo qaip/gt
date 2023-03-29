@@ -17,5 +17,5 @@ concepts: |
 nrels: |
     induced_subgraph
     vertex_adjacency
-    vertex_indused_subgraph
+    vertex_induced_subgraph
     edge_induced_subgraph
