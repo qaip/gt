@@ -35,8 +35,7 @@ section_subject_domain_of_directed_graphs
 	rrel_sequence;
 	rrel_path;
 	nrel_adjacent_arcs;
-	nrel_adjacent_vretex;
-	nrel_ ;;
+	nrel_adjacent_vretex;;
 
 section_subject_domain_of_directed_graphs=[*
 	subject_domain_of_directed_graphs
@@ -75,7 +74,6 @@ section_subject_domain_of_directed_graphs=[*
 		rrel_path;
 		nrel_adjacent_arcs;
 		nrel_adjacent_vretex;
-		nrel_ ;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -113,5 +111,4 @@ sc_node_role_relation ->
 
 sc_node_norole_relation ->
 	nrel_adjacent_arcs;
-	nrel_adjacent_vretex;
-	nrel_ ;;
+	nrel_adjacent_vretex;;
