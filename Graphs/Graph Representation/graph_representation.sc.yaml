@@ -1,7 +1,7 @@
 type: domain
 system: graph_representation
 en: Graph Representation
-ru: Представления Графов
+ru: представления графов
 
 parent: graphs 
 
