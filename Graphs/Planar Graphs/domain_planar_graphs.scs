@@ -24,7 +24,7 @@ section_subject_domain_of_planar_graphs
 	concept_external_graph  ;
 	...;
 	nrel_isomorphism;
-	nrel_neighboring vertex;
+	nrel_neighboring_vertex;
 	nrel_intersection;
 	nrel_laying;;
 
@@ -52,7 +52,7 @@ section_subject_domain_of_planar_graphs=[*
 	-> rrel_explored_relation:
 		...;
 		nrel_isomorphism;
-		nrel_neighboring vertex;
+		nrel_neighboring_vertex;
 		nrel_intersection;
 		nrel_laying;
 
@@ -81,6 +81,6 @@ sc_node_role_relation ->
 
 sc_node_norole_relation ->
 	nrel_isomorphism;
-	nrel_neighboring vertex;
+	nrel_neighboring_vertex;
 	nrel_intersection;
 	nrel_laying;;
