@@ -1,0 +1,8 @@
+{
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/qaip/scs-action/v4/schemas/concept.schema.json": "*.concept.yaml",
+    "https://raw.githubusercontent.com/qaip/scs-action/v4/schemas/domain.schema.json": "*.domain.yaml"
+  },
+  "yaml.format.proseWrap": "always",
+  "yaml.format.singleQuote": true
+}
