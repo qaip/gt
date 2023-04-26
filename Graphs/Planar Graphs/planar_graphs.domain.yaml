@@ -17,8 +17,8 @@ concepts: |
   graph_diamond
   median_graph
   external_planar_graph
-  graph_Halina
-  external_graph  
+  graph_halina
+  external_graph
 
 nrels: |
   isomorphism

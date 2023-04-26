@@ -12,7 +12,7 @@ max: |
   tree
 
 concepts: |
-  2_3_tree
+  two_three_tree
   aa_tree
   avl_tree
   b_plus_tree

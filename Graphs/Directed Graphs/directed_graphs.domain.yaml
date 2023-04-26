@@ -24,8 +24,8 @@ concepts: |
   transport_network
   oriented_multigraph
   inverse_graph
-  complete_count_of_Berge
-  counterfunctional_graph    
+  complete_count_of_berge
+  counterfunctional_graph
 
 rrels: |
   arc

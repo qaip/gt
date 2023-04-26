@@ -4,16 +4,16 @@ ru: подграфов
 parent: graphs
 
 max: |
-    subgraph
+  subgraph
 
 concepts: |
-    bicoloured_subgraph
-    isometric_subgraph
-    induced_subgraph
-    isometric_subgraph
+  bicoloured_subgraph
+  isometric_subgraph
+  induced_subgraph
+  isometric_subgraph
 
 nrels: |
-    induced_subgraph
-    vertex_adjacency
-    vertex_induced_subgraph
-    edge_induced_subgraph
+  induced_subgraph
+  vertex_adjacency
+  vertex_induced_subgraph
+  edge_induced_subgraph

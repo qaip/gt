@@ -7,7 +7,7 @@ max: |
   weighted_directed_graph
 
 concepts: |
-  weighted_edge  
+  weighted_edge
 
 rrels: |
   weighted_edge

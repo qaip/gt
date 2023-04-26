@@ -20,7 +20,6 @@ concepts: |
 
 rrels: |
   topological_sorting
-  
 
 nrels: |
   topological_ordering

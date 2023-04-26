@@ -9,7 +9,7 @@ max: |
 concepts: |
   vector_space
   orthogonal_complement
-  Gomory_Hu_tree
+  gomory_hu_tree
   minimum_cut
 
 nrels: |

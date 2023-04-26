@@ -9,12 +9,15 @@ children: |
 max: |
   graph_operation
 
+concepts: |
+  dual_graph
+
 nrels: |
   graph_union
-  intersection_of_graph
-  cartesian_sum_of_graphs
-  annular_sum_of_graphs
-  product_of_graphs
-  symmetric_difference_of_graphs
-  difference_of_graphs
-  complement_og_graph
+  graph_intersection
+  graph_cartesian_sum
+  graph_annular_sum
+  graph_product
+  graph_symmetric_difference
+  graph_difference
+  graph_complement

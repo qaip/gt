@@ -1,11 +1,11 @@
 en: Shortest Paths
 ru: кратчайших путей
 
-parent: graph_algorithms 
+parent: graph_algorithms
 
 max: |
     shortest_path
-    
+
 concepts: |
     dijkstra_algorithm
     floyd_warshall_algorithm

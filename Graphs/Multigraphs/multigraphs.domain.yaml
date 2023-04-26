@@ -12,7 +12,7 @@ max: |
 concepts: |
     arc_entry
     edge_entry
-    
+
 rrels: |
     arc_entry
     edge_entry

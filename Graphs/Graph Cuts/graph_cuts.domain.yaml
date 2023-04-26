@@ -24,6 +24,6 @@ concepts: |
   max_flow_min_cut_theorem
   max_cut_problem
   graph_sparsest_cuts
-  
+
 nrels: |
   graph_cut

@@ -6,6 +6,9 @@ parent: graphs
 max: |
   graph
 
+concepts: |
+  graph_property
+
 rrels: |
   multiple_edge
 
