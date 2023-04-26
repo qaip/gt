@@ -4,5 +4,15 @@
     "https://raw.githubusercontent.com/qaip/scs-action/v4/schemas/domain.schema.json": "*.domain.yaml"
   },
   "yaml.format.proseWrap": "always",
-  "yaml.format.singleQuote": true
+  "yaml.format.singleQuote": true,
+  "[yaml]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[scs]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  }
 }
