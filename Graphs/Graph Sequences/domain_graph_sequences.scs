@@ -4,7 +4,7 @@ section_subject_domain_of_graph_sequences
 
 => nrel_main_idtf:
 	[Раздел. Предметная область маршрутов графа] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Sequences] (* <- lang_en;; *);
+	[Section. Subject domain of Graph Sequences] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_graph_paths;
@@ -19,7 +19,6 @@ section_subject_domain_of_graph_sequences
 	concept_spanning_sequence;
 	concept_directed_sequence;
 	concept_length_of_sequence;
-	...;
 	nrel_arcs_adjacency;
 	nrel_semiroute_in_the_digraph;;
 
@@ -41,7 +40,6 @@ section_subject_domain_of_graph_sequences=[*
 		concept_length_of_sequence;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_arcs_adjacency;
 		nrel_semiroute_in_the_digraph;
 
@@ -54,16 +52,12 @@ section_subject_domain_of_graph_sequences=[*
 		subject_domain_of_graph_cycles;;
 *];;
 
-
 sc_node_class ->
 	concept_graph_sequence;
 	concept_tightened_graph;
 	concept_spanning_sequence;
 	concept_directed_sequence;
 	concept_length_of_sequence;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;

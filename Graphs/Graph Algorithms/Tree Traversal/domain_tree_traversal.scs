@@ -4,19 +4,13 @@ section_subject_domain_of_tree_traversal
 
 => nrel_main_idtf:
 	[Раздел. Предметная область обхода дерева] (* <- lang_ru;; *);
-	[Section. Subject Domain of Tree Traversal] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of Tree Traversal] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_tree_traversal;
 	concept_tree_traversal;
 	concept_pre_order_traversal;
-	concept_in_order_traversal;
-	...;
-	...;;
+	concept_in_order_traversal;;
 
 section_subject_domain_of_tree_traversal=[*
 	subject_domain_of_tree_traversal
@@ -33,25 +27,11 @@ section_subject_domain_of_tree_traversal=[*
 		concept_pre_order_traversal;
 		concept_in_order_traversal;
 
-	-> rrel_explored_relation:
-		...;
-		...;
-
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_algorithms;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_algorithms;;
 *];;
-
 
 sc_node_class ->
 	concept_tree_traversal;
 	concept_pre_order_traversal;
 	concept_in_order_traversal;;
-
-sc_node_role_relation ->
-	...;;
-
-sc_node_norole_relation ->
-	...;;

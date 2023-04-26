@@ -4,11 +4,7 @@ section_subject_domain_of_graph_chains
 
 => nrel_main_idtf:
 	[Раздел. Предметная область цепей графа] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Chains] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of Graph Chains] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_chains;
@@ -18,7 +14,6 @@ section_subject_domain_of_graph_chains
 	concept_alternating_chain;
 	concept_graph_subchain;
 	concept_chain_weight;
-	...;
 	nrel_arcs_adjacency;;
 
 section_subject_domain_of_graph_chains=[*
@@ -40,16 +35,11 @@ section_subject_domain_of_graph_chains=[*
 		concept_chain_weight;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_arcs_adjacency;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_sequences;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_sequences;;
 *];;
-
 
 sc_node_class ->
 	concept_graph_chain;
@@ -58,9 +48,6 @@ sc_node_class ->
 	concept_alternating_chain;
 	concept_graph_subchain;
 	concept_chain_weight;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;;

@@ -4,7 +4,7 @@ section_subject_domain_of_graph_operations
 
 => nrel_main_idtf:
 	[Раздел. Предметная область операции над графами] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Operations] (* <- lang_en;; *);
+	[Section. Subject domain of Graph Operations] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_dual_graphs
@@ -13,16 +13,15 @@ section_subject_domain_of_graph_operations
 <- rrel_key_sc_element:
 	subject_domain_of_graph_operations;
 	concept_graph_operation;
-	...;
-	...;
+	concept_dual_graph;
 	nrel_graph_union;
-	nrel_intersection_of_graph;
-	nrel_cartesian_sum_of_graphs;
-	nrel_annular_sum_of_graphs;
-	nrel_product_of_graphs;
-	nrel_symmetric_difference_of_graphs;
-	nrel_difference_of_graphs;
-	nrel_complement_og_graph;;
+	nrel_graph_intersection;
+	nrel_graph_cartesian_sum;
+	nrel_graph_annular_sum;
+	nrel_graph_product;
+	nrel_graph_symmetric_difference;
+	nrel_graph_difference;
+	nrel_graph_complement;;
 
 section_subject_domain_of_graph_operations=[*
 	subject_domain_of_graph_operations
@@ -36,18 +35,17 @@ section_subject_domain_of_graph_operations=[*
 		concept_graph_operation;
 
 	-> rrel_not_maximum_studied_object_class:
-		...;
+		concept_dual_graph;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_graph_union;
-		nrel_intersection_of_graph;
-		nrel_cartesian_sum_of_graphs;
-		nrel_annular_sum_of_graphs;
-		nrel_product_of_graphs;
-		nrel_symmetric_difference_of_graphs;
-		nrel_difference_of_graphs;
-		nrel_complement_og_graph;
+		nrel_graph_intersection;
+		nrel_graph_cartesian_sum;
+		nrel_graph_annular_sum;
+		nrel_graph_product;
+		nrel_graph_symmetric_difference;
+		nrel_graph_difference;
+		nrel_graph_complement;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -56,20 +54,16 @@ section_subject_domain_of_graph_operations=[*
 		subject_domain_of_dual_graphs;;
 *];;
 
-
 sc_node_class ->
 	concept_graph_operation;
-	...;;
-
-sc_node_role_relation ->
-	...;;
+	concept_dual_graph;;
 
 sc_node_norole_relation ->
 	nrel_graph_union;
-	nrel_intersection_of_graph;
-	nrel_cartesian_sum_of_graphs;
-	nrel_annular_sum_of_graphs;
-	nrel_product_of_graphs;
-	nrel_symmetric_difference_of_graphs;
-	nrel_difference_of_graphs;
-	nrel_complement_og_graph;;
+	nrel_graph_intersection;
+	nrel_graph_cartesian_sum;
+	nrel_graph_annular_sum;
+	nrel_graph_product;
+	nrel_graph_symmetric_difference;
+	nrel_graph_difference;
+	nrel_graph_complement;;
