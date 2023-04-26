@@ -4,20 +4,20 @@ ru: алгоритмов на графах
 parent: graphs
 
 children: |
-    graph_traversal
-    shortest_paths
-    tree_traversal
+  graph_traversal
+  shortest_paths
+  tree_traversal
 
 max: |
-    graph_algorithm
+  graph_algorithm
 
 concepts: |
-    graph_traversal
-    shortest_paths
-    tree_traversal
-    algorithm_complexity
+  graph_traversal
+  shortest_paths
+  tree_traversal
+  algorithm_complexity
 
 nrels: |
-    graph_traversal
-    shortest_paths
-    tree_traversal
+  graph_traversal
+  shortest_paths
+  tree_traversal

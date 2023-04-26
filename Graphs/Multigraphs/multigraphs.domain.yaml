@@ -4,15 +4,15 @@ ru: мультиграфов
 parent: graphs
 
 children: |
-    hypergraphs
+  hypergraphs
 
 max: |
-    multigraph
+  multigraph
 
 concepts: |
-    arc_entry
-    edge_entry
+  arc_entry
+  edge_entry
 
 rrels: |
-    arc_entry
-    edge_entry
+  arc_entry
+  edge_entry

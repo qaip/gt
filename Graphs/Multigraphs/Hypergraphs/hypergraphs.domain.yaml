@@ -4,8 +4,14 @@ ru: гиперграфов
 parent: multigraphs
 
 max: |
-    hypergraph
+  hypergraph
+
+concepts: |
+  directed_hypergraph
+  undirected_hypergraph
+  hypergraph_vertex
+  hypergraph_edge
 
 nrels: |
-    vertexes_of_edge_set
-    transvinsal
+  vertexes_of_edge_set
+  transvinsal

@@ -4,9 +4,9 @@ ru: обхода графа
 parent: graph_algorithms
 
 max: |
-    graph_traversal
+  graph_traversal
 
 concepts: |
-    breadth_first_search
-    depth_first_search
-    subtask_level
+  breadth_first_search
+  depth_first_search
+  subtask_level

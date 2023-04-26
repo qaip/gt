@@ -4,8 +4,8 @@ ru: обхода дерева
 parent: graph_algorithms
 
 max: |
-    tree_traversal
+  tree_traversal
 
 concepts: |
-    pre_order_traversal
-    in_order_traversal
+  pre_order_traversal
+  in_order_traversal

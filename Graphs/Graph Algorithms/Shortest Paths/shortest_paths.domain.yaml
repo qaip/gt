@@ -4,11 +4,11 @@ ru: кратчайших путей
 parent: graph_algorithms
 
 max: |
-    shortest_path
+  shortest_path
 
 concepts: |
-    dijkstra_algorithm
-    floyd_warshall_algorithm
+  dijkstra_algorithm
+  floyd_warshall_algorithm
 
 nrels: |
-    shortest_path
+  shortest_path
