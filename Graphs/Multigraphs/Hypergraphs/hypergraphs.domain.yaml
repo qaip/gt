@@ -1,0 +1,12 @@
+en: Hypergraphs
+ru: гиперграфов
+
+parent: multigraphs
+
+max: |
+    hypergraph
+
+nrels: |
+    vertexes_of_edge_set
+    transvinsal
+
