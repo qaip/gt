@@ -4,18 +4,13 @@ section_subject_domain_of_shortest_paths
 
 => nrel_main_idtf:
 	[Раздел. Предметная область кратчайших путей] (* <- lang_ru;; *);
-	[Section. Subject Domain of Shortest Paths] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of shortest paths] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_shortest_paths;
 	concept_shortest_path;
 	concept_dijkstra_algorithm;
 	concept_floyd_warshall_algorithm;
-	...;
 	nrel_shortest_path;;
 
 section_subject_domain_of_shortest_paths=[*
@@ -24,7 +19,7 @@ section_subject_domain_of_shortest_paths=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область кратчайших путей] (* <- lang_ru;; *);
-		[Subject Domain of Shortest Paths] (* <- lang_en;; *);
+		[Subject Domain of shortest paths] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_shortest_path;
@@ -34,24 +29,16 @@ section_subject_domain_of_shortest_paths=[*
 		concept_floyd_warshall_algorithm;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_shortest_path;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_algorithms;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_algorithms;;
 *];;
-
 
 sc_node_class ->
 	concept_shortest_path;
 	concept_dijkstra_algorithm;
 	concept_floyd_warshall_algorithm;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_shortest_path;;

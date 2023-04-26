@@ -4,17 +4,15 @@ section_subject_domain_of_hypergraphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область гиперграфов] (* <- lang_ru;; *);
-	[Section. Subject Domain of Hypergraphs] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of uhypergraphs] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_hypergraphs;
 	concept_hypergraph;
-	...;
-	...;
+	concept_directed_hypergraph;
+	concept_undirected_hypergraph;
+	concept_hypergraph_vertex;
+	concept_hypergraph_edge;
 	nrel_vertexes_of_edge_set;
 	nrel_transvinsal;;
 
@@ -24,33 +22,31 @@ section_subject_domain_of_hypergraphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область гиперграфов] (* <- lang_ru;; *);
-		[Subject Domain of Hypergraphs] (* <- lang_en;; *);
+		[Subject Domain of uhypergraphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_hypergraph;
 
 	-> rrel_not_maximum_studied_object_class:
-		...;
+		concept_directed_hypergraph;
+		concept_undirected_hypergraph;
+		concept_hypergraph_vertex;
+		concept_hypergraph_edge;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_vertexes_of_edge_set;
 		nrel_transvinsal;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_multigraphs;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_multigraphs;;
 *];;
-
 
 sc_node_class ->
 	concept_hypergraph;
-	...;;
-
-sc_node_role_relation ->
-	...;;
+	concept_directed_hypergraph;
+	concept_undirected_hypergraph;
+	concept_hypergraph_vertex;
+	concept_hypergraph_edge;;
 
 sc_node_norole_relation ->
 	nrel_vertexes_of_edge_set;

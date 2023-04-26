@@ -1,0 +1,21 @@
+en: graph paths
+ru: путей графа
+
+parent: graph_sequences
+
+max: |
+  graph_path
+
+concepts: |
+  hamiltonian_path
+  path_length
+  graph_path_weight
+
+rrels: |
+  graph_path
+
+nrels: |
+  min_weight_path
+  not_trivial_path
+  shortest_path
+  critical_path

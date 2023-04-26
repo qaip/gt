@@ -4,11 +4,7 @@ section_subject_domain_of_subgraphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область подграфов] (* <- lang_ru;; *);
-	[Section. Subject Domain of Subgraphs] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of subgraphs] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_subgraphs;
@@ -17,7 +13,6 @@ section_subject_domain_of_subgraphs
 	concept_isometric_subgraph;
 	concept_induced_subgraph;
 	concept_isometric_subgraph;
-	...;
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
@@ -29,7 +24,7 @@ section_subject_domain_of_subgraphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область подграфов] (* <- lang_ru;; *);
-		[Subject Domain of Subgraphs] (* <- lang_en;; *);
+		[Subject Domain of subgraphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_subgraph;
@@ -41,19 +36,14 @@ section_subject_domain_of_subgraphs=[*
 		concept_isometric_subgraph;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_induced_subgraph;
 		nrel_vertex_adjacency;
 		nrel_vertex_induced_subgraph;
 		nrel_edge_induced_subgraph;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graphs;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graphs;;
 *];;
-
 
 sc_node_class ->
 	concept_subgraph;
@@ -61,9 +51,6 @@ sc_node_class ->
 	concept_isometric_subgraph;
 	concept_induced_subgraph;
 	concept_isometric_subgraph;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_induced_subgraph;

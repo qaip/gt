@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run scs update
-        uses: qaip/scs-action@v2.2
+        uses: qaip/scs-action@v4
         with:
           ignore_empty: always
       - name: Remove trigger label

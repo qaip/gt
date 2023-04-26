@@ -4,11 +4,7 @@ section_subject_domain_of_heaps
 
 => nrel_main_idtf:
 	[Раздел. Предметная область куч] (* <- lang_ru;; *);
-	[Section. Subject Domain of Heaps] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of heaps] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_heaps;
@@ -19,9 +15,7 @@ section_subject_domain_of_heaps
 	concept_brodals_and_okasakis_priority_queue;
 	concept_d_ary_heap;
 	concept_fibonacci_heap;
-	concept_leftist_heap;
-	...;
-	...;;
+	concept_leftist_heap;;
 
 section_subject_domain_of_heaps=[*
 	subject_domain_of_heaps
@@ -29,7 +23,7 @@ section_subject_domain_of_heaps=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область куч] (* <- lang_ru;; *);
-		[Subject Domain of Heaps] (* <- lang_en;; *);
+		[Subject Domain of heaps] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_heap;
@@ -43,17 +37,9 @@ section_subject_domain_of_heaps=[*
 		concept_fibonacci_heap;
 		concept_leftist_heap;
 
-	-> rrel_explored_relation:
-		...;
-		...;
-
 	<= nrel_private_subject_domain:
-		subject_domain_of_trees;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_trees;;
 *];;
-
 
 sc_node_class ->
 	concept_heap;
@@ -64,9 +50,3 @@ sc_node_class ->
 	concept_d_ary_heap;
 	concept_fibonacci_heap;
 	concept_leftist_heap;;
-
-sc_node_role_relation ->
-	...;;
-
-sc_node_norole_relation ->
-	...;;

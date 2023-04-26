@@ -4,20 +4,15 @@ section_subject_domain_of_graph_cut_space
 
 => nrel_main_idtf:
 	[Раздел. Предметная область пространств разрезов графа] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Cut Space] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of graph cut space] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_cut_space;
 	concept_graph_cut_space;
 	concept_vector_space;
 	concept_orthogonal_complement;
-	concept_Gomory_Hu_tree;
+	concept_gomory_hu_tree;
 	concept_minimum_cut;
-	...;
 	nrel_graph_cut;;
 
 section_subject_domain_of_graph_cut_space=[*
@@ -26,7 +21,7 @@ section_subject_domain_of_graph_cut_space=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область пространств разрезов графа] (* <- lang_ru;; *);
-		[Subject Domain of Graph Cut Space] (* <- lang_en;; *);
+		[Subject Domain of graph cut space] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph_cut_space;
@@ -34,30 +29,22 @@ section_subject_domain_of_graph_cut_space=[*
 	-> rrel_not_maximum_studied_object_class:
 		concept_vector_space;
 		concept_orthogonal_complement;
-		concept_Gomory_Hu_tree;
+		concept_gomory_hu_tree;
 		concept_minimum_cut;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_graph_cut;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_cuts;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_cuts;;
 *];;
-
 
 sc_node_class ->
 	concept_graph_cut_space;
 	concept_vector_space;
 	concept_orthogonal_complement;
-	concept_Gomory_Hu_tree;
+	concept_gomory_hu_tree;
 	concept_minimum_cut;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_graph_cut;;
