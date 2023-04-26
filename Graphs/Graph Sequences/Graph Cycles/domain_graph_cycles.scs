@@ -4,11 +4,7 @@ section_subject_domain_of_graph_cycles
 
 => nrel_main_idtf:
 	[Раздел. Предметная область циклов графа] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Cycles] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of Graph Cycles] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_cycles;
@@ -22,7 +18,6 @@ section_subject_domain_of_graph_cycles
 	concept_cycle_length;
 	concept_graph_girth;
 	concept_cycle_weight;
-	...;
 	nrel_arcs_adjacency;
 	nrel_graph_chord;;
 
@@ -49,17 +44,12 @@ section_subject_domain_of_graph_cycles=[*
 		concept_cycle_weight;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_arcs_adjacency;
 		nrel_graph_chord;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_sequences;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_sequences;;
 *];;
-
 
 sc_node_class ->
 	concept_graph_cycle;
@@ -72,9 +62,6 @@ sc_node_class ->
 	concept_cycle_length;
 	concept_graph_girth;
 	concept_cycle_weight;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;

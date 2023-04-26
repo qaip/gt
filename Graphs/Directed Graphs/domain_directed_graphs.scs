@@ -4,7 +4,7 @@ section_subject_domain_of_directed_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область ориентированных графов] (* <- lang_ru;; *);
-	[Section. Subject Domain of Directed Graphs] (* <- lang_en;; *);
+	[Section. Subject domain of Directed Graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_weighted_directed_graphs
@@ -27,15 +27,15 @@ section_subject_domain_of_directed_graphs
 	concept_transport_network;
 	concept_oriented_multigraph;
 	concept_inverse_graph;
-	concept_complete_count_of_Berge;
-	concept_counterfunctional_graph    ;
+	concept_complete_count_of_berge;
+	concept_counterfunctional_graph;
+	nrel_adjacent_arcs;
+	nrel_adjacent_vretex;
 	rrel_arc;
 	rrel_deadlock;
 	rrel_anti_deadlock;
 	rrel_sequence;
-	rrel_path;
-	nrel_adjacent_arcs;
-	nrel_adjacent_vretex;;
+	rrel_path;;
 
 section_subject_domain_of_directed_graphs=[*
 	subject_domain_of_directed_graphs
@@ -63,17 +63,17 @@ section_subject_domain_of_directed_graphs=[*
 		concept_transport_network;
 		concept_oriented_multigraph;
 		concept_inverse_graph;
-		concept_complete_count_of_Berge;
-		concept_counterfunctional_graph    ;
+		concept_complete_count_of_berge;
+		concept_counterfunctional_graph;
 
 	-> rrel_explored_relation:
+		nrel_adjacent_arcs;
+		nrel_adjacent_vretex;
 		rrel_arc;
 		rrel_deadlock;
 		rrel_anti_deadlock;
 		rrel_sequence;
 		rrel_path;
-		nrel_adjacent_arcs;
-		nrel_adjacent_vretex;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -81,7 +81,6 @@ section_subject_domain_of_directed_graphs=[*
 	=> nrel_private_subject_domain:
 		subject_domain_of_weighted_directed_graphs;;
 *];;
-
 
 sc_node_class ->
 	concept_directed_graph;
@@ -99,8 +98,12 @@ sc_node_class ->
 	concept_transport_network;
 	concept_oriented_multigraph;
 	concept_inverse_graph;
-	concept_complete_count_of_Berge;
-	concept_counterfunctional_graph    ;;
+	concept_complete_count_of_berge;
+	concept_counterfunctional_graph;;
+
+sc_node_norole_relation ->
+	nrel_adjacent_arcs;
+	nrel_adjacent_vretex;;
 
 sc_node_role_relation ->
 	rrel_arc;
@@ -108,7 +111,3 @@ sc_node_role_relation ->
 	rrel_anti_deadlock;
 	rrel_sequence;
 	rrel_path;;
-
-sc_node_norole_relation ->
-	nrel_adjacent_arcs;
-	nrel_adjacent_vretex;;

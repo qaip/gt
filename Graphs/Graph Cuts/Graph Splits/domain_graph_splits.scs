@@ -4,11 +4,7 @@ section_subject_domain_of_graph_splits
 
 => nrel_main_idtf:
 	[Раздел. Предметная область расщепления графа] (* <- lang_ru;; *);
-	[Section. Subject Domain of Graph Splits] (* <- lang_en;; *);
-
-<= nrel_section_decomposition: {
-	...
-};
+	[Section. Subject domain of Graph Splits] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_splits;
@@ -17,7 +13,6 @@ section_subject_domain_of_graph_splits
 	concept_graph_split_decomposition;
 	concept_distance_hereditary_graph;
 	concept_circle_graph;
-	...;
 	nrel_split_decomposition;;
 
 section_subject_domain_of_graph_splits=[*
@@ -38,16 +33,11 @@ section_subject_domain_of_graph_splits=[*
 		concept_circle_graph;
 
 	-> rrel_explored_relation:
-		...;
 		nrel_split_decomposition;
 
 	<= nrel_private_subject_domain:
-		subject_domain_of_graph_cuts;
-
-	=> nrel_private_subject_domain:
-		...;;
+		subject_domain_of_graph_cuts;;
 *];;
-
 
 sc_node_class ->
 	concept_graph_split;
@@ -55,9 +45,6 @@ sc_node_class ->
 	concept_graph_split_decomposition;
 	concept_distance_hereditary_graph;
 	concept_circle_graph;;
-
-sc_node_role_relation ->
-	...;;
 
 sc_node_norole_relation ->
 	nrel_split_decomposition;;
