@@ -4,7 +4,7 @@ section_subject_domain_of_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область графов] (* <- lang_ru;; *);
-	[Section. Subject domain of Graphs] (* <- lang_en;; *);
+	[Section. Subject domain of graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_simple_graphs;
@@ -66,7 +66,7 @@ section_subject_domain_of_graphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область графов] (* <- lang_ru;; *);
-		[Subject Domain of Graphs] (* <- lang_en;; *);
+		[Subject Domain of graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph;

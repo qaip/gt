@@ -4,7 +4,7 @@ section_subject_domain_of_acyclic_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область ациклических графов] (* <- lang_ru;; *);
-	[Section. Subject domain of Acyclic Graphs] (* <- lang_en;; *);
+	[Section. Subject domain of acyclic graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_directed_acyclic_graphs;
@@ -30,7 +30,7 @@ section_subject_domain_of_acyclic_graphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область ациклических графов] (* <- lang_ru;; *);
-		[Subject Domain of Acyclic Graphs] (* <- lang_en;; *);
+		[Subject Domain of acyclic graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_acyclic_graph;

@@ -4,7 +4,7 @@ section_subject_domain_of_dual_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область двойственных графов] (* <- lang_ru;; *);
-	[Section. Subject domain of Dual Graphs] (* <- lang_en;; *);
+	[Section. Subject domain of dual graphs] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_dual_graphs;
@@ -21,7 +21,7 @@ section_subject_domain_of_dual_graphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область двойственных графов] (* <- lang_ru;; *);
-		[Subject Domain of Dual Graphs] (* <- lang_en;; *);
+		[Subject Domain of dual graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_dual_graph;

@@ -4,7 +4,7 @@ section_subject_domain_of_heaps
 
 => nrel_main_idtf:
 	[Раздел. Предметная область куч] (* <- lang_ru;; *);
-	[Section. Subject domain of Heaps] (* <- lang_en;; *);
+	[Section. Subject domain of heaps] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_heaps;
@@ -23,7 +23,7 @@ section_subject_domain_of_heaps=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область куч] (* <- lang_ru;; *);
-		[Subject Domain of Heaps] (* <- lang_en;; *);
+		[Subject Domain of heaps] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_heap;

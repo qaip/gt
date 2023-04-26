@@ -4,7 +4,7 @@ section_subject_domain_of_graph_operations
 
 => nrel_main_idtf:
 	[Раздел. Предметная область операции над графами] (* <- lang_ru;; *);
-	[Section. Subject domain of Graph Operations] (* <- lang_en;; *);
+	[Section. Subject domain of graph operations] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_dual_graphs
@@ -29,7 +29,7 @@ section_subject_domain_of_graph_operations=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область операции над графами] (* <- lang_ru;; *);
-		[Subject Domain of Graph Operations] (* <- lang_en;; *);
+		[Subject Domain of graph operations] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph_operation;

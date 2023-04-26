@@ -4,7 +4,7 @@ section_subject_domain_of_maximum_graph_cuts
 
 => nrel_main_idtf:
 	[Раздел. Предметная область максимальных разрезов графа] (* <- lang_ru;; *);
-	[Section. Subject domain of Maximum Graph Cuts] (* <- lang_en;; *);
+	[Section. Subject domain of maximum graph cuts] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_maximum_graph_cuts;
@@ -21,7 +21,7 @@ section_subject_domain_of_maximum_graph_cuts=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область максимальных разрезов графа] (* <- lang_ru;; *);
-		[Subject Domain of Maximum Graph Cuts] (* <- lang_en;; *);
+		[Subject Domain of maximum graph cuts] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_maximum_graph_cut;

@@ -4,7 +4,7 @@ section_subject_domain_of_weighted_directed_graphs
 
 => nrel_main_idtf:
 	[Раздел. Предметная область взвешенных ориентированных графов] (* <- lang_ru;; *);
-	[Section. Subject domain of Weighted Directed Graphs] (* <- lang_en;; *);
+	[Section. Subject domain of weighted directed graphs] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_weighted_directed_graphs;
@@ -18,7 +18,7 @@ section_subject_domain_of_weighted_directed_graphs=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область взвешенных ориентированных графов] (* <- lang_ru;; *);
-		[Subject Domain of Weighted Directed Graphs] (* <- lang_en;; *);
+		[Subject Domain of weighted directed graphs] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_weighted_directed_graph;

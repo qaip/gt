@@ -4,7 +4,7 @@ section_subject_domain_of_shortest_paths
 
 => nrel_main_idtf:
 	[Раздел. Предметная область кратчайших путей] (* <- lang_ru;; *);
-	[Section. Subject domain of Shortest Paths] (* <- lang_en;; *);
+	[Section. Subject domain of shortest paths] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_shortest_paths;
@@ -19,7 +19,7 @@ section_subject_domain_of_shortest_paths=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область кратчайших путей] (* <- lang_ru;; *);
-		[Subject Domain of Shortest Paths] (* <- lang_en;; *);
+		[Subject Domain of shortest paths] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_shortest_path;

@@ -4,7 +4,7 @@ section_subject_domain_of_graph_cut_space
 
 => nrel_main_idtf:
 	[Раздел. Предметная область пространств разрезов графа] (* <- lang_ru;; *);
-	[Section. Subject domain of Graph Cut Space] (* <- lang_en;; *);
+	[Section. Subject domain of graph cut space] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_cut_space;
@@ -21,7 +21,7 @@ section_subject_domain_of_graph_cut_space=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область пространств разрезов графа] (* <- lang_ru;; *);
-		[Subject Domain of Graph Cut Space] (* <- lang_en;; *);
+		[Subject Domain of graph cut space] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph_cut_space;

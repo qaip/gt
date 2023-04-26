@@ -4,7 +4,7 @@ section_subject_domain_of_graph_representation
 
 => nrel_main_idtf:
 	[Раздел. Предметная область представления графов] (* <- lang_ru;; *);
-	[Section. Subject domain of Graph Representation] (* <- lang_en;; *);
+	[Section. Subject domain of graph representation] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_representation;
@@ -22,7 +22,7 @@ section_subject_domain_of_graph_representation=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область представления графов] (* <- lang_ru;; *);
-		[Subject Domain of Graph Representation] (* <- lang_en;; *);
+		[Subject Domain of graph representation] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph;
