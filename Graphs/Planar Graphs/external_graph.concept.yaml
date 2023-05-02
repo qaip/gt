@@ -1,0 +1,11 @@
+ru: Внешнеплоский граф
+en: External graph
+
+definition:
+  ru:
+    Внешнеплоский граф-граф, допускающий внешнепланарную реализацию
+  en:
+    An externally planar graph is a graph that admits an externally planar implementation
+  using:
+    concepts: |
+      external_planar_graph
