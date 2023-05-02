@@ -1,0 +1,60 @@
+concept_directed_sequence
+=> nrel_main_idtf:
+	[Ориентированный маршрут] (* <- lang_ru;; *);
+	[Directed sequence] (* <- lang_en;; *);;
+
+definition -> definition_of_directed_sequence (*
+	-> rrel_key_sc_element: concept_directed_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Конечная чередующаяся последовательность вершин и дуг графа таких, что каждая дуга исходит из предыдущей вершины и заходит в последующую вершину] (* <- lang_ru;; *);;
+		-> [A finite alternating sequence of vertices and arcs in a graph such that each arc originates from the previous vertex and enters the next vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ориентированный маршрут)] (* <- lang_ru;; *);
+		[Def. (Directed sequence)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		concept_sequence;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_directional_and_nondirectional_sequences (*
+	-> rrel_key_sc_element: concept_directed_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Очевидно, незамкнутый или замкнутый ориентированный маршрут в ориентированном графе определяет соответствующий незамкнутый или замкнутый маршрут в соответствующем неориентированном графе] (* <- lang_ru;; *);;
+		-> [Obviously, an open or closed directed route in a directed graph defines a corresponding open or closed route in the corresponding undirected graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Связь направленного и ненаправленного маршрута)] (* <- lang_ru;; *);
+		[Stat. (Relationship between a directed and non-directed sequence)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_sequence;
+		concept_directed_graph;
+		concept_undirected_graph;
+		concept_closed_sequence;
+		concept_cycle
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_edge;
+	concept_sequence;
+	concept_sequence;
+	concept_directed_graph;
+	concept_undirected_graph;
+	concept_closed_sequence;
+	concept_cycle;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;

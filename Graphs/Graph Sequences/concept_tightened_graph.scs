@@ -1,0 +1,66 @@
+concept_tightened_graph
+=> nrel_main_idtf:
+	[Стягиваемый граф] (* <- lang_ru;; *);
+	[Tightened graph] (* <- lang_en;; *);;
+
+definition -> definition_of_tightened_graph (*
+	-> rrel_key_sc_element: concept_tightened_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф G называется стягиваемым к H, если H может быть получен из G с помощью некоторой последовательности стягиваний ребер] (* <- lang_ru;; *);;
+		-> [A graph G is said to be contractible to H if H can be obtained from G by some sequence of edge contractions] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Стягиваемый граф)] (* <- lang_ru;; *);
+		[Def. (Tightened graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_sequences;
+		concept_edge;
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_tightened_subgraph_definition (*
+	-> rrel_key_sc_element: concept_tightened_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подграф H графа G называется стягиваемым, если для любого чётного подмножества его вершин X принадлежит V H содержит связный подграф, множество вершин с нечетными степенями которого есть X] (* <- lang_ru;; *);;
+		-> [A subgraph H of a graph G is said to be contractible if for any even subset of its vertices X belongs to V H contains a connected subgraph whose set of vertices with odd degrees is X] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Понятие стягиваемого подграфа)] (* <- lang_ru;; *);
+		[Stat. (Notion of a contractible subgraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		concept_subgraph;
+		concept_connected;
+		concept_power_of_graph;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_graph_sequences;
+	concept_edge;
+	concept_vertex;
+	concept_vertex;
+	concept_edge;
+	concept_subgraph;
+	concept_connected;
+	concept_power_of_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
