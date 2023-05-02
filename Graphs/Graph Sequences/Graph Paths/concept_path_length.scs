@@ -1,0 +1,54 @@
+concept_path_length
+=> nrel_main_idtf:
+	[Длина пути] (* <- lang_ru;; *);
+	[Path length] (* <- lang_en;; *);;
+
+definition -> definition_of_path_length (*
+	-> rrel_key_sc_element: concept_path_length;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длиной пути является число рёбер, используемых в пути, при этом многократно используемые рёбра считаются соответствующее число раз] (* <- lang_ru;; *);;
+		-> [The length of a path is the number of edges used in the path, with reusable edges being counted the corresponding number of times] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Длина пути)] (* <- lang_ru;; *);
+		[Def. (Path length)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_path_equals_zero (*
+	-> rrel_key_sc_element: concept_path_length;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длина пути может равняться нулю, если путь состоит только из одной вершины] (* <- lang_ru;; *);;
+		-> [The length of path can be zero if the path consists of only one vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Условие эквивалентности длины пути нулю)] (* <- lang_ru;; *);
+		[Stat. (Condition for the equivalence of the path length to zero)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path;
+		concept_length_of_path;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_path;
+	concept_edge;
+	concept_path;
+	concept_length_of_path;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;;
