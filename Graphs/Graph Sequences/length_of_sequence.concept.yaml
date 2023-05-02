@@ -1,0 +1,26 @@
+ru: Длина маршрута
+en: Length of sequence
+
+definition:
+  ru: Длина маршрута это количество рёбер в маршруте учитывая повторения
+  en: Sequence length is the number of edges in the sequence, taking into account repetitions
+  using:
+    concepts:  | 
+      edge
+      sequence
+    rrels:  |
+      edge
+statement: 
+  length_equals_zero:
+    title:
+      ru: Когда длина маршрута равна 0
+      en: When sequence length is 0
+    ru: Длина может равняться нулю, если путь состоит только из одной вершины
+    en: The length can be zero if the path consists of only one vertex
+    using:
+      concepts: |
+        vertex
+        sequence
+      rrels: |
+        vertex
+    
