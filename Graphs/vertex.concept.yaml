@@ -1,0 +1,14 @@
+ru: вершина
+en: vertex
+definition:
+    ru:
+        Вершина является основным понятием теории графов. Это фундаментальная
+        еденица, образующая графы. На рисунках, представляющих граф, вершина
+        обычно представляется кружком с меткой
+    en:
+        The vertex is the basic concept of graphs. This is the fundamental unit
+        that forms graphs. The graph is usually represented by a circle with a
+        label
+    using:
+        concepts: |
+            graph
