@@ -1,0 +1,38 @@
+ru: Гамильтонов путь
+en: Hamiltonian path
+
+definition:
+  ru:
+    Гамильтоновым путём называется простой путь, проходящий через каждую вершину
+    графа ровно один раз
+  en:
+    A Hamiltonian path is a simple path that passes through each vertex of the
+    graph exactly once
+  using:
+    concepts: |
+      path
+      vertex
+      graph
+      edge
+    rrels: |
+      edge
+      vertex
+statement:
+  hamiltonian_path_problem:
+    title:
+      ru: Задача о гамильтоновом пути
+      en: Hamiltonian path problem
+    ru:
+      В одном направлении задача о гамильтоновом пути для графа эквивалентна
+      задаче о гамильтоновом цикле в графе H, полученного из графа G путём
+      добавления новой вершины и соединения её со всеми вершинами графа G
+    en:
+      In one direction, the problem of a Hamiltonian path for a graph is
+      equivalent to the problem of a Hamiltonian cycle in a graph H obtained
+      from a graph G by adding a new vertex and connecting it to all vertices of
+      the graph G
+    using:
+      concepts: |
+        hamiltonian_cycle
+        vertex
+        graph
