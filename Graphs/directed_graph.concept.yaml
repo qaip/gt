@@ -21,3 +21,17 @@ definition:
         rrels: |
             edge
             vertex
+statement:
+    weak_directed_graph:
+        title:
+            ru: О сильном ориентированном графе
+            en: About weak directed graph
+        ru:
+            Ориентированный граф слабый тогда и только тогда, когда он имеет
+            цепь
+        en: A directed graph is weak if it has a chain
+        using:
+            concepts: |
+                directed_graph
+            nrels: |
+                chain
