@@ -2,6 +2,27 @@ ru: Ориентированный маршрут
 en: Directed sequence
 
 definition:
-  ru:  
+  ru: Конечная чередующаяся последовательность вершин и дуг графа таких, что каждая дуга исходит из предыдущей вершины и заходит в последующую вершину
+  en: A finite alternating sequence of vertices and arcs in a graph such that each arc originates from the previous vertex and enters the next vertex
   using:
-    
+    concepts:  |
+      vertex
+      edge
+      sequence
+    rrels:  | 
+      vertex
+      edge
+statement: 
+  directional_and_nondirectional_sequences:
+    title:
+      ru: Название высказывания
+      en: Statement title
+    ru: Очевидно, незамкнутый или замкнутый ориентированный маршрут в ориентированном графе определяет соответствующий незамкнутый или замкнутый маршрут в соответствующем неориентированном графе
+    en: Obviously, an open or closed directed route in a directed graph defines a corresponding open or closed route in the corresponding undirected graph
+    using:
+      concepts: |
+        sequence
+        directed_graph
+        undirected_graph
+        closed_sequence
+        cycle
