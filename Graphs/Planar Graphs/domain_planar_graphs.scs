@@ -14,18 +14,26 @@ section_subject_domain_of_planar_graphs
 <- rrel_key_sc_element:
 	subject_domain_of_planar_graphs;
 	concept_planar_graph;
-	concept_triangle;
 	concept_plane;
-	concept_triangular_graph;
+	concept_triangle_graph;
 	concept_graph_diamond;
-	concept_median_graph;
+	concept_medial_graph;
 	concept_external_planar_graph;
 	concept_graph_halina;
 	concept_external_graph;
+	concept_unplanar_graph;
+	concept_one_planar_graph;
+	concept_complete_graph;
+	concept_bipartite_graph;
+	concept_homeomorphical_graphs;
+	concept_unoriented_graph;
 	nrel_isomorphism;
 	nrel_neighboring_vertex;
 	nrel_intersection;
-	nrel_laying;;
+	nrel_laying;
+	nrel_skewness;
+	nrel_coarseness;
+	nrel_thickness_of_graph;;
 
 section_subject_domain_of_planar_graphs=[*
 	subject_domain_of_planar_graphs
@@ -39,20 +47,28 @@ section_subject_domain_of_planar_graphs=[*
 		concept_planar_graph;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_triangle;
 		concept_plane;
-		concept_triangular_graph;
+		concept_triangle_graph;
 		concept_graph_diamond;
-		concept_median_graph;
+		concept_medial_graph;
 		concept_external_planar_graph;
 		concept_graph_halina;
 		concept_external_graph;
+		concept_unplanar_graph;
+		concept_one_planar_graph;
+		concept_complete_graph;
+		concept_bipartite_graph;
+		concept_homeomorphical_graphs;
+		concept_unoriented_graph;
 
 	-> rrel_explored_relation:
 		nrel_isomorphism;
 		nrel_neighboring_vertex;
 		nrel_intersection;
 		nrel_laying;
+		nrel_skewness;
+		nrel_coarseness;
+		nrel_thickness_of_graph;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -64,17 +80,25 @@ section_subject_domain_of_planar_graphs=[*
 
 sc_node_class ->
 	concept_planar_graph;
-	concept_triangle;
 	concept_plane;
-	concept_triangular_graph;
+	concept_triangle_graph;
 	concept_graph_diamond;
-	concept_median_graph;
+	concept_medial_graph;
 	concept_external_planar_graph;
 	concept_graph_halina;
-	concept_external_graph;;
+	concept_external_graph;
+	concept_unplanar_graph;
+	concept_one_planar_graph;
+	concept_complete_graph;
+	concept_bipartite_graph;
+	concept_homeomorphical_graphs;
+	concept_unoriented_graph;;
 
 sc_node_norole_relation ->
 	nrel_isomorphism;
 	nrel_neighboring_vertex;
 	nrel_intersection;
-	nrel_laying;;
+	nrel_laying;
+	nrel_skewness;
+	nrel_coarseness;
+	nrel_thickness_of_graph;;
