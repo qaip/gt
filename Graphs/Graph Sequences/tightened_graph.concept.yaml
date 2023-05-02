@@ -20,8 +20,8 @@ definition:
 statement:
   tightened_subgraph_definition:
     title:
-      ru: понятие стягиваемого подграфа
-      en: notion of a contractible subgraph
+      ru: Понятие стягиваемого подграфа
+      en: Notion of a contractible subgraph
     ru:
       Подграф H графа G называется стягиваемым, если для любого чётного
       подмножества его вершин X принадлежит V H содержит связный подграф,

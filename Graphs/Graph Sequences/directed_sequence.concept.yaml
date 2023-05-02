@@ -15,8 +15,8 @@ definition:
 statement: 
   directional_and_nondirectional_sequences:
     title:
-      ru: Название высказывания
-      en: Statement title
+      ru: Связь направленного и ненаправленного маршрута
+      en: Relationship between a directed and non-directed sequence
     ru: Очевидно, незамкнутый или замкнутый ориентированный маршрут в ориентированном графе определяет соответствующий незамкнутый или замкнутый маршрут в соответствующем неориентированном графе
     en: Obviously, an open or closed directed route in a directed graph defines a corresponding open or closed route in the corresponding undirected graph
     using:
