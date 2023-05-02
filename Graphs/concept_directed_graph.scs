@@ -38,7 +38,7 @@ statement -> statement_of_weak_directed_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (О сильном ориентированном графе)] (* <- lang_ru;; *);
+		[Утв. (О слабо связном графе)] (* <- lang_ru;; *);
 		[Stat. (About weak directed graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
