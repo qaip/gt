@@ -23,7 +23,7 @@ definition -> definition_of_graph (*
 	};;
 *);;
 
-statement -> statement_of_statement_title (*
+statement -> statement_of_graphs_representation (*
 	-> rrel_key_sc_element: concept_graph;;
 
 	<= nrel_sc_text_translation: ... (*
