@@ -16,7 +16,7 @@ definition:
             vertex
             edge
 statement:
-    statement_title:
+    graphs_representation:
         title:
             ru: изображение графов
             en: graphs representation
