@@ -1,25 +1,33 @@
 concept_vertex
 => nrel_main_idtf:
-	[вершина] (* <- lang_ru;; *);
-	[vertex] (* <- lang_en;; *);;
+	[Вершина] (* <- lang_ru;; *);
+	[Vertex] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[Узел] (* <- lang_ru;; *);
+	[Node] (* <- lang_en;; *);;
 
 definition -> definition_of_vertex (*
 	-> rrel_key_sc_element: concept_vertex;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Вершина является основным понятием теории графов. Это фундаментальная еденица, образующая графы. На рисунках, представляющих граф, вершина обычно представляется кружком с меткой] (* <- lang_ru;; *);;
-		-> [The vertex is the basic concept of graphs. This is the fundamental unit that forms graphs. The graph is usually represented by a circle with a label] (* <- lang_en;; *);;
+		-> [A vertex is the basic concept of graphs. This is the fundamental unit that forms graphs. The graph is usually represented by a circle with a label] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (вершина)] (* <- lang_ru;; *);
-		[Def. (vertex)] (* <- lang_en;; *);;
+		[Опр. (Вершина)] (* <- lang_ru;; *);
+		[Def. (Vertex)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		rrel_vertex
 	};;
 *);;
 
 
 sc_node_class ->
 	concept_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

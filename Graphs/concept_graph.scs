@@ -1,7 +1,7 @@
 concept_graph
 => nrel_main_idtf:
-	[граф] (* <- lang_ru;; *);
-	[graph] (* <- lang_en;; *);;
+	[Граф] (* <- lang_ru;; *);
+	[Graph] (* <- lang_en;; *);;
 
 definition -> definition_of_graph (*
 	-> rrel_key_sc_element: concept_graph;;
@@ -12,8 +12,8 @@ definition -> definition_of_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (граф)] (* <- lang_ru;; *);
-		[Def. (graph)] (* <- lang_en;; *);;
+		[Опр. (Граф)] (* <- lang_ru;; *);
+		[Def. (Graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
@@ -32,8 +32,8 @@ statement -> statement_of_graphs_representation (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (изображение графов)] (* <- lang_ru;; *);
-		[Stat. (graphs representation)] (* <- lang_en;; *);;
+		[Утв. (Изображение графов)] (* <- lang_ru;; *);
+		[Stat. (Graphs representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
