@@ -1,5 +1,5 @@
-ru: ребро
-en: edge
+ru: Ребро
+en: Edge
 definition:
     ru: Ребро является связкой, соединяющей две вершины графа
     en: An edge is the connection between vertices of the graph

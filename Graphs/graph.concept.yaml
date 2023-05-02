@@ -1,5 +1,5 @@
-ru: граф
-en: graph
+ru: Граф
+en: Graph
 definition:
     ru:
         Пусть V является непустым множеством. Тогда графом называется пара
@@ -18,8 +18,8 @@ definition:
 statement:
     graphs_representation:
         title:
-            ru: изображение графов
-            en: graphs representation
+            ru: Изображение графов
+            en: Graphs representation
         ru:
             Графы удобно изображать в виде рисунков, состоящих из точек и линий,
             соединяющих некоторые из этих точек. При этом точки соответствуют

@@ -1,5 +1,9 @@
-ru: ориентированное ребро дуга
-en: arc oriented edge
+ru:
+    - Ориентированное
+    - Ребро дуга
+en:
+    - Arc oriented
+    - Edge
 definition:
     ru: Дуга является ребром в ориентированном графе
     en: Arc is the edge of oriented graph
