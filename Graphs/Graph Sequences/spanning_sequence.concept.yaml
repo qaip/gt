@@ -1,0 +1,14 @@
+ru: Остовный маршрут
+en: Spanning sequence
+
+definition:
+  ru: Маршрут, содержащий все вершины орграфа
+  en: Spanning sequence is a sequence, that contains all verteces in directed graph
+  using:
+    concepts:  |
+      sequence
+      digraph
+      vertex
+    rrels:  |
+      vertex
+    
