@@ -24,7 +24,3 @@ statement:
         using:
             concepts: |
                 used_concept
-            nrels: |
-                used_nrel
-            rrels: |
-                used_rrel
