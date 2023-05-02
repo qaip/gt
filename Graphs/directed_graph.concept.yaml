@@ -24,7 +24,7 @@ definition:
 statement:
     weak_directed_graph:
         title:
-            ru: О сильном ориентированном графе
+            ru: О слабо связном графе
             en: About weak directed graph
         ru:
             Ориентированный граф слабый тогда и только тогда, когда он имеет
