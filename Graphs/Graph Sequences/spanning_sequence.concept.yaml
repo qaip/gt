@@ -7,7 +7,7 @@ definition:
   using:
     concepts:  |
       sequence
-      digraph
+      directed_graph
       vertex
     rrels:  |
       vertex
