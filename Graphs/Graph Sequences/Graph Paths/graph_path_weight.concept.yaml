@@ -22,5 +22,3 @@ statement:
       concepts: |
         graph
         weight
-        cost_of_path
-        length_of_path
