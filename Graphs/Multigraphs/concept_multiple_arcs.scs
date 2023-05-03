@@ -1,0 +1,46 @@
+concept_multiple_arcs
+=> nrel_main_idtf:
+	[кратные дуги] (* <- lang_ru;; *);
+	[multiple arcs] (* <- lang_en;; *);;
+
+definition -> definition_of_multiple_arcs (*
+	-> rrel_key_sc_element: concept_multiple_arcs;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Две или более дуги с одинаковыми начальной и конечной вершиной] (* <- lang_ru;; *);;
+		-> [Two or more arcs with the same source and target vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (кратные дуги)] (* <- lang_ru;; *);
+		[Def. (multiple arcs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_arc;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_multiple_arcs_statement (*
+	-> rrel_key_sc_element: concept_multiple_arcs;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Возможных воздушные пути самолёта можно представить в виде мультиграфа, в котором кратные дуги, имеющие различные веса будут соответсвовать различным возможным путям пролёта самолёта] (* <- lang_ru;; *);;
+		-> [The possible air paths of an aircraft can be represented as a multigraph, in which multiple arcs with different weights will correspond to different possible paths of the aircraft] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о кратных дугах)] (* <- lang_ru;; *);
+		[Stat. (Multiple arcs statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_multigraph;
+		concept_arc_weights
+	};;
+*);;
+
+sc_node_class ->
+	concept_arc;
+	concept_vertex;
+	concept_multigraph;
+	concept_arc_weights;;
