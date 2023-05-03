@@ -1,6 +1,6 @@
 concept_eulers_genus
 => nrel_main_idtf:
-	[Род Эйлера] (* <- lang_ru;; *);
+	[род Эйлера] (* <- lang_ru;; *);
 	[Euler genus] (* <- lang_en;; *);;
 
 definition -> definition_of_eulers_genus (*
@@ -12,7 +12,7 @@ definition -> definition_of_eulers_genus (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Род Эйлера)] (* <- lang_ru;; *);
+		[Опр. (род Эйлера)] (* <- lang_ru;; *);
 		[Def. (Euler genus)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {

@@ -1,7 +1,7 @@
 concept_maximum_genus
 => nrel_main_idtf:
-	[Максимальный род] (* <- lang_ru;; *);
-	[Maximum genus] (* <- lang_en;; *);;
+	[максимальный род] (* <- lang_ru;; *);
+	[maximum genus] (* <- lang_en;; *);;
 
 definition -> definition_of_maximum_genus (*
 	-> rrel_key_sc_element: concept_maximum_genus;;
@@ -12,8 +12,8 @@ definition -> definition_of_maximum_genus (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Максимальный род)] (* <- lang_ru;; *);
-		[Def. (Maximum genus)] (* <- lang_en;; *);;
+		[Опр. (максимальный род)] (* <- lang_ru;; *);
+		[Def. (maximum genus)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_maximum_genus;

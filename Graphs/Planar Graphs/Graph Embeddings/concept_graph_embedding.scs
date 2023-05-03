@@ -1,7 +1,7 @@
 concept_graph_embedding
 => nrel_main_idtf:
-	[Вложение графа] (* <- lang_ru;; *);
-	[Graph embedding] (* <- lang_en;; *);;
+	[вложение графа] (* <- lang_ru;; *);
+	[graph embedding] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_embedding (*
 	-> rrel_key_sc_element: concept_graph_embedding;;
@@ -12,8 +12,8 @@ definition -> definition_of_graph_embedding (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Вложение графа)] (* <- lang_ru;; *);
-		[Def. (Graph embedding)] (* <- lang_en;; *);;
+		[Опр. (вложение графа)] (* <- lang_ru;; *);
+		[Def. (graph embedding)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

@@ -1,10 +1,10 @@
 concept_genus
 => nrel_main_idtf:
-	[Род графа] (* <- lang_ru;; *);
-	[Genus of a graph] (* <- lang_en;; *);
+	[род графа] (* <- lang_ru;; *);
+	[genus of a graph] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Graph genus] (* <- lang_en;; *);
+	[graph genus] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -20,8 +20,8 @@ definition -> definition_of_genus (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Род графа)] (* <- lang_ru;; *);
-		[Def. (Genus of a graph)] (* <- lang_en;; *);;
+		[Опр. (род графа)] (* <- lang_ru;; *);
+		[Def. (genus of a graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
