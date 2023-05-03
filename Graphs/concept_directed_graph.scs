@@ -1,11 +1,11 @@
 concept_directed_graph
 => nrel_main_idtf:
-	[Ориентированный граф] (* <- lang_ru;; *);
-	[Directed graph] (* <- lang_en;; *);
+	[ориентированный граф] (* <- lang_ru;; *);
+	[directed graph] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Орграф] (* <- lang_ru;; *);
-	[Digraph] (* <- lang_en;; *);;
+	[орграф] (* <- lang_ru;; *);
+	[digraph] (* <- lang_en;; *);;
 
 definition -> definition_of_directed_graph (*
 	-> rrel_key_sc_element: concept_directed_graph;;
@@ -16,8 +16,8 @@ definition -> definition_of_directed_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Ориентированный граф)] (* <- lang_ru;; *);
-		[Def. (Directed graph)] (* <- lang_en;; *);;
+		[Опр. (ориентированный граф)] (* <- lang_ru;; *);
+		[Def. (directed graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

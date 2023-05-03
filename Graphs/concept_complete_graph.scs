@@ -1,7 +1,7 @@
 concept_complete_graph
 => nrel_main_idtf:
-	[Полный граф] (* <- lang_ru;; *);
-	[Complete graph] (* <- lang_en;; *);
+	[полный граф] (* <- lang_ru;; *);
+	[complete graph] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -17,8 +17,8 @@ definition -> definition_of_complete_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Полный граф)] (* <- lang_ru;; *);
-		[Def. (Complete graph)] (* <- lang_en;; *);;
+		[Опр. (полный граф)] (* <- lang_ru;; *);
+		[Def. (complete graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_simple_graph;

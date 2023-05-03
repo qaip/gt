@@ -1,7 +1,7 @@
 concept_graph_structure
 => nrel_main_idtf:
-	[Графовая структура] (* <- lang_ru;; *);
-	[Graph structure] (* <- lang_en;; *);;
+	[графовая структура] (* <- lang_ru;; *);
+	[graph structure] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_structure (*
 	-> rrel_key_sc_element: concept_graph_structure;;
@@ -12,8 +12,8 @@ definition -> definition_of_graph_structure (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Графовая структура)] (* <- lang_ru;; *);
-		[Def. (Graph structure)] (* <- lang_en;; *);;
+		[Опр. (графовая структура)] (* <- lang_ru;; *);
+		[Def. (graph structure)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
