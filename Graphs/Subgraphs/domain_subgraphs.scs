@@ -12,7 +12,6 @@ section_subject_domain_of_subgraphs
 	concept_bicoloured_subgraph;
 	concept_isometric_subgraph;
 	concept_induced_subgraph;
-	concept_isometric_subgraph;
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
@@ -33,7 +32,6 @@ section_subject_domain_of_subgraphs=[*
 		concept_bicoloured_subgraph;
 		concept_isometric_subgraph;
 		concept_induced_subgraph;
-		concept_isometric_subgraph;
 
 	-> rrel_explored_relation:
 		nrel_induced_subgraph;
@@ -49,8 +47,7 @@ sc_node_class ->
 	concept_subgraph;
 	concept_bicoloured_subgraph;
 	concept_isometric_subgraph;
-	concept_induced_subgraph;
-	concept_isometric_subgraph;;
+	concept_induced_subgraph;;
 
 sc_node_norole_relation ->
 	nrel_induced_subgraph;

@@ -1,0 +1,44 @@
+concept_isometric_subgraph
+=> nrel_main_idtf:
+	[Изометрический подграф] (* <- lang_ru;; *);
+	[Isometric subgraph] (* <- lang_en;; *);;
+
+definition -> definition_of_isometric_subgraph (*
+	-> rrel_key_sc_element: concept_isometric_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Изометрический подграф-подграф H графа G, у которого все расстояния внутри H те же самые, что и в G] (* <- lang_ru;; *);;
+		-> [An isometric subgraph-subgraph H of a graph G for which all distances inside H are the same as in G] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Изометрический подграф)] (* <- lang_ru;; *);
+		[Def. (Isometric subgraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_subgraph
+	};;
+*);;
+
+statement -> statement_of_part_of_teorem (*
+	-> rrel_key_sc_element: concept_isometric_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [G изометрически вкладывается в граф Хэмминга] (* <- lang_ru;; *);;
+		-> [G is isometrically embeddable in a Hamming graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение в теореме о изометрическом графе)] (* <- lang_ru;; *);
+		[Stat. (Statement in teorem about isometric graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_subgraph;
+	concept_graph;;
