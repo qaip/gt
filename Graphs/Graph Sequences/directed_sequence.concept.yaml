@@ -26,7 +26,7 @@ statement:
       ориентированном графе определяет соответствующий незамкнутый или замкнутый
       маршрут в соответствующем неориентированном графе
     en:
-      Obviously, an open or closed directed route in a directed graph defines a
+     An open or closed directed route in a directed graph defines a
       corresponding open or closed route in the corresponding undirected graph
     using:
       concepts: |
