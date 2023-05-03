@@ -1,0 +1,19 @@
+en: subgraphs
+ru: подграфов
+
+parent: graphs
+
+max: |
+  subgraph
+
+concepts: |
+  bicoloured_subgraph
+  isometric_subgraph
+  induced_subgraph
+  tightened_subgraph
+
+nrels: |
+  induced_subgraph
+  vertex_adjacency
+  vertex_induced_subgraph
+  edge_induced_subgraph

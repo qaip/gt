@@ -1,0 +1,58 @@
+concept_acyclic_graph
+=> nrel_main_idtf:
+	[ациклический граф] (* <- lang_ru;; *);
+	[acyclic graph] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+directed_acyclic_graph;;
+
+definition -> definition_of_acyclic_graph (*
+	-> rrel_key_sc_element: concept_acyclic_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, не содержащий циклов] (* <- lang_ru;; *);;
+		-> [A graph that does not contain any cycles] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ациклический граф)] (* <- lang_ru;; *);
+		[Def. (acyclic graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_cycle
+	};;
+*);;
+
+statement -> statement_of_theorem_topological_sort (*
+	-> rrel_key_sc_element: concept_acyclic_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В любом ациклическом графе можно упорядочить вершины так, чтобы для каждого ребра u, v вершина u предшествовала вершине v в этом упорядочении] (* <- lang_ru;; *);;
+		-> [It is possible to order the vertices of any acyclic graph such that vertex u precedes vertex v in the ordering for every edge u, v] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о топологической сортировке)] (* <- lang_ru;; *);
+		[Stat. (Topological sort theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_acyclic_graph;
+		concept_vertex;
+		concept_edge;
+		concept_topological_sorting;
+		nrel_topological_ordering
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_cycle;
+	concept_acyclic_graph;
+	concept_vertex;
+	concept_edge;
+	concept_topological_sorting;;
+
+sc_node_norole_relation ->
+	nrel_topological_ordering;;

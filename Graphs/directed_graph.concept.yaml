@@ -1,0 +1,35 @@
+ru:
+  - ориентированный граф
+  - орграф
+en:
+  - directed graph
+  - igraph
+definition:
+  ru:
+    Ориентированный граф является парой множеств V, A, где V является множеством
+    вершин, A является множеством ориентированных ребер, которые называются
+    дугами
+  en:
+    A directed graph is a pair of sets V, A, where V is a set of vertices, A is
+    a set of directed edges, which are called arcs
+  using:
+    concepts: |
+      graph
+      arc
+      edge
+      vertex
+    rrels: |
+      edge
+      vertex
+statement:
+  weak_directed_graph:
+    title:
+      ru: слабость орграфа
+      en: digraph weakness
+    ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
+    en: A directed graph is weak if it has a chain
+    using:
+      concepts: |
+        directed_graph
+      nrels: |
+        chain

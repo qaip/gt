@@ -1,0 +1,72 @@
+concept_graph_embedding
+=> nrel_main_idtf:
+	[вложение графа] (* <- lang_ru;; *);
+	[graph embedding] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_embedding (*
+	-> rrel_key_sc_element: concept_graph_embedding;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Представление графа на поверхности таким образом, что ребра и вершины отображаются в различные точки на поверхности, и каждое ребро представляется непрерывной дугой] (* <- lang_ru;; *);;
+		-> [A representation of a graph in a surface such that the edges and vertices are assigned to distinct points in the surface and each edge is represented by a continuous arc] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (вложение графа)] (* <- lang_ru;; *);
+		[Def. (graph embedding)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_embedding;
+		concept_surface;
+		concept_edge;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_planar_embedding (*
+	-> rrel_key_sc_element: concept_graph_embedding;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вложение графа называется планарным, если его можно нарисовать на плоскости без пересечения рёбер] (* <- lang_ru;; *);;
+		-> [A graph embedding is called planar if it can be drawn on the plane without any crossing of edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Планарное вложение графа)] (* <- lang_ru;; *);
+		[Stat. (Planar graph embedding)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph;
+		concept_graph_embedding
+	};;
+*);;
+
+statement -> statement_of_non_planar_embedding (*
+	-> rrel_key_sc_element: concept_graph_embedding;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вложение графа называется непланарным, если его нельзя нарисовать на плоскости без пересечения рёбер] (* <- lang_ru;; *);;
+		-> [A graph embedding is called non-planar if it cannot be drawn on a plane without any crossing of edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Непланарное вложение графа)] (* <- lang_ru;; *);
+		[Stat. (Non-planar graph embedding)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_unplanar_graph;
+		concept_graph_embedding
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_graph_embedding;
+	concept_surface;
+	concept_edge;
+	concept_vertex;
+	concept_planar_graph;
+	concept_graph_embedding;
+	concept_unplanar_graph;
+	concept_graph_embedding;;

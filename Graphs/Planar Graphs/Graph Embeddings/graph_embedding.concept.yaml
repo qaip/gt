@@ -1,0 +1,50 @@
+en: graph embedding
+ru: вложение графа
+
+definition:
+  ru:
+    Представление графа на поверхности таким образом, что
+    ребра и вершины отображаются в различные точки на поверхности, и каждое
+    ребро представляется непрерывной дугой
+  en:
+    A representation of a graph in a surface such that the
+    edges and vertices are assigned to distinct points in the surface and each
+    edge is represented by a continuous arc
+  using:
+    concepts: |
+      graph
+      graph_embedding
+      surface
+      edge
+      vertex
+
+statement:
+  planar_embedding:
+    title:
+      en: Planar graph embedding
+      ru: Планарное вложение графа
+    ru:
+      Вложение графа называется планарным, если его можно нарисовать на
+      плоскости без пересечения рёбер
+    en:
+      A graph embedding is called planar if it can be drawn on the plane without
+      any crossing of edges
+    using:
+      concepts: |
+        planar_graph
+        graph_embedding
+
+  non_planar_embedding:
+    title:
+      en: Non-planar graph embedding
+      ru: Непланарное вложение графа
+    ru:
+      Вложение графа называется непланарным, если его нельзя нарисовать на
+      плоскости без пересечения рёбер
+    en:
+      A graph embedding is called non-planar if it cannot be drawn on a plane
+      without any crossing of edges
+    using:
+      concepts: |
+        unplanar_graph
+        graph_embedding
