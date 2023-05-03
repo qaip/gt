@@ -14,7 +14,7 @@ definition:
       graph_coloring
       
 statement:
-  wolfram_math_world_definition:
+  condition_of_bicoloured:
     title:
       ru: Условие двуцветности графа
       en: The condition of a bicoloured subgraph
