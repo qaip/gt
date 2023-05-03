@@ -1,0 +1,23 @@
+en: graph operations
+ru: операции над графами
+
+parent: graphs
+
+children: |
+  dual_graphs
+
+max: |
+  graph_operation
+
+concepts: |
+  dual_graph
+
+nrels: |
+  graph_union
+  graph_intersection
+  graph_cartesian_sum
+  graph_annular_sum
+  graph_product
+  graph_symmetric_difference
+  graph_difference
+  graph_complement

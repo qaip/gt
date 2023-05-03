@@ -1,0 +1,68 @@
+section_subject_domain_of_graph_cycles
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область циклов графа] (* <- lang_ru;; *);
+	[Section. Subject domain of graph cycles] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_cycles;
+	concept_graph_cycle;
+	concept_cyclic_graph;
+	concept_hamiltonian_cycle;
+	concept_eulerian_cycle;
+	concept_basic_cycle;
+	concept_elementary_cycle;
+	concept_minimum_weight_cycle;
+	concept_cycle_length;
+	concept_graph_girth;
+	concept_cycle_weight;
+	nrel_arcs_adjacency;
+	nrel_graph_chord;;
+
+section_subject_domain_of_graph_cycles=[*
+	subject_domain_of_graph_cycles
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область циклов графа] (* <- lang_ru;; *);
+		[Subject Domain of graph cycles] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph_cycle;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_cyclic_graph;
+		concept_hamiltonian_cycle;
+		concept_eulerian_cycle;
+		concept_basic_cycle;
+		concept_elementary_cycle;
+		concept_minimum_weight_cycle;
+		concept_cycle_length;
+		concept_graph_girth;
+		concept_cycle_weight;
+
+	-> rrel_explored_relation:
+		nrel_arcs_adjacency;
+		nrel_graph_chord;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graph_sequences;;
+*];;
+
+sc_node_class ->
+	concept_graph_cycle;
+	concept_cyclic_graph;
+	concept_hamiltonian_cycle;
+	concept_eulerian_cycle;
+	concept_basic_cycle;
+	concept_elementary_cycle;
+	concept_minimum_weight_cycle;
+	concept_cycle_length;
+	concept_graph_girth;
+	concept_cycle_weight;;
+
+sc_node_norole_relation ->
+	nrel_arcs_adjacency;
+	nrel_graph_chord;;
