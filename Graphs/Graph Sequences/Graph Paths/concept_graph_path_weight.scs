@@ -4,6 +4,8 @@ concept_graph_path_weight
 	[Graph path_weight] (* <- lang_en;; *);
 
 => nrel_idtf:
+	[Цена пути] (* <- lang_ru;; *);
+	[Длина пути] (* <- lang_ru;; *);
 	[Cost of path] (* <- lang_en;; *);
 	[Length of path] (* <- lang_en;; *);;
 
@@ -27,30 +29,11 @@ definition -> definition_of_graph_path_weight (*
 	};;
 *);;
 
-statement -> statement_of_synonymous_names (*
-	-> rrel_key_sc_element: concept_graph_path_weight;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Иногда вместо слова вес употребляется цена или длина] (* <- lang_ru;; *);;
-		-> [Sometimes the words cost or length are used instead of weight] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Синонимичные названия)] (* <- lang_ru;; *);
-		[Stat. (Synonymous names)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_weight
-	};;
-*);;
 
 sc_node_class ->
 	concept_weighted_graph;
 	concept_edge;
-	concept_graph;
-	concept_graph;
-	concept_weight;;
+	concept_graph;;
 
 sc_node_role_relation ->
 	rrel_edge;;
