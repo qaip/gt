@@ -39,7 +39,7 @@ statement:
       Если граф непланарный, то он должен содержать больше 4 вершин, степень
       которых больше 3, или больше 5 вершин степени больше 2
     en:
-      If the graph is non-planar, that it must contain more than 4 vertices
+      If a graph is unplanar, then it must contain more than 4 vertices
       whose degree is greater than 3, or more than 5 vertices of degree greater
       than 2
     using:
