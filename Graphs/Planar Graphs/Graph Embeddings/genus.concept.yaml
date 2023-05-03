@@ -3,10 +3,10 @@ en: Genus of a graph
 
 definition:
   ru:
-    Родом графа называется минимальное целое число g, для которого граф может
+    Минимальное целое число g, для которого граф может
     быть вложен на поверхности рода g без пересечения ребер
   en:
-    The genus of a graph is the minimum integer g such that the graph can be
+    The minimum integer g such that the graph can be
     embedded on a surface of genus g without edge intersection
   using:
     concepts: |

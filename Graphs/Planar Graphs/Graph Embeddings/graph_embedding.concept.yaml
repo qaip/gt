@@ -3,11 +3,11 @@ ru: Вложение графа
 
 definition:
   ru:
-    Вложение графа-это представление графа на поверхности таким образом, что
+    Представление графа на поверхности таким образом, что
     ребра и вершины отображаются в различные точки на поверхности, и каждое
     ребро представляется непрерывной дугой
   en:
-    A graph embedding is a representation of a graph in a surface such that the
+    A representation of a graph in a surface such that the
     edges and vertices are assigned to distinct points in the surface and each
     edge is represented by a continuous arc
   using:
