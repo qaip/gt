@@ -1,0 +1,54 @@
+concept_graph_structure
+=> nrel_main_idtf:
+	[Графовая структура] (* <- lang_ru;; *);
+	[Graph structure] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_structure (*
+	-> rrel_key_sc_element: concept_graph_structure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графовая структура является математическим объектом, который состоит из множества вершин и множества ребер, соединяющих эти вершины] (* <- lang_ru;; *);;
+		-> [A graph structure is a mathematical object that consists of a set of vertices and a set of edges connecting these vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Графовая структура)] (* <- lang_ru;; *);
+		[Def. (Graph structure)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_statement_title (*
+	-> rrel_key_sc_element: concept_graph_structure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графовая структура является тем же самым что и граф, но понятие граф используется в информатике и математике, а графовая структура в других науках] (* <- lang_ru;; *);;
+		-> [A graph structure is the same as a graph, but the concept of a graph is used in computer science and mathematics, and the graph structure in other sciences] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Графовая структура используется)] (* <- lang_ru;; *);
+		[Stat. (Statement title)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_structure
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_graph_structure;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;
