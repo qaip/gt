@@ -1,0 +1,33 @@
+concept_spanning_sequence
+=> nrel_main_idtf:
+	[остовный маршрут] (* <- lang_ru;; *);
+	[spanning sequence] (* <- lang_en;; *);;
+
+definition -> definition_of_spanning_sequence (*
+	-> rrel_key_sc_element: concept_spanning_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Маршрут, содержащий все вершины орграфа] (* <- lang_ru;; *);;
+		-> [Spanning sequence is a sequence, that contains all verteces in directed graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (остовный маршрут)] (* <- lang_ru;; *);
+		[Def. (spanning sequence)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_sequence;
+		concept_directed_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_sequence;
+	concept_directed_graph;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

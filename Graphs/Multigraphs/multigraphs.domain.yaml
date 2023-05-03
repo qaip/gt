@@ -1,0 +1,18 @@
+en: multigraphs
+ru: мультиграфов
+
+parent: graphs
+
+children: |
+  hypergraphs
+
+max: |
+  multigraph
+
+concepts: |
+  arc_entry
+  edge_entry
+
+rrels: |
+  arc_entry
+  edge_entry

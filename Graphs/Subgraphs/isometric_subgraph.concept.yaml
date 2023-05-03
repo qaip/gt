@@ -1,0 +1,14 @@
+ru: изометрический подграф
+en: isometric subgraph
+
+definition:
+  ru:
+    Подграф H графа G, у которого все расстояния внутри H
+    те же самые, что и в G
+  en:
+    Subgraph H of a graph G for which all distances inside
+    H are the same as in G
+  using:
+    concepts: |
+      graph
+      subgraph
