@@ -17,8 +17,8 @@ definition:
       sink_vertex
       edge
     nrels: |
-      incoming
-      outgoing
+      incoming_edge
+      outgoing_edge
 
 statement:
   theorem_dag_source_sink:
@@ -35,16 +35,14 @@ statement:
       source and can reach the sink
     using:
       concepts: |
-        dag_with_source_and_sink
         source_vertex
         sink_vertex
         path
         vertex
-        reachable_vertex
       nrels: |
-        outgoing
-        incoming
-        reachability
+        incoming_edge
+        outgoing_edge
+        reachable_vertex
 
 subclass:
   - dag_with_single_source_and_sink

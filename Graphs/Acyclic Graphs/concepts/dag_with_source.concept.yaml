@@ -11,11 +11,10 @@ definition:
   using:
     concepts: |
       directed_acyclic_graph
-      vertex
       source_vertex
       edge
     nrels: |
-      outgoing
+      outgoing_edge
 
 statement:
   theorem_dag_source:
@@ -30,13 +29,10 @@ statement:
       reachable from the source
     using:
       concepts: |
-        dag_with_source
         source_vertex
         vertex
-        reachable_vertex
       nrels: |
-        outgoing
-        reachability
+        reachable_vertex
 
 subclass:
   - dag_with_source_and_sink

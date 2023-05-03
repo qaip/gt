@@ -16,9 +16,8 @@ definition:
       source_vertex
       sink_vertex
     nrels: |
-      direction
-      origin
-      termination
+      incoming_edge
+      outgoing_edge
 
 statement:
   theorem_single_source_and_sink:
@@ -26,7 +25,7 @@ statement:
       ru: Теорема о единственном истоке и стоке
       en: Theorem of single source and sink
     ru:
-      В ациклическом ориентированном графе с единственным истоком и стоком
+      В ориентированном ациклическом графе с единственным истоком и стоком
       каждая вершина может быть топологически отсортирована таким образом, что
       исток стоит первым, а сток стоит последним
     en:
@@ -35,13 +34,14 @@ statement:
       and the sink is the last vertex in the ordering
     using:
       concepts: |
-        dag_with_single_source_and_sink
-        topological_sort
         source_vertex
         sink_vertex
+        topological_sorting
       nrels: |
-        ordering
-        direction
+        topological_ordering
+      rrels: |
+        first_element
+        last_element
 
 subclass:
   - tree_with_single_source_and_sink

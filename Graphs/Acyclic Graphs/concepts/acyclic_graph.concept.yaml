@@ -8,8 +8,6 @@ definition:
     concepts: |
       graph
       cycle
-    nrels: |
-      containment
 
 statement:
   theorem_topological_sort:
@@ -27,9 +25,9 @@ statement:
         acyclic_graph
         vertex
         edge
-        topological_sort
+        topological_sorting
       nrels: |
-        ordering
+        topological_ordering
 
 subclass:
   - directed_acyclic_graph
