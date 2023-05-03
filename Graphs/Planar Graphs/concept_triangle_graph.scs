@@ -34,8 +34,8 @@ statement -> statement_of_triangle_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойства треугольного графа)] (* <- lang_ru;; *);
-		[Stat. (Properties of the graph-triangle)] (* <- lang_en;; *);;
+		[Утв. (Cвойство треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Property of a graph-triangle)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;
