@@ -26,12 +26,12 @@ statement -> statement_of_wolfram_math_world_definition (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Граф двуцветный тогда и только тогда, когда он не имеет нечетных графовых циклов] (* <- lang_ru;; *);;
-		-> [A graph is bicolorable iff it has no odd graph cycles] (* <- lang_en;; *);;
+		-> [A graph is bicolorable if it has no odd graph cycles] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Определение двухцветного графа с сайта Wolfram Math World)] (* <- lang_ru;; *);
-		[Stat. (Bicolor graph definition from Wolfram Math World)] (* <- lang_en;; *);;
+		[Утв. (Условие двуцветности графа)] (* <- lang_ru;; *);
+		[Stat. (The condition of a bicoloured subgraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_coloring;
