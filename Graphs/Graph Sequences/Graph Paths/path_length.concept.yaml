@@ -3,11 +3,11 @@ en: path length
 
 definition:
   ru:
-    Длиной пути является число рёбер, используемых в пути, при этом многократно
-    используемые рёбра считаются соответствующее число раз
+    Число рёбер, используемых в пути графа, при этом многократно используемые
+    рёбра считаются соответствующее число раз
   en:
-    The length of a path is the number of edges used in the path, with reusable
-    edges being counted the corresponding number of times
+    The number of edges used in the path of the graph, while repeatedly used
+    edges are counted the corresponding number of times
   using:
     concepts: |
       path
@@ -20,8 +20,11 @@ statement:
       ru: Условие эквивалентности длины пути нулю
       en: Condition for the equivalence of the path length to zero
     ru:
-      Длина пути графа может равняться нулю, если путь состоит только из одной вершины
-    en: The length of graph path can be zero if the path consists of only one vertex
+      Длина пути графа может равняться нулю, если путь состоит только из одной
+      вершины
+    en:
+      The length of graph path can be zero if the path consists of only one
+      vertex
     using:
       concepts: |
         path
