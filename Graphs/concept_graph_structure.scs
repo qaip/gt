@@ -33,7 +33,7 @@ statement -> statement_of_graph_structure_usage (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Графовая структура используется)] (* <- lang_ru;; *);
+		[Утв. (Использование графовой структуры)] (* <- lang_ru;; *);
 		[Stat. (Graph structure usage)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {

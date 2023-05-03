@@ -8,7 +8,7 @@ definition -> definition_of_edge (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Ребро является связкой, соединяющей две вершины графа] (* <- lang_ru;; *);;
-		-> [An edge is the connection between vertices of the graph] (* <- lang_en;; *);;
+		-> [An edge is the connection between two vertices of the graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

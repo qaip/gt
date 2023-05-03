@@ -25,12 +25,47 @@ definition -> definition_of_complete_graph (*
 	};;
 *);;
 
+statement -> statement_of_complete_graph_connected (*
+	-> rrel_key_sc_element: concept_complete_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Полный граф является связным графом] (* <- lang_ru;; *);;
+		-> [A complete graph is a connected graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Полный граф связный)] (* <- lang_ru;; *);
+		[Stat. (Complete graph is connected)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_connected_graph
+	};;
+*);;
+
+statement -> statement_of_complete_graph_regular (*
+	-> rrel_key_sc_element: concept_complete_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Полный граф является регулярным графом] (* <- lang_ru;; *);;
+		-> [A regular graph is a connected graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Полный граф регулярный)] (* <- lang_ru;; *);
+		[Stat. (Complete graph is regular)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_regular_graph
+	};;
+*);;
 
 sc_node_class ->
 	concept_simple_graph;
 	concept_undirected_graph;
 	concept_vertex;
-	concept_edge;;
+	concept_edge;
+	concept_connected_graph;
+	concept_regular_graph;;
 
 sc_node_role_relation ->
 	rrel_vertex;
