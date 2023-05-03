@@ -2,10 +2,8 @@ ru: Длина маршрута
 en: Length of sequence
 
 definition:
-  ru: Длина маршрута это количество рёбер в маршруте учитывая повторения
-  en:
-    Sequence length is the number of edges in the sequence, taking into account
-    repetitions
+  ru: количество рёбер в маршруте учитывая повторения
+  en: the number of edges in the sequence, taking into account repetitions
   using:
     concepts: |
       edge

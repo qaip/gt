@@ -22,11 +22,11 @@ statement:
       ru: Связь направленного и ненаправленного маршрута
       en: Relationship between a directed and non-directed sequence
     ru:
-      Незамкнутый или замкнутый ориентированный маршрут в
-      ориентированном графе определяет соответствующий незамкнутый или замкнутый
-      маршрут в соответствующем неориентированном графе
+      Незамкнутый или замкнутый ориентированный маршрут в ориентированном графе
+      определяет соответствующий незамкнутый или замкнутый маршрут в
+      соответствующем неориентированном графе
     en:
-     An open or closed directed route in a directed graph defines a
+      An open or closed directed route in a directed graph defines a
       corresponding open or closed route in the corresponding undirected graph
     using:
       concepts: |
