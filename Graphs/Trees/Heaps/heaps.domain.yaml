@@ -1,0 +1,16 @@
+en: heaps
+ru: куч
+
+parent: trees
+
+max: |
+  heap
+
+concepts: |
+  binary_heap
+  binomial_heap
+  biparental_heap
+  brodals_and_okasakis_priority_queue
+  d_ary_heap
+  fibonacci_heap
+  leftist_heap
