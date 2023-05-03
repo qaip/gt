@@ -21,7 +21,7 @@ definition -> definition_of_bicoloured_subgraph (*
 	};;
 *);;
 
-statement -> statement_of_wolfram_math_world_definition (*
+statement -> statement_of_condition_of_bicoloured (*
 	-> rrel_key_sc_element: concept_bicoloured_subgraph;;
 
 	<= nrel_sc_text_translation: ... (*
