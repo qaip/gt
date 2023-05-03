@@ -7,8 +7,8 @@ definition -> definition_of_length_of_sequence (*
 	-> rrel_key_sc_element: concept_length_of_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Длина маршрута это количество рёбер в маршруте учитывая повторения] (* <- lang_ru;; *);;
-		-> [Sequence length is the number of edges in the sequence, taking into account repetitions] (* <- lang_en;; *);;
+		-> [количество рёбер в маршруте учитывая повторения] (* <- lang_ru;; *);;
+		-> [the number of edges in the sequence, taking into account repetitions] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
