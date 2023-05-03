@@ -7,8 +7,8 @@ definition -> definition_of_path_length (*
 	-> rrel_key_sc_element: concept_path_length;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Длиной пути является число рёбер, используемых в пути, при этом многократно используемые рёбра считаются соответствующее число раз] (* <- lang_ru;; *);;
-		-> [The length of a path is the number of edges used in the path, with reusable edges being counted the corresponding number of times] (* <- lang_en;; *);;
+		-> [Число рёбер, используемых в пути графа, при этом многократно используемые рёбра считаются соответствующее число раз] (* <- lang_ru;; *);;
+		-> [The number of edges used in the path of the graph, while repeatedly used edges are counted the corresponding number of times] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

@@ -7,8 +7,8 @@ definition -> definition_of_hamiltonian_path (*
 	-> rrel_key_sc_element: concept_hamiltonian_path;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Гамильтоновым путём называется простой путь, проходящий через каждую вершину графа ровно один раз] (* <- lang_ru;; *);;
-		-> [A Hamiltonian path is a simple path that passes through each vertex of the graph exactly once] (* <- lang_en;; *);;
+		-> [Простой путь, проходящий через каждую вершину графа ровно один раз] (* <- lang_ru;; *);;
+		-> [A simple path that passes through each vertex of the graph exactly once] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

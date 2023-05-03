@@ -13,8 +13,8 @@ definition -> definition_of_graph_path_weight (*
 	-> rrel_key_sc_element: concept_graph_path_weight;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Весом пути во взвешенном графе называется сумма весов рёбер пути] (* <- lang_ru;; *);;
-		-> [The weight of a walk in a weighted graph is the sum of the weights of the traversed edges] (* <- lang_en;; *);;
+		-> [Сумма весов рёбер пути во взвешенном графе] (* <- lang_ru;; *);;
+		-> [A sum of the weights of the traversed edges in a weighted graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
