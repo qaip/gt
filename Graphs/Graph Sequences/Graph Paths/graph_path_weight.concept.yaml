@@ -1,4 +1,4 @@
-ru: Вес пути графа
+ru: Вес пути графа | Цена пути | Длина пути
 en: Graph path_weight | Cost of path | Length of path
 
 definition:
@@ -11,14 +11,3 @@ definition:
       graph
     rrels:  |
       edge
-statement: 
-  synonymous_names:
-    title:
-      ru: Синонимичные названия
-      en: Synonymous names
-    ru: Иногда вместо слова вес употребляется цена или длина
-    en: Sometimes the words cost or length are used instead of weight
-    using:
-      concepts: |
-        graph
-        weight
