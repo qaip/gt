@@ -25,7 +25,7 @@ definition -> definition_of_graph_diamond (*
 	};;
 *);;
 
-statement -> statement_of_triangle_graph_property (*
+statement -> statement_of_diamond_graph_property (*
 	-> rrel_key_sc_element: concept_graph_diamond;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -34,8 +34,8 @@ statement -> statement_of_triangle_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойства треугольного графа)] (* <- lang_ru;; *);
-		[Stat. (Properties of the graph-triangle)] (* <- lang_en;; *);;
+		[Утв. (Cвойство графа алмаза)] (* <- lang_ru;; *);
+		[Stat. (Properties of a graph diamond)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;
