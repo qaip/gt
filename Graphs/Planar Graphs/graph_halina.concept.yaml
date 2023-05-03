@@ -36,7 +36,7 @@ statement:
   halina_graph_connectiviti:
     title:
       ru: Cвязность графа Халина
-      en: Connectiviti of the Halina graph
+      en: Connectivity of a Halina graph
     ru:
       Любой граф Халина рёберно минимально 3-связен, что означает, что после
       удаления любого ребра граф перестаёт быть 3-связен
