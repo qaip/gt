@@ -26,8 +26,8 @@ statement -> statement_of_path_equals_zero (*
 	-> rrel_key_sc_element: concept_path_length;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Длина пути может равняться нулю, если путь состоит только из одной вершины] (* <- lang_ru;; *);;
-		-> [The length of path can be zero if the path consists of only one vertex] (* <- lang_en;; *);;
+		-> [Длина пути графа может равняться нулю, если путь состоит только из одной вершины] (* <- lang_ru;; *);;
+		-> [The length of graph path can be zero if the path consists of only one vertex] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
