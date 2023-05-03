@@ -20,10 +20,6 @@ concepts: |
   external_graph
   unplanar_graph
   one_planar_graph
-  complete_graph
-  bipartite_graph
-  homeomorphical_graphs
-  unoriented_graph
 
 nrels: |
   isomorphism

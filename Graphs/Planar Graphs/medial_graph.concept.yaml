@@ -3,9 +3,11 @@ en: Medial graph
 
 definition:
   ru:
-    Срединный граф-граф, представляющий рёбра смежности внутри граней заданного планарного графа
+    Срединный граф-граф, представляющий рёбра смежности внутри граней заданного
+    планарного графа
   en:
-    A median graph is a graph representing adjacency edges inside the faces of a given planar graph
+    A median graph is a graph representing adjacency edges inside the faces of a
+    given planar graph
   using:
     concepts: |
       planar_graph
@@ -21,9 +23,9 @@ statement:
       ru: Cвойства серединного графа
       en: Properties of the medial graph
     ru:
-      Один и тот же планарный граф может иметь несколько неизоморфных срединных графов
-    en:
-      The same planar graph can have several non-isomorphic median graphs
+      Один и тот же планарный граф может иметь несколько неизоморфных срединных
+      графов
+    en: The same planar graph can have several non-isomorphic median graphs
     using:
       concepts: |
         planar_graph

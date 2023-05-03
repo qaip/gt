@@ -4,10 +4,12 @@ en: Plane
 definition:
   ru:
     - Поверхность, имеющая два измерения
-    - Поверхность, содержащая полностью каждую прямую, соединяющую любые её точки
+    - Поверхность, содержащая полностью каждую прямую, соединяющую любые её
+      точки
   en:
     - A surface having two dimensions
-    - A surface containing completely every straight line connecting any of its points
+    - A surface containing completely every straight line connecting any of its
+      points
   using:
     concepts: |
       surface

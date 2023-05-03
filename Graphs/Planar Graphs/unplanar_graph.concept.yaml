@@ -3,9 +3,11 @@ en: Unplanar graph
 
 definition:
   ru:
-    Непланарный граф-граф, который не может быть изображён на плоскости без пересечения ребер
+    Непланарный граф-граф, который не может быть изображён на плоскости без
+    пересечения ребер
   en:
-    Unplanar graph is a graph, which cannot be represented on a plane without intersection of edges
+    Unplanar graph is a graph, which cannot be represented on a plane without
+    intersection of edges
   using:
     concepts: |
       graph
@@ -18,9 +20,11 @@ statement:
       ru: Достаточное условие непланарности графа
       en: Sufficient condition for graph unplanarity
     ru:
-      Если граф содержит полный двудольный подграф или полный подграф на 5 вершин, то он является непланарным
+      Если граф содержит полный двудольный подграф или полный подграф на 5
+      вершин, то он является непланарным
     en:
-      If a graph contains a complete bipartite subgraph or a complete subgraph with 5 vertices, then it is non-planar
+      If a graph contains a complete bipartite subgraph or a complete subgraph
+      with 5 vertices, then it is non-planar
     using:
       concepts: |
         complete_graph
@@ -32,9 +36,12 @@ statement:
       ru: Необходимое условие непланарности графа
       en: A necessary condition for graph unplanarity
     ru:
-      Если граф непланарный, то он должен содержать больше 4 вершин, степень которых больше 3, или больше 5 вершин степени больше 2
+      Если граф непланарный, то он должен содержать больше 4 вершин, степень
+      которых больше 3, или больше 5 вершин степени больше 2
     en:
-      If the graph is non-planar, that it must contain more than 4 vertices whose degree is greater than 3, or more than 5 vertices of degree greater than 2
+      If the graph is non-planar, that it must contain more than 4 vertices
+      whose degree is greater than 3, or more than 5 vertices of degree greater
+      than 2
     using:
       concepts: |
         vertex

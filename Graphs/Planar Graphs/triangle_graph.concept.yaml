@@ -3,9 +3,11 @@ en: Triangle graph
 
 definition:
   ru:
-    Треугольным графом называется планарный неориентированный граф с тремя вершинами и тремя рёбрами, образующими треугольник
+    Треугольным графом называется планарный неориентированный граф с тремя
+    вершинами и тремя рёбрами, образующими треугольник
   en:
-    Graph-triangle is a planar undirected graph, that contains 3 vertices and 3 edges, forming a triangle
+    Graph-triangle is a planar undirected graph, that contains 3 vertices and 3
+    edges, forming a triangle
   using:
     concepts: |
       unoriented_graph
@@ -20,9 +22,12 @@ statement:
       ru: Cвойства треугольного графа
       en: Properties of the graph-triangle
     ru:
-      Треугольный граф имеет хроматическое число 3, хроматический индекс 3, радиус 1, диаметр 1 и обхват 3. Он также 2-вершинно связен и 2-рёберно связен
+      Треугольный граф имеет хроматическое число 3, хроматический индекс 3,
+      радиус 1, диаметр 1 и обхват 3. Он также 2-вершинно связен и 2-рёберно
+      связен
     en:
-      The graph-triangle has girth 3, diameter 1, radius 1, chromatic number 3, chromatic index 3 and is both 2-vertex-connected and 2-edge-connected
+      The graph-triangle has girth 3, diameter 1, radius 1, chromatic number 3,
+      chromatic index 3 and is both 2-vertex-connected and 2-edge-connected
     using:
       concepts: |
         chromatic_number

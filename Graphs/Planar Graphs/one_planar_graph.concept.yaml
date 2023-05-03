@@ -3,9 +3,11 @@ en: 1-planar graph
 
 definition:
   ru:
-    Граф, который может быть изображён на плоскости таким образом, что каждое ребро пересекает не более одного другого ребра
+    Граф, который может быть изображён на плоскости таким образом, что каждое
+    ребро пересекает не более одного другого ребра
   en:
-    A graph that can be drawn in the plane in such a way that each edge intersects no more than one other edge
+    A graph that can be drawn in the plane in such a way that each edge
+    intersects no more than one other edge
   using:
     concepts: |
       plane
@@ -17,12 +19,9 @@ statement:
     title:
       ru: Свойства 1-планарного графа
       en: Properties of the 1-planar graph
-    ru:
-      Любой 1-планарный граф с n вершинами имеет не более 4n-8 рёбер
-    en:
-      Any 1-planar graph with n vertices has at most 4n-8 edges
+    ru: Любой 1-планарный граф с n вершинами имеет не более 4n-8 рёбер
+    en: Any 1-planar graph with n vertices has at most 4n-8 edges
     using:
       concepts: |
         vertex
         edge
-    
