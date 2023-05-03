@@ -53,7 +53,7 @@ statement -> statement_of_halina_graph_connectiviti (*
 
 	=> nrel_main_idtf:
 		[Утв. (Cвязность графа Халина)] (* <- lang_ru;; *);
-		[Stat. (Connectiviti of the Halina graph)] (* <- lang_en;; *);;
+		[Stat. (Connectivity of a Halina graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;
@@ -73,7 +73,7 @@ statement -> statement_of_halina_graph_and_hamiltonian_graph (*
 
 	=> nrel_main_idtf:
 		[Утв. (Граф Халина и Гамильтонов граф)] (* <- lang_ru;; *);
-		[Stat. (The Halin Graph and the Hamiltonian graph)] (* <- lang_en;; *);;
+		[Stat. (Halin and Hamiltonian graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;

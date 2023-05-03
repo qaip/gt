@@ -53,7 +53,7 @@ statement:
   halina_graph_and_hamiltonian_graph:
     title:
       ru: Граф Халина и Гамильтонов граф
-      en: A Halin Graph and a Hamiltonian graph
+      en: Halin and Hamiltonian graphs
     ru:
       Любой граф Халина является гамильтоновым графом и любое ребро принадлежит
       гамильтонову циклу. Более того, любой граф Халина остаётся гамильтоновым
