@@ -16,10 +16,12 @@ definition -> definition_of_external_graph (*
 		[Def. (External graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_external_planar_graph
+		concept_external_planar_graph;
+		concept_external_graph
 	};;
 *);;
 
 
 sc_node_class ->
-	concept_external_planar_graph;;
+	concept_external_planar_graph;
+	concept_external_graph;;

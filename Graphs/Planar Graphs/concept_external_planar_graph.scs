@@ -21,6 +21,7 @@ definition -> definition_of_external_planar_graph (*
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
+		concept_external_planar_graph;
 		concept_plane;
 		concept_vertex;
 		nrel_face
@@ -42,16 +43,19 @@ statement -> statement_of_outerplanar_graph_property (*
 	=> nrel_using_constants: {
 		concept_hamiltonian_cycle;
 		concept_graph_connectivities;
+		concept_external_planar_graph;
 		nrel_face
 	};;
 *);;
 
 sc_node_class ->
 	concept_planar_graph;
+	concept_external_planar_graph;
 	concept_plane;
 	concept_vertex;
 	concept_hamiltonian_cycle;
-	concept_graph_connectivities;;
+	concept_graph_connectivities;
+	concept_external_planar_graph;;
 
 sc_node_norole_relation ->
 	nrel_face;

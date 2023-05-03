@@ -26,6 +26,7 @@ definition -> definition_of_planar_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
+		concept_planar_graph;
 		concept_plane;
 		concept_edge;
 		nrel_intersection
@@ -74,6 +75,7 @@ statement -> statement_of_theorem_potryagina_kuratovskogo (*
 
 sc_node_class ->
 	concept_graph;
+	concept_planar_graph;
 	concept_plane;
 	concept_edge;
 	concept_planar_graph;

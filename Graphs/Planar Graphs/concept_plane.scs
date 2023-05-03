@@ -19,6 +19,7 @@ definition -> definition_of_plane (*
 
 	=> nrel_using_constants: {
 		concept_surface;
+		concept_plane;
 		concept_straight;
 		concept_point
 	};;
@@ -27,5 +28,6 @@ definition -> definition_of_plane (*
 
 sc_node_class ->
 	concept_surface;
+	concept_plane;
 	concept_straight;
 	concept_point;;

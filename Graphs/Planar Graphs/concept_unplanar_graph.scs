@@ -16,6 +16,7 @@ definition -> definition_of_unplanar_graph (*
 		[Def. (Unplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
+		concept_unplanar_graph;
 		concept_graph;
 		concept_plane;
 		concept_edge
@@ -36,6 +37,7 @@ statement -> statement_of_sufficient_condition_unplanar_graph (*
 
 	=> nrel_using_constants: {
 		concept_complete_graph;
+		concept_unplanar_graph;
 		concept_bipartite_graph;
 		concept_vertex
 	};;
@@ -54,18 +56,22 @@ statement -> statement_of_necessary_condition_unplanar_graph (*
 		[Stat. (A necessary condition for graph unplanarity)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
+		concept_unplanar_graph;
 		concept_vertex;
 		nrel_vertex_degree
 	};;
 *);;
 
 sc_node_class ->
+	concept_unplanar_graph;
 	concept_graph;
 	concept_plane;
 	concept_edge;
 	concept_complete_graph;
+	concept_unplanar_graph;
 	concept_bipartite_graph;
 	concept_vertex;
+	concept_unplanar_graph;
 	concept_vertex;;
 
 sc_node_norole_relation ->
