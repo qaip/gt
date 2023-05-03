@@ -32,8 +32,8 @@ statement -> statement_of_graphs_representation (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Изображение графов)] (* <- lang_ru;; *);
-		[Stat. (Graphs representation)] (* <- lang_en;; *);;
+		[Утв. (изображение графов)] (* <- lang_ru;; *);
+		[Stat. (graphs representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
