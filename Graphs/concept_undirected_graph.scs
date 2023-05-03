@@ -1,7 +1,7 @@
 concept_undirected_graph
 => nrel_main_idtf:
-	[неориентированный граф] (* <- lang_ru;; *);
-	[undirected graph] (* <- lang_en;; *);;
+	[Неориентированный граф] (* <- lang_ru;; *);
+	[Undirected graph] (* <- lang_en;; *);;
 
 definition -> definition_of_undirected_graph (*
 	-> rrel_key_sc_element: concept_undirected_graph;;
@@ -12,8 +12,8 @@ definition -> definition_of_undirected_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (неориентированный граф)] (* <- lang_ru;; *);
-		[Def. (undirected graph)] (* <- lang_en;; *);;
+		[Опр. (Неориентированный граф)] (* <- lang_ru;; *);
+		[Def. (Undirected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
