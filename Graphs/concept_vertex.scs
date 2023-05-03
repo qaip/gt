@@ -1,11 +1,11 @@
 concept_vertex
 => nrel_main_idtf:
-	[Вершина] (* <- lang_ru;; *);
-	[Vertex] (* <- lang_en;; *);
+	[вершина] (* <- lang_ru;; *);
+	[vertex] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Узел] (* <- lang_ru;; *);
-	[Node] (* <- lang_en;; *);;
+	[узел] (* <- lang_ru;; *);
+	[node] (* <- lang_en;; *);;
 
 definition -> definition_of_vertex (*
 	-> rrel_key_sc_element: concept_vertex;;
@@ -16,8 +16,8 @@ definition -> definition_of_vertex (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Вершина)] (* <- lang_ru;; *);
-		[Def. (Vertex)] (* <- lang_en;; *);;
+		[Опр. (вершина)] (* <- lang_ru;; *);
+		[Def. (vertex)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

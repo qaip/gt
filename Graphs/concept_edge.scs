@@ -1,7 +1,7 @@
 concept_edge
 => nrel_main_idtf:
-	[Ребро] (* <- lang_ru;; *);
-	[Edge] (* <- lang_en;; *);;
+	[ребро] (* <- lang_ru;; *);
+	[edge] (* <- lang_en;; *);;
 
 definition -> definition_of_edge (*
 	-> rrel_key_sc_element: concept_edge;;
@@ -12,8 +12,8 @@ definition -> definition_of_edge (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Ребро)] (* <- lang_ru;; *);
-		[Def. (Edge)] (* <- lang_en;; *);;
+		[Опр. (ребро)] (* <- lang_ru;; *);
+		[Def. (edge)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
