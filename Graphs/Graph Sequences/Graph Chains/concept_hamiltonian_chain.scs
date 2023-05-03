@@ -1,7 +1,7 @@
 concept_hamiltonian_chain
 => nrel_main_idtf:
-	[Гамильтонова цепь] (* <- lang_ru;; *);
-	[Hamiltonian chain] (* <- lang_en;; *);;
+	[гамильтонова цепь] (* <- lang_ru;; *);
+	[hamiltonian chain] (* <- lang_en;; *);;
 
 definition -> definition_of_hamiltonian_chain (*
 	-> rrel_key_sc_element: concept_hamiltonian_chain;;
@@ -14,8 +14,8 @@ definition -> definition_of_hamiltonian_chain (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Гамильтонова цепь)] (* <- lang_ru;; *);
-		[Def. (Hamiltonian chain)] (* <- lang_en;; *);;
+		[Опр. (гамильтонова цепь)] (* <- lang_ru;; *);
+		[Def. (hamiltonian chain)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_chain;
