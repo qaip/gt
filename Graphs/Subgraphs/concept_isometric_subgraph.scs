@@ -7,8 +7,8 @@ definition -> definition_of_isometric_subgraph (*
 	-> rrel_key_sc_element: concept_isometric_subgraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Изометрический подграф-подграф H графа G, у которого все расстояния внутри H те же самые, что и в G] (* <- lang_ru;; *);;
-		-> [An isometric subgraph-subgraph H of a graph G for which all distances inside H are the same as in G] (* <- lang_en;; *);;
+		-> [Подграф H графа G, у которого все расстояния внутри H те же самые, что и в G] (* <- lang_ru;; *);;
+		-> [Subgraph H of a graph G for which all distances inside H are the same as in G] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

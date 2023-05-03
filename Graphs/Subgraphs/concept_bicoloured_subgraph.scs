@@ -17,7 +17,7 @@ definition -> definition_of_bicoloured_subgraph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_embedding
+		concept_graph_coloring
 	};;
 *);;
 
@@ -34,7 +34,7 @@ statement -> statement_of_wolfram_math_world_definition (*
 		[Stat. (Bicolor graph definition from Wolfram Math World)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_embedding;
+		concept_graph_coloring;
 		concept_graph;
 		concept_graph_cycles
 	};;
@@ -42,7 +42,7 @@ statement -> statement_of_wolfram_math_world_definition (*
 
 sc_node_class ->
 	concept_graph;
-	concept_graph_embedding;
-	concept_graph_embedding;
+	concept_graph_coloring;
+	concept_graph_coloring;
 	concept_graph;
 	concept_graph_cycles;;
