@@ -8,8 +8,8 @@ concept_genus
 
 
 => nrel_inclusion:
-maximum_genus;
-eulers_genus;;
+concept_maximum_genus;
+concept_eulers_genus;;
 
 definition -> definition_of_genus (*
 	-> rrel_key_sc_element: concept_genus;;
