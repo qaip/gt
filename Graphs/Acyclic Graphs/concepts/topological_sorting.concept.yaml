@@ -1,0 +1,39 @@
+ru: топологическая сортировка
+en: Topological sort
+
+definition:
+  ru:
+    Алгоритм, который упорядочивает вершины ориентированного ациклического графа
+    таким образом, чтобы для каждого ребра (u, v) вершина u предшествовала
+    вершине v в этом упорядочении
+  en:
+    An algorithm that orders the vertices of a directed acyclic graph such that
+    for every edge (u, v), vertex u comes before vertex v in the ordering
+  using:
+    concepts: |
+      directed_acyclic_graph
+      vertex
+      edge
+    nrels: |
+      ordering
+
+statement:
+  theorem_topological_sort:
+    title:
+      ru: Теорема о топологической сортировке
+      en: Topological sort theorem
+    ru:
+      В любом ориентированном ациклическом графе можно упорядочить вершины так,
+      чтобы для каждого ребра (u, v) вершина u предшествовала вершине v в этом
+      упорядочении
+    en:
+      In any directed acyclic graph, it is possible to order the vertices such
+      that for every edge (u, v), vertex u comes before vertex v in the ordering
+    using:
+      concepts: |
+        directed_acyclic_graph
+        vertex
+        edge
+        topological_sort
+      nrels: |
+        ordering

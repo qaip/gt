@@ -1,0 +1,41 @@
+ru: dAG со стоком
+en: DAG with sink
+
+definition:
+  ru:
+    Ориентированный ациклический граф, имеющий одну вершину-сток, в которую
+    входят все остальные ребра графа
+  en:
+    A directed acyclic graph with one sink vertex, into which all other edges in
+    the graph terminate
+  using:
+    concepts: |
+      directed_acyclic_graph
+      vertex
+      sink_vertex
+      edge
+    nrels: |
+      incoming
+
+statement:
+  theorem_dag_sink:
+    title:
+      ru: Описание свойств DAG со стоком
+      en: Properties of DAG with sink
+    ru: В DAG со стоком каждая вершина, кроме стока, достижима из стока
+    en:
+      In a DAG with sink, every vertex except the sink is reachable from the
+      sink
+    using:
+      concepts: |
+        dag_with_sink
+        sink_vertex
+        vertex
+        reachable_vertex
+      nrels: |
+        incoming
+        reachability
+
+subclass:
+  - dag_with_source_and_sink
+  - dag_with_single_source_and_sink

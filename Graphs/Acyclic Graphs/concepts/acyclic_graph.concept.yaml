@@ -1,0 +1,36 @@
+ru: ациклический граф
+en: Acyclic graph
+
+definition:
+  ru: Граф, не содержащий циклов
+  en: A graph that does not contain any cycles
+  using:
+    concepts: |
+      graph
+      cycle
+    nrels: |
+      containment
+
+statement:
+  theorem_topological_sort:
+    title:
+      ru: Теорема о топологической сортировке
+      en: Topological sort theorem
+    ru:
+      В любом ациклическом графе можно упорядочить вершины так, чтобы для
+      каждого ребра (u, v) вершина u предшествовала вершине v в этом
+      упорядочении
+    en:
+      In any acyclic graph, it is possible to order the vertices such that for
+      every edge (u, v), vertex u comes before vertex v in the ordering
+    using:
+      concepts: |
+        acyclic_graph
+        vertex
+        edge
+        topological_sort
+      nrels: |
+        ordering
+
+subclass:
+  - directed_acyclic_graph

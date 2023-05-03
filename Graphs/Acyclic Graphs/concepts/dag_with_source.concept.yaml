@@ -1,0 +1,42 @@
+ru: dAG с источником
+en: DAG with source
+
+definition:
+  ru:
+    Ориентированный ациклический граф, имеющий одну вершину-источник, из которой
+    выходят все остальные ребра графа
+  en:
+    A directed acyclic graph with one source vertex, from which all other edges
+    in the graph originate
+  using:
+    concepts: |
+      directed_acyclic_graph
+      vertex
+      source_vertex
+      edge
+    nrels: |
+      outgoing
+
+statement:
+  theorem_dag_source:
+    title:
+      ru: Описание свойств DAG с источником
+      en: Properties of DAG with source
+    ru:
+      В DAG с источником каждая вершина, кроме источника, достижима из источника
+    en:
+      In a DAG with source, every vertex except the source is reachable from the
+      source
+    using:
+      concepts: |
+        dag_with_source
+        source_vertex
+        vertex
+        reachable_vertex
+      nrels: |
+        outgoing
+        reachability
+
+subclass:
+  - dag_with_source_and_sink
+  - dag_with_single_source_and_sink

@@ -1,0 +1,49 @@
+ru: ориентированный ациклический граф с источником и стоком
+en: Directed acyclic graph with source and sink
+
+definition:
+  ru:
+    Ориентированный ациклический граф с одной вершиной-источником и одной
+    вершиной-стоком, из которых выходит и входит соответственно только одно
+    ребро
+  en:
+    A directed acyclic graph with one source vertex and one sink vertex, each
+    having only one outgoing and incoming edge respectively
+  using:
+    concepts: |
+      directed_acyclic_graph
+      vertex
+      source_vertex
+      sink_vertex
+      edge
+    nrels: |
+      incoming
+      outgoing
+
+statement:
+  theorem_dag_source_sink:
+    title:
+      ru: Описание свойств DAG с источником и стоком
+      en: Properties of directed acyclic graph with source and sink
+    ru:
+      В DAG с источником и стоком существует только один путь от источника к
+      стоку, и каждая вершина достижима из источника и может достигать сток
+    en:
+      In a DAG with source and sink, there exists only one path from the source
+      to the sink, and every vertex is reachable from the source and can reach
+      the sink
+    using:
+      concepts: |
+        dag_with_source_and_sink
+        source_vertex
+        sink_vertex
+        path
+        vertex
+        reachable_vertex
+      nrels: |
+        outgoing
+        incoming
+        reachability
+
+subclass:
+  - dag_with_single_source_and_sink

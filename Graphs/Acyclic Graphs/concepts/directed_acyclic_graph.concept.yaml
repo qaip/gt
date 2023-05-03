@@ -1,0 +1,55 @@
+ru: ориентированный ациклический граф
+en: Directed acyclic graph | DAG
+
+definition:
+  ru:
+    Ориентированный граф без циклов, то есть такой граф, в котором не существует
+    ни одной последовательности вершин, начинающейся и заканчивающейся на одной
+    и той же вершине, и при этом образующей замкнутый цикл при следовании по
+    направлениям рёбер
+  en:
+    A directed graph with no cycles, i. e. a graph in which there is no sequence
+    of vertices that starts and ends at the same vertex and forms a closed loop
+    when following the direction of the edges
+  using:
+    concepts: |
+      directed_graph
+      acyclic_graph
+      cycle
+      vertex
+      edge
+      sequence
+    nrels: |
+      starts_at
+      ends_at
+      forms
+
+statement:
+  proposition_topological_ordering:
+    title:
+      ru: Существование топологического порядка
+      en: Existence of a topological ordering
+    ru:
+      Для любого ориентированного ациклического графа существует такой порядок
+      вершин, в котором каждое ребро идет от вершины с меньшим номером к вершине
+      с большим номером
+    en:
+      For any directed acyclic graph, there exists a topological ordering of its
+      vertices such that every edge goes from a vertex with a lower number to a
+      vertex with a higher number
+    using:
+      concepts: |
+        directed_acyclic_graph
+        topological_ordering
+        vertex
+        edge
+        numbering
+      nrels: |
+        goes_from
+        goes_to
+
+subclass:
+  - dag_with_single_source_and_sink
+  - dag_with_source_and_sink
+  - dag_with_source
+  - dag_with_sink
