@@ -11,7 +11,7 @@ definition:
   using:
     concepts: |
       graph
-      graph_embedding
+      graph_coloring
 statement:
   wolfram_math_world_definition:
     title:
@@ -23,6 +23,6 @@ statement:
     en: A graph is bicolorable iff it has no odd graph cycles
     using:
       concepts: |
-        graph_embedding
+        graph_coloring
         graph
         graph_cycles

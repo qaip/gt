@@ -3,10 +3,10 @@ en: Isometric subgraph
 
 definition:
   ru:
-    Изометрический подграф-подграф H графа G, у которого все расстояния внутри H
+    Подграф H графа G, у которого все расстояния внутри H
     те же самые, что и в G
   en:
-    An isometric subgraph-subgraph H of a graph G for which all distances inside
+    Subgraph H of a graph G for which all distances inside
     H are the same as in G
   using:
     concepts: |
