@@ -38,8 +38,8 @@ statement -> statement_of_outerplanar_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойства внешнепланарного графа)] (* <- lang_ru;; *);
-		[Stat. (Properties of the outerplanar graph)] (* <- lang_en;; *);;
+		[Утв. (Cвойство внешнепланарного графа)] (* <- lang_ru;; *);
+		[Stat. (Property of an outerplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_hamiltonian_cycle;

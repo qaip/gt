@@ -32,8 +32,8 @@ statement -> statement_of_one_planar_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Свойства 1-планарного графа)] (* <- lang_ru;; *);
-		[Stat. (Properties of the 1-planar graph)] (* <- lang_en;; *);;
+		[Утв. (Свойство 1-планарного графа)] (* <- lang_ru;; *);
+		[Stat. (Property of a 1-planar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;

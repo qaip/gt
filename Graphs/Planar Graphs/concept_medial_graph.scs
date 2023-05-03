@@ -34,8 +34,8 @@ statement -> statement_of_medial_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойства серединного графа)] (* <- lang_ru;; *);
-		[Stat. (Properties of the medial graph)] (* <- lang_en;; *);;
+		[Утв. (Cвойство серединного графа)] (* <- lang_ru;; *);
+		[Stat. (Property of a medial graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
