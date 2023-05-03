@@ -11,6 +11,7 @@ definition:
   using:
     concepts: |
       unoriented_graph
+      triangle_graph
       planar_graph
       graph
       edge
@@ -31,6 +32,7 @@ statement:
     using:
       concepts: |
         chromatic_number
+        triangle_graph
         chromatic_index
         graph_girth
         graph_radius

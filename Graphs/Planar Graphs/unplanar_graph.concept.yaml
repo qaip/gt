@@ -10,6 +10,7 @@ definition:
     intersection of edges
   using:
     concepts: |
+      unplanar_graph
       graph
       plane
       edge
@@ -28,6 +29,7 @@ statement:
     using:
       concepts: |
         complete_graph
+        unplanar_graph
         bipartite_graph
         vertex
 
@@ -44,6 +46,7 @@ statement:
       than 2
     using:
       concepts: |
+        unplanar_graph
         vertex
       nrels: |
         vertex_degree

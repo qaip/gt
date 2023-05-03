@@ -11,6 +11,7 @@ definition:
   using:
     concepts: |
       plane
+      one_planar_graph
       graph
       edge
 
@@ -24,4 +25,5 @@ statement:
     using:
       concepts: |
         vertex
+        one_planar_graph
         edge

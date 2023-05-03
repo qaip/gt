@@ -11,6 +11,7 @@ definition:
   using:
     concepts: |
       planar_graph
+      external_planar_graph
       plane
       vertex
     nrels: |
@@ -32,6 +33,7 @@ statement:
       concepts: |
         hamiltonian_cycle
         graph_connectivities
+        external_planar_graph
       nrels: |
         face
 
