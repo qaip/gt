@@ -2,11 +2,11 @@ ru: полный граф
 en: complete graph
 definition:
   ru:
-    Полный граф является простым графом, в котором каждая пара различных вершин
+    Простой граф, в котором каждая пара различных вершин
     смежна
   en:
-    Complete graph is a simple undirected graph in which every pair of distinct
-    vertices is connected by a unique edge
+    A simple undirected graph in which every pair of distinct vertices is
+    connected by a unique edge
   using:
     concepts: |
       simple_graph
