@@ -14,7 +14,7 @@ statement:
   length_equals_zero:
     title:
       ru: Условие равенства длины маршрута нулю
-      en: The condition for the route length to be equal to zero
+      en: Zero route length condition
     ru: Длина равняется нулю, если путь состоит только из одной вершины
     en: The length is zero if the path consists of only one vertex
     using:
