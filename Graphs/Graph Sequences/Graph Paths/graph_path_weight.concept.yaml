@@ -2,12 +2,14 @@ ru: Вес пути графа | Цена пути | Длина пути
 en: Graph path_weight | Cost of path | Length of path
 
 definition:
-  ru:  Весом пути во взвешенном графе называется сумма весов рёбер пути
-  en: The weight of a walk in a weighted graph is the sum of the weights of the traversed edges
-  using: 
-    concepts:  |
+  ru: Весом пути во взвешенном графе называется сумма весов рёбер пути
+  en:
+    The weight of a walk in a weighted graph is the sum of the weights of the
+    traversed edges
+  using:
+    concepts: |
       weighted_graph
       edge
       graph
-    rrels:  |
+    rrels: |
       edge
