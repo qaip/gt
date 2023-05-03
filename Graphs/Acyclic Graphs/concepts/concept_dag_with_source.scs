@@ -22,10 +22,9 @@ definition -> definition_of_dag_with_source (*
 
 	=> nrel_using_constants: {
 		concept_directed_acyclic_graph;
-		concept_vertex;
 		concept_source_vertex;
 		concept_edge;
-		nrel_outgoing
+		nrel_outgoing_edge
 	};;
 *);;
 
@@ -42,26 +41,19 @@ statement -> statement_of_theorem_dag_source (*
 		[Stat. (Property of a directed acyclic graph with source)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_dag_with_source;
 		concept_source_vertex;
 		concept_vertex;
-		concept_reachable_vertex;
-		nrel_outgoing;
-		nrel_reachability
+		nrel_reachable_vertex
 	};;
 *);;
 
 sc_node_class ->
 	concept_directed_acyclic_graph;
-	concept_vertex;
 	concept_source_vertex;
 	concept_edge;
-	concept_dag_with_source;
 	concept_source_vertex;
-	concept_vertex;
-	concept_reachable_vertex;;
+	concept_vertex;;
 
 sc_node_norole_relation ->
-	nrel_outgoing;
-	nrel_outgoing;
-	nrel_reachability;;
+	nrel_outgoing_edge;
+	nrel_reachable_vertex;;

@@ -21,8 +21,7 @@ definition -> definition_of_acyclic_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_cycle;
-		nrel_containment
+		concept_cycle
 	};;
 *);;
 
@@ -42,8 +41,8 @@ statement -> statement_of_theorem_topological_sort (*
 		concept_acyclic_graph;
 		concept_vertex;
 		concept_edge;
-		concept_topological_sort;
-		nrel_ordering
+		concept_topological_sorting;
+		nrel_topological_ordering
 	};;
 *);;
 
@@ -53,8 +52,7 @@ sc_node_class ->
 	concept_acyclic_graph;
 	concept_vertex;
 	concept_edge;
-	concept_topological_sort;;
+	concept_topological_sorting;;
 
 sc_node_norole_relation ->
-	nrel_containment;
-	nrel_ordering;;
+	nrel_topological_ordering;;

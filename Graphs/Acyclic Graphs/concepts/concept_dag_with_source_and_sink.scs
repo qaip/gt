@@ -25,8 +25,8 @@ definition -> definition_of_dag_with_source_and_sink (*
 		concept_source_vertex;
 		concept_sink_vertex;
 		concept_edge;
-		nrel_incoming;
-		nrel_outgoing
+		nrel_incoming_edge;
+		nrel_outgoing_edge
 	};;
 *);;
 
@@ -43,15 +43,13 @@ statement -> statement_of_theorem_dag_source_sink (*
 		[Stat. (Property of a directed acyclic graph with source and sink)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_dag_with_source_and_sink;
 		concept_source_vertex;
 		concept_sink_vertex;
 		concept_path;
 		concept_vertex;
-		concept_reachable_vertex;
-		nrel_outgoing;
-		nrel_incoming;
-		nrel_reachability
+		nrel_incoming_edge;
+		nrel_outgoing_edge;
+		nrel_reachable_vertex
 	};;
 *);;
 
@@ -61,16 +59,14 @@ sc_node_class ->
 	concept_source_vertex;
 	concept_sink_vertex;
 	concept_edge;
-	concept_dag_with_source_and_sink;
 	concept_source_vertex;
 	concept_sink_vertex;
 	concept_path;
-	concept_vertex;
-	concept_reachable_vertex;;
+	concept_vertex;;
 
 sc_node_norole_relation ->
-	nrel_incoming;
-	nrel_outgoing;
-	nrel_outgoing;
-	nrel_incoming;
-	nrel_reachability;;
+	nrel_incoming_edge;
+	nrel_outgoing_edge;
+	nrel_incoming_edge;
+	nrel_outgoing_edge;
+	nrel_reachable_vertex;;

@@ -17,8 +17,10 @@ definition -> definition_of_dag (*
 	-> rrel_key_sc_element: concept_dag;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Ориентированный граф без циклов, то есть такой граф, в котором не существует ни одной последовательности вершин, начинающейся и заканчивающейся на одной и той же вершине, и при этом образующей замкнутый цикл при следовании по направлениям рёбер] (* <- lang_ru;; *);;
-		-> [A directed graph with no cycles, i. e. a graph in which there is no sequence of vertices that starts and ends at the same vertex and forms a closed loop when following the direction of the edges] (* <- lang_en;; *);;
+		-> [Ориентированный граф без циклов] (* <- lang_ru;; *);;
+		-> [Граф, в котором не существует ни одной последовательности вершин, начинающейся и заканчивающейся на одной и той же вершине, и при этом образующей замкнутый цикл при следовании по направлениям рёбер] (* <- lang_ru;; *);;
+		-> [A directed graph with no cycles] (* <- lang_en;; *);;
+		-> [A graph in which there is no sequence of vertices that starts and ends at the same vertex and forms a closed loop when following the direction of the edges] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -28,13 +30,12 @@ definition -> definition_of_dag (*
 	=> nrel_using_constants: {
 		concept_directed_graph;
 		concept_acyclic_graph;
+		concept_closed_loop;
 		concept_cycle;
 		concept_vertex;
 		concept_edge;
 		concept_sequence;
-		nrel_starts_at;
-		nrel_ends_at;
-		nrel_forms
+		concept_edge_direction
 	};;
 *);;
 
@@ -51,32 +52,29 @@ statement -> statement_of_proposition_topological_ordering (*
 		[Stat. (Existence of a topological ordering)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_directed_acyclic_graph;
-		concept_topological_ordering;
 		concept_vertex;
 		concept_edge;
 		concept_numbering;
-		nrel_goes_from;
-		nrel_goes_to
+		nrel_incoming_edge;
+		nrel_outgoing_edge;
+		nrel_topological_ordering
 	};;
 *);;
 
 sc_node_class ->
 	concept_directed_graph;
 	concept_acyclic_graph;
+	concept_closed_loop;
 	concept_cycle;
 	concept_vertex;
 	concept_edge;
 	concept_sequence;
-	concept_directed_acyclic_graph;
-	concept_topological_ordering;
+	concept_edge_direction;
 	concept_vertex;
 	concept_edge;
 	concept_numbering;;
 
 sc_node_norole_relation ->
-	nrel_starts_at;
-	nrel_ends_at;
-	nrel_forms;
-	nrel_goes_from;
-	nrel_goes_to;;
+	nrel_incoming_edge;
+	nrel_outgoing_edge;
+	nrel_topological_ordering;;

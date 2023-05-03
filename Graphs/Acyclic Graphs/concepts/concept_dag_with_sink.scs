@@ -25,7 +25,7 @@ definition -> definition_of_dag_with_sink (*
 		concept_vertex;
 		concept_sink_vertex;
 		concept_edge;
-		nrel_incoming
+		nrel_incoming_edge
 	};;
 *);;
 
@@ -34,20 +34,17 @@ statement -> statement_of_theorem_dag_sink (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [В ориентированном ациклическом графе со стоком каждая вершина, кроме стока, достижима из стока] (* <- lang_ru;; *);;
-		-> [In a irected acyclic graph with sink, every vertex except the sink is reachable from the sink] (* <- lang_en;; *);;
+		-> [In a directed acyclic graph with sink, every vertex except the sink is reachable from the sink] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Описание свойств DAG со стоком)] (* <- lang_ru;; *);
-		[Stat. (Properties of DAG with sink)] (* <- lang_en;; *);;
+		[Утв. (Свойство ациклического ориентированного графеа со стоком)] (* <- lang_ru;; *);
+		[Stat. (Property of directed acyclic graph with sink)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_dag_with_sink;
 		concept_sink_vertex;
 		concept_vertex;
-		concept_reachable_vertex;
-		nrel_incoming;
-		nrel_reachability
+		nrel_reachable_vertex
 	};;
 *);;
 
@@ -56,12 +53,9 @@ sc_node_class ->
 	concept_vertex;
 	concept_sink_vertex;
 	concept_edge;
-	concept_dag_with_sink;
 	concept_sink_vertex;
-	concept_vertex;
-	concept_reachable_vertex;;
+	concept_vertex;;
 
 sc_node_norole_relation ->
-	nrel_incoming;
-	nrel_incoming;
-	nrel_reachability;;
+	nrel_incoming_edge;
+	nrel_reachable_vertex;;
