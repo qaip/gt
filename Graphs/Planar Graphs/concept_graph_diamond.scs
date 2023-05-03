@@ -1,0 +1,58 @@
+concept_graph_diamond
+=> nrel_main_idtf:
+	[Граф алмаз] (* <- lang_ru;; *);
+	[Graph diamond] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_diamond (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алмаз-это планарный неориентированный граф с 4 вершинами и 5 ребрами] (* <- lang_ru;; *);;
+		-> [A diamond is a planar undirected graph with 4 vertices and 5 edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Граф алмаз)] (* <- lang_ru;; *);
+		[Def. (Graph diamond)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_unoriented_graph;
+		concept_planar_graph;
+		concept_graph;
+		concept_edge;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_triangle_graph_property (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Радиус алмаза равен 1, диаметр равен 2, обхват равен 3, хроматический индекс и хроматическое число равны 3] (* <- lang_ru;; *);;
+		-> [The radius of the diamond is 1, the diameter is 2, the girth is 3, the chromatic index and the chromatic number are 3] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Cвойства треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of the graph-triangle)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_chromatic_number;
+		concept_chromatic_index;
+		concept_graph_girth;
+		concept_graph_radius;
+		concept_graph_diametr
+	};;
+*);;
+
+sc_node_class ->
+	concept_unoriented_graph;
+	concept_planar_graph;
+	concept_graph;
+	concept_edge;
+	concept_vertex;
+	concept_chromatic_number;
+	concept_chromatic_index;
+	concept_graph_girth;
+	concept_graph_radius;
+	concept_graph_diametr;;
