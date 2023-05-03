@@ -12,6 +12,7 @@ definition:
     concepts: |
       planar_graph
       external_planar_graph
+      graph_stacking
       plane
       vertex
     nrels: |
