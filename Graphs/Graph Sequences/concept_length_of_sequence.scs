@@ -26,13 +26,13 @@ statement -> statement_of_length_equals_zero (*
 	-> rrel_key_sc_element: concept_length_of_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Длина может равняться нулю, если путь состоит только из одной вершины] (* <- lang_ru;; *);;
-		-> [The length can be zero if the path consists of only one vertex] (* <- lang_en;; *);;
+		-> [Длина равняется нулю, если путь состоит только из одной вершины] (* <- lang_ru;; *);;
+		-> [The length is zero if the path consists of only one vertex] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Когда длина маршрута равна 0)] (* <- lang_ru;; *);
-		[Stat. (When sequence length is 0)] (* <- lang_en;; *);;
+		[Утв. (Условие равенства длины маршрута нулю)] (* <- lang_ru;; *);
+		[Stat. (The condition for the route length to be equal to zero)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
