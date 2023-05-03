@@ -1,0 +1,72 @@
+concept_dag_with_single_source_and_sink
+=> nrel_main_idtf:
+	[ориентированный ациклический граф с единственным истоком и стоком] (* <- lang_ru;; *);
+	[directed acyclic graph with a single source and sink] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+tree_with_single_source_and_sink;;
+
+definition -> definition_of_dag_with_single_source_and_sink (*
+	-> rrel_key_sc_element: concept_dag_with_single_source_and_sink;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ациклический ориентированный граф, имеющий единственную вершину, из которой исходит все ребра, и единственную вершину, в которую входят все ребра] (* <- lang_ru;; *);;
+		-> [A directed acyclic graph that has a single vertex from which all edges originate and a single vertex to which all edges terminate] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ориентированный ациклический граф с единственным истоком и стоком)] (* <- lang_ru;; *);
+		[Def. (directed acyclic graph with a single source and sink)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_acyclic_graph;
+		concept_vertex;
+		concept_edge;
+		concept_source_vertex;
+		concept_sink_vertex;
+		nrel_direction;
+		nrel_origin;
+		nrel_termination
+	};;
+*);;
+
+statement -> statement_of_theorem_single_source_and_sink (*
+	-> rrel_key_sc_element: concept_dag_with_single_source_and_sink;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ациклическом ориентированном графе с единственным истоком и стоком каждая вершина может быть топологически отсортирована таким образом, что исток стоит первым, а сток стоит последним] (* <- lang_ru;; *);;
+		-> [In a directed acyclic graph with a single source and sink, each vertex can be topologically sorted in such a way that the source is the first vertex and the sink is the last vertex in the ordering] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о единственном истоке и стоке)] (* <- lang_ru;; *);
+		[Stat. (Theorem of single source and sink)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dag_with_single_source_and_sink;
+		concept_topological_sort;
+		concept_source_vertex;
+		concept_sink_vertex;
+		nrel_ordering;
+		nrel_direction
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_acyclic_graph;
+	concept_vertex;
+	concept_edge;
+	concept_source_vertex;
+	concept_sink_vertex;
+	concept_dag_with_single_source_and_sink;
+	concept_topological_sort;
+	concept_source_vertex;
+	concept_sink_vertex;;
+
+sc_node_norole_relation ->
+	nrel_direction;
+	nrel_origin;
+	nrel_termination;
+	nrel_ordering;
+	nrel_direction;;
