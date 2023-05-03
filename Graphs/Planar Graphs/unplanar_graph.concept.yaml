@@ -23,7 +23,7 @@ statement:
       вершин, то он является непланарным
     en:
       If a graph contains a complete bipartite subgraph or a complete subgraph
-      with 5 vertices, then it is non-planar
+      with 5 vertices, then it is unplanar
     using:
       concepts: |
         complete_graph
