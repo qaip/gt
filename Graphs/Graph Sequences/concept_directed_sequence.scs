@@ -28,8 +28,8 @@ statement -> statement_of_directional_and_nondirectional_sequences (*
 	-> rrel_key_sc_element: concept_directed_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Очевидно, незамкнутый или замкнутый ориентированный маршрут в ориентированном графе определяет соответствующий незамкнутый или замкнутый маршрут в соответствующем неориентированном графе] (* <- lang_ru;; *);;
-		-> [Obviously, an open or closed directed route in a directed graph defines a corresponding open or closed route in the corresponding undirected graph] (* <- lang_en;; *);;
+		-> [Незамкнутый или замкнутый ориентированный маршрут в ориентированном графе определяет соответствующий незамкнутый или замкнутый маршрут в соответствующем неориентированном графе] (* <- lang_ru;; *);;
+		-> [An open or closed directed route in a directed graph defines a corresponding open or closed route in the corresponding undirected graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
