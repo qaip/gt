@@ -7,8 +7,8 @@ definition -> definition_of_unplanar_graph (*
 	-> rrel_key_sc_element: concept_unplanar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Непланарный граф-граф, который не может быть изображён на плоскости без пересечения ребер] (* <- lang_ru;; *);;
-		-> [Unplanar graph is a graph, which cannot be represented on a plane without intersection of edges] (* <- lang_en;; *);;
+		-> [Граф, который не может быть изображён на плоскости без пересечения ребер] (* <- lang_ru;; *);;
+		-> [A graph, which cannot be represented on a plane without intersection of edges] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

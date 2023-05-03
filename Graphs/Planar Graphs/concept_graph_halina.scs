@@ -7,8 +7,8 @@ definition -> definition_of_graph_halina (*
 	-> rrel_key_sc_element: concept_graph_halina;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф Халина-это некоторый вид планарного графа, который строится из дерева, имеющего по меньшей мере 4 вершины, ни одна из которых не имеет в точности двух соседей] (* <- lang_ru;; *);;
-		-> [An extranplanar graph is a planar graph that has a stacking on the plane such that all its vertices belong to one face] (* <- lang_en;; *);;
+		-> [Некоторый вид планарного графа, который строится из дерева, имеющего по меньшей мере 4 вершины, ни одна из которых не имеет в точности двух соседей] (* <- lang_ru;; *);;
+		-> [A planar graph that has a stacking on the plane such that all its vertices belong to one face] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

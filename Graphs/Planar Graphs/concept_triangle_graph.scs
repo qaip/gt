@@ -7,8 +7,8 @@ definition -> definition_of_triangle_graph (*
 	-> rrel_key_sc_element: concept_triangle_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Треугольным графом называется планарный неориентированный граф с тремя вершинами и тремя рёбрами, образующими треугольник] (* <- lang_ru;; *);;
-		-> [Graph-triangle is a planar undirected graph, that contains 3 vertices and 3 edges, forming a triangle] (* <- lang_en;; *);;
+		-> [Планарный неориентированный граф с тремя вершинами и тремя рёбрами, образующими треугольник] (* <- lang_ru;; *);;
+		-> [A planar undirected graph, that contains 3 vertices and 3 edges, forming a triangle] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

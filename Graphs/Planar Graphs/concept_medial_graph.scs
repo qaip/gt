@@ -7,8 +7,8 @@ definition -> definition_of_medial_graph (*
 	-> rrel_key_sc_element: concept_medial_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Срединный граф-граф, представляющий рёбра смежности внутри граней заданного планарного графа] (* <- lang_ru;; *);;
-		-> [A median graph is a graph representing adjacency edges inside the faces of a given planar graph] (* <- lang_en;; *);;
+		-> [Граф, представляющий рёбра смежности внутри граней заданного планарного графа] (* <- lang_ru;; *);;
+		-> [A graph representing adjacency edges inside the faces of a given planar graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
