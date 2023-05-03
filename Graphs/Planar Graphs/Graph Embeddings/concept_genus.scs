@@ -1,0 +1,62 @@
+concept_genus
+=> nrel_main_idtf:
+	[род графа] (* <- lang_ru;; *);
+	[genus of a graph] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[graph genus] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+maximum_genus;
+eulers_genus;;
+
+definition -> definition_of_genus (*
+	-> rrel_key_sc_element: concept_genus;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное целое число g, для которого граф может быть вложен на поверхности рода g без пересечения ребер] (* <- lang_ru;; *);;
+		-> [The minimum integer g such that the graph can be embedded on a surface of genus g without edge intersection] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (род графа)] (* <- lang_ru;; *);
+		[Def. (genus of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_surface;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_genus_properties (*
+	-> rrel_key_sc_element: concept_genus;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Род графа является неотрицательной величиной, и он равен нулю тогда и только тогда, когда граф плоский. Род графа не превосходит половины числа граней плоской реализации графа] (* <- lang_ru;; *);;
+		-> [The genus of a graph is a non-negative integer, and it is zero if and only if the graph is planar. The genus of a graph is at most one half the number of faces in any planar embedding of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства рода графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of the genus of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_genus;
+		concept_graph;
+		concept_planar_graph;
+		nrel_face
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_surface;
+	concept_edge;
+	concept_genus;
+	concept_graph;
+	concept_planar_graph;;
+
+sc_node_norole_relation ->
+	nrel_face;;

@@ -1,0 +1,84 @@
+section_subject_domain_of_graph_cuts
+
+<- non_atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область разрезов графа] (* <- lang_ru;; *);
+	[Section. Subject domain of graph cuts] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	section_subject_domain_of_minimum_graph_cuts;
+	section_subject_domain_of_maximum_graph_cuts;
+	section_subject_domain_of_graph_cut_space;
+	section_subject_domain_of_graph_splits
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_graph_cuts;
+	concept_graph_cut;
+	concept_graph_cut_set;
+	concept_minimum_cut;
+	concept_maximum_cut;
+	concept_cut_space;
+	concept_vector_space;
+	concept_s_t_cut;
+	concept_bond;
+	concept_network_flow;
+	concept_max_flow_min_cut_theorem;
+	concept_max_cut_problem;
+	concept_graph_sparsest_cuts;
+	nrel_graph_cut;;
+
+section_subject_domain_of_graph_cuts=[*
+	subject_domain_of_graph_cuts
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область разрезов графа] (* <- lang_ru;; *);
+		[Subject Domain of graph cuts] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_graph_cut;
+		concept_graph_cut_set;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_minimum_cut;
+		concept_maximum_cut;
+		concept_cut_space;
+		concept_vector_space;
+		concept_s_t_cut;
+		concept_bond;
+		concept_network_flow;
+		concept_max_flow_min_cut_theorem;
+		concept_max_cut_problem;
+		concept_graph_sparsest_cuts;
+
+	-> rrel_explored_relation:
+		nrel_graph_cut;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graphs;
+
+	=> nrel_private_subject_domain:
+		subject_domain_of_minimum_graph_cuts;
+		subject_domain_of_maximum_graph_cuts;
+		subject_domain_of_graph_cut_space;
+		subject_domain_of_graph_splits;;
+*];;
+
+sc_node_class ->
+	concept_graph_cut;
+	concept_graph_cut_set;
+	concept_minimum_cut;
+	concept_maximum_cut;
+	concept_cut_space;
+	concept_vector_space;
+	concept_s_t_cut;
+	concept_bond;
+	concept_network_flow;
+	concept_max_flow_min_cut_theorem;
+	concept_max_cut_problem;
+	concept_graph_sparsest_cuts;;
+
+sc_node_norole_relation ->
+	nrel_graph_cut;;
