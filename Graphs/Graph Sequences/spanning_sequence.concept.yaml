@@ -3,12 +3,13 @@ en: Spanning sequence
 
 definition:
   ru: Маршрут, содержащий все вершины орграфа
-  en: Spanning sequence is a sequence, that contains all verteces in directed graph
+  en:
+    Spanning sequence is a sequence, that contains all verteces in directed
+    graph
   using:
-    concepts:  |
+    concepts: |
       sequence
       directed_graph
       vertex
-    rrels:  |
+    rrels: |
       vertex
-    

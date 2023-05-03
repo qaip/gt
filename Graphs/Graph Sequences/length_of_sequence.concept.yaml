@@ -3,14 +3,16 @@ en: Length of sequence
 
 definition:
   ru: Длина маршрута это количество рёбер в маршруте учитывая повторения
-  en: Sequence length is the number of edges in the sequence, taking into account repetitions
+  en:
+    Sequence length is the number of edges in the sequence, taking into account
+    repetitions
   using:
-    concepts:  | 
+    concepts: |
       edge
       sequence
-    rrels:  |
+    rrels: |
       edge
-statement: 
+statement:
   length_equals_zero:
     title:
       ru: Когда длина маршрута равна 0
@@ -23,4 +25,3 @@ statement:
         sequence
       rrels: |
         vertex
-    
