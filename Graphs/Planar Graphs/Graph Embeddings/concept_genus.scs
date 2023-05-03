@@ -12,8 +12,8 @@ definition -> definition_of_genus (*
 	-> rrel_key_sc_element: concept_genus;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Родом графа называется минимальное целое число g, для которого граф может быть вложен на поверхности рода g без пересечения ребер] (* <- lang_ru;; *);;
-		-> [The genus of a graph is the minimum integer g such that the graph can be embedded on a surface of genus g without edge intersection] (* <- lang_en;; *);;
+		-> [Минимальное целое число g, для которого граф может быть вложен на поверхности рода g без пересечения ребер] (* <- lang_ru;; *);;
+		-> [The minimum integer g such that the graph can be embedded on a surface of genus g without edge intersection] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

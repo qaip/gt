@@ -7,8 +7,8 @@ definition -> definition_of_maximum_genus (*
 	-> rrel_key_sc_element: concept_maximum_genus;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Максимальный род графа-это максимальный род среди всех его вложений] (* <- lang_ru;; *);;
-		-> [The maximum genus of a graph is the maximum genus among all of its embeddings] (* <- lang_en;; *);;
+		-> [Максимальный род среди всех его вложений] (* <- lang_ru;; *);;
+		-> [The maximum genus among all of its embeddings] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
