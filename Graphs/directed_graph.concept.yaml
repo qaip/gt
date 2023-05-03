@@ -3,7 +3,7 @@ ru:
   - орграф
 en:
   - directed graph
-  - igraph
+  - digraph
 definition:
   ru:
     Ориентированный граф является парой множеств V, A, где V является множеством
