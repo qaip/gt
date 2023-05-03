@@ -32,8 +32,8 @@ statement -> statement_of_halina_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойства графа Халина)] (* <- lang_ru;; *);
-		[Stat. (Properties of the graph Halina)] (* <- lang_en;; *);;
+		[Утв. (Cвойство графа Халина)] (* <- lang_ru;; *);
+		[Stat. (Property of a graph Halina)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
