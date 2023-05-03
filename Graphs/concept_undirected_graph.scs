@@ -1,0 +1,35 @@
+concept_undirected_graph
+=> nrel_main_idtf:
+	[неориентированный граф] (* <- lang_ru;; *);
+	[undirected graph] (* <- lang_en;; *);;
+
+definition -> definition_of_undirected_graph (*
+	-> rrel_key_sc_element: concept_undirected_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Пусть V является непустым множеством. Неориентированным графом называется пара множеств V, E, где E является произвольным подмножеством декартова произведения множества V] (* <- lang_ru;; *);;
+		-> [Let V be a nonempty set. An undirected graph is called a pair V, E, where E is a arbitrary subset of graphic works of cartesian product V] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (неориентированный граф)] (* <- lang_ru;; *);
+		[Def. (undirected graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;
