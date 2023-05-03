@@ -4,15 +4,15 @@ concept_oriented_edge
 	[Oriented edge] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Ребро дуга] (* <- lang_ru;; *);
+	[Дуга] (* <- lang_ru;; *);
 	[Arc] (* <- lang_en;; *);;
 
 definition -> definition_of_oriented_edge (*
 	-> rrel_key_sc_element: concept_oriented_edge;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Дуга является ребром в ориентированном графе] (* <- lang_ru;; *);;
-		-> [Arc is the edge of oriented graph] (* <- lang_en;; *);;
+		-> [Дуга является связкой, соединяющей две вершины орграфа] (* <- lang_ru;; *);;
+		-> [An oriented edge is the connection between vertices of the digraph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

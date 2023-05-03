@@ -7,8 +7,8 @@ definition -> definition_of_graph (*
 	-> rrel_key_sc_element: concept_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Пусть V является непустым множеством. Тогда графом называется пара множеств V и E, где E является подмножеством декартового произведения множества V] (* <- lang_ru;; *);;
-		-> [A graph is an ordered pair G, G is a pair V, E, where E an arbitrary subset of the Cartesian product of the set V] (* <- lang_en;; *);;
+		-> [Граф есть совокупность двух множеств непустого множества V и множества E. Множество V называется множеством вершин, множество E называется множеством рёбер. Множество E подмножество декартова произведения V] (* <- lang_ru;; *);;
+		-> [A graph is a pair of a non-empty set V and a set E. The set V is called set of vertices, the set E is called the set of edges. Set E subset of the Cartesian product V] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
