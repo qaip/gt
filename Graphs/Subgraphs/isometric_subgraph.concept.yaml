@@ -12,13 +12,3 @@ definition:
     concepts: |
       graph
       subgraph
-statement:
-  part_of_teorem:
-    title:
-      ru: Утверждение в теореме о изометрическом графе
-      en: Statement in teorem about isometric graph
-    ru: G изометрически вкладывается в граф Хэмминга
-    en: G is isometrically embeddable in a Hamming graph
-    using:
-      concepts: |
-        graph
