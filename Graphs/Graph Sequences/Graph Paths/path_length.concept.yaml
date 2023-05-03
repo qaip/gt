@@ -18,7 +18,7 @@ statement:
   path_equals_zero:
     title:
       ru: Условие эквивалентности длины пути нулю
-      en: Condition for the equivalence of the path length to zero
+      en: Zero path length condition
     ru:
       Длина пути графа может равняться нулю, если путь состоит только из одной
       вершины
