@@ -1,7 +1,7 @@
 concept_hamiltonian_path
 => nrel_main_idtf:
-	[Гамильтонов путь] (* <- lang_ru;; *);
-	[Hamiltonian path] (* <- lang_en;; *);;
+	[гамильтонов путь] (* <- lang_ru;; *);
+	[hamiltonian path] (* <- lang_en;; *);;
 
 definition -> definition_of_hamiltonian_path (*
 	-> rrel_key_sc_element: concept_hamiltonian_path;;
@@ -12,8 +12,8 @@ definition -> definition_of_hamiltonian_path (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Гамильтонов путь)] (* <- lang_ru;; *);
-		[Def. (Hamiltonian path)] (* <- lang_en;; *);;
+		[Опр. (гамильтонов путь)] (* <- lang_ru;; *);
+		[Def. (hamiltonian path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_path;

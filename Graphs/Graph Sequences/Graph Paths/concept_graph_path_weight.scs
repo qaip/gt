@@ -1,13 +1,13 @@
 concept_graph_path_weight
 => nrel_main_idtf:
-	[Вес пути графа] (* <- lang_ru;; *);
-	[Graph path_weight] (* <- lang_en;; *);
+	[вес пути графа] (* <- lang_ru;; *);
+	[graph path_weight] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Цена пути] (* <- lang_ru;; *);
-	[Длина пути] (* <- lang_ru;; *);
-	[Cost of path] (* <- lang_en;; *);
-	[Length of path] (* <- lang_en;; *);;
+	[цена пути] (* <- lang_ru;; *);
+	[длина пути] (* <- lang_ru;; *);
+	[cost of path] (* <- lang_en;; *);
+	[length of path] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_path_weight (*
 	-> rrel_key_sc_element: concept_graph_path_weight;;
@@ -18,8 +18,8 @@ definition -> definition_of_graph_path_weight (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Вес пути графа)] (* <- lang_ru;; *);
-		[Def. (Graph path_weight)] (* <- lang_en;; *);;
+		[Опр. (вес пути графа)] (* <- lang_ru;; *);
+		[Def. (graph path_weight)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_weighted_graph;
