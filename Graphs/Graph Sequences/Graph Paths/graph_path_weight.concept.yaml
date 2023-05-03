@@ -1,5 +1,5 @@
-ru: Вес пути графа | Цена пути | Длина пути
-en: Graph path_weight | Cost of path | Length of path
+ru: вес пути графа | цена пути | длина пути
+en: graph path_weight | cost of path | length of path
 
 definition:
   ru: Весом пути во взвешенном графе называется сумма весов рёбер пути
