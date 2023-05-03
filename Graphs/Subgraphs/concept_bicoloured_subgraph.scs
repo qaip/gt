@@ -1,7 +1,7 @@
 concept_bicoloured_subgraph
 => nrel_main_idtf:
-	[Двуцветный подграф] (* <- lang_ru;; *);
-	[Bicoloured subgraph] (* <- lang_en;; *);;
+	[двуцветный подграф] (* <- lang_ru;; *);
+	[bicoloured subgraph] (* <- lang_en;; *);;
 
 definition -> definition_of_bicoloured_subgraph (*
 	-> rrel_key_sc_element: concept_bicoloured_subgraph;;
@@ -12,8 +12,8 @@ definition -> definition_of_bicoloured_subgraph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Двуцветный подграф)] (* <- lang_ru;; *);
-		[Def. (Bicoloured subgraph)] (* <- lang_en;; *);;
+		[Опр. (двуцветный подграф)] (* <- lang_ru;; *);
+		[Def. (bicoloured subgraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

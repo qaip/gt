@@ -1,7 +1,7 @@
 concept_induced_subgraph
 => nrel_main_idtf:
-	[Порожденный подграф] (* <- lang_ru;; *);
-	[Induced subgraph] (* <- lang_en;; *);;
+	[порожденный подграф] (* <- lang_ru;; *);
+	[induced subgraph] (* <- lang_en;; *);;
 
 definition -> definition_of_induced_subgraph (*
 	-> rrel_key_sc_element: concept_induced_subgraph;;
@@ -12,8 +12,8 @@ definition -> definition_of_induced_subgraph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Порожденный подграф)] (* <- lang_ru;; *);
-		[Def. (Induced subgraph)] (* <- lang_en;; *);;
+		[Опр. (порожденный подграф)] (* <- lang_ru;; *);
+		[Def. (induced subgraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_subgraph;
