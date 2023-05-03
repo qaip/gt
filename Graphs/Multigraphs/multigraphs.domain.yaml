@@ -12,12 +12,6 @@ max: |
 concepts: |
   multiple_edges
   multiple_arcs
-  arc_entry
-  edge_entry
-
-rrels: |
-  arc_entry
-  edge_entry
 
 nrels: |
   edges_multiplicity
