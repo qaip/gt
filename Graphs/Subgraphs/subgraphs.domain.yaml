@@ -10,7 +10,6 @@ concepts: |
   bicoloured_subgraph
   isometric_subgraph
   induced_subgraph
-  isometric_subgraph
 
 nrels: |
   induced_subgraph
