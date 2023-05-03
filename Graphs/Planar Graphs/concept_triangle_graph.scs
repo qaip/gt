@@ -1,7 +1,10 @@
 concept_triangle_graph
 => nrel_main_idtf:
 	[Треугольный граф] (* <- lang_ru;; *);
-	[Triangle graph] (* <- lang_en;; *);;
+	[Triangle graph] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[Graph-triangle] (* <- lang_en;; *);;
 
 definition -> definition_of_triangle_graph (*
 	-> rrel_key_sc_element: concept_triangle_graph;;
@@ -34,8 +37,8 @@ statement -> statement_of_triangle_graph_property (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойство треугольного графа)] (* <- lang_ru;; *);
-		[Stat. (Property of a graph-triangle)] (* <- lang_en;; *);;
+		[Утв. (Cвойства треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of a graph-triangle)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;

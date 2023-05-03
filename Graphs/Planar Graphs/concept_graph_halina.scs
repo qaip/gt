@@ -53,7 +53,7 @@ statement -> statement_of_halina_graph_connectiviti (*
 
 	=> nrel_main_idtf:
 		[Утв. (Cвязность графа Халина)] (* <- lang_ru;; *);
-		[Stat. (Connectivity of a Halina graph)] (* <- lang_en;; *);;
+		[Stat. (Connectiviti of a Halina graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;
