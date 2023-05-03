@@ -10,11 +10,13 @@ max: |
   multigraph
 
 concepts: |
-  multiple_edge
-  multiple_arc
+  multiple_edges
+  multiple_arcs
   arc_entry
   edge_entry
 
 rrels: |
+  edges_multiplicity
+  arcs_multiplicity
   arc_entry
   edge_entry
