@@ -1,7 +1,7 @@
 concept_tightened_graph
 => nrel_main_idtf:
-	[Стягиваемый граф] (* <- lang_ru;; *);
-	[Tightened graph] (* <- lang_en;; *);;
+	[стягиваемый граф] (* <- lang_ru;; *);
+	[tightened graph] (* <- lang_en;; *);;
 
 definition -> definition_of_tightened_graph (*
 	-> rrel_key_sc_element: concept_tightened_graph;;
@@ -12,8 +12,8 @@ definition -> definition_of_tightened_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Стягиваемый граф)] (* <- lang_ru;; *);
-		[Def. (Tightened graph)] (* <- lang_en;; *);;
+		[Опр. (стягиваемый граф)] (* <- lang_ru;; *);
+		[Def. (tightened graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

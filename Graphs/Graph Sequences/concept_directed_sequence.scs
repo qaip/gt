@@ -1,7 +1,7 @@
 concept_directed_sequence
 => nrel_main_idtf:
-	[Ориентированный маршрут] (* <- lang_ru;; *);
-	[Directed sequence] (* <- lang_en;; *);;
+	[ориентированный маршрут] (* <- lang_ru;; *);
+	[directed sequence] (* <- lang_en;; *);;
 
 definition -> definition_of_directed_sequence (*
 	-> rrel_key_sc_element: concept_directed_sequence;;
@@ -12,8 +12,8 @@ definition -> definition_of_directed_sequence (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Ориентированный маршрут)] (* <- lang_ru;; *);
-		[Def. (Directed sequence)] (* <- lang_en;; *);;
+		[Опр. (ориентированный маршрут)] (* <- lang_ru;; *);
+		[Def. (directed sequence)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;

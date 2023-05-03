@@ -1,7 +1,7 @@
 concept_length_of_sequence
 => nrel_main_idtf:
-	[Длина маршрута] (* <- lang_ru;; *);
-	[Length of sequence] (* <- lang_en;; *);;
+	[длина маршрута] (* <- lang_ru;; *);
+	[length of sequence] (* <- lang_en;; *);;
 
 definition -> definition_of_length_of_sequence (*
 	-> rrel_key_sc_element: concept_length_of_sequence;;
@@ -12,8 +12,8 @@ definition -> definition_of_length_of_sequence (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Длина маршрута)] (* <- lang_ru;; *);
-		[Def. (Length of sequence)] (* <- lang_en;; *);;
+		[Опр. (длина маршрута)] (* <- lang_ru;; *);
+		[Def. (length of sequence)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;

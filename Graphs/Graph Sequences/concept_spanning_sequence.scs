@@ -1,7 +1,7 @@
 concept_spanning_sequence
 => nrel_main_idtf:
-	[Остовный маршрут] (* <- lang_ru;; *);
-	[Spanning sequence] (* <- lang_en;; *);;
+	[остовный маршрут] (* <- lang_ru;; *);
+	[spanning sequence] (* <- lang_en;; *);;
 
 definition -> definition_of_spanning_sequence (*
 	-> rrel_key_sc_element: concept_spanning_sequence;;
@@ -12,8 +12,8 @@ definition -> definition_of_spanning_sequence (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Остовный маршрут)] (* <- lang_ru;; *);
-		[Def. (Spanning sequence)] (* <- lang_en;; *);;
+		[Опр. (остовный маршрут)] (* <- lang_ru;; *);
+		[Def. (spanning sequence)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_sequence;
