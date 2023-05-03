@@ -1,26 +1,26 @@
 ru:
-    - Ориентированное ребро
-    - Ребро дуга
+  - Ориентированное ребро
+  - Ребро дуга
 en:
-    - Oriented edge
-    - Arc
+  - Oriented edge
+  - Arc
 definition:
-    ru: Дуга является ребром в ориентированном графе
-    en: Arc is the edge of oriented graph
-    using:
-        concepts: |
-            graph
-            edge
-            directed_graph
-        rrels: |
-            edge
+  ru: Дуга является ребром в ориентированном графе
+  en: Arc is the edge of oriented graph
+  using:
+    concepts: |
+      graph
+      edge
+      directed_graph
+    rrels: |
+      edge
 statement:
-    arc_direction:
-        title:
-            ru: Название высказывания
-            en: Statement title
-        ru: Дуга является ребром, которое имеет направление
-        en: An arc is an edge which has direction
-        using:
-            concepts: |
-                used_concept
+  arc_direction:
+    title:
+      ru: Название высказывания
+      en: Statement title
+    ru: Дуга является ребром, которое имеет направление
+    en: An arc is an edge which has direction
+    using:
+      concepts: |
+        used_concept

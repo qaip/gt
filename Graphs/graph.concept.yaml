@@ -1,38 +1,36 @@
 ru: Граф
 en: Graph
 definition:
-    ru:
-        Пусть V является непустым множеством. Тогда графом называется пара
-        множеств V и E, где E является подмножеством декартового произведения
-        множества V
-    en:
-        A graph is an ordered pair G, G is a pair V, E, where E an arbitrary
-        subset of the Cartesian product of the set V
-    using:
-        concepts: |
-            vertex
-            edge
-        rrels: |
-            vertex
-            edge
+  ru:
+    Пусть V является непустым множеством. Тогда графом называется пара множеств
+    V и E, где E является подмножеством декартового произведения множества V
+  en:
+    A graph is an ordered pair G, G is a pair V, E, where E an arbitrary subset
+    of the Cartesian product of the set V
+  using:
+    concepts: |
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
 statement:
-    graphs_representation:
-        title:
-            ru: Изображение графов
-            en: Graphs representation
-        ru:
-            Графы удобно изображать в виде рисунков, состоящих из точек и линий,
-            соединяющих некоторые из этих точек. При этом точки соответствуют
-            вершинам графа, а соединяющие пары точек линии соответствуют рёбрам
-        en:
-            Graphs are usualy represented in the form of drawings consisting of
-            dots and lines, connecting some of these points. In this case points
-            are equal to the vertices of the graph and lines are equal to the
-            edges
-        using:
-            concepts: |
-                vertex
-                edge
-            rrels: |
-                vertex
-                edge
+  graphs_representation:
+    title:
+      ru: Изображение графов
+      en: Graphs representation
+    ru:
+      Графы удобно изображать в виде рисунков, состоящих из точек и линий,
+      соединяющих некоторые из этих точек. При этом точки соответствуют вершинам
+      графа, а соединяющие пары точек линии соответствуют рёбрам
+    en:
+      Graphs are usualy represented in the form of drawings consisting of dots
+      and lines, connecting some of these points. In this case points are equal
+      to the vertices of the graph and lines are equal to the edges
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge

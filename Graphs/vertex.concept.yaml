@@ -1,20 +1,19 @@
 ru:
-    - Вершина
-    - Узел
+  - Вершина
+  - Узел
 en:
-    - Vertex
-    - Node
+  - Vertex
+  - Node
 definition:
-    ru:
-        Вершина является основным понятием теории графов. Это фундаментальная
-        еденица, образующая графы. На рисунках, представляющих граф, вершина
-        обычно представляется кружком с меткой
-    en:
-        A vertex is the basic concept of graphs. This is the fundamental unit
-        that forms graphs. The graph is usually represented by a circle with a
-        label
-    using:
-        concepts: |
-            graph
-        rrels: |
-            vertex
+  ru:
+    Вершина является основным понятием теории графов. Это фундаментальная
+    еденица, образующая графы. На рисунках, представляющих граф, вершина обычно
+    представляется кружком с меткой
+  en:
+    A vertex is the basic concept of graphs. This is the fundamental unit that
+    forms graphs. The graph is usually represented by a circle with a label
+  using:
+    concepts: |
+      graph
+    rrels: |
+      vertex
