@@ -18,8 +18,8 @@ definition:
 statement:
   graph_structure_usage:
     title:
-      ru: Использование графовой структуры
-      en: Graph structure usage
+      ru: использование графовой структуры
+      en: graph structure usage
     ru:
       Графовая структура является тем же самым что и граф, но понятие граф
       используется в информатике и математике, а графовая структура в других

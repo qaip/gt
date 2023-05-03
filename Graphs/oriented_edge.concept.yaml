@@ -17,8 +17,8 @@ definition:
 statement:
   arc_direction:
     title:
-      ru: Название высказывания
-      en: Statement title
+      ru: название высказывания
+      en: statement title
     ru: Дуга является ребром, которое имеет направление
     en: An arc is an edge which has direction
     using:

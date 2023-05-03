@@ -3,7 +3,7 @@ ru:
   - орграф
 en:
   - directed graph
-  - digraph
+  - igraph
 definition:
   ru:
     Ориентированный граф является парой множеств V, A, где V является множеством
@@ -24,8 +24,8 @@ definition:
 statement:
   weak_directed_graph:
     title:
-      ru: О слабо связном графе
-      en: About weak directed graph
+      ru: слабость орграфа
+      en: digraph weakness
     ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
     en: A directed graph is weak if it has a chain
     using:
