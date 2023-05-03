@@ -21,8 +21,8 @@ definition:
 statement:
   outerplanar_graph_property:
     title:
-      ru: Cвойства внешнепланарного графа
-      en: Properties of the outerplanar graph
+      ru: Cвойство внешнепланарного графа
+      en: Property of an outerplanar graph
     ru:
       Внешнепланарные графы имеют гамильтоновы циклы тогда и только тогда, когда
       они двусвязны, и в этом случае внешняя грань образует единственный
