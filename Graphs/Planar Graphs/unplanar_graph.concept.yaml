@@ -31,7 +31,7 @@ statement:
         bipartite_graph
         vertex
 
-  necessary_condition_unplanar_graph:
+  necessary_condition_for_graph_unplanarity:
     title:
       ru: Необходимое условие непланарности графа
       en: A necessary condition for graph unplanarity
