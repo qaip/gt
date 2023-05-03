@@ -18,10 +18,10 @@ definition:
       face
 
 statement:
-  euler_theorem:
+  planarity_genus_theorem:
     title:
-      ru: Теорема Эйлера
-      en: Eulers Theorem
+      ru: Теорема о планарности и роде
+      en: Planarity-Genus Theorem
     ru: Если граф планарен, то его род равен единице
     en: If a graph is planar, then its genus is equal to one
     using:

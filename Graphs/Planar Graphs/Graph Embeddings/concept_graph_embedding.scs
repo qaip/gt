@@ -7,8 +7,8 @@ definition -> definition_of_graph_embedding (*
 	-> rrel_key_sc_element: concept_graph_embedding;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Вложение графа-это представление графа на поверхности таким образом, что ребра и вершины отображаются в различные точки на поверхности, и каждое ребро представляется непрерывной дугой] (* <- lang_ru;; *);;
-		-> [A graph embedding is a representation of a graph in a surface such that the edges and vertices are assigned to distinct points in the surface and each edge is represented by a continuous arc] (* <- lang_en;; *);;
+		-> [Представление графа на поверхности таким образом, что ребра и вершины отображаются в различные точки на поверхности, и каждое ребро представляется непрерывной дугой] (* <- lang_ru;; *);;
+		-> [A representation of a graph in a surface such that the edges and vertices are assigned to distinct points in the surface and each edge is represented by a continuous arc] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
