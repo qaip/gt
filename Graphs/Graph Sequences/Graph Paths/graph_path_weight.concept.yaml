@@ -3,9 +3,7 @@ en: graph path_weight | cost of path | length of path
 
 definition:
   ru: Сумма весов рёбер пути во взвешенном графе
-  en:
-    A sum of the weights of the
-    traversed edges in a weighted graph
+  en: A sum of the weights of the traversed edges in a weighted graph
   using:
     concepts: |
       weighted_graph

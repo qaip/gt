@@ -2,12 +2,8 @@ ru: гамильтонов путь
 en: hamiltonian path
 
 definition:
-  ru:
-    Простой путь, проходящий через каждую вершину
-    графа ровно один раз
-  en:
-    A simple path that passes through each vertex of the
-    graph exactly once
+  ru: Простой путь, проходящий через каждую вершину графа ровно один раз
+  en: A simple path that passes through each vertex of the graph exactly once
   using:
     concepts: |
       path
