@@ -14,10 +14,10 @@ definition:
       vertex
 
 statement:
-  triangle_graph_property:
+  diamond_graph_property:
     title:
-      ru: Cвойства треугольного графа
-      en: Properties of the graph-triangle
+      ru: Cвойство графа алмаза
+      en: Properties of a graph diamond
     ru:
       Радиус алмаза равен 1, диаметр равен 2, обхват равен 3, хроматический
       индекс и хроматическое число равны 3

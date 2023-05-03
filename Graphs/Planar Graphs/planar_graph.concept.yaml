@@ -8,7 +8,6 @@ definition:
     concepts: |
       graph
       planar_graph
-      plane
       edge
     nrels: |
       intersection
@@ -19,9 +18,7 @@ statement:
       ru: Теорема Уитни
       en: Whitneys Theorem
     ru: Граф планарен тогда и только тогда, когда каждый его подграф планарен
-    en:
-      SCs Automation lets developers describe a knowledge base without any
-      duplicates and boilerplate code
+    en: A graph is planar if and only if each of its subgraphs is planar
     using:
       concepts: |
         planar_graph

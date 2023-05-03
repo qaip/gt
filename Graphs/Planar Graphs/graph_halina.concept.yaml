@@ -36,7 +36,7 @@ statement:
   halina_graph_connectiviti:
     title:
       ru: Cвязность графа Халина
-      en: Connectiviti of the Halina graph
+      en: Connectiviti of a Halina graph
     ru:
       Любой граф Халина рёберно минимально 3-связен, что означает, что после
       удаления любого ребра граф перестаёт быть 3-связен
@@ -53,7 +53,7 @@ statement:
   halina_graph_and_hamiltonian_graph:
     title:
       ru: Граф Халина и Гамильтонов граф
-      en: The Halin Graph and the Hamiltonian graph
+      en: A Halin Graph and a Hamiltonian graph
     ru:
       Любой граф Халина является гамильтоновым графом и любое ребро принадлежит
       гамильтонову циклу. Более того, любой граф Халина остаётся гамильтоновым
