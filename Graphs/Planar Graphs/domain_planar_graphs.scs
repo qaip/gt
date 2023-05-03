@@ -23,10 +23,6 @@ section_subject_domain_of_planar_graphs
 	concept_external_graph;
 	concept_unplanar_graph;
 	concept_one_planar_graph;
-	concept_complete_graph;
-	concept_bipartite_graph;
-	concept_homeomorphical_graphs;
-	concept_unoriented_graph;
 	nrel_isomorphism;
 	nrel_neighboring_vertex;
 	nrel_intersection;
@@ -56,10 +52,6 @@ section_subject_domain_of_planar_graphs=[*
 		concept_external_graph;
 		concept_unplanar_graph;
 		concept_one_planar_graph;
-		concept_complete_graph;
-		concept_bipartite_graph;
-		concept_homeomorphical_graphs;
-		concept_unoriented_graph;
 
 	-> rrel_explored_relation:
 		nrel_isomorphism;
@@ -88,11 +80,7 @@ sc_node_class ->
 	concept_graph_halina;
 	concept_external_graph;
 	concept_unplanar_graph;
-	concept_one_planar_graph;
-	concept_complete_graph;
-	concept_bipartite_graph;
-	concept_homeomorphical_graphs;
-	concept_unoriented_graph;;
+	concept_one_planar_graph;;
 
 sc_node_norole_relation ->
 	nrel_isomorphism;
