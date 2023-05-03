@@ -14,7 +14,7 @@ definition:
       edge
 
 statement:
-  sufficient_condition_unplanar_graph:
+  sufficient_condition_for_graph_unplanarity:
     title:
       ru: Достаточное условие непланарности графа
       en: Sufficient condition for graph unplanarity
