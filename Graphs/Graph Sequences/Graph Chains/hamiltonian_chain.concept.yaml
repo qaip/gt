@@ -2,29 +2,31 @@ ru: Гамильтонова цепь
 en: Hamiltonian chain
 
 definition:
-  ru: 
-    Цепь в графе, проходящая через каждую вершину в точности один раз
-  en:
-    A path through a graph that includes every other vertex exactly once
+  ru: Цепь в графе, проходящая через каждую вершину в точности один раз
+  en: A path through a graph that includes every other vertex exactly once
   using:
-    concepts:  |
+    concepts: |
       graph_chain
       graph_sequences
       vertex
       edge
       graph
-    rrels:  |
+    rrels: |
       vertex
       edge
       arc
       loop
-statement: 
+statement:
   old_definition:
     title:
       ru: Определение гамилтоновой цепи
       en: Definition of hamiltonian chain
-    ru: Гамильтонова цепь-это цепь, которая содержит все вершины графа, a рёбра могут повторяться
-    en: A Hamiltonian path is a path that contains all the vertices of a graph, and the edges may be repeated
+    ru:
+      Гамильтонова цепь-это цепь, которая содержит все вершины графа, a рёбра
+      могут повторяться
+    en:
+      A Hamiltonian path is a path that contains all the vertices of a graph,
+      and the edges may be repeated
     using:
       concepts: |
         graph
