@@ -32,7 +32,7 @@ statement -> statement_of_length_equals_zero (*
 
 	=> nrel_main_idtf:
 		[Утв. (Условие равенства длины маршрута нулю)] (* <- lang_ru;; *);
-		[Stat. (The condition for the route length to be equal to zero)] (* <- lang_en;; *);;
+		[Stat. (Zero route length condition)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
