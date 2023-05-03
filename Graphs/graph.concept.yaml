@@ -2,11 +2,13 @@ ru: Граф
 en: Graph
 definition:
   ru:
-    Пусть V является непустым множеством. Тогда графом называется пара множеств
-    V и E, где E является подмножеством декартового произведения множества V
+    Граф есть совокупность двух множеств непустого множества V и множества E.
+    Множество V называется множеством вершин, множество E называется множеством
+    рёбер. Множество E подмножество декартова произведения V
   en:
-    A graph is an ordered pair G, G is a pair V, E, where E an arbitrary subset
-    of the Cartesian product of the set V
+    A graph is a pair of a non-empty set V and a set E. The set V is called set
+    of vertices, the set E is called the set of edges. Set E subset of the
+    Cartesian product V
   using:
     concepts: |
       vertex

@@ -16,22 +16,6 @@ definition:
     rrels: |
       vertex
       edge
-statement:
-  complete_graph_connected:
-    title:
-      ru: Полный граф связный
-      en: Complete graph is connected
-    ru: Полный граф является связным графом
-    en: A complete graph is a connected graph
-    using:
-      concepts: |
-        connected_graph
-  complete_graph_regular:
-    title:
-      ru: Полный граф регулярный
-      en: Complete graph is regular
-    ru: Полный граф является регулярным графом
-    en: A regular graph is a connected graph
-    using:
-      concepts: |
-        regular_graph
+subclass:
+  - regular_graph
+  - connected_graph
