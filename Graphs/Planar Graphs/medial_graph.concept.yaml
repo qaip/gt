@@ -21,8 +21,8 @@ definition:
 statement:
   medial_graph_property:
     title:
-      ru: Cвойства серединного графа
-      en: Properties of the medial graph
+      ru: Cвойство серединного графа
+      en: Property of a medial graph
     ru:
       Один и тот же планарный граф может иметь несколько неизоморфных срединных
       графов
