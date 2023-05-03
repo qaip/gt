@@ -23,7 +23,7 @@ definition -> definition_of_unplanar_graph (*
 	};;
 *);;
 
-statement -> statement_of_sufficient_condition_unplanar_graph (*
+statement -> statement_of_sufficient_condition_for_graph_unplanarity (*
 	-> rrel_key_sc_element: concept_unplanar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -43,7 +43,7 @@ statement -> statement_of_sufficient_condition_unplanar_graph (*
 	};;
 *);;
 
-statement -> statement_of_necessary_condition_unplanar_graph (*
+statement -> statement_of_necessary_condition_for_graph_unplanarity (*
 	-> rrel_key_sc_element: concept_unplanar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
