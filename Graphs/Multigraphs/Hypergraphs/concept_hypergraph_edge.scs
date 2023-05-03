@@ -1,0 +1,54 @@
+concept_hypergraph_edge
+=> nrel_main_idtf:
+	[Ребро гиперграфа] (* <- lang_ru;; *);
+	[Hypergraph edge] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[Гиперребро] (* <- lang_ru;; *);
+	[hyperedge] (* <- lang_en;; *);;
+
+definition -> definition_of_hypergraph_edge (*
+	-> rrel_key_sc_element: concept_hypergraph_edge;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ребром гиперграфа, или гиперребром, является такое ребро, которое может соединять более двух вершин] (* <- lang_ru;; *);;
+		-> [An edge of a hypergraph, or hyperedge, is an edge that can connect more than two vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ребро гиперграфа)] (* <- lang_ru;; *);
+		[Def. (Hypergraph edge)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_hypergraph_edge_statement (*
+	-> rrel_key_sc_element: concept_hypergraph_edge;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В то время как ребра графа соединяют только 2 узла, гиперребра соединяют произвольное количество узлов] (* <- lang_ru;; *);;
+		-> [While graph edges connect only 2 vertices, hyperedges connect an arbitrary number of vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Высказывание о гиперребре)] (* <- lang_ru;; *);
+		[Stat. (Hyperedge statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_hypegraph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_edge;
+	concept_vertex;
+	concept_graph;
+	concept_hypegraph;
+	concept_vertex;
+	concept_edge;;

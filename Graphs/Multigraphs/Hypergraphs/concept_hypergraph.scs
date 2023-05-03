@@ -1,0 +1,52 @@
+concept_hypergraph
+=> nrel_main_idtf:
+	[Гиперграф] (* <- lang_ru;; *);
+	[Hypergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_hypergraph (*
+	-> rrel_key_sc_element: concept_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Гиперграфом является такой граф, в котором рёбра, называемые гиперрёбрами или рёбрами гиперграфа, могут соединять более двух вершин] (* <- lang_ru;; *);;
+		-> [A hypergraph is a graph in which edges, called hyperedges or hypergraph edges, may connect more than two nodes] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Гиперграф)] (* <- lang_ru;; *);
+		[Def. (Hypergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_vertex;
+		concept_hypergraph_edge
+	};;
+*);;
+
+statement -> statement_of_wikipedia_glossary_hypergraph_definition (*
+	-> rrel_key_sc_element: concept_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Совокупность из множества вершин и множества гиперрёбер] (* <- lang_ru;; *);;
+		-> [A collection of a set of vertices and a set of hyperedges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Определение гиперграфа из глоссария Википедии по теории графов)] (* <- lang_ru;; *);
+		[Stat. (Wikipedia glossary hypergraph definition)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_set;
+		concept_vertex;
+		concept_hypergraph_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_vertex;
+	concept_hypergraph_edge;
+	concept_set;
+	concept_vertex;
+	concept_hypergraph_edge;;

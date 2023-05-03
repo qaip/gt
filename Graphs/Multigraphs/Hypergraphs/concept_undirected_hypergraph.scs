@@ -1,0 +1,50 @@
+concept_undirected_hypergraph
+=> nrel_main_idtf:
+	[Неориентированный гиперграф] (* <- lang_ru;; *);
+	[Undirected hypergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_undirected_hypergraph (*
+	-> rrel_key_sc_element: concept_undirected_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ненаправленным называют гиперграф, который состоит из множества вершин V из множества гиперрёбер H, в котором гиперрёбра не являются упорядоченными парами] (* <- lang_ru;; *);;
+		-> [An undirected hypergraph is a hypergraph that consists of a set of vertices V from a set of hyperedges H, in which the hyperedges are not ordered pairs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Неориентированный гиперграф)] (* <- lang_ru;; *);
+		[Def. (Undirected hypergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_set;
+		concept_vertex;
+		concept_hypegraph_edge;
+		concept_tuple
+	};;
+*);;
+
+statement -> statement_of_undirected_hypergraphs_statement (*
+	-> rrel_key_sc_element: concept_undirected_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неориентированный гиперграф также называется системой множеств или семейством множеств, составленным из универсального множества] (* <- lang_ru;; *);;
+		-> [An undirected hypergraph is also called a set system or a family of sets drawn from the universal set] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о ненаправленном гиперграфе)] (* <- lang_ru;; *);
+		[Stat. (Undirected hypergraphs statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_set;
+		concept_universal_set
+	};;
+*);;
+
+sc_node_class ->
+	concept_set;
+	concept_vertex;
+	concept_hypegraph_edge;
+	concept_tuple;
+	concept_set;
+	concept_universal_set;;

@@ -1,0 +1,58 @@
+concept_multigraph
+=> nrel_main_idtf:
+	[Мультиграф] (* <- lang_ru;; *);
+	[Multigraph] (* <- lang_en;; *);;
+
+definition -> definition_of_multigraph (*
+	-> rrel_key_sc_element: concept_multigraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, у которого существует хотя бы одна пара вершин, соединяемых кратными ребрами или кратными дугами] (* <- lang_ru;; *);;
+		-> [Graph that has at least one pair of vertices connected by multiple edges or multiple arcs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Мультиграф)] (* <- lang_ru;; *);
+		[Def. (Multigraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_arc;
+		concept_multiple_edges;
+		concept_multiple_arcs
+	};;
+*);;
+
+statement -> statement_of_wikipedia_glossary_multigraph_definition (*
+	-> rrel_key_sc_element: concept_multigraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Мультиграфом является граф, в котором в котором может быть пара вершин, которая соединена более чем одним ребром, либо более чем двумя дугами противоположных направлений] (* <- lang_ru;; *);;
+		-> [A multigraph is a graph in which there can be a pair of vertices that are connected by more than one edge, or more than two arcs in opposite directions] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Определение мультиграфа из глоссария Википедии по теории графов)] (* <- lang_ru;; *);
+		[Stat. (Wikipedia glossary multigraph definition)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_arc
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_arc;
+	concept_multiple_edges;
+	concept_multiple_arcs;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_arc;;

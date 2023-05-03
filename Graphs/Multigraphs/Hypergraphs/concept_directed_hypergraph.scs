@@ -1,0 +1,48 @@
+concept_directed_hypergraph
+=> nrel_main_idtf:
+	[Ориентированный гиперграф] (* <- lang_ru;; *);
+	[Directed hypergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_directed_hypergraph (*
+	-> rrel_key_sc_element: concept_directed_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Направленным является гиперграф, который состоит из множества вершин V и множества гиперрёбер H, в котором гиперрёбра упорядоченные пары] (* <- lang_ru;; *);;
+		-> [Directed Hipergraph is such hypergraph, that consists of a set of vertices V and a set of hypergraph edges H, where a hypegraph edges are ordered pair] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ориентированный гиперграф)] (* <- lang_ru;; *);
+		[Def. (Directed hypergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_set;
+		concept_vertex;
+		concept_hypegraph_edge;
+		concept_tuple
+	};;
+*);;
+
+statement -> statement_of_directed_hypergraphs_statement (*
+	-> rrel_key_sc_element: concept_directed_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный гиперграф является обощением ориентированных графов] (* <- lang_ru;; *);;
+		-> [Directed hypergraph is a generalization of directed graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о направленном гиперграфе)] (* <- lang_ru;; *);
+		[Stat. (Directed hypergraphs statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graphs
+	};;
+*);;
+
+sc_node_class ->
+	concept_set;
+	concept_vertex;
+	concept_hypegraph_edge;
+	concept_tuple;
+	concept_directed_graphs;;
