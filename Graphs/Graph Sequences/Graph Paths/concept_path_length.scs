@@ -1,7 +1,7 @@
 concept_path_length
 => nrel_main_idtf:
-	[длина пути] (* <- lang_ru;; *);
-	[path length] (* <- lang_en;; *);;
+	[длина пути графа] (* <- lang_ru;; *);
+	[graph path length] (* <- lang_en;; *);;
 
 definition -> definition_of_path_length (*
 	-> rrel_key_sc_element: concept_path_length;;
@@ -12,8 +12,8 @@ definition -> definition_of_path_length (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (длина пути)] (* <- lang_ru;; *);
-		[Def. (path length)] (* <- lang_en;; *);;
+		[Опр. (длина пути графа)] (* <- lang_ru;; *);
+		[Def. (graph path length)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_path;
@@ -32,7 +32,7 @@ statement -> statement_of_path_equals_zero (*
 
 	=> nrel_main_idtf:
 		[Утв. (Условие эквивалентности длины пути нулю)] (* <- lang_ru;; *);
-		[Stat. (Condition for the equivalence of the path length to zero)] (* <- lang_en;; *);;
+		[Stat. (Zero path length condition)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_path;
