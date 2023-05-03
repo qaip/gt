@@ -2,8 +2,8 @@ ru: Граф алмаз
 en: Graph diamond
 
 definition:
-  ru: Алмаз-это планарный неориентированный граф с 4 вершинами и 5 ребрами
-  en: A diamond is a planar undirected graph with 4 vertices and 5 edges
+  ru: Планарный неориентированный граф с 4 вершинами и 5 ребрами
+  en: A planar undirected graph with 4 vertices and 5 edges
   using:
     concepts: |
       unoriented_graph

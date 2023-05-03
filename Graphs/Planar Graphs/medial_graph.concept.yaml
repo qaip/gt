@@ -3,11 +3,11 @@ en: Medial graph
 
 definition:
   ru:
-    Срединный граф-граф, представляющий рёбра смежности внутри граней заданного
-    планарного графа
+    Граф, представляющий рёбра смежности внутри граней заданного планарного
+    графа
   en:
-    A median graph is a graph representing adjacency edges inside the faces of a
-    given planar graph
+    A graph representing adjacency edges inside the faces of a given planar
+    graph
   using:
     concepts: |
       planar_graph

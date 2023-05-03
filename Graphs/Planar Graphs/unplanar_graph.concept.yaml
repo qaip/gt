@@ -2,12 +2,10 @@ ru: Непланарный граф
 en: Unplanar graph
 
 definition:
-  ru:
-    Непланарный граф-граф, который не может быть изображён на плоскости без
-    пересечения ребер
+  ru: Граф, который не может быть изображён на плоскости без пересечения ребер
   en:
-    Unplanar graph is a graph, which cannot be represented on a plane without
-    intersection of edges
+    A graph, which cannot be represented on a plane without intersection of
+    edges
   using:
     concepts: |
       unplanar_graph

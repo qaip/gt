@@ -3,12 +3,11 @@ en: Graph Halina
 
 definition:
   ru:
-    Граф Халина-это некоторый вид планарного графа, который строится из дерева,
-    имеющего по меньшей мере 4 вершины, ни одна из которых не имеет в точности
-    двух соседей
+    Некоторый вид планарного графа, который строится из дерева, имеющего по
+    меньшей мере 4 вершины, ни одна из которых не имеет в точности двух соседей
   en:
-    An extranplanar graph is a planar graph that has a stacking on the plane
-    such that all its vertices belong to one face
+    A planar graph that has a stacking on the plane such that all its vertices
+    belong to one face
   using:
     concepts: |
       planar_graph

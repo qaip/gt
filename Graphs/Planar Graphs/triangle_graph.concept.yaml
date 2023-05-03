@@ -3,11 +3,11 @@ en: Triangle graph
 
 definition:
   ru:
-    Треугольным графом называется планарный неориентированный граф с тремя
-    вершинами и тремя рёбрами, образующими треугольник
+    Планарный неориентированный граф с тремя вершинами и тремя рёбрами,
+    образующими треугольник
   en:
-    Graph-triangle is a planar undirected graph, that contains 3 vertices and 3
-    edges, forming a triangle
+    A planar undirected graph, that contains 3 vertices and 3 edges, forming a
+    triangle
   using:
     concepts: |
       unoriented_graph
