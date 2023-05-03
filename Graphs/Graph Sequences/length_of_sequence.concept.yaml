@@ -15,10 +15,10 @@ definition:
 statement:
   length_equals_zero:
     title:
-      ru: Когда длина маршрута равна 0
-      en: When sequence length is 0
-    ru: Длина может равняться нулю, если путь состоит только из одной вершины
-    en: The length can be zero if the path consists of only one vertex
+      ru: Условие равенства длины маршрута нулю
+      en: The condition for the route length to be equal to zero
+    ru: Длина равняется нулю, если путь состоит только из одной вершины
+    en: The length is zero if the path consists of only one vertex
     using:
       concepts: |
         vertex

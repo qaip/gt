@@ -17,26 +17,3 @@ definition:
     rrels: |
       vertex
       edge
-statement:
-  tightened_subgraph_definition:
-    title:
-      ru: Понятие стягиваемого подграфа
-      en: Notion of a contractible subgraph
-    ru:
-      Подграф H графа G называется стягиваемым, если для любого чётного
-      подмножества его вершин X принадлежит V H содержит связный подграф,
-      множество вершин с нечетными степенями которого есть X
-    en:
-      A subgraph H of a graph G is said to be contractible if for any even
-      subset of its vertices X belongs to V H contains a connected subgraph
-      whose set of vertices with odd degrees is X
-    using:
-      concepts: |
-        vertex
-        edge
-        subgraph
-        connected
-        power_of_graph
-      rrels: |
-        vertex
-        edge
