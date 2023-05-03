@@ -1,0 +1,18 @@
+ru: неориентированный граф
+en: undirected graph
+definition:
+    ru:
+        Пусть V является непустым множеством. Неориентированным графом
+        называется пара множеств V, E, где E является произвольным подмножеством
+        декартова произведения множества V
+    en:
+        Let V be a nonempty set. An undirected graph is called a pair V, E,
+        where E is a arbitrary subset of graphic works of cartesian product V
+    using:
+        concepts: |
+            graph
+            vertex
+            edge
+        rrels: |
+            vertex
+            edge
