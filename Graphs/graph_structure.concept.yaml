@@ -16,10 +16,10 @@ definition:
             vertex
             edge
 statement:
-    statement_title:
+    graph_structure_usage:
         title:
             ru: Графовая структура используется
-            en: Statement title
+            en: Graph structure usage
         ru:
             Графовая структура является тем же самым что и граф, но понятие граф
             используется в информатике и математике, а графовая структура в
