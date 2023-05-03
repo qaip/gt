@@ -28,7 +28,7 @@ statement -> statement_of_sufficient_condition_for_graph_unplanarity (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Если граф содержит полный двудольный подграф или полный подграф на 5 вершин, то он является непланарным] (* <- lang_ru;; *);;
-		-> [If a graph contains a complete bipartite subgraph or a complete subgraph with 5 vertices, then it is non-planar] (* <- lang_en;; *);;
+		-> [If a graph contains a complete bipartite subgraph or a complete subgraph with 5 vertices, then it is unplanar] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -48,7 +48,7 @@ statement -> statement_of_necessary_condition_for_graph_unplanarity (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Если граф непланарный, то он должен содержать больше 4 вершин, степень которых больше 3, или больше 5 вершин степени больше 2] (* <- lang_ru;; *);;
-		-> [If the graph is non-planar, that it must contain more than 4 vertices whose degree is greater than 3, or more than 5 vertices of degree greater than 2] (* <- lang_en;; *);;
+		-> [If a graph is unplanar, then it must contain more than 4 vertices whose degree is greater than 3, or more than 5 vertices of degree greater than 2] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
