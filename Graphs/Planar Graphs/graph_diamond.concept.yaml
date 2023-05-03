@@ -1,0 +1,34 @@
+ru: граф алмаз
+en: graph diamond
+
+definition:
+  ru: Планарный неориентированный граф с 4 вершинами и 5 ребрами
+  en: A planar undirected graph with 4 vertices and 5 edges
+  using:
+    concepts: |
+      unoriented_graph
+      planar_graph
+      graph_diamond
+      graph
+      edge
+      vertex
+
+statement:
+  diamond_graph_property:
+    title:
+      ru: Cвойство графа алмаза
+      en: Properties of a graph diamond
+    ru:
+      Радиус алмаза равен 1, диаметр равен 2, обхват равен 3, хроматический
+      индекс и хроматическое число равны 3
+    en:
+      The radius of the diamond is 1, the diameter is 2, the girth is 3, the
+      chromatic index and the chromatic number are 3
+    using:
+      concepts: |
+        chromatic_number
+        graph_diamond
+        chromatic_index
+        graph_girth
+        graph_radius
+        graph_diametr

@@ -1,0 +1,33 @@
+concept_plane
+=> nrel_main_idtf:
+	[Плоскость] (* <- lang_ru;; *);
+	[Plane] (* <- lang_en;; *);;
+
+definition -> definition_of_plane (*
+	-> rrel_key_sc_element: concept_plane;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Поверхность, имеющая два измерения] (* <- lang_ru;; *);;
+		-> [Поверхность, содержащая полностью каждую прямую, соединяющую любые её точки] (* <- lang_ru;; *);;
+		-> [A surface having two dimensions] (* <- lang_en;; *);;
+		-> [A surface containing completely every straight line connecting any of its points] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Плоскость)] (* <- lang_ru;; *);
+		[Def. (Plane)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_surface;
+		concept_plane;
+		concept_straight;
+		concept_point
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_surface;
+	concept_plane;
+	concept_straight;
+	concept_point;;
