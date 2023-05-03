@@ -1,5 +1,5 @@
 ru: ориентированный ациклический граф с источником и стоком
-en: Directed acyclic graph with source and sink
+en: directed acyclic graph with source and sink
 
 definition:
   ru:
@@ -23,15 +23,16 @@ definition:
 statement:
   theorem_dag_source_sink:
     title:
-      ru: Описание свойств DAG с источником и стоком
-      en: Properties of directed acyclic graph with source and sink
+      ru: Свойство ориентированного ациклического графа с источником и стоком
+      en: Property of a directed acyclic graph with source and sink
     ru:
-      В DAG с источником и стоком существует только один путь от источника к
-      стоку, и каждая вершина достижима из источника и может достигать сток
+      В ориентированном ациклическом графе с источником и стоком существует
+      только один путь от источника к стоку, и каждая вершина достижима из
+      источника и может достигать сток
     en:
-      In a DAG with source and sink, there exists only one path from the source
-      to the sink, and every vertex is reachable from the source and can reach
-      the sink
+      In a directed acyclic graph with source and sink, there exists only one
+      path from the source to the sink, and every vertex is reachable from the
+      source and can reach the sink
     using:
       concepts: |
         dag_with_source_and_sink

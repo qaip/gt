@@ -1,5 +1,5 @@
-ru: dAG со стоком
-en: DAG with sink
+ru: ориентированный ациклический граф со стоком
+en: directed acyclic graph with sink
 
 definition:
   ru:
@@ -22,10 +22,12 @@ statement:
     title:
       ru: Описание свойств DAG со стоком
       en: Properties of DAG with sink
-    ru: В DAG со стоком каждая вершина, кроме стока, достижима из стока
+    ru:
+      В ориентированном ациклическом графе со стоком каждая вершина, кроме
+      стока, достижима из стока
     en:
-      In a DAG with sink, every vertex except the sink is reachable from the
-      sink
+      In a irected acyclic graph with sink, every vertex except the sink is
+      reachable from the sink
     using:
       concepts: |
         dag_with_sink

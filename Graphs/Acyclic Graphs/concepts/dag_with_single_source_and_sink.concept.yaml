@@ -1,5 +1,5 @@
 ru: ориентированный ациклический граф с единственным истоком и стоком
-en: Directed acyclic graph with a single source and sink
+en: directed acyclic graph with a single source and sink
 
 definition:
   ru:
@@ -28,7 +28,7 @@ statement:
     ru:
       В ациклическом ориентированном графе с единственным истоком и стоком
       каждая вершина может быть топологически отсортирована таким образом, что
-      исток стоит первым, а сток - последним в порядке
+      исток стоит первым, а сток стоит последним
     en:
       In a directed acyclic graph with a single source and sink, each vertex can
       be topologically sorted in such a way that the source is the first vertex

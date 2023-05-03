@@ -1,5 +1,5 @@
-ru: dAG с источником
-en: DAG with source
+ru: ориентированный ациклический граф с источником
+en: directed acyclic graph with source
 
 definition:
   ru:
@@ -20,13 +20,14 @@ definition:
 statement:
   theorem_dag_source:
     title:
-      ru: Описание свойств DAG с источником
-      en: Properties of DAG with source
+      ru: Свойство ориентированного ациклического графа с источником
+      en: Property of a directed acyclic graph with source
     ru:
-      В DAG с источником каждая вершина, кроме источника, достижима из источника
+      В ориентированном ациклическом графе с источником каждая вершина, кроме
+      источника, достижима из источника
     en:
-      In a DAG with source, every vertex except the source is reachable from the
-      source
+      In a directed acyclic graph with source, every vertex except the source is
+      reachable from the source
     using:
       concepts: |
         dag_with_source
