@@ -41,9 +41,7 @@ statement -> statement_of_synonymous_names (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_weight;
-		concept_cost_of_path;
-		concept_length_of_path
+		concept_weight
 	};;
 *);;
 
@@ -52,9 +50,7 @@ sc_node_class ->
 	concept_edge;
 	concept_graph;
 	concept_graph;
-	concept_weight;
-	concept_cost_of_path;
-	concept_length_of_path;;
+	concept_weight;;
 
 sc_node_role_relation ->
 	rrel_edge;;
