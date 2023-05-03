@@ -1,7 +1,7 @@
 concept_external_planar_graph
 => nrel_main_idtf:
-	[Внешнепланарный граф] (* <- lang_ru;; *);
-	[Outerplanar graph] (* <- lang_en;; *);
+	[внешнепланарный граф] (* <- lang_ru;; *);
+	[outerplanar graph] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -16,8 +16,8 @@ definition -> definition_of_external_planar_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Внешнепланарный граф)] (* <- lang_ru;; *);
-		[Def. (Outerplanar graph)] (* <- lang_en;; *);;
+		[Опр. (внешнепланарный граф)] (* <- lang_ru;; *);
+		[Def. (outerplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_planar_graph;

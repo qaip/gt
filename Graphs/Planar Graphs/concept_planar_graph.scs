@@ -1,7 +1,7 @@
 concept_planar_graph
 => nrel_main_idtf:
-	[Планарный граф] (* <- lang_ru;; *);
-	[Planar graph] (* <- lang_en;; *);
+	[планарный граф] (* <- lang_ru;; *);
+	[planar graph] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -21,8 +21,8 @@ definition -> definition_of_planar_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Планарный граф)] (* <- lang_ru;; *);
-		[Def. (Planar graph)] (* <- lang_en;; *);;
+		[Опр. (планарный граф)] (* <- lang_ru;; *);
+		[Def. (planar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

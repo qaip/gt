@@ -1,7 +1,7 @@
 concept_unplanar_graph
 => nrel_main_idtf:
-	[Непланарный граф] (* <- lang_ru;; *);
-	[Unplanar graph] (* <- lang_en;; *);;
+	[непланарный граф] (* <- lang_ru;; *);
+	[unplanar graph] (* <- lang_en;; *);;
 
 definition -> definition_of_unplanar_graph (*
 	-> rrel_key_sc_element: concept_unplanar_graph;;
@@ -12,8 +12,8 @@ definition -> definition_of_unplanar_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Непланарный граф)] (* <- lang_ru;; *);
-		[Def. (Unplanar graph)] (* <- lang_en;; *);;
+		[Опр. (непланарный граф)] (* <- lang_ru;; *);
+		[Def. (unplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_unplanar_graph;

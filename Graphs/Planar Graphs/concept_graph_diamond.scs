@@ -1,7 +1,7 @@
 concept_graph_diamond
 => nrel_main_idtf:
-	[Граф алмаз] (* <- lang_ru;; *);
-	[Graph diamond] (* <- lang_en;; *);;
+	[граф алмаз] (* <- lang_ru;; *);
+	[graph diamond] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_diamond (*
 	-> rrel_key_sc_element: concept_graph_diamond;;
@@ -12,8 +12,8 @@ definition -> definition_of_graph_diamond (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Граф алмаз)] (* <- lang_ru;; *);
-		[Def. (Graph diamond)] (* <- lang_en;; *);;
+		[Опр. (граф алмаз)] (* <- lang_ru;; *);
+		[Def. (graph diamond)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_unoriented_graph;
