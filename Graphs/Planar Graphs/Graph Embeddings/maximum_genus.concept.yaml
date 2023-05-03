@@ -1,0 +1,14 @@
+en: Maximum genus
+ru: Максимальный род
+
+definition:
+  ru: Максимальный род графа-это максимальный род среди всех его вложений
+  en:
+    The maximum genus of a graph is the maximum genus among all of its
+    embeddings
+  using:
+    concepts: |
+      maximum_genus
+      graph
+      graph_embedding
+      genus

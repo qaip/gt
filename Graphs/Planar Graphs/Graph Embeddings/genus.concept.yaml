@@ -34,3 +34,7 @@ statement:
         planar_graph
       nrels: |
         face
+
+subclass:
+  - maximum_genus
+  - eulers_genus

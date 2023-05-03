@@ -1,0 +1,30 @@
+ru: Род Эйлера
+en: Euler genus
+
+definition:
+  ru:
+    Характеристика поверхности, определяемая как число вершин минус число ребер
+    плюс число граней
+  en:
+    A characteristic of a surface defined as the number of vertices minus the
+    number of edges plus the number of faces
+  using:
+    concepts: |
+      surface
+      graph
+      vertex
+      edge
+    nrels: |
+      face
+
+statement:
+  euler_theorem:
+    title:
+      ru: Теорема Эйлера
+      en: Eulers Theorem
+    ru: Если граф планарен, то его род равен единице
+    en: If a graph is planar, then its genus is equal to one
+    using:
+      concepts: |
+        planar_graph
+        genus
