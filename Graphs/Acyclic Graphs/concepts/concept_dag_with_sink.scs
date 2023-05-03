@@ -5,8 +5,8 @@ concept_dag_with_sink
 
 
 => nrel_inclusion:
-dag_with_source_and_sink;
-dag_with_single_source_and_sink;;
+concept_dag_with_source_and_sink;
+concept_dag_with_single_source_and_sink;;
 
 definition -> definition_of_dag_with_sink (*
 	-> rrel_key_sc_element: concept_dag_with_sink;;
