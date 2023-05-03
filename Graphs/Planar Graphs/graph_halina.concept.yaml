@@ -18,8 +18,8 @@ definition:
 statement:
   halina_graph_property:
     title:
-      ru: Cвойства графа Халина
-      en: Properties of the graph Halina
+      ru: Cвойство графа Халина
+      en: Property of a graph Halina
     ru:
       Любой граф Халина 3-связен, что означает, что нельзя разбить граф на два
       графа путём удаления двух вершин
