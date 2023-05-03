@@ -24,7 +24,7 @@ definition -> definition_of_graph_structure (*
 	};;
 *);;
 
-statement -> statement_of_statement_title (*
+statement -> statement_of_graph_structure_usage (*
 	-> rrel_key_sc_element: concept_graph_structure;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -34,7 +34,7 @@ statement -> statement_of_statement_title (*
 
 	=> nrel_main_idtf:
 		[Утв. (Графовая структура используется)] (* <- lang_ru;; *);
-		[Stat. (Statement title)] (* <- lang_en;; *);;
+		[Stat. (Graph structure usage)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
