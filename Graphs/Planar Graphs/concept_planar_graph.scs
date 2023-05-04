@@ -5,12 +5,12 @@ concept_planar_graph
 
 
 => nrel_inclusion:
-one_planar_graph;
-triangular_graph;
-graph_diamond;
-medial_graph;
-external_planar_graph;
-graph_halina;;
+concept_one_planar_graph;
+concept_triangular_graph;
+concept_graph_diamond;
+concept_medial_graph;
+concept_external_planar_graph;
+concept_graph_halina;;
 
 definition -> definition_of_planar_graph (*
 	-> rrel_key_sc_element: concept_planar_graph;;
