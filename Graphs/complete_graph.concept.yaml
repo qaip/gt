@@ -16,6 +16,3 @@ definition:
     rrels: |
       vertex
       edge
-subclass:
-  - regular_graph
-  - connected_graph

@@ -36,3 +36,16 @@ statement:
       rrels: |
         vertex
         edge
+subclass:
+  - directed_graph
+  - complete_graph
+  - undirected_graph
+  - hypergraph
+  - multigraph
+  - tightened_graph
+  - graph_halina
+  - external_planar_graph
+  - medial_graph
+  - graph_diamond
+  - triangle_graph
+  - planar_graph

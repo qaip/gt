@@ -17,10 +17,12 @@ definition:
 statement:
   arc_direction:
     title:
-      ru: название высказывания
-      en: statement title
+      ru: дуга и ребро
+      en: arc and edge
     ru: Дуга является ребром, которое имеет направление
     en: An arc is an edge which has direction
     using:
       concepts: |
-        used_concept
+        edge
+      rrels: |
+        edge
