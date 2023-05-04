@@ -34,7 +34,6 @@ section_subject_domain_of_graphs
 	concept_bridge;
 	concept_bipartite_graph;
 	concept_multigraph;
-	concept_complete_graph;
 	concept_null_graph;
 	concept_psuedograph;
 	concept_network;
@@ -81,7 +80,6 @@ section_subject_domain_of_graphs=[*
 		concept_bridge;
 		concept_bipartite_graph;
 		concept_multigraph;
-		concept_complete_graph;
 		concept_null_graph;
 		concept_psuedograph;
 		concept_network;
@@ -139,7 +137,6 @@ sc_node_class ->
 	concept_bridge;
 	concept_bipartite_graph;
 	concept_multigraph;
-	concept_complete_graph;
 	concept_null_graph;
 	concept_psuedograph;
 	concept_network;
