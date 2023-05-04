@@ -3,7 +3,7 @@ en: planar graph
 
 definition:
   ru: Граф, который может быть изображён на плоскости без пересечения ребер
-  en: A graph that can be drawn on a plane without intersecting edges
+  en: A graph that can be drawn on a plane without intersecting edges 
   using:
     concepts: |
       graph
