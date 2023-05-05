@@ -36,6 +36,7 @@ statement:
       rrels: |
         vertex
         edge
+<<<<<<< HEAD
 subclass:
   - directed_graph
   - complete_graph
@@ -49,3 +50,5 @@ subclass:
   - graph_diamond
   - triangle_graph
   - planar_graph
+=======
+>>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7

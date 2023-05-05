@@ -12,8 +12,13 @@ definition -> definition_of_complete_graph (*
 	-> rrel_key_sc_element: concept_complete_graph;;
 
 	<= nrel_sc_text_translation: ... (*
+<<<<<<< HEAD
 		-> [Полный граф является простым графом, в котором каждая пара различных вершин смежна] (* <- lang_ru;; *);;
 		-> [Complete graph is a simple undirected graph in which every pair of distinct vertices is connected by a unique edge] (* <- lang_en;; *);;
+=======
+		-> [Простой граф, в котором каждая пара различных вершин смежна] (* <- lang_ru;; *);;
+		-> [A simple undirected graph in which every pair of distinct vertices is connected by a unique edge] (* <- lang_en;; *);;
+>>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
 	*);;
 
 	=> nrel_main_idtf:

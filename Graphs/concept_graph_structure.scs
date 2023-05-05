@@ -33,8 +33,13 @@ statement -> statement_of_graph_structure_usage (*
 	*);;
 
 	=> nrel_main_idtf:
+<<<<<<< HEAD
 		[Утв. (Использование графовой структуры)] (* <- lang_ru;; *);
 		[Stat. (Graph structure usage)] (* <- lang_en;; *);;
+=======
+		[Утв. (использование графовой структуры)] (* <- lang_ru;; *);
+		[Stat. (graph structure usage)] (* <- lang_en;; *);;
+>>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
 
 	=> nrel_using_constants: {
 		concept_graph;

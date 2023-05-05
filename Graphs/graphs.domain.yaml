@@ -31,7 +31,6 @@ concepts: |
   bridge
   bipartite_graph
   multigraph
-  complete_graph
   null_graph
   psuedograph
   network

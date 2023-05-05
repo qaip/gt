@@ -36,8 +36,13 @@ statement -> statement_of_arc_direction (*
 	*);;
 
 	=> nrel_main_idtf:
+<<<<<<< HEAD
 		[Утв. (Название высказывания)] (* <- lang_ru;; *);
 		[Stat. (Statement title)] (* <- lang_en;; *);;
+=======
+		[Утв. (название высказывания)] (* <- lang_ru;; *);
+		[Stat. (statement title)] (* <- lang_en;; *);;
+>>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
 
 	=> nrel_using_constants: {
 		concept_used_concept
