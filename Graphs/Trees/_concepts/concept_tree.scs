@@ -1,0 +1,361 @@
+concept_tree
+=> nrel_main_idtf:
+	[графовое дерево] (* <- lang_ru;; *);
+	[graph tree] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_complete_binary_tree;
+concept_degenerate_binary_tree;
+concept_balanced_binary_tree;
+concept_b_tree;
+concept_binary_search_tree;
+concept_binary_sorting_tree;
+concept_binary_tree;
+concept_binomial_tree;
+concept_brother_tree;
+concept_bsp_tree;
+concept_matrix_tree;
+concept_vantage_point_tree;;
+
+definition -> definition_of_tree (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графовое дерево, в котором каждзел имеет не более двух потомков] (* <- lang_ru;; *);;
+		-> [A graph tree in which each node has no more than two children] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (графовое дерево)] (* <- lang_ru;; *);
+		[Def. (graph tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_tree;
+		concept_tree_node;
+		concept_graph_tree_child
+	};;
+*);;
+
+statement -> statement_of_tree_height_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Высота графового дерева равна мимальному количеству узлов на пути от корня до листа] (* <- lang_ru;; *);;
+		-> [The height of a graph tree is the maximum number of nodes on a path from the root to a leaf] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о высоте графового дерева)] (* <- lang_ru;; *);
+		[Stat. (Graph tree height theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_tree_height;
+		concept_tree_node;
+		concept_graph_tree_root;
+		concept_graph_tree_leaf;
+		nrel_maximum_number
+	};;
+*);;
+
+statement -> statement_of_tree_edges_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любое дерево с n узлами имеет n-1 ребро] (* <- lang_ru;; *);;
+		-> [Any tree with n nodes has n-1 edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство графового дерева)] (* <- lang_ru;; *);
+		[Stat. (Theorem on tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_edge;
+		nrel_number_of_tree_nodes;
+		nrel_number_of_edges
+	};;
+*);;
+
+statement -> statement_of_path_to_tree_root_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для любого узла в графовом дереве существует единственный путь к корню] (* <- lang_ru;; *);;
+		-> [For any node in a graph tree, there is a unique path to the root] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о пути к корню дерева)] (* <- lang_ru;; *);
+		[Stat. (Theorem on path to tree root)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_graph_tree_root;
+		concept_graph_path;
+		concept_atomic_existence
+	};;
+*);;
+
+statement -> statement_of_descending_path_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для любого узла в дереве существуетдинственный нисящий путь к листу] (* <- lang_ru;; *);;
+		-> [For any node in a tree, there is a unique descending path to a leaf] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о нисходящем пути)] (* <- lang_ru;; *);
+		[Stat. (Theorem on descending path)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_graph_path;
+		concept_graph_tree_leaf;
+		concept_descending_path
+	};;
+*);;
+
+statement -> statement_of_rooted_tree_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Корневое дерево с n узлами имеет n-1 ребро] (* <- lang_ru;; *);;
+		-> [A rooted tree with n nodes has n-1 edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о корневом дереве)] (* <- lang_ru;; *);
+		[Stat. (Rooted tree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_edge;
+		nrel_number_of_tree_nodes;
+		nrel_number_of_edges
+	};;
+*);;
+
+statement -> statement_of_unrooted_tree_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Некорневое дерево с n узлами имеет n-2 ребра] (* <- lang_ru;; *);;
+		-> [An unrooted tree with n nodes has n-2 edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о некорневом дереве)] (* <- lang_ru;; *);
+		[Stat. (Unrooted tree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_edge;
+		nrel_number_of_tree_nodes;
+		nrel_number_of_edges
+	};;
+*);;
+
+statement -> statement_of_tree_isomorphism_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два дерева изоморфны тогда и только тогда, когда у них одинакые последовательности степеней узлов] (* <- lang_ru;; *);;
+		-> [Two trees are isomorphic if and only if they have the same degree sequence] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об изоморфизмееревьев)] (* <- lang_ru;; *);
+		[Stat. (Isomorphism theorem for trees)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node_degree;
+		concept_sequence;
+		concept_tree_node;
+		concept_isomorphic_graph_tree
+	};;
+*);;
+
+statement -> statement_of_prufer_sequence_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любое помеченное дерево с n узлами может быть единственным образом представлено последовательностью из n-2 целых чисел, называемой последовательностью Прюфера] (* <- lang_ru;; *);;
+		-> [Every labeled tree with n nodes can be uniquely represented by a sequence of n-2 integers, known as the Prufer sequence] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о последовательности Прюфера)] (* <- lang_ru;; *);
+		[Stat. (Prufer sequence theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_prufer_sequence;
+		concept_sequence;
+		concept_labeled_tree;
+		nrel_number_of_tree_nodes
+	};;
+*);;
+
+statement -> statement_of_degree_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Сумма степеней всех узлов в дереве равна удвоенному количеству ребер] (* <- lang_ru;; *);;
+		-> [The sum of the degrees of all nodes in a tree is equal to twice the number of edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о степенях узлов)] (* <- lang_ru;; *);
+		[Stat. (Degree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_tree_node_degree;
+		concept_edge;
+		nrel_sum_of_quantities;
+		nrel_number_of_edges
+	};;
+*);;
+
+statement -> statement_of_diameter_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Диетр дерева равен максимальному расстоянию между любой парой узлов в дереве] (* <- lang_ru;; *);;
+		-> [The diameter of a tree is the maximum distance between any two nodes in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о диаметре дерева)] (* <- lang_ru;; *);
+		[Stat. (Diameter theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_distance;
+		nrel_maximum_distance
+	};;
+*);;
+
+statement -> statement_of_lca_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Нименьший общий предок двух узлов в дереве является самым глубоким узлом, который является предком обоих узлов] (* <- lang_ru;; *);;
+		-> [The lowest common ancestor of two nodes in a tree is the deepest node that is an ancestor of both nodes] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о наименьшем общем предке)] (* <- lang_ru;; *);
+		[Stat. (Lowest common ancestor theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		nrel_tree_node_ancestor;
+		nrel_lowest_common_ancestor;
+		nrel_deepest_tree_node
+	};;
+*);;
+
+statement -> statement_of_centroid_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Узел в дереве является центроидом тогда и только тогда, когда размер его наибольшего поддерева не превышает половины размера всего дерева] (* <- lang_ru;; *);;
+		-> [A node in a tree is a centroid if and only if the size of its largest subtree is at most half the size of the entire tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о центроидах дерева)] (* <- lang_ru;; *);
+		[Stat. (Centroid theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_subtree;
+		concept_centroid_tree
+	};;
+*);;
+
+statement -> statement_of_tree_traversal_theorem (*
+	-> rrel_key_sc_element: concept_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Существуют три основных способа обхода дерева; прямой, поперечный и обратный. Каждый об посещает узлы дерева в разном порядке] (* <- lang_ru;; *);;
+		-> [There are three main ways to traverse a tree; pre-order, in-order, and post-order. Each traversal visits the nodes of the tree in a different order] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о обходе дерева)] (* <- lang_ru;; *);
+		[Stat. (Tree traversal theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_node;
+		concept_tree_traversal;
+		nrel_pre_order_tree_traversal;
+		nrel_in_order_tree_traversal;
+		nrel_post_order_tree_traversal
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_tree;
+	concept_tree_node;
+	concept_graph_tree_child;
+	concept_graph_tree_height;
+	concept_tree_node;
+	concept_graph_tree_root;
+	concept_graph_tree_leaf;
+	concept_tree_node;
+	concept_edge;
+	concept_tree_node;
+	concept_graph_tree_root;
+	concept_graph_path;
+	concept_atomic_existence;
+	concept_tree_node;
+	concept_graph_path;
+	concept_graph_tree_leaf;
+	concept_descending_path;
+	concept_tree_node;
+	concept_edge;
+	concept_tree_node;
+	concept_edge;
+	concept_tree_node_degree;
+	concept_sequence;
+	concept_tree_node;
+	concept_isomorphic_graph_tree;
+	concept_tree_node;
+	concept_prufer_sequence;
+	concept_sequence;
+	concept_labeled_tree;
+	concept_tree_node;
+	concept_tree_node_degree;
+	concept_edge;
+	concept_tree_node;
+	concept_distance;
+	concept_tree_node;
+	concept_tree_node;
+	concept_subtree;
+	concept_centroid_tree;
+	concept_tree_node;
+	concept_tree_traversal;;
+
+sc_node_norole_relation ->
+	nrel_maximum_number;
+	nrel_number_of_tree_nodes;
+	nrel_number_of_edges;
+	nrel_number_of_tree_nodes;
+	nrel_number_of_edges;
+	nrel_number_of_tree_nodes;
+	nrel_number_of_edges;
+	nrel_number_of_tree_nodes;
+	nrel_sum_of_quantities;
+	nrel_number_of_edges;
+	nrel_maximum_distance;
+	nrel_tree_node_ancestor;
+	nrel_lowest_common_ancestor;
+	nrel_deepest_tree_node;
+	nrel_pre_order_tree_traversal;
+	nrel_in_order_tree_traversal;
+	nrel_post_order_tree_traversal;;
