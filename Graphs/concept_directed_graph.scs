@@ -5,11 +5,7 @@ concept_directed_graph
 
 => nrel_idtf:
 	[орграф] (* <- lang_ru;; *);
-<<<<<<< HEAD
 	[digraph] (* <- lang_en;; *);;
-=======
-	[igraph] (* <- lang_en;; *);;
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
 
 definition -> definition_of_directed_graph (*
 	-> rrel_key_sc_element: concept_directed_graph;;
@@ -42,13 +38,8 @@ statement -> statement_of_weak_directed_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-<<<<<<< HEAD
-		[Утв. (О слабо связном графе)] (* <- lang_ru;; *);
-		[Stat. (About weak directed graph)] (* <- lang_en;; *);;
-=======
 		[Утв. (слабость орграфа)] (* <- lang_ru;; *);
 		[Stat. (digraph weakness)] (* <- lang_en;; *);;
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
 
 	=> nrel_using_constants: {
 		concept_directed_graph;

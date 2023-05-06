@@ -1,7 +1,22 @@
 concept_graph
 => nrel_main_idtf:
 	[граф] (* <- lang_ru;; *);
-	[graph] (* <- lang_en;; *);;
+	[graph] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_directed_graph;
+concept_complete_graph;
+concept_undirected_graph;
+concept_hypergraph;
+concept_multigraph;
+concept_tightened_graph;
+concept_graph_halina;
+concept_external_planar_graph;
+concept_medial_graph;
+concept_graph_diamond;
+concept_triangle_graph;
+concept_planar_graph;;
 
 definition -> definition_of_graph (*
 	-> rrel_key_sc_element: concept_graph;;
@@ -32,13 +47,50 @@ statement -> statement_of_graphs_representation (*
 	*);;
 
 	=> nrel_main_idtf:
-<<<<<<< HEAD
-		[Утв. (Изображение графов)] (* <- lang_ru;; *);
-		[Stat. (Graphs representation)] (* <- lang_en;; *);;
-=======
 		[Утв. (изображение графов)] (* <- lang_ru;; *);
 		[Stat. (graphs representation)] (* <- lang_en;; *);;
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_edges_in_graph (*
+	-> rrel_key_sc_element: concept_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф может иметь как и ориентированные, так и неориентированные рёбра] (* <- lang_ru;; *);;
+		-> [A graph can have both directed and undirected edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (рёбра графа)] (* <- lang_ru;; *);
+		[Stat. (graph edges)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_vertex;
+		concept_oriented_edge;
+		rrel_edge;
+		rrel_vertex;
+		rrel_oriented_edge
+	};;
+*);;
+
+statement -> statement_of_usage_in_problems (*
+	-> rrel_key_sc_element: concept_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графы используются для решения различных задач. Если в задаче удаётся использовать графы, то это придаёт задаче наглядность и простоту. Например, графы незаменимы в проектировании транспортных сетей] (* <- lang_ru;; *);;
+		-> [Graphs are used to solve various problems. If the graph is used successfully in the task, then this gives the task clarity and simplicity. For example, graphs are indispensable in designing profitable networks] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (использование в задачах)] (* <- lang_ru;; *);
+		[Stat. (usage in problems)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
@@ -52,10 +104,20 @@ sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_vertex;
+	concept_edge;
+	concept_edge;
+	concept_vertex;
+	concept_oriented_edge;
+	concept_vertex;
 	concept_edge;;
 
 sc_node_role_relation ->
 	rrel_vertex;
 	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_edge;
+	rrel_vertex;
+	rrel_oriented_edge;
 	rrel_vertex;
 	rrel_edge;;
