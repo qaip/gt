@@ -2,19 +2,11 @@ ru: полный граф
 en: complete graph
 definition:
   ru:
-<<<<<<< HEAD
     Полный граф является простым графом, в котором каждая пара различных вершин
     смежна
   en:
     Complete graph is a simple undirected graph in which every pair of distinct
     vertices is connected by a unique edge
-=======
-    Простой граф, в котором каждая пара различных вершин
-    смежна
-  en:
-    A simple undirected graph in which every pair of distinct vertices is
-    connected by a unique edge
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
   using:
     concepts: |
       simple_graph
@@ -24,9 +16,3 @@ definition:
     rrels: |
       vertex
       edge
-<<<<<<< HEAD
-=======
-subclass:
-  - regular_graph
-  - connected_graph
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7

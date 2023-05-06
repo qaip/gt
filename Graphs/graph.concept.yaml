@@ -36,7 +36,40 @@ statement:
       rrels: |
         vertex
         edge
-
+  edges_in_graph:
+    title:
+      ru: рёбра графа
+      en: graph edges
+    ru: Граф может иметь как и ориентированные, так и неориентированные рёбра
+    en: A graph can have both directed and undirected edges
+    using:
+      concepts: |
+        edge
+        vertex
+        oriented_edge
+      rrels: |
+        edge
+        vertex
+        oriented_edge
+  usage_in_problems:
+    title:
+      ru: использование в задачах
+      en: usage in problems
+    ru:
+      Графы используются для решения различных задач. Если в задаче удаётся
+      использовать графы, то это придаёт задаче наглядность и простоту.
+      Например, графы незаменимы в проектировании транспортных сетей
+    en:
+      Graphs are used to solve various problems. If the graph is used
+      successfully in the task, then this gives the task clarity and simplicity.
+      For example, graphs are indispensable in designing profitable networks
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
 subclass:
   - directed_graph
   - complete_graph
