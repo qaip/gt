@@ -36,16 +36,12 @@ statement -> statement_of_arc_direction (*
 	*);;
 
 	=> nrel_main_idtf:
-<<<<<<< HEAD
-		[Утв. (Название высказывания)] (* <- lang_ru;; *);
-		[Stat. (Statement title)] (* <- lang_en;; *);;
-=======
-		[Утв. (название высказывания)] (* <- lang_ru;; *);
-		[Stat. (statement title)] (* <- lang_en;; *);;
->>>>>>> a73666c9718079d85d14e4b312ebd0c0637a14f7
+		[Утв. (дуга и ребро)] (* <- lang_ru;; *);
+		[Stat. (arc and edge)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_used_concept
+		concept_edge;
+		rrel_edge
 	};;
 *);;
 
@@ -53,7 +49,8 @@ sc_node_class ->
 	concept_graph;
 	concept_edge;
 	concept_directed_graph;
-	concept_used_concept;;
+	concept_edge;;
 
 sc_node_role_relation ->
+	rrel_edge;
 	rrel_edge;;
