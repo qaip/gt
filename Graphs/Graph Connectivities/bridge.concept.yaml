@@ -1,0 +1,16 @@
+ru: мост
+en: bridge
+definition:
+  ru:
+    Mостом называется ребро, удаление которого увеличивает число компонент
+    связности
+  en:
+    A bridge is an edge which removal increases the number of connected
+    components
+  using:
+    concepts: |
+      edge
+    nrels: |
+      connected_component
+    rrels: |
+      edge
