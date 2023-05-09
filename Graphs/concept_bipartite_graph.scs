@@ -1,0 +1,35 @@
+concept_bipartite_graph
+=> nrel_main_idtf:
+	[двудольный граф] (* <- lang_ru;; *);
+	[bipartite graph] (* <- lang_en;; *);;
+
+definition -> definition_of_bipartite_graph (*
+	-> rrel_key_sc_element: concept_bipartite_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двудольный граф является графом, множество вершин которого можно разбить на два непересакающихся множества U и V, таким образом, что ребро соединяет одну вершину из множества U с другой вершиной из множества V] (* <- lang_ru;; *);;
+		-> [In the mathematical field of graph theory, a bipartite graph is a graph whose vertices can be divided into two disjoint sets U and V such that every edge connects a vertex in U to one in V] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (двудольный граф)] (* <- lang_ru;; *);
+		[Def. (bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;;

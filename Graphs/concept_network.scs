@@ -1,0 +1,37 @@
+concept_network
+=> nrel_main_idtf:
+	[сеть] (* <- lang_ru;; *);
+	[network] (* <- lang_en;; *);;
+
+definition -> definition_of_network (*
+	-> rrel_key_sc_element: concept_network;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Сеть является орграфом, в котором допускаются и петли, и кратные дуги и который используется как модель системы, процесса и прочее. Обычно в сети выделяются некоторые вершины, называемые полюсами сети, играющие роль входов и выходов сети] (* <- lang_ru;; *);;
+		-> [The network is a digraph in which both loops and multiple arcs are allowed, and which is used as a model of a system, process, and so on. Usually, some vertices are distinguished in the network, called the poles of the network, which play the role of inputs and outputs of the network] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (сеть)] (* <- lang_ru;; *);
+		[Def. (network)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_digraph;
+		concept_multiple_edges;
+		concept_vertex;
+		rrel_multiple_edges;
+		rrel_vertex
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_digraph;
+	concept_multiple_edges;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_multiple_edges;
+	rrel_vertex;;

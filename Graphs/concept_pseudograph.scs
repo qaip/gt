@@ -1,0 +1,52 @@
+concept_pseudograph
+=> nrel_main_idtf:
+	[псевдограф] (* <- lang_ru;; *);
+	[pseudograph] (* <- lang_en;; *);;
+
+definition -> definition_of_pseudograph (*
+	-> rrel_key_sc_element: concept_pseudograph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Псевдограф является графом, содержащим петли и кратные рёбра] (* <- lang_ru;; *);;
+		-> [A pseudograph is a graph that allows loops and multiple edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (псевдограф)] (* <- lang_ru;; *);
+		[Def. (pseudograph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_multiple_edges;
+		rrel_multiple_edges;
+		rrel_loop
+	};;
+*);;
+
+statement -> statement_of_statement_title (*
+	-> rrel_key_sc_element: concept_pseudograph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Некоторые авторы используют понятие псевдографа как синоним мультиграфа, однако, другие используют его только как граф с петлями] (* <- lang_ru;; *);;
+		-> [Some authors use the term pseudograph synonymously with multigraph, while others reserve it for graphs that have loops] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Название высказывания)] (* <- lang_ru;; *);
+		[Stat. (Statement title)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_multigraph;
+		rrel_loop
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_multiple_edges;
+	concept_multigraph;;
+
+sc_node_role_relation ->
+	rrel_multiple_edges;
+	rrel_loop;
+	rrel_loop;;

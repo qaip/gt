@@ -1,0 +1,39 @@
+concept_simple_graph
+=> nrel_main_idtf:
+	[простой граф] (* <- lang_ru;; *);
+	[simple graph] (* <- lang_en;; *);;
+
+definition -> definition_of_simple_graph (*
+	-> rrel_key_sc_element: concept_simple_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Простым графом является не взвешенный, неориентированный граф, который не содержит петель, кратных рёбер. Простой граф может быть связным или несвязным] (* <- lang_ru;; *);;
+		-> [A simple graph is an unweighted, undirected graph containing no graph loops or multiple edges. A simple graph may be either connected or disconnected] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (простой граф)] (* <- lang_ru;; *);
+		[Def. (simple graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_undirected_graph;
+		concept_unweighted_graph;
+		concept_multiple_edges;
+		concept_connected_graph;
+		concept_disconnected_graph;
+		rrel_loop;
+		rrel_multiple_edges
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_undirected_graph;
+	concept_unweighted_graph;
+	concept_multiple_edges;
+	concept_connected_graph;
+	concept_disconnected_graph;;
+
+sc_node_role_relation ->
+	rrel_loop;
+	rrel_multiple_edges;;

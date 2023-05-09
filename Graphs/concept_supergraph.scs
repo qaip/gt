@@ -1,0 +1,25 @@
+concept_supergraph
+=> nrel_main_idtf:
+	[суперграф] (* <- lang_ru;; *);
+	[supergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_supergraph (*
+	-> rrel_key_sc_element: concept_supergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суперграфом является любой граф содержащий данный] (* <- lang_ru;; *);;
+		-> [A supergraph is any graph containing a given graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (суперграф)] (* <- lang_ru;; *);
+		[Def. (supergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;;
