@@ -1,0 +1,19 @@
+ru:
+  - регулярный граф
+  - однородный граф
+en: regular graph
+definition:
+  ru:
+    Регулярным графом является тот граф, у которого степени всех вершин равны,
+    каждая вершина имеет одинаковое количество соседей
+  en:
+    A regular graph is a graph in which the degrees of all vertices are equal,
+    each vertex has the same number of neighbors
+  using:
+    concepts: |
+      graph
+      vertex
+    nrels: |
+      vertex_degree
+    rrels: |
+      vertex

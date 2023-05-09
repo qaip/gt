@@ -1,0 +1,28 @@
+ru: псевдограф
+en: pseudograph
+definition:
+  ru: Псевдограф является графом, содержащим петли и кратные рёбра
+  en: A pseudograph is a graph that allows loops and multiple edges
+  using:
+    concepts: |
+      graph
+      multiple_edges
+    rrels: |
+      multiple_edges
+      loop
+statement:
+  statement_title:
+    title:
+      ru: Название высказывания
+      en: Statement title
+    ru:
+      Некоторые авторы используют понятие псевдографа как синоним мультиграфа,
+      однако, другие используют его только как граф с петлями
+    en:
+      Some authors use the term pseudograph synonymously with multigraph, while
+      others reserve it for graphs that have loops
+    using:
+      concepts: |
+        multigraph
+      rrels: |
+        loop

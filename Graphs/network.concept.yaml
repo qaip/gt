@@ -1,0 +1,22 @@
+ru: сеть
+en: network
+definition:
+  ru:
+    Сеть является орграфом, в котором допускаются и петли, и кратные дуги и
+    который используется как модель системы, процесса и прочее. Обычно в сети
+    выделяются некоторые вершины, называемые полюсами сети, играющие роль входов
+    и выходов сети
+  en:
+    The network is a digraph in which both loops and multiple arcs are allowed,
+    and which is used as a model of a system, process, and so on. Usually, some
+    vertices are distinguished in the network, called the poles of the network,
+    which play the role of inputs and outputs of the network
+  using:
+    concepts: |
+      graph
+      digraph
+      multiple_edges
+      vertex
+    rrels: |
+      multiple_edges
+      vertex

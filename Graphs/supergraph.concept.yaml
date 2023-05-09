@@ -1,0 +1,8 @@
+ru: суперграф
+en: supergraph
+definition:
+  ru: Суперграфом является любой граф содержащий данный
+  en: A supergraph is any graph containing a given graph
+  using:
+    concepts: |
+      graph

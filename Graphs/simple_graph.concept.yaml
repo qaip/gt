@@ -1,0 +1,20 @@
+ru: простой граф
+en: simple graph
+definition:
+  ru:
+    Простым графом является не взвешенный, неориентированный граф, который не
+    содержит петель, кратных рёбер. Простой граф может быть связным или
+    несвязным
+  en:
+    A simple graph is an unweighted, undirected graph containing no graph loops
+    or multiple edges. A simple graph may be either connected or disconnected
+  using:
+    concepts: |
+      undirected_graph
+      unweighted_graph
+      multiple_edges
+      connected_graph
+      disconnected_graph
+    rrels: |
+      loop
+      multiple_edges

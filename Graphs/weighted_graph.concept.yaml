@@ -1,0 +1,15 @@
+ru: взвешенный граф
+en: weighted graph
+definition:
+  ru:
+    Взвешенным графом является тот граф, в котором каждому ребру соответсвтвует
+    некотрое значение, или вес
+  en:
+    A weighted graph is a graph in which each edge corresponds to some value, or
+    weight
+  using:
+    concepts: |
+      graph
+      edge
+    rrels: |
+      edge

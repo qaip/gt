@@ -16,3 +16,13 @@ definition:
     rrels: |
       vertex
       edge
+statement:
+  regular_graphs_algorithm:
+    title:
+      ru: регулярные графы и алгоритмы
+      en: regualr graphs and algorithms
+    ru: Регулярные графы представляют особую сложность для многих алгоритмов
+    en: Regular graphs are especially difficult for many algorithms
+    using:
+      concepts: |
+        graph
