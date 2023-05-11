@@ -11,7 +11,6 @@ definition:
   using:
     concepts: |
       planar_graph
-      external_planar_graph
       graph_stacking
       plane
       vertex
@@ -34,7 +33,6 @@ statement:
       concepts: |
         hamiltonian_cycle
         graph_connectivities
-        external_planar_graph
       nrels: |
         face
 

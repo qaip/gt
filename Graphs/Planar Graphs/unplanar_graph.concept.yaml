@@ -8,7 +8,6 @@ definition:
     edges
   using:
     concepts: |
-      unplanar_graph
       graph
       plane
       edge
@@ -27,7 +26,6 @@ statement:
     using:
       concepts: |
         complete_graph
-        unplanar_graph
         bipartite_graph
         vertex
 
@@ -39,12 +37,10 @@ statement:
       Если граф непланарный, то он должен содержать больше 4 вершин, степень
       которых больше 3, или больше 5 вершин степени больше 2
     en:
-      If a graph is unplanar, then it must contain more than 4 vertices
-      whose degree is greater than 3, or more than 5 vertices of degree greater
-      than 2
+      If a graph is unplanar, then it must contain more than 4 vertices whose
+      degree is greater than 3, or more than 5 vertices of degree greater than 2
     using:
       concepts: |
-        unplanar_graph
         vertex
       nrels: |
         vertex_degree

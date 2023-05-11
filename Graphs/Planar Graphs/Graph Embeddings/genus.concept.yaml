@@ -29,7 +29,6 @@ statement:
       number of faces in any planar embedding of the graph
     using:
       concepts: |
-        genus
         graph
         planar_graph
       nrels: |

@@ -1,5 +1,5 @@
 ru: граф Халина
-en: graph Halina
+en: Halin graph
 
 definition:
   ru:
@@ -11,7 +11,6 @@ definition:
   using:
     concepts: |
       planar_graph
-      graph_halina
       vertex
       tree
 
@@ -29,7 +28,6 @@ statement:
     using:
       concepts: |
         graph
-        graph_halina
         vertex
         graph_connectivities
 
@@ -47,7 +45,6 @@ statement:
       concepts: |
         edge
         graph
-        graph_halina
         graph_connectivities
 
   halina_graph_and_hamiltonian_graph:
@@ -65,7 +62,6 @@ statement:
     using:
       concepts: |
         edge
-        graph_halina
         graph
         hamiltonian_cycle
         hamiltonian_graph
