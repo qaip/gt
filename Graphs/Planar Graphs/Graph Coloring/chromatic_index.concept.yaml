@@ -1,0 +1,10 @@
+ru: хроматический индекс
+en: chromatic index
+
+definition:
+  ru: Минимальное количество цветов, необходимых для реберной раскраски графа
+  en: A minimum number of colors required for an edge coloring of the graph
+  using:
+    concepts: |
+      graph
+      edge_coloring

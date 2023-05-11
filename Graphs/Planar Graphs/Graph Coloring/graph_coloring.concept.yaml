@@ -1,0 +1,20 @@
+ru: раскраска графа
+en: graph coloring
+
+definition:
+  ru:
+    Процесс присвоения цветов вершинам или ребрам графа с определенными
+    ограничениями
+  en:
+    A process of assigning colors to the vertices or edges of a graph with
+    certain constraints
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+
+subclass:
+  - vertex_coloring
+  - edge_coloring
+  - total_coloring

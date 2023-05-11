@@ -1,0 +1,23 @@
+ru: хроматическое число
+en: chromatic number
+
+definition:
+  ru: Минимальное количество цветов, необходимых для вершинной раскраски графа
+  en: A minimum number of colors required for a vertex coloring of the graph
+  using:
+    concepts: |
+      graph
+      vertex_coloring
+
+statement:
+  chromatic_number_property:
+    title:
+      ru: Свойства хроматического числа
+      en: Properties of chromatic number
+    ru: Хроматическое число графа не меньше его максимальной степени вершины
+    en:
+      The chromatic number of a graph is not less than its maximum vertex degree
+    using:
+      concepts: |
+        vertex_degree
+        graph

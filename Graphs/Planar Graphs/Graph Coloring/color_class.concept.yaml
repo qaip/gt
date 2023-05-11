@@ -1,0 +1,36 @@
+ru: цветовой класс
+en: color class
+
+definition:
+  ru: Множество вершин или ребер, которые имеют одинаковый цвет
+  en: A set of vertices or edges that have the same color
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+
+statement:
+  color_class_intersection:
+    title:
+      ru: Пересечение цветового класса
+      en: Intersection of color class
+    ru: Цветовые классы в раскраске графа не пересекаются
+    en: Color classes in a graph coloring do not intersect
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+
+  color_class_property:
+    title:
+      ru: Свойства цветового класса
+      en: Properties of color class
+    ru: Цветовой класс может содержать одну или несколько вершин или ребер
+    en: A color class can contain one or multiple vertices or edges
+    using:
+      concepts: |
+        graph
+        vertex
+        edge

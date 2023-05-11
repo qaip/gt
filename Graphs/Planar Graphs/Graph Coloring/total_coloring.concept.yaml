@@ -1,0 +1,31 @@
+ru: полная раскраска
+en: total coloring
+
+definition:
+  ru:
+    Раскраска, в которой каждой вершине и каждому ребру графа присваивается
+    уникальный цвет
+  en:
+    A coloring where each vertex and each edge of the graph is assigned a unique
+    color
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+
+statement:
+  total_coloring_property:
+    title:
+      ru: Свойства полной раскраски
+      en: Properties of total coloring
+    ru:
+      Для полного раскрашиваемого графа количество цветов, необходимых для
+      полной раскраски, равно сумме количества вершин и ребер в графе
+    en:
+      For a graph to be totally colored, the number of colors required is equal
+      to the sum of the number of vertices and edges in the graph
+    using:
+      concepts: |
+        vertex
+        edge

@@ -1,0 +1,21 @@
+ru: Раскраска вершин
+en: Vertex coloring
+
+definition:
+  ru:
+    Присвоение каждой вершине графа определенного цвета таким образом, чтобы
+    смежные вершины имели разные цвета
+  en:
+    An assignment of colors to each vertex of the graph in such a way that no
+    two adjacent vertices have the same color
+  using:
+    concepts: |
+      graph
+      vertex
+    nrels: |
+      vertex_adjacency
+
+subclass:
+  - chromatic_number
+  - color_class
+  - coloring_areas

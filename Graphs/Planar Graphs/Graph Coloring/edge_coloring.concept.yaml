@@ -1,0 +1,20 @@
+ru: раскраска ребер
+en: edge coloring
+
+definition:
+  ru:
+    Присвоение каждому ребру графа определенного цвета таким образом, чтобы
+    инцидентные ребрам вершины имели разные цвета
+  en:
+    An assignment of colors to each edge of the graph in such a way that no two
+    incident edges share the same color
+  using:
+    concepts: |
+      graph
+      edge
+    nrels: |
+      incident_edge
+
+subclass:
+  - chromatic_index
+  - color_class
