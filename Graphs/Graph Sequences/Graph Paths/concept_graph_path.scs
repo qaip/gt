@@ -1,0 +1,74 @@
+concept_graph_path
+=> nrel_main_idtf:
+	[путь] (* <- lang_ru;; *);
+	[path] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_path (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Последовательность вершин, в которой каждая вершина соединена со следующей ребром] (* <- lang_ru;; *);;
+		-> [Sequence of vertices where each vertex is connected to the next edge] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (путь)] (* <- lang_ru;; *);
+		[Def. (path)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		concept_sequence;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_property_of_vertex_independency (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два пути вершинно независимы, если они не имеют общих внутренних вершин] (* <- lang_ru;; *);;
+		-> [Two paths are vertex independent if they do not share interior vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство вершинной независимости)] (* <- lang_ru;; *);
+		[Stat. (vertex independence property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_property_of_edges_independency (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два пути рёберно независимы, если они не имеют общих внутренних рёбер] (* <- lang_ru;; *);;
+		-> [Two paths are edge independent if they do not have common interior edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (свойство рёберной независимости)] (* <- lang_ru;; *);
+		[Stat. (edge independence property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path;
+		concept_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_edge;
+	concept_sequence;
+	concept_path;
+	concept_vertex;
+	concept_path;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;;
