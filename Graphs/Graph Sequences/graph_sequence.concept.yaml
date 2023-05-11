@@ -1,0 +1,31 @@
+ru: последовательность | маршрут
+en: sequence | route
+
+definition:
+  ru: 
+    - Маршрутом длины m называется некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают
+    - Маршрутом можно считать такую последовательность вершин, что любая соседняя пара вершин является ребром графа
+  en: 
+    - A sequence of length m is some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide
+    - A route can be considered such a sequence of vertices that any neighboring pair of vertices is an edge of the graph
+  using:
+    concepts:  |
+      edge
+      vertex
+    rrels:  |
+      edge
+      vertex
+statement: 
+  sequnce_vertexes_naming:
+    title:
+      ru: Распределение названий между вершинами последовательности
+      en: Distribution of names between the vertices of the sequence
+    ru: Верршина 0 последовательности длины k называется начальной, а вершина k называется конечной, все остальные вершины назвываются внутренними
+    en: Vertex 0 of a sequence of length k is called initial, and vertex k is called final, all other vertices are called internal
+    using:
+      concepts: |
+        vertex
+        sequence
+      rrels: |
+        vertex
+    
