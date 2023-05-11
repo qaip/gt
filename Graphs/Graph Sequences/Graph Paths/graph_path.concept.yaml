@@ -1,0 +1,35 @@
+ru: путь
+en: path
+
+definition:
+  ru: Последовательность вершин, в которой каждая вершина соединена со следующей ребром
+  en: Sequence of vertices where each vertex is connected to the next edge
+  using: 
+    concepts:  |
+      vertex
+      edge
+      sequence
+    rrels:  |
+      edge
+      vertex
+statement: 
+  property_of_vertex_independency:
+    title:
+      ru: Свойство вершинной независимости
+      en: vertex independence property
+    ru: Два пути вершинно независимы, если они не имеют общих внутренних вершин
+    en: Two paths are vertex independent if they do not share interior vertices
+    using:
+      concepts:  |
+        path
+        vertex
+  property_of_edges_independency:
+    title:
+      ru: свойство рёберной независимости
+      en: edge independence property
+    ru: Два пути рёберно независимы, если они не имеют общих внутренних рёбер
+    en: Two paths are edge independent if they do not have common interior edges
+    using:
+      concepts:  |
+        path
+        edge
