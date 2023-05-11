@@ -43,7 +43,6 @@ statement -> statement_of_genus_properties (*
 		[Stat. (Properties of the genus of a graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_genus;
 		concept_graph;
 		concept_planar_graph;
 		nrel_face
@@ -54,7 +53,6 @@ sc_node_class ->
 	concept_graph;
 	concept_surface;
 	concept_edge;
-	concept_genus;
 	concept_graph;
 	concept_planar_graph;;
 

@@ -17,7 +17,6 @@ definition -> definition_of_graph_embedding (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_embedding;
 		concept_surface;
 		concept_edge;
 		concept_vertex
@@ -38,7 +37,7 @@ statement -> statement_of_planar_embedding (*
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
-		concept_graph_embedding
+		concept_plane
 	};;
 *);;
 
@@ -56,17 +55,16 @@ statement -> statement_of_non_planar_embedding (*
 
 	=> nrel_using_constants: {
 		concept_unplanar_graph;
-		concept_graph_embedding
+		concept_plane
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
-	concept_graph_embedding;
 	concept_surface;
 	concept_edge;
 	concept_vertex;
 	concept_planar_graph;
-	concept_graph_embedding;
+	concept_plane;
 	concept_unplanar_graph;
-	concept_graph_embedding;;
+	concept_plane;;
