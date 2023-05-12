@@ -1,0 +1,27 @@
+concept_chromatic_index
+=> nrel_main_idtf:
+	[хроматический индекс] (* <- lang_ru;; *);
+	[chromatic index] (* <- lang_en;; *);;
+
+definition -> definition_of_chromatic_index (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное количество цветов, необходимых для реберной раскраски графа] (* <- lang_ru;; *);;
+		-> [A minimum number of colors required for an edge coloring of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (хроматический индекс)] (* <- lang_ru;; *);
+		[Def. (chromatic index)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge_coloring
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_edge_coloring;;

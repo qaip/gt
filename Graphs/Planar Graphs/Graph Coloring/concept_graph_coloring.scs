@@ -1,0 +1,35 @@
+concept_graph_coloring
+=> nrel_main_idtf:
+	[раскраска графа] (* <- lang_ru;; *);
+	[graph coloring] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_vertex_coloring;
+concept_edge_coloring;
+concept_total_coloring;;
+
+definition -> definition_of_graph_coloring (*
+	-> rrel_key_sc_element: concept_graph_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Процесс присвоения цветов вершинам или ребрам графа с определенными ограничениями] (* <- lang_ru;; *);;
+		-> [A process of assigning colors to the vertices or edges of a graph with certain constraints] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (раскраска графа)] (* <- lang_ru;; *);
+		[Def. (graph coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;;

@@ -1,0 +1,48 @@
+concept_total_coloring
+=> nrel_main_idtf:
+	[полная раскраска] (* <- lang_ru;; *);
+	[total coloring] (* <- lang_en;; *);;
+
+definition -> definition_of_total_coloring (*
+	-> rrel_key_sc_element: concept_total_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Раскраска, в которой каждой вершине и каждому ребру графа присваивается уникальный цвет] (* <- lang_ru;; *);;
+		-> [A coloring where each vertex and each edge of the graph is assigned a unique color] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (полная раскраска)] (* <- lang_ru;; *);
+		[Def. (total coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_total_coloring_property (*
+	-> rrel_key_sc_element: concept_total_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для полного раскрашиваемого графа количество цветов, необходимых для полной раскраски, равно сумме количества вершин и ребер в графе] (* <- lang_ru;; *);;
+		-> [For a graph to be totally colored, the number of colors required is equal to the sum of the number of vertices and edges in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства полной раскраски)] (* <- lang_ru;; *);
+		[Stat. (Properties of total coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_vertex;
+	concept_edge;;

@@ -1,0 +1,72 @@
+concept_color_class
+=> nrel_main_idtf:
+	[цветовой класс] (* <- lang_ru;; *);
+	[color class] (* <- lang_en;; *);;
+
+definition -> definition_of_color_class (*
+	-> rrel_key_sc_element: concept_color_class;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Множество вершин или ребер, которые имеют одинаковый цвет] (* <- lang_ru;; *);;
+		-> [A set of vertices or edges that have the same color] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (цветовой класс)] (* <- lang_ru;; *);
+		[Def. (color class)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_color_class_intersection (*
+	-> rrel_key_sc_element: concept_color_class;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Цветовые классы в раскраске графа не пересекаются] (* <- lang_ru;; *);;
+		-> [Color classes in a graph coloring do not intersect] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Пересечение цветового класса)] (* <- lang_ru;; *);
+		[Stat. (Intersection of color class)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_color_class_property (*
+	-> rrel_key_sc_element: concept_color_class;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Цветовой класс может содержать одну или несколько вершин или ребер] (* <- lang_ru;; *);;
+		-> [A color class can contain one or multiple vertices or edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства цветового класса)] (* <- lang_ru;; *);
+		[Stat. (Properties of color class)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
