@@ -25,8 +25,8 @@ definition -> definition_of_planar_graph (*
 		[Def. (planar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
+		concept_plane;
 		concept_graph;
-		concept_planar_graph;
 		concept_edge;
 		nrel_intersection
 	};;
@@ -45,7 +45,6 @@ statement -> statement_of_theorem_uitni_planar (*
 		[Stat. (Whitneys Theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_planar_graph;
 		nrel_subgraph
 	};;
 *);;
@@ -63,7 +62,6 @@ statement -> statement_of_theorem_potryagina_kuratovskogo (*
 		[Stat. (Pontryagin-Kuratovsky theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_planar_graph;
 		concept_complete_graph;
 		concept_bipartite_graph;
 		concept_homeomorphical_graphs;
@@ -73,11 +71,9 @@ statement -> statement_of_theorem_potryagina_kuratovskogo (*
 *);;
 
 sc_node_class ->
+	concept_plane;
 	concept_graph;
-	concept_planar_graph;
 	concept_edge;
-	concept_planar_graph;
-	concept_planar_graph;
 	concept_complete_graph;
 	concept_bipartite_graph;
 	concept_homeomorphical_graphs;

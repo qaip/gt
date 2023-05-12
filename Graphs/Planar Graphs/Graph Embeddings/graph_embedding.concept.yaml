@@ -13,7 +13,6 @@ definition:
   using:
     concepts: |
       graph
-      graph_embedding
       surface
       edge
       vertex
@@ -32,7 +31,7 @@ statement:
     using:
       concepts: |
         planar_graph
-        graph_embedding
+        plane
 
   non_planar_embedding:
     title:
@@ -47,4 +46,4 @@ statement:
     using:
       concepts: |
         unplanar_graph
-        graph_embedding
+        plane

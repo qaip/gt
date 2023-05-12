@@ -3,11 +3,11 @@ en: planar graph
 
 definition:
   ru: Граф, который может быть изображён на плоскости без пересечения ребер
-  en: A graph that can be drawn on a plane without intersecting edges 
+  en: A graph that can be drawn on a plane without intersecting edges
   using:
     concepts: |
+      plane
       graph
-      planar_graph
       edge
     nrels: |
       intersection
@@ -20,8 +20,6 @@ statement:
     ru: Граф планарен тогда и только тогда, когда каждый его подграф планарен
     en: A graph is planar if and only if each of its subgraphs is planar
     using:
-      concepts: |
-        planar_graph
       nrels: |
         subgraph
 
@@ -37,7 +35,6 @@ statement:
       homeomorphic to a complete graph of five vertices or a bipartite graph
     using:
       concepts: |
-        planar_graph
         complete_graph
         bipartite_graph
         homeomorphical_graphs

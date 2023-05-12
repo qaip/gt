@@ -17,7 +17,6 @@ definition -> definition_of_one_planar_graph (*
 
 	=> nrel_using_constants: {
 		concept_plane;
-		concept_one_planar_graph;
 		concept_graph;
 		concept_edge
 	};;
@@ -37,16 +36,13 @@ statement -> statement_of_one_planar_graph_property (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_one_planar_graph;
 		concept_edge
 	};;
 *);;
 
 sc_node_class ->
 	concept_plane;
-	concept_one_planar_graph;
 	concept_graph;
 	concept_edge;
 	concept_vertex;
-	concept_one_planar_graph;
 	concept_edge;;
