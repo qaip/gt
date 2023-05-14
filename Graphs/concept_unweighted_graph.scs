@@ -22,10 +22,27 @@ definition -> definition_of_unweighted_graph (*
 	};;
 *);;
 
+statement -> statement_of_usage (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Невзвешенные графы часто используются в графовых алгоритмах, таких как поиск в ширину, поиск в глубину, алгоритм Дейкстры и алгоритмы поиска минимального остовного дерева] (* <- lang_ru;; *);;
+		-> [Unweighted graphs are often used in graph algorithms such as breadth-first search, depth-first search, Dijkstras algorithm, and minimum spanning tree algorithms] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование в графовых алгоритмах)] (* <- lang_ru;; *);
+		[Stat. (Usage in graph algorithms)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
-	concept_edge;;
+	concept_edge;
+	concept_graph;;
 
 sc_node_role_relation ->
 	rrel_edge;;
