@@ -4,32 +4,50 @@ ru:
 en:
   - directed graph
   - igraph
+
 definition:
   ru:
-    Ориентированный граф является парой множеств V, A, где V является множеством
-    вершин, A является множеством ориентированных ребер, которые называются
-    дугами
-  en:
-    A directed graph is a pair of sets V, A, where V is a set of vertices, A is
-    a set of directed edges, which are called arcs
+    Граф, в котором для каждой упорядоченной пары вершин определена
+    направленность ребра
+  en: A graph in which each pair of vertices is connected by a directed edge
   using:
     concepts: |
       graph
+      vertex
+    nrels: |
       arc
-      edge
-      vertex
-    rrels: |
-      edge
-      vertex
+
 statement:
-  weak_directed_graph:
+  theorem_menger:
     title:
-      ru: слабость орграфа
-      en: digraph weakness
-    ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
-    en: A directed graph is weak if it has a chain
+      ru: Теорема Менгера
+      en: Mengers Theorem
+    ru:
+      Для любых двух вершин в ориентированном графе минимальное число вершин,
+      которые нужно удалить, чтобы отсечь все пути между ними, равно
+      максимальному числу не пересекающихся путей между ними
+    en:
+      For any two vertices in a directed graph, the minimum number of vertices
+      that must be removed to disconnect all paths between them is equal to the
+      maximum number of non-intersecting paths between them
     using:
       concepts: |
-        directed_graph
+        vertex
+        path
       nrels: |
-        chain
+        intersection
+
+subclass:
+  - tournament_graph
+  - directed_forest
+  - directed_tree
+  - oriented_eulerian_graphs
+  - normalized_graph
+  - mixed_graph
+  - component_of_directed_graph
+  - orientable_graph
+  - transport_network
+  - oriented_multigraph
+  - inverse_graph
+  - complete_count_of_berge
+  - counterfunctional_graph

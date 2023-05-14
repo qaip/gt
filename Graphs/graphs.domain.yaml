@@ -23,6 +23,7 @@ max: |
 
 concepts: |
   vertex
+  arc
   edge
   directed_graph
   undirected_graph
