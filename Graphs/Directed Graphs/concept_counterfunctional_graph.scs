@@ -1,0 +1,50 @@
+concept_counterfunctional_graph
+=> nrel_main_idtf:
+	[контрфункциональный граф] (* <- lang_ru;; *);
+	[counterfunctional graph] (* <- lang_en;; *);;
+
+definition -> definition_of_counterfunctional_graph (*
+	-> rrel_key_sc_element: concept_counterfunctional_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф, в котором для любых двух вершин существует ровно один путь между ними] (* <- lang_ru;; *);;
+		-> [A directed graph in which there exists exactly one path between any two vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (контрфункциональный граф)] (* <- lang_ru;; *);
+		[Def. (counterfunctional graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_vertex;
+		concept_path
+	};;
+*);;
+
+statement -> statement_of_theorem_wang (*
+	-> rrel_key_sc_element: concept_counterfunctional_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Контрфункциональный граф является полным тогда и только тогда, когда он имеет ровно один цикл, проходящий через все вершины] (* <- lang_ru;; *);;
+		-> [A counterfunctional graph is complete if and only if it has exactly one cycle passing through all vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Вана)] (* <- lang_ru;; *);
+		[Stat. (Wangs Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_complete_graph;
+		concept_cycle;
+		concept_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_vertex;
+	concept_path;
+	concept_complete_graph;
+	concept_cycle;
+	concept_vertex;;

@@ -1,0 +1,50 @@
+concept_mixed_graph
+=> nrel_main_idtf:
+	[смешанный граф] (* <- lang_ru;; *);
+	[mixed graph] (* <- lang_en;; *);;
+
+definition -> definition_of_mixed_graph (*
+	-> rrel_key_sc_element: concept_mixed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф с неориентированными ребрами] (* <- lang_ru;; *);;
+		-> [A directed graph with undirected edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (смешанный граф)] (* <- lang_ru;; *);
+		[Def. (mixed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_edmonds_gallai (*
+	-> rrel_key_sc_element: concept_mixed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Сумма степеней вершин в ориентированном графе с неориентированными ребрами равна количеству рёбер, учитывая каждое неориентированное ребро дважды] (* <- lang_ru;; *);;
+		-> [In a directed graph with undirected edges, the sum of the degrees of the vertices is equal to twice the number of edges, counting each undirected edge twice] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Эдмондса-Галлаи)] (* <- lang_ru;; *);
+		[Stat. (Edmonds-Gallai Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_edge;
+		concept_vertex;
+		concept_vertex_degree
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_edge;
+	concept_directed_graph;
+	concept_edge;
+	concept_vertex;
+	concept_vertex_degree;;

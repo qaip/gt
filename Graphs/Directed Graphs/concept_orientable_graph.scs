@@ -1,0 +1,27 @@
+concept_orientable_graph
+=> nrel_main_idtf:
+	[ориентируемый граф] (* <- lang_ru;; *);
+	[orientable graph] (* <- lang_en;; *);;
+
+definition -> definition_of_orientable_graph (*
+	-> rrel_key_sc_element: concept_orientable_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неориентированный граф, который можно преобразовать в ориентированный] (* <- lang_ru;; *);;
+		-> [An undirected graph that can be made into a directed graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ориентируемый граф)] (* <- lang_ru;; *);
+		[Def. (orientable graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_unoriented_graph
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_unoriented_graph;;
