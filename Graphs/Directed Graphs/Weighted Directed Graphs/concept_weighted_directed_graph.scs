@@ -1,0 +1,76 @@
+concept_weighted_directed_graph
+=> nrel_main_idtf:
+	[взвешенный ориентированный граф] (* <- lang_ru;; *);
+	[weighted directed graph] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_acyclic_weighted_directed_graph;
+concept_strongly_connected_weighted_directed_graph;
+concept_weighted_edge;;
+
+definition -> definition_of_weighted_directed_graph (*
+	-> rrel_key_sc_element: concept_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, в котором каждому ребру приписана числовая величина] (* <- lang_ru;; *);;
+		-> [A graph in which each edge is assigned a numerical value] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (взвешенный ориентированный граф)] (* <- lang_ru;; *);
+		[Def. (weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_shortest_path (*
+	-> rrel_key_sc_element: concept_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Во взвешенном графе любой кратчайший путь между двумя вершинами содержит не более V-1 ребер] (* <- lang_ru;; *);;
+		-> [In a weighted graph, any shortest path between two vertices contains no more than V-1 edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о кратчайшем пути)] (* <- lang_ru;; *);
+		[Stat. (Shortest path theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_negative_cycle (*
+	-> rrel_key_sc_element: concept_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Если в взвешенном графе есть цикл отрицательного веса, то нет кратчайшего пути между какой-либо парой вершин] (* <- lang_ru;; *);;
+		-> [If a weighted graph contains a negative weight cycle, then there is no shortest path between any pair of vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о цикле отрицательного веса)] (* <- lang_ru;; *);
+		[Stat. (Negative weight cycle theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_cycle;
+		concept_path;
+		concept_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_path;
+	concept_vertex;
+	concept_edge;
+	concept_cycle;
+	concept_path;
+	concept_vertex;;

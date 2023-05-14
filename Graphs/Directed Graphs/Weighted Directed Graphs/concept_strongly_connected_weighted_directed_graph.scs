@@ -1,0 +1,31 @@
+concept_strongly_connected_weighted_directed_graph
+=> nrel_main_idtf:
+	[сильно связанный взвешенный ориентированный граф] (* <- lang_ru;; *);
+	[strongly connected weighted directed graph] (* <- lang_en;; *);;
+
+definition -> definition_of_strongly_connected_weighted_directed_graph (*
+	-> rrel_key_sc_element: concept_strongly_connected_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф, в котором между любой парой вершин есть путь в обоих направлениях и каждому ребру приписана числовая величина] (* <- lang_ru;; *);;
+		-> [A directed graph in which there is a path in both directions between any pair of vertices and each edge is assigned a numerical value] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (сильно связанный взвешенный ориентированный граф)] (* <- lang_ru;; *);
+		[Def. (strongly connected weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_path;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_path;
+	concept_vertex;
+	concept_edge;;
