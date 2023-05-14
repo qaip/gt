@@ -13,3 +13,19 @@ definition:
       edge
     rrels: |
       edge
+statement:
+  usage:
+    title:
+      ru: Использование в графовых алгоритмах
+      en: Usage in graph algorithms
+    ru:
+      Невзвешенные графы часто используются в графовых алгоритмах, таких как
+      поиск в ширину, поиск в глубину, алгоритм Дейкстры и алгоритмы поиска
+      минимального остовного дерева
+    en:
+      Unweighted graphs are often used in graph algorithms such as breadth-first
+      search, depth-first search, Dijkstras algorithm, and minimum spanning tree
+      algorithms
+    using:
+      concepts: |
+        graph
