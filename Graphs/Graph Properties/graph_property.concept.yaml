@@ -7,12 +7,3 @@ definition:
   using:
     concepts: |
       graph
-
-subclass:
-  - perfect_graph
-  - planar_graph
-  - minor_closed_graph
-  - claw-free_graph
-  - triangle-free_graph
-  - bipartite_graph
-  - chordal_graph
