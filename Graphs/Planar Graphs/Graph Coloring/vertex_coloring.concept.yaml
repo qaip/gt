@@ -1,5 +1,5 @@
-ru: Раскраска вершин
-en: Vertex coloring
+ru: раскраска вершин
+en: vertex coloring
 
 definition:
   ru:
@@ -19,3 +19,4 @@ subclass:
   - chromatic_number
   - color_class
   - coloring_areas
+  - chromatic_polynomial

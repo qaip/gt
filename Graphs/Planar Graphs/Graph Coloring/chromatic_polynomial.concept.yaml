@@ -3,7 +3,7 @@ en: chromatic polynomial
 
 definition:
   ru:
-    Пполином, который задает количество вершинной раскраски графа в зависимости
+    Полином, который задает количество вершинной раскраски графа в зависимости
     от числа цветов
   en:
     A polynomial that represents the number of vertex colorings of the graph
