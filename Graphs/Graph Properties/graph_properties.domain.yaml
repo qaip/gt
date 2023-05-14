@@ -6,6 +6,9 @@ parent: graphs
 max: |
   graph
 
+concepts: |
+  graph_property
+
 rrels: |
   multiple_edge
 
@@ -15,6 +18,5 @@ nrels: |
   cyclicity
   acyclicity
   eccentricity
-  rib_weight
   isomorphism
   multiple_edge
