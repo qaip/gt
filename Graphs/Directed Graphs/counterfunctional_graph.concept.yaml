@@ -1,0 +1,32 @@
+ru: контрфункциональный граф
+en: counterfunctional graph
+
+definition:
+  ru:
+    Ориентированный граф, в котором для любых двух вершин существует ровно один
+    путь между ними
+  en:
+    A directed graph in which there exists exactly one path between any two
+    vertices
+  using:
+    concepts: |
+      directed_graph
+      vertex
+      path
+
+statement:
+  theorem_wang:
+    title:
+      ru: Теорема Вана
+      en: Wangs Theorem
+    ru:
+      Контрфункциональный граф является полным тогда и только тогда, когда он
+      имеет ровно один цикл, проходящий через все вершины
+    en:
+      A counterfunctional graph is complete if and only if it has exactly one
+      cycle passing through all vertices
+    using:
+      concepts: |
+        complete_graph
+        cycle
+        vertex

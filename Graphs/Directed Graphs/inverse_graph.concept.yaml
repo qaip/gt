@@ -1,0 +1,10 @@
+ru: обратный граф
+en: inverse graph
+
+definition:
+  ru: Ориентированный граф, в котором направления всех рёбер инвертированы
+  en: A directed graph in which the directions of all edges are reversed
+  using:
+    concepts: |
+      directed_graph
+      edge

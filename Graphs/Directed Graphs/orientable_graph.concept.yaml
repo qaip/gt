@@ -1,0 +1,10 @@
+ru: ориентируемый граф
+en: orientable graph
+
+definition:
+  ru: Неориентированный граф, который можно преобразовать в ориентированный
+  en: An undirected graph that can be made into a directed graph
+  using:
+    concepts: |
+      directed_graph
+      unoriented_graph

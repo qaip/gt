@@ -1,0 +1,28 @@
+ru: ориентированный лес
+en: directed forest
+
+definition:
+  ru: Ориентированный граф, не содержащий циклов
+  en: A directed graph that does not contain any cycles
+  using:
+    concepts: |
+      directed_graph
+      cycle
+
+statement:
+  theorem_gabow:
+    title:
+      ru: Теорема Габова
+      en: Gabows Theorem
+    ru:
+      В ориентированном лесе любая вершина является корнем некоторого дерева, то
+      есть связана с ровно одной вершиной нулевой степени
+    en:
+      In a directed forest, every vertex is the root of some tree, meaning it is
+      connected to exactly one vertex of zero degree
+    using:
+      concepts: |
+        tree
+        vertex
+      nrels: |
+        vertex_degree

@@ -1,0 +1,26 @@
+ru: нормализованный граф
+en: normalized graph
+
+definition:
+  ru: Ориентированный граф, в котором все вершины расположены на циклах
+  en: A directed graph in which all vertices lie on cycles
+  using:
+    concepts: |
+      directed_graph
+      cycle
+      vertex
+
+statement:
+  theorem_hassler_whitney:
+    title:
+      ru: Теорема Хаслера-Уитни
+      en: Hassler-Whitney Theorem
+    ru:
+      Граф нормализован тогда и только тогда, когда каждый его блок нормализован
+    en: A graph is normalized if and only if each of its blocks is normalized
+    using:
+      concepts: |
+        graph
+      nrels: |
+        subgraph
+        graph_block

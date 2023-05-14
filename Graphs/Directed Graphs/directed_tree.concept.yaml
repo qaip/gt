@@ -1,0 +1,35 @@
+ru: ориентированное дерево
+en: directed tree
+
+definition:
+  ru:
+    Ориентированный граф, в котором любые две вершины соединены ровно одним
+    путём
+  en:
+    A directed graph in which any two vertices are connected by exactly one path
+  using:
+    concepts: |
+      directed_graph
+      vertex
+      path
+    nrels: |
+      intersection
+
+statement:
+  theorem_tournier:
+    title:
+      ru: Теорема Турнье
+      en: Tourniers Theorem
+    ru:
+      В любом ориентированном дереве существует ровно один путь между любой
+      парой вершин
+    en:
+      In any directed tree, there exists exactly one path between any pair of
+      vertices
+    using:
+      concepts: |
+        directed_tree
+        vertex
+        path
+      nrels: |
+        intersection

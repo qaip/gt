@@ -1,0 +1,36 @@
+ru: турнир
+en:
+  - tournament graph
+  - directed complete graph
+
+definition:
+  ru:
+    Ориентированный граф, в котором каждая упорядоченная пара вершин соединена
+    ребром в одном из двух направлений
+  en:
+    A directed graph in which every pair of distinct vertices is connected by a
+    directed edge that points from one vertex to the other
+  using:
+    concepts: |
+      directed_graph
+      vertex
+    nrels: |
+      arc
+
+statement:
+  theorem_konig:
+    title:
+      ru: Теорема Кёнига
+      en: Konigs Theorem
+    ru:
+      В каждом турнире есть полуоткрытый путь, проходящий через все вершины и
+      заканчивающийся в одной из двух вершин, смежных с первой
+    en:
+      In every tournament, there is a semi-open path that passes through all
+      vertices and ends at one of the two vertices adjacent to the first one
+    using:
+      concepts: |
+        path
+        vertex
+      nrels: |
+        vertex_adjacency

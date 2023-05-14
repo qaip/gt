@@ -1,0 +1,29 @@
+ru: смешанный граф
+en: mixed graph
+
+definition:
+  ru: Ориентированный граф с неориентированными ребрами
+  en: A directed graph with undirected edges
+  using:
+    concepts: |
+      directed_graph
+      edge
+
+statement:
+  theorem_edmonds_gallai:
+    title:
+      ru: Теорема Эдмондса-Галлаи
+      en: Edmonds-Gallai Theorem
+    ru:
+      Сумма степеней вершин в ориентированном графе с неориентированными ребрами
+      равна количеству рёбер, учитывая каждое неориентированное ребро дважды
+    en:
+      In a directed graph with undirected edges, the sum of the degrees of the
+      vertices is equal to twice the number of edges, counting each undirected
+      edge twice
+    using:
+      concepts: |
+        directed_graph
+        edge
+        vertex
+        vertex_degree
