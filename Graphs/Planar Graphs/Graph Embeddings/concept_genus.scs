@@ -34,7 +34,7 @@ statement -> statement_of_genus_properties (*
 	-> rrel_key_sc_element: concept_genus;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Род графа является неотрицательной величиной, и он равен нулю тогда и только тогда, когда граф плоский. Род графа не превосходит половины числа граней плоской реализации графа] (* <- lang_ru;; *);;
+		-> [Род графа является неотрицательной величиной, и он равен нулю тогда и только тогда, когда граф планарный. Род графа не превосходит половины числа граней планарной реализации графа] (* <- lang_ru;; *);;
 		-> [The genus of a graph is a non-negative integer, and it is zero if and only if the graph is planar. The genus of a graph is at most one half the number of faces in any planar embedding of the graph] (* <- lang_en;; *);;
 	*);;
 

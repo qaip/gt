@@ -18,7 +18,8 @@ definition -> definition_of_unplanar_graph (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_plane;
-		concept_edge
+		concept_edge;
+		nrel_intersection
 	};;
 *);;
 
@@ -69,4 +70,5 @@ sc_node_class ->
 	concept_vertex;;
 
 sc_node_norole_relation ->
+	nrel_intersection;
 	nrel_vertex_degree;;

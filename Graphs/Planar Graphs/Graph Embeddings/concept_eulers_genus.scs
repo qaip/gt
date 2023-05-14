@@ -28,8 +28,8 @@ statement -> statement_of_planarity_genus_theorem (*
 	-> rrel_key_sc_element: concept_eulers_genus;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Если граф планарен, то его род равен единице] (* <- lang_ru;; *);;
-		-> [If a graph is planar, then its genus is equal to one] (* <- lang_en;; *);;
+		-> [Если граф планарен, то его род Эйлера равен единице] (* <- lang_ru;; *);;
+		-> [If a graph is planar, then its Euler genus is equal to one] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

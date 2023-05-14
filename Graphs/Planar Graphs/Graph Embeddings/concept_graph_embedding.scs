@@ -1,7 +1,11 @@
 concept_graph_embedding
 => nrel_main_idtf:
 	[вложение графа] (* <- lang_ru;; *);
-	[graph embedding] (* <- lang_en;; *);;
+	[graph embedding] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_genus;;
 
 definition -> definition_of_graph_embedding (*
 	-> rrel_key_sc_element: concept_graph_embedding;;

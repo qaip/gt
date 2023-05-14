@@ -1,43 +1,42 @@
 concept_medial_graph
 => nrel_main_idtf:
-	[cерединный граф] (* <- lang_ru;; *);
+	[медиальный граф] (* <- lang_ru;; *);
 	[medial graph] (* <- lang_en;; *);;
 
 definition -> definition_of_medial_graph (*
 	-> rrel_key_sc_element: concept_medial_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф, представляющий рёбра смежности внутри граней заданного планарного графа] (* <- lang_ru;; *);;
-		-> [A graph representing adjacency edges inside the faces of a given planar graph] (* <- lang_en;; *);;
+		-> [Граф, который создается из плоского графа путем добавления точек в середине каждого ребра] (* <- lang_ru;; *);;
+		-> [A graph that is created from a planar graph by adding points at the midpoint of each edge] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (cерединный граф)] (* <- lang_ru;; *);
+		[Опр. (медиальный граф)] (* <- lang_ru;; *);
 		[Def. (medial graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
 		concept_graph;
-		concept_edge;
-		nrel_arcs_adjacency;
-		nrel_face
+		concept_edge
 	};;
 *);;
 
-statement -> statement_of_medial_graph_property (*
+statement -> statement_of_medial_graph_properties (*
 	-> rrel_key_sc_element: concept_medial_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Один и тот же планарный граф может иметь несколько неизоморфных срединных графов] (* <- lang_ru;; *);;
-		-> [The same planar graph can have several non-isomorphic median graphs] (* <- lang_en;; *);;
+		-> [Медиальный граф всегда планарен и является 2-связным] (* <- lang_ru;; *);;
+		-> [A medial graph is always planar and 2-connected] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Cвойство серединного графа)] (* <- lang_ru;; *);
-		[Stat. (Property of a medial graph)] (* <- lang_en;; *);;
+		[Утв. (Свойства медиальных графов)] (* <- lang_ru;; *);
+		[Stat. (Properties of medial graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_planar_graph
+		concept_planar_graph;
+		concept_graph_connectivity
 	};;
 *);;
 
@@ -45,8 +44,5 @@ sc_node_class ->
 	concept_planar_graph;
 	concept_graph;
 	concept_edge;
-	concept_planar_graph;;
-
-sc_node_norole_relation ->
-	nrel_arcs_adjacency;
-	nrel_face;;
+	concept_planar_graph;
+	concept_graph_connectivity;;

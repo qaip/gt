@@ -11,8 +11,8 @@ definition -> definition_of_external_planar_graph (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Планарный граф, который имеет укладку на плоскости такую, что все его вершины принадлежат одной грани] (* <- lang_ru;; *);;
-		-> [A planar graph that has a stacking on the plane such that all its vertices belong to one face] (* <- lang_en;; *);;
+		-> [Плоский граф, который может быть изображён на плоскости таким образом, что все его вершины лежат на границе плоскости] (* <- lang_ru;; *);;
+		-> [A planar graph that can be drawn on a plane in such a way that all of its vertices lie on the boundary of the plane] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -20,8 +20,7 @@ definition -> definition_of_external_planar_graph (*
 		[Def. (outerplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_planar_graph;
-		concept_graph_stacking;
+		concept_graph;
 		concept_plane;
 		concept_vertex;
 		nrel_face
@@ -47,14 +46,33 @@ statement -> statement_of_outerplanar_graph_property (*
 	};;
 *);;
 
+statement -> statement_of_euler_formula (*
+	-> rrel_key_sc_element: concept_external_planar_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Внешне планарный граф на n вершинах имеет n плюс 2 грани] (* <- lang_ru;; *);;
+		-> [An external planar graph with n vertices has n plus 2 faces] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Формула Эйлера для внешне планарных графов)] (* <- lang_ru;; *);
+		[Stat. (Eulers formula for external planar graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		nrel_face
+	};;
+*);;
+
 sc_node_class ->
-	concept_planar_graph;
-	concept_graph_stacking;
+	concept_graph;
 	concept_plane;
 	concept_vertex;
 	concept_hamiltonian_cycle;
-	concept_graph_connectivities;;
+	concept_graph_connectivities;
+	concept_vertex;;
 
 sc_node_norole_relation ->
+	nrel_face;
 	nrel_face;
 	nrel_face;;
