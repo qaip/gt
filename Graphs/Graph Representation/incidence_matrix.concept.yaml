@@ -1,0 +1,21 @@
+ru: матрица инцидентности
+en: incidence matrix
+
+definition:
+  ru:
+    Матрица, используемая в теории графов для представления ребер и вершин
+    графа. Она содержит информацию о том, какие ребра инцидентны каким вершинам.
+    Каждая строка матрицы соответствует ребру, а каждый столбец-вершине.
+    Элементы матрицы-это 0, если ребро не инцидентно вершине, и 1, если
+    инцидентно
+  en:
+    A matrix used in graph theory to represent the edges and vertices of a
+    graph. It contains information about which edges are incident to which
+    vertices. Each row of the matrix corresponds to an edge, and each column
+    corresponds to a vertex. Matrix elements are 0 if the edge is not incident
+    to the vertex, and 1 if it is
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
