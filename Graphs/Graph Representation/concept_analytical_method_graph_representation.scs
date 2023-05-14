@@ -1,0 +1,25 @@
+concept_analytical_method_graph_representation
+=> nrel_main_idtf:
+	[аналитический метод представления графов] (* <- lang_ru;; *);
+	[analytical method of graph representation] (* <- lang_en;; *);;
+
+definition -> definition_of_analytical_method_graph_representation (*
+	-> rrel_key_sc_element: concept_analytical_method_graph_representation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Метод представления графов, основанный на математических формулах и уравнениях] (* <- lang_ru;; *);;
+		-> [A method of graph representation based on mathematical formulas and equations] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (аналитический метод представления графов)] (* <- lang_ru;; *);
+		[Def. (analytical method of graph representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;;
