@@ -3,11 +3,11 @@ en: genus of a graph | graph genus
 
 definition:
   ru:
-    Минимальное целое число g, для которого граф может
-    быть вложен на поверхности рода g без пересечения ребер
+    Минимальное целое число g, для которого граф может быть вложен на
+    поверхности рода g без пересечения ребер
   en:
-    The minimum integer g such that the graph can be
-    embedded on a surface of genus g without edge intersection
+    The minimum integer g such that the graph can be embedded on a surface of
+    genus g without edge intersection
   using:
     concepts: |
       graph
@@ -21,8 +21,8 @@ statement:
       en: Properties of the genus of a graph
     ru:
       Род графа является неотрицательной величиной, и он равен нулю тогда и
-      только тогда, когда граф плоский. Род графа не превосходит половины числа
-      граней плоской реализации графа
+      только тогда, когда граф планарный. Род графа не превосходит половины
+      числа граней планарной реализации графа
     en:
       The genus of a graph is a non-negative integer, and it is zero if and only
       if the graph is planar. The genus of a graph is at most one half the

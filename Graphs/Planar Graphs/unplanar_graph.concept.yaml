@@ -11,6 +11,8 @@ definition:
       graph
       plane
       edge
+    nrels: |
+      intersection
 
 statement:
   sufficient_condition_for_graph_unplanarity:

@@ -47,3 +47,6 @@ statement:
       concepts: |
         unplanar_graph
         plane
+  
+subclass:
+  - genus

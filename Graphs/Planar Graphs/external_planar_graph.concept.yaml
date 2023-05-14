@@ -3,15 +3,14 @@ en: outerplanar graph
 
 definition:
   ru:
-    Планарный граф, который имеет укладку на плоскости такую, что все его
-    вершины принадлежат одной грани
+    Плоский граф, который может быть изображён на плоскости таким образом, что
+    все его вершины лежат на границе плоскости
   en:
-    A planar graph that has a stacking on the plane such that all its vertices
-    belong to one face
+    A planar graph that can be drawn on a plane in such a way that all of its
+    vertices lie on the boundary of the plane
   using:
     concepts: |
-      planar_graph
-      graph_stacking
+      graph
       plane
       vertex
     nrels: |
@@ -33,6 +32,17 @@ statement:
       concepts: |
         hamiltonian_cycle
         graph_connectivities
+      nrels: |
+        face
+  euler_formula:
+    title:
+      ru: Формула Эйлера для внешне планарных графов
+      en: Eulers formula for external planar graphs
+    ru: Внешне планарный граф на n вершинах имеет n плюс 2 грани
+    en: An external planar graph with n vertices has n plus 2 faces
+    using:
+      concepts: |
+        vertex
       nrels: |
         face
 
