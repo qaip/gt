@@ -1,13 +1,14 @@
 concept_vertex_coloring
 => nrel_main_idtf:
-	[Раскраска вершин] (* <- lang_ru;; *);
-	[Vertex coloring] (* <- lang_en;; *);
+	[раскраска вершин] (* <- lang_ru;; *);
+	[vertex coloring] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
 concept_chromatic_number;
 concept_color_class;
-concept_coloring_areas;;
+concept_coloring_areas;
+concept_chromatic_polynomial;;
 
 definition -> definition_of_vertex_coloring (*
 	-> rrel_key_sc_element: concept_vertex_coloring;;
@@ -18,8 +19,8 @@ definition -> definition_of_vertex_coloring (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Раскраска вершин)] (* <- lang_ru;; *);
-		[Def. (Vertex coloring)] (* <- lang_en;; *);;
+		[Опр. (раскраска вершин)] (* <- lang_ru;; *);
+		[Def. (vertex coloring)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

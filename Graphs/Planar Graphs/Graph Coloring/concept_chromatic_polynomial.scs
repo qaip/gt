@@ -7,7 +7,7 @@ definition -> definition_of_chromatic_polynomial (*
 	-> rrel_key_sc_element: concept_chromatic_polynomial;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Пполином, который задает количество вершинной раскраски графа в зависимости от числа цветов] (* <- lang_ru;; *);;
+		-> [Полином, который задает количество вершинной раскраски графа в зависимости от числа цветов] (* <- lang_ru;; *);;
 		-> [A polynomial that represents the number of vertex colorings of the graph based on the number of colors] (* <- lang_en;; *);;
 	*);;
 
