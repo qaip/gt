@@ -12,4 +12,4 @@ concepts: |
   strongly_connected_weighted_directed_graph
 
 rrels: |
-  weighted_edge
+  rib_weight
