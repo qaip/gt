@@ -1,0 +1,25 @@
+ru: двойственный граф
+en: dual graph
+definition:
+  ru:
+    Двойственным графом является граф, построенный на основе заданного графа, в
+    котором каждой вершине исходного графа соответствует ребро, а каждому ребру
+    соответствует вершина, при этом два ребра двойственного графа инцидентны,
+    если соответствующие им вершины исходного графа соединены общей вершиной
+  en:
+    In graph theory, the dual graph of a plane graph is a graph that has a
+    vertex for each face of the original graph. The dual graph has an edge for
+    each edge of the original graph connecting the vertices corresponding to the
+    adjacent faces
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      face
+    nrels: |
+      edge_adjacency
+    rrels: |
+      vertex
+      edge
+      face
