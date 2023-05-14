@@ -1,0 +1,15 @@
+ru: ациклический взвешенный ориентированный граф
+en: acyclic weighted directed graph
+
+definition:
+  ru:
+    Ориентированный граф без циклов, в котором каждому ребру приписана числовая
+    величина
+  en:
+    A directed graph without cycles in which each edge is assigned a numerical
+    value
+  using:
+    concepts: |
+      directed_graph
+      cycle
+      edge

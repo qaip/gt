@@ -1,0 +1,16 @@
+ru: сильно связанный взвешенный ориентированный граф
+en: strongly connected weighted directed graph
+
+definition:
+  ru:
+    Ориентированный граф, в котором между любой парой вершин есть путь в обоих
+    направлениях и каждому ребру приписана числовая величина
+  en:
+    A directed graph in which there is a path in both directions between any
+    pair of vertices and each edge is assigned a numerical value
+  using:
+    concepts: |
+      directed_graph
+      path
+      vertex
+      edge

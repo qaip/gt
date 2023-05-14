@@ -8,6 +8,8 @@ max: |
 
 concepts: |
   weighted_edge
+  acyclic_weighted_directed_graph
+  strongly_connected_weighted_directed_graph
 
 rrels: |
   weighted_edge
