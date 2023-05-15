@@ -2,7 +2,7 @@ ru: несвязный граф
 en: disconnected graph
 definition:
   ru:
-    Несвязный граф является графом, который состоит из двух или более компонент
+    Несвязным графом является граф, который состоит из двух или более компонент
     связности
   en:
     A disconnected graph is a graph that consists of two or more connected
@@ -11,8 +11,7 @@ definition:
     concepts: |
       graph
       vertex
-    nrels: | 
-     connected_component
-    rrels: | 
+    nrels: |
+      connected_component
+    rrels: |
       vertex
-
