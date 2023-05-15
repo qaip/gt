@@ -16,6 +16,9 @@ definition:
       edge
     nrels: |
       face
+    rrels: |
+      vertex
+      edge
 
 statement:
   planarity_genus_theorem:
