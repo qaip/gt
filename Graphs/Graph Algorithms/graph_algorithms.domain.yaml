@@ -14,8 +14,6 @@ max: |
 concepts: |
   graph_traversal
   shortest_paths
-  tree_traversal
-  algorithm_complexity
 
 nrels: |
   graph_traversal

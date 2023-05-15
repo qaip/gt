@@ -1,0 +1,46 @@
+ru: задача о кратчайшем пути
+en: shortest path problem
+
+definition:
+  ru:
+    Задача о кратчайшем пути представляет собой задачу поиска самого короткого
+    пути между двумя вершинами на графе, в которой минимизируется вес пути
+  en:
+    Shortest path problem is the problem of finding a path between two vertices
+    in a graph such that the path weight is minimized
+  using:
+    concepts: |
+      graph
+      vertex
+      graph_path
+      graph_path_weight
+    rrels: |
+      vertex
+      graph_path
+
+statement:
+  shortest_path_demand:
+    title:
+      ru: Востребованность задачи о поиске кратчайшего пути
+      en: Shortest path problem demand
+    ru:
+      Задача поиска кратчайшего пути используется при построении маршрутов в
+      картографических сервисах. В таком случае можно свести задачу к отысканию
+      кратчайшего пути, вес которого выражает расстояние между пунктами
+      назначения, в графе, у которого вершинами являются ключевые точки
+      маршрута, а рёбрами являются дороги
+    en:
+      The task of finding the shortest path is used when building routes in map
+      services. In this case, we can reduce the problem to finding the shortest
+      path, the weight of which expresses the distance between destinations, in
+      a graph whose vertices are the key points of the route, and the edges are
+      the roads
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        graph_path_weight
+      rrels: |
+        vertex
+        edge
