@@ -1,11 +1,7 @@
 concept_external_planar_graph
 => nrel_main_idtf:
-	[внешнепланарный граф] (* <- lang_ru;; *);
-	[outerplanar graph] (* <- lang_en;; *);
-
-
-=> nrel_inclusion:
-concept_external_graph;;
+	[внешне планарный граф] (* <- lang_ru;; *);
+	[external planar graph] (* <- lang_en;; *);;
 
 definition -> definition_of_external_planar_graph (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
@@ -16,33 +12,16 @@ definition -> definition_of_external_planar_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (внешнепланарный граф)] (* <- lang_ru;; *);
-		[Def. (outerplanar graph)] (* <- lang_en;; *);;
+		[Опр. (внешне планарный граф)] (* <- lang_ru;; *);
+		[Def. (external planar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph;
 		concept_plane;
+		concept_graph;
 		concept_vertex;
-		nrel_face
-	};;
-*);;
-
-statement -> statement_of_outerplanar_graph_property (*
-	-> rrel_key_sc_element: concept_external_planar_graph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Внешнепланарные графы имеют гамильтоновы циклы тогда и только тогда, когда они двусвязны, и в этом случае внешняя грань образует единственный гамильтонов цикл] (* <- lang_ru;; *);;
-		-> [Outplanar graphs have Hamiltonian cycles if and only if they are doubly connected, in which case the outer face forms a unique Hamiltonian cycle] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Cвойство внешнепланарного графа)] (* <- lang_ru;; *);
-		[Stat. (Property of an outerplanar graph)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_hamiltonian_cycle;
-		concept_graph_connectivities;
-		nrel_face
+		concept_boundary;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -50,8 +29,8 @@ statement -> statement_of_euler_formula (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Внешне планарный граф на n вершинах имеет n плюс 2 грани] (* <- lang_ru;; *);;
-		-> [An external planar graph with n vertices has n plus 2 faces] (* <- lang_en;; *);;
+		-> [Внешне планарный граф на n вершинах имеет n+2 грани] (* <- lang_ru;; *);;
+		-> [An external planar graph with n vertices has n+2 faces] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -64,15 +43,42 @@ statement -> statement_of_euler_formula (*
 	};;
 *);;
 
+statement -> statement_of_embedding_existence (*
+	-> rrel_key_sc_element: concept_external_planar_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для любого плоского графа можно построить внешнее представление, в котором все вершины расположены на границе плоскости] (* <- lang_ru;; *);;
+		-> [For any planar graph, one can construct an external representation in which all vertices are located on the boundary of the plane] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Существование внешнего представления)] (* <- lang_ru;; *);
+		[Stat. (Existence of an external representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph;
+		concept_vertex;
+		concept_plane;
+		concept_boundary;
+		rrel_vertex
+	};;
+*);;
+
 sc_node_class ->
-	concept_graph;
 	concept_plane;
+	concept_graph;
 	concept_vertex;
-	concept_hamiltonian_cycle;
-	concept_graph_connectivities;
-	concept_vertex;;
+	concept_boundary;
+	concept_vertex;
+	concept_planar_graph;
+	concept_vertex;
+	concept_plane;
+	concept_boundary;;
 
 sc_node_norole_relation ->
-	nrel_face;
-	nrel_face;
 	nrel_face;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;;
