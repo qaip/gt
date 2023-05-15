@@ -15,7 +15,7 @@ definition:
     concepts: |
       graph
       vertex
-      edge
+      edge4
       face
     nrels: |
       edge_adjacency
