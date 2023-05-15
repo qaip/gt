@@ -1,0 +1,25 @@
+concept_quadtree
+=> nrel_main_idtf:
+	[квадродерево] (* <- lang_ru;; *);
+	[quadtree] (* <- lang_en;; *);;
+
+definition -> definition_of_quadtree (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево, в котором у каждого внутреннего узла ровно 4 потомка] (* <- lang_ru;; *);;
+		-> [A tree in which each internal node has exactly 4 children] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (квадродерево)] (* <- lang_ru;; *);
+		[Def. (quadtree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_tree;;
