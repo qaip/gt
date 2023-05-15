@@ -14,6 +14,39 @@ definition:
       vertex
     nrels: |
       vertex_adjacency
+    rrels: |
+      vertex
+      edge
+
+statement:
+  chromatic_number_property:
+    title:
+      ru: Свойства хроматического числа
+      en: Properties of chromatic number
+    ru: Хроматическое число графа не меньше его максимальной степени вершины
+    en:
+      The chromatic number of a graph is not less than its maximum vertex degree
+    using:
+      concepts: |
+        chromatic_number
+        graph
+        vertex_degree
+
+  vertex_coloring_applications:
+    title:
+      ru: Практические применения раскраски вершин
+      en: Practical applications of vertex coloring
+    ru:
+      Раскраска вершин используется в аллокации регистров, планировании
+      расписания и распределении частоты
+    en:
+      Vertex coloring is used in register allocation, scheduling, and frequency
+      assignment
+    using:
+      concepts: |
+        register_allocation
+        scheduling
+        frequency_assignment
 
 subclass:
   - chromatic_number

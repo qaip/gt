@@ -21,3 +21,18 @@ statement:
       concepts: |
         vertex_degree
         graph
+
+  brooks_theorem:
+    title:
+      ru: Теорема Брукса
+      en: Brooks theorem
+    ru:
+      Для любого связного графа, кроме полных и нечетных циклов, хроматическое
+      число не превосходит максимальной степени вершины
+    en:
+      For any connected graph, except complete graphs and odd cycles, the
+      chromatic number is not greater than the maximum vertex degree
+    using:
+      concepts: |
+        graph_connectivity
+        vertex_degree

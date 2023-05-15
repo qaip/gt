@@ -4,16 +4,48 @@ en: edge coloring
 definition:
   ru:
     Присвоение каждому ребру графа определенного цвета таким образом, чтобы
-    инцидентные ребрам вершины имели разные цвета
+    никакие два инцидентных ребра не имели одинакового цвета
   en:
     An assignment of colors to each edge of the graph in such a way that no two
-    incident edges share the same color
+    incident edges have the same color
   using:
     concepts: |
       graph
       edge
     nrels: |
       incident_edge
+    rrels: |
+      edge
+
+statement:
+  edge_coloring_applications:
+    title:
+      ru: Практические применения раскраски ребер
+      en: Practical applications of edge coloring
+    ru:
+      Раскраска ребер используется в планировании расписания и оптимизации
+      сетевого потока
+    en: Edge coloring is used in scheduling and network flow optimization
+    using:
+      concepts: |
+        scheduling
+        network_flow_optimization
+
+  vizing_theorem:
+    title:
+      ru: Теорема Визинга
+      en: Vizings Theorem
+    ru:
+      Для любого графа хроматический индекс не превосходит максимальной степени
+      вершины плюс один или максимальной степени плюс два
+    en:
+      For any graph, the chromatic index is not greater than the maximum vertex
+      degree plus one or the maximum degree plus two
+    using:
+      concepts: |
+        chromatic_index
+        graph
+        vertex_degree
 
 subclass:
   - chromatic_index

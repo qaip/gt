@@ -3,16 +3,46 @@ en: graph coloring
 
 definition:
   ru:
-    Процесс присвоения цветов вершинам или ребрам графа с определенными
-    ограничениями
+    Раскраска вершин графа таким образом, чтобы смежные вершины имели разные
+    цвета
   en:
-    A process of assigning colors to the vertices or edges of a graph with
-    certain constraints
+    The assignment of colors to the vertices of a graph such that adjacent
+    vertices have different colors
   using:
     concepts: |
       graph
       vertex
+    rrels: |
+      vertex
       edge
+
+statement:
+  brooks_theorem:
+    title:
+      ru: Теорема Брукса
+      en: Brooks theorem
+    ru:
+      Для любого связного графа, кроме полных и нечетных циклов, хроматическое
+      число не превосходит максимальной степени вершины
+    en:
+      For any connected graph, except complete graphs and odd cycles, the
+      chromatic number is not greater than the maximum vertex degree
+    using:
+      concepts: |
+        graph_connectivity
+        chromatic_number
+        vertex_degree
+
+  chromatic_index_odd_girth:
+    title:
+      ru: Связь хроматического индекса и нечётного обхвата
+      en: Relationship between chromatic index and odd girth
+    ru: Хроматический индекс графа не меньше его нечётного обхвата
+    en: The chromatic index of a graph is not less than its odd girth
+    using:
+      concepts: |
+        chromatic_index
+        odd_girth
 
 subclass:
   - vertex_coloring

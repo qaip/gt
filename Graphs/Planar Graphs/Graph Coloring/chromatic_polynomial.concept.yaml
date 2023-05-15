@@ -26,6 +26,8 @@ statement:
       concepts: |
         vertex
         graph
+      rrels: |
+        vertex
 
   chromatic_polynomial_value:
     title:

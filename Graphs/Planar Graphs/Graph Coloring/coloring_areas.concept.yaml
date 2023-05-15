@@ -8,6 +8,8 @@ definition:
     concepts: |
       graph
       vertex
+    rrels: |
+      vertex
 
 statement:
   coloring_areas_intersection:
@@ -20,6 +22,8 @@ statement:
       concepts: |
         graph
         vertex
+      rrels: |
+        vertex
 
   coloring_areas_property:
     title:
@@ -30,4 +34,6 @@ statement:
     using:
       concepts: |
         graph
+        vertex
+      rrels: |
         vertex

@@ -9,6 +9,9 @@ definition:
       graph
       vertex
       edge
+    rrels: |
+      vertex
+      edge
 
 statement:
   color_class_intersection:
@@ -22,7 +25,9 @@ statement:
         graph
         vertex
         edge
-
+      rrels: |
+        vertex
+        edge
   color_class_property:
     title:
       ru: Свойства цветового класса
@@ -32,5 +37,8 @@ statement:
     using:
       concepts: |
         graph
+        vertex
+        edge
+      rrels: |
         vertex
         edge

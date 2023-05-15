@@ -13,6 +13,9 @@ definition:
       graph
       vertex
       edge
+    rrels: |
+      vertex
+      edge
 
 statement:
   total_coloring_property:
@@ -29,3 +32,21 @@ statement:
       concepts: |
         vertex
         edge
+      rrels: |
+        vertex
+        edge
+
+  total_coloring_existence:
+    title:
+      ru: Существование полной раскраски
+      en: Existence of total coloring
+    ru:
+      Пусть G-связный граф. Тогда число цветов, необходимое для полной раскраски
+      G, равно наибольшей степени вершины в G + 1
+    en:
+      Let G be a connected graph. Then the minimum number of colors required for
+      a total coloring of G is equal to the maximum degree of a vertex in G + 1
+    using:
+      concepts: |
+        graph_connectivity
+        vertex_degree
