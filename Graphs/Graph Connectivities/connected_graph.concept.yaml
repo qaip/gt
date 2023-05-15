@@ -1,7 +1,7 @@
 ru: связный граф
 en: connected graph
 definition:
-  ru: Связный граф является графом, в котором между любой парой вершин есть путь
+  ru: Связным графом является граф, в котором между любой парой вершин есть путь
   en:
     A connected graph is a graph in which there is a path between any two
     vertices
