@@ -37,7 +37,8 @@ statement -> statement_of_theorem_seymour (*
 		concept_vertex;
 		concept_in_vertex_degree;
 		concept_out_vertex_degree;
-		concept_path
+		concept_graph_path;
+		rrel_vertex
 	};;
 *);;
 
@@ -47,4 +48,7 @@ sc_node_class ->
 	concept_vertex;
 	concept_in_vertex_degree;
 	concept_out_vertex_degree;
-	concept_path;;
+	concept_graph_path;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

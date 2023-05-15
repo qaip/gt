@@ -17,7 +17,8 @@ definition -> definition_of_inverse_graph (*
 
 	=> nrel_using_constants: {
 		concept_directed_graph;
-		concept_edge
+		concept_edge;
+		rrel_vertex
 	};;
 *);;
 
@@ -25,3 +26,6 @@ definition -> definition_of_inverse_graph (*
 sc_node_class ->
 	concept_directed_graph;
 	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;;
