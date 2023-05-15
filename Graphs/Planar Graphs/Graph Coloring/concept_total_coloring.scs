@@ -18,7 +18,9 @@ definition -> definition_of_total_coloring (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -36,7 +38,27 @@ statement -> statement_of_total_coloring_property (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_total_coloring_existence (*
+	-> rrel_key_sc_element: concept_total_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Пусть G-связный граф. Тогда число цветов, необходимое для полной раскраски G, равно наибольшей степени вершины в G + 1] (* <- lang_ru;; *);;
+		-> [Let G be a connected graph. Then the minimum number of colors required for a total coloring of G is equal to the maximum degree of a vertex in G + 1] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Существование полной раскраски)] (* <- lang_ru;; *);
+		[Stat. (Existence of total coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_connectivity;
+		concept_vertex_degree
 	};;
 *);;
 
@@ -45,4 +67,12 @@ sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_vertex;
-	concept_edge;;
+	concept_edge;
+	concept_graph_connectivity;
+	concept_vertex_degree;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
