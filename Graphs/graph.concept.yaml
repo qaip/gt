@@ -86,3 +86,4 @@ subclass:
   - simple_graph
   - unweighted_graph
   - supergraph
+  - tree
