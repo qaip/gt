@@ -32,8 +32,8 @@ statement -> statement_of_wikipedia_glossary_multigraph_definition (*
 	-> rrel_key_sc_element: concept_multigraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Мультиграфом является граф, в котором в котором может быть пара вершин, которая соединена более чем одним ребром, либо более чем двумя дугами противоположных направлений] (* <- lang_ru;; *);;
-		-> [A multigraph is a graph in which there can be a pair of vertices that are connected by more than one edge, or more than two arcs in opposite directions] (* <- lang_en;; *);;
+		-> [Мультиграфом является граф, в котором в котором может быть пара вершин, которая соединена более чем одним ребром, либо более чем двумя однонаправленными дугами] (* <- lang_ru;; *);;
+		-> [A multigraph is a graph in which there can be a pair of vertices that are connected by more than one edge, or more than two arcs in same directions] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
