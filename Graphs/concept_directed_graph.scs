@@ -15,12 +15,10 @@ concept_directed_tree;
 concept_oriented_eulerian_graphs;
 concept_normalized_graph;
 concept_mixed_graph;
-concept_component_of_directed_graph;
 concept_orientable_graph;
-concept_transport_network;
-concept_oriented_multigraph;
+concept_directed_hypergraph;
+concept_directed_multigraph;
 concept_inverse_graph;
-concept_complete_count_of_berge;
 concept_counterfunctional_graph;;
 
 definition -> definition_of_directed_graph (*
