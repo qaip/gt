@@ -35,6 +35,7 @@ concepts: |
   psuedograph
   network
   super_graph
+  arc
 
 rrels: |
   vertex
