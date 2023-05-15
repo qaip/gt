@@ -1,0 +1,43 @@
+concept_dual_graph
+=> nrel_main_idtf:
+	[двойственный граф] (* <- lang_ru;; *);
+	[dual graph] (* <- lang_en;; *);;
+
+definition -> definition_of_dual_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственным графом является граф, построенный на основе заданного графа, в котором каждой вершине исходного графа соответствует ребро, а каждому ребру соответствует вершина, при этом два ребра двойственного графа инцидентны, если соответствующие им вершины исходного графа соединены общей вершиной] (* <- lang_ru;; *);;
+		-> [In graph theory, the dual graph of a plane graph is a graph that has a vertex for each face of the original graph. The dual graph has an edge for each edge of the original graph connecting the vertices corresponding to the adjacent faces] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (двойственный граф)] (* <- lang_ru;; *);
+		[Def. (dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_face;
+		rrel_vertex;
+		rrel_edge;
+		rrel_face;
+		nrel_edge_adjacency
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_face;;
+
+sc_node_norole_relation ->
+	nrel_edge_adjacency;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_face;;
