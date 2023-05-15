@@ -83,3 +83,6 @@ subclass:
   - graph_diamond
   - triangle_graph
   - planar_graph
+  - simple_graph
+  - unweighted_graph
+  - supergraph
