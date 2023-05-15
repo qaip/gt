@@ -13,6 +13,8 @@ definition:
       edge
     nrels: |
       intersection
+    rrels: |
+      edge
 
 statement:
   sufficient_condition_for_graph_unplanarity:
@@ -30,6 +32,8 @@ statement:
         complete_graph
         bipartite_graph
         vertex
+      rrels: |
+        vertex
 
   necessary_condition_for_graph_unplanarity:
     title:
@@ -46,3 +50,44 @@ statement:
         vertex
       nrels: |
         vertex_degree
+      rrels: |
+        vertex
+
+  unplanar_graph_minors:
+    title:
+      ru: Миноры непланарного графа
+      en: Minors of an unplanar graph
+    ru: Любой минор непланарного графа также является непланарным графом
+    en: Any minor of an unplanar graph is also an unplanar graph
+    using:
+      concepts: |
+        minor
+        graph
+
+  unplanar_graph_subgraphs:
+    title:
+      ru: Подграфы непланарного графа
+      en: Subgraphs of an unplanar graph
+    ru: Любой подграф непланарного графа также является непланарным графом
+    en: Any subgraph of an unplanar graph is also an unplanar graph
+    using:
+      concepts: |
+        graph
+      nrels: |
+        subgraph
+
+  unplanar_graph_property:
+    title:
+      ru: Свойства непланарного графа
+      en: Properties of an unplanar graph
+    ru: Непланарный граф имеет больше рёбер, чем n-1 вершин, где n-число вершин
+    en:
+      An unplanar graph has more edges than n-1 vertices, where n is the number
+      of vertices
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge

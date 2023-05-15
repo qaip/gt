@@ -1,5 +1,5 @@
-ru: внешнепланарный граф
-en: outerplanar graph
+ru: внешне планарный граф
+en: external planar graph
 
 definition:
   ru:
@@ -10,41 +10,42 @@ definition:
     vertices lie on the boundary of the plane
   using:
     concepts: |
-      graph
       plane
+      graph
       vertex
-    nrels: |
-      face
+      boundary
+    rrels: |
+      vertex
+      edge
 
 statement:
-  outerplanar_graph_property:
-    title:
-      ru: Cвойство внешнепланарного графа
-      en: Property of an outerplanar graph
-    ru:
-      Внешнепланарные графы имеют гамильтоновы циклы тогда и только тогда, когда
-      они двусвязны, и в этом случае внешняя грань образует единственный
-      гамильтонов цикл
-    en:
-      Outplanar graphs have Hamiltonian cycles if and only if they are doubly
-      connected, in which case the outer face forms a unique Hamiltonian cycle
-    using:
-      concepts: |
-        hamiltonian_cycle
-        graph_connectivities
-      nrels: |
-        face
   euler_formula:
     title:
       ru: Формула Эйлера для внешне планарных графов
       en: Eulers formula for external planar graphs
-    ru: Внешне планарный граф на n вершинах имеет n плюс 2 грани
-    en: An external planar graph with n vertices has n plus 2 faces
+    ru: Внешне планарный граф на n вершинах имеет n+2 грани
+    en: An external planar graph with n vertices has n+2 faces
     using:
       concepts: |
         vertex
       nrels: |
         face
 
-subclass:
-  - external_graph
+  embedding_existence:
+    title:
+      ru: Существование внешнего представления
+      en: Existence of an external representation
+    ru:
+      Для любого плоского графа можно построить внешнее представление, в котором
+      все вершины расположены на границе плоскости
+    en:
+      For any planar graph, one can construct an external representation in
+      which all vertices are located on the boundary of the plane
+    using:
+      concepts: |
+        planar_graph
+        vertex
+        plane
+        boundary
+      rrels: |
+        vertex
