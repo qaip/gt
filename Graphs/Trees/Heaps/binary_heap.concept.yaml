@@ -1,0 +1,23 @@
+ru: бинарная куча
+en: binary heap
+
+definition:
+  ru: Cтруктура данных, которая представляет собой двоичное дерево
+  en: A heap data structure that takes the form of a binary tree
+  using:
+    concepts: |
+      binary_tree
+      tree_descendant
+      tree_parent
+
+statement:
+  binary_heap_property:
+    title:
+      en: Binary heap property
+      ru: Свойство двоичной кучи
+    en: In a binary heap, the parent node is less than or equal to its children
+    ru: В двоичной куче родительский узел меньше или равен своим потомкам
+    using:
+      concepts: |
+        tree_descendant
+        tree_parent
