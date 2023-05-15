@@ -87,3 +87,13 @@ subclass:
   - unweighted_graph
   - supergraph
   - tree
+  - heap
+  - acyclic_weighted_directed_graph
+  - external_graph
+  - unplanar_graph
+  - one_planar_graph
+  - tournament_graph
+  - normalized_graph
+  - mixed_graph
+  - counterfunctional_graph
+  -
