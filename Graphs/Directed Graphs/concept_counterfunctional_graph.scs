@@ -18,7 +18,8 @@ definition -> definition_of_counterfunctional_graph (*
 	=> nrel_using_constants: {
 		concept_directed_graph;
 		concept_vertex;
-		concept_path
+		concept_graph_path;
+		rrel_vertex
 	};;
 *);;
 
@@ -36,15 +37,90 @@ statement -> statement_of_theorem_wang (*
 
 	=> nrel_using_constants: {
 		concept_complete_graph;
-		concept_cycle;
-		concept_vertex
+		concept_graph_cycle;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_bang_jensen (*
+	-> rrel_key_sc_element: concept_counterfunctional_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Контрфункциональный граф содержит гамильтонов путь, проходящий через все его вершины] (* <- lang_ru;; *);;
+		-> [A counterfunctional graph contains a Hamiltonian path passing through all its vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Бэнга-Дженсена)] (* <- lang_ru;; *);
+		[Stat. (Bang-Jensens Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_hamiltonian_path;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_nash_williams (*
+	-> rrel_key_sc_element: concept_counterfunctional_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой контрфункциональный граф может быть разложен на несколько деревьев и не более чем один цикл, проходящий через все вершины] (* <- lang_ru;; *);;
+		-> [Any counterfunctional graph can be decomposed into several trees and at most one cycle passing through all vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Нэша-Уильямса)] (* <- lang_ru;; *);
+		[Stat. (Nash-Williams Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_graph_cycle;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_brooks (*
+	-> rrel_key_sc_element: concept_counterfunctional_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В любом контрфункциональном графе, кроме полных и нечётных циклов, хроматическое число не превосходит максимальной степени вершины] (* <- lang_ru;; *);;
+		-> [In any counterfunctional graph, except for complete graphs and odd cycles, the chromatic number does not exceed the maximum degree of a vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Брукса)] (* <- lang_ru;; *);
+		[Stat. (Brooks Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_chromatic_number;
+		concept_vertex_degree;
+		concept_complete_graph;
+		concept_odd_cycle
 	};;
 *);;
 
 sc_node_class ->
 	concept_directed_graph;
 	concept_vertex;
-	concept_path;
+	concept_graph_path;
 	concept_complete_graph;
-	concept_cycle;
-	concept_vertex;;
+	concept_graph_cycle;
+	concept_vertex;
+	concept_hamiltonian_path;
+	concept_vertex;
+	concept_tree;
+	concept_graph_cycle;
+	concept_vertex;
+	concept_chromatic_number;
+	concept_vertex_degree;
+	concept_complete_graph;
+	concept_odd_cycle;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;;
