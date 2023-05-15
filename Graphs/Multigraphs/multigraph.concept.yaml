@@ -1,5 +1,5 @@
-ru: Мультиграф
-en: Multigraph
+ru: мультиграф
+en: multigraph
 
 definition:
   ru:
@@ -16,6 +16,10 @@ definition:
       arc
       multiple_edges
       multiple_arcs
+    rrels: |
+      vertex
+      edge
+      arc
 
 statement:
   wikipedia_glossary_multigraph_definition:
@@ -33,6 +37,10 @@ statement:
     using:
       concepts: |
         graph
+        vertex
+        edge
+        arc
+      rrels: |
         vertex
         edge
         arc

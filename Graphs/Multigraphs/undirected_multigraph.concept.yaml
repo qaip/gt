@@ -1,0 +1,32 @@
+ru: неориентированный мультиграф
+en: undirected multigraph
+
+definition:
+  ru:
+    Неориентированным мультиграфом называют неориентированный граф, в котором
+    разрешены кратные рёбра, тоесть рёбра, соединяющие одну и ту же пару вершин
+  en:
+    An undirected multigraph is an undirected graph in which multiple edges,
+    wich means edges connecting the same pair of vertices, are allowed
+  using:
+    concepts: |
+      undirected_graph
+      multiple_edges
+      vertex
+    rrels: |
+      vertex
+
+statement:
+  undirected_multigraphs_and_hypergraphs:
+    title:
+      ru: Неориентированные мультиграфы и гиперграфы
+      en: Undirected Multigraphs and Hypergraphs
+    ru:
+      Неориентированные мультиграфы могут быть рассмотрены как обобщение
+      неориентированных гиперграфов
+    en:
+      Undirected multigraphs can be viewed as a generalization of undirected
+      hypergraphs
+    using:
+      concepts: |
+        undirected_hypergraph

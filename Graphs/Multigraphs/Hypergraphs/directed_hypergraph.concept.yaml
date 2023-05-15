@@ -1,5 +1,5 @@
-ru: Ориентированный гиперграф
-en: Directed hypergraph
+ru: ориентированный гиперграф
+en: directed hypergraph
 
 definition:
   ru:
@@ -10,10 +10,10 @@ definition:
     and a set of hypergraph edges H, where a hypegraph edges are ordered pair
   using:
     concepts: |
-      set
       vertex
       hypegraph_edge
-      tuple
+    rrels: |
+      vertex
 
 statement:
   directed_hypergraphs_statement:

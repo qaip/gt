@@ -12,9 +12,12 @@ definition:
     concepts: |
       edge
       vertex
-      edges_multiplicity
     nrels: |
       incidence
+      edges_multiplicity
+    rrels: |
+      edge
+      vertex
 
 statement:
   wolfram_math_world_multiple_edges_definition:
@@ -34,3 +37,6 @@ statement:
         multigraph
       nrels: |
         incidence
+      rrels: |
+        edge
+        vertex

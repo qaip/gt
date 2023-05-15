@@ -1,5 +1,5 @@
-ru: Гиперграф
-en: Hypergraph
+ru: гиперграф
+en: hypergraph
 
 definition:
   ru:
@@ -14,6 +14,9 @@ definition:
       edge
       vertex
       hypergraph_edge
+    rrels: |
+      edge
+      vertex
 
 statement:
   wikipedia_glossary_hypergraph_definition:
@@ -24,6 +27,7 @@ statement:
     en: A collection of a set of vertices and a set of hyperedges
     using:
       concepts: |
-        set
         vertex
         hypergraph_edge
+      rrels: |
+        vertex

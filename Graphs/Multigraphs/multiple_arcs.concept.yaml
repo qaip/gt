@@ -8,6 +8,9 @@ definition:
     concepts: |
       arc
       vertex
+    rrels: |
+      arc
+      vertex
 
 statement:
   multiple_arcs_statement:
@@ -25,4 +28,4 @@ statement:
     using:
       concepts: |
         multigraph
-        arc_weights
+        edge_weight

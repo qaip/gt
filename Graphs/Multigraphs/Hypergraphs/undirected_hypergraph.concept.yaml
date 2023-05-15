@@ -1,5 +1,5 @@
-ru: Неориентированный гиперграф
-en: Undirected hypergraph
+ru: неориентированный гиперграф
+en: undirected hypergraph
 
 definition:
   ru:
@@ -11,23 +11,18 @@ definition:
     V from a set of hyperedges H, in which the hyperedges are not ordered pairs
   using:
     concepts: |
-      set
       vertex
       hypegraph_edge
-      tuple
+    rrels: |
+      vertex
 
 statement:
   undirected_hypergraphs_statement:
     title:
       ru: Утверждение о ненаправленном гиперграфе
       en: Undirected hypergraphs statement
-    ru:
-      Неориентированный гиперграф также называется системой множеств или
-      семейством множеств, составленным из универсального множества
-    en:
-      An undirected hypergraph is also called a set system or a family of sets
-      drawn from the universal set
+    ru: Неориентированный гиперграф является обощением неориентированного графа
+    en: An undirected hypergraph is a generalization of an undirected graph
     using:
       concepts: |
-        set
-        universal_set
+        undirected_graph

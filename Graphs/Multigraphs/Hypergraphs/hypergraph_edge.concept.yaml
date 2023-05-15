@@ -1,15 +1,18 @@
-ru: Ребро гиперграфа | Гиперребро
-en: Hypergraph edge | hyperedge
+ru: ребро гиперграфа | гиперребро
+en: hypergraph edge | hyperedge
 
 definition:
   ru:
     Ребром гиперграфа, или гиперребром, является такое ребро, которое может
     соединять более двух вершин
   en:
-    An edge of a hypergraph, or hyperedge, is an edge that can connect more than
-    two vertices
+    A hypergraph edge, or hyperedge, is an edge that can connect more than two
+    vertices
   using:
     concepts: |
+      edge
+      vertex
+    rrels: |
       edge
       vertex
 
@@ -28,5 +31,8 @@ statement:
       concepts: |
         graph
         hypegraph
+        vertex
+        edge
+      rrels: |
         vertex
         edge
