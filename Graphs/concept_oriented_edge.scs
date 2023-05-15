@@ -1,11 +1,11 @@
 concept_oriented_edge
 => nrel_main_idtf:
 	[ориентированное ребро] (* <- lang_ru;; *);
-	[oriented edge] (* <- lang_en;; *);
+	[arc] (* <- lang_en;; *);
 
 => nrel_idtf:
 	[дуга] (* <- lang_ru;; *);
-	[arc] (* <- lang_en;; *);;
+	[oriented edge] (* <- lang_en;; *);;
 
 definition -> definition_of_oriented_edge (*
 	-> rrel_key_sc_element: concept_oriented_edge;;
@@ -17,7 +17,7 @@ definition -> definition_of_oriented_edge (*
 
 	=> nrel_main_idtf:
 		[Опр. (ориентированное ребро)] (* <- lang_ru;; *);
-		[Def. (oriented edge)] (* <- lang_en;; *);;
+		[Def. (arc)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
