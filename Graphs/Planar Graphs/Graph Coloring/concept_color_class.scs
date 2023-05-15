@@ -18,7 +18,9 @@ definition -> definition_of_color_class (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -37,7 +39,9 @@ statement -> statement_of_color_class_intersection (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -56,7 +60,9 @@ statement -> statement_of_color_class_property (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -70,3 +76,11 @@ sc_node_class ->
 	concept_graph;
 	concept_vertex;
 	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
