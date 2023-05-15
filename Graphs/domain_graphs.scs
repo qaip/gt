@@ -38,6 +38,7 @@ section_subject_domain_of_graphs
 	concept_psuedograph;
 	concept_network;
 	concept_super_graph;
+	concept_arc;
 	nrel_subgraph;
 	nrel_vertex_degree;
 	nrel_vertex_adjacency;
@@ -84,6 +85,7 @@ section_subject_domain_of_graphs=[*
 		concept_psuedograph;
 		concept_network;
 		concept_super_graph;
+		concept_arc;
 
 	-> rrel_explored_relation:
 		nrel_subgraph;
@@ -140,7 +142,8 @@ sc_node_class ->
 	concept_null_graph;
 	concept_psuedograph;
 	concept_network;
-	concept_super_graph;;
+	concept_super_graph;
+	concept_arc;;
 
 sc_node_norole_relation ->
 	nrel_subgraph;
