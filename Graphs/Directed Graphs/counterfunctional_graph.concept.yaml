@@ -12,7 +12,9 @@ definition:
     concepts: |
       directed_graph
       vertex
-      path
+      graph_path
+    rrels: |
+      vertex
 
 statement:
   theorem_wang:
@@ -28,5 +30,59 @@ statement:
     using:
       concepts: |
         complete_graph
-        cycle
+        graph_cycle
         vertex
+      rrels: |
+        vertex
+
+  theorem_bang_jensen:
+    title:
+      ru: Теорема Бэнга-Дженсена
+      en: Bang-Jensens Theorem
+    ru:
+      Контрфункциональный граф содержит гамильтонов путь, проходящий через все
+      его вершины
+    en:
+      A counterfunctional graph contains a Hamiltonian path passing through all
+      its vertices
+    using:
+      concepts: |
+        hamiltonian_path
+        vertex
+      rrels: |
+        vertex
+
+  theorem_nash_williams:
+    title:
+      ru: Теорема Нэша-Уильямса
+      en: Nash-Williams Theorem
+    ru:
+      Любой контрфункциональный граф может быть разложен на несколько деревьев и
+      не более чем один цикл, проходящий через все вершины
+    en:
+      Any counterfunctional graph can be decomposed into several trees and at
+      most one cycle passing through all vertices
+    using:
+      concepts: |
+        tree
+        graph_cycle
+        vertex
+      rrels: |
+        vertex
+
+  theorem_brooks:
+    title:
+      ru: Теорема Брукса
+      en: Brooks Theorem
+    ru:
+      В любом контрфункциональном графе, кроме полных и нечётных циклов,
+      хроматическое число не превосходит максимальной степени вершины
+    en:
+      In any counterfunctional graph, except for complete graphs and odd cycles,
+      the chromatic number does not exceed the maximum degree of a vertex
+    using:
+      concepts: |
+        chromatic_number
+        vertex_degree
+        complete_graph
+        odd_cycle

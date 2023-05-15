@@ -8,3 +8,5 @@ definition:
     concepts: |
       directed_graph
       edge
+    rrels: |
+      vertex

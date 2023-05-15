@@ -8,6 +8,8 @@ definition:
     concepts: |
       directed_graph
       edge
+    rrels: |
+      edge
 
 statement:
   theorem_edmonds_gallai:
@@ -27,3 +29,62 @@ statement:
         edge
         vertex
         vertex_degree
+      rrels: |
+        edge
+        vertex
+
+  theorem_bouchet_tutte:
+    title:
+      ru: Теорема Буше-Татта
+      en: Bouchet-Tutte Theorem
+    ru:
+      Если в ориентированном графе с неориентированными ребрами каждая
+      компонента сильной связности содержит не более одного цикла, то он
+      является матроидом
+    en:
+      If every strongly connected component in a directed graph with undirected
+      edges contains at most one cycle, then it is a matroid
+    using:
+      concepts: |
+        directed_graph
+        matroid
+        strongly_connected_component
+        graph_cycle
+
+  theorem_folkman_lawrence:
+    title:
+      ru: Теорема Фолкмана-Лоуренса
+      en: Folkman-Lawrence Theorem
+    ru:
+      В ориентированном графе с неориентированными ребрами существует цикл длины
+      не менее чем максимальная степень вершины
+    en:
+      In a directed graph with undirected edges, there exists a cycle of length
+      at least the maximum degree of any vertex
+    using:
+      concepts: |
+        vertex
+        directed_graph
+        vertex_degree
+        graph_cycle
+      rrels: |
+        vertex
+
+  theorem_ghosh:
+    title:
+      ru: Теорема Гоша
+      en: Ghoshs Theorem
+    ru:
+      В ориентированном графе с неориентированными ребрами существует
+      гамильтонов путь, проходящий через вершину с максимальной степенью
+    en:
+      In a directed graph with undirected edges, there exists a Hamiltonian path
+      passing through the vertex with maximum degree
+    using:
+      concepts: |
+        directed_graph
+        vertex
+        hamiltonian_path
+        vertex_degree
+      rrels: |
+        vertex

@@ -27,4 +27,6 @@ statement:
         vertex
         in_vertex_degree
         out_vertex_degree
-        path
+        graph_path
+      rrels: |
+        vertex
