@@ -1,0 +1,26 @@
+ru: квадродерево многоугольников
+en: polygonal map quadtree
+
+definition:
+  ru:
+    Структура данных, используемая для представления многоугольников, которая
+    представляет их в виде дерева квадрантов
+  en:
+    A data structure used to represent polygons that represents them as a
+    quadtree
+  using:
+    concepts: |
+      quadtree
+
+statement:
+  theorem_quadtree:
+    title:
+      ru: Теорема
+      en: Theorem
+    ru:
+      Каждый многоугольник имеет единственное представление в квадродереве
+      многоугольников
+    en: Every polygon has a unique representation in a polygonal map quadtree
+    using:
+      concepts: |
+        quadtree

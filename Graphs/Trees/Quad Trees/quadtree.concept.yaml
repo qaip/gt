@@ -1,0 +1,9 @@
+ru: квадродерево
+en: quadtree
+
+definition:
+  ru: Дерево, в котором у каждого внутреннего узла ровно 4 потомка
+  en: A tree in which each internal node has exactly 4 children
+  using:
+    concepts: |
+      tree
