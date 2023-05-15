@@ -20,7 +20,16 @@ concept_planar_graph;
 concept_simple_graph;
 concept_unweighted_graph;
 concept_supergraph;
-concept_tree;;
+concept_tree;
+concept_heap;
+concept_acyclic_weighted_directed_graph;
+concept_external_graph;
+concept_unplanar_graph;
+concept_one_planar_graph;
+concept_tournament_graph;
+concept_normalized_graph;
+concept_mixed_graph;
+concept_counterfunctional_graph;;
 
 definition -> definition_of_graph (*
 	-> rrel_key_sc_element: concept_graph;;
