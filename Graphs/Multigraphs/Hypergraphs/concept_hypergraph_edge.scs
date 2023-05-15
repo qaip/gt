@@ -1,10 +1,10 @@
 concept_hypergraph_edge
 => nrel_main_idtf:
-	[Ребро гиперграфа] (* <- lang_ru;; *);
-	[Hypergraph edge] (* <- lang_en;; *);
+	[ребро гиперграфа] (* <- lang_ru;; *);
+	[hypergraph edge] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[Гиперребро] (* <- lang_ru;; *);
+	[гиперребро] (* <- lang_ru;; *);
 	[hyperedge] (* <- lang_en;; *);;
 
 definition -> definition_of_hypergraph_edge (*
@@ -12,16 +12,18 @@ definition -> definition_of_hypergraph_edge (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Ребром гиперграфа, или гиперребром, является такое ребро, которое может соединять более двух вершин] (* <- lang_ru;; *);;
-		-> [An edge of a hypergraph, or hyperedge, is an edge that can connect more than two vertices] (* <- lang_en;; *);;
+		-> [A hypergraph edge, or hyperedge, is an edge that can connect more than two vertices] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Ребро гиперграфа)] (* <- lang_ru;; *);
-		[Def. (Hypergraph edge)] (* <- lang_en;; *);;
+		[Опр. (ребро гиперграфа)] (* <- lang_ru;; *);
+		[Def. (hypergraph edge)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;
-		concept_vertex
+		concept_vertex;
+		rrel_edge;
+		rrel_vertex
 	};;
 *);;
 
@@ -41,7 +43,9 @@ statement -> statement_of_hypergraph_edge_statement (*
 		concept_graph;
 		concept_hypegraph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -52,3 +56,9 @@ sc_node_class ->
 	concept_hypegraph;
 	concept_vertex;
 	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;

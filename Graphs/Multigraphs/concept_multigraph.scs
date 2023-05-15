@@ -1,7 +1,7 @@
 concept_multigraph
 => nrel_main_idtf:
-	[Мультиграф] (* <- lang_ru;; *);
-	[Multigraph] (* <- lang_en;; *);;
+	[мультиграф] (* <- lang_ru;; *);
+	[multigraph] (* <- lang_en;; *);;
 
 definition -> definition_of_multigraph (*
 	-> rrel_key_sc_element: concept_multigraph;;
@@ -12,8 +12,8 @@ definition -> definition_of_multigraph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Мультиграф)] (* <- lang_ru;; *);
-		[Def. (Multigraph)] (* <- lang_en;; *);;
+		[Опр. (мультиграф)] (* <- lang_ru;; *);
+		[Def. (multigraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
@@ -21,7 +21,10 @@ definition -> definition_of_multigraph (*
 		concept_edge;
 		concept_arc;
 		concept_multiple_edges;
-		concept_multiple_arcs
+		concept_multiple_arcs;
+		rrel_vertex;
+		rrel_edge;
+		rrel_arc
 	};;
 *);;
 
@@ -41,7 +44,10 @@ statement -> statement_of_wikipedia_glossary_multigraph_definition (*
 		concept_graph;
 		concept_vertex;
 		concept_edge;
-		concept_arc
+		concept_arc;
+		rrel_vertex;
+		rrel_edge;
+		rrel_arc
 	};;
 *);;
 
@@ -56,3 +62,11 @@ sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_arc;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_arc;
+	rrel_vertex;
+	rrel_edge;
+	rrel_arc;;

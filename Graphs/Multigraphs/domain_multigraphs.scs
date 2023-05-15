@@ -15,6 +15,8 @@ section_subject_domain_of_multigraphs
 	concept_multigraph;
 	concept_multiple_edges;
 	concept_multiple_arcs;
+	concept_directed_multigraph;
+	concept_undirected_multigraph;
 	nrel_edges_multiplicity;
 	nrel_arcs_multiplicity;;
 
@@ -32,6 +34,8 @@ section_subject_domain_of_multigraphs=[*
 	-> rrel_not_maximum_studied_object_class:
 		concept_multiple_edges;
 		concept_multiple_arcs;
+		concept_directed_multigraph;
+		concept_undirected_multigraph;
 
 	-> rrel_explored_relation:
 		nrel_edges_multiplicity;
@@ -47,7 +51,9 @@ section_subject_domain_of_multigraphs=[*
 sc_node_class ->
 	concept_multigraph;
 	concept_multiple_edges;
-	concept_multiple_arcs;;
+	concept_multiple_arcs;
+	concept_directed_multigraph;
+	concept_undirected_multigraph;;
 
 sc_node_norole_relation ->
 	nrel_edges_multiplicity;

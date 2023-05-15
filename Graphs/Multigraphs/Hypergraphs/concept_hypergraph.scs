@@ -1,7 +1,7 @@
 concept_hypergraph
 => nrel_main_idtf:
-	[Гиперграф] (* <- lang_ru;; *);
-	[Hypergraph] (* <- lang_en;; *);;
+	[гиперграф] (* <- lang_ru;; *);
+	[hypergraph] (* <- lang_en;; *);;
 
 definition -> definition_of_hypergraph (*
 	-> rrel_key_sc_element: concept_hypergraph;;
@@ -12,14 +12,16 @@ definition -> definition_of_hypergraph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Гиперграф)] (* <- lang_ru;; *);
-		[Def. (Hypergraph)] (* <- lang_en;; *);;
+		[Опр. (гиперграф)] (* <- lang_ru;; *);
+		[Def. (hypergraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_edge;
 		concept_vertex;
-		concept_hypergraph_edge
+		concept_hypergraph_edge;
+		rrel_edge;
+		rrel_vertex
 	};;
 *);;
 
@@ -36,9 +38,9 @@ statement -> statement_of_wikipedia_glossary_hypergraph_definition (*
 		[Stat. (Wikipedia glossary hypergraph definition)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_set;
 		concept_vertex;
-		concept_hypergraph_edge
+		concept_hypergraph_edge;
+		rrel_vertex
 	};;
 *);;
 
@@ -47,6 +49,10 @@ sc_node_class ->
 	concept_edge;
 	concept_vertex;
 	concept_hypergraph_edge;
-	concept_set;
 	concept_vertex;
 	concept_hypergraph_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;;
