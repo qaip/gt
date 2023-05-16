@@ -16,10 +16,12 @@ definition -> definition_of_graphical_way_graph_representation (*
 		[Def. (graphical way of graph representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		concept_graphic_element
 	};;
 *);;
 
 
 sc_node_class ->
-	concept_graph;;
+	concept_graph;
+	concept_graphic_element;;

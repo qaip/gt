@@ -16,10 +16,12 @@ definition -> definition_of_analytical_method_graph_representation (*
 		[Def. (analytical method of graph representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		concept_formula
 	};;
 *);;
 
 
 sc_node_class ->
-	concept_graph;;
+	concept_graph;
+	concept_formula;;

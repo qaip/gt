@@ -18,12 +18,41 @@ definition -> definition_of_adjacency_matrix (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
+statement -> statement_of_advantages (*
+	-> rrel_key_sc_element: concept_adjacency_matrix;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Матрица смежности позволяет быстро найти количество ребер, инцидентных данной вершине] (* <- lang_ru;; *);;
+		-> [The adjacency matrix allows for quick determination of the number of edges incident to a given vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Преимущества использования матрицы смежности)] (* <- lang_ru;; *);
+		[Stat. (Advantages of using adjacency matrix)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
+	concept_edge;
+	concept_vertex;
 	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
