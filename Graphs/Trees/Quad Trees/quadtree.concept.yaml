@@ -7,3 +7,77 @@ definition:
   using:
     concepts: |
       tree
+      vertex
+      tree_descendant
+    rrels: |
+      vertex
+
+statement:
+  theorem_quadtree:
+    title:
+      ru: Теорема
+      en: Theorem
+    ru:
+      Каждый многоугольник имеет единственное представление в квадродереве
+      многоугольников
+    en: Every polygon has a unique representation in a polygonal map quadtree
+    using:
+      nrels: |
+        polygon
+        representation
+
+  statement_spatial_partitioning:
+    title:
+      ru: Пространственное разбиение
+      en: Spatial partitioning
+    ru:
+      Квадродерево используется в областях, где необходимо эффективно разбить
+      пространство на более мелкие участки, такие как изображения и видео
+    en:
+      Quadtree is used in areas where it is necessary to efficiently divide
+      space into smaller parts, such as images and videos
+    using:
+      concepts: |
+        space_division
+        image
+        video
+      nrels: |
+        efficiency
+
+  statement_compression:
+    title:
+      ru: Сжатие данных
+      en: Data compression
+    ru: Квадродерево используется для сжатия изображений и видео
+    en: Quadtree is used for compressing images and videos
+    using:
+      concepts: |
+        image
+        video
+        compression
+
+  statement_fractal:
+    title:
+      ru: Фракталы
+      en: Fractals
+    ru:
+      Квадродерево может быть использовано для создания фрактальных изображений
+    en: Quadtree can be used to create fractal images
+    using:
+      concepts: |
+        fractals
+        image
+
+  statement_nearest_neighbor:
+    title:
+      ru: Ближайший сосед
+      en: Nearest neighbor
+    ru:
+      Квадродерево может быть использовано для нахождения ближайшего соседа в
+      двумерном пространстве
+    en:
+      Quadtree can be used to find the nearest neighbor in two-dimensional space
+    using:
+      concepts: |
+        nearest_neighbor
+        space_division
