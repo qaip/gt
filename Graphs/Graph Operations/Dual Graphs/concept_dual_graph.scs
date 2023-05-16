@@ -18,7 +18,7 @@ definition -> definition_of_dual_graph (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge;
+		concept_edge4;
 		concept_face;
 		rrel_vertex;
 		rrel_edge;
@@ -31,7 +31,7 @@ definition -> definition_of_dual_graph (*
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
-	concept_edge;
+	concept_edge4;
 	concept_face;;
 
 sc_node_norole_relation ->
