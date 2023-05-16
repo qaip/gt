@@ -7,5 +7,12 @@ max: |
   graph_traversal
 
 concepts: |
-  breadth_first_search
-  depth_first_search
+  tree_traversal
+  breadth_traversal
+  depth_traversal
+  in_order_traversal
+  pre_oreder_traversal
+  post_order_traversal
+  reverse_pre_order_traversal
+  reverse_post_order_traversal
+  reverse_in_order_traversal

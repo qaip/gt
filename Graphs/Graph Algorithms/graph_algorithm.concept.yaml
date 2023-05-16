@@ -36,3 +36,7 @@ statement:
         shortest_path
       nrels: |
         shortest_path
+
+subcalss:
+  - shortest_path
+  - graph_traversal

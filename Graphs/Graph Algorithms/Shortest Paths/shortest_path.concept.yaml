@@ -44,3 +44,7 @@ statement:
       rrels: |
         vertex
         edge
+
+subcalss:
+  - dijkstra_algorithm
+  - floyd_warshall_algorithm
