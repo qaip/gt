@@ -20,3 +20,38 @@ definition:
     rrels: |
       multiple_edges
       vertex
+statement:
+  usage_network:
+    title:
+      ru: Использование сетей
+      en: Usage of networks
+    ru:
+      Сети используются для моделирования различных сред, таких как
+      транспортные сети, электрические схемы, социальные сети, вычислительные
+      сети и пр
+    en:
+      Networks are used for modeling various situations, such as transportation
+      networks, electrical circuits, social networks, computer networks, etc
+    using:
+      concepts: |
+        graph
+        digraph
+      rrels: |
+        graph
+        digraph
+  network_topology:
+    title:
+      ru: Топология сетей
+      en: Network topology
+    ru:
+      Топология сетей описывает структуру сети и взаимосвязи между ее элементами.
+      Существуют различные топологии сетей, такие как структура звезда, шина,
+      кольцо, смешанная и другие
+    en:
+      Network topology describes the structure of the network and the
+      relationships between its elements. There are different network topologies,
+      such as the star, bus, ring, hybrid, and others
+    using:
+      concepts: |
+        network
+ 
