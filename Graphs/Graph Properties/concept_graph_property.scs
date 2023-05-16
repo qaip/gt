@@ -1,0 +1,25 @@
+concept_graph_property
+=> nrel_main_idtf:
+	[свойство графа] (* <- lang_ru;; *);
+	[graph property] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_property (*
+	-> rrel_key_sc_element: concept_graph_property;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Характеристика, которая может быть применена к графу на основе его структуры и свойств] (* <- lang_ru;; *);;
+		-> [A characteristic that can be applied to a graph based on its structure and properties] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (свойство графа)] (* <- lang_ru;; *);
+		[Def. (graph property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;;
