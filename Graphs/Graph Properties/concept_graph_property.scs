@@ -16,10 +16,12 @@ definition -> definition_of_graph_property (*
 		[Def. (graph property)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		concept_characteristic
 	};;
 *);;
 
 
 sc_node_class ->
-	concept_graph;;
+	concept_graph;
+	concept_characteristic;;
