@@ -1,5 +1,5 @@
-ru: последовательность | маршрут
-en: sequence | route
+ru: последовательность | маршрут | графовая последовательность
+en: sequence | route | graph sequence
 
 definition:
   ru: 
@@ -28,4 +28,20 @@ statement:
         sequence
       rrels: |
         vertex
+  havel_hakimi_algorithm:
+    title:
+      ru: Алгоритм Хавела-Хакими
+      en: Havel-Hakimi algorithm
+    ru:
+      Алгоритм Гавела Хакими-это алгоритм для построения графа с заданной графовой последовательностью
+    en:
+      The Havel-Hakimi algorithm is an algorithm for constructing a graph with a given graph sequence
+    using:
+      concepts: |
+        graph_sequence
+        graph
+subclass:
+  - graph_paths
+  - graph_cycles
+  - graph_chains
     
