@@ -41,7 +41,7 @@ statement:
         graph_sequence
         graph
 subclass:
-  - graph_paths
-  - graph_cycles
-  - graph_chains
+  - graph_path
+  - graph_cycle
+  - graph_chain
     
