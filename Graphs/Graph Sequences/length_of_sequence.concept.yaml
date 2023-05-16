@@ -1,5 +1,5 @@
-ru: длина маршрута
-en: length of sequence
+ru: длина маршрута | длина маршрута графа
+en: length of sequence | length of graph sequence
 
 definition:
   ru: количество рёбер в маршруте учитывая повторения
