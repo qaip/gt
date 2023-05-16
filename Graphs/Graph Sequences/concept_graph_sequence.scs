@@ -5,7 +5,15 @@ concept_graph_sequence
 
 => nrel_idtf:
 	[маршрут] (* <- lang_ru;; *);
-	[route] (* <- lang_en;; *);;
+	[графовая последовательность] (* <- lang_ru;; *);
+	[route] (* <- lang_en;; *);
+	[graph sequence] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_graph_paths;
+concept_graph_cycles;
+concept_graph_chains;;
 
 definition -> definition_of_graph_sequence (*
 	-> rrel_key_sc_element: concept_graph_sequence;;
@@ -48,11 +56,31 @@ statement -> statement_of_sequnce_vertexes_naming (*
 	};;
 *);;
 
+statement -> statement_of_havel_hakimi_algorithm (*
+	-> rrel_key_sc_element: concept_graph_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм Гавела Хакими-это алгоритм для построения графа с заданной графовой последовательностью] (* <- lang_ru;; *);;
+		-> [The Havel-Hakimi algorithm is an algorithm for constructing a graph with a given graph sequence] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Хавела-Хакими)] (* <- lang_ru;; *);
+		[Stat. (Havel-Hakimi algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequence;
+		concept_graph
+	};;
+*);;
+
 sc_node_class ->
 	concept_edge;
 	concept_vertex;
 	concept_vertex;
-	concept_sequence;;
+	concept_sequence;
+	concept_graph_sequence;
+	concept_graph;;
 
 sc_node_role_relation ->
 	rrel_edge;
