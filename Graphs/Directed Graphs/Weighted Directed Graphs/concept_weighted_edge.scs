@@ -1,7 +1,11 @@
 concept_weighted_edge
 => nrel_main_idtf:
 	[взвешенное ребро] (* <- lang_ru;; *);
-	[weighted edge] (* <- lang_en;; *);;
+	[weighted edge] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_rib_weight;;
 
 definition -> definition_of_weighted_edge (*
 	-> rrel_key_sc_element: concept_weighted_edge;;

@@ -6,8 +6,7 @@ concept_weighted_directed_graph
 
 => nrel_inclusion:
 concept_acyclic_weighted_directed_graph;
-concept_strongly_connected_weighted_directed_graph;
-concept_weighted_edge;;
+concept_strongly_connected_weighted_directed_graph;;
 
 definition -> definition_of_weighted_directed_graph (*
 	-> rrel_key_sc_element: concept_weighted_directed_graph;;
@@ -23,7 +22,9 @@ definition -> definition_of_weighted_directed_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_edge
+		concept_edge;
+		rrel_edge;
+		nrel_value
 	};;
 *);;
 
@@ -40,9 +41,11 @@ statement -> statement_of_theorem_shortest_path (*
 		[Stat. (Shortest path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path;
+		concept_graph_path;
 		concept_vertex;
-		concept_edge
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -59,18 +62,28 @@ statement -> statement_of_theorem_negative_cycle (*
 		[Stat. (Negative weight cycle theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_cycle;
-		concept_path;
-		concept_vertex
+		concept_graph_cycle;
+		concept_graph_path;
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
 	concept_edge;
-	concept_path;
+	concept_graph_path;
 	concept_vertex;
 	concept_edge;
-	concept_cycle;
-	concept_path;
+	concept_graph_cycle;
+	concept_graph_path;
 	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_value;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;;
