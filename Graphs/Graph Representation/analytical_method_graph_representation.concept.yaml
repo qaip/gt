@@ -11,3 +11,4 @@ definition:
   using:
     concepts: |
       graph
+      formula

@@ -19,3 +19,41 @@ definition:
       graph
       vertex
       edge
+    rrels: |
+      vertex
+      edge
+
+statement:
+  incidence_matrix_conversion:
+    title:
+      ru: Преобразование списка инцидентности в матрицу инцидентности
+      en: Conversion of incidence list to incidence matrix
+    ru:
+      Список инцидентности может быть легко преобразован в матрицу инцидентности
+    en: Incidence list can be easily converted to incidence matrix
+    using:
+      concepts: |
+        incidence_list
+
+  incidence_matrix_properties:
+    title:
+      ru: Свойства матрицы инцидентности
+      en: Properties of incidence matrix
+    ru:
+      Матрица инцидентности для неориентированного графа имеет размерность NM,
+      где N-количество вершин, а M-количество ребер. Для ориентированного графа
+      размерность матрицы инцидентности равна NL, где L-количество дуг
+    en:
+      The incidence matrix for an undirected graph has dimensions NM, where N is
+      the number of vertices and M is the number of edges. For a directed graph,
+      the incidence matrix has dimensions NL, where L is the number of arcs
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        directed_graphs
+        undirected_graph
+      rrels: |
+        vertex
+        edge

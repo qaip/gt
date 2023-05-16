@@ -15,4 +15,40 @@ definition:
     concepts: |
       graph
       vertex
-      vertex_adjacency
+    rrels: |
+      vertex
+
+statement:
+  weighted_adjacency_list:
+    title:
+      ru: Взвешенный список смежности
+      en: Weighted adjacency list
+    ru:
+      Список смежности может быть взвешенным, то есть каждое ребро может иметь
+      свой вес
+    en:
+      An adjacency list can be weighted, meaning that each edge can have its own
+      weight
+    using:
+      concepts: |
+        weighted_graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
+  sparse_graphs:
+    title:
+      ru: Представление разреженных графов
+      en: Representation of sparse graphs
+    ru: Список смежности - эффективное представление для разреженных графов
+    en: Adjacency list is an efficient representation for sparse graphs
+    using:
+      concepts: |
+        sparse_graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
