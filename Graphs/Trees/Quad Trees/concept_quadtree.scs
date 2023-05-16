@@ -16,10 +16,125 @@ definition -> definition_of_quadtree (*
 		[Def. (quadtree)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_tree
+		concept_tree;
+		concept_vertex;
+		concept_tree_descendant;
+		rrel_vertex
 	};;
 *);;
 
+statement -> statement_of_theorem_quadtree (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Каждый многоугольник имеет единственное представление в квадродереве многоугольников] (* <- lang_ru;; *);;
+		-> [Every polygon has a unique representation in a polygonal map quadtree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема)] (* <- lang_ru;; *);
+		[Stat. (Theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_polygon;
+		nrel_representation
+	};;
+*);;
+
+statement -> statement_of_statement_spatial_partitioning (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Квадродерево используется в областях, где необходимо эффективно разбить пространство на более мелкие участки, такие как изображения и видео] (* <- lang_ru;; *);;
+		-> [Quadtree is used in areas where it is necessary to efficiently divide space into smaller parts, such as images and videos] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Пространственное разбиение)] (* <- lang_ru;; *);
+		[Stat. (Spatial partitioning)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_space_division;
+		concept_image;
+		concept_video;
+		nrel_efficiency
+	};;
+*);;
+
+statement -> statement_of_statement_compression (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Квадродерево используется для сжатия изображений и видео] (* <- lang_ru;; *);;
+		-> [Quadtree is used for compressing images and videos] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сжатие данных)] (* <- lang_ru;; *);
+		[Stat. (Data compression)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_image;
+		concept_video;
+		concept_compression
+	};;
+*);;
+
+statement -> statement_of_statement_fractal (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Квадродерево может быть использовано для создания фрактальных изображений] (* <- lang_ru;; *);;
+		-> [Quadtree can be used to create fractal images] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Фракталы)] (* <- lang_ru;; *);
+		[Stat. (Fractals)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_fractals;
+		concept_image
+	};;
+*);;
+
+statement -> statement_of_statement_nearest_neighbor (*
+	-> rrel_key_sc_element: concept_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Квадродерево может быть использовано для нахождения ближайшего соседа в двумерном пространстве] (* <- lang_ru;; *);;
+		-> [Quadtree can be used to find the nearest neighbor in two-dimensional space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Ближайший сосед)] (* <- lang_ru;; *);
+		[Stat. (Nearest neighbor)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_nearest_neighbor;
+		concept_space_division
+	};;
+*);;
 
 sc_node_class ->
-	concept_tree;;
+	concept_tree;
+	concept_vertex;
+	concept_tree_descendant;
+	concept_space_division;
+	concept_image;
+	concept_video;
+	concept_image;
+	concept_video;
+	concept_compression;
+	concept_fractals;
+	concept_image;
+	concept_nearest_neighbor;
+	concept_space_division;;
+
+sc_node_norole_relation ->
+	nrel_polygon;
+	nrel_representation;
+	nrel_efficiency;;
+
+sc_node_role_relation ->
+	rrel_vertex;;
