@@ -15,11 +15,152 @@ definition:
     concepts: |
       graph
       vertex
-      edge4
-      face
+      edge
     nrels: |
       edge_adjacency
+      face
     rrels: |
       vertex
       edge
-      face
+statement:
+  planar_dual_graph:
+    title:
+      ru: Двойственный граф для плоского графа
+      en: Dual graph for a planar graph
+    ru:
+      Двойственный граф плоского графа совпадает с диаграммой Вороного,
+      представляющей собой распределение точек на плоскости на непересекающиеся
+      области, каждая из которых соответствует одной из точек заданного
+      множества
+    en:
+      The dual graph of a planar graph coincides with the Voronoi diagram, which
+      represents the distribution of points on a plane into non-intersecting
+      areas, each of which corresponds to one of the points of a given set
+    using:
+      concepts: |
+        graph
+        planar_graph
+        voronoi_diagram
+        point
+      nrels: |
+        point_adjacency
+  dual_graph_as_orthogonal_polyhedron:
+    title:
+      ru: Двойственный граф как ортогональный полиэдр
+      en: Dual graph as an orthogonal polyhedron
+    ru:
+      Двойственный граф графа является ортогональным полиэдром, телом, состоящим
+      из граней, являющихся правильными многоугольниками, и рёбер, соединяющих
+      эти грани. Любой двойственный граф является ортогональным полиэдром, но не
+      все ортогональные полиэдры являются двойственными графами
+    en:
+      The dual graph of a graph is an orthogonal polyhedron, that is, a body
+      consisting of faces that are regular polygons and edges connecting these
+      faces. Any dual graph is an orthogonal polyhedron, but not all orthogonal
+      polyhedra are dual graphs
+    using:
+      concepts: |
+        graph
+        dual_graph
+        orthogonal_polyhedron
+  dual_graph_planar_graph:
+    title:
+      ru: Двойственный граф для планарного графа
+      en: Dual graph for a planar graph
+    ru: Двойственный граф планарного графа является планарным графом
+    en: The dual graph of a planar graph is a planar graph
+    using:
+      concepts: |
+        graph
+        planar_graph
+        dual_graph
+  dual_graph_acyclic_graph:
+    title:
+      ru: Двойственный граф для ациклического графа
+      en: Dual graph for an acyclic graph
+    ru: Двойственный граф ациклического графа является деревом
+    en: The dual graph of an acyclic graph is a tree
+    using:
+      concepts: |
+        graph
+        acyclic_graph
+        dual_graph
+        tree
+  dual_graph_bipartite_graph:
+    title:
+      ru: Двойственный граф для двудольного графа
+      en: Dual graph for a bipartite graph
+    ru:
+      Двойственным графом для двудольного графа является граф, в котором каждой
+      вершине первой доли соответствует вершина второй доли, а каждой вершине
+      второй доли вершина первой доли. Рёбра соединяют вершины первой доли с
+      вершинами второй доли, соответствующими смежным в исходном графе
+    en:
+      The dual graph for a bipartite graph is a graph in which each vertex of
+      the first part corresponds to a vertex of the second part, and each vertex
+      of the second part corresponds to a vertex of the first part. The edges
+      connect the vertices of the first part with the vertices of the second
+      part corresponding to adjacent vertices in the original graph
+    using:
+      concepts: |
+        graph
+        bipartite_graph
+        dual_graph
+  dual_graph_line_graph:
+    title:
+      ru: Двойственный граф для линейного графа
+      en: Dual graph for a line graph
+    ru:
+      Двойственный граф линейного графа является графом, в котором каждому ребру
+      исходного графа соответствует вершина, а каждой вершине исходного графа
+      ребро, соответствующее рёбрам, смежным с данной вершиной в исходном графе
+    en:
+      The dual graph of a line graph is a graph in which each edge of the
+      original graph corresponds to a vertex, and each vertex of the original
+      graph corresponds to an edge corresponding to the edges adjacent to that
+      vertex in the original graph
+    using:
+      concepts: |
+        graph
+        line_graph
+        dual_graph
+        vertex
+        edge
+  dual_graph_regular_graph:
+    title:
+      ru: Двойственный граф для регулярного графа
+      en: Dual graph for a regular graph
+    ru:
+      Двойственный граф регулярного графа является регулярным графом того же
+      порядка
+    en: The dual graph of a regular graph is a regular graph of the same order
+    using:
+      concepts: |
+        graph
+        regular_graph
+        dual_graph
+  dual_graph_polyhedral_graph:
+    title:
+      ru: Двойственный граф для выпуклого многогранника
+      en: Dual graph for a polyhedral graph
+    ru:
+      Двойственный граф для выпуклого многогранника является графом, вершинами
+      которого являются грани исходного многогранника, а рёбрами смежность
+      граней в исходном многограннике. Каждой грани исходного многогранника
+      соответствует вершина двойственного графа, а две вершины двойственного
+      графа соединены ребром, если соответствующие им грани в исходном
+      многограннике имеют общее ребро
+    en:
+      The dual graph for a polyhedral graph is a graph whose vertices are the
+      faces of the original polyhedron, and whose edges represent the adjacency
+      of faces in the original polyhedron. Each face of the original polyhedron
+      corresponds to a vertex of the dual graph, and two vertices of the dual
+      graph are connected by an edge if the corresponding faces in the original
+      polyhedron share an edge
+    using:
+      concepts: |
+        graph
+        polyhedral_graph
+        dual_graph
+        face
+        edge
