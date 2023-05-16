@@ -31,3 +31,8 @@ statement:
         hypergraph_edge
       rrels: |
         vertex
+
+subcalss:
+  - |
+    directed_hypergraphs
+    undirected_hypergraphs

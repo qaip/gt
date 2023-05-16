@@ -43,3 +43,7 @@ statement:
         vertex
         edge
         arc
+subcalss:
+  - |
+    directed_multigraphs
+    undirected_multigraphs
