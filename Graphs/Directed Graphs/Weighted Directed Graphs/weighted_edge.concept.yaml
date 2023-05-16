@@ -7,3 +7,6 @@ definition:
   using:
     concepts: |
       edge
+
+subclass:
+  - rib_weight

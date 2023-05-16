@@ -8,6 +8,10 @@ definition:
     concepts: |
       graph
       edge
+    rrels: |
+      edge
+    nrels: |
+      value
 
 statement:
   theorem_shortest_path:
@@ -22,7 +26,10 @@ statement:
       more than V-1 edges
     using:
       concepts: |
-        path
+        graph_path
+        vertex
+        edge
+      rrels: |
         vertex
         edge
 
@@ -38,11 +45,12 @@ statement:
       shortest path between any pair of vertices
     using:
       concepts: |
-        cycle
-        path
+        graph_cycle
+        graph_path
+        vertex
+      rrels: |
         vertex
 
 subclass:
   - acyclic_weighted_directed_graph
   - strongly_connected_weighted_directed_graph
-  - weighted_edge

@@ -10,6 +10,70 @@ definition:
     value
   using:
     concepts: |
-      directed_graph
-      cycle
+      graph
       edge
+    rrels: |
+      edge
+    nrels: |
+      value
+
+statement:
+  theorem_shortest_path:
+    title:
+      ru: Теорема о кратчайшем пути
+      en: Shortest path theorem
+    ru:
+      В ациклическом взвешенном ориентированном графе кратчайший путь между
+      двумя вершинами может быть найден за линейное время
+    en:
+      In an acyclic weighted directed graph, the shortest path between two
+      vertices can be found in linear time
+    using:
+      concepts: |
+        directed_graph
+        graph_path
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
+  theorem_minimum_spanning_tree:
+    title:
+      ru: Теорема о минимальном остовном дереве
+      en: Minimum spanning tree theorem
+    ru:
+      В ациклическом взвешенном ориентированном графе минимальное остовное
+      дерево может быть найдено за линейное время
+    en:
+      In an acyclic weighted directed graph, the minimum spanning tree can be
+      found in linear time
+    using:
+      concepts: |
+        spanning_tree
+        directed_graph
+        edge
+        vertex
+      rrels: |
+        edge
+        vertex
+
+  theorem_longest_path:
+    title:
+      ru: Теорема о самом длинном пути
+      en: Longest path theorem
+    ru:
+      В ациклическом взвешенном ориентированном графе самый длинный путь между
+      двумя вершинами может быть найден за линейное время
+    en:
+      In an acyclic weighted directed graph, the longest path between two
+      vertices can be found in linear time
+    using:
+      concepts: |
+        graph_path
+        directed_graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
