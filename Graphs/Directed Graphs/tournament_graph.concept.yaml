@@ -1,4 +1,6 @@
-ru: граф турнир
+ru: 
+  - граф турнир
+  - турнир
 en:
   - tournament graph
   - directed complete graph
