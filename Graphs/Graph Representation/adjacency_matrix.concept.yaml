@@ -1,0 +1,41 @@
+ru: матрица смежности
+en: adjacency matrix
+
+definition:
+  ru:
+    Матрица, используемая в теории графов для представления отношений между
+    вершинами. Это квадратная матрица, где строкам и столбцам соответствуют
+    вершины графа, а элементы матрицы указывают на наличие или отсутствие ребра
+    между двумя вершинами
+  en:
+    A matrix used in graph theory to represent relationships between vertices.
+    It is a square matrix where rows and columns correspond to the vertices of
+    the graph, and matrix elements indicate the presence or absence of an edge
+    between two vertices
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+
+statement:
+  advantages:
+    title:
+      ru: Преимущества использования матрицы смежности
+      en: Advantages of using adjacency matrix
+    ru:
+      Матрица смежности позволяет быстро найти количество ребер, инцидентных
+      данной вершине
+    en:
+      The adjacency matrix allows for quick determination of the number of edges
+      incident to a given vertex
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
