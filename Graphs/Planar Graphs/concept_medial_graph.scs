@@ -17,7 +17,6 @@ definition -> definition_of_medial_graph (*
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
-		concept_medial_graph;
 		concept_graph;
 		concept_edge;
 		nrel_arcs_adjacency;
@@ -38,18 +37,15 @@ statement -> statement_of_medial_graph_property (*
 		[Stat. (Property of a medial graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_planar_graph;
-		concept_medial_graph
+		concept_planar_graph
 	};;
 *);;
 
 sc_node_class ->
 	concept_planar_graph;
-	concept_medial_graph;
 	concept_graph;
 	concept_edge;
-	concept_planar_graph;
-	concept_medial_graph;;
+	concept_planar_graph;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;

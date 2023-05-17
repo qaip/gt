@@ -18,7 +18,5 @@ nrels: |
   cyclicity
   acyclicity
   eccentricity
-  rib_weight
   isomorphism
   multiple_edge
-  chromatic_number

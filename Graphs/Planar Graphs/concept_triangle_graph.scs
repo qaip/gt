@@ -20,7 +20,6 @@ definition -> definition_of_triangle_graph (*
 
 	=> nrel_using_constants: {
 		concept_unoriented_graph;
-		concept_triangle_graph;
 		concept_planar_graph;
 		concept_graph;
 		concept_edge;
@@ -42,7 +41,6 @@ statement -> statement_of_triangle_graph_property (*
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;
-		concept_triangle_graph;
 		concept_chromatic_index;
 		concept_graph_girth;
 		concept_graph_radius;
@@ -54,13 +52,11 @@ statement -> statement_of_triangle_graph_property (*
 
 sc_node_class ->
 	concept_unoriented_graph;
-	concept_triangle_graph;
 	concept_planar_graph;
 	concept_graph;
 	concept_edge;
 	concept_vertex;
 	concept_chromatic_number;
-	concept_triangle_graph;
 	concept_chromatic_index;
 	concept_graph_girth;
 	concept_graph_radius;

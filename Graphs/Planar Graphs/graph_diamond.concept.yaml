@@ -8,7 +8,6 @@ definition:
     concepts: |
       unoriented_graph
       planar_graph
-      graph_diamond
       graph
       edge
       vertex
@@ -27,7 +26,6 @@ statement:
     using:
       concepts: |
         chromatic_number
-        graph_diamond
         chromatic_index
         graph_girth
         graph_radius
