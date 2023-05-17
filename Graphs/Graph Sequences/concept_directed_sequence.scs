@@ -1,7 +1,11 @@
 concept_directed_sequence
 => nrel_main_idtf:
 	[ориентированный маршрут] (* <- lang_ru;; *);
-	[directed sequence] (* <- lang_en;; *);;
+	[directed sequence] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[направленный маршрут] (* <- lang_ru;; *);
+	[directed route] (* <- lang_en;; *);;
 
 definition -> definition_of_directed_sequence (*
 	-> rrel_key_sc_element: concept_directed_sequence;;
@@ -19,8 +23,10 @@ definition -> definition_of_directed_sequence (*
 		concept_vertex;
 		concept_edge;
 		concept_sequence;
+		concept_arc;
 		rrel_vertex;
-		rrel_edge
+		rrel_edge;
+		rrel_arc
 	};;
 *);;
 
@@ -45,16 +51,78 @@ statement -> statement_of_directional_and_nondirectional_sequences (*
 	};;
 *);;
 
+statement -> statement_of_dijkstra_algorithm (*
+	-> rrel_key_sc_element: concept_directed_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм Дейкстры используется для нахождения кратчайшего пути во взвешенном направленном графе с неотрицательными весами ребер] (* <- lang_ru;; *);;
+		-> [Dijkstras algorithm is used for finding the shortest path in a weighted directed graph with non-negative edge weights] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Дейкстры)] (* <- lang_ru;; *);
+		[Stat. (Dijkstras algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_shortest_path
+	};;
+*);;
+
+statement -> statement_of_bellman_ford_algorithm (*
+	-> rrel_key_sc_element: concept_directed_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм Беллмана-Форда используется для нахождения кратчайшего пути в направленном графе с весами ребер, которые могут быть отрицательными] (* <- lang_ru;; *);;
+		-> [Bellman-Ford algorithm is used for finding the shortest path in a directed graph with edge weights that may be negative] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Беллмана-Форда)] (* <- lang_ru;; *);
+		[Stat. (Bellman-Ford algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_shortest_path
+	};;
+*);;
+
+statement -> statement_of_floyd_warshall_algorithm (*
+	-> rrel_key_sc_element: concept_directed_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм Флойда-Уоршелла используется для нахождения всех кратчайших путей во взвешенном направленном графе] (* <- lang_ru;; *);;
+		-> [Floyd-Warshall algorithm is used for finding all shortest paths in a weighted directed graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Флойда-Уоршелла)] (* <- lang_ru;; *);
+		[Stat. (Floyd-Warshall algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_shortest_path
+	};;
+*);;
+
 sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_sequence;
+	concept_arc;
 	concept_sequence;
 	concept_directed_graph;
 	concept_undirected_graph;
 	concept_closed_sequence;
-	concept_cycle;;
+	concept_cycle;
+	concept_directed_graph;
+	concept_shortest_path;
+	concept_directed_graph;
+	concept_shortest_path;
+	concept_directed_graph;
+	concept_shortest_path;;
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_edge;;
+	rrel_edge;
+	rrel_arc;;
