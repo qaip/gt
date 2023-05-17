@@ -1,0 +1,23 @@
+ru: вес цикла
+en: cycle weight
+
+definition:
+  ru: Суммарный вес ребер в цикле графа
+  en: The total weight of the edges in a cycle of a graph
+  using:
+    concepts: |
+      graph_cycle
+      rib_weight
+
+statement:
+  cycle_weight_minimum_theorem:
+    title:
+      ru: Теорема о минимальном весе цикла
+      en: Minimum cycle weight theorem
+    ru: Минимальный вес цикла в графе является минимальным из весов циклов, проходящих через данный узел
+    en: The minimum weight of a cycle in a graph is the minimum weight among cycles passing through a given node
+    using:
+      concepts: |
+        graph_cycle
+        rib_weight
+        vertex
