@@ -7,8 +7,8 @@ definition -> definition_of_isometric_subgraph (*
 	-> rrel_key_sc_element: concept_isometric_subgraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Подграф H графа G, у которого все расстояния внутри H те же самые, что и в G] (* <- lang_ru;; *);;
-		-> [Subgraph H of a graph G for which all distances inside H are the same as in G] (* <- lang_en;; *);;
+		-> [Подграф, который сохраняет расстояния между вершинами исходного графа] (* <- lang_ru;; *);;
+		-> [A subgraph that preserves the distances between vertices of the original graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -17,11 +17,56 @@ definition -> definition_of_isometric_subgraph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_subgraph
+		concept_vertex;
+		concept_subgraph;
+		rrel_vertex
 	};;
 *);;
 
+statement -> statement_of_isometric_embedding_theorem (*
+	-> rrel_key_sc_element: concept_isometric_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф может быть изометрически вложен в евклидово пространство достаточно большой размерности] (* <- lang_ru;; *);;
+		-> [Every graph can be isometrically embedded in a sufficiently high dimensional Euclidean space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об изометрическом вложении)] (* <- lang_ru;; *);
+		[Stat. (Isometric embedding theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_isometric_subgraph_theorem (*
+	-> rrel_key_sc_element: concept_isometric_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф имеет изометрический подграф максимального размера] (* <- lang_ru;; *);;
+		-> [Every graph has an isometric subgraph of maximum size] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об изометрическом подграфе)] (* <- lang_ru;; *);
+		[Stat. (Isometric subgraph theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_subgraph;
+		concept_isometric_subgraph
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
-	concept_subgraph;;
+	concept_vertex;
+	concept_subgraph;
+	concept_graph;
+	concept_graph;
+	concept_subgraph;
+	concept_isometric_subgraph;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

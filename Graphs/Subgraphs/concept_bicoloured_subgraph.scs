@@ -17,7 +17,11 @@ definition -> definition_of_bicoloured_subgraph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_coloring
+		concept_vertex;
+		concept_edge;
+		concept_graph_coloring;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -40,9 +44,39 @@ statement -> statement_of_condition_of_bicoloured (*
 	};;
 *);;
 
+statement -> statement_of_bicolouring_theorem (*
+	-> rrel_key_sc_element: concept_bicoloured_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф имеет двухцветный подграф, содержащий каждую вершину] (* <- lang_ru;; *);;
+		-> [Every graph has a bicoloured subgraph that contains every vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о двухцветном подграфе)] (* <- lang_ru;; *);
+		[Stat. (Bicolouring theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_subgraph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
 sc_node_class ->
 	concept_graph;
+	concept_vertex;
+	concept_edge;
 	concept_graph_coloring;
 	concept_graph_coloring;
 	concept_graph;
-	concept_graph_cycles;;
+	concept_graph_cycles;
+	concept_graph;
+	concept_subgraph;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;;
