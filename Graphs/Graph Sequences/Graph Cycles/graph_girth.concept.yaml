@@ -1,0 +1,24 @@
+ru: длина минимального цикла графа
+en: graph girth
+
+definition:
+  ru: Длина минимального цикла графа
+  en: The length of the shortest cycle in the graph
+  using:
+    concepts: |
+      graph_cycle
+      graph
+
+statement:
+  graph_girth_exists:
+    title:
+      ru: Существование длины минимального цикла графа
+      en: Existence of graph girth
+    ru: В связном графе существует цикл наименьшей длины тогда и только тогда, когда граф не является лесом
+    en: A connected graph has a minimum cycle length if and only if it is not a forest
+    using:
+      concepts: |
+        connected_graph
+        graph_cycle
+        vertex
+        

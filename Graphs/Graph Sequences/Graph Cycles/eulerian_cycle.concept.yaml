@@ -1,17 +1,15 @@
-ru: цикл графа
-en: graph cycle
+ru: эйлеров цикл
+en: eulerian cycle
 
 definition:
-  ru: Замкнутый путь, проходящий по каждому ребру графа ровно один раз
-  en: A closed path that passes through each edge of the graph exactly once
+  ru: Простой цикл, проходящий по каждому ребру графа ровно один раз
+  en: A simple cycle that passes through each edge of the graph exactly once
   using:
     concepts: |
-      graph_sequence
-      vertex
-      graph
+      graph_cycle
       edge
+      graph
     rrels: |
-      vertex
       edge
 
 statement:
@@ -29,13 +27,4 @@ statement:
         vertex
       rrels: |
         vertex
-subclass:
-  - hamiltonian_cycle
-  - graph_girth
-  - cyclic_graph
-  - eulerian_cycle
-  - basic_cycle
-  - elementary_cycle
-  - minimum_weight_cycle
-  - cycle_length
   

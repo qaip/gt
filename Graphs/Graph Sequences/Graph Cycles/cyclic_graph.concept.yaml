@@ -1,0 +1,22 @@
+ru: циклический граф
+en: cyclic graph
+
+definition:
+  ru: Граф, содержащий циклы
+  en: A graph that contains cycles
+  using:
+    concepts: |
+      graph_cycle
+      graph
+
+statement:
+  cyclic_graph_exists:
+    title:
+      ru: Существование циклического графа
+      en: Existence of cyclic graph
+    ru: Граф является циклическим тогда и только тогда, когда он содержит хотя бы один цикл
+    en: A graph is cyclic if and only if it contains at least one cycle
+    using:
+      concepts: |
+        graph_cycle
+        graph
