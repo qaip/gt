@@ -1,0 +1,48 @@
+ru: полный подграф
+en: complete subgraph
+
+definition:
+  ru: Подграф, каждая вершина которого связана со всеми остальными вершинами
+  en: A subgraph where every vertex is connected to every other vertex
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      subgraph
+      connectivity
+    rrels: |
+      vertex
+      edge
+statement:
+  complete_graph_theorem:
+    title:
+      ru: Теорема о полном графе
+      en: Complete graph theorem
+    ru:
+      Полный граф на n вершинах имеет n(n-1) делить на 2 ребер
+    en:
+      A complete graph on n vertices has n(n-1) divided by 2 edges
+    using:
+      concepts: |
+        graph
+        complete_graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+  complete_subgraph_theorem:
+    title:
+      ru: Теорема о полном подграфе
+      en: Complete subgraph theorem
+    ru:
+      Любой граф имеет полный подграф максимального размера
+    en:
+      Every graph has a complete subgraph of maximum size
+    using:
+      concepts: |
+        graph
+        subgraph
+        complete_subgraph
+  
