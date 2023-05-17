@@ -1,6 +1,6 @@
 concept_tournament_graph
 => nrel_main_idtf:
-	[турнир] (* <- lang_ru;; *);
+	[граф турнир] (* <- lang_ru;; *);
 	[tournament graph] (* <- lang_en;; *);
 
 => nrel_idtf:
@@ -15,7 +15,7 @@ definition -> definition_of_tournament_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (турнир)] (* <- lang_ru;; *);
+		[Опр. (граф турнир)] (* <- lang_ru;; *);
 		[Def. (tournament graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
