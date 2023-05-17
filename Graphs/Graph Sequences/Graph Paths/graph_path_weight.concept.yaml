@@ -11,3 +11,30 @@ definition:
       graph
     rrels: |
       edge
+statement: 
+  shortest_path_weight_theorem:
+    title:
+      ru: Теорема о кратчайшем взвешенном пути
+      en: Shortest weighted path theorem
+    ru: Алгоритм Дейкстры находит кратчайший путь во взвешенном графе
+    en: Dijkstras algorithm finds the shortest path in a weighted graph
+    using:
+      concepts: |
+        graph_path_weight
+        shortest_path
+        dijkstra_algorithm
+  bellman_ford_algorithm:
+    title:
+      ru: Алгоритм Беллмана-Форда
+      en: Bellman-Ford algorithm
+    ru:
+      Алгоритм, который находит кратчайший путь во взвешенном графе с
+      отрицательными весами ребер
+    en:
+      An algorithm that finds the shortest path in a weighted graph with
+      negative edge weights
+    using:
+      concepts: |
+        graph_path_weight
+        shortest_path
+        edge_weight
