@@ -1,0 +1,57 @@
+concept_reverse_pre_order_traversal
+=> nrel_main_idtf:
+	[обход с обрадным предпросмотром] (* <- lang_ru;; *);
+	[reverse pre-order depth traversal] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[reverse pre-order traversal] (* <- lang_en;; *);;
+
+definition -> definition_of_reverse_pre_order_traversal (*
+	-> rrel_key_sc_element: concept_reverse_pre_order_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Одна из разновидностей обхода бинарного дерева в глубину] (* <- lang_ru;; *);;
+		-> [One of the varieties of binary tree depth traversal] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (обход с обрадным предпросмотром)] (* <- lang_ru;; *);
+		[Def. (reverse pre-order depth traversal)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_binary_tree;
+		concept_depth_traversal;
+		concept_tree_traversal
+	};;
+*);;
+
+statement -> statement_of_pre_order_traversal_explanation (*
+	-> rrel_key_sc_element: concept_reverse_pre_order_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Во время обхода с обратным предпросмотром сначала просматривается текущая вершина, затем выполняется обход каждой смежной с ней вершины справа налево] (* <- lang_ru;; *);;
+		-> [During a reverse pre-order depth traversal, the current vertex is first checked, then each vertex adjacent to it from right to left is traversed] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение обхода дерева с обратным предпросмотром)] (* <- lang_ru;; *);
+		[Stat. (Reverse pre-order traversal explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex;
+		nrel_adjacent
+	};;
+*);;
+
+sc_node_class ->
+	concept_binary_tree;
+	concept_depth_traversal;
+	concept_tree_traversal;
+	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_adjacent;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

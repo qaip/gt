@@ -1,0 +1,54 @@
+concept_tree_traversal
+=> nrel_main_idtf:
+	[обход дерева] (* <- lang_ru;; *);
+	[tree traversal] (* <- lang_en;; *);
+
+=> nrel_subdividing: {
+	concept_breadth_traversal;
+	concept_in_order_traversal;
+	concept_pre_oreder_traversal;
+	concept_post_order_traversal;
+	concept_reverse_in_order_traversal;
+	concept_reverse_pre_order_traversal;
+	concept_reverse_post_order_traversal
+};;
+
+definition -> definition_of_tree_traversal (*
+	-> rrel_key_sc_element: concept_tree_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обходом дерева называется обход графа, который выполняется на графе дереве] (* <- lang_ru;; *);;
+		-> [A tree traversal is a graph traversal that is performed on a tree graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (обход дерева)] (* <- lang_ru;; *);
+		[Def. (tree traversal)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_traversal;
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_statement_about_belonging_of_tree_traversal (*
+	-> rrel_key_sc_element: concept_tree_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обход деревьев является частным случаем обхода графов] (* <- lang_ru;; *);;
+		-> [Tree traversal is a special case of graph traversal] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (О принадлежности обхода деревьев)] (* <- lang_ru;; *);
+		[Stat. (About belonging of tree traversal)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_traversal
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_traversal;
+	concept_tree;
+	concept_graph_traversal;;

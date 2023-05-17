@@ -1,0 +1,70 @@
+concept_dijkstra_algorithm
+=> nrel_main_idtf:
+	[алгоритм Дейкстры] (* <- lang_ru;; *);
+	[dijkstra algorithm] (* <- lang_en;; *);;
+
+definition -> definition_of_dijkstra_algorithm (*
+	-> rrel_key_sc_element: concept_dijkstra_algorithm;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритмом Дейкстры является графовый алгоритм, изобретённый нидерландским учёным Эдсгером Дейкстрой в 1959 году. Находит кратчайшие пути от одной из вершин графа до всех остальных. Алгоритм работает только для графов без рёбер отрицательного веса] (* <- lang_ru;; *);;
+		-> [Dijkstra algorithm is a graph algorithm invented by the Dutch scientist Edsger Dijkstra in 1959. Finds the shortest paths from one of the vertices of the graph to all the others. The algorithm works only for graphs without edges of negative weight] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (алгоритм Дейкстры)] (* <- lang_ru;; *);
+		[Def. (dijkstra algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_edge_weight;
+		concept_shortest_path;
+		concept_graph_algorithm;
+		rrel_vertex;
+		rrel_edge;
+		nrel_shortest_path
+	};;
+*);;
+
+statement -> statement_of_dijkstra_algorithm_explanation (*
+	-> rrel_key_sc_element: concept_dijkstra_algorithm;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Каждой вершине графа сопоставляетя метка, соответсвующая минимальному известному весу пути от этой вершины до требуемой вершины. Алгоритм работает пошагово. На каждом шаге он, в некотором смысле, посещает одну вершину и пытается уменьшать метки. Работа алгоритма завершается, когда все вершины посещены] (* <- lang_ru;; *);;
+		-> [Each vertex of the graph is associated with a label corresponding to the minimum known weight of path from this vertex to the required vertex. The algorithm works step by step. At each step, he, in a manner, visits one vertex and tries to decrease the labels. The algorithm terminates when all vertices have been visited] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение алгоритма Дейкстры)] (* <- lang_ru;; *);
+		[Stat. (Explanation of Dijkstra Algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_graph_path_weight;
+		concept_graph_algorithm;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_edge_weight;
+	concept_shortest_path;
+	concept_graph_algorithm;
+	concept_graph;
+	concept_vertex;
+	concept_graph_path_weight;
+	concept_graph_algorithm;;
+
+sc_node_norole_relation ->
+	nrel_shortest_path;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;;
