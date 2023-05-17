@@ -1,12 +1,12 @@
-ru: гамильтонов путь
-en: hamiltonian path
+ru: гамильтонов путь | замкнутый путь
+en: hamiltonian path | closed path
 
 definition:
   ru: Простой путь, проходящий через каждую вершину графа ровно один раз
   en: A simple path that passes through each vertex of the graph exactly once
   using:
     concepts: |
-      path
+      graph_path
       vertex
       graph
       edge
@@ -30,5 +30,29 @@ statement:
     using:
       concepts: |
         hamiltonian_cycle
+        hamiltonian_path
         vertex
         graph
+      rrels: |
+        vertex
+  hamiltonian_cycle_theorem:
+    title:
+      ru: Теорема о Гамильтоновом цикле
+      en: Hamiltonian cycle theorem
+    ru: Граф содержит гамильтонов цикл, если степень каждой вершины не меньше, чем половина числа вершин в графе
+    en: A graph contains a Hamiltonian cycle if the degree of each vertex is at least half the number of vertices in the graph
+    using:
+      concepts:  |
+        hamiltonian_path
+        hamiltonian_cycle
+        vertex_degree
+  dirac_theorem:
+    title:
+      ru: Теорема Дирака
+      en: Diracs theorem
+    ru: Граф содержит гамильтонов путь, если степень каждой вершины в графе не меньше, чем половина числа вершин в графе
+    en: A graph contains a Hamiltonian path if the degree of each vertex in the graph is at least half the number of vertices in the graph
+    using:
+      concepts:  |
+        hamiltonian_path
+        vertex_degree
