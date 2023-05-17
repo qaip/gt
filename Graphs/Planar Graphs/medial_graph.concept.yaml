@@ -1,0 +1,31 @@
+ru: cерединный граф
+en: medial graph
+
+definition:
+  ru:
+    Граф, представляющий рёбра смежности внутри граней заданного планарного
+    графа
+  en:
+    A graph representing adjacency edges inside the faces of a given planar
+    graph
+  using:
+    concepts: |
+      planar_graph
+      graph
+      edge
+    nrels: |
+      arcs_adjacency
+      face
+
+statement:
+  medial_graph_property:
+    title:
+      ru: Cвойство серединного графа
+      en: Property of a medial graph
+    ru:
+      Один и тот же планарный граф может иметь несколько неизоморфных срединных
+      графов
+    en: The same planar graph can have several non-isomorphic median graphs
+    using:
+      concepts: |
+        planar_graph

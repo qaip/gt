@@ -1,0 +1,51 @@
+ru: планарный граф
+en: planar graph
+
+definition:
+  ru: Граф, который может быть изображён на плоскости без пересечения ребер
+  en: A graph that can be drawn on a plane without intersecting edges
+  using:
+    concepts: |
+      plane
+      graph
+      edge
+    nrels: |
+      intersection
+
+statement:
+  theorem_uitni_planar:
+    title:
+      ru: Теорема Уитни
+      en: Whitneys Theorem
+    ru: Граф планарен тогда и только тогда, когда каждый его подграф планарен
+    en: A graph is planar if and only if each of its subgraphs is planar
+    using:
+      nrels: |
+        subgraph
+
+  theorem_potryagina_kuratovskogo:
+    title:
+      ru: Теорема Понтрягина-Куратовского
+      en: Pontryagin-Kuratovsky theorem
+    ru:
+      Граф планарен тогда и только тогда, когда он не содержит подграфов,
+      гомеоморфных полному графу из пяти вершин или двудольному графу
+    en:
+      A graph is planar if and only if it does not contain subgraphs
+      homeomorphic to a complete graph of five vertices or a bipartite graph
+    using:
+      concepts: |
+        complete_graph
+        bipartite_graph
+        homeomorphical_graphs
+        vertex
+      nrels: |
+        subgraph
+
+subclass:
+  - one_planar_graph
+  - triangular_graph
+  - graph_diamond
+  - medial_graph
+  - external_planar_graph
+  - graph_halina

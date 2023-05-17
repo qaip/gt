@@ -1,0 +1,39 @@
+ru: ориентированный ациклический граф с источником
+en: directed acyclic graph with source
+
+definition:
+  ru:
+    Ориентированный ациклический граф, имеющий одну вершину-источник, из которой
+    выходят все остальные ребра графа
+  en:
+    A directed acyclic graph with one source vertex, from which all other edges
+    in the graph originate
+  using:
+    concepts: |
+      directed_acyclic_graph
+      source_vertex
+      edge
+    nrels: |
+      outgoing_edge
+
+statement:
+  theorem_dag_source:
+    title:
+      ru: Свойство ориентированного ациклического графа с источником
+      en: Property of a directed acyclic graph with source
+    ru:
+      В ориентированном ациклическом графе с источником каждая вершина, кроме
+      источника, достижима из источника
+    en:
+      In a directed acyclic graph with source, every vertex except the source is
+      reachable from the source
+    using:
+      concepts: |
+        source_vertex
+        vertex
+      nrels: |
+        reachable_vertex
+
+subclass:
+  - dag_with_source_and_sink
+  - dag_with_single_source_and_sink

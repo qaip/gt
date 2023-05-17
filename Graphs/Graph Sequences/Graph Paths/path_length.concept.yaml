@@ -1,0 +1,34 @@
+ru: длина пути графа
+en: graph path length
+
+definition:
+  ru:
+    Число рёбер, используемых в пути графа, при этом многократно используемые
+    рёбра считаются соответствующее число раз
+  en:
+    The number of edges used in the path of the graph, while repeatedly used
+    edges are counted the corresponding number of times
+  using:
+    concepts: |
+      path
+      edge
+    rrels: |
+      edge
+statement:
+  path_equals_zero:
+    title:
+      ru: Условие эквивалентности длины пути нулю
+      en: Zero path length condition
+    ru:
+      Длина пути графа может равняться нулю, если путь состоит только из одной
+      вершины
+    en:
+      The length of graph path can be zero if the path consists of only one
+      vertex
+    using:
+      concepts: |
+        path
+        length_of_path
+        vertex
+      rrels: |
+        vertex
