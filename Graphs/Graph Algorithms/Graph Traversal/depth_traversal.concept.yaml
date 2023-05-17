@@ -26,8 +26,9 @@ statement:
       en: About depth search division
     ru:
       Среди видов обходов в глубину можно выделить такие, как обход с
-      предпросмотром, обход с постпросмотром, обратным предпросмотром, обратным
-      постпросмотром, упорядоченный обход и обратный упорядоченный обход
+      предпросмотром, обход с постпросмотром, обход с обратным предпросмотром,
+      обход с обратным постпросмотром, упорядоченный обход и обратный
+      упорядоченный обход
     en:
       Among the types of depth traversals, one can distinguish such as pre-order
       traversal, post-order traversal, reverse pre-order traversal, reverse
