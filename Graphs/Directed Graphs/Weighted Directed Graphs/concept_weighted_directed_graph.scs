@@ -28,7 +28,7 @@ definition -> definition_of_weighted_directed_graph (*
 	};;
 *);;
 
-statement -> statement_of_theorem_shortest_path (*
+statement -> statement_of_tweighted_directed_shortest_path (*
 	-> rrel_key_sc_element: concept_weighted_directed_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -37,8 +37,8 @@ statement -> statement_of_theorem_shortest_path (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема о кратчайшем пути)] (* <- lang_ru;; *);
-		[Stat. (Shortest path theorem)] (* <- lang_en;; *);;
+		[Утв. (Свойство кратчайшего пути в взвешенном ориентированном графе)] (* <- lang_ru;; *);
+		[Stat. (The shortest path property in a weighted directed graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_path;
@@ -49,7 +49,7 @@ statement -> statement_of_theorem_shortest_path (*
 	};;
 *);;
 
-statement -> statement_of_theorem_negative_cycle (*
+statement -> statement_of_weighted_directed_graph_cycle (*
 	-> rrel_key_sc_element: concept_weighted_directed_graph;;
 
 	<= nrel_sc_text_translation: ... (*

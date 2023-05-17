@@ -23,7 +23,7 @@ definition -> definition_of_acyclic_weighted_directed_graph (*
 	};;
 *);;
 
-statement -> statement_of_theorem_shortest_path (*
+statement -> statement_of_acyclic_directed_graph_shortest_path (*
 	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -32,8 +32,8 @@ statement -> statement_of_theorem_shortest_path (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема о кратчайшем пути)] (* <- lang_ru;; *);
-		[Stat. (Shortest path theorem)] (* <- lang_en;; *);;
+		[Утв. (Свойство кратчайшего пути в ациклическом взвешенном ориентированном графе)] (* <- lang_ru;; *);
+		[Stat. (The shortest path property in an acyclic weighted directed graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_directed_graph;
@@ -67,7 +67,7 @@ statement -> statement_of_theorem_minimum_spanning_tree (*
 	};;
 *);;
 
-statement -> statement_of_theorem_longest_path (*
+statement -> statement_of_acyclic_directed_graph_longest_path (*
 	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -76,8 +76,8 @@ statement -> statement_of_theorem_longest_path (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема о самом длинном пути)] (* <- lang_ru;; *);
-		[Stat. (Longest path theorem)] (* <- lang_en;; *);;
+		[Утв. (Свойство самого длинного пути в ациклическом взвешенном ориентированном графе)] (* <- lang_ru;; *);
+		[Stat. (The property of the longest path in an acyclic weighted directed graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_path;
