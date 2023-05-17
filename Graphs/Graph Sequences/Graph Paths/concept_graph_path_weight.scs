@@ -43,8 +43,7 @@ statement -> statement_of_shortest_path_weight_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph_path_weight;
-		concept_shortest_path;
-		concept_dijkstra_algorithm
+		concept_shortest_path
 	};;
 *);;
 
@@ -73,7 +72,6 @@ sc_node_class ->
 	concept_graph;
 	concept_graph_path_weight;
 	concept_shortest_path;
-	concept_dijkstra_algorithm;
 	concept_graph_path_weight;
 	concept_shortest_path;
 	concept_edge_weight;;

@@ -1,0 +1,120 @@
+concept_shortest_path
+=> nrel_main_idtf:
+	[кратчайший путь] (* <- lang_ru;; *);
+	[shortest path] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[алгоритм Дейкстры] (* <- lang_ru;; *);
+	[алгоритм Флойда-Уоршелла] (* <- lang_ru;; *);
+	[Dijkstras algorithm] (* <- lang_en;; *);
+	[Floyd-Warshall algorithm] (* <- lang_en;; *);;
+
+definition -> definition_of_shortest_path (*
+	-> rrel_key_sc_element: concept_shortest_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Путь в графе, имеющий наименьшую сумму весов рёбер] (* <- lang_ru;; *);;
+		-> [The path in a graph with the smallest sum of edge weights] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (кратчайший путь)] (* <- lang_ru;; *);
+		[Def. (shortest path)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		concept_graph_path;
+		rrel_edge_weight
+	};;
+*);;
+
+statement -> statement_of_shortest_path_weight_theorem (*
+	-> rrel_key_sc_element: concept_shortest_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм Дейкстры находит кратчайший путь во взвешенном графе] (* <- lang_ru;; *);;
+		-> [Dijkstras algorithm finds the shortest path in a weighted graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о кратчайшем взвешенном пути)] (* <- lang_ru;; *);
+		[Stat. (Shortest weighted path theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		concept_shortest_path
+	};;
+*);;
+
+statement -> statement_of_shortest_path_unweighted_theorem (*
+	-> rrel_key_sc_element: concept_shortest_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм поиска в ширину находит кратчайший путь в невзвешенном графе] (* <- lang_ru;; *);;
+		-> [Breadth-first search algorithm finds the shortest path in an unweighted graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о кратчайшем невзвешенном пути)] (* <- lang_ru;; *);
+		[Stat. (Shortest unweighted path theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_shortest_path
+	};;
+*);;
+
+statement -> statement_of_floyd_warshall_algorithm (*
+	-> rrel_key_sc_element: concept_shortest_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм, находящий кратчайшие расстояния между всеми парами вершин в графе] (* <- lang_ru;; *);;
+		-> [An algorithm that finds the shortest distances between all pairs of vertices in a graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Флойда-Уоршелла)] (* <- lang_ru;; *);
+		[Stat. (Floyd-Warshall algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path_weight;
+		concept_path_length;
+		concept_edge_weight
+	};;
+*);;
+
+statement -> statement_of_bellman_ford_algorithm (*
+	-> rrel_key_sc_element: concept_shortest_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм, который находит кратчайший путь во взвешенном графе с отрицательными весами ребер] (* <- lang_ru;; *);;
+		-> [An algorithm that finds the shortest path in a weighted graph with negative edge weights] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм Беллмана-Форда)] (* <- lang_ru;; *);
+		[Stat. (Bellman-Ford algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		concept_shortest_path;
+		concept_edge_weight
+	};;
+*);;
+
+sc_node_class ->
+	concept_path_length;
+	concept_graph_path;
+	concept_path_length;
+	concept_shortest_path;
+	concept_graph_path;
+	concept_shortest_path;
+	concept_graph_path_weight;
+	concept_path_length;
+	concept_edge_weight;
+	concept_path_length;
+	concept_shortest_path;
+	concept_edge_weight;;
+
+sc_node_role_relation ->
+	rrel_edge_weight;;

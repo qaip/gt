@@ -13,9 +13,8 @@ concept_shortest_path;
 concept_longest_path;
 concept_hamiltonian_path;
 concept_eulerian_path;
-concept_critical_path;
-concept_directed_path;
-concept_undirected_path;;
+concept_path_length;
+concept_graph_path_weight;;
 
 definition -> definition_of_graph_path (*
 	-> rrel_key_sc_element: concept_graph_path;;
@@ -125,8 +124,7 @@ statement -> statement_of_shortest_path_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph_path;
-		concept_shortest_path;
-		concept_dijkstra_algorithm
+		concept_shortest_path
 	};;
 *);;
 
@@ -221,7 +219,6 @@ sc_node_class ->
 	concept_connected_graph;
 	concept_graph_path;
 	concept_shortest_path;
-	concept_dijkstra_algorithm;
 	concept_graph_path;
 	concept_np_complete_problem;
 	concept_graph_path;
