@@ -13,23 +13,10 @@ definition:
       vertex
 
 statement:
-  theorem_quadtree:
+  quadtree_spatial_partitioning:
     title:
-      ru: Теорема
-      en: Theorem
-    ru:
-      Каждый многоугольник имеет единственное представление в квадродереве
-      многоугольников
-    en: Every polygon has a unique representation in a polygonal map quadtree
-    using:
-      nrels: |
-        polygon
-        representation
-
-  statement_spatial_partitioning:
-    title:
-      ru: Пространственное разбиение
-      en: Spatial partitioning
+      ru: Пространственное разбиение квадродеревьев
+      en: Spatial partitioning of quadtrees
     ru:
       Квадродерево используется в областях, где необходимо эффективно разбить
       пространство на более мелкие участки, такие как изображения и видео
@@ -44,10 +31,10 @@ statement:
       nrels: |
         efficiency
 
-  statement_compression:
+  quadtree_compression:
     title:
-      ru: Сжатие данных
-      en: Data compression
+      ru: Сжатие данных с помощью квадродеревьев
+      en: Data compression using quadtrees
     ru: Квадродерево используется для сжатия изображений и видео
     en: Quadtree is used for compressing images and videos
     using:
@@ -56,10 +43,10 @@ statement:
         video
         compression
 
-  statement_fractal:
+  quadtree_fractal:
     title:
-      ru: Фракталы
-      en: Fractals
+      ru: Фракталы и квадродеревья
+      en: Fractals and quadtrees
     ru:
       Квадродерево может быть использовано для создания фрактальных изображений
     en: Quadtree can be used to create fractal images
@@ -68,10 +55,10 @@ statement:
         fractals
         image
 
-  statement_nearest_neighbor:
+  quadtree_nearest_neighbor:
     title:
-      ru: Ближайший сосед
-      en: Nearest neighbor
+      ru: Решение задачи ближайшего соседа с помощью квадродеревьев
+      en: Solving the nearest neighbor problem using quadtrees
     ru:
       Квадродерево может быть использовано для нахождения ближайшего соседа в
       двумерном пространстве

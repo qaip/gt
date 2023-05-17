@@ -13,14 +13,15 @@ definition:
       quadtree
 
 statement:
-  theorem_quadtree:
+  quadtree_polygon_property:
     title:
-      ru: Теорема
-      en: Theorem
+      ru: Свойство многоугольников в квадродереве
+      en: A property of polygons in a quadtree
     ru:
       Каждый многоугольник имеет единственное представление в квадродереве
       многоугольников
     en: Every polygon has a unique representation in a polygonal map quadtree
     using:
-      concepts: |
-        quadtree
+      nrels: |
+        polygon
+        representation
