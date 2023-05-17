@@ -1,5 +1,5 @@
-ru: ориентированный маршрут
-en: directed sequence
+ru: ориентированный маршрут | направленный маршрут
+en: directed sequence | directed route
 
 definition:
   ru:
@@ -13,9 +13,11 @@ definition:
       vertex
       edge
       sequence
+      arc
     rrels: |
       vertex
       edge
+      arc
 statement:
   directional_and_nondirectional_sequences:
     title:
@@ -35,3 +37,45 @@ statement:
         undirected_graph
         closed_sequence
         cycle
+  dijkstra_algorithm:
+    title:
+      ru: Алгоритм Дейкстры
+      en: Dijkstras algorithm
+    ru:
+      Алгоритм Дейкстры используется для нахождения кратчайшего пути во
+      взвешенном направленном графе с неотрицательными весами ребер
+    en:
+      Dijkstras algorithm is used for finding the shortest path in a weighted
+      directed graph with non-negative edge weights
+    using:
+      concepts: |
+        directed_graph
+        shortest_path
+  bellman_ford_algorithm:
+    title:
+      ru: Алгоритм Беллмана-Форда
+      en: Bellman-Ford algorithm
+    ru:
+      Алгоритм Беллмана-Форда используется для нахождения кратчайшего пути в
+      направленном графе с весами ребер, которые могут быть отрицательными
+    en:
+      Bellman-Ford algorithm is used for finding the shortest path in a directed
+      graph with edge weights that may be negative
+    using:
+      concepts: |
+        directed_graph
+        shortest_path
+  floyd_warshall_algorithm:
+    title:
+      ru: Алгоритм Флойда-Уоршелла
+      en: Floyd-Warshall algorithm
+    ru:
+      Алгоритм Флойда-Уоршелла используется для нахождения всех кратчайших
+      путей во взвешенном направленном графе
+    en:
+      Floyd-Warshall algorithm is used for finding all shortest paths in a
+      weighted directed graph
+    using:
+      concepts: |
+        directed_graph
+        shortest_path
