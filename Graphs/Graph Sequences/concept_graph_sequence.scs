@@ -11,9 +11,9 @@ concept_graph_sequence
 
 
 => nrel_inclusion:
-concept_graph_paths;
-concept_graph_cycles;
-concept_graph_chains;;
+concept_graph_path;
+concept_graph_cycle;
+concept_graph_chain;;
 
 definition -> definition_of_graph_sequence (*
 	-> rrel_key_sc_element: concept_graph_sequence;;
