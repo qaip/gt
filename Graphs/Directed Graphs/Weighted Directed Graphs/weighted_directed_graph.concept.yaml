@@ -14,10 +14,10 @@ definition:
       value
 
 statement:
-  theorem_shortest_path:
+  tweighted_directed_shortest_path:
     title:
-      ru: Теорема о кратчайшем пути
-      en: Shortest path theorem
+      ru: Свойство кратчайшего пути в взвешенном ориентированном графе
+      en: The shortest path property in a weighted directed graph
     ru:
       Во взвешенном графе любой кратчайший путь между двумя вершинами содержит
       не более V-1 ребер
@@ -33,7 +33,7 @@ statement:
         vertex
         edge
 
-  theorem_negative_cycle:
+  weighted_directed_graph_cycle:
     title:
       ru: Теорема о цикле отрицательного веса
       en: Negative weight cycle theorem

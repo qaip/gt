@@ -18,10 +18,12 @@ definition:
       value
 
 statement:
-  theorem_shortest_path:
+  acyclic_directed_graph_shortest_path:
     title:
-      ru: Теорема о кратчайшем пути
-      en: Shortest path theorem
+      ru:
+        Свойство кратчайшего пути в ациклическом взвешенном ориентированном
+        графе
+      en: The shortest path property in an acyclic weighted directed graph
     ru:
       В ациклическом взвешенном ориентированном графе кратчайший путь между
       двумя вершинами может быть найден за линейное время
@@ -58,10 +60,12 @@ statement:
         edge
         vertex
 
-  theorem_longest_path:
+  acyclic_directed_graph_longest_path:
     title:
-      ru: Теорема о самом длинном пути
-      en: Longest path theorem
+      ru:
+        Свойство самого длинного пути в ациклическом взвешенном ориентированном
+        графе
+      en: The property of the longest path in an acyclic weighted directed graph
     ru:
       В ациклическом взвешенном ориентированном графе самый длинный путь между
       двумя вершинами может быть найден за линейное время
