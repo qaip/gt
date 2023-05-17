@@ -4,6 +4,7 @@ concept_tournament_graph
 	[tournament graph] (* <- lang_en;; *);
 
 => nrel_idtf:
+	[турнир] (* <- lang_ru;; *);
 	[directed complete graph] (* <- lang_en;; *);;
 
 definition -> definition_of_tournament_graph (*
