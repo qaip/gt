@@ -22,6 +22,26 @@ definition -> definition_of_path_length (*
 	};;
 *);;
 
+statement -> statement_of_path_length_theorem (*
+	-> rrel_key_sc_element: concept_path_length;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длина пути в графе равна числу ребер, входящих в этот путь] (* <- lang_ru;; *);;
+		-> [The length of a path in a graph is equal to the number of edges in the path] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о длине пути)] (* <- lang_ru;; *);
+		[Stat. (Path length theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_edge;
+		concept_path_length;
+		rrel_edge
+	};;
+*);;
+
 statement -> statement_of_path_equals_zero (*
 	-> rrel_key_sc_element: concept_path_length;;
 
@@ -45,10 +65,14 @@ statement -> statement_of_path_equals_zero (*
 sc_node_class ->
 	concept_path;
 	concept_edge;
+	concept_graph_path;
+	concept_edge;
+	concept_path_length;
 	concept_path;
 	concept_length_of_path;
 	concept_vertex;;
 
 sc_node_role_relation ->
+	rrel_edge;
 	rrel_edge;
 	rrel_vertex;;
