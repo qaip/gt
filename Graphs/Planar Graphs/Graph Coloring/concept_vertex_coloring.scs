@@ -31,25 +31,6 @@ definition -> definition_of_vertex_coloring (*
 	};;
 *);;
 
-statement -> statement_of_chromatic_number_property (*
-	-> rrel_key_sc_element: concept_vertex_coloring;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Хроматическое число графа не меньше его максимальной степени вершины] (* <- lang_ru;; *);;
-		-> [The chromatic number of a graph is not less than its maximum vertex degree] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Свойства хроматического числа)] (* <- lang_ru;; *);
-		[Stat. (Properties of chromatic number)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_chromatic_number;
-		concept_graph;
-		concept_vertex_degree
-	};;
-*);;
-
 statement -> statement_of_vertex_coloring_applications (*
 	-> rrel_key_sc_element: concept_vertex_coloring;;
 
@@ -72,9 +53,6 @@ statement -> statement_of_vertex_coloring_applications (*
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
-	concept_chromatic_number;
-	concept_graph;
-	concept_vertex_degree;
 	concept_register_allocation;
 	concept_scheduling;
 	concept_frequency_assignment;;
