@@ -1,7 +1,10 @@
 concept_binary_heap
 => nrel_main_idtf:
 	[бинарная куча] (* <- lang_ru;; *);
-	[binary heap] (* <- lang_en;; *);;
+	[binary heap] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[двоичная куча] (* <- lang_ru;; *);;
 
 definition -> definition_of_binary_heap (*
 	-> rrel_key_sc_element: concept_binary_heap;;
