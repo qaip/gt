@@ -1,7 +1,12 @@
 concept_hypergraph
 => nrel_main_idtf:
 	[гиперграф] (* <- lang_ru;; *);
-	[hypergraph] (* <- lang_en;; *);;
+	[hypergraph] (* <- lang_en;; *);
+
+=> nrel_subdividing: {
+	concept_directed_hypergraphs;
+	concept_undirected_hypergraphs
+};;
 
 definition -> definition_of_hypergraph (*
 	-> rrel_key_sc_element: concept_hypergraph;;
