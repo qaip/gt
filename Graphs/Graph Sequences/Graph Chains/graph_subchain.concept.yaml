@@ -1,0 +1,27 @@
+ru: подцепь графа
+en: graph subchain
+
+definition:
+  ru: Последовательность вершин в графе, являющаяся подмножеством другой цепи или цикла в графе
+  en: A sequence of vertices in a graph that is a subset of another chain or cycle in the graph
+  using:
+    concepts: |
+      vertex
+      chain
+      cycle
+      graph
+    rrels: |
+      vertex
+      chain
+      cycle
+      graph
+statement:
+  graph_traversal_theorem:
+    title:
+      ru: Теорема о обходе графа
+      en: Graph traversal theorem
+    ru: Существует несколько способов обхода графа, включая DFS и BFS
+    en: There are several ways to traverse a graph, including DFS and BFS
+    using:
+      concepts: |
+        graph

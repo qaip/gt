@@ -1,0 +1,13 @@
+ru: длина цепи
+en: chain length
+
+definition:
+  ru: Количество ребер в цепи
+  en: The number of edges in a chain
+  using:
+    concepts: |
+      edge
+      chain
+    rrels: |
+      edge
+      

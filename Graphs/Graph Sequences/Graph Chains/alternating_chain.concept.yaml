@@ -1,0 +1,32 @@
+ru: чередующаяся цепь
+en: alternating chain
+
+definition:
+  ru: Последовательность вершин в графе, в которой соседние вершины чередуются между различными подмножествами вершин
+  en: A sequence of vertices in a graph in which adjacent vertices alternate between different subsets of vertices
+  using:
+    concepts: |
+      vertex
+      graph
+      graph_sequence
+    rrels: |
+      vertex
+statement:
+  graph_coloring_theorem:
+    title:
+      ru: Теорема о раскраске графа
+      en: Graph coloring theorem
+    ru: В любом графе с четными циклами можно раскрасить вершины в два цвета
+    en: In any graph with even cycles, it is possible to color the vertices with two colors
+    using:
+      concepts: |
+        graph_coloring
+  graph_traversal_theorem:
+    title:
+      ru: Теорема о обходе графа
+      en: Graph traversal theorem
+    ru: Существует несколько способов обхода графа, включая DFS и BFS
+    en: There are several ways to traverse a graph, including DFS and BFS
+    using:
+      concepts: |
+        graph

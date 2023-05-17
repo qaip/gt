@@ -1,0 +1,13 @@
+ru: вес цепи
+en: chain weight
+
+definition:
+  ru: Сумма весов ребер в цепи
+  en: The sum of the weights of the edges in a chain
+  using:
+    concepts: |
+      edge_weight
+      edge
+      chain
+    rrels: |
+      edge
