@@ -45,6 +45,6 @@ statement:
         vertex
         edge
 
-subcalss:
+subclass:
   - dijkstra_algorithm
   - floyd_warshall_algorithm
