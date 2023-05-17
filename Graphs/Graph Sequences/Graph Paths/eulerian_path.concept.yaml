@@ -1,0 +1,42 @@
+ru: эйлеров путь | полуэйлеров путь
+en: Eulerian path | semi-Eulerian path
+
+definition:
+  ru: Путь, проходящий по каждому ребру графа ровно один раз
+  en: A path that passes through each edge of the graph exactly once
+  using:
+    concepts: |
+      graph_path
+      vertex
+      graph
+      edge
+    rrels: |
+      edge
+      vertex
+
+statement:
+  eulerian_path_exists:
+    title:
+      ru: Существование эйлерова пути
+      en: Existence of Eulerian path
+    ru: В связном графе существует эйлеров путь тогда и только тогда, когда степень каждой вершины чётна
+    en: In a connected graph, an Eulerian path exists if and only if the degree of each vertex is even
+    using:
+      concepts: |
+        eulerian_path
+        connected_graph
+        vertex_degree
+        graph_path
+
+  semi_eulerian_path_exists:
+    title:
+      ru: Существование полуэйлерова пути
+      en: Existence of semi-Eulerian path
+    ru: В связном графе существует полуэйлеров путь тогда и только тогда, когда ровно две вершины имеют нечётную степень
+    en: In a connected graph, a semi-Eulerian path exists if and only if exactly two vertices have odd degree
+    using:
+      concepts: |
+        eulerian_path
+        connected_graph
+        vertex_degree
+        graph_path

@@ -1,0 +1,64 @@
+ru: кратчайший путь | алгоритм Дейкстры | алгоритм Флойда-Уоршелла
+en: shortest path | Dijkstras algorithm | Floyd-Warshall algorithm
+
+definition:
+  ru: Путь в графе, имеющий наименьшую сумму весов рёбер
+  en: The path in a graph with the smallest sum of edge weights
+  using:
+    concepts: |
+      path_length
+      graph_path
+    rrels: |
+      edge_weight
+
+statement:
+  shortest_path_weight_theorem:
+    title:
+      ru: Теорема о кратчайшем взвешенном пути
+      en: Shortest weighted path theorem
+    ru: Алгоритм Дейкстры находит кратчайший путь во взвешенном графе
+    en: Dijkstras algorithm finds the shortest path in a weighted graph
+    using:
+      concepts: |
+        path_length
+        shortest_path
+
+  shortest_path_unweighted_theorem:
+    title:
+      ru: Теорема о кратчайшем невзвешенном пути
+      en: Shortest unweighted path theorem
+    ru: Алгоритм поиска в ширину находит кратчайший путь в невзвешенном графе
+    en: Breadth-first search algorithm finds the shortest path in an unweighted graph
+    using:
+      concepts: |
+        graph_path
+        shortest_path
+
+  floyd_warshall_algorithm:
+    title:
+      ru: Алгоритм Флойда-Уоршелла
+      en: Floyd-Warshall algorithm
+    ru: Алгоритм, находящий кратчайшие расстояния между всеми парами вершин в графе
+    en: An algorithm that finds the shortest distances between all pairs of vertices in a graph
+    using:
+      concepts: |
+        graph_path_weight
+        path_length
+        edge_weight
+
+  bellman_ford_algorithm:
+    title:
+      ru: Алгоритм Беллмана-Форда
+      en: Bellman-Ford algorithm
+    ru:
+      Алгоритм, который находит кратчайший путь во взвешенном графе с
+      отрицательными весами ребер
+    en:
+      An algorithm that finds the shortest path in a weighted graph with
+      negative edge weights
+    using:
+      concepts: |
+        path_length
+        shortest_path
+        edge_weight
+        

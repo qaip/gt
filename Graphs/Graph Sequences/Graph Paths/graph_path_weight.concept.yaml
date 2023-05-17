@@ -22,7 +22,6 @@ statement:
       concepts: |
         graph_path_weight
         shortest_path
-        dijkstra_algorithm
   bellman_ford_algorithm:
     title:
       ru: Алгоритм Беллмана-Форда

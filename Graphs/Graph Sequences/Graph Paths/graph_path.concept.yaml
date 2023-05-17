@@ -64,7 +64,6 @@ statement:
       concepts: |
         graph_path
         shortest_path
-        dijkstra_algorithm
   longest_path_theorem:
     title:
       ru: Теорема о самом длинном пути
@@ -130,6 +129,5 @@ subclass:
   - longest_path
   - hamiltonian_path
   - eulerian_path
-  - critical_path
-  - directed_path
-  - undirected_path
+  - path_length
+  - graph_path_weight
