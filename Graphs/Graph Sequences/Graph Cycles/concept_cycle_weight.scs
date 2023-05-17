@@ -1,0 +1,48 @@
+concept_cycle_weight
+=> nrel_main_idtf:
+	[вес цикла] (* <- lang_ru;; *);
+	[cycle weight] (* <- lang_en;; *);;
+
+definition -> definition_of_cycle_weight (*
+	-> rrel_key_sc_element: concept_cycle_weight;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суммарный вес ребер в цикле графа] (* <- lang_ru;; *);;
+		-> [The total weight of the edges in a cycle of a graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (вес цикла)] (* <- lang_ru;; *);
+		[Def. (cycle weight)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cycle;
+		concept_rib_weight
+	};;
+*);;
+
+statement -> statement_of_cycle_weight_minimum_theorem (*
+	-> rrel_key_sc_element: concept_cycle_weight;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальный вес цикла в графе является минимальным из весов циклов, проходящих через данный узел] (* <- lang_ru;; *);;
+		-> [The minimum weight of a cycle in a graph is the minimum weight among cycles passing through a given node] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о минимальном весе цикла)] (* <- lang_ru;; *);
+		[Stat. (Minimum cycle weight theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cycle;
+		concept_rib_weight;
+		concept_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_cycle;
+	concept_rib_weight;
+	concept_graph_cycle;
+	concept_rib_weight;
+	concept_vertex;;
