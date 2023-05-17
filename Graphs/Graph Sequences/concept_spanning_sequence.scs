@@ -1,7 +1,11 @@
 concept_spanning_sequence
 => nrel_main_idtf:
 	[остовный маршрут] (* <- lang_ru;; *);
-	[spanning sequence] (* <- lang_en;; *);;
+	[spanning sequence] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[охватывающий маршрут] (* <- lang_ru;; *);
+	[spanning route] (* <- lang_en;; *);;
 
 definition -> definition_of_spanning_sequence (*
 	-> rrel_key_sc_element: concept_spanning_sequence;;
@@ -18,16 +22,79 @@ definition -> definition_of_spanning_sequence (*
 	=> nrel_using_constants: {
 		concept_sequence;
 		concept_directed_graph;
+		concept_graph_sequence;
 		concept_vertex;
 		rrel_vertex
 	};;
 *);;
 
+statement -> statement_of_spanning_route_existence_theorem (*
+	-> rrel_key_sc_element: concept_spanning_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В связном графе всегда существует охватывающий маршрут] (* <- lang_ru;; *);;
+		-> [In a connected graph, there always exists a spanning route] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о существовании охватывающего маршрута)] (* <- lang_ru;; *);
+		[Stat. (Spanning route existence theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequence;
+		concept_connected_graph
+	};;
+*);;
+
+statement -> statement_of_spanning_route_uniqueness_theorem (*
+	-> rrel_key_sc_element: concept_spanning_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В связном графе охватывающий маршрут единственный] (* <- lang_ru;; *);;
+		-> [In a connected graph, the spanning route is unique] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о единственности охватывающего маршрута)] (* <- lang_ru;; *);
+		[Stat. (Spanning route uniqueness theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequence;
+		concept_connected_graph
+	};;
+*);;
+
+statement -> statement_of_minimum_spanning_tree_theorem (*
+	-> rrel_key_sc_element: concept_spanning_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное остовное дерево связного графа-это дерево, в котором сумма весов рёбер минимальна] (* <- lang_ru;; *);;
+		-> [The minimum spanning tree of a connected graph is a tree in which the sum of the weights of the edges is minimal] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о минимальном остовном дереве)] (* <- lang_ru;; *);
+		[Stat. (Minimum spanning tree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequence;
+		concept_spanning_tree;
+		concept_edge_weight
+	};;
+*);;
 
 sc_node_class ->
 	concept_sequence;
 	concept_directed_graph;
-	concept_vertex;;
+	concept_graph_sequence;
+	concept_vertex;
+	concept_graph_sequence;
+	concept_connected_graph;
+	concept_graph_sequence;
+	concept_connected_graph;
+	concept_graph_sequence;
+	concept_spanning_tree;
+	concept_edge_weight;;
 
 sc_node_role_relation ->
 	rrel_vertex;;
