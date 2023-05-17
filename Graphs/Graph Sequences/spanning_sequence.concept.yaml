@@ -1,5 +1,5 @@
-ru: остовный маршрут
-en: spanning sequence
+ru: остовный маршрут | охватывающий маршрут
+en: spanning sequence | spanning route
 
 definition:
   ru: Маршрут, содержащий все вершины орграфа
@@ -10,6 +10,39 @@ definition:
     concepts: |
       sequence
       directed_graph
+      graph_sequence
       vertex
     rrels: |
       vertex
+statement:
+  spanning_route_existence_theorem:
+    title:
+      ru: Теорема о существовании охватывающего маршрута
+      en: Spanning route existence theorem
+    ru: В связном графе всегда существует охватывающий маршрут
+    en: In a connected graph, there always exists a spanning route
+    using:
+      concepts: |
+        graph_sequence
+        connected_graph
+  spanning_route_uniqueness_theorem:
+    title:
+      ru: Теорема о единственности охватывающего маршрута
+      en: Spanning route uniqueness theorem
+    ru: В связном графе охватывающий маршрут единственный
+    en: In a connected graph, the spanning route is unique
+    using:
+      concepts: |
+        graph_sequence
+        connected_graph
+  minimum_spanning_tree_theorem:
+    title:
+      ru: Теорема о минимальном остовном дереве
+      en: Minimum spanning tree theorem
+    ru: Минимальное остовное дерево связного графа-это дерево, в котором сумма весов рёбер минимальна
+    en: The minimum spanning tree of a connected graph is a tree in which the sum of the weights of the edges is minimal
+    using:
+      concepts: |
+        graph_sequence
+        spanning_tree
+        edge_weight
