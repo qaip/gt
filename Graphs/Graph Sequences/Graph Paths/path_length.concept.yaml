@@ -15,6 +15,19 @@ definition:
     rrels: |
       edge
 statement:
+  path_length_theorem:
+    title:
+      ru: Теорема о длине пути
+      en: Path length theorem
+    ru: Длина пути в графе равна числу ребер, входящих в этот путь
+    en: The length of a path in a graph is equal to the number of edges in the path
+    using:
+      concepts: |
+        graph_path
+        edge
+        path_length
+      rrels: |
+        edge
   path_equals_zero:
     title:
       ru: Условие эквивалентности длины пути нулю
