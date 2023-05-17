@@ -2,13 +2,39 @@ ru: изометрический подграф
 en: isometric subgraph
 
 definition:
-  ru:
-    Подграф H графа G, у которого все расстояния внутри H
-    те же самые, что и в G
-  en:
-    Subgraph H of a graph G for which all distances inside
-    H are the same as in G
+  ru: Подграф, который сохраняет расстояния между вершинами исходного графа
+  en: A subgraph that preserves the distances between vertices of the original graph
   using:
     concepts: |
       graph
+      vertex
       subgraph
+    rrels: |
+      vertex
+statement:
+  isometric_embedding_theorem:
+    title:
+      ru: Теорема об изометрическом вложении
+      en: Isometric embedding theorem
+    ru:
+      Любой граф может быть изометрически вложен в евклидово пространство
+      достаточно большой размерности
+    en:
+      Every graph can be isometrically embedded in a sufficiently high
+      dimensional Euclidean space
+    using:
+      concepts: |
+        graph
+  isometric_subgraph_theorem:
+    title:
+      ru: Теорема об изометрическом подграфе
+      en: Isometric subgraph theorem
+    ru:
+      Любой граф имеет изометрический подграф максимального размера
+    en:
+      Every graph has an isometric subgraph of maximum size
+    using:
+      concepts: |
+        graph
+        subgraph
+        isometric_subgraph

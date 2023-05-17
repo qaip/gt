@@ -1,20 +1,62 @@
-ru: порожденный подграф
+ru: порожденный подграф | индуцированный подграф
 en: induced subgraph
 
 definition:
   ru:
-    Другой граф, образованный из подмножества вершин графа вместе со всеми
-    рёбрами, соединяющими пары вершин из этого подмножества называе порождённым
-    подграфом
+    - Другой граф, образованный из подмножества вершин графа вместе со всеми
+      рёбрами, соединяющими пары вершин из этого подмножества называе порождённым
+      подграфом
+    - Подграф, который содержит все вершины, которые присутствуют в исходном графе и все ребра между ними
   en:
-    Another graph formed from a subset of the graphs vertices together with all
-    edges connecting pairs of vertices from this subset is called a generated
-    subgraph
+    - Another graph formed from a subset of the graphs vertices together with all
+      edges connecting pairs of vertices from this subset is called a generated
+      subgraph
+    - A subgraph that contains all the vertices present in the original graph and all the edges between them
   using:
     concepts: |
       subgraph
+      graph
       vertex
       edge
     rrels: |
       vertex
       edge
+
+statement:
+  induced_subgraph_theorem:
+    title:
+      ru: Теорема об индуцированном подграфе
+      en: Induced subgraph theorem
+    ru:
+      Любой граф имеет индуцированный подграф максимального размера
+    en:
+      Every graph has an induced subgraph of maximum size
+    using:
+      concepts: |
+        graph
+        subgraph
+        induced_subgraph
+        vertex
+        edge
+      rrels: | 
+        edge
+        vertex
+  cliques_theorem:
+    title:
+      ru: Теорема о кликах
+      en: Cliques theorem
+    ru:
+      Клика в графе является полным подграфом, каждая вершина которого соединена с каждой другой вершиной
+    en:
+      A clique in a graph is a complete subgraph, where every vertex is connected to every other vertex
+    using:
+      concepts: |
+        graph
+        subgraph
+        complete_subgraph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+      
