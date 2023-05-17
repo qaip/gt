@@ -1,0 +1,31 @@
+ru: цикл графа
+en: graph cycle
+
+definition:
+  ru: Замкнутый путь, проходящий по каждому ребру графа ровно один раз
+  en: A closed path that passes through each edge of the graph exactly once
+  using:
+    concepts: |
+      graph_sequence
+      vertex
+      graph
+      edge
+    rrels: |
+      vertex
+      edge
+
+statement:
+  eulerian_cycle_exists:
+    title:
+      ru: Существование эйлерова цикла
+      en: Existence of Eulerian cycle
+    ru: В связном графе существует эйлеров цикл тогда и только тогда, когда степень каждой вершины чётна
+    en: In a connected graph, an Eulerian cycle exists if and only if the degree of each vertex is even
+    using:
+      concepts: |
+        connected_graph
+        vertex_degree
+        graph_path
+        vertex
+      rrels: |
+        vertex
