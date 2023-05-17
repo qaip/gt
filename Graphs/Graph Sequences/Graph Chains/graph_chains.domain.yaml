@@ -12,6 +12,7 @@ concepts: |
   alternating_chain
   graph_subchain
   chain_weight
+  chain_length
 
 nrels: |
   arcs_adjacency

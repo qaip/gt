@@ -1,0 +1,44 @@
+ru: графовая цепь
+en: graph chain
+
+definition:
+  ru: Последовательность вершин графа, такая что каждые две соседние вершины соединены ребром
+  en: A sequence of vertices in a graph such that every two adjacent vertices are connected by an edge
+  using:
+    concepts: |
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+statement:
+  eulerian_chain_theorem:
+    title:
+      ru: Теорема об эйлеровой цепи
+      en: Eulerian chain theorem
+    ru: Граф содержит эйлерову цепь тогда и только тогда, когда все его вершины имеют четную степень
+    en: A graph contains an Eulerian chain if and only if every vertex has even degree
+    using:
+      concepts: |
+        eulerian_chain
+        vertex_degree
+  hamiltonian_chain_theorem:
+    title:
+      ru: Теорема о гамильтоновой цепи
+      en: Hamiltonian chain theorem
+    ru: Граф содержит гамильтонову цепь тогда и только тогда, когда он связный и любое
+      подмножество вершин суммарной степенью не менее чем количество вершин в этом подмножестве минус один
+    en: A graph contains a Hamiltonian chain if and only if it is connected and any
+      subset of vertices has a total degree of at least one less than the number of
+      vertices in the subset
+    using:
+      concepts: |
+        hamiltonian_chain
+        connected_graph
+subclass:
+  - simple_graph_chain
+  - hamiltonian_chain
+  - alternating_chain
+  - graph_subchain
+  - chain_weight
+  - chain_length
