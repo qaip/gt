@@ -9,8 +9,4 @@ max: |
 concepts: |
   breadth_first_search
   depth_first_search
-<<<<<<< Updated upstream
   subtask_level
-=======
-  tree_traversal
->>>>>>> Stashed changes
