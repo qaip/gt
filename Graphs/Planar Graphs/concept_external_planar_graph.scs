@@ -1,6 +1,9 @@
 concept_external_planar_graph
 => nrel_main_idtf:
-	[внешне планарный граф] (* <- lang_ru;; *);
+	[внешнепланарный граф] (* <- lang_ru;; *);
+	[outerplanar graph] (* <- lang_en;; *);
+
+=> nrel_idtf:
 	[external planar graph] (* <- lang_en;; *);;
 
 definition -> definition_of_external_planar_graph (*
@@ -12,8 +15,8 @@ definition -> definition_of_external_planar_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (внешне планарный граф)] (* <- lang_ru;; *);
-		[Def. (external planar graph)] (* <- lang_en;; *);;
+		[Опр. (внешнепланарный граф)] (* <- lang_ru;; *);
+		[Def. (outerplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_plane;
@@ -25,7 +28,7 @@ definition -> definition_of_external_planar_graph (*
 	};;
 *);;
 
-statement -> statement_of_euler_formula (*
+statement -> statement_of_euler_formula_external_planar_graph (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -43,7 +46,7 @@ statement -> statement_of_euler_formula (*
 	};;
 *);;
 
-statement -> statement_of_embedding_existence (*
+statement -> statement_of_embedding_existence_external_planar_graph (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
