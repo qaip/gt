@@ -1,5 +1,5 @@
-ru: внешне планарный граф
-en: external planar graph
+ru: внешнепланарный граф
+en: outerplanar graph | external planar graph
 
 definition:
   ru:
@@ -19,7 +19,7 @@ definition:
       edge
 
 statement:
-  euler_formula:
+  euler_formula_external_planar_graph:
     title:
       ru: Формула Эйлера для внешне планарных графов
       en: Eulers formula for external planar graphs
@@ -31,7 +31,7 @@ statement:
       nrels: |
         face
 
-  embedding_existence:
+  embedding_existence_external_planar_graph:
     title:
       ru: Существование внешнего представления
       en: Existence of an external representation
