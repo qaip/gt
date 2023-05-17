@@ -1,0 +1,31 @@
+concept_chain_length
+=> nrel_main_idtf:
+	[длина цепи] (* <- lang_ru;; *);
+	[chain length] (* <- lang_en;; *);;
+
+definition -> definition_of_chain_length (*
+	-> rrel_key_sc_element: concept_chain_length;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Количество ребер в цепи] (* <- lang_ru;; *);;
+		-> [The number of edges in a chain] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (длина цепи)] (* <- lang_ru;; *);
+		[Def. (chain length)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_chain;
+		rrel_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_edge;
+	concept_chain;;
+
+sc_node_role_relation ->
+	rrel_edge;;

@@ -1,0 +1,58 @@
+concept_graph_subchain
+=> nrel_main_idtf:
+	[подцепь графа] (* <- lang_ru;; *);
+	[graph subchain] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_subchain (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Последовательность вершин в графе, являющаяся подмножеством другой цепи или цикла в графе] (* <- lang_ru;; *);;
+		-> [A sequence of vertices in a graph that is a subset of another chain or cycle in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (подцепь графа)] (* <- lang_ru;; *);
+		[Def. (graph subchain)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_chain;
+		concept_cycle;
+		concept_graph;
+		rrel_vertex;
+		rrel_chain;
+		rrel_cycle;
+		rrel_graph
+	};;
+*);;
+
+statement -> statement_of_graph_traversal_theorem (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Существует несколько способов обхода графа, включая DFS и BFS] (* <- lang_ru;; *);;
+		-> [There are several ways to traverse a graph, including DFS and BFS] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о обходе графа)] (* <- lang_ru;; *);
+		[Stat. (Graph traversal theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_chain;
+	concept_cycle;
+	concept_graph;
+	concept_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_chain;
+	rrel_cycle;
+	rrel_graph;;
