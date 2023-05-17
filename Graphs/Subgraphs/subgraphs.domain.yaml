@@ -11,6 +11,7 @@ concepts: |
   isometric_subgraph
   induced_subgraph
   tightened_subgraph
+  complete_subgraph
 
 nrels: |
   induced_subgraph
