@@ -20,7 +20,7 @@ definition -> definition_of_polygonal_map_quadtree (*
 	};;
 *);;
 
-statement -> statement_of_theorem_quadtree (*
+statement -> statement_of_quadtree_polygon_property (*
 	-> rrel_key_sc_element: concept_polygonal_map_quadtree;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -29,14 +29,18 @@ statement -> statement_of_theorem_quadtree (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема)] (* <- lang_ru;; *);
-		[Stat. (Theorem)] (* <- lang_en;; *);;
+		[Утв. (Свойство многоугольников в квадродереве)] (* <- lang_ru;; *);
+		[Stat. (A property of polygons in a quadtree)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_quadtree
+		nrel_polygon;
+		nrel_representation
 	};;
 *);;
 
 sc_node_class ->
-	concept_quadtree;
 	concept_quadtree;;
+
+sc_node_norole_relation ->
+	nrel_polygon;
+	nrel_representation;;

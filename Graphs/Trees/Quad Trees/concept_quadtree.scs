@@ -23,25 +23,7 @@ definition -> definition_of_quadtree (*
 	};;
 *);;
 
-statement -> statement_of_theorem_quadtree (*
-	-> rrel_key_sc_element: concept_quadtree;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Каждый многоугольник имеет единственное представление в квадродереве многоугольников] (* <- lang_ru;; *);;
-		-> [Every polygon has a unique representation in a polygonal map quadtree] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема)] (* <- lang_ru;; *);
-		[Stat. (Theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		nrel_polygon;
-		nrel_representation
-	};;
-*);;
-
-statement -> statement_of_statement_spatial_partitioning (*
+statement -> statement_of_quadtree_spatial_partitioning (*
 	-> rrel_key_sc_element: concept_quadtree;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -50,8 +32,8 @@ statement -> statement_of_statement_spatial_partitioning (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Пространственное разбиение)] (* <- lang_ru;; *);
-		[Stat. (Spatial partitioning)] (* <- lang_en;; *);;
+		[Утв. (Пространственное разбиение квадродеревьев)] (* <- lang_ru;; *);
+		[Stat. (Spatial partitioning of quadtrees)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_space_division;
@@ -61,7 +43,7 @@ statement -> statement_of_statement_spatial_partitioning (*
 	};;
 *);;
 
-statement -> statement_of_statement_compression (*
+statement -> statement_of_quadtree_compression (*
 	-> rrel_key_sc_element: concept_quadtree;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -70,8 +52,8 @@ statement -> statement_of_statement_compression (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Сжатие данных)] (* <- lang_ru;; *);
-		[Stat. (Data compression)] (* <- lang_en;; *);;
+		[Утв. (Сжатие данных с помощью квадродеревьев)] (* <- lang_ru;; *);
+		[Stat. (Data compression using quadtrees)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_image;
@@ -80,7 +62,7 @@ statement -> statement_of_statement_compression (*
 	};;
 *);;
 
-statement -> statement_of_statement_fractal (*
+statement -> statement_of_quadtree_fractal (*
 	-> rrel_key_sc_element: concept_quadtree;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -89,8 +71,8 @@ statement -> statement_of_statement_fractal (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Фракталы)] (* <- lang_ru;; *);
-		[Stat. (Fractals)] (* <- lang_en;; *);;
+		[Утв. (Фракталы и квадродеревья)] (* <- lang_ru;; *);
+		[Stat. (Fractals and quadtrees)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_fractals;
@@ -98,7 +80,7 @@ statement -> statement_of_statement_fractal (*
 	};;
 *);;
 
-statement -> statement_of_statement_nearest_neighbor (*
+statement -> statement_of_quadtree_nearest_neighbor (*
 	-> rrel_key_sc_element: concept_quadtree;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -107,8 +89,8 @@ statement -> statement_of_statement_nearest_neighbor (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Ближайший сосед)] (* <- lang_ru;; *);
-		[Stat. (Nearest neighbor)] (* <- lang_en;; *);;
+		[Утв. (Решение задачи ближайшего соседа с помощью квадродеревьев)] (* <- lang_ru;; *);
+		[Stat. (Solving the nearest neighbor problem using quadtrees)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_nearest_neighbor;
@@ -132,8 +114,6 @@ sc_node_class ->
 	concept_space_division;;
 
 sc_node_norole_relation ->
-	nrel_polygon;
-	nrel_representation;
 	nrel_efficiency;;
 
 sc_node_role_relation ->
