@@ -1,0 +1,51 @@
+ru: обход в глубину
+en: depth traversal | depth-first traversal
+
+definition:
+  ru:
+    Обходом в глубину называется обход графа, при котором переход к следующей
+    вершине осуществляется только после обхода всех смежных с рассматриваемой
+    вершин
+  en:
+    Depth-first traversal is a graph traversal in which the transition to the
+    next vertex is carried out only after traversing all vertices adjacent to
+    the considered vertex
+  using:
+    concepts: |
+      graph_traversal
+      vertex
+    rrels: |
+      vertex
+    nrels: |
+      vertex_adjacency
+
+statement:
+  statement_about_depth_search_division:
+    title:
+      ru: О разделении обходов в глубину
+      en: About depth search division
+    ru:
+      Среди видов обходов в глубину можно выделить такие, как обход с
+      предпросмотром, обход с постпросмотром, обход с обратным предпросмотром,
+      обход с обратным постпросмотром, упорядоченный обход и обратный
+      упорядоченный обход
+    en:
+      Among the types of depth traversals, one can distinguish such as pre-order
+      traversal, post-order traversal, reverse pre-order traversal, reverse
+      post-order traversal, in-order traversal and reverse in-order traversal
+    using:
+      concepts: |
+        in_order_traversal
+        pre_oreder_traversal
+        post_order_traversal
+        reverse_in_order_traversal
+        reverse_pre_order_traversal
+        reverse_post_order_traversal
+
+subclass:
+  - in_order_traversal
+  - pre_oreder_traversal
+  - post_order_traversal
+  - reverse_in_order_traversal
+  - reverse_pre_order_traversal
+  - reverse_post_order_traversal
