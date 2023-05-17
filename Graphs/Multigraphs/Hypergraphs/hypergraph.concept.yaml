@@ -32,7 +32,7 @@ statement:
       rrels: |
         vertex
 
-subcalss:
+subclass:
   - |
     directed_hypergraphs
     undirected_hypergraphs
