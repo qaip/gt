@@ -1,0 +1,25 @@
+ru: базовый цикл
+en: basic cycle
+
+definition:
+  ru: Цикл, не содержащий повторяющихся вершин кроме начальной и конечной
+  en: A cycle that does not contain repeating vertices except for the first and last vertices
+  using:
+    concepts: |
+      graph_cycle
+      vertex
+      graph
+
+statement:
+  basic_cycle_exists:
+    title:
+      ru: Существование базового цикла
+      en: Existence of basic cycle
+    ru: В связном графе существует базовый цикл тогда и только тогда, когда граф не является лесом
+    en: A connected graph has a basic cycle if and only if it is not a forest
+    using:
+      concepts: |
+        connected_graph
+        graph_cycle
+        vertex
+        directed_forest
