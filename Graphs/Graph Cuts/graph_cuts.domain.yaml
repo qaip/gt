@@ -18,7 +18,4 @@ concepts: |
   minimum_graph_cut
   graph_cut_space
   s_t_cut
-  bond
-  network_flow
-  max_flow_min_cut_theorem
-  graph_sparsest_cuts
+  sparsest_cuts
