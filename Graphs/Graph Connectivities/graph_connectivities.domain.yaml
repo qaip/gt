@@ -21,3 +21,4 @@ nrels: |
   weakly_connected_component
   strongly_connected_component
   graph_block
+  connected_component
