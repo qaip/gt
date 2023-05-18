@@ -1,0 +1,88 @@
+ru: задача максимального разреза графа
+en: maximum graph cut problem
+definition:
+  ru:
+    Задача максимального разреза графа заключается в поиске такого разбиения
+    вершин графа на две непересекающиеся части, что суммарное значение весов
+    ребер, идущих между вершинами из разных частей, максимально
+  en:
+    The maximum graph cut problem consists in finding a partition of the
+    vertices in a graph into two non-overlapping parts such that the sum of the
+    weights of the edges connecting vertices in different parts is maximized
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      partition
+statement:
+  max_cut_usage:
+    title:
+      ru: использование задачи максимального разреза графа
+      en: usage of maximum graph cut problem
+    ru:
+      Проблема максимального разреза графа используется в задачах оптимизации и
+      теории графов, в том числе для решения задачи минимального пути и
+      кластеризации данных
+    en:
+      The maximum graph cut problem is used in optimization problems and graph
+      theory, including solving the problem of minimum path and data clustering
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        partition
+  max_cut_algorithms:
+    title:
+      ru: алгоритмы задачи максимального разреза графа
+      en: algorithms for maximum graph cut problem
+    ru:
+      Существует несколько алгоритмов для решения задачи максимального разреза
+      графа, включая алгоритм Каргера-Карпа и алгоритм Фидук-Эдмондса, которые
+      находят максимальный разрез графа за полиномиальное время
+    en:
+      There are several algorithms for solving the maximum graph cut problem,
+      including the Karger-Karp and Fiduccia-Mattheyses algorithms, which find
+      the maximum graph cut in polynomial time
+    using:
+      concepts: |
+        algorithm
+        karger_karp_algorithm
+        fiduccia_mattheyses_algorithm
+  max_cut_applications:
+    title:
+      ru: приложения задачи максимального разреза графа
+      en: applications of maximum graph cut problem
+    ru:
+      Задача максимального разреза графа используется в различных областях,
+      таких как анализ социальных сетей и машинное обучение, для кластеризации
+      данных и выделения сообществ
+    en:
+      The maximum graph cut problem is used in various fields such as social
+      network analysis and machine learning for data clustering and community
+      detection
+    using:
+      concepts: |
+        social_network_analysis
+        machine_learning
+        data_clustering
+        community_detection
+  max_cut_complexity:
+    title:
+      ru: сложность проблемы максимального разреза графа
+      en: complexity of maximum graph cut problem
+    ru:
+      Задача максимального разреза графа является NP-полной, что означает, что в
+      наихудшем случае время, необходимое для решения этой задачи, растет
+      экспоненциально с размером входных данных
+    en:
+      The maximum graph cut problem is NP-complete, which means that in the
+      worst case, the time required to solve this problem grows exponentially
+      with the size of the input data
+    using:
+      concepts: |
+        np_complete
+        computational_complexity_theory
+        graph
+        graph_cut
