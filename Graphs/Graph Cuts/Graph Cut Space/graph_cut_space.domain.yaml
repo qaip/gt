@@ -10,7 +10,5 @@ concepts: |
   vector_space
   orthogonal_complement
   gomory_hu_tree
-  minimum_cut
-
-nrels: |
-  graph_cut
+  maximum_graph_cut
+  minimum_graph_cut
