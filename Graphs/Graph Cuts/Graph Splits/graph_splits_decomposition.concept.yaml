@@ -1,0 +1,14 @@
+ru: декомпозиция разбиения графа
+en: graph splits decomposition
+definition:
+  ru:
+    Разбиение графа на подграфы, каждый из которых является графом, чтобы
+    получить новые графы, которые являются разбиением исходного графа
+  en:
+    A partition of a graph into subgraphs, each of which is a graph, to obtain
+    new graphs that form a decomposition of the original graph
+  using:
+    concepts: |
+      graph
+      subgraph
+      partition
