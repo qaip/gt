@@ -1,0 +1,12 @@
+ru: разбиение графа
+en: graph split
+definition:
+  ru:
+    Разбиением графа называют разрез, множество разрезов которого образует
+    полный двудольный граф
+  en: A split of a graph is a cut whose cut-set forms a complete bipartite graph
+  using:
+    concepts: |
+      graph
+      graph_cut
+      bipartite_graph
