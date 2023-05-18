@@ -16,6 +16,7 @@ concepts: |
   aa_tree
   avl_tree
   b_tree
+  balanced_tree
   bicentre_tree
   bichromatic_graph
   binomial_tree
