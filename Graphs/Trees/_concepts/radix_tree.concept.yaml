@@ -1,0 +1,21 @@
+ ru: радикс-дерево
+ en: radix tree
+ definition:
+   ru: Структура данных, используемая для хранения и поиска данных с ключами типа
+       строка
+   en: Data structure used for storing and searching data with string keys
+   using:
+     concepts: |
+       tree
+ statement:
+   radix_tree_search_theorem:
+     title:
+       ru: Теорема о поиске в радикс-дереве
+       en: Radix tree search theorem
+     ru: Поиск в радикс-дереве выполняется во времени, линейном от длины ключа
+     en: Searching in a radix tree takes time linear with respect to the length of the key
+     using:
+       concepts: |
+         radix_tree
+         tree
+         
