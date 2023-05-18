@@ -12,3 +12,19 @@ definition:
         graph_path
       rrels: |
         vertex
+statement:
+  theorem_height_leaf:
+    title:
+      ru: Теорема о высоте листьев
+      en: Leaf height theorem
+    ru: Высота каждого листа в дереве равна высоте корня минус один
+    en:
+      The height of each leaf in a tree is equal to the height of the root minus
+      one
+    using:
+      concepts: |
+        tree_height
+        vertex
+        tree_root
+      rrels: |
+        vertex
