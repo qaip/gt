@@ -1,0 +1,23 @@
+ru: векторное пространство
+en: vector space
+definition:
+  ru:
+    Векторным пространством является множество элементов, которые называются
+    векторами, с заданными на них операциями сложения между собой и умножения на
+    число в поле скаляров. Векторы и скаляры могут принадлежать различным
+    алгебраическим структурам, в зависимости от того, какое поле используется в
+    качестве скаляров
+  en:
+    A vector space is a set of elements called vectors, along with operations of
+    addition between vectors and multiplication of vectors by scalars, usually
+    the real numbers. Vectors and scalars may belong to various algebraic
+    structures, depending on what field is used for scalars
+  using:
+    concepts: |
+      field
+    nrels: |
+      element
+      vector
+      scalar
+      addition
+      multiplication

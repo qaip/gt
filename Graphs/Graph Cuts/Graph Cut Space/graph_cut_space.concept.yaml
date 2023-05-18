@@ -1,0 +1,18 @@
+ru: пространство разрезов графа
+en: graph cut space
+definition:
+  ru:
+    Пространством сечения графа называют линейное подпространство пространства
+    ребер, состоящее из всех векторов, ортогональных пространству циклов. В
+    качестве альтернативы его можно определить как набор всех характеристических
+    векторов наборов разрезов графа
+  en:
+    The cut space of a graph is a linear subspace of the edge space that
+    consists of all vectors that are orthogonal to the cycle space.
+    Alternatively, it can be defined as the set of all characteristic vectors of
+    cut-sets of the graph
+  using:
+    concepts: |
+      vector_space
+      graph
+      graph_cuts

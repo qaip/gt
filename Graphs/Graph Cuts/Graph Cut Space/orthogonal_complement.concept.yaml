@@ -1,0 +1,21 @@
+ru: ортогональное дополнение
+en: orthogonal complement
+definition:
+  ru:
+    Пусть V является линейным пространством над полем F, W являются его
+    линейными подпространствами. Ортогональным дополнением подпространства W
+    называется множество всех векторов из V, ортогональных каждому вектору из W
+  en:
+    Let V be a vector space over a field F, and let W be a subspace of V. The
+    orthogonal complement of W is the set of all vectors in V that are
+    orthogonal to every vector in W
+  using:
+    concepts: |
+      linear_space
+      field
+    rrels: |
+      linear_space
+      field
+      vector
+      subspace
+      orthogonal
