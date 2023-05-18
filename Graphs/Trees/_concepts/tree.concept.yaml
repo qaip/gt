@@ -225,7 +225,7 @@ statement:
 subclass:
   - complete_binary_tree
   - degenerate_binary_tree
-  - balanced_binary_tree
+  - avl_tree
   - b_tree
   - binary_search_tree
   - binary_sorting_tree

@@ -1,0 +1,56 @@
+ru: два-три дерево
+en: two-three tree
+
+definition:
+  ru:
+    Два-три дерево является одной из разновидностей б-деревьев, каждая вершина
+    которого соответствует одному числу и содержит два потомка или соответствует
+    двум числам и содержит три потомка
+  en:
+    A two-three tree is one of the varieties of b-trees, each vertex of which
+    corresponds to one number and contains two descendant, or corresponds to two
+    numbers and contains three descendant
+  using:
+    concepts: |
+      b_tree
+      vertex
+    rrels: |
+      vertex
+    nrels: |
+      descendant
+
+statement:
+  statement_about_two_three_tree:
+    title:
+      ru: Утверждение о два-три дереве
+      en: Statement about two three tree
+    ru:
+      Если вершина два-три дерева соответствует одному числу, то должно
+      выполняться равенство П меньше А меньше К, где П-число, которому
+      соответствует левый потомок вершины, А-число, которому соответствует
+      вершина, К-число, которому соответствует правый потомок вершины. Если
+      вершина два-три дерева соответствует двум числам, то должно выполняться
+      равенство П меньше А меньше Р меньше Б меньше К, где П-число, которому
+      соответствует левый потомок вершины, А-первое число, которому
+      соответствует вершина, Р-число, которому соответствует центральный потомок
+      вершины, Б-второе число, которому соответствует вершина, К-число, которому
+      соответствует правый потомок вершины
+    en:
+      If a vertex of two or three trees corresponds to one number, then the
+      equality P less A less K must be satisfied, where P is the number to which
+      the left descendant of the vertex corresponds, A is the number to which
+      the vertex corresponds, K is the number to which the right child of the
+      vertex corresponds. If a vertex of two or three trees corresponds to two
+      numbers, then the equality P less A less R less B less K, where P is the
+      number that corresponds to the left descendant of the vertex, A is the
+      first number that the vertex corresponds to, R is the number that
+      corresponds to the central child of the vertex, B is the second number to
+      which the vertex corresponds, K is the number to which the right child of
+      the vertex corresponds
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        tree_descendant
+      rrels: |
+        vertex

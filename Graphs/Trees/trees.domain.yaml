@@ -15,9 +15,7 @@ concepts: |
   two_three_tree
   aa_tree
   avl_tree
-  b_plus_tree
   b_tree
-  balanced_tree
   bicentre_tree
   bichromatic_graph
   binomial_tree
@@ -29,7 +27,6 @@ concepts: |
   decision_tree
   fenwick_tree
   fibonacci_tree
-  forest
   growing_tree
   input_tree
   irreducible_tree
@@ -44,7 +41,6 @@ concepts: |
   ordered_tree
   perfectly_balanced_tree
   polytree
-  polyforest
   r_tree
   radix_tree
   range_maximum_tree
@@ -67,4 +63,3 @@ concepts: |
   bipartite_graph
   hypertree
   multitree
-  pseudoforest
