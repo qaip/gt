@@ -1,0 +1,13 @@
+ru: радиус графа
+en: graph radius
+
+definition:
+  ru: Минимальный эксцентриситет вершины графа
+  en: The minimum eccentricity of a vertex in the graph
+  using:
+    concepts: |
+      vertex
+      graph
+      eccentricity
+    rrels: |
+      vertex

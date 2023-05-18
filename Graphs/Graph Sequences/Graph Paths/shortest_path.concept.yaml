@@ -1,5 +1,5 @@
-ru: кратчайший путь | алгоритм Дейкстры | алгоритм Флойда-Уоршелла
-en: shortest path | Dijkstras algorithm | Floyd-Warshall algorithm
+ru: кратчайший путь
+en: shortest path
 
 definition:
   ru: Путь в графе, имеющий наименьшую сумму весов рёбер

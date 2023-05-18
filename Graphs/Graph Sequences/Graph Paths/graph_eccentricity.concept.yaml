@@ -1,0 +1,52 @@
+ru: эксцентриситет вершины
+en: vertex eccentricity
+
+definition:
+  ru: наибольшее расстояние между вершиной и всеми остальными вершинами графа
+  en: the greatest distance between a vertex and all other vertices in the graph
+  using:
+    concepts: |
+      vertex
+      graph
+      graph_diameter
+      graph_radius
+      path_length
+    rrels: |
+      vertex
+statement:
+  eccentricity_radius_diameter_theorem:
+    title:
+      ru: Теорема о связи эксцентриситета радиуса и диаметра графа
+      en: Theorem on the relationship between eccentricity radius and diameter of a graph
+    ru: Эксцентриситет вершины графа не превосходит радиуса графа, который в свою очередь не превосходит диаметра графа
+    en: The eccentricity of a vertex in a graph does not exceed the radius of the graph, which in turn does not exceed the diameter of the graph
+    using:
+      concepts: |
+        vertex_eccentricity
+        graph_radius
+        graph_diameter
+        path_length
+
+  eccentricity_center_theorem:
+    title:
+      ru: Теорема о центральной вершине
+      en: Central vertex theorem
+    ru: Центральная вершина графа имеет минимальный эксцентриситет
+    en: The central vertex of a graph has the minimum eccentricity
+    using:
+      concepts: |
+        vertex_eccentricity
+        graph_path
+        graph_length
+
+  eccentricity_diameter_theorem:
+    title:
+      ru: Теорема о эксцентриситете диаметральных вершин
+      en: Theorem on the eccentricity of diametrical vertices
+    ru: Эксцентриситет каждой диаметральной вершины графа равен его диаметру
+    en: The eccentricity of each diametrical vertex of a graph is equal to its diameter
+    using:
+      concepts: |
+        vertex_eccentricity
+        graph_diameter
+        graph_length
