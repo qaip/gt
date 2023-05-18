@@ -28,7 +28,6 @@ concepts: |
   fenwick_tree
   fibonacci_tree
   growing_tree
-  input_tree
   irreducible_tree
   justified_tree
   k_d_tree
@@ -37,16 +36,14 @@ concepts: |
   minimum_spanning_tree
   n_ary_tree
   octree
-  output_tree
   ordered_tree
   perfectly_balanced_tree
   polytree
   r_tree
   radix_tree
   range_maximum_tree
-  range_sum_query
   red_black_tree
-  region_quadtree
+  quadtree
   rooted_tree
   segment_tree
   self_balancing_search_tree
@@ -54,7 +51,6 @@ concepts: |
   spanning_tree
   star_tree
   suffix_tree
-  t_tree
   ternary_search_tree
   trie
   undirected_tree
@@ -63,3 +59,16 @@ concepts: |
   bipartite_graph
   hypertree
   multitree
+  subtree
+  leaf
+  tree_depth
+  tree_root
+  tree_height
+
+rrels: |
+  leaf
+  tree_root
+
+nrels: |
+  tree_descendant
+  tree_parent

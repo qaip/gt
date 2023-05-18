@@ -1,0 +1,12 @@
+ru: неориентированное дерево
+en: undirected tree
+
+definition:
+  ru: Дерево, которое не имеет направленных ребер
+  en: A tree that has no directed edges
+  using:
+    concepts: |
+      tree
+      edge
+    rrels: |
+      edge

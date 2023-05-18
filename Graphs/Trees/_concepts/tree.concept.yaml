@@ -223,15 +223,51 @@ statement:
         post_order_tree_traversal
 
 subclass:
-  - complete_binary_tree
-  - degenerate_binary_tree
+  - two_three_tree
+  - aa_tree
   - avl_tree
   - b_tree
-  - binary_search_tree
-  - binary_sorting_tree
-  - binary_tree
+  - bicentre_tree
+  - bichromatic_graph
   - binomial_tree
   - brother_tree
   - bsp_tree
+  - cartesian_tree
+  - cover_tree
+  - dancing_tree
+  - decision_tree
+  - fenwick_tree
+  - fibonacci_tree
+  - growing_tree
+  - irreducible_tree
+  - justified_tree
+  - k_d_tree
+  - left_linear_tree
   - matrix_tree
+  - minimum_spanning_tree
+  - n_ary_tree
+  - octree
+  - ordered_tree
+  - perfectly_balanced_tree
+  - polytree
+  - r_tree
+  - radix_tree
+  - range_maximum_tree
+  - red_black_tree
+  - quadtree
+  - rooted_tree
+  - segment_tree
+  - self_balancing_search_tree
+  - sorting_tree
+  - spanning_tree
+  - star_tree
+  - suffix_tree
+  - ternary_search_tree
+  - trie
+  - undirected_tree
+  - van_emde_boas_tree
   - vantage_point_tree
+  - bipartite_graph
+  - hypertree
+  - multitree
+  - subtree
