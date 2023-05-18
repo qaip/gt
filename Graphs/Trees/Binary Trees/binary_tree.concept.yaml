@@ -1,0 +1,40 @@
+ru: бинарное дерево
+en: binary tree
+definition:
+  ru:
+    Бинарным деревом является это иерархическая структура данных, в которой
+    каждый узел имеет не более двух потомков, и которая обычно используется для
+    хранения данных в виде дерева, со связанными друг с другом узлами
+  en:
+    A binary tree is a hierarchical data structure in which each node has no
+    more than two children, and which is usually used to store data in the form
+    of a tree, with interconnected nodes
+  using:
+    concepts: |
+      vertex
+      left_child
+      right_child
+      subtree
+    rrels: |
+      vertex
+statement:
+  bt_representation:
+    title:
+      ru: изображение бинарного дерева
+      en: bt representation
+    ru:
+      Бинарное дерево удобно изображать в виде рисунка, состоящего из узлов и
+      связей между ними. Каждый узел может иметь не более двух потомков, и
+      каждый потомок находится либо слева, либо справа от родительского узла
+    en:
+      A binary tree can be represented as a drawing consisting of nodes and
+      links between them. Each node can have no more than two children, and each
+      child is located either to the left or to the right of the parent node
+    using:
+      concepts: |
+        vertex
+        left_child
+        right_child
+        subtree
+      rrels: |
+        vertex
