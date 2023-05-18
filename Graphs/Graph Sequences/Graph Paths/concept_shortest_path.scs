@@ -1,13 +1,7 @@
 concept_shortest_path
 => nrel_main_idtf:
 	[кратчайший путь] (* <- lang_ru;; *);
-	[shortest path] (* <- lang_en;; *);
-
-=> nrel_idtf:
-	[алгоритм Дейкстры] (* <- lang_ru;; *);
-	[алгоритм Флойда-Уоршелла] (* <- lang_ru;; *);
-	[Dijkstras algorithm] (* <- lang_en;; *);
-	[Floyd-Warshall algorithm] (* <- lang_en;; *);;
+	[shortest path] (* <- lang_en;; *);;
 
 definition -> definition_of_shortest_path (*
 	-> rrel_key_sc_element: concept_shortest_path;;

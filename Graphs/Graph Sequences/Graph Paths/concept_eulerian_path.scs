@@ -1,7 +1,7 @@
 concept_eulerian_path
 => nrel_main_idtf:
 	[эйлеров путь] (* <- lang_ru;; *);
-	[Eulerian path] (* <- lang_en;; *);
+	[eulerian path] (* <- lang_en;; *);
 
 => nrel_idtf:
 	[полуэйлеров путь] (* <- lang_ru;; *);
@@ -17,7 +17,7 @@ definition -> definition_of_eulerian_path (*
 
 	=> nrel_main_idtf:
 		[Опр. (эйлеров путь)] (* <- lang_ru;; *);
-		[Def. (Eulerian path)] (* <- lang_en;; *);;
+		[Def. (eulerian path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_path;
