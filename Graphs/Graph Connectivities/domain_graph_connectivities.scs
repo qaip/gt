@@ -20,7 +20,8 @@ section_subject_domain_of_graph_connectivities
 	nrel_edge_connectivity;
 	nrel_weakly_connected_component;
 	nrel_strongly_connected_component;
-	nrel_graph_block;;
+	nrel_graph_block;
+	nrel_connected_component;;
 
 section_subject_domain_of_graph_connectivities=[*
 	subject_domain_of_graph_connectivities
@@ -48,6 +49,7 @@ section_subject_domain_of_graph_connectivities=[*
 		nrel_weakly_connected_component;
 		nrel_strongly_connected_component;
 		nrel_graph_block;
+		nrel_connected_component;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;;
@@ -68,4 +70,5 @@ sc_node_norole_relation ->
 	nrel_edge_connectivity;
 	nrel_weakly_connected_component;
 	nrel_strongly_connected_component;
-	nrel_graph_block;;
+	nrel_graph_block;
+	nrel_connected_component;;
