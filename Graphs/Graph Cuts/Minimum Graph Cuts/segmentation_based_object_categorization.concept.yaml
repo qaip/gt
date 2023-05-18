@@ -1,0 +1,18 @@
+ru: segmentation based object categorization
+en: segmentation based object categorization
+definition:
+  ru:
+    Сегментация основанная на категоризации объектов является процессом
+    разделения изображения на сегменты, каждый из которых соответствует
+    определенной категории объектов
+  en:
+    Segmentation based object categorization is the process of dividing an image
+    into segments, each of which corresponds to a specific category of objects
+  using:
+    concepts: |
+      image
+      segmentation
+      object_categorization
+      graph_cut
+    rrels: |
+      categorization

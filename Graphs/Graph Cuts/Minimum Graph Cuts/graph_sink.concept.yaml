@@ -1,0 +1,14 @@
+ru: сток графа
+en: graph sink
+definition:
+  ru: Стоком графа является вершина, которая не имеет исходящих ребер
+  en: A graph sink is a vertex that has no outgoing edges
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      graph_cut
+    rrels: |
+      vertex
+      edge

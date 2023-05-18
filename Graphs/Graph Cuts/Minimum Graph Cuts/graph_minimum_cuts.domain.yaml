@@ -9,7 +9,6 @@ max: |
 concepts: |
   number_of_minimum_graph_cuts
   segmentation_based_object_categorization
-  graph_source
   graph_sink
   weighted_min_cut
-  weighted_min_cut_problem
+  
