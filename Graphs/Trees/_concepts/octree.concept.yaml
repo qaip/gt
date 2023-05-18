@@ -1,0 +1,26 @@
+ru: октодерево
+en: octree
+
+definition:
+  ru: Дерево, используемое для поиска объектов в трехмерном пространстве
+  en: A tree used to search for objects in three-dimensional space
+  using:
+    concepts: |
+      tree
+      vertex
+    rrels: |
+      vertex
+statement:
+  octree_theorem:
+    title:
+      ru: Теорема об октодеревьях
+      en: Octree theorem
+    ru: Октодерево может быть использовано для быстрого поиска объектов в трехмерном пространстве
+    en: Octrees can be used for efficient object search in three-dimensional space
+    using:
+      concepts: |
+        tree
+        vertex
+      rrels: |
+        vertex
+        

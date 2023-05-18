@@ -1,0 +1,14 @@
+ru: высота дерева
+en: tree height
+
+definition:
+    en: The height of a tree is the maximum number of nodes on a path from the root to a leaf
+    ru: Высота дерева-это максимальное количество узлов на пути от корня до листа
+    using:
+      concepts: |
+        vertex
+        leaf
+        tree_root
+        graph_path
+      rrels: |
+        vertex
