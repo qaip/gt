@@ -21,10 +21,7 @@ section_subject_domain_of_graph_cuts
 	concept_minimum_graph_cut;
 	concept_graph_cut_space;
 	concept_s_t_cut;
-	concept_bond;
-	concept_network_flow;
-	concept_max_flow_min_cut_theorem;
-	concept_graph_sparsest_cuts;;
+	concept_sparsest_cuts;;
 
 section_subject_domain_of_graph_cuts=[*
 	subject_domain_of_graph_cuts
@@ -43,10 +40,7 @@ section_subject_domain_of_graph_cuts=[*
 		concept_minimum_graph_cut;
 		concept_graph_cut_space;
 		concept_s_t_cut;
-		concept_bond;
-		concept_network_flow;
-		concept_max_flow_min_cut_theorem;
-		concept_graph_sparsest_cuts;
+		concept_sparsest_cuts;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -65,7 +59,4 @@ sc_node_class ->
 	concept_minimum_graph_cut;
 	concept_graph_cut_space;
 	concept_s_t_cut;
-	concept_bond;
-	concept_network_flow;
-	concept_max_flow_min_cut_theorem;
-	concept_graph_sparsest_cuts;;
+	concept_sparsest_cuts;;
