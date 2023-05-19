@@ -1,0 +1,67 @@
+ru: биномиальное дерево
+en: binomial tree
+
+definition:
+  ru: Разновидность деревьев, задающихся реккурентно
+  en: A kind of trees defined recursively
+  using:
+    concepts: |
+      tree
+
+statement:
+  amount_of_vertexes_in_binomial_tree:
+    title:
+      ru: Количество вершин в биномиальном дереве
+      en: Amount of vertexes in binomial tree
+    ru:
+      Количество вершин в биномиальном дереве равно 2 в степени k, где k
+      является наибольшим значением длины пути от корня дерева до его листьев
+    en:
+      The number of vertices in a binomial tree is 2 to the power of k, where k
+      is the largest value of the path length from the root of the tree to its
+      leaves
+    using:
+      concepts: |
+        tree
+        vertex
+        path_length
+        root
+        leaf
+      rrels: |
+        vertex
+        root
+        leaf
+
+  binomial_tree_defining_way:
+    title:
+      ru: Способ задания биномиальных деревьев
+      en: Binomial tree defining way
+    ru:
+      Биномиальное дерево задаётся исходя из наибольшей длины пути от корня
+      дерева до его листьев. Дерево, состоящее из 1 вершины является
+      биномиальным деревом, у которого длина пути от корня до листьев равно
+      нулю. Биномиальные деревья, у которых длина наибольшего пути от корня до
+      листьев равна Д, где Д больше 0, строятся из двух биномиальных деревьев, у
+      которых длина наибольшего пути от корня до листьев равна Д-1. При чём
+      корень одного из таких деревьев становится потомком корня другого
+    en:
+      The binomial tree is defined based on the longest path length from the
+      tree root to its leaves. A tree with 1 vertex is a binomial tree whose
+      path length from the root to the leaves is zero. Binomial trees whose
+      longest path from the root to the leaves is L, where L is greater than 0,
+      are built from two binomial trees whose longest path from the root to the
+      leaves is L-1. The root of one of these trees become a descendant of the
+      root of another
+    using:
+      concepts: |
+        tree
+        path_length
+        root
+        leaf
+        vertex
+      nrels: |
+        tree_descendant
+      rrels: |
+        vertex
+        root
+        leaf
