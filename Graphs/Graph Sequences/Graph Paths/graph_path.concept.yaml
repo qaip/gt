@@ -8,7 +8,7 @@ definition:
     concepts:  |
       vertex
       edge
-      sequence
+      graph_sequence
     rrels:  |
       edge
       vertex
@@ -21,17 +21,19 @@ statement:
     en: Two paths are vertex independent if they do not share interior vertices
     using:
       concepts:  |
-        path
+        vertex
+      rrels: |
         vertex
   property_of_edges_independency:
     title:
-      ru: свойство рёберной независимости
-      en: edge independence property
+      ru: Свойство рёберной независимости
+      en: Edge independence property
     ru: Два пути рёберно независимы, если они не имеют общих внутренних рёбер
     en: Two paths are edge independent if they do not have common interior edges
     using:
       concepts:  |
-        path
+        edge
+      rrels: |
         edge
   path_length_theorem:
     title:
@@ -41,9 +43,10 @@ statement:
     en: The length of a path in a graph is equal to the number of edges in the path
     using:
       concepts: |
-        graph_path
         edge
         path_length
+      rrels: |
+        edge
   path_existence_theorem:
     title:
       ru: Теорема о существовании пути
@@ -52,7 +55,6 @@ statement:
     en: In a connected graph, there exists a path between any two vertices
     using:
       concepts: |
-        graph_path
         connected_graph
   shortest_path_theorem:
     title:
@@ -62,7 +64,6 @@ statement:
     en: Dijkstras algorithm finds the shortest path in a weighted graph
     using:
       concepts: |
-        graph_path
         shortest_path
   longest_path_theorem:
     title:
@@ -76,8 +77,8 @@ statement:
       be solved in polynomial time
     using:
       concepts: |
-        graph_path
-        np_complete_problem
+        graph
+        path_length
   path_isomorphism_theorem:
     title:
       ru: Теорема об изоморфизме путей
@@ -90,7 +91,6 @@ statement:
       corresponding vertices have the same degree
     using:
       concepts: |
-        graph_path
         isomorphism
         vertex_degree
   path_cover_theorem:
@@ -105,9 +105,11 @@ statement:
       maximum degree of any vertex in the graph
     using:
       concepts: |
-        graph_path
         vertex_degree
         edge_cover
+        edge
+      rrels: |
+        edge
   path_matching_theorem:
     title:
       ru: Теорема о пути соответствия
@@ -120,7 +122,6 @@ statement:
       vertices in the left partition of the graph
     using:
       concepts: |
-        graph_path
         bipartite_graph
         matching
         vertex_partition
@@ -131,3 +132,5 @@ subclass:
   - eulerian_path
   - path_length
   - graph_path_weight
+  - graph_path_diameter
+  - graph_radius

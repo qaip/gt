@@ -9,7 +9,7 @@ definition:
       path_length
       graph_path
     rrels: |
-      edge_weight
+      rib_weight
 
 statement:
   shortest_path_weight_theorem:
@@ -21,18 +21,6 @@ statement:
     using:
       concepts: |
         path_length
-        shortest_path
-
-  shortest_path_unweighted_theorem:
-    title:
-      ru: Теорема о кратчайшем невзвешенном пути
-      en: Shortest unweighted path theorem
-    ru: Алгоритм поиска в ширину находит кратчайший путь в невзвешенном графе
-    en: Breadth-first search algorithm finds the shortest path in an unweighted graph
-    using:
-      concepts: |
-        graph_path
-        shortest_path
 
   floyd_warshall_algorithm:
     title:
@@ -44,7 +32,7 @@ statement:
       concepts: |
         graph_path_weight
         path_length
-        edge_weight
+        rib_weight
 
   bellman_ford_algorithm:
     title:
@@ -59,6 +47,5 @@ statement:
     using:
       concepts: |
         path_length
-        shortest_path
-        edge_weight
+        rib_weight
         

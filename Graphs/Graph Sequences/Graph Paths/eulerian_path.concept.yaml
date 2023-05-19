@@ -23,7 +23,6 @@ statement:
     en: In a connected graph, an Eulerian path exists if and only if the degree of each vertex is even
     using:
       concepts: |
-        eulerian_path
         connected_graph
         vertex_degree
         graph_path
@@ -36,7 +35,6 @@ statement:
     en: In a connected graph, a semi-Eulerian path exists if and only if exactly two vertices have odd degree
     using:
       concepts: |
-        eulerian_path
         connected_graph
         vertex_degree
         graph_path

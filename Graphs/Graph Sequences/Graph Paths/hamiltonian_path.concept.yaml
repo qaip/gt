@@ -30,7 +30,6 @@ statement:
     using:
       concepts: |
         hamiltonian_cycle
-        hamiltonian_path
         vertex
         graph
       rrels: |
@@ -43,9 +42,11 @@ statement:
     en: A graph contains a Hamiltonian cycle if the degree of each vertex is at least half the number of vertices in the graph
     using:
       concepts:  |
-        hamiltonian_path
+        vertex
         hamiltonian_cycle
         vertex_degree
+      rrels: |
+        vertex
   dirac_theorem:
     title:
       ru: Теорема Дирака
@@ -54,5 +55,7 @@ statement:
     en: A graph contains a Hamiltonian path if the degree of each vertex in the graph is at least half the number of vertices in the graph
     using:
       concepts:  |
-        hamiltonian_path
+        vertex
         vertex_degree
+      rrels: |
+        vertex

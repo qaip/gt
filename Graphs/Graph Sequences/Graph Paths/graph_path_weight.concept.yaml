@@ -20,7 +20,6 @@ statement:
     en: Dijkstras algorithm finds the shortest path in a weighted graph
     using:
       concepts: |
-        graph_path_weight
         shortest_path
   bellman_ford_algorithm:
     title:
@@ -34,6 +33,5 @@ statement:
       negative edge weights
     using:
       concepts: |
-        graph_path_weight
         shortest_path
         edge_weight

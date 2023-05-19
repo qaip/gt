@@ -10,7 +10,7 @@ definition:
     edges are counted the corresponding number of times
   using:
     concepts: |
-      path
+      graph_path
       edge
     rrels: |
       edge
@@ -25,7 +25,6 @@ statement:
       concepts: |
         graph_path
         edge
-        path_length
       rrels: |
         edge
   path_equals_zero:
@@ -40,8 +39,7 @@ statement:
       vertex
     using:
       concepts: |
-        path
-        length_of_path
+        graph_path
         vertex
       rrels: |
         vertex
