@@ -162,5 +162,7 @@ statement:
         graph
         polyhedral_graph
         dual_graph
+        edge
+      nrels: |
         face
         edge

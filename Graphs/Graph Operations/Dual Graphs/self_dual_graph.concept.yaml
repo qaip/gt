@@ -9,7 +9,3 @@ definition:
     concepts: |
       graph
       dual_graph
-    nrels: |
-      dual_graph
-    rrels: |
-      graph
