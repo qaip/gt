@@ -13,8 +13,8 @@ definition -> definition_of_length_of_sequence (*
 	-> rrel_key_sc_element: concept_length_of_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [количество рёбер в маршруте учитывая повторения] (* <- lang_ru;; *);;
-		-> [the number of edges in the sequence, taking into account repetitions] (* <- lang_en;; *);;
+		-> [Количество рёбер в маршруте учитывая повторения] (* <- lang_ru;; *);;
+		-> [The number of edges in the sequence, taking into account repetitions] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -23,12 +23,12 @@ definition -> definition_of_length_of_sequence (*
 
 	=> nrel_using_constants: {
 		concept_edge;
-		concept_sequence;
+		concept_graph_sequence;
 		rrel_edge
 	};;
 *);;
 
-statement -> statement_of_length_equals_zero (*
+statement -> statement_of_length_of_sequence_equals_zero (*
 	-> rrel_key_sc_element: concept_length_of_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -42,7 +42,7 @@ statement -> statement_of_length_equals_zero (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_sequence;
+		concept_graph_sequence;
 		rrel_vertex
 	};;
 *);;
@@ -61,7 +61,8 @@ statement -> statement_of_route_shortest_path_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph_sequence;
-		concept_edge
+		concept_edge;
+		rrel_edge
 	};;
 *);;
 
@@ -78,7 +79,8 @@ statement -> statement_of_route_longest_path_theorem (*
 		[Stat. (Longest route theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_sequence
+		concept_graph_sequence;
+		concept_polynimial_time
 	};;
 *);;
 
@@ -96,21 +98,27 @@ statement -> statement_of_route_existence_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph_sequence;
-		concept_connected_graph
+		concept_connected_graph;
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
 sc_node_class ->
 	concept_edge;
-	concept_sequence;
+	concept_graph_sequence;
 	concept_vertex;
-	concept_sequence;
+	concept_graph_sequence;
 	concept_graph_sequence;
 	concept_edge;
 	concept_graph_sequence;
+	concept_polynimial_time;
 	concept_graph_sequence;
-	concept_connected_graph;;
+	concept_connected_graph;
+	concept_vertex;;
 
 sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
 	rrel_edge;
 	rrel_vertex;;

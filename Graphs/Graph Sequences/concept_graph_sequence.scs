@@ -19,10 +19,10 @@ definition -> definition_of_graph_sequence (*
 	-> rrel_key_sc_element: concept_graph_sequence;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Маршрутом длины m называется некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают] (* <- lang_ru;; *);;
-		-> [Маршрутом можно считать такую последовательность вершин, что любая соседняя пара вершин является ребром графа] (* <- lang_ru;; *);;
-		-> [A sequence of length m is some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide] (* <- lang_en;; *);;
-		-> [A route can be considered such a sequence of vertices that any neighboring pair of vertices is an edge of the graph] (* <- lang_en;; *);;
+		-> [Некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают] (* <- lang_ru;; *);;
+		-> [Такая последовательность вершин, что любая соседняя пара вершин является ребром графа] (* <- lang_ru;; *);;
+		-> [Some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide] (* <- lang_en;; *);;
+		-> [A sequence of vertices that any neighboring pair of vertices is an edge of the graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -31,6 +31,7 @@ definition -> definition_of_graph_sequence (*
 
 	=> nrel_using_constants: {
 		concept_edge;
+		concept_graph;
 		concept_vertex;
 		rrel_edge;
 		rrel_vertex
@@ -51,7 +52,6 @@ statement -> statement_of_sequnce_vertexes_naming (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_sequence;
 		rrel_vertex
 	};;
 *);;
@@ -69,17 +69,15 @@ statement -> statement_of_havel_hakimi_algorithm (*
 		[Stat. (Havel-Hakimi algorithm)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_sequence;
 		concept_graph
 	};;
 *);;
 
 sc_node_class ->
 	concept_edge;
+	concept_graph;
 	concept_vertex;
 	concept_vertex;
-	concept_sequence;
-	concept_graph_sequence;
 	concept_graph;;
 
 sc_node_role_relation ->
