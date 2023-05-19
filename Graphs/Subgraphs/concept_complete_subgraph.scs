@@ -41,7 +41,6 @@ statement -> statement_of_complete_graph_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_complete_graph;
 		concept_vertex;
 		concept_edge;
 		rrel_vertex;
@@ -64,7 +63,6 @@ statement -> statement_of_complete_subgraph_theorem (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_subgraph;
-		concept_complete_subgraphnre;
 		nrel_subgraph
 	};;
 *);;
@@ -76,12 +74,10 @@ sc_node_class ->
 	concept_subgraph;
 	concept_connectivity;
 	concept_graph;
-	concept_complete_graph;
 	concept_vertex;
 	concept_edge;
 	concept_graph;
-	concept_subgraph;
-	concept_complete_subgraphnre;;
+	concept_subgraph;;
 
 sc_node_norole_relation ->
 	nrel_subgraph;
