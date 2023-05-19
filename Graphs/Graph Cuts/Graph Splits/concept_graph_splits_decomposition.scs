@@ -1,0 +1,29 @@
+concept_graph_splits_decomposition
+=> nrel_main_idtf:
+	[декомпозиция разбиения графа] (* <- lang_ru;; *);
+	[graph splits decomposition] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_splits_decomposition (*
+	-> rrel_key_sc_element: concept_graph_splits_decomposition;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разбиение графа на подграфы, каждый из которых является графом, чтобы получить новые графы, которые являются разбиением исходного графа] (* <- lang_ru;; *);;
+		-> [A partition of a graph into subgraphs, each of which is a graph, to obtain new graphs that form a decomposition of the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (декомпозиция разбиения графа)] (* <- lang_ru;; *);
+		[Def. (graph splits decomposition)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_subgraph;
+		concept_partition
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_subgraph;
+	concept_partition;;

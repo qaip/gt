@@ -1,0 +1,29 @@
+concept_graph_split
+=> nrel_main_idtf:
+	[разбиение графа] (* <- lang_ru;; *);
+	[graph split] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_split (*
+	-> rrel_key_sc_element: concept_graph_split;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разбиением графа называют разрез, множество разрезов которого образует полный двудольный граф] (* <- lang_ru;; *);;
+		-> [A split of a graph is a cut whose cut-set forms a complete bipartite graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (разбиение графа)] (* <- lang_ru;; *);
+		[Def. (graph split)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_cut;
+		concept_bipartite_graph
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_graph_cut;
+	concept_bipartite_graph;;
