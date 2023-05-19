@@ -17,8 +17,8 @@ definition -> definition_of_tree_traversal (*
 	-> rrel_key_sc_element: concept_tree_traversal;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Обходом дерева называется обход графа, который выполняется на графе дереве] (* <- lang_ru;; *);;
-		-> [A tree traversal is a graph traversal that is performed on a tree graph] (* <- lang_en;; *);;
+		-> [Обход графа, который выполняется на графе дереве] (* <- lang_ru;; *);;
+		-> [A graph traversal that is performed on a tree graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
