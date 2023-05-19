@@ -3,10 +3,10 @@ en: graph algorithm
 
 definition:
   ru:
-    Графовые алгоритмы представляют собой последовательность шагов для перебора
+    Последовательность шагов для перебора
     вершин, поиска определенной вершины или пути между двумя заданными вершинами
   en:
-    Graph algorithms are a sequence of steps for iterating over vertices,
+    A sequence of steps for iterating over vertices,
     finding a specific vertex, or a path between two given vertices
   using:
     concepts: |
