@@ -36,7 +36,6 @@ statement -> statement_of_block_cutpoint_graph_vs_biconnected_graph (*
 		[Stat. (comparison of a block-cutpoint graph and a biconnected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_block_cutpoint_graph;
 		concept_biconnected_graph;
 		concept_block;
 		rrel_cutpoint
@@ -46,7 +45,6 @@ statement -> statement_of_block_cutpoint_graph_vs_biconnected_graph (*
 sc_node_class ->
 	concept_graph;
 	concept_bridge;
-	concept_block_cutpoint_graph;
 	concept_biconnected_graph;
 	concept_block;;
 
