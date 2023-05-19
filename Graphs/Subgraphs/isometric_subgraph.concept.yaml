@@ -40,6 +40,5 @@ statement:
       concepts: |
         graph
         subgraph
-        isometric_subgraph
       nrels: |
         subgraph

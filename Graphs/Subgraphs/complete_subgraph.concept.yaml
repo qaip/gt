@@ -28,7 +28,6 @@ statement:
     using:
       concepts: |
         graph
-        complete_graph
         vertex
         edge
       rrels: |
@@ -46,7 +45,6 @@ statement:
       concepts: |
         graph
         subgraph
-        complete_subgraphnre
       nrels: |
         subgraph
   
