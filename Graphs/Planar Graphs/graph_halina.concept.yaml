@@ -13,6 +13,8 @@ definition:
       planar_graph
       vertex
       tree
+    rrels: |
+      vertex
 
 statement:
   halina_graph_property:
@@ -30,6 +32,8 @@ statement:
         graph
         vertex
         graph_connectivities
+      rrels: |
+        vertex
 
   halina_graph_connectiviti:
     title:
@@ -46,6 +50,8 @@ statement:
         edge
         graph
         graph_connectivities
+      rrels: |
+        edge
 
   halina_graph_and_hamiltonian_graph:
     title:
@@ -66,3 +72,6 @@ statement:
         hamiltonian_cycle
         hamiltonian_graph
         vertex
+      rrels: |
+        vertex
+        edge
