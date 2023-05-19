@@ -10,12 +10,12 @@ section_subject_domain_of_heaps
 	subject_domain_of_heaps;
 	concept_heap;
 	concept_binary_heap;
-	concept_binomial_heap;
 	concept_biparental_heap;
-	concept_brodals_and_okasakis_priority_queue;
 	concept_d_ary_heap;
 	concept_fibonacci_heap;
-	concept_leftist_heap;;
+	concept_leftist_heap;
+	concept_max_heap;
+	concept_min_heap;;
 
 section_subject_domain_of_heaps=[*
 	subject_domain_of_heaps
@@ -30,12 +30,12 @@ section_subject_domain_of_heaps=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_binary_heap;
-		concept_binomial_heap;
 		concept_biparental_heap;
-		concept_brodals_and_okasakis_priority_queue;
 		concept_d_ary_heap;
 		concept_fibonacci_heap;
 		concept_leftist_heap;
+		concept_max_heap;
+		concept_min_heap;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_trees;;
@@ -44,9 +44,9 @@ section_subject_domain_of_heaps=[*
 sc_node_class ->
 	concept_heap;
 	concept_binary_heap;
-	concept_binomial_heap;
 	concept_biparental_heap;
-	concept_brodals_and_okasakis_priority_queue;
 	concept_d_ary_heap;
 	concept_fibonacci_heap;
-	concept_leftist_heap;;
+	concept_leftist_heap;
+	concept_max_heap;
+	concept_min_heap;;
