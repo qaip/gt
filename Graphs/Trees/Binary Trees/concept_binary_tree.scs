@@ -1,7 +1,13 @@
 concept_binary_tree
 => nrel_main_idtf:
 	[бинарное дерево] (* <- lang_ru;; *);
-	[binary tree] (* <- lang_en;; *);;
+	[binary tree] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_brother_tree;
+concept_red_black_tree;
+concept_avl_tree;;
 
 definition -> definition_of_binary_tree (*
 	-> rrel_key_sc_element: concept_binary_tree;;
