@@ -22,9 +22,8 @@ statement:
       ru: дополнение неориентированного графа
       en: complement of an undirected graph
     ru:
-      Дополнением неориентированного графа является граф, содержащий все
-      недостающие рёбра между вершинами исходного графа, которые не являются
-      рёбрами этого графа
+      граф, содержащий все недостающие рёбра между вершинами исходного графа,
+      которые не являются рёбрами этого графа
     en:
       The complement of an undirected graph is a graph that contains all the
       missing edges between the vertices of the original graph that are not

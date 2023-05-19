@@ -2,9 +2,9 @@ ru: двудольный граф
 en: bipartite graph
 definition:
   ru:
-    Двудольный граф является графом, множество вершин которого можно
-    разбить на два непересакающихся множества U и V, таким образом, что ребро
-    соединяет одну вершину из множества U с другой вершиной из множества V
+    граф, множество вершин которого можно разбить на два непересакающихся
+    множества U и V, таким образом, что ребро соединяет одну вершину из
+    множества U с другой вершиной из множества V
   en:
     In the mathematical field of graph theory, a bipartite graph is a graph
     whose vertices can be divided into two disjoint sets U and V such that every
@@ -17,4 +17,3 @@ definition:
     rrels: |
       edge
       vertex
-      
