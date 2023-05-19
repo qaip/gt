@@ -17,7 +17,7 @@ definition:
     rrels: |
       vertex
     nrels: |
-      descendant
+      tree_descendant
 
 statement:
   statement_about_two_three_tree:
