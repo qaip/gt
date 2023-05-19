@@ -1,0 +1,54 @@
+ru: лес решений
+en: decision forest
+
+definition:
+  ru:
+    Коллекция решающих деревьев, используемых для классификации или задач
+    регрессии
+  en: A collection of decision trees used for classification or regression tasks
+  using:
+    concepts: |
+      decision_tree
+      classification
+      regression
+
+statement:
+  decision_forest_algorithm:
+    title:
+      ru: Алгоритм леса решений
+      en: Decision forest algorithm
+    ru:
+      Алгоритм леса решений включает в себя построение коллекции решающих
+      деревьев, каждое из которых обучается на случайной подвыборке обучающей
+      выборки, а конечный результат получается путем агрегации ответов всех
+      деревьев
+    en:
+      The decision forest algorithm involves constructing a collection of
+      decision trees, each of which is trained on a random subset of the
+      training data, and the final output is obtained by aggregating the outputs
+      of all the trees
+    using:
+      concepts: |
+        decision_tree
+        random_sampling
+        training_data
+        aggregation
+
+  decision_forest_applications:
+    title:
+      ru: Применения леса решений
+      en: Applications of decision forest
+    ru:
+      Алгоритм леса решений часто используется в приложениях машинного обучения,
+      где важны точность и обобщаемость
+    en:
+      The decision forest algorithm is often used in machine learning
+      applications where accuracy and generalization are important
+      considerations
+    using:
+      concepts: |
+        machine_learning
+        accuracy
+        generalization
+      rrels: |
+        application
