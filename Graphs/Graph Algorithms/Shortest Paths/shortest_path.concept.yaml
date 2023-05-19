@@ -3,10 +3,10 @@ en: shortest path problem
 
 definition:
   ru:
-    Задача о кратчайшем пути представляет собой задачу поиска самого короткого
+    Задача поиска самого короткого
     пути между двумя вершинами на графе, в которой минимизируется вес пути
   en:
-    Shortest path problem is the problem of finding a path between two vertices
+    The problem of finding a path between two vertices
     in a graph such that the path weight is minimized
   using:
     concepts: |
