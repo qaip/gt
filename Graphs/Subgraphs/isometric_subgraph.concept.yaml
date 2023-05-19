@@ -11,6 +11,8 @@ definition:
       subgraph
     rrels: |
       vertex
+    nrels: |
+      subgraph
 statement:
   isometric_embedding_theorem:
     title:
@@ -24,6 +26,7 @@ statement:
       dimensional Euclidean space
     using:
       concepts: |
+        euclidean_space
         graph
   isometric_subgraph_theorem:
     title:
@@ -38,3 +41,5 @@ statement:
         graph
         subgraph
         isometric_subgraph
+      nrels: |
+        subgraph

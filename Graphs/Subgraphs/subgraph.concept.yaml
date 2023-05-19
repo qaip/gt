@@ -2,7 +2,7 @@ ru: подграф
 en: subgraph
 
 definition:
-  ru: Подграф, полученный путем удаления некоторых вершин и ребер исходного графа
+  ru: Граф, полученный путем удаления некоторых вершин и ребер исходного графа
   en: A graph that is obtained by removing some vertices and edges from the original graph
   using:
     concepts: |
@@ -11,7 +11,9 @@ definition:
       edge
     rrels: |
       vertex
-      edge
+    nrels: |
+      subgraph
+    
 statement:
   subgraph_isomorphism_theorem:
     title:
@@ -26,8 +28,9 @@ statement:
     using:
       concepts: |
         graph
-        subgraph
         isomorphic_graph
+      nrels: |
+        subgraph
   edge_subgraph_theorem:
     title:
       ru: Теорема о подграфе ребер
@@ -39,10 +42,11 @@ statement:
     using:
       concepts: |
         graph
-        subgraph
         edge
       rrels: |
         edge
+      nrels: |
+        subgraph
   connected_subgraph_theorem:
     title:
       ru: Теорема о связном подграфе
@@ -52,11 +56,12 @@ statement:
     using:
       concepts: |
         graph
-        subgraph
         connected_graph
         vertex
       rrels: |
         vertex
+      nrels: |  
+        subgraph
   maximum_weight_subgraph_theorem:
     title:
       ru: Теорема о подграфе максимального веса
@@ -69,7 +74,9 @@ statement:
       concepts: |
         graph
         subgraph
+      nrels: |
         rib_weight
+        subgraph
 subclass:
   - bicoloured_subgraph
   - isometric_subgraph

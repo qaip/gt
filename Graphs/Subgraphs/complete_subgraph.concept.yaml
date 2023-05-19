@@ -14,15 +14,17 @@ definition:
     rrels: |
       vertex
       edge
+    nrels: |
+      subgraph
 statement:
   complete_graph_theorem:
     title:
       ru: Теорема о полном графе
       en: Complete graph theorem
     ru:
-      Полный граф на n вершинах имеет n(n-1) делить на 2 ребер
+      Полный граф на n вершинах имеет n n-1 делить на 2 ребер
     en:
-      A complete graph on n vertices has n(n-1) divided by 2 edges
+      A complete graph on n vertices has n n-1 divided by 2 edges
     using:
       concepts: |
         graph
@@ -44,5 +46,7 @@ statement:
       concepts: |
         graph
         subgraph
-        complete_subgraph
+        complete_subgraphnre
+      nrels: |
+        subgraph
   

@@ -18,3 +18,5 @@ nrels: |
   vertex_adjacency
   vertex_induced_subgraph
   edge_induced_subgraph
+  subgraph
+  

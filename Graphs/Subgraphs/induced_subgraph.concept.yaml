@@ -4,23 +4,23 @@ en: induced subgraph
 definition:
   ru:
     - Другой граф, образованный из подмножества вершин графа вместе со всеми
-      рёбрами, соединяющими пары вершин из этого подмножества называе порождённым
-      подграфом
+      рёбрами, соединяющими пары вершин из этого подмножества
     - Подграф, который содержит все вершины, которые присутствуют в исходном графе и все ребра между ними
   en:
     - Another graph formed from a subset of the graphs vertices together with all
-      edges connecting pairs of vertices from this subset is called a generated
-      subgraph
+      edges connecting pairs of vertices from this subset
     - A subgraph that contains all the vertices present in the original graph and all the edges between them
   using:
     concepts: |
-      subgraph
       graph
       vertex
+      subgraph
       edge
     rrels: |
       vertex
       edge
+    nrels: |
+      subgraph
 
 statement:
   induced_subgraph_theorem:
@@ -35,12 +35,13 @@ statement:
       concepts: |
         graph
         subgraph
-        induced_subgraph
         vertex
         edge
       rrels: | 
         edge
         vertex
+      nrels: |
+        subgraph
   cliques_theorem:
     title:
       ru: Теорема о кликах
@@ -59,4 +60,6 @@ statement:
       rrels: |
         vertex
         edge
+      nrels: |
+        subgraph
       

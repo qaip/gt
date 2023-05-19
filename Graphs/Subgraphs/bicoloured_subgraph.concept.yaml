@@ -47,3 +47,5 @@ statement:
         vertex
       rrels: |
         vertex
+      nrels: |
+        subgraph
