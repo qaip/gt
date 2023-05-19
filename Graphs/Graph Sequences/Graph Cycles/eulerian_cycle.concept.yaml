@@ -23,7 +23,6 @@ statement:
       concepts: |
         connected_graph
         vertex_degree
-        graph_path
         vertex
       rrels: |
         vertex

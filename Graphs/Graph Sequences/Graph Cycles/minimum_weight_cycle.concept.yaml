@@ -10,10 +10,12 @@ definition:
       vertex
       graph
       edge
-      edge_weight
     rrels: |
       vertex
       edge
+    nrels: |
+      rib_weight
+
 
 statement:
   minimum_weight_cycle_exists:
@@ -27,8 +29,9 @@ statement:
         connected_graph
         graph_cycle
         vertex
-        edge_weight
         graph
       rrels: |
         vertex
         edge
+      nrels: |
+        rib_weight

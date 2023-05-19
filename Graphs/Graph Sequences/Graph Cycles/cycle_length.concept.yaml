@@ -8,6 +8,8 @@ definition:
     concepts: |
       graph_cycle
       edge
+    rrels: |
+      edge
 
 statement:
   cycle_basis_theorem:

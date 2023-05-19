@@ -9,6 +9,8 @@ definition:
       graph_cycle
       vertex
       graph
+    rrels: |
+      vertex
 
 statement:
   basic_cycle_exists:
@@ -22,4 +24,6 @@ statement:
         connected_graph
         graph_cycle
         vertex
-        directed_forest
+        forest
+      rrels: |
+        vertex

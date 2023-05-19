@@ -10,13 +10,15 @@ definition:
       graph
 
 statement:
-  cyclic_graph_exists:
+  cyclic_graph_usage_in_circuit_desighn:
     title:
-      ru: Существование циклического графа
-      en: Existence of cyclic graph
-    ru: Граф является циклическим тогда и только тогда, когда он содержит хотя бы один цикл
-    en: A graph is cyclic if and only if it contains at least one cycle
+      ru: Использование циклического графа в схемотехнике
+      en: Ciclic graph usage in circuit design
+    ru: Циклические графики используются в схемотехнике для представления соединений между электронными компонентами и анализа их поведения. Цепь с циклом может вызвать колебания или нестабильность в цепи
+    en: Cyclic graphs are used in circuit design to represent the connections between electronic components and analyze their behavior. A circuit with a cycle can cause oscillations or instability in the circuit
     using:
       concepts: |
         graph_cycle
         graph
+        circuit
+        design

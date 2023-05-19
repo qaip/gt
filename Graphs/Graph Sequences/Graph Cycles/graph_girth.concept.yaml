@@ -12,13 +12,11 @@ definition:
 statement:
   graph_girth_exists:
     title:
-      ru: Существование длины минимального цикла графа
-      en: Existence of graph girth
-    ru: В связном графе существует цикл наименьшей длины тогда и только тогда, когда граф не является лесом
-    en: A connected graph has a minimum cycle length if and only if it is not a forest
+      ru: Свойства обхвата графа
+      en: Properties of graph girth
+    ru: Обхват графа всегда меньше, чем его диаметр
+    en: he girth of a graph is always less than or equal to its diameter
     using:
       concepts: |
-        connected_graph
-        graph_cycle
-        vertex
+        graph_diameter
         

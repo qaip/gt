@@ -7,7 +7,11 @@ definition:
   using:
     concepts: |
       graph_cycle
+      edge
+    nrels: |
       rib_weight
+    rrels: |
+      edge
 
 statement:
   cycle_weight_minimum_theorem:
@@ -19,5 +23,22 @@ statement:
     using:
       concepts: |
         graph_cycle
-        rib_weight
         vertex
+      rrels: |
+        vertex
+      nrels: |
+        rib_weight
+
+  hamiltonian_cycle_weight_theorem:
+    title:
+      ru: Теорема о весе гамильтонова цикла
+      en: Hamiltonian cycle weight theorem
+    ru: Взвешенный связный граф содержит гамильтонов цикл, если его вес не превышает веса любого другого цикла в графе
+    en: A weighted connected graph contains a Hamiltonian cycle if its weight does not exceed the weight of any other cycle in the graph
+    using:
+      concepts: |
+        hamiltonian_cycle
+        weighted_graph
+      nrels: |
+        rib_weight
+  

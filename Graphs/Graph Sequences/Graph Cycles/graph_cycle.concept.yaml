@@ -6,7 +6,7 @@ definition:
   en: A closed path that passes through each edge of the graph exactly once
   using:
     concepts: |
-      graph_sequence
+      graph_path
       vertex
       graph
       edge
@@ -15,27 +15,26 @@ definition:
       edge
 
 statement:
-  eulerian_cycle_exists:
+  cycle_existence_theorem:
     title:
-      ru: Существование эйлерова цикла
-      en: Existence of Eulerian cycle
-    ru: В связном графе существует эйлеров цикл тогда и только тогда, когда степень каждой вершины чётна
-    en: In a connected graph, an Eulerian cycle exists if and only if the degree of each vertex is even
+      ru: Теорема о существовании цикла в графе
+      en: Cycle existence theorem
+    ru: В любом неориентированном графе, где количество вершин больше количества рёбер, существует по крайней мере один цикл
+    en: In any undirected graph where the number of vertices is greater than the number of edges, there exists at least one cycle
     using:
       concepts: |
-        connected_graph
-        vertex_degree
-        graph_path
+        undirected_graph
         vertex
+        edge
       rrels: |
         vertex
+        edge
 subclass:
   - hamiltonian_cycle
   - graph_girth
   - cyclic_graph
   - eulerian_cycle
   - basic_cycle
-  - elementary_cycle
   - minimum_weight_cycle
   - cycle_length
   
