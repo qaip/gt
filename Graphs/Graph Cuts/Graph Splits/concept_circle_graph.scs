@@ -7,7 +7,7 @@ definition -> definition_of_circle_graph (*
 	-> rrel_key_sc_element: concept_circle_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [граф, представленный в виде окружности, в которой вершины графа расположены вдоль окружности, а ребра как хорды окружности. В круговом графе отсутствуют кратные рёбра и петли] (* <- lang_ru;; *);;
+		-> [Граф, представленный в виде окружности, в которой вершины графа расположены вдоль окружности, а ребра как хорды окружности. В круговом графе отсутствуют кратные рёбра и петли] (* <- lang_ru;; *);;
 		-> [A circle graph is a graph represented as a circle, where the vertices of the graph are placed along the circle and the edges are chords of the circle. A circle graph does not contain multiple edges or loops] (* <- lang_en;; *);;
 	*);;
 
