@@ -3,10 +3,10 @@ en: hypergraph
 
 definition:
   ru:
-    граф, в котором рёбра, называемые гиперрёбрами
+    Граф, в котором рёбра, называемые гиперрёбрами
     или рёбрами гиперграфа, могут соединять более двух вершин
   en:
-    A hypergraph is a graph in which edges, called hyperedges or hypergraph
+    A graph in which edges, called hyperedges or hypergraph
     edges, may connect more than two nodes
   using:
     concepts: |
