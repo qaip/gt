@@ -27,7 +27,6 @@ statement:
       in the graph
     using:
       concepts: |
-        bridge
         edge
       rrels: |
         edge

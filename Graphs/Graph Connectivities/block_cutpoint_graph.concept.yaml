@@ -31,7 +31,6 @@ statement:
       and cutpoints, while biconnected graphs cannot be decomposed into blocks
     using:
       concepts: |
-        block_cutpoint_graph
         biconnected_graph
         block
       rrels: |
