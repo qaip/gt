@@ -2,8 +2,8 @@ ru: граф блоков и точек сочленения
 en: block cutpoint graph
 definition:
   ru:
-    Граф с блоками и точками сочленения является графом, который не имеет
-    мостов, но может быть разбит на блоки и точки сочленения
+    граф, который не имеет мостов, но может быть разбит на блоки и точки
+    сочленения
   en:
     A blockcutpoint is a graph that has no bridges but can be decomposed into
     blocks and cutpoints
