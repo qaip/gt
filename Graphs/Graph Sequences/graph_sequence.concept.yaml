@@ -3,14 +3,15 @@ en: sequence | route | graph sequence
 
 definition:
   ru: 
-    - Маршрутом длины m называется некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают
-    - Маршрутом можно считать такую последовательность вершин, что любая соседняя пара вершин является ребром графа
+    - Некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают
+    - Такая последовательность вершин, что любая соседняя пара вершин является ребром графа
   en: 
-    - A sequence of length m is some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide
-    - A route can be considered such a sequence of vertices that any neighboring pair of vertices is an edge of the graph
+    - Some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide
+    - A sequence of vertices that any neighboring pair of vertices is an edge of the graph
   using:
     concepts:  |
       edge
+      graph
       vertex
     rrels:  |
       edge
@@ -25,7 +26,6 @@ statement:
     using:
       concepts: |
         vertex
-        sequence
       rrels: |
         vertex
   havel_hakimi_algorithm:
@@ -38,7 +38,6 @@ statement:
       The Havel-Hakimi algorithm is an algorithm for constructing a graph with a given graph sequence
     using:
       concepts: |
-        graph_sequence
         graph
 subclass:
   - graph_path

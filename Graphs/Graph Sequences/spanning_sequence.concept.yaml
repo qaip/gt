@@ -4,11 +4,10 @@ en: spanning sequence | spanning route
 definition:
   ru: Маршрут, содержащий все вершины орграфа
   en:
-    Spanning sequence is a sequence, that contains all verteces in directed
+    The sequence, that contains all verteces in directed
     graph
   using:
     concepts: |
-      sequence
       directed_graph
       graph_sequence
       vertex
@@ -35,14 +34,3 @@ statement:
       concepts: |
         graph_sequence
         connected_graph
-  minimum_spanning_tree_theorem:
-    title:
-      ru: Теорема о минимальном остовном дереве
-      en: Minimum spanning tree theorem
-    ru: Минимальное остовное дерево связного графа-это дерево, в котором сумма весов рёбер минимальна
-    en: The minimum spanning tree of a connected graph is a tree in which the sum of the weights of the edges is minimal
-    using:
-      concepts: |
-        graph_sequence
-        spanning_tree
-        edge_weight
