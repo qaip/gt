@@ -1,0 +1,29 @@
+ru: вес ребра
+en: rib weight
+
+definition:
+  ru: Числовая величина, приписанная ребру
+  en: A numerical value assigned to an edge
+  using:
+    concepts: |
+      edge
+    nrels: |
+      value
+
+statement:
+  theorem_negative_weighted_edges:
+    title:
+      ru: Теорема о рёбрах отрицательного веса
+      en: Negative weighted edges theorem
+    ru:
+      Рёбра отрицательного веса могут привести к появлению отрицательных циклов
+      в графе
+    en: Negative weighted edges can lead to negative cycles in a graph
+    using:
+      concepts: |
+        graph_cycle
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
