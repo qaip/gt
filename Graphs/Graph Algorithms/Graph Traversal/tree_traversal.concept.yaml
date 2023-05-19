@@ -2,8 +2,8 @@ ru: обход дерева
 en: tree traversal
 
 definition:
-  ru: Обходом дерева называется обход графа, который выполняется на графе дереве
-  en: A tree traversal is a graph traversal that is performed on a tree graph
+  ru: Обход графа, который выполняется на графе дереве
+  en: A graph traversal that is performed on a tree graph
   using:
     concepts: |
       graph_traversal
