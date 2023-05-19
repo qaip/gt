@@ -7,8 +7,8 @@ definition -> definition_of_undirected_hypergraph (*
 	-> rrel_key_sc_element: concept_undirected_hypergraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Ненаправленным называют гиперграф, который состоит из множества вершин V из множества гиперрёбер H, в котором гиперрёбра не являются упорядоченными парами] (* <- lang_ru;; *);;
-		-> [An undirected hypergraph is a hypergraph that consists of a set of vertices V from a set of hyperedges H, in which the hyperedges are not ordered pairs] (* <- lang_en;; *);;
+		-> [Гиперграф, который состоит из множества вершин V из множества гиперрёбер H, в котором гиперрёбра не являются упорядоченными парами] (* <- lang_ru;; *);;
+		-> [A hypergraph that consists of a set of vertices V from a set of hyperedges H, in which the hyperedges are not ordered pairs] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
