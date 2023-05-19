@@ -7,7 +7,7 @@ definition -> definition_of_bridge (*
 	-> rrel_key_sc_element: concept_bridge;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [ребро, удаление которого увеличивает число компонент связности] (* <- lang_ru;; *);;
+		-> [Ребро, удаление которого увеличивает число компонент связности] (* <- lang_ru;; *);;
 		-> [A bridge is an edge which removal increases the number of connected components] (* <- lang_en;; *);;
 	*);;
 

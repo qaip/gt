@@ -7,7 +7,7 @@ definition -> definition_of_trivial_graph (*
 	-> rrel_key_sc_element: concept_trivial_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [граф, который состоит из одной вершины и не имеет ребер] (* <- lang_ru;; *);;
+		-> [Граф, который состоит из одной вершины и не имеет ребер] (* <- lang_ru;; *);;
 		-> [A trivial graph is a graph that consists of only one vertex and no edges] (* <- lang_en;; *);;
 	*);;
 

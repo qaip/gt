@@ -7,7 +7,7 @@ definition -> definition_of_disconndected_graph (*
 	-> rrel_key_sc_element: concept_disconndected_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [граф, который состоит из двух или более компонент связности] (* <- lang_ru;; *);;
+		-> [Граф, который состоит из двух или более компонент связности] (* <- lang_ru;; *);;
 		-> [A disconnected graph is a graph that consists of two or more connected components] (* <- lang_en;; *);;
 	*);;
 
