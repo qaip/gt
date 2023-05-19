@@ -7,8 +7,8 @@ definition -> definition_of_dijkstra_algorithm (*
 	-> rrel_key_sc_element: concept_dijkstra_algorithm;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Алгоритмом Дейкстры является графовый алгоритм, изобретённый нидерландским учёным Эдсгером Дейкстрой в 1959 году. Находит кратчайшие пути от одной из вершин графа до всех остальных. Алгоритм работает только для графов без рёбер отрицательного веса] (* <- lang_ru;; *);;
-		-> [Dijkstra algorithm is a graph algorithm invented by the Dutch scientist Edsger Dijkstra in 1959. Finds the shortest paths from one of the vertices of the graph to all the others. The algorithm works only for graphs without edges of negative weight] (* <- lang_en;; *);;
+		-> [Графовый алгоритм, изобретённый нидерландским учёным Эдсгером Дейкстрой в 1959 году. Находит кратчайшие пути от одной из вершин графа до всех остальных. Алгоритм работает только для графов без рёбер отрицательного веса] (* <- lang_ru;; *);;
+		-> [Graph algorithm invented by the Dutch scientist Edsger Dijkstra in 1959. Finds the shortest paths from one of the vertices of the graph to all the others. The algorithm works only for graphs without edges of negative weight] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
