@@ -1,0 +1,104 @@
+concept_circle_graph
+=> nrel_main_idtf:
+	[круговой граф] (* <- lang_ru;; *);
+	[circle graph] (* <- lang_en;; *);;
+
+definition -> definition_of_circle_graph (*
+	-> rrel_key_sc_element: concept_circle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [граф, представленный в виде окружности, в которой вершины графа расположены вдоль окружности, а ребра как хорды окружности. В круговом графе отсутствуют кратные рёбра и петли] (* <- lang_ru;; *);;
+		-> [A circle graph is a graph represented as a circle, where the vertices of the graph are placed along the circle and the edges are chords of the circle. A circle graph does not contain multiple edges or loops] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (круговой граф)] (* <- lang_ru;; *);
+		[Def. (circle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_applications_circle_graph (*
+	-> rrel_key_sc_element: concept_circle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Круговые графы находят широкое применение в кластеризации и анализе данных, в теории графов и других областях] (* <- lang_ru;; *);;
+		-> [Circle graphs have wide applications in clustering and data analysis, graph theory, and other areas] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (применения кругового графа)] (* <- lang_ru;; *);
+		[Stat. (applications)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_data_analysis;
+		concept_graph_theory
+	};;
+*);;
+
+statement -> statement_of_properties_circle_graph (*
+	-> rrel_key_sc_element: concept_circle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Круговые графы являются пересечением декартова произведения графов и деревьев. Это означает, что любой круговой граф может быть представлен как пересечение графа декартова произведения и дерева] (* <- lang_ru;; *);;
+		-> [Circle graphs are the intersection of Cartesian product graphs and trees. This means that any circle graph can be represented as the intersection of a Cartesian product graph and a tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (свойства кругового графа)] (* <- lang_ru;; *);
+		[Stat. (properties of circle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_cartesian_product_graph;
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_examples_circle_graph (*
+	-> rrel_key_sc_element: concept_circle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Примером кругового графа является граф, где вершины представляют города, и ребра предстваляют дороги между городами. Также круговой граф может представлять расстановку участников в круге, где каждый участник связан ребром с двумя соседями] (* <- lang_ru;; *);;
+		-> [An example of a circle graph is a graph where the vertices represent cities and the edges represent roads between cities. A circle graph can also represent the arrangement of participants in a circle, where each participant is connected by an edge to two neighbors] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (примеры круговых графов)] (* <- lang_ru;; *);
+		[Stat. (examples circle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_city;
+		concept_road;
+		concept_participant;
+		concept_edge;
+		concept_vertex;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_data_analysis;
+	concept_graph_theory;
+	concept_cartesian_product_graph;
+	concept_tree;
+	concept_city;
+	concept_road;
+	concept_participant;
+	concept_edge;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;;
