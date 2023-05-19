@@ -14,7 +14,9 @@ concept_longest_path;
 concept_hamiltonian_path;
 concept_eulerian_path;
 concept_path_length;
-concept_graph_path_weight;;
+concept_graph_path_weight;
+concept_graph_path_diameter;
+concept_graph_radius;;
 
 definition -> definition_of_graph_path (*
 	-> rrel_key_sc_element: concept_graph_path;;
@@ -31,7 +33,7 @@ definition -> definition_of_graph_path (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_edge;
-		concept_sequence;
+		concept_graph_sequence;
 		rrel_edge;
 		rrel_vertex
 	};;
@@ -50,8 +52,8 @@ statement -> statement_of_property_of_vertex_independency (*
 		[Stat. (vertex independence property)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
@@ -64,12 +66,12 @@ statement -> statement_of_property_of_edges_independency (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (свойство рёберной независимости)] (* <- lang_ru;; *);
-		[Stat. (edge independence property)] (* <- lang_en;; *);;
+		[Утв. (Свойство рёберной независимости)] (* <- lang_ru;; *);
+		[Stat. (Edge independence property)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path;
-		concept_edge
+		concept_edge;
+		rrel_edge
 	};;
 *);;
 
@@ -86,9 +88,9 @@ statement -> statement_of_path_length_theorem (*
 		[Stat. (Path length theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_edge;
-		concept_path_length
+		concept_path_length;
+		rrel_edge
 	};;
 *);;
 
@@ -105,7 +107,6 @@ statement -> statement_of_path_existence_theorem (*
 		[Stat. (Path existence theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_connected_graph
 	};;
 *);;
@@ -123,7 +124,6 @@ statement -> statement_of_shortest_path_theorem (*
 		[Stat. (Shortest path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_shortest_path
 	};;
 *);;
@@ -141,8 +141,8 @@ statement -> statement_of_longest_path_theorem (*
 		[Stat. (Longest path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
-		concept_np_complete_problem
+		concept_graph;
+		concept_path_length
 	};;
 *);;
 
@@ -159,7 +159,6 @@ statement -> statement_of_path_isomorphism_theorem (*
 		[Stat. (Isomorphism theorem for paths)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_isomorphism;
 		concept_vertex_degree
 	};;
@@ -178,9 +177,10 @@ statement -> statement_of_path_cover_theorem (*
 		[Stat. (Path cover theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_vertex_degree;
-		concept_edge_cover
+		concept_edge_cover;
+		concept_edge;
+		rrel_edge
 	};;
 *);;
 
@@ -197,7 +197,6 @@ statement -> statement_of_path_matching_theorem (*
 		[Stat. (Path matching theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
 		concept_bipartite_graph;
 		concept_matching;
 		concept_vertex_partition
@@ -207,31 +206,28 @@ statement -> statement_of_path_matching_theorem (*
 sc_node_class ->
 	concept_vertex;
 	concept_edge;
-	concept_sequence;
-	concept_path;
+	concept_graph_sequence;
 	concept_vertex;
-	concept_path;
 	concept_edge;
-	concept_graph_path;
 	concept_edge;
 	concept_path_length;
-	concept_graph_path;
 	concept_connected_graph;
-	concept_graph_path;
 	concept_shortest_path;
-	concept_graph_path;
-	concept_np_complete_problem;
-	concept_graph_path;
+	concept_graph;
+	concept_path_length;
 	concept_isomorphism;
 	concept_vertex_degree;
-	concept_graph_path;
 	concept_vertex_degree;
 	concept_edge_cover;
-	concept_graph_path;
+	concept_edge;
 	concept_bipartite_graph;
 	concept_matching;
 	concept_vertex_partition;;
 
 sc_node_role_relation ->
 	rrel_edge;
-	rrel_vertex;;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;
+	rrel_edge;
+	rrel_edge;;

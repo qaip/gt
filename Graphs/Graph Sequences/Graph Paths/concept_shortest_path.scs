@@ -18,7 +18,7 @@ definition -> definition_of_shortest_path (*
 	=> nrel_using_constants: {
 		concept_path_length;
 		concept_graph_path;
-		rrel_edge_weight
+		rrel_rib_weight
 	};;
 *);;
 
@@ -35,26 +35,7 @@ statement -> statement_of_shortest_path_weight_theorem (*
 		[Stat. (Shortest weighted path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path_length;
-		concept_shortest_path
-	};;
-*);;
-
-statement -> statement_of_shortest_path_unweighted_theorem (*
-	-> rrel_key_sc_element: concept_shortest_path;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Алгоритм поиска в ширину находит кратчайший путь в невзвешенном графе] (* <- lang_ru;; *);;
-		-> [Breadth-first search algorithm finds the shortest path in an unweighted graph] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема о кратчайшем невзвешенном пути)] (* <- lang_ru;; *);
-		[Stat. (Shortest unweighted path theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph_path;
-		concept_shortest_path
+		concept_path_length
 	};;
 *);;
 
@@ -73,7 +54,7 @@ statement -> statement_of_floyd_warshall_algorithm (*
 	=> nrel_using_constants: {
 		concept_graph_path_weight;
 		concept_path_length;
-		concept_edge_weight
+		concept_rib_weight
 	};;
 *);;
 
@@ -91,8 +72,7 @@ statement -> statement_of_bellman_ford_algorithm (*
 
 	=> nrel_using_constants: {
 		concept_path_length;
-		concept_shortest_path;
-		concept_edge_weight
+		concept_rib_weight
 	};;
 *);;
 
@@ -100,15 +80,11 @@ sc_node_class ->
 	concept_path_length;
 	concept_graph_path;
 	concept_path_length;
-	concept_shortest_path;
-	concept_graph_path;
-	concept_shortest_path;
 	concept_graph_path_weight;
 	concept_path_length;
-	concept_edge_weight;
+	concept_rib_weight;
 	concept_path_length;
-	concept_shortest_path;
-	concept_edge_weight;;
+	concept_rib_weight;;
 
 sc_node_role_relation ->
-	rrel_edge_weight;;
+	rrel_rib_weight;;

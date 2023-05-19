@@ -16,7 +16,7 @@ definition -> definition_of_path_length (*
 		[Def. (graph path length)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path;
+		concept_graph_path;
 		concept_edge;
 		rrel_edge
 	};;
@@ -37,7 +37,6 @@ statement -> statement_of_path_length_theorem (*
 	=> nrel_using_constants: {
 		concept_graph_path;
 		concept_edge;
-		concept_path_length;
 		rrel_edge
 	};;
 *);;
@@ -55,21 +54,18 @@ statement -> statement_of_path_equals_zero (*
 		[Stat. (Zero path length condition)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path;
-		concept_length_of_path;
+		concept_graph_path;
 		concept_vertex;
 		rrel_vertex
 	};;
 *);;
 
 sc_node_class ->
-	concept_path;
+	concept_graph_path;
 	concept_edge;
 	concept_graph_path;
 	concept_edge;
-	concept_path_length;
-	concept_path;
-	concept_length_of_path;
+	concept_graph_path;
 	concept_vertex;;
 
 sc_node_role_relation ->

@@ -7,8 +7,8 @@ definition -> definition_of_graph_eccentricity (*
 	-> rrel_key_sc_element: concept_graph_eccentricity;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [наибольшее расстояние между вершиной и всеми остальными вершинами графа] (* <- lang_ru;; *);;
-		-> [the greatest distance between a vertex and all other vertices in the graph] (* <- lang_en;; *);;
+		-> [Наибольшее расстояние между вершиной и всеми остальными вершинами графа] (* <- lang_ru;; *);;
+		-> [The greatest distance between a vertex and all other vertices in the graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -18,8 +18,6 @@ definition -> definition_of_graph_eccentricity (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_graph;
-		concept_graph_diameter;
-		concept_graph_radius;
 		concept_path_length;
 		rrel_vertex
 	};;
@@ -38,10 +36,9 @@ statement -> statement_of_eccentricity_radius_diameter_theorem (*
 		[Stat. (Theorem on the relationship between eccentricity radius and diameter of a graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_vertex_eccentricity;
-		concept_graph_radius;
-		concept_graph_diameter;
-		concept_path_length
+		concept_path_length;
+		nrel_graph_radius;
+		nrel_graph_diameter
 	};;
 *);;
 
@@ -58,7 +55,6 @@ statement -> statement_of_eccentricity_center_theorem (*
 		[Stat. (Central vertex theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_vertex_eccentricity;
 		concept_graph_path;
 		concept_graph_length
 	};;
@@ -77,7 +73,6 @@ statement -> statement_of_eccentricity_diameter_theorem (*
 		[Stat. (Theorem on the eccentricity of diametrical vertices)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_vertex_eccentricity;
 		concept_graph_diameter;
 		concept_graph_length
 	};;
@@ -86,19 +81,16 @@ statement -> statement_of_eccentricity_diameter_theorem (*
 sc_node_class ->
 	concept_vertex;
 	concept_graph;
-	concept_graph_diameter;
-	concept_graph_radius;
 	concept_path_length;
-	concept_vertex_eccentricity;
-	concept_graph_radius;
-	concept_graph_diameter;
 	concept_path_length;
-	concept_vertex_eccentricity;
 	concept_graph_path;
 	concept_graph_length;
-	concept_vertex_eccentricity;
 	concept_graph_diameter;
 	concept_graph_length;;
+
+sc_node_norole_relation ->
+	nrel_graph_radius;
+	nrel_graph_diameter;;
 
 sc_node_role_relation ->
 	rrel_vertex;;

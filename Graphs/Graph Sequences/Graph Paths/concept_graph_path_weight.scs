@@ -42,7 +42,6 @@ statement -> statement_of_shortest_path_weight_theorem (*
 		[Stat. (Shortest weighted path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path_weight;
 		concept_shortest_path
 	};;
 *);;
@@ -60,7 +59,6 @@ statement -> statement_of_bellman_ford_algorithm (*
 		[Stat. (Bellman-Ford algorithm)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path_weight;
 		concept_shortest_path;
 		concept_edge_weight
 	};;
@@ -70,9 +68,7 @@ sc_node_class ->
 	concept_weighted_graph;
 	concept_edge;
 	concept_graph;
-	concept_graph_path_weight;
 	concept_shortest_path;
-	concept_graph_path_weight;
 	concept_shortest_path;
 	concept_edge_weight;;
 

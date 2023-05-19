@@ -42,7 +42,6 @@ statement -> statement_of_eulerian_path_exists (*
 		[Stat. (Existence of Eulerian path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_eulerian_path;
 		concept_connected_graph;
 		concept_vertex_degree;
 		concept_graph_path
@@ -62,7 +61,6 @@ statement -> statement_of_semi_eulerian_path_exists (*
 		[Stat. (Existence of semi-Eulerian path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_eulerian_path;
 		concept_connected_graph;
 		concept_vertex_degree;
 		concept_graph_path
@@ -74,11 +72,9 @@ sc_node_class ->
 	concept_vertex;
 	concept_graph;
 	concept_edge;
-	concept_eulerian_path;
 	concept_connected_graph;
 	concept_vertex_degree;
 	concept_graph_path;
-	concept_eulerian_path;
 	concept_connected_graph;
 	concept_vertex_degree;
 	concept_graph_path;;
