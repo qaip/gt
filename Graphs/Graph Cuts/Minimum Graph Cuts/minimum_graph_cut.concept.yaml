@@ -2,7 +2,7 @@ ru: взвешенный минимальный разрез
 en: weighted minimum cut
 definition:
   ru:
-    алгоритм, который используется для разделения графа на две части в
+    Алгоритм, который используется для разделения графа на две части в
     соответствии с весами его ребер
   en:
     Weighted minimum cut is an algorithm used to partition a graph into two
