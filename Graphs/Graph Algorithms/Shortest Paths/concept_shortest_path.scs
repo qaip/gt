@@ -12,8 +12,8 @@ definition -> definition_of_shortest_path (*
 	-> rrel_key_sc_element: concept_shortest_path;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Задача о кратчайшем пути представляет собой задачу поиска самого короткого пути между двумя вершинами на графе, в которой минимизируется вес пути] (* <- lang_ru;; *);;
-		-> [Shortest path problem is the problem of finding a path between two vertices in a graph such that the path weight is minimized] (* <- lang_en;; *);;
+		-> [Задача поиска самого короткого пути между двумя вершинами на графе, в которой минимизируется вес пути] (* <- lang_ru;; *);;
+		-> [The problem of finding a path between two vertices in a graph such that the path weight is minimized] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
