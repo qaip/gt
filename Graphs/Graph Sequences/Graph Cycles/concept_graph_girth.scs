@@ -25,24 +25,20 @@ statement -> statement_of_graph_girth_exists (*
 	-> rrel_key_sc_element: concept_graph_girth;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [В связном графе существует цикл наименьшей длины тогда и только тогда, когда граф не является лесом] (* <- lang_ru;; *);;
-		-> [A connected graph has a minimum cycle length if and only if it is not a forest] (* <- lang_en;; *);;
+		-> [Обхват графа всегда меньше, чем его диаметр] (* <- lang_ru;; *);;
+		-> [he girth of a graph is always less than or equal to its diameter] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Существование длины минимального цикла графа)] (* <- lang_ru;; *);
-		[Stat. (Existence of graph girth)] (* <- lang_en;; *);;
+		[Утв. (Свойства обхвата графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of graph girth)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_connected_graph;
-		concept_graph_cycle;
-		concept_vertex
+		concept_graph_diameter
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph_cycle;
 	concept_graph;
-	concept_connected_graph;
-	concept_graph_cycle;
-	concept_vertex;;
+	concept_graph_diameter;;

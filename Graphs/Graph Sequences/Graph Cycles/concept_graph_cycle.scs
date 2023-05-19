@@ -10,7 +10,6 @@ concept_graph_girth;
 concept_cyclic_graph;
 concept_eulerian_cycle;
 concept_basic_cycle;
-concept_elementary_cycle;
 concept_minimum_weight_cycle;
 concept_cycle_length;;
 
@@ -27,7 +26,7 @@ definition -> definition_of_graph_cycle (*
 		[Def. (graph cycle)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_sequence;
+		concept_graph_path;
 		concept_vertex;
 		concept_graph;
 		concept_edge;
@@ -36,38 +35,38 @@ definition -> definition_of_graph_cycle (*
 	};;
 *);;
 
-statement -> statement_of_eulerian_cycle_exists (*
+statement -> statement_of_cycle_existence_theorem (*
 	-> rrel_key_sc_element: concept_graph_cycle;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [В связном графе существует эйлеров цикл тогда и только тогда, когда степень каждой вершины чётна] (* <- lang_ru;; *);;
-		-> [In a connected graph, an Eulerian cycle exists if and only if the degree of each vertex is even] (* <- lang_en;; *);;
+		-> [В любом неориентированном графе, где количество вершин больше количества рёбер, существует по крайней мере один цикл] (* <- lang_ru;; *);;
+		-> [In any undirected graph where the number of vertices is greater than the number of edges, there exists at least one cycle] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Существование эйлерова цикла)] (* <- lang_ru;; *);
-		[Stat. (Existence of Eulerian cycle)] (* <- lang_en;; *);;
+		[Утв. (Теорема о существовании цикла в графе)] (* <- lang_ru;; *);
+		[Stat. (Cycle existence theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_connected_graph;
-		concept_vertex_degree;
-		concept_graph_path;
+		concept_undirected_graph;
 		concept_vertex;
-		rrel_vertex
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
 sc_node_class ->
-	concept_graph_sequence;
+	concept_graph_path;
 	concept_vertex;
 	concept_graph;
 	concept_edge;
-	concept_connected_graph;
-	concept_vertex_degree;
-	concept_graph_path;
-	concept_vertex;;
+	concept_undirected_graph;
+	concept_vertex;
+	concept_edge;;
 
 sc_node_role_relation ->
 	rrel_vertex;
 	rrel_edge;
-	rrel_vertex;;
+	rrel_vertex;
+	rrel_edge;;

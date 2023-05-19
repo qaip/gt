@@ -38,7 +38,6 @@ statement -> statement_of_eulerian_cycle_exists (*
 	=> nrel_using_constants: {
 		concept_connected_graph;
 		concept_vertex_degree;
-		concept_graph_path;
 		concept_vertex;
 		rrel_vertex
 	};;
@@ -50,7 +49,6 @@ sc_node_class ->
 	concept_graph;
 	concept_connected_graph;
 	concept_vertex_degree;
-	concept_graph_path;
 	concept_vertex;;
 
 sc_node_role_relation ->

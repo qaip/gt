@@ -17,7 +17,8 @@ definition -> definition_of_cycle_length (*
 
 	=> nrel_using_constants: {
 		concept_graph_cycle;
-		concept_edge
+		concept_edge;
+		rrel_edge
 	};;
 *);;
 
@@ -84,3 +85,6 @@ sc_node_class ->
 	concept_graph;
 	concept_graph_cycle;
 	concept_graph;;
+
+sc_node_role_relation ->
+	rrel_edge;;
