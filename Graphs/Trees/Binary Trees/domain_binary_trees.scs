@@ -10,8 +10,6 @@ section_subject_domain_of_binary_trees
 	subject_domain_of_binary_trees;
 	concept_binary_tree;
 	concept_binary_search_tree;
-	concept_binary_sorting_tree;
-	concept_binary_tree;
 	nrel_sibling_node;
 	nrel_leaf_descendant;;
 
@@ -28,8 +26,6 @@ section_subject_domain_of_binary_trees=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_binary_search_tree;
-		concept_binary_sorting_tree;
-		concept_binary_tree;
 
 	-> rrel_explored_relation:
 		nrel_sibling_node;
@@ -41,9 +37,7 @@ section_subject_domain_of_binary_trees=[*
 
 sc_node_class ->
 	concept_binary_tree;
-	concept_binary_search_tree;
-	concept_binary_sorting_tree;
-	concept_binary_tree;;
+	concept_binary_search_tree;;
 
 sc_node_norole_relation ->
 	nrel_sibling_node;

@@ -1,0 +1,60 @@
+concept_binary_tree
+=> nrel_main_idtf:
+	[бинарное дерево] (* <- lang_ru;; *);
+	[binary tree] (* <- lang_en;; *);;
+
+definition -> definition_of_binary_tree (*
+	-> rrel_key_sc_element: concept_binary_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Бинарное дерево иерархическая структура данных, в которой каждый узел имеет не более двух потомков, и которая обычно используется для хранения данных в виде дерева, со связанными друг с другом узлами] (* <- lang_ru;; *);;
+		-> [A binary tree is a hierarchical data structure in which each node has no more than two children, and which is usually used to store data in the form of a tree, with interconnected nodes] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (бинарное дерево)] (* <- lang_ru;; *);
+		[Def. (binary tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_left_child;
+		concept_right_child;
+		concept_subtree;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_bt_representation (*
+	-> rrel_key_sc_element: concept_binary_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Бинарное дерево удобно изображать в виде рисунка, состоящего из узлов и связей между ними. Каждый узел может иметь не более двух потомков, и каждый потомок находится либо слева, либо справа от родительского узла] (* <- lang_ru;; *);;
+		-> [A binary tree can be represented as a drawing consisting of nodes and links between them. Each node can have no more than two children, and each child is located either to the left or to the right of the parent node] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (изображение бинарного дерева)] (* <- lang_ru;; *);
+		[Stat. (bt representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_left_child;
+		concept_right_child;
+		concept_subtree;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_left_child;
+	concept_right_child;
+	concept_subtree;
+	concept_vertex;
+	concept_left_child;
+	concept_right_child;
+	concept_subtree;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;;
