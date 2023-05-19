@@ -1,0 +1,73 @@
+ru:
+  - дерево фенвика
+  - битдерево
+en:
+  - fenwick tree
+  - binary indexed tree
+definition:
+  ru:
+    Дерево Фенвика (или БИТдерево), структура данных, которая позволяет
+    эффективно обрабатывать запросы на изменение элементов массива и нахождение
+    суммы элементов на отрезке массива
+  en:
+    A Fenwick tree, or Binary Indexed Tree (BIT), is a data structure that
+    allows efficient processing of queries for changing array elements and
+    finding the sum of elements on a range of the array
+  using:
+    concepts: |
+      data_structure
+      array
+      query
+      range
+    rrels: |
+      data_structure
+      array
+      element
+      query
+      sum
+      range
+statement:
+  fenwick_tree_representation:
+    title:
+      ru: изображение дерева Фенвика
+      en: fenwick tree representation
+    ru:
+      Дерево Фенвика представляет собой бинарное дерево, где каждый узел
+      соответствует некоторому подмассиву исходного массива. Каждый узел
+      содержит информацию о сумме элементов соответствующего подмассива. Для
+      обработки запросов на изменение элементов массива и нахождение суммы
+      элементов на отрезке массива используются операции, которые изменяют или
+      запрашивают значения в нескольких узлах дерева. Одна из особенностей
+      дерева Фенвика заключается в том, что каждый узел дерева имеет родителя,
+      который можно вычислить и который содержит информацию о подмассиве,
+      который является объединением подмассивов, соответствующих детям этого
+      узла. Это позволяет эффективно обрабатывать запросы на изменение элементов
+      и нахождение суммы элементов на отрезке массива
+    en:
+      A Fenwick tree is a binary tree where each node corresponds to a subrange
+      of the original array. Each node contains information about the sum of the
+      elements of the corresponding subrange. To process queries for changing
+      array elements and finding the sum of elements on a range of the array,
+      operations are used that change or request values in several nodes of the
+      tree. One of the features of the Fenwick tree is that each node of the
+      tree has a parent and which contains information about the subrange that
+      is the union of the subranges corresponding to the children of this node.
+      This allows efficient processing of queries for changing array elements
+      and finding the sum of elements on a range of the array
+    using:
+      concepts: |
+        data_structure
+        array
+        query
+        range
+        vertex
+        edge
+      rrels: |
+        data_structure
+        array
+        element
+        query
+        sum
+        range
+        vertex
+        edge
