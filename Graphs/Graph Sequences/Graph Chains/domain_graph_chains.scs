@@ -15,6 +15,7 @@ section_subject_domain_of_graph_chains
 	concept_graph_subchain;
 	concept_chain_weight;
 	concept_chain_length;
+	concept_eulerian_chain;
 	nrel_arcs_adjacency;;
 
 section_subject_domain_of_graph_chains=[*
@@ -35,6 +36,7 @@ section_subject_domain_of_graph_chains=[*
 		concept_graph_subchain;
 		concept_chain_weight;
 		concept_chain_length;
+		concept_eulerian_chain;
 
 	-> rrel_explored_relation:
 		nrel_arcs_adjacency;
@@ -50,7 +52,8 @@ sc_node_class ->
 	concept_alternating_chain;
 	concept_graph_subchain;
 	concept_chain_weight;
-	concept_chain_length;;
+	concept_chain_length;
+	concept_eulerian_chain;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;;
