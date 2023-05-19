@@ -18,26 +18,213 @@ definition -> definition_of_dual_graph (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_edge4;
-		concept_face;
+		concept_edge;
 		rrel_vertex;
 		rrel_edge;
-		rrel_face;
-		nrel_edge_adjacency
+		nrel_edge_adjacency;
+		nrel_face
 	};;
 *);;
 
+statement -> statement_of_planar_dual_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф плоского графа совпадает с диаграммой Вороного, представляющей собой распределение точек на плоскости на непересекающиеся области, каждая из которых соответствует одной из точек заданного множества] (* <- lang_ru;; *);;
+		-> [The dual graph of a planar graph coincides with the Voronoi diagram, which represents the distribution of points on a plane into non-intersecting areas, each of which corresponds to one of the points of a given set] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для плоского графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a planar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_planar_graph;
+		concept_voronoi_diagram;
+		concept_point;
+		nrel_point_adjacency
+	};;
+*);;
+
+statement -> statement_of_dual_graph_as_orthogonal_polyhedron (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф графа является ортогональным полиэдром, телом, состоящим из граней, являющихся правильными многоугольниками, и рёбер, соединяющих эти грани. Любой двойственный граф является ортогональным полиэдром, но не все ортогональные полиэдры являются двойственными графами] (* <- lang_ru;; *);;
+		-> [The dual graph of a graph is an orthogonal polyhedron, that is, a body consisting of faces that are regular polygons and edges connecting these faces. Any dual graph is an orthogonal polyhedron, but not all orthogonal polyhedra are dual graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф как ортогональный полиэдр)] (* <- lang_ru;; *);
+		[Stat. (Dual graph as an orthogonal polyhedron)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_dual_graph;
+		concept_orthogonal_polyhedron
+	};;
+*);;
+
+statement -> statement_of_dual_graph_planar_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф планарного графа является планарным графом] (* <- lang_ru;; *);;
+		-> [The dual graph of a planar graph is a planar graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для планарного графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a planar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_planar_graph;
+		concept_dual_graph
+	};;
+*);;
+
+statement -> statement_of_dual_graph_acyclic_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф ациклического графа является деревом] (* <- lang_ru;; *);;
+		-> [The dual graph of an acyclic graph is a tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для ациклического графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for an acyclic graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_acyclic_graph;
+		concept_dual_graph;
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_dual_graph_bipartite_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственным графом для двудольного графа является граф, в котором каждой вершине первой доли соответствует вершина второй доли, а каждой вершине второй доли вершина первой доли. Рёбра соединяют вершины первой доли с вершинами второй доли, соответствующими смежным в исходном графе] (* <- lang_ru;; *);;
+		-> [The dual graph for a bipartite graph is a graph in which each vertex of the first part corresponds to a vertex of the second part, and each vertex of the second part corresponds to a vertex of the first part. The edges connect the vertices of the first part with the vertices of the second part corresponding to adjacent vertices in the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для двудольного графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_bipartite_graph;
+		concept_dual_graph
+	};;
+*);;
+
+statement -> statement_of_dual_graph_line_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф линейного графа является графом, в котором каждому ребру исходного графа соответствует вершина, а каждой вершине исходного графа ребро, соответствующее рёбрам, смежным с данной вершиной в исходном графе] (* <- lang_ru;; *);;
+		-> [The dual graph of a line graph is a graph in which each edge of the original graph corresponds to a vertex, and each vertex of the original graph corresponds to an edge corresponding to the edges adjacent to that vertex in the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для линейного графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a line graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_line_graph;
+		concept_dual_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_dual_graph_regular_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф регулярного графа является регулярным графом того же порядка] (* <- lang_ru;; *);;
+		-> [The dual graph of a regular graph is a regular graph of the same order] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для регулярного графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a regular graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_regular_graph;
+		concept_dual_graph
+	};;
+*);;
+
+statement -> statement_of_dual_graph_polyhedral_graph (*
+	-> rrel_key_sc_element: concept_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф для выпуклого многогранника является графом, вершинами которого являются грани исходного многогранника, а рёбрами смежность граней в исходном многограннике. Каждой грани исходного многогранника соответствует вершина двойственного графа, а две вершины двойственного графа соединены ребром, если соответствующие им грани в исходном многограннике имеют общее ребро] (* <- lang_ru;; *);;
+		-> [The dual graph for a polyhedral graph is a graph whose vertices are the faces of the original polyhedron, and whose edges represent the adjacency of faces in the original polyhedron. Each face of the original polyhedron corresponds to a vertex of the dual graph, and two vertices of the dual graph are connected by an edge if the corresponding faces in the original polyhedron share an edge] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф для выпуклого многогранника)] (* <- lang_ru;; *);
+		[Stat. (Dual graph for a polyhedral graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_polyhedral_graph;
+		concept_dual_graph;
+		concept_face;
+		concept_edge
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
-	concept_edge4;
-	concept_face;;
+	concept_edge;
+	concept_graph;
+	concept_planar_graph;
+	concept_voronoi_diagram;
+	concept_point;
+	concept_graph;
+	concept_dual_graph;
+	concept_orthogonal_polyhedron;
+	concept_graph;
+	concept_planar_graph;
+	concept_dual_graph;
+	concept_graph;
+	concept_acyclic_graph;
+	concept_dual_graph;
+	concept_tree;
+	concept_graph;
+	concept_bipartite_graph;
+	concept_dual_graph;
+	concept_graph;
+	concept_line_graph;
+	concept_dual_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_regular_graph;
+	concept_dual_graph;
+	concept_graph;
+	concept_polyhedral_graph;
+	concept_dual_graph;
+	concept_face;
+	concept_edge;;
 
 sc_node_norole_relation ->
-	nrel_edge_adjacency;;
+	nrel_edge_adjacency;
+	nrel_face;
+	nrel_point_adjacency;;
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_edge;
-	rrel_face;;
+	rrel_edge;;
