@@ -7,7 +7,7 @@ en:
   - empty graph
 definition:
   ru:
-    граф, у которого нет никаких ребер, соединяющих его
+    Граф, у которого нет никаких ребер, соединяющих его
     вершины
   en:
     A null graph is a graph that does not have any edges connecting its vertices

@@ -5,7 +5,7 @@ en:
   - unweighted graph
 definition:
   ru:
-    граф, у которого каждому ребру не ставится в соответствие некоторое
+    Граф, у которого каждому ребру не ставится в соответствие некоторое
     значение, или вес
   en:
     An unweighted graph is a graph in which each edge is not assigned some

@@ -1,7 +1,7 @@
 ru: взвешенный граф
 en: weighted graph
 definition:
-  ru: граф, в котором каждому ребру соответсвтвует некотрое значение, или вес
+  ru: Граф, в котором каждому ребру соответсвтвует некотрое значение, или вес
   en:
     A weighted graph is a graph in which each edge corresponds to some value, or
     weight

@@ -1,7 +1,7 @@
 ru: полный граф
 en: complete graph
 definition:
-  ru: граф, в котором каждая пара различных вершин смежна
+  ru: Граф, в котором каждая пара различных вершин смежна
   en:
     Complete graph is a simple undirected graph in which every pair of distinct
     vertices is connected by a unique edge

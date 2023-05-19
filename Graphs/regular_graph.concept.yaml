@@ -4,7 +4,7 @@ ru:
 en: regular graph
 definition:
   ru:
-    граф, у которого степени всех вершин равны, каждая вершина имеет одинаковое
+    Граф, у которого степени всех вершин равны, каждая вершина имеет одинаковое
     количество соседей
   en:
     A regular graph is a graph in which the degrees of all vertices are equal,

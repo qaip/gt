@@ -1,7 +1,7 @@
 ru: псевдограф
 en: pseudograph
 definition:
-  ru: граф, содержащим петли и кратные рёбра
+  ru: Граф, содержащим петли и кратные рёбра
   en: A pseudograph is a graph that allows loops and multiple edges
   using:
     concepts: |
