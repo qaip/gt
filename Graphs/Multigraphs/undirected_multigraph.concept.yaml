@@ -3,7 +3,7 @@ en: undirected multigraph
 
 definition:
   ru:
-    Неориентированным мультиграфом называют неориентированный граф, в котором
+    неориентированный граф, в котором
     разрешены кратные рёбра, тоесть рёбра, соединяющие одну и ту же пару вершин
   en:
     An undirected multigraph is an undirected graph in which multiple edges,
