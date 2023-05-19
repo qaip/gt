@@ -7,7 +7,7 @@ definition -> definition_of_separable_graph (*
 	-> rrel_key_sc_element: concept_separable_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Разделимым графом является графом, который может быть разделен на две или более компонент связности при удалении вершины или ребра] (* <- lang_ru;; *);;
+		-> [граф, который может быть разделен на две или более компонент связности при удалении вершины или ребра] (* <- lang_ru;; *);;
 		-> [A separable graph is a graph that can be split into two or more connected components by removing a vertex or edge] (* <- lang_en;; *);;
 	*);;
 
