@@ -3,12 +3,12 @@ en: breadth traversal | breadth-first traversal
 
 definition:
   ru:
-    Обходом в ширину называется обход графа, при котором вершины, находящиеся на
+    Обход графа, при котором вершины, находящиеся на
     расстоянии k + 1 от начальной вершины обхода посещаются только после того,
     как были посещены все вершины, находящиеся на расстоянии k от начальной
     вершины обхода
   en:
-    A breadth-first traversal is a graph traversal in which vertices at a
+    A graph traversal in which vertices at a
     distance k + 1 from the initial traversal vertex are visited only after all
     vertices at a distance k from the initial traversal vertex have been visited
   using:
