@@ -7,7 +7,7 @@ definition -> definition_of_floyd_warshall_algorithm (*
 	-> rrel_key_sc_element: concept_floyd_warshall_algorithm;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Алгоритмом Флойда-Уоршелла является графовый алгоритм поиска кратчайших путей во взвешенном графе с положительным или отрицательным весом ребер. За одно выполнение алгоритма будут найдены веса кратчайших путей между всеми парами вершин] (* <- lang_ru;; *);;
+		-> [Графовый алгоритм поиска кратчайших путей во взвешенном графе с положительным или отрицательным весом ребер. За одно выполнение алгоритма будут найдены веса кратчайших путей между всеми парами вершин] (* <- lang_ru;; *);;
 		-> [A graph algorithm for finding shortest paths in a weighted graph with positive or negative edge weights. In one execution of the algorithm, the weights of the shortest paths between all pairs of vertices will be found] (* <- lang_en;; *);;
 	*);;
 
