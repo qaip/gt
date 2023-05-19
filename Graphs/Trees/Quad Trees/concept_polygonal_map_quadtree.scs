@@ -1,0 +1,46 @@
+concept_polygonal_map_quadtree
+=> nrel_main_idtf:
+	[квадродерево многоугольников] (* <- lang_ru;; *);
+	[polygonal map quadtree] (* <- lang_en;; *);;
+
+definition -> definition_of_polygonal_map_quadtree (*
+	-> rrel_key_sc_element: concept_polygonal_map_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, используемая для представления многоугольников, которая представляет их в виде дерева квадрантов] (* <- lang_ru;; *);;
+		-> [A data structure used to represent polygons that represents them as a quadtree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (квадродерево многоугольников)] (* <- lang_ru;; *);
+		[Def. (polygonal map quadtree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_quadtree
+	};;
+*);;
+
+statement -> statement_of_quadtree_polygon_property (*
+	-> rrel_key_sc_element: concept_polygonal_map_quadtree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Каждый многоугольник имеет единственное представление в квадродереве многоугольников] (* <- lang_ru;; *);;
+		-> [Every polygon has a unique representation in a polygonal map quadtree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство многоугольников в квадродереве)] (* <- lang_ru;; *);
+		[Stat. (A property of polygons in a quadtree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_polygon;
+		nrel_representation
+	};;
+*);;
+
+sc_node_class ->
+	concept_quadtree;;
+
+sc_node_norole_relation ->
+	nrel_polygon;
+	nrel_representation;;
