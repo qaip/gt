@@ -11,8 +11,8 @@ definition -> definition_of_hypergraph_edge (*
 	-> rrel_key_sc_element: concept_hypergraph_edge;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Ребром гиперграфа, или гиперребром, является такое ребро, которое может соединять более двух вершин] (* <- lang_ru;; *);;
-		-> [A hypergraph edge, or hyperedge, is an edge that can connect more than two vertices] (* <- lang_en;; *);;
+		-> [Ребро, которое может соединять более двух вершин] (* <- lang_ru;; *);;
+		-> [Is an edge that can connect more than two vertices] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
