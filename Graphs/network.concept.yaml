@@ -53,5 +53,5 @@ statement:
       such as the star, bus, ring, hybrid, and others
     using:
       concepts: |
-        network
+        graph
  

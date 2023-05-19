@@ -15,5 +15,3 @@ definition:
   using:
     concepts: |
       graph
-    rrels: |
-      vertex

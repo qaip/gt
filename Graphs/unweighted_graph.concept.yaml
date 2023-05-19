@@ -46,7 +46,6 @@ statement:
     using:
       concepts: |
         graph
-        unweighted_graph
         path
   bipartiteness:
     title:
@@ -65,7 +64,6 @@ statement:
     using:
       concepts: |
         graph
-        unweighted_graph
         bipartite_graph
   unweighted_graph_as_tree:
     title:
@@ -93,7 +91,6 @@ statement:
     using:
       concepts: |
         graph
-        unweighted_graph
         complete_graph
   coloring_unweighted_graph:
     title:

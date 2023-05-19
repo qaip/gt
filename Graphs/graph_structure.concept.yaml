@@ -31,4 +31,3 @@ statement:
     using:
       concepts: |
         graph
-        graph_structure

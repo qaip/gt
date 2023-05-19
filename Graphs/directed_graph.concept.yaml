@@ -29,8 +29,6 @@ statement:
     ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
     en: A directed graph is weak if it has a chain
     using:
-      concepts: |
-        directed_graph
       nrels: |
         chain
   strongly_connected_directed_graph:
@@ -43,7 +41,6 @@ statement:
         to any other vertex in the graph
     using:
       concepts: |
-        directed_graph
         path
         vertex
   acyclic_directed_graph:
@@ -54,8 +51,6 @@ statement:
         циклов
     en: A directed graph is acyclic if there are no directed cycles in it
     using:
-      concepts: |
-        directed_graph
       nrels: |
         cycle
   topological_sorting:
