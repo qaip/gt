@@ -1,7 +1,7 @@
 ru: мост
 en: bridge
 definition:
-  ru: ребро, удаление которого увеличивает число компонент связности
+  ru: Ребро, удаление которого увеличивает число компонент связности
   en:
     A bridge is an edge which removal increases the number of connected
     components

@@ -2,7 +2,7 @@ ru: разделимый граф
 en: separable graph
 definition:
   ru:
-    граф, который может быть разделен на две или более компонент связности при
+    Граф, который может быть разделен на две или более компонент связности при
     удалении вершины или ребра
   en:
     A separable graph is a graph that can be split into two or more connected

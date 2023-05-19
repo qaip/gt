@@ -2,7 +2,7 @@ ru: неразделимый граф
 en: non-separable graph
 definition:
   ru:
-    граф, который не может быть разделен на две или более компонент связности
+    Граф, который не может быть разделен на две или более компонент связности
     при удалении вершины или ребра
   en:
     A non-separable graph is a graph that cannot be split into two or more

@@ -1,7 +1,7 @@
 ru: тривиальный граф
 en: trivial graph
 definition:
-  ru: граф, который состоит из одной вершины и не имеет ребер
+  ru: Граф, который состоит из одной вершины и не имеет ребер
   en: A trivial graph is a graph that consists of only one vertex and no edges
   using:
     concepts: |
