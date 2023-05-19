@@ -7,7 +7,7 @@ definition -> definition_of_undirected_multigraph (*
 	-> rrel_key_sc_element: concept_undirected_multigraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Неориентированным мультиграфом называют неориентированный граф, в котором разрешены кратные рёбра, тоесть рёбра, соединяющие одну и ту же пару вершин] (* <- lang_ru;; *);;
+		-> [неориентированный граф, в котором разрешены кратные рёбра, тоесть рёбра, соединяющие одну и ту же пару вершин] (* <- lang_ru;; *);;
 		-> [An undirected multigraph is an undirected graph in which multiple edges, wich means edges connecting the same pair of vertices, are allowed] (* <- lang_en;; *);;
 	*);;
 
