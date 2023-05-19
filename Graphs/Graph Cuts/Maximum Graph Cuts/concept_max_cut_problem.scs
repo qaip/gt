@@ -1,0 +1,124 @@
+concept_max_cut_problem
+=> nrel_main_idtf:
+	[задача максимального разреза графа] (* <- lang_ru;; *);
+	[maximum graph cut problem] (* <- lang_en;; *);;
+
+definition -> definition_of_max_cut_problem (*
+	-> rrel_key_sc_element: concept_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального разреза графа заключается в поиске такого разбиения вершин графа на две непересекающиеся части, что суммарное значение весов ребер, идущих между вершинами из разных частей, максимально] (* <- lang_ru;; *);;
+		-> [The maximum graph cut problem consists in finding a partition of the vertices in a graph into two non-overlapping parts such that the sum of the weights of the edges connecting vertices in different parts is maximized] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (задача максимального разреза графа)] (* <- lang_ru;; *);
+		[Def. (maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_partition
+	};;
+*);;
+
+statement -> statement_of_max_cut_usage (*
+	-> rrel_key_sc_element: concept_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Проблема максимального разреза графа используется в задачах оптимизации и теории графов, в том числе для решения задачи минимального пути и кластеризации данных] (* <- lang_ru;; *);;
+		-> [The maximum graph cut problem is used in optimization problems and graph theory, including solving the problem of minimum path and data clustering] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (использование задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (usage of maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_partition
+	};;
+*);;
+
+statement -> statement_of_max_cut_algorithms (*
+	-> rrel_key_sc_element: concept_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Существует несколько алгоритмов для решения задачи максимального разреза графа, включая алгоритм Каргера-Карпа и алгоритм Фидук-Эдмондса, которые находят максимальный разрез графа за полиномиальное время] (* <- lang_ru;; *);;
+		-> [There are several algorithms for solving the maximum graph cut problem, including the Karger-Karp and Fiduccia-Mattheyses algorithms, which find the maximum graph cut in polynomial time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (алгоритмы задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (algorithms for maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_algorithm;
+		concept_karger_karp_algorithm;
+		concept_fiduccia_mattheyses_algorithm
+	};;
+*);;
+
+statement -> statement_of_max_cut_applications (*
+	-> rrel_key_sc_element: concept_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального разреза графа используется в различных областях, таких как анализ социальных сетей и машинное обучение, для кластеризации данных и выделения сообществ] (* <- lang_ru;; *);;
+		-> [The maximum graph cut problem is used in various fields such as social network analysis and machine learning for data clustering and community detection] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (приложения задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (applications of maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_social_network_analysis;
+		concept_machine_learning;
+		concept_data_clustering;
+		concept_community_detection
+	};;
+*);;
+
+statement -> statement_of_max_cut_complexity (*
+	-> rrel_key_sc_element: concept_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального разреза графа является NP-полной, что означает, что в наихудшем случае время, необходимое для решения этой задачи, растет экспоненциально с размером входных данных] (* <- lang_ru;; *);;
+		-> [The maximum graph cut problem is NP-complete, which means that in the worst case, the time required to solve this problem grows exponentially with the size of the input data] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (сложность проблемы максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (complexity of maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_np_complete;
+		concept_computational_complexity_theory;
+		concept_graph;
+		concept_graph_cut
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_partition;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_partition;
+	concept_algorithm;
+	concept_karger_karp_algorithm;
+	concept_fiduccia_mattheyses_algorithm;
+	concept_social_network_analysis;
+	concept_machine_learning;
+	concept_data_clustering;
+	concept_community_detection;
+	concept_np_complete;
+	concept_computational_complexity_theory;
+	concept_graph;
+	concept_graph_cut;;

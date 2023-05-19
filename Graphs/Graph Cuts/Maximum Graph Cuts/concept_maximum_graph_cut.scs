@@ -1,0 +1,33 @@
+concept_maximum_graph_cut
+=> nrel_main_idtf:
+	[взвешенный максимальный разрез] (* <- lang_ru;; *);
+	[weighted maximum cut] (* <- lang_en;; *);;
+
+definition -> definition_of_maximum_graph_cut (*
+	-> rrel_key_sc_element: concept_maximum_graph_cut;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [алгоритм, который используется для разделения графа на две части в соответствии с весами его ребер, таким образом, чтобы суммарный вес ребер между двумя частями был максимальным] (* <- lang_ru;; *);;
+		-> [Weighted maximum cut is an algorithm used to partition a graph into two parts according to the weights of its edges, such that the total weight of the edges between the two parts is maximum] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (взвешенный максимальный разрез)] (* <- lang_ru;; *);
+		[Def. (weighted maximum cut)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_partition;
+		rrel_algorithm
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_partition;;
+
+sc_node_role_relation ->
+	rrel_algorithm;;
