@@ -7,7 +7,7 @@ definition -> definition_of_block_cutpoint_graph (*
 	-> rrel_key_sc_element: concept_block_cutpoint_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф с блоками и точками сочленения является графом, который не имеет мостов, но может быть разбит на блоки и точки сочленения] (* <- lang_ru;; *);;
+		-> [граф, который не имеет мостов, но может быть разбит на блоки и точки сочленения] (* <- lang_ru;; *);;
 		-> [A blockcutpoint is a graph that has no bridges but can be decomposed into blocks and cutpoints] (* <- lang_en;; *);;
 	*);;
 
