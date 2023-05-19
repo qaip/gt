@@ -1,0 +1,32 @@
+ru: эйлерова цепь
+en: eulerian chain
+
+definition:
+  ru: Цепь в графе, которая проходит по каждому ребру ровно один раз
+  en: A chain in a graph that passes through each edge exactly once
+  using:
+    concepts: |
+      graph
+      edge
+      graph_chain
+    rrels: |
+      edge
+statement:
+  eulerian_chain_theorem:
+    title:
+      ru: Теорема об эйлеровой цепи
+      en: Eulerian chain theorem
+    ru:
+      Граф имеет эйлерову цепь, если и только если он является связным и
+      степени всех вершин четные
+    en:
+      A graph has an eulerian chain if and only if it is connected and the degree
+      of every vertex is even
+    using:
+      concepts: |
+        graph
+        chain
+        vertex
+      rrels: |
+        vertex
+  

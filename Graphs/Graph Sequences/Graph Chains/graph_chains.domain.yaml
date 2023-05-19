@@ -13,6 +13,7 @@ concepts: |
   graph_subchain
   chain_weight
   chain_length
+  eulerian_chain
 
 nrels: |
   arcs_adjacency

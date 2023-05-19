@@ -12,21 +12,17 @@ definition:
     rrels: |
       vertex
 statement:
-  graph_coloring_theorem:
+  alternating_path_theorem:
     title:
-      ru: Теорема о раскраске графа
-      en: Graph coloring theorem
-    ru: В любом графе с четными циклами можно раскрасить вершины в два цвета
-    en: In any graph with even cycles, it is possible to color the vertices with two colors
-    using:
-      concepts: |
-        graph_coloring
-  graph_traversal_theorem:
-    title:
-      ru: Теорема о обходе графа
-      en: Graph traversal theorem
-    ru: Существует несколько способов обхода графа, включая DFS и BFS
-    en: There are several ways to traverse a graph, including DFS and BFS
+      ru: Теорема о чередующейся цепи
+      en: Alternating path theorem
+    ru:
+      Любой двудольный граф имеет чередующуюся цепь максимального размера
+    en:
+      Every bipartite graph has an alternating path of maximum size
     using:
       concepts: |
         graph
+        bipartite_graph
+        chain_length
+        

@@ -6,8 +6,27 @@ definition:
   en: The sum of the weights of the edges in a chain
   using:
     concepts: |
-      edge_weight
       edge
-      chain
+      graph_chain
     rrels: |
       edge
+    nrels: |
+      rib_weight
+statement: 
+   maximal_weight_chain_theorem:
+    title:
+      ru: Теорема о цепи максимального веса
+      en: Maximal weight chain theorem
+    ru:
+      Цепь с максимальной суммой весов рёбер
+    en:
+      Chain with maximum sum of edge weights
+    using:
+      concepts: |
+        graph
+        edge
+        graph_chain
+      rrels: |
+        edge
+      nrels: |
+        rib_weight

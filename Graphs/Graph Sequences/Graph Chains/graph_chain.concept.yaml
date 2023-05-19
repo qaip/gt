@@ -6,35 +6,33 @@ definition:
   en: A sequence of vertices in a graph such that every two adjacent vertices are connected by an edge
   using:
     concepts: |
+      graph_sequence
       vertex
       edge
     rrels: |
       vertex
       edge
 statement:
-  eulerian_chain_theorem:
+
+  theorem_subchain_diameter:
     title:
-      ru: Теорема об эйлеровой цепи
-      en: Eulerian chain theorem
-    ru: Граф содержит эйлерову цепь тогда и только тогда, когда все его вершины имеют четную степень
-    en: A graph contains an Eulerian chain if and only if every vertex has even degree
+      ru: Теорема о диаметре подцепи
+      en: Subchain diameter theorem
+    ru:
+      Диаметр подцепи в графе равен диаметру между ее концами
+    en:
+      The diameter of a subchain in a graph is equal to the diameter between its
+      endpoints
     using:
       concepts: |
-        eulerian_chain
-        vertex_degree
-  hamiltonian_chain_theorem:
-    title:
-      ru: Теорема о гамильтоновой цепи
-      en: Hamiltonian chain theorem
-    ru: Граф содержит гамильтонову цепь тогда и только тогда, когда он связный и любое
-      подмножество вершин суммарной степенью не менее чем количество вершин в этом подмножестве минус один
-    en: A graph contains a Hamiltonian chain if and only if it is connected and any
-      subset of vertices has a total degree of at least one less than the number of
-      vertices in the subset
-    using:
-      concepts: |
-        hamiltonian_chain
-        connected_graph
+        vertex
+        graph
+        graph_subchain
+        graph_diameter
+      rrels: |
+        vertex
+        endpoints
+
 subclass:
   - simple_graph_chain
   - hamiltonian_chain
@@ -42,3 +40,4 @@ subclass:
   - graph_subchain
   - chain_weight
   - chain_length
+  - eulerian_chain
