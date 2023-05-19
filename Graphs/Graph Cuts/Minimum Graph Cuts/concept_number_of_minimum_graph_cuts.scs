@@ -1,0 +1,35 @@
+concept_number_of_minimum_graph_cuts
+=> nrel_main_idtf:
+	[минимальный разрез графа] (* <- lang_ru;; *);
+	[minimum graph cut] (* <- lang_en;; *);;
+
+definition -> definition_of_number_of_minimum_graph_cuts (*
+	-> rrel_key_sc_element: concept_number_of_minimum_graph_cuts;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [множество ребер, удаление которых приводит к тому, что исток и сток графа находятся в разных компонентах связности] (* <- lang_ru;; *);;
+		-> [A minimum graph cut is a set of edges whose removal results in the source and sink of the graph being in different connected components] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (минимальный разрез графа)] (* <- lang_ru;; *);
+		[Def. (minimum graph cut)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_graph_cut;
+		concept_directed_graph;
+		rrel_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_graph_cut;
+	concept_directed_graph;;
+
+sc_node_role_relation ->
+	rrel_edge;;
