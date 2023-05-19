@@ -7,7 +7,7 @@ definition -> definition_of_graph_sink (*
 	-> rrel_key_sc_element: concept_graph_sink;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [вершина, которая не имеет исходящих ребер] (* <- lang_ru;; *);;
+		-> [Вершина, которая не имеет исходящих ребер] (* <- lang_ru;; *);;
 		-> [A graph sink is a vertex that has no outgoing edges] (* <- lang_en;; *);;
 	*);;
 
