@@ -3,7 +3,7 @@ en: directed hypergraph
 
 definition:
   ru:
-    Направленным является гиперграф, который состоит из множества вершин V и
+    гиперграф, который состоит из множества вершин V и
     множества гиперрёбер H, в котором гиперрёбра упорядоченные пары
   en:
     Directed Hipergraph is such hypergraph, that consists of a set of vertices V
