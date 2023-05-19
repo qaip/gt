@@ -15,8 +15,8 @@ definition -> definition_of_graph_algorithm (*
 	-> rrel_key_sc_element: concept_graph_algorithm;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Графовые алгоритмы представляют собой последовательность шагов для перебора вершин, поиска определенной вершины или пути между двумя заданными вершинами] (* <- lang_ru;; *);;
-		-> [Graph algorithms are a sequence of steps for iterating over vertices, finding a specific vertex, or a path between two given vertices] (* <- lang_en;; *);;
+		-> [Последовательность шагов для перебора вершин, поиска определенной вершины или пути между двумя заданными вершинами] (* <- lang_ru;; *);;
+		-> [A sequence of steps for iterating over vertices, finding a specific vertex, or a path between two given vertices] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
