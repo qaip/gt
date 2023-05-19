@@ -17,7 +17,8 @@ section_subject_domain_of_subgraphs
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
-	nrel_edge_induced_subgraph;;
+	nrel_edge_induced_subgraph;
+	nrel_subgraph;;
 
 section_subject_domain_of_subgraphs=[*
 	subject_domain_of_subgraphs
@@ -42,6 +43,7 @@ section_subject_domain_of_subgraphs=[*
 		nrel_vertex_adjacency;
 		nrel_vertex_induced_subgraph;
 		nrel_edge_induced_subgraph;
+		nrel_subgraph;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;;
@@ -59,4 +61,5 @@ sc_node_norole_relation ->
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
-	nrel_edge_induced_subgraph;;
+	nrel_edge_induced_subgraph;
+	nrel_subgraph;;
