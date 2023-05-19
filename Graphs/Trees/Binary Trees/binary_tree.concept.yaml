@@ -38,3 +38,7 @@ statement:
         subtree
       rrels: |
         vertex
+subclass:
+  - brother_tree
+  - red_black_tree
+  - avl_tree
