@@ -35,7 +35,6 @@ statement -> statement_of_finding_bridges (*
 		[Stat. (Finding bridges in a graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_bridge;
 		concept_edge;
 		rrel_edge;
 		nrel_connected_component
@@ -44,7 +43,6 @@ statement -> statement_of_finding_bridges (*
 
 sc_node_class ->
 	concept_edge;
-	concept_bridge;
 	concept_edge;;
 
 sc_node_norole_relation ->
