@@ -18,8 +18,8 @@ definition:
 statement:
   block_cutpoint_graph_vs_biconnected_graph:
     title:
-      ru: сравнение графа с блоками и точками сочленения и двусвязного графа
-      en: comparison of a block-cutpoint graph and a biconnected graph
+      ru: Сравнение графа с блоками и точками сочленения и двусвязного графа
+      en: Comparison of a block-cutpoint graph and a biconnected graph
     ru:
       Граф с блоками и точками сочленения и биконнективный граф являются особыми
       типами связности графов. Однако, графы с блоками и точками сочленения

@@ -11,3 +11,57 @@ definition:
     rrels: |
       vertex
       edge
+statement:
+  trivial_graph_in_algorithms:
+    title:
+      ru: Использование тривиальных графов в алгоритмах
+      en: Using trivial graphs in algorithms
+    ru:
+      Тривиальные графы могут быть использованы в алгоритмах для обработки
+      крайних случаев или для тестирования реализации алгоритмов на простых
+      примерах
+    en:
+      Trivial graphs can be used in algorithms to handle edge cases or to test
+      algorithm implementations on simple examples
+    using:
+      concepts: |
+        graph_algorithm
+  trivial_graph_in_graph_theory:
+    title:
+      ru: Тривиальные графы в теории графов
+      en: Trivial graphs in graph theory
+    ru:
+      Тривиальные графы могут быть использованы для иллюстрации определений
+      и теорем в теории графов
+    en:
+      Trivial graphs can be used to illustrate definitions and theorems in graph
+      theory
+    using:
+      concepts: |
+        graph_theory
+  trivial_graph_with_self_loop:
+    title:
+      ru: Тривиальный граф с петлей
+      en: Trivial graph with a self-loop
+    ru:
+      Тривиальный граф может содержать петлю, соединяющую его единственную
+      вершину
+    en:
+      Trivial graph can have a self-loop connecting its only vertex
+    using:
+      concepts: |
+        trivial_graph
+      rrels: |
+        loop
+  trivial_graph_and_connected_components:
+    title:
+      ru: Связность тривиального графа
+      en: Connectivity of trivial graph
+    ru:
+      Тривиальный граф является связным графом, так как он состоит только из
+      одной вершины
+    en:
+      Trivial graph is a connected graph, since it consists of a single vertex
+    using:
+      concepts: |
+        connected_graph

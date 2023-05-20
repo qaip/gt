@@ -8,8 +8,8 @@ definition:
   using:
     concepts: |
       graph
-      path
+      graph_path
       vertex
     rrels: |
       vertex
-      path
+      graph_path
