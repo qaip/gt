@@ -33,8 +33,8 @@ statement -> statement_of_applications_circle_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (применения кругового графа)] (* <- lang_ru;; *);
-		[Stat. (applications)] (* <- lang_en;; *);;
+		[Утв. (Применения кругового графа)] (* <- lang_ru;; *);
+		[Stat. (Applications of circle graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_data_analysis;
@@ -51,8 +51,8 @@ statement -> statement_of_properties_circle_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (свойства кругового графа)] (* <- lang_ru;; *);
-		[Stat. (properties of circle graph)] (* <- lang_en;; *);;
+		[Утв. (Свойства кругового графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of circle graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_cartesian_product_graph;
@@ -69,8 +69,8 @@ statement -> statement_of_examples_circle_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (примеры круговых графов)] (* <- lang_ru;; *);
-		[Stat. (examples circle graph)] (* <- lang_en;; *);;
+		[Утв. (Примеры круговых графов)] (* <- lang_ru;; *);
+		[Stat. (Examples circle graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_city;

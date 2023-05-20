@@ -35,8 +35,8 @@ statement -> statement_of_application_distance_hereditary_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (применение)] (* <- lang_ru;; *);
-		[Stat. (application)] (* <- lang_en;; *);;
+		[Утв. (Применение дистанционно-наследственного графа)] (* <- lang_ru;; *);
+		[Stat. (Application of distance-hereditary graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_bioinformatics;
@@ -53,8 +53,8 @@ statement -> statement_of_properties_distance_hereditary_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (свойства)] (* <- lang_ru;; *);
-		[Stat. (properties)] (* <- lang_en;; *);;
+		[Утв. (Свойства дистанционно-наследственного графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of distance-hereditary graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_transitively_orientable_graph
@@ -70,11 +70,12 @@ statement -> statement_of_algorithms_distance_hereditary_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (алгоритмы)] (* <- lang_ru;; *);
-		[Stat. (algorithms)] (* <- lang_en;; *);;
+		[Утв. (Алгоритмы дистанционно-наследственного графа)] (* <- lang_ru;; *);
+		[Stat. (Algorithms of distance-hereditary graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_dynamic_programming
+		concept_dynamic_programming;
+		concept_graph_algorithm
 	};;
 *);;
 
@@ -87,8 +88,8 @@ statement -> statement_of_examples_distance_hereditary_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (примеры)] (* <- lang_ru;; *);
-		[Stat. (examples)] (* <- lang_en;; *);;
+		[Утв. (Примеры дистанционно-наследственного графа)] (* <- lang_ru;; *);
+		[Stat. (Examples of distance-hereditary graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_molecule
@@ -104,8 +105,8 @@ statement -> statement_of_related_concepts_distance_hereditary_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (связанные понятия)] (* <- lang_ru;; *);
-		[Stat. (related concepts)] (* <- lang_en;; *);;
+		[Утв. (Связанные понятия с дистанционно-наследственным графом)] (* <- lang_ru;; *);
+		[Stat. (Related concepts to distance-hereditary graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_hall_graph;
@@ -121,6 +122,7 @@ sc_node_class ->
 	concept_graph_theory;
 	concept_transitively_orientable_graph;
 	concept_dynamic_programming;
+	concept_graph_algorithm;
 	concept_molecule;
 	concept_hall_graph;
 	concept_hamming_graph;;
