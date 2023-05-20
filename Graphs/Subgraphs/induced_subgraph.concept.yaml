@@ -35,11 +35,6 @@ statement:
       concepts: |
         graph
         subgraph
-        vertex
-        edge
-      rrels: | 
-        edge
-        vertex
       nrels: |
         subgraph
   cliques_theorem:
@@ -56,10 +51,8 @@ statement:
         subgraph
         complete_subgraph
         vertex
-        edge
       rrels: |
         vertex
-        edge
       nrels: |
         subgraph
       
