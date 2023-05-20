@@ -25,15 +25,96 @@ definition -> definition_of_separable_graph (*
 	};;
 *);;
 
+statement -> statement_of_separable_graph_vs_non_separable_graph (*
+	-> rrel_key_sc_element: concept_separable_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разделимые и неразделимые графы отличаются своей структурой и связностью. Разделимые графы могут быть разделены на две или более компонент связности, в то время как неразделимые графы не могут быть разделены на компоненты связности без удаления всех вершин или ребер графа] (* <- lang_ru;; *);;
+		-> [Separable and non-separable graphs differ in their structure and connectivity. Separable graphs can be split into two or more connected components, while non-separable graphs cannot be split into connected components without removing all vertices or edges of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сравнение разделимых и неразделимых графов)] (* <- lang_ru;; *);
+		[Stat. (Comparison of separable and non-separable graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_connected_component;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_trees_as_separable_graphs (*
+	-> rrel_key_sc_element: concept_separable_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Деревья являются разделимыми графами, так как они могут быть разделены на две или более компонент связности при удалении любой вершины, кроме корня дерева] (* <- lang_ru;; *);;
+		-> [Trees are separable graphs, since they can be split into two or more connected components by removing any vertex except the root of the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Деревья как разделимые графы)] (* <- lang_ru;; *);
+		[Stat. (Trees as separable graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex
+	};;
+*);;
+
+statement -> statement_of_separable_graph_in_planarity (*
+	-> rrel_key_sc_element: concept_separable_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разделимые графы играют важную роль в теории графов, особенно в планарной геометрии, где они являются ключевым понятием для понимания свойств графов, которые можно нарисовать на плоскости без пересечений ребер] (* <- lang_ru;; *);;
+		-> [Separable graphs play an important role in graph theory, especially in planar geometry, where they are a key concept for understanding properties of graphs that can be drawn on a plane without crossing edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Разделимые графы в планарной геометрии)] (* <- lang_ru;; *);
+		[Stat. (Separable graphs in planar geometry)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_theory;
+		concept_planar_graph
+	};;
+*);;
+
+statement -> statement_of_separable_graph_and_cut_vertices (*
+	-> rrel_key_sc_element: concept_separable_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разделимые графы всегда содержат точки сочленения, которые могут быть удалены для разделения графа на несколько компонент связности] (* <- lang_ru;; *);;
+		-> [Separable graphs always contain cut vertices, which can be removed to split the graph into multiple connected components] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Разделимые графы и точки сочленения)] (* <- lang_ru;; *);
+		[Stat. (Separable graphs and cut vertices)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_separable_graph;
+		concept_graph_cut
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
-	concept_edge;;
+	concept_edge;
+	concept_connected_component;
+	concept_tree;
+	concept_vertex;
+	concept_graph_theory;
+	concept_planar_graph;
+	concept_separable_graph;
+	concept_graph_cut;;
 
 sc_node_norole_relation ->
 	nrel_connected_component;;
 
 sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
 	rrel_vertex;
 	rrel_edge;;
