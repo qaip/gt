@@ -13,7 +13,6 @@ definition:
       vertex
       edge
       graph_sequence
-      arc
     rrels: |
       vertex
       edge
@@ -35,5 +34,4 @@ statement:
         graph_sequence
         directed_graph
         undirected_graph
-        closed_sequence
         graph_cycle

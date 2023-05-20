@@ -25,6 +25,7 @@ statement:
     en: Vertex 0 of a sequence of length k is called initial, and vertex k is called final, all other vertices are called internal
     using:
       concepts: |
+        graph
         vertex
       rrels: |
         vertex
@@ -43,4 +44,7 @@ subclass:
   - graph_path
   - graph_cycle
   - graph_chain
-    
+  - directed_sequence
+  - length_of_sequence
+  - spanning_sequence
+  - tightened_graph
