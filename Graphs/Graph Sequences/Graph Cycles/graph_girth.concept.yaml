@@ -18,5 +18,7 @@ statement:
     en: he girth of a graph is always less than or equal to its diameter
     using:
       concepts: |
+        graph
+      nrels: |
         graph_diameter
         
