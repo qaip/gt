@@ -76,7 +76,8 @@ statement -> statement_of_connectedness_supergraph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_path
+		concept_graph_connectivity;
+		concept_graph_path
 	};;
 *);;
 
@@ -89,11 +90,12 @@ statement -> statement_of_usage_example_supergraph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Пример использования)] (* <- lang_ru;; *);
-		[Stat. (Example usage)] (* <- lang_en;; *);;
+		[Утв. (Пример использования суперграфа)] (* <- lang_ru;; *);
+		[Stat. (Supergraph example usage)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		concept_graph_path
 	};;
 *);;
 
@@ -110,5 +112,7 @@ sc_node_class ->
 	concept_simple_graph;
 	concept_multigraph;
 	concept_graph;
-	concept_path;
-	concept_graph;;
+	concept_graph_connectivity;
+	concept_graph_path;
+	concept_graph;
+	concept_graph_path;;

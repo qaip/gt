@@ -60,8 +60,8 @@ statement -> statement_of_graphs_representation (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (изображение графов)] (* <- lang_ru;; *);
-		[Stat. (graphs representation)] (* <- lang_en;; *);;
+		[Утв. (Изображение графов)] (* <- lang_ru;; *);
+		[Stat. (Graphs representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
@@ -80,16 +80,16 @@ statement -> statement_of_edges_in_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (рёбра графа)] (* <- lang_ru;; *);
-		[Stat. (graph edges)] (* <- lang_en;; *);;
+		[Утв. (Рёбра графа)] (* <- lang_ru;; *);
+		[Stat. (Graph edges)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_edge;
 		concept_vertex;
-		concept_oriented_edge;
+		concept_arc;
 		rrel_edge;
 		rrel_vertex;
-		rrel_oriented_edge
+		rrel_arc
 	};;
 *);;
 
@@ -102,8 +102,8 @@ statement -> statement_of_usage_in_problems (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (использование в задачах)] (* <- lang_ru;; *);
-		[Stat. (usage in problems)] (* <- lang_en;; *);;
+		[Утв. (Использование в задачах)] (* <- lang_ru;; *);
+		[Stat. (Usage in problems)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
@@ -120,7 +120,7 @@ sc_node_class ->
 	concept_edge;
 	concept_edge;
 	concept_vertex;
-	concept_oriented_edge;
+	concept_arc;
 	concept_vertex;
 	concept_edge;;
 
@@ -131,6 +131,6 @@ sc_node_role_relation ->
 	rrel_edge;
 	rrel_edge;
 	rrel_vertex;
-	rrel_oriented_edge;
+	rrel_arc;
 	rrel_vertex;
 	rrel_edge;;

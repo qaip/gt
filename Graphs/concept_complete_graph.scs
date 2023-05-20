@@ -34,11 +34,12 @@ statement -> statement_of_regular_graphs_algorithm (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (регулярные графы и алгоритмы)] (* <- lang_ru;; *);
-		[Stat. (regualr graphs and algorithms)] (* <- lang_en;; *);;
+		[Утв. (Регулярные графы и алгоритмы)] (* <- lang_ru;; *);
+		[Stat. (Rregualr graphs and algorithms)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph
+		concept_graph;
+		concept_graph_algorithm
 	};;
 *);;
 
@@ -47,7 +48,8 @@ sc_node_class ->
 	concept_undirected_graph;
 	concept_vertex;
 	concept_edge;
-	concept_graph;;
+	concept_graph;
+	concept_graph_algorithm;;
 
 sc_node_role_relation ->
 	rrel_vertex;

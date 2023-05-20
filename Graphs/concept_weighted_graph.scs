@@ -22,10 +22,101 @@ definition -> definition_of_weighted_graph (*
 	};;
 *);;
 
+statement -> statement_of_usage_weighted_graph (*
+	-> rrel_key_sc_element: concept_weighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Взвешенные графы находят применение во многих областях, включая транспорт, связь, сети и теорию риска. Они используются для моделирования сложных систем и анализа свойств систем] (* <- lang_ru;; *);;
+		-> [Weighted graphs are used in many areas, including transportation, communication, networks, and risk theory. They are used to model complex systems and analyze the properties of systems] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование взвешенных графов)] (* <- lang_ru;; *);
+		[Stat. (Usage of weighted graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_weighted_graph
+	};;
+*);;
+
+statement -> statement_of_shortest_path (*
+	-> rrel_key_sc_element: concept_weighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Взвешенные графы используются для решения задач кратчайшего пути. Различные алгоритмы, такие как алгоритм Дейкстры и алгоритм Беллмана-Форда, используются для нахождения кратчайшего пути в взвешенных графах] (* <- lang_ru;; *);;
+		-> [Weighted graphs are used to solve shortest path problems. Various algorithms, such as Dijkstra algorithm and Bellman-Ford algorithm, are used to find the shortest path in weighted graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Кратчайший путь в графе)] (* <- lang_ru;; *);
+		[Stat. (Shortest path in a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_weighted_graph;
+		concept_algorithms;
+		concept_shortest_path;
+		concept_graph_algorithm
+	};;
+*);;
+
+statement -> statement_of_minimum_spanning_tree (*
+	-> rrel_key_sc_element: concept_weighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Взвешенные графы используются для решения задач нахождения минимального остовного дерева. Алгоритмы, такие как алгоритм Прима и алгоритм Крускала, используются для нахождения минимального остовного дерева в взвешенных графах] (* <- lang_ru;; *);;
+		-> [Weighted graphs are used to solve minimum spanning tree problems. Algorithms such as Prims algorithm and Kruskals algorithm are used to find the minimum spanning tree in weighted graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Минимальное остовное дерево)] (* <- lang_ru;; *);
+		[Stat. (Minimum spanning tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_weighted_graph;
+		concept_algorithms;
+		concept_minimum_spanning_tree
+	};;
+*);;
+
+statement -> statement_of_clustering_coefficient (*
+	-> rrel_key_sc_element: concept_weighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Коэффициент кластеризации взвешенного графа определяется как отношение числа треугольников в графе к числу подграфов, изоморфных треугольнику] (* <- lang_ru;; *);;
+		-> [The clustering coefficient of a weighted graph is defined as the ratio of the number of triangles in the graph to the number of subgraphs isomorphic to a triangle] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Коэффициент кластеризации)] (* <- lang_ru;; *);
+		[Stat. (Clustering coefficient)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_subgraph;
+		concept_clustering_coefficient
+	};;
+*);;
 
 sc_node_class ->
 	concept_graph;
-	concept_edge;;
+	concept_edge;
+	concept_graph;
+	concept_weighted_graph;
+	concept_graph;
+	concept_weighted_graph;
+	concept_algorithms;
+	concept_shortest_path;
+	concept_graph_algorithm;
+	concept_graph;
+	concept_weighted_graph;
+	concept_algorithms;
+	concept_minimum_spanning_tree;
+	concept_graph;
+	concept_subgraph;
+	concept_clustering_coefficient;;
 
 sc_node_role_relation ->
 	rrel_edge;;

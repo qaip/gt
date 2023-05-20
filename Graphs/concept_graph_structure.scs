@@ -33,8 +33,68 @@ statement -> statement_of_graph_structure_usage (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (использование графовой структуры)] (* <- lang_ru;; *);
-		[Stat. (graph structure usage)] (* <- lang_en;; *);;
+		[Утв. (Использование графовой структуры)] (* <- lang_ru;; *);
+		[Stat. (Graph structure usage)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_graph_structure_representation (*
+	-> rrel_key_sc_element: concept_graph_structure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графовые структуры могут быть представлены в виде рисунка, состоящего из точек и линий, соединяющих некоторые из этих точек. При этом точки соответствуют вершинам графа, а соединяющие пары точек линии соответствуют рёбрам графа] (* <- lang_ru;; *);;
+		-> [Graph structures can be represented as a drawing consisting of dots and lines, connecting some of these points. In this case, points correspond to vertices of the graph, and lines connecting pairs of points correspond to edges of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Изображение графовых структур)] (* <- lang_ru;; *);
+		[Stat. (Graph structure representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_graph_structure_types (*
+	-> rrel_key_sc_element: concept_graph_structure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Существует множество типов графовых структур, включая ориентированные и неориентированные графы, связные и несвязные графы, полные и неполные графы, и так далее] (* <- lang_ru;; *);;
+		-> [There are many types of graph structures, including directed and undirected graphs, connected and disconnected graphs, complete and incomplete graphs, and so on] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Типы графовых структур)] (* <- lang_ru;; *);
+		[Stat. (Types of graph structures)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_directed_graph;
+		concept_undirected_graph;
+		concept_connected_graph;
+		concept_disconnected_graph;
+		concept_complete_graph;
+		concept_incomplete_graph
+	};;
+*);;
+
+statement -> statement_of_graph_structure_applications (*
+	-> rrel_key_sc_element: concept_graph_structure;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Графовые структуры широко используются в информатике, математике, инженерии, биологии и других областях. Они используются для моделирования отношений между объектами, для анализа сетей и социальных систем, для построения алгоритмов и многого другого] (* <- lang_ru;; *);;
+		-> [Graph structures are widely used in computer science, mathematics, engineering, biology, and other fields. They are used for modeling relationships between objects, for analyzing networks and social systems, for constructing algorithms, and much more] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Применение графовых структур)] (* <- lang_ru;; *);
+		[Stat. (Graph structure applications)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph
@@ -45,8 +105,20 @@ sc_node_class ->
 	concept_graph;
 	concept_vertex;
 	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_directed_graph;
+	concept_undirected_graph;
+	concept_connected_graph;
+	concept_disconnected_graph;
+	concept_complete_graph;
+	concept_incomplete_graph;
 	concept_graph;;
 
 sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
 	rrel_vertex;
 	rrel_edge;;
