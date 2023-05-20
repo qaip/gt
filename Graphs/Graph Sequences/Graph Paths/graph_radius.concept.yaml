@@ -20,9 +20,11 @@ statement:
     en: The center of a graph is the set of vertices that have an eccentricity equal to the radius of the graph
     using:
       concepts: |
-        graph_radius
         graph_center
         graph_eccentricity
         vertex
       rrels: |
         vertex
+      nrels: |
+        graph_radius
+

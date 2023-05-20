@@ -23,10 +23,10 @@ statement:
     en: The diameter of a graph is equal to the maximum length of a shortest path between any two vertices in the graph
     using:
       concepts: |
-        graph_diameter
         graph_path
         shortest_path
         vertex
       rrels: |
         vertex
-        
+      nrels: |
+        graph_diameter
