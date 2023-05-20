@@ -23,7 +23,6 @@ definition -> definition_of_directed_sequence (*
 		concept_vertex;
 		concept_edge;
 		concept_graph_sequence;
-		concept_arc;
 		rrel_vertex;
 		rrel_edge;
 		rrel_arc
@@ -46,7 +45,6 @@ statement -> statement_of_directional_and_nondirectional_sequences (*
 		concept_graph_sequence;
 		concept_directed_graph;
 		concept_undirected_graph;
-		concept_closed_sequence;
 		concept_graph_cycle
 	};;
 *);;
@@ -55,11 +53,9 @@ sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_graph_sequence;
-	concept_arc;
 	concept_graph_sequence;
 	concept_directed_graph;
 	concept_undirected_graph;
-	concept_closed_sequence;
 	concept_graph_cycle;;
 
 sc_node_role_relation ->

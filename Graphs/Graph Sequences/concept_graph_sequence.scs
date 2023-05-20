@@ -13,7 +13,11 @@ concept_graph_sequence
 => nrel_inclusion:
 concept_graph_path;
 concept_graph_cycle;
-concept_graph_chain;;
+concept_graph_chain;
+concept_directed_sequence;
+concept_length_of_sequence;
+concept_spanning_sequence;
+concept_tightened_graph;;
 
 definition -> definition_of_graph_sequence (*
 	-> rrel_key_sc_element: concept_graph_sequence;;
@@ -51,6 +55,7 @@ statement -> statement_of_sequnce_vertexes_naming (*
 		[Stat. (Distribution of names between the vertices of the sequence)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
+		concept_graph;
 		concept_vertex;
 		rrel_vertex
 	};;
@@ -77,6 +82,7 @@ sc_node_class ->
 	concept_edge;
 	concept_graph;
 	concept_vertex;
+	concept_graph;
 	concept_vertex;
 	concept_graph;;
 
