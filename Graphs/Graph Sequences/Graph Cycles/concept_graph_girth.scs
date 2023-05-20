@@ -34,11 +34,15 @@ statement -> statement_of_graph_girth_exists (*
 		[Stat. (Properties of graph girth)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_diameter
+		concept_graph;
+		nrel_graph_diameter
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph_cycle;
 	concept_graph;
-	concept_graph_diameter;;
+	concept_graph;;
+
+sc_node_norole_relation ->
+	nrel_graph_diameter;;
