@@ -18,8 +18,8 @@ definition:
 statement:
   properties_complete_bipartite_graph:
     title:
-      ru: свойства полного двудольного графа
-      en: properties
+      ru: Свойства полного двудольного графа
+      en: Properties of complete bipartite graph
     ru:
       В полном двудольном графе количество рёбер равно произведению размерностей
       двух долей. Также он является двудольным графом, в котором каждая вершина
@@ -37,8 +37,8 @@ statement:
         edge
   examples_complete_bipartite_graph:
     title:
-      ru: примеры полного двудольного графа
-      en: examples
+      ru: Примеры полного двудольного графа
+      en: Examples of complete bipartite graph
     ru:
       Примером полного двудольного графа является граф, где первая доля является
       множеством студентов, а вторая множеством курсов. Ребро между студентом и

@@ -20,8 +20,8 @@ definition:
 statement:
   applications_circle_graph:
     title:
-      ru: применения кругового графа
-      en: applications
+      ru: Применения кругового графа
+      en: Applications of circle graph
     ru:
       Круговые графы находят широкое применение в кластеризации и анализе
       данных, в теории графов и других областях
@@ -34,8 +34,8 @@ statement:
         graph_theory
   properties_circle_graph:
     title:
-      ru: свойства кругового графа
-      en: properties of circle graph
+      ru: Свойства кругового графа
+      en: Properties of circle graph
     ru:
       Круговые графы являются пересечением декартова произведения графов и
       деревьев. Это означает, что любой круговой граф может быть представлен как
@@ -50,8 +50,8 @@ statement:
         tree
   examples_circle_graph:
     title:
-      ru: примеры круговых графов
-      en: examples circle graph
+      ru: Примеры круговых графов
+      en: Examples circle graph
     ru:
       Примером кругового графа является граф, где вершины представляют города, и
       ребра предстваляют дороги между городами. Также круговой граф может

@@ -10,3 +10,92 @@ definition:
       graph
       graph_cut
       bipartite_graph
+statement:
+  properties_graph_split:
+    title:
+      ru: свойства разбиения графа
+      en: properties
+    ru:
+      Разбиение графа на две части всегда является разбиением графа, но не
+      обязательно полным двудольным графом. Разбиение графа является
+      сепаратором графа. Любой граф можно разбить на множество разбиений
+    en:
+      Splitting a graph into two parts is always a split of the graph, but not
+      necessarily a complete bipartite graph. A graph split is a separator of the
+      graph. Any graph can be split into a set of splits
+    using:
+      concepts: |
+        graph_separator
+
+  algorithms_graph_split:
+    title:
+      ru: алгоритмы разбиения графа
+      en: algorithms
+    ru:
+      Разбиение графа можно найти за полиномиальное время, используя алгоритм
+      Каргера-Стейнера. В общем случае, нахождение оптимального разбиения является
+      NP-полной задачей
+    en:
+      A graph split can be found in polynomial time using the Karger-Stein
+      algorithm. In general, finding an optimal split is an NP-hard problem
+    using:
+      concepts: |
+        polynomial_time_algorithm
+        np_hard_problem
+
+  examples_graph_split:
+    title:
+      ru: примеры разбиения графа
+      en: examples
+    ru:
+      Примером разбиения графа является разбиение графа на две части, где одна
+      часть содержит вершины с чётными степенями, а другая с нечётными
+    en:
+      An example of a graph split is splitting a graph into two parts, where one
+      part contains vertices with even degrees and the other part contains vertices
+      with odd degrees
+    using:
+      concepts: |
+        vertex_degree
+
+  related_concepts_graph_split:
+    title:
+      ru: связанные понятия разбиения графа
+      en: related concepts
+    ru:
+      Разбиение графа связано с такими понятиями, как максимальный поток и
+      минимальный разрез. Разбиение графа может быть использовано для решения
+      задачи двудольного графа
+    en:
+      Graph split is related to concepts such as maximum flow and minimum cut.
+      Graph split can be used to solve the bipartite graph problem
+    using:
+      concepts: |
+        maximum_flow
+        minimum_cut
+        bipartite_graph_problem
+        graaph
+  applications_graph_split:
+    title:
+      ru: Применения разбиения графа
+      en: Applications
+    ru:
+      Разбиение графа применяется в задачах кластеризации, группировки вершин,
+      поиска сообществ, выделения подграфов, а также в анализе социальных и
+      информационных сетей
+    en:
+      Graph split is used in clustering problems, vertex grouping, community
+      detection, subgraph extraction, as well as in the analysis of social and
+      information networks
+    using:
+      concepts: |
+        clustering
+        community_detection
+        subgraph_extraction
+        social_network
+        information_network
+        subgraph
+        graph
+        network
+      nrels: |
+        subgraph

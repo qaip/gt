@@ -19,8 +19,8 @@ definition:
 statement:
   application_distance_hereditary_graph:
     title:
-      ru: применение
-      en: application
+      ru: Применение дистанционно-наследственного графа
+      en: Application of distance-hereditary graph
     ru:
       Дистанционно-наследственные графы применяются во многих областях, включая
       биоинформатику и теорию графов
@@ -33,8 +33,8 @@ statement:
         graph_theory
   properties_distance_hereditary_graph:
     title:
-      ru: свойства
-      en: properties
+      ru: Свойства дистанционно-наследственного графа
+      en: Properties of distance-hereditary graph
     ru:
       Дистанционно-наследственные графы являются частным случаем
       смежно-транзитивных графов
@@ -46,8 +46,8 @@ statement:
         transitively_orientable_graph
   algorithms_distance_hereditary_graph:
     title:
-      ru: алгоритмы
-      en: algorithms
+      ru: Алгоритмы дистанционно-наследственного графа
+      en: Algorithms of distance-hereditary graph
     ru:
       Нахождение дистанционно-наследственных графов можно выполнить за
       полиномиальное время, используя алгоритм динамического программирования
@@ -57,10 +57,11 @@ statement:
     using:
       concepts: |
         dynamic_programming
+        graph_algorithm
   examples_distance_hereditary_graph:
     title:
-      ru: примеры
-      en: examples
+      ru: Примеры дистанционно-наследственного графа
+      en: Examples of distance-hereditary graph
     ru:
       Примером дистанционно-наследственных графов являются некоторые графы
       молекул
@@ -70,8 +71,8 @@ statement:
         molecule
   related_concepts_distance_hereditary_graph:
     title:
-      ru: связанные понятия
-      en: related concepts
+      ru: Связанные понятия с дистанционно-наследственным графом
+      en: Related concepts to distance-hereditary graph
     ru:
       Дистанционно-наследственные графы связаны с такими понятиями, как графы
       Холла и графы Хамминга
