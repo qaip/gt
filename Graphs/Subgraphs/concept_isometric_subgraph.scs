@@ -24,24 +24,6 @@ definition -> definition_of_isometric_subgraph (*
 	};;
 *);;
 
-statement -> statement_of_isometric_embedding_theorem (*
-	-> rrel_key_sc_element: concept_isometric_subgraph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Любой граф может быть изометрически вложен в евклидово пространство достаточно большой размерности] (* <- lang_ru;; *);;
-		-> [Every graph can be isometrically embedded in a sufficiently high dimensional Euclidean space] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема об изометрическом вложении)] (* <- lang_ru;; *);
-		[Stat. (Isometric embedding theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_euclidean_space;
-		concept_graph
-	};;
-*);;
-
 statement -> statement_of_isometric_subgraph_theorem (*
 	-> rrel_key_sc_element: concept_isometric_subgraph;;
 
@@ -65,8 +47,6 @@ sc_node_class ->
 	concept_graph;
 	concept_vertex;
 	concept_subgraph;
-	concept_euclidean_space;
-	concept_graph;
 	concept_graph;
 	concept_subgraph;;
 

@@ -65,7 +65,6 @@ statement -> statement_of_cliques_theorem (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_subgraph;
-		concept_complete_subgraph;
 		concept_vertex;
 		rrel_vertex;
 		nrel_subgraph
@@ -81,7 +80,6 @@ sc_node_class ->
 	concept_subgraph;
 	concept_graph;
 	concept_subgraph;
-	concept_complete_subgraph;
 	concept_vertex;;
 
 sc_node_norole_relation ->
