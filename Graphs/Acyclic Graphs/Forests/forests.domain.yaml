@@ -1,0 +1,16 @@
+en: forests
+ru: лесов
+
+parent: acyclic_graphs
+
+max: |
+  forest
+
+concepts: |
+  forest
+  polyforest
+  pseudoforest
+  random_forest
+  decision_forest
+  extra_trees_forest
+  conditional_inference_forest

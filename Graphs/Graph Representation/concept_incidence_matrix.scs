@@ -1,0 +1,82 @@
+concept_incidence_matrix
+=> nrel_main_idtf:
+	[матрица инцидентности] (* <- lang_ru;; *);
+	[incidence matrix] (* <- lang_en;; *);;
+
+definition -> definition_of_incidence_matrix (*
+	-> rrel_key_sc_element: concept_incidence_matrix;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Матрица, используемая в теории графов для представления ребер и вершин графа. Она содержит информацию о том, какие ребра инцидентны каким вершинам. Каждая строка матрицы соответствует ребру, а каждый столбец-вершине. Элементы матрицы-это 0, если ребро не инцидентно вершине, и 1, если инцидентно] (* <- lang_ru;; *);;
+		-> [A matrix used in graph theory to represent the edges and vertices of a graph. It contains information about which edges are incident to which vertices. Each row of the matrix corresponds to an edge, and each column corresponds to a vertex. Matrix elements are 0 if the edge is not incident to the vertex, and 1 if it is] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (матрица инцидентности)] (* <- lang_ru;; *);
+		[Def. (incidence matrix)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_incidence_matrix_conversion (*
+	-> rrel_key_sc_element: concept_incidence_matrix;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список инцидентности может быть легко преобразован в матрицу инцидентности] (* <- lang_ru;; *);;
+		-> [Incidence list can be easily converted to incidence matrix] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Преобразование списка инцидентности в матрицу инцидентности)] (* <- lang_ru;; *);
+		[Stat. (Conversion of incidence list to incidence matrix)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_incidence_list
+	};;
+*);;
+
+statement -> statement_of_incidence_matrix_properties (*
+	-> rrel_key_sc_element: concept_incidence_matrix;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Матрица инцидентности для неориентированного графа имеет размерность NM, где N-количество вершин, а M-количество ребер. Для ориентированного графа размерность матрицы инцидентности равна NL, где L-количество дуг] (* <- lang_ru;; *);;
+		-> [The incidence matrix for an undirected graph has dimensions NM, where N is the number of vertices and M is the number of edges. For a directed graph, the incidence matrix has dimensions NL, where L is the number of arcs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства матрицы инцидентности)] (* <- lang_ru;; *);
+		[Stat. (Properties of incidence matrix)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_directed_graphs;
+		concept_undirected_graph;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_incidence_list;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_directed_graphs;
+	concept_undirected_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

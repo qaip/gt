@@ -12,8 +12,7 @@ section_subject_domain_of_maximum_graph_cuts
 	concept_max_cut_problem;
 	concept_bipartite_subgraph;
 	concept_weighted_max_cut;
-	concept_weighted_max_cut_problem;
-	nrel_graph_cut;;
+	concept_weighted_max_cut_problem;;
 
 section_subject_domain_of_maximum_graph_cuts=[*
 	subject_domain_of_maximum_graph_cuts
@@ -32,9 +31,6 @@ section_subject_domain_of_maximum_graph_cuts=[*
 		concept_weighted_max_cut;
 		concept_weighted_max_cut_problem;
 
-	-> rrel_explored_relation:
-		nrel_graph_cut;
-
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_cuts;;
 *];;
@@ -45,6 +41,3 @@ sc_node_class ->
 	concept_bipartite_subgraph;
 	concept_weighted_max_cut;
 	concept_weighted_max_cut_problem;;
-
-sc_node_norole_relation ->
-	nrel_graph_cut;;

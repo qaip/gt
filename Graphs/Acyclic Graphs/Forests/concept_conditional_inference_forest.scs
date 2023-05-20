@@ -1,0 +1,54 @@
+concept_conditional_inference_forest
+=> nrel_main_idtf:
+	[лес условной инференции] (* <- lang_ru;; *);
+	[conditional inference forest] (* <- lang_en;; *);;
+
+definition -> definition_of_conditional_inference_forest (*
+	-> rrel_key_sc_element: concept_conditional_inference_forest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм машинного обучения, который использует лес решающих деревьев для задач классификации и регрессии, учитывая условия на признаки] (* <- lang_ru;; *);;
+		-> [A machine learning algorithm that uses a forest of decision trees for classification and regression tasks, taking into account conditions on the features] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (лес условной инференции)] (* <- lang_ru;; *);
+		[Def. (conditional inference forest)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_decision_tree;
+		concept_classification;
+		concept_regression;
+		concept_feature_condition
+	};;
+*);;
+
+statement -> statement_of_conditional_inference_algorithm (*
+	-> rrel_key_sc_element: concept_conditional_inference_forest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм леса условной инференции включает в себя построение леса решающих деревьев, каждое из которых строится с учетом условий на признаки и обучается на случайной подвыборке обучающей выборки] (* <- lang_ru;; *);;
+		-> [The conditional inference forest algorithm involves constructing a forest of decision trees, each of which is built taking into account conditions on the features and trained on a random subset of the training data] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм леса условной инференции)] (* <- lang_ru;; *);
+		[Stat. (Conditional inference forest algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_decision_tree;
+		concept_feature_condition;
+		concept_random_sampling;
+		concept_training_data
+	};;
+*);;
+
+sc_node_class ->
+	concept_decision_tree;
+	concept_classification;
+	concept_regression;
+	concept_feature_condition;
+	concept_decision_tree;
+	concept_feature_condition;
+	concept_random_sampling;
+	concept_training_data;;
