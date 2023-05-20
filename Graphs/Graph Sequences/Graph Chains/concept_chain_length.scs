@@ -17,7 +17,7 @@ definition -> definition_of_chain_length (*
 
 	=> nrel_using_constants: {
 		concept_edge;
-		concept_chain;
+		concept_graph_chain;
 		rrel_edge
 	};;
 *);;
@@ -45,7 +45,7 @@ statement -> statement_of_longest_chain_theorem (*
 
 sc_node_class ->
 	concept_edge;
-	concept_chain;
+	concept_graph_chain;
 	concept_graph;
 	concept_edge;
 	concept_graph_chain;

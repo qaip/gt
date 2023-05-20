@@ -38,7 +38,8 @@ statement -> statement_of_longest_simple_path_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_dijkstra_algorithm
+		concept_dijkstra_algorithm;
+		concept_chain_length
 	};;
 *);;
 
@@ -47,7 +48,8 @@ sc_node_class ->
 	concept_edge;
 	concept_graph_sequence;
 	concept_graph;
-	concept_dijkstra_algorithm;;
+	concept_dijkstra_algorithm;
+	concept_chain_length;;
 
 sc_node_role_relation ->
 	rrel_vertex;
