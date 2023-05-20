@@ -26,4 +26,4 @@ statement:
       concepts: |
         graph
         dijkstra_algorithm
-      
+        chain_length

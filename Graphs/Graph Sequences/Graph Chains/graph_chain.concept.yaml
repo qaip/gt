@@ -28,10 +28,12 @@ statement:
         vertex
         graph
         graph_subchain
-        graph_diameter
       rrels: |
         vertex
         endpoints
+      nrels: |
+        graph_diameter
+
 
 subclass:
   - simple_graph_chain

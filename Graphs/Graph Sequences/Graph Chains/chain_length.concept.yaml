@@ -7,7 +7,7 @@ definition:
   using:
     concepts: |
       edge
-      chain
+      graph_chain
     rrels: |
       edge
 statement: 
