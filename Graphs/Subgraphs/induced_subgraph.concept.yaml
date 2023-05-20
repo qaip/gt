@@ -49,7 +49,6 @@ statement:
       concepts: |
         graph
         subgraph
-        complete_subgraph
         vertex
       rrels: |
         vertex

@@ -38,7 +38,7 @@ statement:
     ru:
       Подграф ребер графа является подграфом его линейного пространства
     en:
-      The edge subgraph of a graph is a subgraph of its line graph
+      The edge subgraph of a graph is a subgraph of its linear space
     using:
       concepts: |
         graph
@@ -74,6 +74,9 @@ statement:
       concepts: |
         graph
         subgraph
+        vertex
+      rrels: |
+        vertex
       nrels: |
         rib_weight
         subgraph

@@ -14,20 +14,6 @@ definition:
     nrels: |
       subgraph
 statement:
-  isometric_embedding_theorem:
-    title:
-      ru: Теорема об изометрическом вложении
-      en: Isometric embedding theorem
-    ru:
-      Любой граф может быть изометрически вложен в евклидово пространство
-      достаточно большой размерности
-    en:
-      Every graph can be isometrically embedded in a sufficiently high
-      dimensional Euclidean space
-    using:
-      concepts: |
-        euclidean_space
-        graph
   isometric_subgraph_theorem:
     title:
       ru: Теорема об изометрическом подграфе
