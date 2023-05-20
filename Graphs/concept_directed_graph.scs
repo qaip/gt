@@ -5,7 +5,7 @@ concept_directed_graph
 
 => nrel_idtf:
 	[орграф] (* <- lang_ru;; *);
-	[digraph] (* <- lang_en;; *);;
+	[digraph] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -54,8 +54,8 @@ statement -> statement_of_theorem_menger (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_path;
-		nrel_intersection
+		rrel_vertex;
+		nrel_chain
 	};;
 *);;
 
@@ -72,7 +72,6 @@ statement -> statement_of_strongly_connected_directed_graph (*
 		[Stat. (strong connectivity of a digraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_directed_graph;
 		concept_path;
 		concept_vertex
 	};;
@@ -91,7 +90,6 @@ statement -> statement_of_acyclic_directed_graph (*
 		[Stat. (acyclic digraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_directed_graph;
 		nrel_cycle
 	};;
 *);;
@@ -140,11 +138,9 @@ statement -> statement_of_graph_reduction_directed_graph (*
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
-	concept_directed_graph;
-	concept_directed_graph;
+	concept_vertex;
 	concept_path;
 	concept_vertex;
-	concept_directed_graph;
 	concept_vertex;
 	concept_edge;
 	concept_graph;
@@ -152,20 +148,13 @@ sc_node_class ->
 	concept_arc;;
 
 sc_node_norole_relation ->
+	nrel_arc;
 	nrel_chain;
 	nrel_cycle;;
 
 sc_node_role_relation ->
-	rrel_edge;
 	rrel_vertex;
 	rrel_vertex;
 	rrel_edge;
 	rrel_edge;
 	rrel_arc;;
-	concept_vertex;
-	concept_path;;
-
-sc_node_norole_relation ->
-	nrel_arc;
-	nrel_intersection;;
-

@@ -10,7 +10,7 @@ definition -> definition_of_regular_graph (*
 	-> rrel_key_sc_element: concept_regular_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Регулярным графом является тот граф, у которого степени всех вершин равны, каждая вершина имеет одинаковое количество соседей] (* <- lang_ru;; *);;
+		-> [Граф, у которого степени всех вершин равны, каждая вершина имеет одинаковое количество соседей] (* <- lang_ru;; *);;
 		-> [A regular graph is a graph in which the degrees of all vertices are equal, each vertex has the same number of neighbors] (* <- lang_en;; *);;
 	*);;
 

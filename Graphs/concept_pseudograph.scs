@@ -7,7 +7,7 @@ definition -> definition_of_pseudograph (*
 	-> rrel_key_sc_element: concept_pseudograph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Псевдограф является графом, содержащим петли и кратные рёбра] (* <- lang_ru;; *);;
+		-> [Граф, содержащим петли и кратные рёбра] (* <- lang_ru;; *);;
 		-> [A pseudograph is a graph that allows loops and multiple edges] (* <- lang_en;; *);;
 	*);;
 
