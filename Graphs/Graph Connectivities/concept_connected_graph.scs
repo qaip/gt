@@ -17,19 +17,19 @@ definition -> definition_of_connected_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_path;
+		concept_graph_path;
 		concept_vertex;
 		rrel_vertex;
-		rrel_path
+		rrel_graph_path
 	};;
 *);;
 
 
 sc_node_class ->
 	concept_graph;
-	concept_path;
+	concept_graph_path;
 	concept_vertex;;
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_path;;
+	rrel_graph_path;;

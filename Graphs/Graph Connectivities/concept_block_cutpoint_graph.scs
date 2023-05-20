@@ -32,8 +32,8 @@ statement -> statement_of_block_cutpoint_graph_vs_biconnected_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (сравнение графа с блоками и точками сочленения и двусвязного графа)] (* <- lang_ru;; *);
-		[Stat. (comparison of a block-cutpoint graph and a biconnected graph)] (* <- lang_en;; *);;
+		[Утв. (Сравнение графа с блоками и точками сочленения и двусвязного графа)] (* <- lang_ru;; *);
+		[Stat. (Comparison of a block-cutpoint graph and a biconnected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_biconnected_graph;

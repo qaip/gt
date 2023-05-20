@@ -9,13 +9,15 @@ section_subject_domain_of_graph_connectivities
 <- rrel_key_sc_element:
 	subject_domain_of_graph_connectivities;
 	concept_graph_connectivity;
-	concept_concept_bridge;
+	concept_bridge;
 	concept_non_separable_graph;
 	concept_separable_graph;
 	concept_trivial_graph;
 	concept_block_cutpoint_graph;
 	concept_weakly_connected_component;
 	concept_strongly_connected_component;
+	concept_conncected_graph;
+	concept_disconnected_graph;
 	nrel_vertex_connectivity;
 	nrel_edge_connectivity;
 	nrel_weakly_connected_component;
@@ -35,13 +37,15 @@ section_subject_domain_of_graph_connectivities=[*
 		concept_graph_connectivity;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_concept_bridge;
+		concept_bridge;
 		concept_non_separable_graph;
 		concept_separable_graph;
 		concept_trivial_graph;
 		concept_block_cutpoint_graph;
 		concept_weakly_connected_component;
 		concept_strongly_connected_component;
+		concept_conncected_graph;
+		concept_disconnected_graph;
 
 	-> rrel_explored_relation:
 		nrel_vertex_connectivity;
@@ -57,13 +61,15 @@ section_subject_domain_of_graph_connectivities=[*
 
 sc_node_class ->
 	concept_graph_connectivity;
-	concept_concept_bridge;
+	concept_bridge;
 	concept_non_separable_graph;
 	concept_separable_graph;
 	concept_trivial_graph;
 	concept_block_cutpoint_graph;
 	concept_weakly_connected_component;
-	concept_strongly_connected_component;;
+	concept_strongly_connected_component;
+	concept_conncected_graph;
+	concept_disconnected_graph;;
 
 sc_node_norole_relation ->
 	nrel_vertex_connectivity;
