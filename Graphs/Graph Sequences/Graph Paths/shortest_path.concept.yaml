@@ -8,7 +8,7 @@ definition:
     concepts: |
       path_length
       graph_path
-    rrels: |
+    nrels: |
       rib_weight
 
 statement:
@@ -32,20 +32,8 @@ statement:
       concepts: |
         graph_path_weight
         path_length
+        vertex
+      rrels: |
+        vertex
+      nrels: |
         rib_weight
-
-  bellman_ford_algorithm:
-    title:
-      ru: Алгоритм Беллмана-Форда
-      en: Bellman-Ford algorithm
-    ru:
-      Алгоритм, который находит кратчайший путь во взвешенном графе с
-      отрицательными весами ребер
-    en:
-      An algorithm that finds the shortest path in a weighted graph with
-      negative edge weights
-    using:
-      concepts: |
-        path_length
-        rib_weight
-        

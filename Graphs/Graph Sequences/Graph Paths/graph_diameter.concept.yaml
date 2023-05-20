@@ -2,8 +2,8 @@ ru: диаметр графа
 en: graph diameter
 
 definition:
-  ru: длина кратчайшего пути между самыми удаленными узлами
-  en: the length of the shortest path between the most distanced nodes
+  ru: Длина кратчайшего пути между самыми удаленными узлами
+  en: The length of the shortest path between the most distanced nodes
   using:
     concepts: |
       graph_path

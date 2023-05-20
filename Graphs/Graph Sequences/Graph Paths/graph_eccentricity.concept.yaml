@@ -43,5 +43,6 @@ statement:
     en: The eccentricity of each diametrical vertex of a graph is equal to its diameter
     using:
       concepts: |
-        graph_diameter
         graph_length
+      nrels: |
+        graph_diameter

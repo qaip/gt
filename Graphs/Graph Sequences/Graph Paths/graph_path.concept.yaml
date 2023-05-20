@@ -35,18 +35,6 @@ statement:
         edge
       rrels: |
         edge
-  path_length_theorem:
-    title:
-      ru: Теорема о длине пути
-      en: Path length theorem
-    ru: Длина пути в графе равна числу ребер, входящих в этот путь
-    en: The length of a path in a graph is equal to the number of edges in the path
-    using:
-      concepts: |
-        edge
-        path_length
-      rrels: |
-        edge
   path_existence_theorem:
     title:
       ru: Теорема о существовании пути
@@ -132,5 +120,3 @@ subclass:
   - eulerian_path
   - path_length
   - graph_path_weight
-  - graph_path_diameter
-  - graph_radius
