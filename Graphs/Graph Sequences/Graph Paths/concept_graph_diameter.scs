@@ -7,8 +7,8 @@ definition -> definition_of_graph_diameter (*
 	-> rrel_key_sc_element: concept_graph_diameter;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [длина кратчайшего пути между самыми удаленными узлами] (* <- lang_ru;; *);;
-		-> [the length of the shortest path between the most distanced nodes] (* <- lang_en;; *);;
+		-> [Длина кратчайшего пути между самыми удаленными узлами] (* <- lang_ru;; *);;
+		-> [The length of the shortest path between the most distanced nodes] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

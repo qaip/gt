@@ -14,9 +14,7 @@ concept_longest_path;
 concept_hamiltonian_path;
 concept_eulerian_path;
 concept_path_length;
-concept_graph_path_weight;
-concept_graph_path_diameter;
-concept_graph_radius;;
+concept_graph_path_weight;;
 
 definition -> definition_of_graph_path (*
 	-> rrel_key_sc_element: concept_graph_path;;
@@ -71,25 +69,6 @@ statement -> statement_of_property_of_edges_independency (*
 
 	=> nrel_using_constants: {
 		concept_edge;
-		rrel_edge
-	};;
-*);;
-
-statement -> statement_of_path_length_theorem (*
-	-> rrel_key_sc_element: concept_graph_path;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Длина пути в графе равна числу ребер, входящих в этот путь] (* <- lang_ru;; *);;
-		-> [The length of a path in a graph is equal to the number of edges in the path] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема о длине пути)] (* <- lang_ru;; *);
-		[Stat. (Path length theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_edge;
-		concept_path_length;
 		rrel_edge
 	};;
 *);;
@@ -209,8 +188,6 @@ sc_node_class ->
 	concept_graph_sequence;
 	concept_vertex;
 	concept_edge;
-	concept_edge;
-	concept_path_length;
 	concept_connected_graph;
 	concept_shortest_path;
 	concept_graph;
@@ -228,6 +205,5 @@ sc_node_role_relation ->
 	rrel_edge;
 	rrel_vertex;
 	rrel_vertex;
-	rrel_edge;
 	rrel_edge;
 	rrel_edge;;
