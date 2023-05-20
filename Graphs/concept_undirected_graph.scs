@@ -28,7 +28,7 @@ statement -> statement_of_complement_graph_undirected_graph (*
 	-> rrel_key_sc_element: concept_undirected_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Дополнением неориентированного графа является граф, содержащий все недостающие рёбра между вершинами исходного графа, которые не являются рёбрами этого графа] (* <- lang_ru;; *);;
+		-> [Граф, содержащий все недостающие рёбра между вершинами исходного графа, которые не являются рёбрами этого графа] (* <- lang_ru;; *);;
 		-> [The complement of an undirected graph is a graph that contains all the missing edges between the vertices of the original graph that are not already edges of the graph] (* <- lang_en;; *);;
 	*);;
 

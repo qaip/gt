@@ -1,0 +1,25 @@
+ru: максимальная куча
+en: max heap
+
+definition:
+  ru:
+    Структура данных, которая представляет собой дерево, где каждый узел имеет
+    значение, большее или равное значению его потомков
+  en:
+    A data structure that is a tree where each node has a value greater than or
+    equal to the value of its children
+  using:
+    concepts: |
+      tree
+      tree_descendant
+
+statement:
+  max_heap_property:
+    title:
+      ru: Свойство максимальной кучи
+      en: Property of max heap
+    ru: Корень кучи имеет наибольшее значение
+    en: The root of the heap has the largest value
+    using:
+      concepts: |
+        tree_root

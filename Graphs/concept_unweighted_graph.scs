@@ -10,7 +10,7 @@ definition -> definition_of_unweighted_graph (*
 	-> rrel_key_sc_element: concept_unweighted_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Невзвешенным графом называется граф, у которого каждому ребру не ставится в соответствие некоторое значение, или вес] (* <- lang_ru;; *);;
+		-> [Граф, у которого каждому ребру не ставится в соответствие некоторое значение, или вес] (* <- lang_ru;; *);;
 		-> [An unweighted graph is a graph in which each edge is not assigned some value, or weight] (* <- lang_en;; *);;
 	*);;
 
@@ -57,7 +57,6 @@ statement -> statement_of_connectedness_unweighted_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_unweighted_graph;
 		concept_path
 	};;
 *);;
@@ -76,7 +75,6 @@ statement -> statement_of_bipartiteness (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_unweighted_graph;
 		concept_bipartite_graph
 	};;
 *);;
@@ -114,7 +112,6 @@ statement -> statement_of_complement_graph_unweighted_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_unweighted_graph;
 		concept_complete_graph
 	};;
 *);;
@@ -143,16 +140,13 @@ sc_node_class ->
 	concept_graph;
 	concept_algorithms;
 	concept_graph;
-	concept_unweighted_graph;
 	concept_path;
 	concept_graph;
-	concept_unweighted_graph;
 	concept_bipartite_graph;
 	concept_graph;
 	concept_unweighted_graph;
 	concept_tree;
 	concept_graph;
-	concept_unweighted_graph;
 	concept_complete_graph;
 	concept_graph;
 	concept_graph_coloring;;

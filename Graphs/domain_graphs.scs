@@ -26,6 +26,7 @@ section_subject_domain_of_graphs
 	subject_domain_of_graphs;
 	concept_graph;
 	concept_vertex;
+	concept_arc;
 	concept_edge;
 	concept_directed_graph;
 	concept_undirected_graph;
@@ -73,6 +74,7 @@ section_subject_domain_of_graphs=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_vertex;
+		concept_arc;
 		concept_edge;
 		concept_directed_graph;
 		concept_undirected_graph;
@@ -131,6 +133,7 @@ section_subject_domain_of_graphs=[*
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
+	concept_arc;
 	concept_edge;
 	concept_directed_graph;
 	concept_undirected_graph;

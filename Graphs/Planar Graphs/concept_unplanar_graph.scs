@@ -16,10 +16,11 @@ definition -> definition_of_unplanar_graph (*
 		[Def. (unplanar graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_unplanar_graph;
 		concept_graph;
 		concept_plane;
-		concept_edge
+		concept_edge;
+		rrel_edge;
+		nrel_intersection
 	};;
 *);;
 
@@ -37,9 +38,9 @@ statement -> statement_of_sufficient_condition_for_graph_unplanarity (*
 
 	=> nrel_using_constants: {
 		concept_complete_graph;
-		concept_unplanar_graph;
 		concept_bipartite_graph;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
@@ -56,23 +57,90 @@ statement -> statement_of_necessary_condition_for_graph_unplanarity (*
 		[Stat. (A necessary condition for graph unplanarity)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_unplanar_graph;
 		concept_vertex;
+		rrel_vertex;
 		nrel_vertex_degree
 	};;
 *);;
 
+statement -> statement_of_unplanar_graph_minors (*
+	-> rrel_key_sc_element: concept_unplanar_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой минор непланарного графа также является непланарным графом] (* <- lang_ru;; *);;
+		-> [Any minor of an unplanar graph is also an unplanar graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Миноры непланарного графа)] (* <- lang_ru;; *);
+		[Stat. (Minors of an unplanar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_minor;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_unplanar_graph_subgraphs (*
+	-> rrel_key_sc_element: concept_unplanar_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой подграф непланарного графа также является непланарным графом] (* <- lang_ru;; *);;
+		-> [Any subgraph of an unplanar graph is also an unplanar graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Подграфы непланарного графа)] (* <- lang_ru;; *);
+		[Stat. (Subgraphs of an unplanar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		nrel_subgraph
+	};;
+*);;
+
+statement -> statement_of_unplanar_graph_property (*
+	-> rrel_key_sc_element: concept_unplanar_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Непланарный граф имеет больше рёбер, чем n-1 вершин, где n-число вершин] (* <- lang_ru;; *);;
+		-> [An unplanar graph has more edges than n-1 vertices, where n is the number of vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства непланарного графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of an unplanar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
 sc_node_class ->
-	concept_unplanar_graph;
 	concept_graph;
 	concept_plane;
 	concept_edge;
 	concept_complete_graph;
-	concept_unplanar_graph;
 	concept_bipartite_graph;
 	concept_vertex;
-	concept_unplanar_graph;
-	concept_vertex;;
+	concept_vertex;
+	concept_minor;
+	concept_graph;
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
 
 sc_node_norole_relation ->
-	nrel_vertex_degree;;
+	nrel_intersection;
+	nrel_vertex_degree;
+	nrel_subgraph;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;

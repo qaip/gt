@@ -1,0 +1,32 @@
+ru: ориентированный Эйлеров граф
+en: oriented Eulerian graph
+
+definition:
+  ru: Ориентированный граф, содержащий эйлеров цикл
+  en: A directed graph that contains an Eulerian cycle
+  using:
+    concepts: |
+      directed_graph
+      eulerian_cycle
+
+statement:
+  theorem_seymour:
+    title:
+      ru: Теорема Сеймура
+      en: Seymours Theorem
+    ru:
+      Ориентированный граф является эйлеровым тогда и только тогда, когда для
+      любой пары вершин с одинаковой входящей и выходящей степенями существует
+      путь, проходящий через эти вершины
+    en:
+      A directed graph is Eulerian if and only if for any pair of vertices with
+      equal in-degree and out-degree, there is a path passing through those
+      vertices
+    using:
+      concepts: |
+        vertex
+        in_vertex_degree
+        out_vertex_degree
+        graph_path
+      rrels: |
+        vertex

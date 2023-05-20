@@ -1,0 +1,29 @@
+concept_weighted_edge
+=> nrel_main_idtf:
+	[взвешенное ребро] (* <- lang_ru;; *);
+	[weighted edge] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_rib_weight;;
+
+definition -> definition_of_weighted_edge (*
+	-> rrel_key_sc_element: concept_weighted_edge;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ребро, которому приписана числовая величина] (* <- lang_ru;; *);;
+		-> [An edge to which a numerical value is assigned] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (взвешенное ребро)] (* <- lang_ru;; *);
+		[Def. (weighted edge)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_edge;;

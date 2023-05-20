@@ -1,0 +1,52 @@
+section_subject_domain_of_forests
+
+<- atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область лесов] (* <- lang_ru;; *);
+	[Section. Subject domain of forests] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	subject_domain_of_forests;
+	concept_forest;
+	concept_forest;
+	concept_polyforest;
+	concept_pseudoforest;
+	concept_random_forest;
+	concept_decision_forest;
+	concept_extra_trees_forest;
+	concept_conditional_inference_forest;;
+
+section_subject_domain_of_forests=[*
+	subject_domain_of_forests
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область лесов] (* <- lang_ru;; *);
+		[Subject Domain of forests] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_forest;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_forest;
+		concept_polyforest;
+		concept_pseudoforest;
+		concept_random_forest;
+		concept_decision_forest;
+		concept_extra_trees_forest;
+		concept_conditional_inference_forest;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_acyclic_graphs;;
+*];;
+
+sc_node_class ->
+	concept_forest;
+	concept_forest;
+	concept_polyforest;
+	concept_pseudoforest;
+	concept_random_forest;
+	concept_decision_forest;
+	concept_extra_trees_forest;
+	concept_conditional_inference_forest;;

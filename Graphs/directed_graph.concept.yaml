@@ -6,30 +6,32 @@ en:
   - digraph
 definition:
   ru:
-    Граф является парой множеств V, A, где V является множеством
-    вершин, A является множеством ориентированных ребер, которые называются
-    дугами
-  en:
-    A directed graph is a pair of sets V, A, where V is a set of vertices, A is
-    a set of directed edges, which are called arcs
+    Граф, в котором для каждой упорядоченной пары вершин определена
+    направленность ребра
+  en: A graph in which each pair of vertices is connected by a directed edge
   using:
     concepts: |
       graph
-      arc
-      edge
       vertex
+      edge
+      arc
     rrels: |
       edge
       arc
       vertex
+
 statement:
-  weak_directed_graph:
+  theorem_menger:
     title:
       ru: Слабость орграфа
       en: Digraph weakness
     ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
     en: A directed graph is weak if it has a chain
     using:
+      concepts: |
+        vertex
+      rrels: |
+        vertex
       nrels: |
         chain
   strongly_connected_directed_graph:
@@ -89,3 +91,15 @@ statement:
       rrels: |
         edge
         arc
+subclass:
+  - tournament_graph
+  - directed_forest
+  - directed_tree
+  - oriented_eulerian_graphs
+  - normalized_graph
+  - mixed_graph
+  - orientable_graph
+  - directed_hypergraph
+  - directed_multigraph
+  - inverse_graph
+  - counterfunctional_graph

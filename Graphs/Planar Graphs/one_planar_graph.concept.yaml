@@ -1,5 +1,5 @@
 ru: 1-планарный граф
-en: 1-planar graph
+en: one-planar graphs
 
 definition:
   ru:
@@ -11,8 +11,9 @@ definition:
   using:
     concepts: |
       plane
-      one_planar_graph
       graph
+      edge
+    rrels: |
       edge
 
 statement:
@@ -25,5 +26,30 @@ statement:
     using:
       concepts: |
         vertex
-        one_planar_graph
         edge
+      rrels: |
+        vertex
+        edge
+
+  one_planar_minors:
+    title:
+      ru: Миноры 1-планарного графа
+      en: Minors of a 1-planar graph
+    ru: Любой минор 1-планарного графа также является 1-планарным графом
+    en: Any minor of a 1-planar graph is also a 1-planar graph
+    using:
+      concepts: |
+        minor
+        graph
+
+  one_planar_subgraphs:
+    title:
+      ru: Подграфы 1-планарного графа
+      en: Subgraphs of a 1-planar graph
+    ru: Любой подграф 1-планарного графа также является 1-планарным графом
+    en: Any subgraph of a 1-planar graph is also a 1-planar graph
+    using:
+      concepts: |
+        graph
+      nrels: |
+        subgraph
