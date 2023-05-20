@@ -51,11 +51,12 @@ statement:
     using:
       concepts: |
         graph
-        path
+        graph_connectivity
+        graph_path
   usage_example_supergraph:
     title:
-      ru: Пример использования
-      en: Example usage
+      ru: Пример использования суперграфа
+      en: Supergraph example usage 
     ru:
       Один из примеров использования суперграфа является поиск путей в графе,
       который содержит множество других графов
@@ -65,3 +66,4 @@ statement:
     using:
       concepts: |
         graph
+        graph_path

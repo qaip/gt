@@ -1,5 +1,7 @@
-ru: графовая структура
-en: graph structure
+ru:
+  - графовая структура
+en:
+  - graph structure
 definition:
   ru:
     Графовая структура является математическим объектом, который состоит из
@@ -18,8 +20,8 @@ definition:
 statement:
   graph_structure_usage:
     title:
-      ru: использование графовой структуры
-      en: graph structure usage
+      ru: Использование графовой структуры
+      en: Graph structure usage
     ru:
       Графовая структура является тем же самым что и граф, но понятие граф
       используется в информатике и математике, а графовая структура в других
@@ -31,3 +33,63 @@ statement:
     using:
       concepts: |
         graph
+  graph_structure_representation:
+    title:
+      ru: Изображение графовых структур
+      en: Graph structure representation
+    ru:
+      Графовые структуры могут быть представлены в виде рисунка, состоящего из
+      точек и линий, соединяющих некоторые из этих точек. При этом точки
+      соответствуют вершинам графа, а соединяющие пары точек линии соответствуют
+      рёбрам графа
+    en:
+      Graph structures can be represented as a drawing consisting of dots and
+      lines, connecting some of these points. In this case, points correspond to
+      vertices of the graph, and lines connecting pairs of points correspond to
+      edges of the graph
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+  graph_structure_types:
+    title:
+      ru: Типы графовых структур
+      en: Types of graph structures
+    ru:
+      Существует множество типов графовых структур, включая ориентированные и
+      неориентированные графы, связные и несвязные графы, полные и неполные
+      графы, и так далее
+    en:
+      There are many types of graph structures, including directed and
+      undirected graphs, connected and disconnected graphs, complete and
+      incomplete graphs, and so on
+    using:
+      concepts: |
+        graph
+        directed_graph
+        undirected_graph
+        connected_graph
+        disconnected_graph
+        complete_graph
+        incomplete_graph
+  graph_structure_applications:
+    title:
+      ru: Применение графовых структур
+      en: Graph structure applications
+    ru:
+      Графовые структуры широко используются в информатике, математике,
+      инженерии, биологии и других областях. Они используются для моделирования
+      отношений между объектами, для анализа сетей и социальных систем, для
+      построения алгоритмов и многого другого
+    en:
+      Graph structures are widely used in computer science, mathematics,
+      engineering, biology, and other fields. They are used for modeling
+      relationships between objects, for analyzing networks and social systems,
+      for constructing algorithms, and much more
+    using:
+      concepts: |
+        graph
+        

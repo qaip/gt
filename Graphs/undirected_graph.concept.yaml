@@ -19,8 +19,8 @@ definition:
 statement:
   complement_graph_undirected_graph:
     title:
-      ru: дополнение неориентированного графа
-      en: complement of an undirected graph
+      ru: Дополнение неориентированного графа
+      en: Complement of an undirected graph
     ru:
       Граф, содержащий все недостающие рёбра между вершинами исходного графа,
       которые не являются рёбрами этого графа
@@ -34,10 +34,13 @@ statement:
         vertex
         edge
         complete_graph
+      rrels: |
+        vertex
+        edge
   connectedness_undirected_graph:
     title:
-      ru: связность неориентированных графов
-      en: connectedness of undirected graphs
+      ru: Связность неориентированных графов
+      en: Connectedness of undirected graphs
     ru:
       Неориентированный граф называется связным, если для каждой пары вершин
       графа существует путь, соединяющий эти вершины. Иначе граф называется
@@ -50,4 +53,8 @@ statement:
         graph
         vertex
         edge
-        path
+        graph_connectivity
+        graph_path
+      rrels: |
+        vertex
+        edge

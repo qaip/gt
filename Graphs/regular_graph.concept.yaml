@@ -17,3 +17,60 @@ definition:
       vertex_degree
     rrels: |
       vertex
+statement:
+  applications_of_regular_graphs:
+    title:
+      ru: Применение регулярных графов
+      en: Applications of regular graphs
+    ru:
+      Регулярные графы применяются в различных областях, например, в
+      комбинаторике, криптографии, теории кодирования и сетевом проектировании
+    en:
+      Regular graphs are used in various areas, such as combinatorics,
+      cryptography, coding theory, and network design
+    using:
+      concepts: |
+        graph
+      rrels: |
+        cryptography
+        coding_theory
+        network_design
+  regular_bipartite_graphs:
+    title:
+      ru: Двудольные регулярные графы
+      en: Regular bipartite graphs
+    ru:
+      Двудольный регулярный граф является регулярным графом, у которого
+      вершины разбиты на две непересекающиеся доли, причём все рёбра идут
+      между долями
+    en:
+      A regular bipartite graph is a regular graph in which the vertices are
+      divided into two non-overlapping parts, and all edges go between the parts
+    using:
+      concepts: |
+        graph
+        bipartite_graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+  spectral_properties_regular_graphs:
+    title:
+      ru: Спектральные свойства регулярных графов
+      en: Spectral properties of regular graphs
+    ru:
+      Спектральные свойства регулярных графов широко исследовались в
+      математике и теории графов. Например, собственные значения и собственные
+      векторы регулярных графов могут быть использованы для анализа их
+      свойств и структуры
+    en:
+      Spectral properties of regular graphs have been widely studied in
+      mathematics and graph theory. For example, the eigenvalues and eigenvectors
+      of regular graphs can be used to analyze their properties and structure
+    using:
+      concepts: |
+        graph
+        eigenvalues
+        eigenvectors
+ 

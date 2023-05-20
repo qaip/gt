@@ -22,8 +22,8 @@ definition:
 statement:
   null_graph_concept_usage:
     title:
-      ru: использование понятия нуль графа
-      en: null graph concept usage
+      ru: Использование понятия нуль графа
+      en: Null graph concept usage
     ru:
       Понятие нульграфа также может относиться к графу с нулевыми вершинами или
       нулевыми ребрами, но этого стараются избегать, поскольку это может вызвать
