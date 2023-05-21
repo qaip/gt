@@ -5,8 +5,8 @@ concept_hypergraph
 
 
 => nrel_inclusion:
-concept_directed_hypergraphs;
-concept_undirected_hypergraphs;;
+concept_directed_hypergraph;
+concept_undirected_hypergraph;;
 
 definition -> definition_of_hypergraph (*
 	-> rrel_key_sc_element: concept_hypergraph;;
