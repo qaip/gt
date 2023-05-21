@@ -12,7 +12,7 @@ max: |
 
 concepts: |
   graph_traversal
-  shortest_paths_problem
+  shortest_path_problem
 
 nrels: |
   shortest_paths
