@@ -5,7 +5,7 @@ definition:
   ru:
     Структура данных, используемая для представления графа в компьютерной науке.
     Представляет собой массив списков, где индекс каждого элемента соответствует
-    вершине графа, а список по этому  индексу содержит вершины, смежные с данной.
+    вершине графа, а список по этому индексу содержит вершины, смежные с данной.
   en:
     A data structure used to represent a graph in computer science. It is an
     array of lists where the index of each element corresponds to a vertex of
