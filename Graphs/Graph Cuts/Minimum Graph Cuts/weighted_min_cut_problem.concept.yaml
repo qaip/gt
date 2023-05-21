@@ -1,5 +1,6 @@
 ru: взвешенный минимальный разрез
 en: weighted min cut
+
 definition:
   ru:
     Алгоритм, который используется для разделения графа на две части в
@@ -15,3 +16,5 @@ definition:
       graph_cut
     rrels: |
       edge
+    nrels: |
+      rib_weight

@@ -1,5 +1,6 @@
 ru: сток графа
 en: graph sink
+
 definition:
   ru: Вершина, которая не имеет исходящих ребер
   en: A graph sink is a vertex that has no outgoing edges
