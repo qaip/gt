@@ -1,5 +1,6 @@
 ru: граф блоков и точек сочленения
 en: block cutpoint graph
+
 definition:
   ru:
     Граф, который не имеет мостов, но может быть разбит на блоки и точки
@@ -15,6 +16,7 @@ definition:
       block
     rrels: |
       cutpoint
+
 statement:
   block_cutpoint_graph_vs_biconnected_graph:
     title:
@@ -32,6 +34,7 @@ statement:
     using:
       concepts: |
         biconnected_graph
+      nrels: |
         block
       rrels: |
         cutpoint

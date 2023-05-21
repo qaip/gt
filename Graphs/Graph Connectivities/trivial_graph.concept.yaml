@@ -1,5 +1,6 @@
 ru: тривиальный граф
 en: trivial graph
+
 definition:
   ru: Граф, который состоит из одной вершины и не имеет ребер
   en: A trivial graph is a graph that consists of only one vertex and no edges
@@ -11,6 +12,7 @@ definition:
     rrels: |
       vertex
       edge
+
 statement:
   trivial_graph_in_algorithms:
     title:
@@ -26,19 +28,21 @@ statement:
     using:
       concepts: |
         graph_algorithm
+
   trivial_graph_in_graph_theory:
     title:
       ru: Тривиальные графы в теории графов
       en: Trivial graphs in graph theory
     ru:
-      Тривиальные графы могут быть использованы для иллюстрации определений
-      и теорем в теории графов
+      Тривиальные графы могут быть использованы для иллюстрации определений и
+      теорем в теории графов
     en:
       Trivial graphs can be used to illustrate definitions and theorems in graph
       theory
     using:
       concepts: |
         graph_theory
+
   trivial_graph_with_self_loop:
     title:
       ru: Тривиальный граф с петлей
@@ -46,13 +50,14 @@ statement:
     ru:
       Тривиальный граф может содержать петлю, соединяющую его единственную
       вершину
-    en:
-      Trivial graph can have a self-loop connecting its only vertex
+    en: Trivial graph can have a self-loop connecting its only vertex
     using:
       concepts: |
-        trivial_graph
+        vertex
       rrels: |
         loop
+        vertex
+
   trivial_graph_and_connected_components:
     title:
       ru: Связность тривиального графа
@@ -60,8 +65,10 @@ statement:
     ru:
       Тривиальный граф является связным графом, так как он состоит только из
       одной вершины
-    en:
-      Trivial graph is a connected graph, since it consists of a single vertex
+    en: Trivial graph is a connected graph, since it consists of a single vertex
     using:
       concepts: |
         connected_graph
+        vertex
+      rrels: |
+        vertex

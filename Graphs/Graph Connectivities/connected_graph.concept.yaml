@@ -12,6 +12,7 @@ definition:
       vertex
     rrels: |
       vertex
+
 statement:
   connected_graph_and_pathfinding:
     title:
@@ -27,6 +28,8 @@ statement:
       concepts: |
         connected_graph
         graph_algorithm
+        graph_sequence
+
   connected_graph_and_spanning_tree:
     title:
       ru: Связные графы и остовные деревья
@@ -41,6 +44,12 @@ statement:
       concepts: |
         connected_graph
         spanning_tree
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
   connected_graph_and_minimum_spanning_tree:
     title:
       ru: Связные графы и минимальные остовные деревья
@@ -56,5 +65,5 @@ statement:
     using:
       concepts: |
         connected_graph
-        minimum_spanning_tree
+        spanning_tree
         weighted_graph

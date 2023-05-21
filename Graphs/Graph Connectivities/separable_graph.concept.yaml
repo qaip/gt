@@ -1,5 +1,6 @@
 ru: разделимый граф
 en: separable graph
+
 definition:
   ru:
     Граф, который может быть разделен на две или более компонент связности при
@@ -17,6 +18,7 @@ definition:
     rrels: |
       vertex
       edge
+
 statement:
   separable_graph_vs_non_separable_graph:
     title:
@@ -35,9 +37,12 @@ statement:
     using:
       concepts: |
         connected_component
+        vertex
+        edge
       rrels: |
         vertex
         edge
+
   trees_as_separable_graphs:
     title:
       ru: Деревья как разделимые графы
@@ -53,6 +58,9 @@ statement:
       concepts: |
         tree
         vertex
+      rrels: |
+        vertex
+
   separable_graph_in_planarity:
     title:
       ru: Разделимые графы в планарной геометрии
@@ -69,6 +77,7 @@ statement:
       concepts: |
         graph_theory
         planar_graph
+
   separable_graph_and_cut_vertices:
     title:
       ru: Разделимые графы и точки сочленения
@@ -82,4 +91,5 @@ statement:
     using:
       concepts: |
         separable_graph
-        graph_cut
+      rrels: |
+        cutpoint

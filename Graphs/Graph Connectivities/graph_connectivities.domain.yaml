@@ -24,3 +24,7 @@ nrels: |
   strongly_connected_component
   graph_block
   connected_component
+  block
+
+rrels: |
+  cutpoint

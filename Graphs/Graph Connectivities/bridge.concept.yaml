@@ -1,5 +1,6 @@
 ru: мост
 en: bridge
+
 definition:
   ru: Ребро, удаление которого увеличивает число компонент связности
   en:
@@ -12,6 +13,7 @@ definition:
       connected_component
     rrels: |
       edge
+      
 statement:
   finding_bridges:
     title:
