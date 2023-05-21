@@ -18,7 +18,8 @@ definition -> definition_of_graph_cut_space (*
 	=> nrel_using_constants: {
 		concept_vector_space;
 		concept_graph;
-		concept_graph_cuts
+		concept_graph_cuts;
+		concept_spacegraph_cycle
 	};;
 *);;
 
@@ -26,4 +27,5 @@ definition -> definition_of_graph_cut_space (*
 sc_node_class ->
 	concept_vector_space;
 	concept_graph;
-	concept_graph_cuts;;
+	concept_graph_cuts;
+	concept_spacegraph_cycle;;

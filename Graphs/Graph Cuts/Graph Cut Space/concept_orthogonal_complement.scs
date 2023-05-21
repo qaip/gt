@@ -26,7 +26,7 @@ definition -> definition_of_orthogonal_complement (*
 	};;
 *);;
 
-statement -> statement_of_properties (*
+statement -> statement_of_properties_orthogonal_complement (*
 	-> rrel_key_sc_element: concept_orthogonal_complement;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -48,7 +48,7 @@ statement -> statement_of_properties (*
 	};;
 *);;
 
-statement -> statement_of_examples (*
+statement -> statement_of_examples_orthogonal_complement (*
 	-> rrel_key_sc_element: concept_orthogonal_complement;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -61,7 +61,8 @@ statement -> statement_of_examples (*
 		[Stat. (Examples of orthogonal complement)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_matrix
+		concept_matrix;
+		concept_space
 	};;
 *);;
 
@@ -75,7 +76,8 @@ sc_node_class ->
 	concept_vector;
 	concept_subspace;
 	concept_orthogonal;
-	concept_matrix;;
+	concept_matrix;
+	concept_space;;
 
 sc_node_role_relation ->
 	rrel_subspace;

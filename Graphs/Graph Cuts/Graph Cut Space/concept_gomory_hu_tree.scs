@@ -7,8 +7,8 @@ definition -> definition_of_gomory_hu_tree (*
 	-> rrel_key_sc_element: concept_gomory_hu_tree;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Деревом Гомори-Ху называется дерево разрезов графа, которое можно построить за полиномиальное время, и которое позволяет эффективно находить минимальные разрезы в графе] (* <- lang_ru;; *);;
-		-> [A Gomory-Hu tree is a tree of cuts of a graph, which can be constructed in polynomial time, and which allows to efficiently find the minimum cuts in the graph] (* <- lang_en;; *);;
+		-> [Дерево разрезов графа, которое можно построить за полиномиальное время, и которое позволяет эффективно находить минимальные разрезы в графе] (* <- lang_ru;; *);;
+		-> [A tree of cuts of a graph, which can be constructed in polynomial time, and which allows to efficiently find the minimum cuts in the graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
