@@ -6,7 +6,7 @@ concept_planar_graph
 
 => nrel_inclusion:
 concept_one_planar_graph;
-concept_triangular_graph;
+concept_triangle_graph;
 concept_graph_diamond;
 concept_medial_graph;
 concept_external_planar_graph;
@@ -55,8 +55,8 @@ statement -> statement_of_kuratowski_theorem (*
 	-> rrel_key_sc_element: concept_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф планарен тогда и только тогда, когда он не содержит подграфов, гомеоморфных графам К5 (полный граф на 5 вершинах) и К3, 3 (двудольный граф с 3 вершинами в одной доле и 3 вершинами в другой доле)] (* <- lang_ru;; *);;
-		-> [A graph is planar if and only if it does not contain subgraphs homeomorphic to K5 (the complete graph on 5 vertices) or K3, 3 (a bipartite graph with 3 vertices in each part)] (* <- lang_en;; *);;
+		-> [Граф планарен тогда и только тогда, когда он не содержит подграфов, гомеоморфных графам К 5 (полный граф на 5 вершинах) и К 3, 3 (двудольный граф с 3 вершинами в одной доле и 3 вершинами в другой доле)] (* <- lang_ru;; *);;
+		-> [A graph is planar if and only if it does not contain subgraphs homeomorphic to K 5 (the complete graph on 5 vertices) or K 3, 3 (a bipartite graph with 3 vertices in each part)] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
