@@ -29,13 +29,13 @@ statement -> statement_of_weighted_max_cut_usage (*
 	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Проблема максимального взвешенного разреза графа используется в задачах оптимизации и теории графов, а также в биоинформатике и машинном обучении] (* <- lang_ru;; *);;
+		-> [Задача максимального взвешенного разреза графа используется в задачах оптимизации и теории графов, а также в биоинформатике и машинном обучении] (* <- lang_ru;; *);;
 		-> [The weighted maximum graph cut problem is used in optimization problems and graph theory, as well as in bioinformatics and machine learning] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (использование задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
-		[Stat. (usage of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Использование задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Usage of weighted maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
@@ -58,11 +58,11 @@ statement -> statement_of_weighted_max_cut_algorithms (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (алгоритмы задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
-		[Stat. (algorithms for weighted maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Алгоритмы задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Algorithms for weighted maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_algorithm;
+		concept_graph_algorithm;
 		concept_karger_karp_algorithm;
 		concept_fiduccia_mattheyses_algorithm
 	};;
@@ -77,8 +77,8 @@ statement -> statement_of_weighted_max_cut_applications (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (приложения задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
-		[Stat. (applications of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Приложения задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Applications of weighted maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_bioinformatics;
@@ -97,8 +97,8 @@ statement -> statement_of_weighted_max_cut_complexity (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (сложность проблемы максимального взвешенного разреза графа)] (* <- lang_ru;; *);
-		[Stat. (complexity of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Сложность проблемы максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Complexity of weighted maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_computational_complexity_theory;
@@ -118,7 +118,7 @@ sc_node_class ->
 	concept_partition;
 	concept_bioinformatics;
 	concept_machine_learning;
-	concept_algorithm;
+	concept_graph_algorithm;
 	concept_karger_karp_algorithm;
 	concept_fiduccia_mattheyses_algorithm;
 	concept_bioinformatics;

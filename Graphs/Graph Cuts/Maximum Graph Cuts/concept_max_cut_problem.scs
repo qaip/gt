@@ -17,9 +17,12 @@ definition -> definition_of_max_cut_problem (*
 
 	=> nrel_using_constants: {
 		concept_graph;
+		concept_graph_cut;
 		concept_vertex;
 		concept_edge;
-		concept_partition
+		concept_partition;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -32,14 +35,17 @@ statement -> statement_of_max_cut_usage (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (использование задачи максимального разреза графа)] (* <- lang_ru;; *);
-		[Stat. (usage of maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Использование задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Usage of maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
 		concept_edge;
-		concept_partition
+		concept_graph_cut;
+		concept_partition;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -52,12 +58,13 @@ statement -> statement_of_max_cut_algorithms (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (алгоритмы задачи максимального разреза графа)] (* <- lang_ru;; *);
-		[Stat. (algorithms for maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Алгоритмы задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Algorithms for maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_algorithm;
+		concept_graph_algorithm;
 		concept_karger_karp_algorithm;
+		concept_graph_cut;
 		concept_fiduccia_mattheyses_algorithm
 	};;
 *);;
@@ -71,13 +78,14 @@ statement -> statement_of_max_cut_applications (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (приложения задачи максимального разреза графа)] (* <- lang_ru;; *);
-		[Stat. (applications of maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Приложения задачи максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Applications of maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_social_network_analysis;
 		concept_machine_learning;
 		concept_data_clustering;
+		concept_graph_cut;
 		concept_community_detection
 	};;
 *);;
@@ -91,8 +99,8 @@ statement -> statement_of_max_cut_complexity (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (сложность проблемы максимального разреза графа)] (* <- lang_ru;; *);
-		[Stat. (complexity of maximum graph cut problem)] (* <- lang_en;; *);;
+		[Утв. (Сложность проблемы максимального разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Complexity of maximum graph cut problem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_np_complete;
@@ -104,21 +112,31 @@ statement -> statement_of_max_cut_complexity (*
 
 sc_node_class ->
 	concept_graph;
+	concept_graph_cut;
 	concept_vertex;
 	concept_edge;
 	concept_partition;
 	concept_graph;
 	concept_vertex;
 	concept_edge;
+	concept_graph_cut;
 	concept_partition;
-	concept_algorithm;
+	concept_graph_algorithm;
 	concept_karger_karp_algorithm;
+	concept_graph_cut;
 	concept_fiduccia_mattheyses_algorithm;
 	concept_social_network_analysis;
 	concept_machine_learning;
 	concept_data_clustering;
+	concept_graph_cut;
 	concept_community_detection;
 	concept_np_complete;
 	concept_computational_complexity_theory;
 	concept_graph;
 	concept_graph_cut;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
