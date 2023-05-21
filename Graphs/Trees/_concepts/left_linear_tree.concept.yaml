@@ -1,0 +1,23 @@
+ru: девостороннее линейное дерево
+en: left-linear tree
+
+definition:
+  ru: Дерево, в котором каждый узел имеет не более одного левого потомка
+  en: A tree in which each node has at most one left child
+  using:
+    concepts: |
+      tree
+      vertex
+    rrels: |
+      vertex
+statement:
+  left_linear_tree_theorem:
+    title:
+      ru: Теорема о левостороннем линейном дереве
+      en: Left-linear tree theorem
+    ru: Левостороннее линейное дерево может быть использовано для представления списков и очередей
+    en: A left-linear tree can be used to represent lists and queues
+    using:
+      concepts: |
+        tree
+        left_linear_tree

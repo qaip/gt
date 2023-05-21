@@ -1,0 +1,66 @@
+concept_fibonacci_tree
+=> nrel_main_idtf:
+	[дерево Фибоначчи] (* <- lang_ru;; *);
+	[fibonacci tree] (* <- lang_en;; *);;
+
+definition -> definition_of_fibonacci_tree (*
+	-> rrel_key_sc_element: concept_fibonacci_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, которая представляет собой бинарное дерево, где каждый узел содержит некоторый элемент и ссылки на двух своих детей. Каждый узел также имеет ссылки на самое левое и самое правое поддеревья, а также на следующий и предыдущий узлы на том же уровне дерева. В дереве Фибоначчи каждый узел имеет ранг, который равен количеству детей, и дерево удовлетворяет свойству минимальной пути к корню, то есть путь к корню можно получить, объединив пути к корню из каждого из детей. Одной из особенностей дерева Фибоначчи является то, что оно может использоваться для реализации кучи Фибоначчи, которая является эффективной структурой данных для реализации приоритетных очередей] (* <- lang_ru;; *);;
+		-> [A Fibonacci tree is a data structure that is a binary tree where each node contains an element and links to its two children. Each node also has links to the leftmost and rightmost subtrees, as well as to the next and previous nodes at the same level of the tree. In a Fibonacci tree, each node has a rank equal to the number of children, and the tree satisfies the minimum path to the root property, meaning that the path to the root can be obtained by combining the paths to the root from each of the children. One of the features of the Fibonacci tree is that it can be used to implement the Fibonacci heap, which is an efficient data structure for implementing priority queues] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (дерево Фибоначчи)] (* <- lang_ru;; *);
+		[Def. (fibonacci tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_data_structure;
+		concept_binary_tree;
+		concept_vertex;
+		concept_rank;
+		concept_fibonacci_heap;
+		concept_priority_queue;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_fibonacci_tree_representation (*
+	-> rrel_key_sc_element: concept_fibonacci_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево Фибоначчи представляется в виде бинарного дерева, где каждый узел содержит элемент и ссылки на двух своих детей. Каждый узел также имеет ссылки на самое левое и самое правое поддеревья, а также на следующий и предыдущий узлы на том же уровне дерева. В дереве Фибоначчи каждый узел имеет ранг, который равен количеству детей, и дерево удовлетворяет свойству минимальной пути к корню, то есть путь к корню можно получить, объединив пути к корню из каждого из детей. Одной из особенностей дерева Фибоначчи является то, что оно может использоваться для реализации кучи Фибоначчи, которая является эффективной структурой данных для реализации приоритетных очередей] (* <- lang_ru;; *);;
+		-> [A Fibonacci tree is represented as a binary tree where each node contains an element and links to its two children. Each node also has links to the leftmost and rightmost subtrees, as well as to the next and previous nodes at the same level of the tree. In a Fibonacci tree, each node has a rank equal to the number of children, and the tree satisfies the minimum path to the root property, meaning that the path to the root can be obtained by combining the paths to the root from eachru] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Изображение дерева Фибоначчи)] (* <- lang_ru;; *);
+		[Stat. (Fibonacci tree representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_binary_tree;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_data_structure;
+	concept_binary_tree;
+	concept_vertex;
+	concept_rank;
+	concept_fibonacci_heap;
+	concept_priority_queue;
+	concept_tree;
+	concept_binary_tree;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;

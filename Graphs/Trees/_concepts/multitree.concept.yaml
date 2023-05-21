@@ -1,0 +1,76 @@
+ru: мультитри
+en: multitree
+
+definition:
+  ru:
+    Древовидная структура данных, в которой узлы могут иметь несколько родителей
+  en: A tree-like data structure in which nodes can have multiple parents
+  using:
+    concepts: |
+      tree
+      vertex
+    nrels: |
+      tree_parent
+    rrels: |
+      vertex
+
+statement:
+  theorem_multitree_search:
+    title:
+      ru: Теорема о поиске в мультитри
+      en: Search theorem in a multitree
+    ru:
+      Поиск элемента в мультитри может быть выполнен за время O(log n), где
+      n-количество элементов в дереве
+    en:
+      Searching for an element in a multitree can be done in O(log n) time,
+      where n is the number of elements in the tree
+    using:
+      concepts: |
+        time_complexity
+        searching
+
+  theorem_multitree_insertion:
+    title:
+      ru: Теорема о вставке в мультитри
+      en: Insertion theorem in a multitree
+    ru:
+      Вставка элемента в мультитри может быть выполнена за время O(log n), где
+      n-количество элементов в дереве
+    en:
+      Inserting an element into a multitree can be done in O(log n) time, where
+      n is the number of elements in the tree
+    using:
+      concepts: |
+        time_complexity
+        insertion
+
+  theorem_multitree_deletion:
+    title:
+      ru: Теорема об удалении из мультитри
+      en: Deletion theorem in a multitree
+    ru:
+      Удаление элемента из мультитри может быть выполнено за время O(log n), где
+      n-количество элементов в дереве
+    en:
+      Deleting an element from a multitree can be done in O(log n) time, where n
+      is the number of elements in the tree
+    using:
+      concepts: |
+        time_complexity
+        deletion
+
+  theorem_multitree_balancing:
+    title:
+      ru: Теорема о балансировке мультитри
+      en: Balancing theorem in a multitree
+    ru:
+      Мультитри может быть сбалансировано за время O(n log n), где n-количество
+      элементов в дереве
+    en:
+      A multitree can be balanced in O(n log n) time, where n is the number of
+      elements in the tree
+    using:
+      concepts: |
+        balancing
+        time_complexity

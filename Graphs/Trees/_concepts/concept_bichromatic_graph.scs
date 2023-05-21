@@ -1,0 +1,55 @@
+concept_bichromatic_graph
+=> nrel_main_idtf:
+	[бихроматический граф] (* <- lang_ru;; *);
+	[bichromatic graph] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_tree;
+concept_bipartite_graph;;
+
+definition -> definition_of_bichromatic_graph (*
+	-> rrel_key_sc_element: concept_bichromatic_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф с хроматическим числом, равным 2] (* <- lang_ru;; *);;
+		-> [Graph with chromatic number equal to 2] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (бихроматический граф)] (* <- lang_ru;; *);
+		[Def. (bichromatic graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_chromatic_number
+	};;
+*);;
+
+statement -> statement_of_statement_about_color_of_edges (*
+	-> rrel_key_sc_element: concept_bichromatic_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обычно в качестве цвета рёбер графа выбирают красный и синий] (* <- lang_ru;; *);;
+		-> [Usually, color of graph edges identified as red and blue] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о цвете рёбер)] (* <- lang_ru;; *);
+		[Stat. (Statement about color of edges)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_graph;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_chromatic_number;
+	concept_edge;
+	concept_graph;;
+
+sc_node_role_relation ->
+	rrel_edge;;

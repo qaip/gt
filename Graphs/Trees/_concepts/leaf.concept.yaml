@@ -1,0 +1,67 @@
+ru: лист дерева
+en: tree leaf
+
+definition:
+  ru: Узел дерева, не имеющий потомков
+  en: A node in a tree that has no children
+  using:
+    concepts: |
+      vertex
+      tree
+    rrels: |
+      vertex
+    nrels: |
+      tree_descendant
+
+statement:
+  theorem_leaf_count:
+    title:
+      ru: Теорема о количестве листьев
+      en: Leaf count theorem
+    ru:
+      Количество листьев в дереве равно количеству узлов, имеющих ровно одного
+      потомка, плюс один
+    en:
+      The number of leaves in a tree is equal to the number of nodes with
+      exactly one child plus one
+    using:
+      concepts: |
+        tree
+        vertex
+      rrels: |
+        vertex
+      nrels: |
+        tree_descendant
+
+  theorem_leaf_height:
+    title:
+      ru: Теорема о высоте листьев
+      en: Leaf height theorem
+    ru: Высота каждого листа в дереве равна глубине его родительского узла
+    en:
+      The height of each leaf in a tree is equal to the depth of its parent node
+    using:
+      concepts: |
+        tree_height
+        vertex
+      rrels: |
+        vertex
+      nrels: |
+        tree_parent
+
+  theorem_leaf_depth:
+    title:
+      ru: Теорема о глубине листьев
+      en: Leaf depth theorem
+    ru: Глубина каждого листа в дереве равна глубине корня минус один
+    en:
+      The depth of each leaf in a tree is equal to the depth of the root minus
+      one
+    using:
+      concepts: |
+        tree_depth
+        vertex
+        tree_root
+      rrels: |
+        vertex
+        tree_root

@@ -18,7 +18,6 @@ section_subject_domain_of_trees
 	concept_two_three_tree;
 	concept_aa_tree;
 	concept_avl_tree;
-	concept_b_plus_tree;
 	concept_b_tree;
 	concept_balanced_tree;
 	concept_bicentre_tree;
@@ -32,9 +31,7 @@ section_subject_domain_of_trees
 	concept_decision_tree;
 	concept_fenwick_tree;
 	concept_fibonacci_tree;
-	concept_forest;
 	concept_growing_tree;
-	concept_input_tree;
 	concept_irreducible_tree;
 	concept_justified_tree;
 	concept_k_d_tree;
@@ -43,17 +40,14 @@ section_subject_domain_of_trees
 	concept_minimum_spanning_tree;
 	concept_n_ary_tree;
 	concept_octree;
-	concept_output_tree;
 	concept_ordered_tree;
 	concept_perfectly_balanced_tree;
 	concept_polytree;
-	concept_polyforest;
 	concept_r_tree;
 	concept_radix_tree;
 	concept_range_maximum_tree;
-	concept_range_sum_query;
 	concept_red_black_tree;
-	concept_region_quadtree;
+	concept_quadtree;
 	concept_rooted_tree;
 	concept_segment_tree;
 	concept_self_balancing_search_tree;
@@ -61,7 +55,6 @@ section_subject_domain_of_trees
 	concept_spanning_tree;
 	concept_star_tree;
 	concept_suffix_tree;
-	concept_t_tree;
 	concept_ternary_search_tree;
 	concept_trie;
 	concept_undirected_tree;
@@ -70,7 +63,15 @@ section_subject_domain_of_trees
 	concept_bipartite_graph;
 	concept_hypertree;
 	concept_multitree;
-	concept_pseudoforest;;
+	concept_subtree;
+	concept_leaf;
+	concept_tree_depth;
+	concept_tree_root;
+	concept_tree_height;
+	nrel_tree_descendant;
+	nrel_tree_parent;
+	rrel_leaf;
+	rrel_tree_root;;
 
 section_subject_domain_of_trees=[*
 	subject_domain_of_trees
@@ -87,7 +88,6 @@ section_subject_domain_of_trees=[*
 		concept_two_three_tree;
 		concept_aa_tree;
 		concept_avl_tree;
-		concept_b_plus_tree;
 		concept_b_tree;
 		concept_balanced_tree;
 		concept_bicentre_tree;
@@ -101,9 +101,7 @@ section_subject_domain_of_trees=[*
 		concept_decision_tree;
 		concept_fenwick_tree;
 		concept_fibonacci_tree;
-		concept_forest;
 		concept_growing_tree;
-		concept_input_tree;
 		concept_irreducible_tree;
 		concept_justified_tree;
 		concept_k_d_tree;
@@ -112,17 +110,14 @@ section_subject_domain_of_trees=[*
 		concept_minimum_spanning_tree;
 		concept_n_ary_tree;
 		concept_octree;
-		concept_output_tree;
 		concept_ordered_tree;
 		concept_perfectly_balanced_tree;
 		concept_polytree;
-		concept_polyforest;
 		concept_r_tree;
 		concept_radix_tree;
 		concept_range_maximum_tree;
-		concept_range_sum_query;
 		concept_red_black_tree;
-		concept_region_quadtree;
+		concept_quadtree;
 		concept_rooted_tree;
 		concept_segment_tree;
 		concept_self_balancing_search_tree;
@@ -130,7 +125,6 @@ section_subject_domain_of_trees=[*
 		concept_spanning_tree;
 		concept_star_tree;
 		concept_suffix_tree;
-		concept_t_tree;
 		concept_ternary_search_tree;
 		concept_trie;
 		concept_undirected_tree;
@@ -139,7 +133,17 @@ section_subject_domain_of_trees=[*
 		concept_bipartite_graph;
 		concept_hypertree;
 		concept_multitree;
-		concept_pseudoforest;
+		concept_subtree;
+		concept_leaf;
+		concept_tree_depth;
+		concept_tree_root;
+		concept_tree_height;
+
+	-> rrel_explored_relation:
+		nrel_tree_descendant;
+		nrel_tree_parent;
+		rrel_leaf;
+		rrel_tree_root;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -155,7 +159,6 @@ sc_node_class ->
 	concept_two_three_tree;
 	concept_aa_tree;
 	concept_avl_tree;
-	concept_b_plus_tree;
 	concept_b_tree;
 	concept_balanced_tree;
 	concept_bicentre_tree;
@@ -169,9 +172,7 @@ sc_node_class ->
 	concept_decision_tree;
 	concept_fenwick_tree;
 	concept_fibonacci_tree;
-	concept_forest;
 	concept_growing_tree;
-	concept_input_tree;
 	concept_irreducible_tree;
 	concept_justified_tree;
 	concept_k_d_tree;
@@ -180,17 +181,14 @@ sc_node_class ->
 	concept_minimum_spanning_tree;
 	concept_n_ary_tree;
 	concept_octree;
-	concept_output_tree;
 	concept_ordered_tree;
 	concept_perfectly_balanced_tree;
 	concept_polytree;
-	concept_polyforest;
 	concept_r_tree;
 	concept_radix_tree;
 	concept_range_maximum_tree;
-	concept_range_sum_query;
 	concept_red_black_tree;
-	concept_region_quadtree;
+	concept_quadtree;
 	concept_rooted_tree;
 	concept_segment_tree;
 	concept_self_balancing_search_tree;
@@ -198,7 +196,6 @@ sc_node_class ->
 	concept_spanning_tree;
 	concept_star_tree;
 	concept_suffix_tree;
-	concept_t_tree;
 	concept_ternary_search_tree;
 	concept_trie;
 	concept_undirected_tree;
@@ -207,4 +204,16 @@ sc_node_class ->
 	concept_bipartite_graph;
 	concept_hypertree;
 	concept_multitree;
-	concept_pseudoforest;;
+	concept_subtree;
+	concept_leaf;
+	concept_tree_depth;
+	concept_tree_root;
+	concept_tree_height;;
+
+sc_node_norole_relation ->
+	nrel_tree_descendant;
+	nrel_tree_parent;;
+
+sc_node_role_relation ->
+	rrel_leaf;
+	rrel_tree_root;;

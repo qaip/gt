@@ -1,0 +1,24 @@
+ru: дерево отрезков
+en: segment tree
+
+definition:
+  ru: Дерево, используемое для решения задач на отрезках числовой прямой
+  en: A tree used to solve problems on intervals of a numerical axis
+  using:
+    concepts: |
+      tree
+      line
+      numerical_axis
+    nrels: |
+      problem_solving
+
+statement:
+  theorem_construction_time_of_segment_tree:
+    title:
+      ru: Теорема о времени построения дерева отрезков
+      en: Construction time theorem of segment tree
+    ru: Дерево отрезков может быть построено за O(n) времени
+    en: A segment tree can be constructed in O(n) time
+    using:
+      concepts: |
+        time_complexity
