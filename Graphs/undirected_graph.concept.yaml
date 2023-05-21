@@ -1,0 +1,60 @@
+ru: неориентированный граф
+en: undirected graph
+definition:
+  ru:
+    Пусть V является непустым множеством. Неориентированным графом называется
+    пара множеств V, E, где E является произвольным подмножеством декартова
+    произведения множества V
+  en:
+    Let V be a nonempty set. An undirected graph is called a pair V, E, where E
+    is a arbitrary subset of graphic works of cartesian product V
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+statement:
+  complement_graph_undirected_graph:
+    title:
+      ru: Дополнение неориентированного графа
+      en: Complement of an undirected graph
+    ru:
+      Граф, содержащий все недостающие рёбра между вершинами исходного графа,
+      которые не являются рёбрами этого графа
+    en:
+      The complement of an undirected graph is a graph that contains all the
+      missing edges between the vertices of the original graph that are not
+      already edges of the graph
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        complete_graph
+      rrels: |
+        vertex
+        edge
+  connectedness_undirected_graph:
+    title:
+      ru: Связность неориентированных графов
+      en: Connectedness of undirected graphs
+    ru:
+      Неориентированный граф называется связным, если для каждой пары вершин
+      графа существует путь, соединяющий эти вершины. Иначе граф называется
+      несвязным
+    en:
+      An undirected graph is connected if there is a path connecting each pair
+      of vertices in the graph. Otherwise, the graph is called disconnected
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        graph_connectivity
+        graph_path
+      rrels: |
+        vertex
+        edge

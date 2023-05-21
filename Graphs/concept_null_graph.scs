@@ -1,0 +1,65 @@
+concept_null_graph
+=> nrel_main_idtf:
+	[нуль граф] (* <- lang_ru;; *);
+	[null graph] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[пустой граф] (* <- lang_ru;; *);
+	[order-zero graph] (* <- lang_en;; *);
+	[empty graph] (* <- lang_en;; *);;
+
+definition -> definition_of_null_graph (*
+	-> rrel_key_sc_element: concept_null_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, у которого нет никаких ребер, соединяющих его вершины] (* <- lang_ru;; *);;
+		-> [A null graph is a graph that does not have any edges connecting its vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (нуль граф)] (* <- lang_ru;; *);
+		[Def. (null graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_null_graph_concept_usage (*
+	-> rrel_key_sc_element: concept_null_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Понятие нульграфа также может относиться к графу с нулевыми вершинами или нулевыми ребрами, но этого стараются избегать, поскольку это может вызвать путаницу и несоответствие в некоторых свойствах графа] (* <- lang_ru;; *);;
+		-> [It can also refer to the graph with zero vertices and zero edges, but this usage is sometimes avoided because it can cause confusion and inconsistency in some graph properties] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование понятия нуль графа)] (* <- lang_ru;; *);
+		[Stat. (Null graph concept usage)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

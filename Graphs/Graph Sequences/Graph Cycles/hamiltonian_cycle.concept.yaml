@@ -1,0 +1,38 @@
+ru: гамильтонов цикл
+en: hamiltonian cycle
+
+definition:
+  ru: Простой цикл, проходящий через каждую вершину графа ровно один раз
+  en: A simple cycle that passes through every vertex of the graph exactly once
+  using:
+    concepts: |
+      graph_cycle
+      vertex
+      graph
+    rrels: |
+      vertex
+
+statement:
+  hamiltonian_cycle_exists:
+    title:
+      ru: Существование гамильтонова цикла
+      en: Existence of hamiltonian cycle
+    ru:
+      В связном графе с n вершинами существует гамильтонов цикл тогда и только
+      тогда, когда для каждого множества вершин размера k 1 меньше либо равно k
+      меньше либо равно n делить на 2 количество смежных с ними вершин не меньше
+      k
+    en:
+      A connected graph with n vertices has a Hamiltonian cycle if and only if
+      for each set of vertices of size k 1 is less than or equal to k less than
+      or equal to n divided by 2 the number of vertices adjacent to them is at
+      least k
+    using:
+      concepts: |
+        connected_graph
+        vertex_degree
+        vertex
+      rrels: |
+        vertex
+      nrels: |
+        vertex_adjacency

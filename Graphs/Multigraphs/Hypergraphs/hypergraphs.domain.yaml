@@ -1,0 +1,18 @@
+ru: гиперграфов
+en: uhypergraphs
+
+parent: multigraphs
+
+max: |
+  hypergraph
+
+concepts: |
+  directed_hypergraph
+  undirected_hypergraph
+  hypergraph_edge
+
+rrels: |
+  hypergraph_edge
+
+nrels: |
+  transvinsal

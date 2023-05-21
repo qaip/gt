@@ -1,0 +1,90 @@
+en: graph embedding
+ru: вложение графа
+
+definition:
+  ru:
+    Представление графа на поверхности таким образом, что ребра и вершины
+    отображаются в различные точки на поверхности, и каждое ребро представляется
+    непрерывной дугой
+  en:
+    A representation of a graph in a surface such that the edges and vertices
+    are assigned to distinct points in the surface and each edge is represented
+    by a continuous arc
+  using:
+    concepts: |
+      graph
+      surface
+      edge
+      vertex
+    rrels: |
+      vertex
+      edge
+
+statement:
+  planar_embedding:
+    title:
+      en: Planar graph embedding
+      ru: Планарное вложение графа
+    ru:
+      Вложение графа называется планарным, если его можно нарисовать на
+      плоскости без пересечения рёбер
+    en:
+      A graph embedding is called planar if it can be drawn on the plane without
+      any crossing of edges
+    using:
+      concepts: |
+        planar_graph
+        plane
+
+  non_planar_embedding:
+    title:
+      en: Non-planar graph embedding
+      ru: Непланарное вложение графа
+    ru:
+      Вложение графа называется непланарным, если его нельзя нарисовать на
+      плоскости без пересечения рёбер
+    en:
+      A graph embedding is called non-planar if it cannot be drawn on a plane
+      without any crossing of edges
+    using:
+      concepts: |
+        unplanar_graph
+        plane
+
+  embeddings_of_complete_graphs:
+    title:
+      en: Embeddings of Complete Graphs
+      ru: Вложения полных графов
+    ru:
+      Всякое вложение полного графа на поверхности рода g имеет не менее 3 * g -
+      6 граней
+    en:
+      Any embedding of the complete graph on a surface of genus g has at least 3
+      * g - 6 faces
+    using:
+      concepts: |
+        complete_graph
+        genus
+      nrels: |
+        face
+
+  embeddings_of_complete_bipartite_graphs:
+    title:
+      en: Embeddings of Complete Bipartite Graphs
+      ru: Вложения полных двудольных графов
+    ru:
+      Всякое вложение полного двудольного графа на поверхности рода g имеет не
+      менее 2 * g - 2 граней
+    en:
+      Any embedding of the complete bipartite graph on a surface of genus g has
+      at least 2 * g - 2 faces
+    using:
+      concepts: |
+        complete_graph
+        bipartite_graph
+        genus
+      nrels: |
+        face
+
+subclass:
+  - genus

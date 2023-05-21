@@ -1,0 +1,31 @@
+ru: вес пути графа | цена пути | длина пути
+en: graph path_weight | cost of path | length of path
+
+definition:
+  ru: Сумма весов рёбер пути во взвешенном графе
+  en: A sum of the weights of the traversed edges in a weighted graph
+  using:
+    concepts: |
+      weighted_graph
+      edge
+      graph
+    rrels: |
+      edge
+
+statement:
+  bellman_ford_algorithm:
+    title:
+      ru: Алгоритм Беллмана-Форда
+      en: Bellman-Ford algorithm
+    ru:
+      Алгоритм, который находит кратчайший путь во взвешенном графе с
+      отрицательными весами ребер
+    en:
+      An algorithm that finds the shortest path in a weighted graph with
+      negative edge weights
+    using:
+      concepts: |
+        shortest_path
+        weighted_graph
+      nrels: |
+        rib_weight

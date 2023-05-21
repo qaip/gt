@@ -1,0 +1,70 @@
+ru: псевдограф
+en: pseudograph
+definition:
+  ru: Псевдограф является графом, содержащим петли и кратные рёбра
+  en: A pseudograph is a graph that allows loops and multiple edges
+  using:
+    concepts: |
+      graph
+      multiple_edges
+    rrels: |
+      multiple_edges
+      loop
+statement:
+  statement_title:
+    title:
+      ru: Использование понятия псевдографа
+      en: Pseudograph concept usage
+    ru:
+      Некоторые авторы используют понятие псевдографа как синоним мультиграфа,
+      однако, другие используют его только как граф с петлями
+    en:
+      Some authors use the term pseudograph synonymously with multigraph, while
+      others reserve it for graphs that have loops
+    using:
+      concepts: |
+        multigraph
+      rrels: |
+        loop
+  pseudograph_properties:
+    title:
+      ru: Свойства псевдографа
+      en: Properties of pseudograph
+    ru:
+      Псевдографы могут использоваться для моделирования различных систем, таких
+      как транспортные сети, социальные сети и др. Они также могут
+      использоваться для решения различных задач, таких как поиск путей между
+      вершинами и определение свойств графа, таких как связность и деревья
+    en:
+      Pseudographs can be used to model various systems such as transportation
+      networks, social networks, etc. They can also be used to solve various
+      problems, such as finding paths between vertices and determining graph
+      properties such as connectivity and trees
+    using:
+      concepts: |
+        graph
+        network
+        graph_path
+        tree
+        graph_connectivity
+  weighted_pseudograph:
+    title:
+      ru: Взвешенный псевдограф
+      en: Weighted pseudograph
+    ru:
+      Взвешенныйм псевдографом называется граф, у которого каждому ребру
+      ставится в соответствие некоторое значение, или вес. Они используются в
+      различных областях, таких как моделирование социальных сетей, транспортных
+      сетей и пр
+    en:
+      A weighted pseudograph is a graph in which each edge is assigned some
+      value, or weight. They are used in various fields, such as modeling social
+      networks, transportation networks, etc
+    using:
+      concepts: |
+        graph
+        weighted_graph
+        network
+        edge
+      rrels: |
+        edge
