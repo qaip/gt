@@ -10,12 +10,11 @@ definition:
     start and end vertices, between the same pair of vertices
   using:
     concepts: |
+      multiple_arcs
       directed_graph
       vertex
     rrels: |
       vertex
-    nrels: |
-      multiple_arcs
 
 statement:
   directed_multigraphs_and_hypergraphs:
