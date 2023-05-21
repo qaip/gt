@@ -3,15 +3,17 @@ en: genus of a graph | graph genus
 
 definition:
   ru:
-    Минимальное целое число g, для которого граф может
-    быть вложен на поверхности рода g без пересечения ребер
+    Минимальное целое число g, для которого граф может быть вложен на
+    поверхности рода g без пересечения ребер
   en:
-    The minimum integer g such that the graph can be
-    embedded on a surface of genus g without edge intersection
+    The minimum integer g such that the graph can be embedded on a surface of
+    genus g without edge intersection
   using:
     concepts: |
       graph
       surface
+      edge
+    rrels: |
       edge
 
 statement:
@@ -33,6 +35,27 @@ statement:
         planar_graph
       nrels: |
         face
+
+  crosscap_theorem:
+    title:
+      ru: Теорема о перекручивании
+      en: Crosscap Theorem
+    ru:
+      Сумма родов двух поверхностей, полученных из замыкания удаляемого пути в
+      взвешенном графе, равна роду поверхности, полученной из исходного графа
+      при добавлении перекручивания относительно удаляемого пути
+    en:
+      The sum of the genera of two surfaces obtained from the closure of a
+      deleted path in a weighted graph equals the genus of the surface obtained
+      from the original graph by adding a crosscap along the deleted path
+    using:
+      concepts: |
+        weighted_graph
+        path
+        surface
+        crosscap
+      nrels: |
+        genus
 
 subclass:
   - maximum_genus

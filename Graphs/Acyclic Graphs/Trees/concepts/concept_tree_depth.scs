@@ -1,0 +1,58 @@
+concept_tree_depth
+=> nrel_main_idtf:
+	[глубина дерева] (* <- lang_ru;; *);
+	[tree depth] (* <- lang_en;; *);;
+
+definition -> definition_of_tree_depth (*
+	-> rrel_key_sc_element: concept_tree_depth;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Глубина дерева графа G может быть определена как минимальная высота леса F со свойством, что каждое ребро графа G соединяет пару узлов, которые имеют отношение предок-потомок друг к другу в F] (* <- lang_ru;; *);;
+		-> [The tree-depth of a graph G may be defined as the minimum height of a forest F with the property that every edge of G connects a pair of nodes that have an ancestor-descendant relationship to each other in F] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (глубина дерева)] (* <- lang_ru;; *);
+		[Def. (tree depth)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree;
+		concept_forest;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_depth_leaf (*
+	-> rrel_key_sc_element: concept_tree_depth;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Глубина каждого листа в дереве равна глубине корня минус один] (* <- lang_ru;; *);;
+		-> [The depth of each leaf in a tree is equal to the depth of the root minus one] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о глубине листьев)] (* <- lang_ru;; *);
+		[Stat. (Leaf depth theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_depth;
+		concept_vertex;
+		concept_tree_root;
+		rrel_vertex;
+		rrel_tree_root
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_tree;
+	concept_forest;
+	concept_tree_depth;
+	concept_vertex;
+	concept_tree_root;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_tree_root;;

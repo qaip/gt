@@ -11,6 +11,8 @@ definition:
       edge
     nrels: |
       intersection
+    rrels: |
+      edge
 
 statement:
   theorem_uitni_planar:
@@ -20,31 +22,48 @@ statement:
     ru: Граф планарен тогда и только тогда, когда каждый его подграф планарен
     en: A graph is planar if and only if each of its subgraphs is planar
     using:
+      concepts: |
+        graph
       nrels: |
         subgraph
 
-  theorem_potryagina_kuratovskogo:
+  kuratowski_theorem:
     title:
-      ru: Теорема Понтрягина-Куратовского
-      en: Pontryagin-Kuratovsky theorem
+      ru: Теорема Куратовского
+      en: Kuratowskis Theorem
     ru:
       Граф планарен тогда и только тогда, когда он не содержит подграфов,
-      гомеоморфных полному графу из пяти вершин или двудольному графу
+      гомеоморфных графам К-5 (полный граф на 5 вершинах) и К-3, 3 (двудольный
+      граф с 3 вершинами в одной доле и 3 вершинами в другой доле)
     en:
       A graph is planar if and only if it does not contain subgraphs
-      homeomorphic to a complete graph of five vertices or a bipartite graph
+      homeomorphic to K-5 (the complete graph on 5 vertices) or K-3, 3 (a
+      bipartite graph with 3 vertices in each part)
     using:
       concepts: |
         complete_graph
         bipartite_graph
-        homeomorphical_graphs
+        homeomorphic_graphs
         vertex
       nrels: |
         subgraph
+      rrels: |
+        vertex
+
+  euler_formula:
+    title:
+      ru: Формула Эйлера для плоских графов
+      en: Eulers Formula for Planar Graphs
+    ru: Всякий связный плоский граф имеет характеристику Эйлера, равную 1
+    en: Any connected planar graph has an Euler characteristic equal to 1
+    using:
+      concepts: |
+        connected_graph
+        euler_characteristic
 
 subclass:
   - one_planar_graph
-  - triangular_graph
+  - triangle_graph
   - graph_diamond
   - medial_graph
   - external_planar_graph

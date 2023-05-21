@@ -1,0 +1,109 @@
+ru:
+  - невзвешенный граф
+  - граф без весов
+en:
+  - unweighted graph
+definition:
+  ru:
+    Граф, у которого каждому ребру не ставится в соответствие некоторое
+    значение, или вес
+  en:
+    An unweighted graph is a graph in which each edge is not assigned some
+    value, or weight
+  using:
+    concepts: |
+      graph
+      edge
+    rrels: |
+      edge
+statement:
+  usage_unweighted_graph:
+    title:
+      ru: Использование невзвешенных графов
+      en: Usage of unweighted graphs
+    ru:
+      Невзвешенные графы часто используются в графовых алгоритмах, таких как
+      поиск в ширину, поиск в глубину, алгоритм Дейкстры и алгоритмы поиска
+      минимального остовного дерева
+    en:
+      Unweighted graphs are often used in graph algorithms such as breadth first
+      search, depth first search, Dijkstra algorithm, and algorithms for finding
+      minimum spanning trees
+    using:
+      concepts: |
+        graph
+        algorithms
+  connectedness_unweighted_graph:
+    title:
+      ru: Связность невзвешенных графов
+      en: Connectedness of unweighted graphs
+    ru:
+      Невзвешенный граф называется связным, если для каждой пары вершин графа
+      существует путь, соединяющий эти вершины. Иначе граф называется несвязным
+    en:
+      An unweighted graph is connected if there is a path connecting each pair
+      of vertices in the graph. Otherwise, the graph is called disconnected
+    using:
+      concepts: |
+        graph
+        path
+  bipartiteness:
+    title:
+      ru: Двудольность невзвешенных графов
+      en: Bipartiteness of unweighted graphs
+    ru:
+      Невзвешенный граф является двудольным, если вершины графа можно разбить на
+      два непересекающихся множества таким образом, что каждое ребро графа
+      соединяет вершину одного множества с вершиной другого множества. Иначе
+      граф называется недвудольным
+    en:
+      An unweighted graph is bipartite if its vertices can be partitioned into
+      two non-overlapping sets in such a way that each edge of the graph
+      connects a vertex in one set to a vertex in the other set. Otherwise, the
+      graph is called non-bipartite
+    using:
+      concepts: |
+        graph
+        bipartite_graph
+  unweighted_graph_as_tree:
+    title:
+      ru: Невзвешенный граф как дерево
+      en: Unweighted graph as a tree
+    ru: Невзвешенный граф является деревом, если он связный и не содержит циклов
+    en: An unweighted graph is a tree if it is connected and contains no cycles
+    using:
+      concepts: |
+        graph
+        unweighted_graph
+        tree
+  complement_graph_unweighted_graph:
+    title:
+      ru: Дополнение невзвешенного графа
+      en: Complement of an unweighted graph
+    ru:
+      Дополнением невзвешенного графа является граф, содержащий все недостающие
+      ребра между вершинами исходного графа, которые не являются ребрами этого
+      графа
+    en:
+      The complement of an unweighted graph is a graph that contains all the
+      missing edges between the vertices of the original graph that are not
+      already edges of the graph
+    using:
+      concepts: |
+        graph
+        complete_graph
+  coloring_unweighted_graph:
+    title:
+      ru: Раскраска невзвешенного графа
+      en: Coloring of an unweighted graph
+    ru:
+      Раскраской невзвешенного графа является такое отображение множества вершин
+      графа в множество цветов, что смежные вершины отображаются в разные цвета
+    en:
+      Coloring of an unweighted graph is a mapping of the vertices of the graph
+      to a set of colors such that adjacent vertices are mapped to different
+      colors
+    using:
+      concepts: |
+        graph
+        graph_coloring

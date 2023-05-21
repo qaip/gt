@@ -1,0 +1,54 @@
+concept_bsp_tree
+=> nrel_main_idtf:
+	[бсп-дерево] (* <- lang_ru;; *);
+	[bsp-tree] (* <- lang_en;; *);;
+
+definition -> definition_of_bsp_tree (*
+	-> rrel_key_sc_element: concept_bsp_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двоичное ерево, отвечающее заданному двоичному разбиению пространства] (* <- lang_ru;; *);;
+		-> [Binary tree corresponding to a given binary partition of space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (бсп-дерево)] (* <- lang_ru;; *);
+		[Def. (bsp-tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_binary_tree
+	};;
+*);;
+
+statement -> statement_of_space_partitioning (*
+	-> rrel_key_sc_element: concept_bsp_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для представления двумерного пространства можно разбивать его и объекты, расположенные на нём прямыми. Разбиение продолжается до тех пор, пока внутри каждой грани плоскости окажется не более одного фрагмента объекта. Этот процесс можно представить с помощью двоичного дерева. Каждый лист дерева соответствует грани разбиения, в нем хранится фрагмент объекта, находящийся внутри этой грани. Каждая вершина дерева, не являющаяся листом, соответсвует разбивающей прямой, которая хранится в этой вершине. Дерево, получившееся в результате и называется бсп-деревом] (* <- lang_ru;; *);;
+		-> [To represent a two-dimensional space, you can split it and the objects located on it by straight lines. The splitting continues until there is no more than one fragment of the object inside each face of the plane. This process can be represented using a binary tree. Each leaf of the tree corresponds to a split face; it stores a fragment of an object located inside this face. Each vertex of the tree that is not a leaf corresponds to a splitting line stored at that vertex. The resulting tree is called a bsp-tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Разбиение пространства)] (* <- lang_ru;; *);
+		[Stat. (Space partitioning)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_binary_tree;
+		concept_leaf;
+		concept_tree;
+		concept_vertex;
+		rrel_leaf;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_binary_tree;
+	concept_binary_tree;
+	concept_leaf;
+	concept_tree;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_leaf;
+	rrel_vertex;;

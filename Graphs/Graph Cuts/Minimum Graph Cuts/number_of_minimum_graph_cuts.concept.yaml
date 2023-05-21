@@ -1,0 +1,18 @@
+ru: минимальный разрез графа
+en: minimum graph cut
+
+definition:
+  ru:
+    Множество ребер, удаление которых приводит к тому, что исток и сток графа
+    находятся в разных компонентах связности
+  en:
+    A minimum graph cut is a set of edges whose removal results in the source
+    and sink of the graph being in different connected components
+  using:
+    concepts: |
+      graph
+      edge
+      graph_cut
+      directed_graph
+    rrels: |
+      edge

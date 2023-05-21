@@ -1,0 +1,66 @@
+concept_chromatic_number
+=> nrel_main_idtf:
+	[хроматическое число] (* <- lang_ru;; *);
+	[chromatic number] (* <- lang_en;; *);;
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: concept_chromatic_number;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное количество цветов, необходимых для вершинной раскраски графа] (* <- lang_ru;; *);;
+		-> [A minimum number of colors required for a vertex coloring of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (хроматическое число)] (* <- lang_ru;; *);
+		[Def. (chromatic number)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex_coloring
+	};;
+*);;
+
+statement -> statement_of_chromatic_number_property (*
+	-> rrel_key_sc_element: concept_chromatic_number;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматическое число графа не меньше его максимальной степени вершины] (* <- lang_ru;; *);;
+		-> [The chromatic number of a graph is not less than its maximum vertex degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства хроматического числа)] (* <- lang_ru;; *);
+		[Stat. (Properties of chromatic number)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex_degree;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_brooks_theorem (*
+	-> rrel_key_sc_element: concept_chromatic_number;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для любого связного графа, кроме полных и нечетных циклов, хроматическое число не превосходит максимальной степени вершины] (* <- lang_ru;; *);;
+		-> [For any connected graph, except complete graphs and odd cycles, the chromatic number is not greater than the maximum vertex degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Брукса)] (* <- lang_ru;; *);
+		[Stat. (Brooks theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_connectivity;
+		concept_vertex_degree
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex_coloring;
+	concept_vertex_degree;
+	concept_graph;
+	concept_graph_connectivity;
+	concept_vertex_degree;;

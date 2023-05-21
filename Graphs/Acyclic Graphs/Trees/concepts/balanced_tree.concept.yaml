@@ -1,0 +1,50 @@
+ru: сбалансированное дерево
+en: balanced tree
+
+definition:
+  ru:
+    Дерево называется сбалансированным тогда и только тогда, когда для каждой
+    его вершины длина пути от этой вершины до каждого из листьев поддерева,
+    образованного этой вершиной, отличается не более, чем на 1
+  en:
+    A tree is said to be balanced if and only if, for each of its vertices, the
+    length of the path from this vertex to each of the leaves of the subtree
+    formed by this vertex differs by no more than 1
+  using:
+    concepts: |
+      tree
+      vertex
+      path_length
+      leaf
+    rrels: |
+      vertex
+      leaf
+    nrels: |
+      subtree
+
+statement:
+  statement_about_perfectly_balanced_tree:
+    title:
+      ru: Утверждение об идельно сбалансированном дереве
+      en: Statement about perfectly balanced tree
+    ru:
+      Сбалансированное дерево называется идеально сбалансированным, если в
+      каждом из поддеревьев, образованных каждой из его вершин, количество
+      входящих вершин отличается не более, чем на 1
+    en:
+      A balanced tree is said to be perfectly balanced if the number of incoming
+      vertices in each of the subtrees formed by each of its vertices differs by
+      no more than 1
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        subtree
+      rrels: |
+        vertex
+
+subclass:
+  - b_tree
+  - red_black_tree
+  - avl_tree
+  - aa_tree

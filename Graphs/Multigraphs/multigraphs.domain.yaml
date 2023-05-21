@@ -1,5 +1,5 @@
-en: multigraphs
 ru: мультиграфов
+en: multigraphs
 
 parent: graphs
 
@@ -10,9 +10,11 @@ max: |
   multigraph
 
 concepts: |
-  arc_entry
-  edge_entry
+  directed_multigraph
+  undirected_multigraph
+  multiple_edges
+  multiple_arcs
 
-rrels: |
-  arc_entry
-  edge_entry
+nrels: |
+  edges_multiplicity
+  arcs_multiplicity

@@ -10,21 +10,16 @@ max: |
   directed_graph
 
 concepts: |
-  arc
-  vertex
-  graph
   tournament_graph
   directed_forest
   directed_tree
   oriented_eulerian_graphs
   normalized_graph
   mixed_graph
-  component_of_directed_graph
   orientable_graph
-  transport_network
-  oriented_multigraph
+  directed_hypergraph
+  directed_multigraph
   inverse_graph
-  complete_count_of_berge
   counterfunctional_graph
 
 rrels: |
@@ -37,3 +32,5 @@ rrels: |
 nrels: |
   adjacent_arcs
   adjacent_vretex
+  in_vertex_degree
+  out_vertex_degree

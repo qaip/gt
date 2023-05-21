@@ -1,0 +1,52 @@
+ru: б-дерево
+en: b-tree
+
+definition:
+  ru:
+    Б-деревом является сбалансированное дерево, вершины которого могут содержать
+    множество потомков
+  en: A b-tree is a balanced tree whose vertices can contain many descendant
+  using:
+    concepts: |
+      balanced_tree
+      vertex
+    rrels: |
+      vertex
+    nrels: |
+      tree_descendant
+
+statement:
+  statement_about_b_tree_vertices:
+    title:
+      ru: Утверждение о вершинах б-дерева
+      en: Statement about b-tree vertices
+    ru:
+      В б-дереве каждый узел содержит несколько чисел, которые упорядочены по
+      возрастанию. Потомки узла располагаются слева направо в соответствии с
+      этими числами. Первый потомок содержит числа, которые меньше самого
+      маленького числа в узле, а последний потомок содержит числа, которые
+      больше самого большого числа в узле. Для каждого потомка, кроме первого и
+      последнего, этот потомок содержит числа, которые больше предыдущего числа
+      в узле и меньше следующего числа в узле. Таким образом, числа в потомках
+      находятся в интервалах между числами, содержащимися в их родительском узле
+    en:
+      In a b-tree, each vertex contains several numbers, which are sorted in
+      ascending order. The descendant of vertex are arranged from left to right
+      according to these numbers. The first descendant contains numbers that are
+      less than the smallest number in the vertex, and the last descendant
+      contains numbers that are greater than the largest number in the vertex.
+      For every descendant except the first and last, that descendant contains
+      numbers that are greater than the previous number in the vertex and less
+      than the next number in the vertex. So the numbers in the descendants are
+      in the intervals between the numbers contained in their parent vertex
+
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        tree_descendant
+      rrels: |
+        vertex
+
+subclass:
+  - two_three_tree

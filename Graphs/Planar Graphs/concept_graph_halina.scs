@@ -18,7 +18,8 @@ definition -> definition_of_graph_halina (*
 	=> nrel_using_constants: {
 		concept_planar_graph;
 		concept_vertex;
-		concept_tree
+		concept_tree;
+		rrel_vertex
 	};;
 *);;
 
@@ -37,7 +38,8 @@ statement -> statement_of_halina_graph_property (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_graph_connectivities
+		concept_graph_connectivity;
+		rrel_vertex
 	};;
 *);;
 
@@ -56,7 +58,8 @@ statement -> statement_of_halina_graph_connectiviti (*
 	=> nrel_using_constants: {
 		concept_edge;
 		concept_graph;
-		concept_graph_connectivities
+		concept_graph_connectivity;
+		rrel_edge
 	};;
 *);;
 
@@ -77,7 +80,9 @@ statement -> statement_of_halina_graph_and_hamiltonian_graph (*
 		concept_graph;
 		concept_hamiltonian_cycle;
 		concept_hamiltonian_graph;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -87,12 +92,19 @@ sc_node_class ->
 	concept_tree;
 	concept_graph;
 	concept_vertex;
-	concept_graph_connectivities;
+	concept_graph_connectivity;
 	concept_edge;
 	concept_graph;
-	concept_graph_connectivities;
+	concept_graph_connectivity;
 	concept_edge;
 	concept_graph;
 	concept_hamiltonian_cycle;
 	concept_hamiltonian_graph;
 	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

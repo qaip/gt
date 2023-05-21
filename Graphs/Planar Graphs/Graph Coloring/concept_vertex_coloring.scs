@@ -1,0 +1,65 @@
+concept_vertex_coloring
+=> nrel_main_idtf:
+	[раскраска вершин] (* <- lang_ru;; *);
+	[vertex coloring] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_chromatic_number;
+concept_color_class;
+concept_coloring_areas;
+concept_chromatic_polynomial;;
+
+definition -> definition_of_vertex_coloring (*
+	-> rrel_key_sc_element: concept_vertex_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Присвоение каждой вершине графа определенного цвета таким образом, чтобы смежные вершины имели разные цвета] (* <- lang_ru;; *);;
+		-> [An assignment of colors to each vertex of the graph in such a way that no two adjacent vertices have the same color] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (раскраска вершин)] (* <- lang_ru;; *);
+		[Def. (vertex coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge;
+		nrel_vertex_adjacency
+	};;
+*);;
+
+statement -> statement_of_vertex_coloring_applications (*
+	-> rrel_key_sc_element: concept_vertex_coloring;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Раскраска вершин используется в аллокации регистров, планировании расписания и распределении частоты] (* <- lang_ru;; *);;
+		-> [Vertex coloring is used in register allocation, scheduling, and frequency assignment] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Практические применения раскраски вершин)] (* <- lang_ru;; *);
+		[Stat. (Practical applications of vertex coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_register_allocation;
+		concept_scheduling;
+		concept_frequency_assignment
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_register_allocation;
+	concept_scheduling;
+	concept_frequency_assignment;;
+
+sc_node_norole_relation ->
+	nrel_vertex_adjacency;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;

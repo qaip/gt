@@ -7,7 +7,6 @@ section_subject_domain_of_graphs
 	[Section. Subject domain of graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_simple_graphs;
 	section_subject_domain_of_directed_graphs;
 	section_subject_domain_of_multigraphs;
 	section_subject_domain_of_trees;
@@ -18,7 +17,7 @@ section_subject_domain_of_graphs
 	section_subject_domain_of_graph_properties;
 	section_subject_domain_of_graph_representation;
 	section_subject_domain_of_graph_operations;
-	section_subject_domain_of_graph_connectivities;
+	section_subject_domain_of_graph_connectivity;
 	section_subject_domain_of_graph_algorithms
 };
 
@@ -26,18 +25,21 @@ section_subject_domain_of_graphs
 	subject_domain_of_graphs;
 	concept_graph;
 	concept_vertex;
+	concept_arc;
 	concept_edge;
 	concept_directed_graph;
 	concept_undirected_graph;
 	concept_graph_structure;
 	concept_complete_graph;
-	concept_bridge;
 	concept_bipartite_graph;
 	concept_multigraph;
 	concept_null_graph;
-	concept_psuedograph;
+	concept_pseudograph;
 	concept_network;
-	concept_super_graph;
+	concept_supergraph;
+	concept_regular_graph;
+	concept_weighted_graph;
+	concept_unweighted_graph;
 	nrel_subgraph;
 	nrel_vertex_degree;
 	nrel_vertex_adjacency;
@@ -72,18 +74,21 @@ section_subject_domain_of_graphs=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_vertex;
+		concept_arc;
 		concept_edge;
 		concept_directed_graph;
 		concept_undirected_graph;
 		concept_graph_structure;
 		concept_complete_graph;
-		concept_bridge;
 		concept_bipartite_graph;
 		concept_multigraph;
 		concept_null_graph;
-		concept_psuedograph;
+		concept_pseudograph;
 		concept_network;
-		concept_super_graph;
+		concept_supergraph;
+		concept_regular_graph;
+		concept_weighted_graph;
+		concept_unweighted_graph;
 
 	-> rrel_explored_relation:
 		nrel_subgraph;
@@ -111,7 +116,6 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_graph_theory;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_simple_graphs;
 		subject_domain_of_directed_graphs;
 		subject_domain_of_multigraphs;
 		subject_domain_of_trees;
@@ -122,25 +126,28 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_graph_properties;
 		subject_domain_of_graph_representation;
 		subject_domain_of_graph_operations;
-		subject_domain_of_graph_connectivities;
+		subject_domain_of_graph_connectivity;
 		subject_domain_of_graph_algorithms;;
 *];;
 
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
+	concept_arc;
 	concept_edge;
 	concept_directed_graph;
 	concept_undirected_graph;
 	concept_graph_structure;
 	concept_complete_graph;
-	concept_bridge;
 	concept_bipartite_graph;
 	concept_multigraph;
 	concept_null_graph;
-	concept_psuedograph;
+	concept_pseudograph;
 	concept_network;
-	concept_super_graph;;
+	concept_supergraph;
+	concept_regular_graph;
+	concept_weighted_graph;
+	concept_unweighted_graph;;
 
 sc_node_norole_relation ->
 	nrel_subgraph;

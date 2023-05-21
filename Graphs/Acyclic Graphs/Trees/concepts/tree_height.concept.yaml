@@ -1,0 +1,35 @@
+ru: высота дерева
+en: tree height
+
+definition:
+  en:
+    The height of a tree is the maximum number of nodes on a path from the root
+    to a leaf
+  ru: Высота дерева-это максимальное количество узлов на пути от корня до листа
+  using:
+    concepts: |
+      vertex
+      leaf
+      tree_root
+      graph_path
+    rrels: |
+      vertex
+      leaf
+      tree_root
+
+statement:
+  theorem_height_leaf:
+    title:
+      ru: Теорема о высоте листьев
+      en: Leaf height theorem
+    ru: Высота каждого листа в дереве равна высоте корня минус один
+    en:
+      The height of each leaf in a tree is equal to the height of the root minus
+      one
+    using:
+      concepts: |
+        vertex
+        tree_root
+      rrels: |
+        vertex
+        tree_root

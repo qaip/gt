@@ -1,0 +1,73 @@
+concept_graph_cycle
+=> nrel_main_idtf:
+	[цикл графа] (* <- lang_ru;; *);
+	[graph cycle] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_hamiltonian_cycle;
+concept_graph_girth;
+concept_cyclic_graph;
+concept_eulerian_cycle;
+concept_basic_cycle;
+concept_minimum_weight_cycle;
+concept_cycle_length;
+concept_cycle_weight;;
+
+definition -> definition_of_graph_cycle (*
+	-> rrel_key_sc_element: concept_graph_cycle;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Замкнутый путь, проходящий по каждому ребру графа ровно один раз] (* <- lang_ru;; *);;
+		-> [A closed path that passes through each edge of the graph exactly once] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (цикл графа)] (* <- lang_ru;; *);
+		[Def. (graph cycle)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_vertex;
+		concept_graph;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_cycle_existence_theorem (*
+	-> rrel_key_sc_element: concept_graph_cycle;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В любом неориентированном графе, где количество вершин больше количества рёбер, существует по крайней мере один цикл] (* <- lang_ru;; *);;
+		-> [In any undirected graph where the number of vertices is greater than the number of edges, there exists at least one cycle] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о существовании цикла в графе)] (* <- lang_ru;; *);
+		[Stat. (Cycle existence theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_undirected_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_path;
+	concept_vertex;
+	concept_graph;
+	concept_edge;
+	concept_undirected_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

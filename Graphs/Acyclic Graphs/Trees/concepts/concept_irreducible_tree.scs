@@ -1,0 +1,44 @@
+concept_irreducible_tree
+=> nrel_main_idtf:
+	[неприводимое дерево] (* <- lang_ru;; *);
+	[irreducible_tree] (* <- lang_en;; *);;
+
+definition -> definition_of_irreducible_tree (*
+	-> rrel_key_sc_element: concept_irreducible_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево, которое нельзя разложить на меньшие деревья] (* <- lang_ru;; *);;
+		-> [A tree that cannot be broken down into smaller trees] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (неприводимое дерево)] (* <- lang_ru;; *);
+		[Def. (irreducible_tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_example (*
+	-> rrel_key_sc_element: concept_irreducible_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кэлиево дерево является примером неразложимого дерева] (* <- lang_ru;; *);;
+		-> [The Cayley tree is an example of an irreducible tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Пример неприводимого дерева)] (* <- lang_ru;; *);
+		[Stat. (An example of an irreducible tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_graph
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_tree;
+	concept_graph;;

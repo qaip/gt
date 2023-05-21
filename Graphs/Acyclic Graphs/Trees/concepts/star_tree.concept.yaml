@@ -1,0 +1,28 @@
+ru: звездное дерево
+en: star tree
+
+definition:
+  ru:
+    Дерево, в котором одна вершина является центром, а остальные вершины
+    расположены на концах листьев
+  en:
+    A tree in which one vertex is the center, and the rest of the vertices are
+    located at the ends of the leaves
+  using:
+    concepts: |
+      tree
+      vertex
+    rrels: |
+      leaf
+      vertex
+
+statement:
+  theorem_diameter_of_star_tree:
+    title:
+      ru: Теорема о диаметре звездного дерева
+      en: Diameter theorem of star tree
+    ru: Диаметр звездного дерева равен двум
+    en: The diameter of a star tree is two
+    using:
+      concepts: |
+        graph_diameter

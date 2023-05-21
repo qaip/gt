@@ -1,0 +1,18 @@
+ru: алгоритмов на графах
+en: graph algorithms
+
+parent: graphs
+
+children: |
+  graph_traversal
+  shortest_paths
+
+max: |
+  graph_algorithm
+
+concepts: |
+  graph_traversal
+  shortest_path_problem
+
+nrels: |
+  shortest_paths

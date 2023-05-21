@@ -10,3 +10,23 @@ definition:
     rrels: |
       vertex
       edge
+statement:
+  edge_types:
+    title:
+      ru: Типы ребер
+      en: Edge types
+    ru:
+      Ребра могут быть ориентированными и неориентированными. Ориентированные
+      ребра имеют направление, в то время как неориентированные не имеют
+    en:
+      Edges can be directed or undirected. Directed edges have a direction,
+      while undirected edges do not
+    using:
+      concepts: |
+        graph
+        edge
+        directed_edge
+        undirected_edge
+      rrels: |
+        edge
+        vertex

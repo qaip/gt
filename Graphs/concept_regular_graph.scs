@@ -1,0 +1,118 @@
+concept_regular_graph
+=> nrel_main_idtf:
+	[суперграф] (* <- lang_ru;; *);
+	[supergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_regular_graph (*
+	-> rrel_key_sc_element: concept_regular_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суперграфом является любой граф содержащий данный] (* <- lang_ru;; *);;
+		-> [A supergraph is any graph containing a given graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (суперграф)] (* <- lang_ru;; *);
+		[Def. (supergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_usage_supergraph (*
+	-> rrel_key_sc_element: concept_regular_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суперграфы широко используются в теории графов для решения различных задач] (* <- lang_ru;; *);;
+		-> [Supergraphs are widely used in graph theory to solve various problems and issues] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование в теории графов)] (* <- lang_ru;; *);
+		[Stat. (Usage in graph theory)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_theory;
+		concept_problems
+	};;
+*);;
+
+statement -> statement_of_supergraph_types (*
+	-> rrel_key_sc_element: concept_regular_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суперграф может быть ориентированным или неориентированным, взвешенным или невзвешенным, простым или мультиграфом] (* <- lang_ru;; *);;
+		-> [A supergraph can be directed or undirected, weighted or unweighted, simple or multigraph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Виды суперграфов)] (* <- lang_ru;; *);
+		[Stat. (Types of supergraphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_directed_graph;
+		concept_undirected_graph;
+		concept_weighted_graph;
+		concept_unweighted_graph;
+		concept_simple_graph;
+		concept_multigraph
+	};;
+*);;
+
+statement -> statement_of_connectedness_supergraph (*
+	-> rrel_key_sc_element: concept_regular_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Суперграф связен, если любые две его вершины соединены путем] (* <- lang_ru;; *);;
+		-> [A supergraph is connected if any two of its vertices are connected by a path] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Связность суперграфов)] (* <- lang_ru;; *);
+		[Stat. (Connectedness of supergraphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_connectivity;
+		concept_graph_path
+	};;
+*);;
+
+statement -> statement_of_usage_example_supergraph (*
+	-> rrel_key_sc_element: concept_regular_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Один из примеров использования суперграфа является поиск путей в графе, который содержит множество других графов] (* <- lang_ru;; *);;
+		-> [One example usage of a supergraph is to find paths in a graph that contains a set of other graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Пример использования суперграфа)] (* <- lang_ru;; *);
+		[Stat. (Supergraph example usage)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_path
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_graph;
+	concept_graph_theory;
+	concept_problems;
+	concept_graph;
+	concept_directed_graph;
+	concept_undirected_graph;
+	concept_weighted_graph;
+	concept_unweighted_graph;
+	concept_simple_graph;
+	concept_multigraph;
+	concept_graph;
+	concept_graph_connectivity;
+	concept_graph_path;
+	concept_graph;
+	concept_graph_path;;

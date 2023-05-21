@@ -1,0 +1,36 @@
+ru: разреженный разрез графа
+en: sparsest cut
+
+definition:
+  ru:
+    Разрез графа, который минимизирует отношение суммы весов ребер в разрезе к
+    объему меньшей из двух частей разреза
+  en:
+    A graph cut that minimizes the ratio of the sum of the weights of the edges
+    in the cut to the volume of the smaller of the two parts of the cut
+  using:
+    concepts: |
+      edge
+      graph_cut
+    nrels: |
+      rib_weight
+    rrels: |
+      edge
+
+statement:
+  theorem_sparsest_cut:
+    title:
+      ru: Теорема о разреженном разрезе
+      en: Sparsest cut theorem
+    ru:
+      Разрез, минимизирующий объем меньшей из двух частей разреза, может быть
+      найден за O(m log n) времени
+    en:
+      A cut that minimizes the volume of the smaller of the two parts of the cut
+      can be found in O(m log n) time
+    using:
+      concepts: |
+        graph_cut
+        time_complexity
+      nrels: |
+        rib_weight

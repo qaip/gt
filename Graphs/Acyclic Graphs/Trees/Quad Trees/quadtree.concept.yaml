@@ -1,0 +1,70 @@
+ru: квадродерево
+en: quadtree
+
+definition:
+  ru: Дерево, в котором у каждого внутреннего узла ровно 4 потомка
+  en: A tree in which each internal node has exactly 4 children
+  using:
+    concepts: |
+      tree
+      vertex
+      tree_descendant
+    rrels: |
+      vertex
+
+statement:
+  quadtree_spatial_partitioning:
+    title:
+      ru: Пространственное разбиение квадродеревьев
+      en: Spatial partitioning of quadtrees
+    ru:
+      Квадродерево используется в областях, где необходимо эффективно разбить
+      пространство на более мелкие участки, такие как изображения и видео
+    en:
+      Quadtree is used in areas where it is necessary to efficiently divide
+      space into smaller parts, such as images and videos
+    using:
+      concepts: |
+        space_division
+        image
+        video
+      nrels: |
+        efficiency
+
+  quadtree_compression:
+    title:
+      ru: Сжатие данных с помощью квадродеревьев
+      en: Data compression using quadtrees
+    ru: Квадродерево используется для сжатия изображений и видео
+    en: Quadtree is used for compressing images and videos
+    using:
+      concepts: |
+        image
+        video
+        compression
+
+  quadtree_fractal:
+    title:
+      ru: Фракталы и квадродеревья
+      en: Fractals and quadtrees
+    ru:
+      Квадродерево может быть использовано для создания фрактальных изображений
+    en: Quadtree can be used to create fractal images
+    using:
+      concepts: |
+        fractals
+        image
+
+  quadtree_nearest_neighbor:
+    title:
+      ru: Решение задачи ближайшего соседа с помощью квадродеревьев
+      en: Solving the nearest neighbor problem using quadtrees
+    ru:
+      Квадродерево может быть использовано для нахождения ближайшего соседа в
+      двумерном пространстве
+    en:
+      Quadtree can be used to find the nearest neighbor in two-dimensional space
+    using:
+      concepts: |
+        nearest_neighbor
+        space_division

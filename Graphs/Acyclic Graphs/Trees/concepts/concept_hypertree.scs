@@ -1,0 +1,142 @@
+concept_hypertree
+=> nrel_main_idtf:
+	[гипердерево] (* <- lang_ru;; *);
+	[hypertree] (* <- lang_en;; *);;
+
+definition -> definition_of_hypertree (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обобщение дерева на многомерные пространства] (* <- lang_ru;; *);;
+		-> [An extension of a tree to multi-dimensional spaces] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (гипердерево)] (* <- lang_ru;; *);
+		[Def. (hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_height (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Высота гипердерева не превышает O(log n)] (* <- lang_ru;; *);;
+		-> [The height of a hypertree is no more than O(log n)] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о высоте гипердерева)] (* <- lang_ru;; *);
+		[Stat. (Height theorem of a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_height
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_search (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Поиск элемента в гипердереве может быть выполнен за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Searching for an element in a hypertree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о поиске в гипердереве)] (* <- lang_ru;; *);
+		[Stat. (Search theorem in a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_time_complexity;
+		concept_searching
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_splitting (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Гипердерево может быть разделено на поддеревья, каждое из которых также является гипердеревом] (* <- lang_ru;; *);;
+		-> [A hypertree can be split into subtrees, each of which is also a hypertree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о разделении в гипердереве)] (* <- lang_ru;; *);
+		[Stat. (Splitting theorem in a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_subtree
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_insertion (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вставка элемента в гипердерево может быть выполнена за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Inserting an element into a hypertree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о вставке в гипердерево)] (* <- lang_ru;; *);
+		[Stat. (Insertion theorem in a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_insertion
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_deletion (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Удаление элемента из гипердерева может быть выполнено за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Deleting an element from a hypertree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об удалении из гипердерева)] (* <- lang_ru;; *);
+		[Stat. (Deletion theorem in a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_deletion
+	};;
+*);;
+
+statement -> statement_of_theorem_hypertree_balancing (*
+	-> rrel_key_sc_element: concept_hypertree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Гипердерево может быть сбалансировано за время O(n log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [A hypertree can be balanced in O(n log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о балансировке гипердерева)] (* <- lang_ru;; *);
+		[Stat. (Balancing theorem in a hypertree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_balancing;
+		concept_time_complexity
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_tree_height;
+	concept_tree;
+	concept_time_complexity;
+	concept_searching;
+	concept_subtree;
+	concept_time_complexity;
+	concept_insertion;
+	concept_time_complexity;
+	concept_deletion;
+	concept_balancing;
+	concept_time_complexity;;

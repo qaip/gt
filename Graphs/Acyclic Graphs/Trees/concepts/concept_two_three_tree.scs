@@ -1,0 +1,56 @@
+concept_two_three_tree
+=> nrel_main_idtf:
+	[два-три дерево] (* <- lang_ru;; *);
+	[two-three tree] (* <- lang_en;; *);;
+
+definition -> definition_of_two_three_tree (*
+	-> rrel_key_sc_element: concept_two_three_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два-три дерево является одной из разновидностей б-деревьев, каждая вершина которого соответствует одному числу и содержит два потомка или соответствует двум числам и содержит три потомка] (* <- lang_ru;; *);;
+		-> [A two-three tree is one of the varieties of b-trees, each vertex of which corresponds to one number and contains two descendant, or corresponds to two numbers and contains three descendant] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (два-три дерево)] (* <- lang_ru;; *);
+		[Def. (two-three tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_b_tree;
+		concept_vertex;
+		rrel_vertex;
+		nrel_tree_descendant
+	};;
+*);;
+
+statement -> statement_of_statement_about_two_three_tree (*
+	-> rrel_key_sc_element: concept_two_three_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Если вершина два-три дерева соответствует одному числу, то должно выполняться равенство П меньше А меньше К, где П-число, которому соответствует левый потомок вершины, А-число, которому соответствует вершина, К-число, которому соответствует правый потомок вершины. Если вершина два-три дерева соответствует двум числам, то должно выполняться равенство П меньше А меньше Р меньше Б меньше К, где П-число, которому соответствует левый потомок вершины, А-первое число, которому соответствует вершина, Р-число, которому соответствует центральный потомок вершины, Б-второе число, которому соответствует вершина, К-число, которому соответствует правый потомок вершины] (* <- lang_ru;; *);;
+		-> [If a vertex of two or three trees corresponds to one number, then the equality P less A less K must be satisfied, where P is the number to which the left descendant of the vertex corresponds, A is the number to which the vertex corresponds, K is the number to which the right child of the vertex corresponds. If a vertex of two or three trees corresponds to two numbers, then the equality P less A less R less B less K, where P is the number that corresponds to the left descendant of the vertex, A is the first number that the vertex corresponds to, R is the number that corresponds to the central child of the vertex, B is the second number to which the vertex corresponds, K is the number to which the right child of the vertex corresponds] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о два-три дереве)] (* <- lang_ru;; *);
+		[Stat. (Statement about two three tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex;
+		nrel_tree_descendant
+	};;
+*);;
+
+sc_node_class ->
+	concept_b_tree;
+	concept_vertex;
+	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_tree_descendant;
+	nrel_tree_descendant;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;;

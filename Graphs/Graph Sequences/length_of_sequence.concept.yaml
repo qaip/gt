@@ -1,17 +1,18 @@
-ru: длина маршрута
-en: length of sequence
+ru: длина маршрута | длина маршрута графа | длина последовательности графа
+en: length of sequence | length of graph sequence | length of graph route
 
 definition:
-  ru: количество рёбер в маршруте учитывая повторения
-  en: the number of edges in the sequence, taking into account repetitions
+  ru: Количество рёбер в маршруте учитывая повторения
+  en: The number of edges in the sequence, taking into account repetitions
   using:
     concepts: |
       edge
-      sequence
+      graph_sequence
     rrels: |
       edge
+
 statement:
-  length_equals_zero:
+  length_of_sequence_equals_zero:
     title:
       ru: Условие равенства длины маршрута нулю
       en: Zero route length condition
@@ -20,6 +21,52 @@ statement:
     using:
       concepts: |
         vertex
-        sequence
+        graph_sequence
+      rrels: |
+        vertex
+
+  route_shortest_path_theorem:
+    title:
+      ru: Теорема о кратчайшем пути
+      en: Shortest path theorem
+    ru:
+      Длина кратчайшего пути между двумя вершинами в графе равна числу рёбер в
+      кратчайшем маршруте между этими вершинами
+    en:
+      The length of the shortest path between two vertices in a graph is equal
+      to the number of edges in the shortest route between those vertices
+    using:
+      concepts: |
+        graph_sequence
+        edge
+      rrels: |
+        edge
+
+  route_longest_path_theorem:
+    title:
+      ru: Теорема о самом длинном маршруте
+      en: Longest route theorem
+    ru:
+      Нахождение самого длинного маршрута в графе NP-полная задача, которая не
+      может быть решена за полиномиальное время
+    en:
+      Finding the longest route in a graph is an NP-complete problem that cannot
+      be solved in polynomial time
+    using:
+      concepts: |
+        graph_sequence
+        polynimial_time
+
+  route_existence_theorem:
+    title:
+      ru: Теорема о существовании маршрута
+      en: Route existence theorem
+    ru: В связном графе между любыми двумя вершинами существует маршрут
+    en: In a connected graph, there exists a route between any two vertices
+    using:
+      concepts: |
+        graph_sequence
+        connected_graph
+        vertex
       rrels: |
         vertex

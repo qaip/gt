@@ -1,0 +1,18 @@
+ru: упорядоченное дерево
+en: ordered tree
+
+definition:
+  ru:
+    - Дерево, в котором дочерние узлы упорядочены
+    - Дерево, в котором выбрана одна вершина в качестве корня, а остальные вершины упорядочены по отношению к корню
+  en:
+    - A tree in which the children of each node are ordered
+    - A tree in which one vertex is chosen as the root and the rest of the vertices are ordered with respect to the root
+  using:
+    concepts: |
+      vertex
+      tree
+      root
+    rrels: |
+      vertex
+      root

@@ -1,0 +1,120 @@
+concept_unweighted_graph
+=> nrel_main_idtf:
+	[вершина] (* <- lang_ru;; *);
+	[vertex] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[узел] (* <- lang_ru;; *);
+	[node] (* <- lang_en;; *);;
+
+definition -> definition_of_unweighted_graph (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершина является основным понятием теории графов. Это фундаментальная еденица, образующая графы. На рисунках, представляющих граф, вершина обычно представляется кружком с меткой] (* <- lang_ru;; *);;
+		-> [A vertex is the basic concept of graphs. This is the fundamental unit that forms graphs. The graph is usually represented by a circle with a label] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (вершина)] (* <- lang_ru;; *);
+		[Def. (vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_usage_in_graphical_models (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершины являются основными элементами графических моделей. В графических моделях вершины представляют объекты, а ребра между вершинами представляют отношения между объектами] (* <- lang_ru;; *);;
+		-> [Vertices are the main elements of graphical models. In graphical models, vertices represent objects, and edges between vertices represent relationships between objects] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование в графических моделях)] (* <- lang_ru;; *);
+		[Stat. (Usage in graphical models)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graphical_model;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_degree_of_a_vertex (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Степенью вершины называется количество ребер, исходящих из этой вершины. В невзвешенных графах степень вершины равна количеству смежных вершин] (* <- lang_ru;; *);;
+		-> [The degree of a vertex is the number of edges that are incident to the vertex. In unweighted graphs, the degree of a vertex is equal to the number of adjacent vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Степень вершины)] (* <- lang_ru;; *);
+		[Stat. (Degree of a vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_unweighted_graph;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_vertex_coloring (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Раскраской вершин графа называется такое отображение множества вершин графа в множество цветов, что смежные вершины отображаются в разные цвета] (* <- lang_ru;; *);;
+		-> [Vertex coloring of a graph is a mapping of the vertices of the graph to a set of colors such that adjacent vertices are mapped to different colors] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Раскраска вершин)] (* <- lang_ru;; *);
+		[Stat. (Vertex coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_coloring
+	};;
+*);;
+
+statement -> statement_of_isolated_vertex (*
+	-> rrel_key_sc_element: concept_unweighted_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Изолированной вершиной называется вершина графа, которая не соединяется ни с одной другой вершиной графа] (* <- lang_ru;; *);;
+		-> [An isolated vertex is a vertex of a graph that is not connected to any other vertex of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Изолированная вершина)] (* <- lang_ru;; *);
+		[Stat. (Isolated vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_graph;
+	concept_graphical_model;
+	concept_edge;
+	concept_graph;
+	concept_unweighted_graph;
+	concept_edge;
+	concept_graph;
+	concept_graph_coloring;
+	concept_graph;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_edge;
+	rrel_edge;;

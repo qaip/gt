@@ -16,7 +16,6 @@ definition -> definition_of_maximum_genus (*
 		[Def. (maximum genus)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph;
 		concept_graph_embedding;
 		concept_genus
 	};;
@@ -24,6 +23,5 @@ definition -> definition_of_maximum_genus (*
 
 
 sc_node_class ->
-	concept_graph;
 	concept_graph_embedding;
 	concept_genus;;

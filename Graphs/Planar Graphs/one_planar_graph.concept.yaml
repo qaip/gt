@@ -1,5 +1,5 @@
 ru: 1-планарный граф
-en: 1-planar graph
+en: one-planar graphs
 
 definition:
   ru:
@@ -13,15 +13,43 @@ definition:
       plane
       graph
       edge
+    rrels: |
+      edge
 
 statement:
   one_planar_graph_property:
     title:
       ru: Свойство 1-планарного графа
       en: Property of a 1-planar graph
-    ru: Любой 1-планарный граф с n вершинами имеет не более 4n-8 рёбер
-    en: Any 1-planar graph with n vertices has at most 4n-8 edges
+    ru: Любой 1-планарный граф с n вершинами имеет не более 4 * n - 8 рёбер
+    en: Any 1-planar graph with n vertices has at most 4 * n - 8 edges
     using:
       concepts: |
         vertex
         edge
+      rrels: |
+        vertex
+        edge
+
+  one_planar_minors:
+    title:
+      ru: Миноры 1-планарного графа
+      en: Minors of a 1-planar graph
+    ru: Любой минор 1-планарного графа также является 1-планарным графом
+    en: Any minor of a 1-planar graph is also a 1-planar graph
+    using:
+      concepts: |
+        minor
+        graph
+
+  one_planar_subgraphs:
+    title:
+      ru: Подграфы 1-планарного графа
+      en: Subgraphs of a 1-planar graph
+    ru: Любой подграф 1-планарного графа также является 1-планарным графом
+    en: Any subgraph of a 1-planar graph is also a 1-planar graph
+    using:
+      concepts: |
+        graph
+      nrels: |
+        subgraph
