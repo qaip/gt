@@ -9,7 +9,7 @@ definition:
     также индекс самого ребра.
   en:
     A data structure used to represent a graph in computer science. It is a list
-    of pairwise non-adjacent edges, where each edge is a pair containing the
+    of pairwise non-adjacent edges, where  each edge is a pair containing the
     indices of the two vertices that the edge connects as well as the index of
     the edge itself.
   using:
