@@ -27,8 +27,8 @@ statement -> statement_of_one_planar_graph_property (*
 	-> rrel_key_sc_element: concept_one_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Любой 1-планарный граф с n вершинами имеет не более 4n-8 рёбер] (* <- lang_ru;; *);;
-		-> [Any 1-planar graph with n vertices has at most 4n-8 edges] (* <- lang_en;; *);;
+		-> [Любой 1-планарный граф с n вершинами имеет не более 4 * n - 8 рёбер] (* <- lang_ru;; *);;
+		-> [Any 1-planar graph with n vertices has at most 4 * n - 8 edges] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
