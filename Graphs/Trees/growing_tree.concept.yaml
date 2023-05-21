@@ -22,8 +22,8 @@ definition:
 statement:
   growing_tree_representation:
     title:
-      ru: изображение растущих деревьев
-      en: growing trees representation
+      ru: Изображение растущих деревьев
+      en: Growing trees representation
     ru:
       Растущие деревья удобно изображать в виде рисунков, состоящих из точек,
       соответствующих вершинам, и линий, соединяющих эти точки, соответствующих

@@ -36,8 +36,8 @@ definition:
 statement:
   fibonacci_tree_representation:
     title:
-      ru: изображение дерева Фибоначчи
-      en: fibonacci tree representation
+      ru: Изображение дерева Фибоначчи
+      en: Fibonacci tree representation
     ru:
       Дерево Фибоначчи представляется в виде бинарного дерева, где каждый узел
       содержит элемент и ссылки на двух своих детей. Каждый узел также имеет
