@@ -35,5 +35,5 @@ statement:
         hypergraph_edge
 
 subclass:
-  - directed_hypergraphs
-  - undirected_hypergraphs
+  - directed_hypergraph
+  - undirected_hypergraph
