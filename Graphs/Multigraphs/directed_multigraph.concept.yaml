@@ -1,0 +1,33 @@
+ru: ориентированный мультиграф
+en: directed multigraph
+
+definition:
+  ru:
+    Ориентированный граф, в котором разрешены кратные дуги, то есть дуги,
+    имеющие те же начальные и конечные вершины
+  en:
+    A directed graph that allows multiple arcs, wich means arcs having the same
+    start and end vertices, between the same pair of vertices
+  using:
+    concepts: |
+      directed_graph
+      vertex
+    rrels: |
+      vertex
+    nrels: |
+      multiple_arcs
+
+statement:
+  directed_multigraphs_and_hypergraphs:
+    title:
+      ru: Ориентированные мультиграфы и гиперграфы
+      en: Directed Multigraphs and Hypergraphs
+    ru:
+      Ориентированные мультиграфы могут быть рассмотрены как обобщение
+      ориентированных гиперграфов
+    en:
+      Directed multigraphs can be viewed as a generalization of directed
+      hypergraphs
+    using:
+      concepts: |
+        directed_hypergraph
