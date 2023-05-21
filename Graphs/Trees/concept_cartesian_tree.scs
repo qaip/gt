@@ -1,0 +1,41 @@
+concept_cartesian_tree
+=> nrel_main_idtf:
+	[декартово дерево] (* <- lang_ru;; *);
+	[cartesian tree] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[дуча] (* <- lang_ru;; *);
+	[курево] (* <- lang_ru;; *);
+	[treap] (* <- lang_en;; *);
+	[tree heap] (* <- lang_en;; *);;
+
+definition -> definition_of_cartesian_tree (*
+	-> rrel_key_sc_element: concept_cartesian_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двоичное дерево, в узлах которого хранятся ссылки на правое и левое поддерево, ссылки на правое и левое поддерево, ключи x и y, которые являются двоичным деревом поиска по ключу x и двоичной кучей по ключу y; а именно, для любого узла дерева n (ключи x узлов правого (левого) поддерева больше (меньше) либо равны ключу x узла n, ключи y узлов правого и левого детей больше либо равны ключу y узла n)] (* <- lang_ru;; *);;
+		-> [A binary tree which nodes store links to right and left subtree, links to the right and left subtrees, x and y keys, which are binary search tree by key x and binary heap by key y; namely, for any tree node n (the keys x of the nodes of the right (left) subtree are greater than (less than) or equal to the key x of the node n, the keys y of the nodes of the right and left children greater than or equal to the key y of node n)] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (декартово дерево)] (* <- lang_ru;; *);
+		[Def. (cartesian tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_binary_tree;
+		concept_heap;
+		concept_tree;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_binary_tree;
+	concept_heap;
+	concept_tree;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;;
