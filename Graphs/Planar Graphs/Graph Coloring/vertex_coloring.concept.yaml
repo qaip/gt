@@ -1,0 +1,42 @@
+ru: раскраска вершин
+en: vertex coloring
+
+definition:
+  ru:
+    Присвоение каждой вершине графа определенного цвета таким образом, чтобы
+    смежные вершины имели разные цвета
+  en:
+    An assignment of colors to each vertex of the graph in such a way that no
+    two adjacent vertices have the same color
+  using:
+    concepts: |
+      graph
+      vertex
+    nrels: |
+      vertex_adjacency
+    rrels: |
+      vertex
+      edge
+
+statement:
+  vertex_coloring_applications:
+    title:
+      ru: Практические применения раскраски вершин
+      en: Practical applications of vertex coloring
+    ru:
+      Раскраска вершин используется в аллокации регистров, планировании
+      расписания и распределении частоты
+    en:
+      Vertex coloring is used in register allocation, scheduling, and frequency
+      assignment
+    using:
+      concepts: |
+        register_allocation
+        scheduling
+        frequency_assignment
+
+subclass:
+  - chromatic_number
+  - color_class
+  - coloring_areas
+  - chromatic_polynomial

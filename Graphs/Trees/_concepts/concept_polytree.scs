@@ -1,0 +1,56 @@
+concept_polytree
+=> nrel_main_idtf:
+	[полидерево] (* <- lang_ru;; *);
+	[polytree] (* <- lang_en;; *);;
+
+definition -> definition_of_polytree (*
+	-> rrel_key_sc_element: concept_polytree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, который является ориентированным деревом, за исключением того, что может быть несколько корней] (* <- lang_ru;; *);;
+		-> [A graph that is a directed tree, except that there may be multiple roots] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (полидерево)] (* <- lang_ru;; *);
+		[Def. (polytree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_tree;
+		concept_root
+	};;
+*);;
+
+statement -> statement_of_tree_structure_theorem (*
+	-> rrel_key_sc_element: concept_polytree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Всякое полидерево может быть получено из ориентированного дерева путем добавления дополнительных ориентированных ребер] (* <- lang_ru;; *);;
+		-> [Every polytree can be obtained from a directed tree by adding additional directed edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о структуре полидерева)] (* <- lang_ru;; *);
+		[Stat. (Polytree structure theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_polytree;
+		concept_directed_tree;
+		concept_directed_edge;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_tree;
+	concept_root;
+	concept_polytree;
+	concept_directed_tree;
+	concept_directed_edge;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;;

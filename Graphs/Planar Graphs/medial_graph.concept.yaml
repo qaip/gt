@@ -1,33 +1,76 @@
-ru: cерединный граф
+ru: медиальный граф
 en: medial graph
 
 definition:
   ru:
-    Граф, представляющий рёбра смежности внутри граней заданного планарного
-    графа
+    Граф, который создается из плоского графа путем добавления точек в середине
+    каждого ребра
   en:
-    A graph representing adjacency edges inside the faces of a given planar
-    graph
+    A graph that is created from a planar graph by adding points at the midpoint
+    of each edge
   using:
     concepts: |
       planar_graph
-      medial_graph
       graph
       edge
-    nrels: |
-      arcs_adjacency
-      face
+      midpoint
+    rrels: |
+      edge
 
 statement:
-  medial_graph_property:
+  medial_graph_properties:
     title:
-      ru: Cвойство серединного графа
-      en: Property of a medial graph
-    ru:
-      Один и тот же планарный граф может иметь несколько неизоморфных срединных
-      графов
-    en: The same planar graph can have several non-isomorphic median graphs
+      ru: Свойства медиальных графов
+      en: Properties of medial graphs
+    ru: Медиальный граф всегда планарен и является 2-связным
+    en: A medial graph is always planar and 2-connected
     using:
       concepts: |
         planar_graph
-        medial_graph
+        graph_connectivity
+
+  medial_graph_construction:
+    title:
+      ru: Конструкция медиального графа
+      en: Construction of a medial graph
+    ru:
+      Медиальный граф может быть сконструирован из плоского графа путем
+      соединения точек, находящихся на соседних ребрах
+    en:
+      A medial graph can be constructed from a planar graph by connecting points
+      on adjacent edges
+    using:
+      concepts: |
+        planar_graph
+        edge
+        point
+      rrels: |
+        edge
+
+  medial_graph_isomorphism:
+    title:
+      ru: Изоморфизм медиальных графов
+      en: Isomorphism of medial graphs
+    ru: Если два плоских графа изоморфны, то их медиальные графы также изоморфны
+    en:
+      If two planar graphs are isomorphic, then their medial graphs are also
+      isomorphic
+    using:
+      concepts: |
+        planar_graph
+      nrels: |
+        isomorphism
+
+  medial_graph_face_count:
+    title:
+      ru: Количество граней медиального графа
+      en: Number of faces in a medial graph
+    ru: Медиальный граф на n вершинах имеет 2 * n - 4 грани
+    en: A medial graph with n vertices has 2 * n - 4 faces
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        face
+      rrels: |
+        vertex

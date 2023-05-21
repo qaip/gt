@@ -1,0 +1,12 @@
+ru: взвешенное ребро
+en: weighted edge
+
+definition:
+  ru: Ребро, которому приписана числовая величина
+  en: An edge to which a numerical value is assigned
+  using:
+    concepts: |
+      edge
+
+subclass:
+  - rib_weight

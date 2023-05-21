@@ -1,0 +1,86 @@
+concept_orthogonal_complement
+=> nrel_main_idtf:
+	[ортогональное дополнение] (* <- lang_ru;; *);
+	[orthogonal complement] (* <- lang_en;; *);;
+
+definition -> definition_of_orthogonal_complement (*
+	-> rrel_key_sc_element: concept_orthogonal_complement;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Пусть V линейное пространство над полем F, W его линейное подпространство. Ортогональным дополнением подпространства W называется множество всех векторов из V, ортогональных каждому вектору из W] (* <- lang_ru;; *);;
+		-> [Let V be a vector space over a field F, and let W be a subspace of V. The orthogonal complement of W is the set of all vectors in V that are orthogonal to every vector in W] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ортогональное дополнение)] (* <- lang_ru;; *);
+		[Def. (orthogonal complement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_linear_space;
+		concept_field;
+		concept_vector;
+		concept_subspace;
+		concept_orthogonal;
+		rrel_subspace;
+		rrel_orthogonal
+	};;
+*);;
+
+statement -> statement_of_properties_orthogonal_complement (*
+	-> rrel_key_sc_element: concept_orthogonal_complement;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ортогональное дополнение подпространства всегда является линейным подпространством пространства, которому оно принадлежит. Однако, оно не является замкнутым относительно прямой суммы подпространства и его ортогонального дополнения] (* <- lang_ru;; *);;
+		-> [The orthogonal complement of a subspace is always a linear subspace of the space to which it belongs. However, it is not closed under direct sum of the subspace and its orthogonal complement] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства ортогонального дополнения)] (* <- lang_ru;; *);
+		[Stat. (Properties of orthogonal complement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_linear_space;
+		concept_vector;
+		concept_subspace;
+		concept_orthogonal;
+		rrel_subspace;
+		rrel_orthogonal
+	};;
+*);;
+
+statement -> statement_of_examples_orthogonal_complement (*
+	-> rrel_key_sc_element: concept_orthogonal_complement;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ортогональное дополнение к пространству всех диагональных матриц в пространстве матриц размера n будет являться пространством всех матриц, перпендикулярных этому пространству] (* <- lang_ru;; *);;
+		-> [The orthogonal complement of the space of all diagonal matrices in the space of matrices of size n will be the space of all matrices orthogonal to this space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Примеры ортогонального дополнения)] (* <- lang_ru;; *);
+		[Stat. (Examples of orthogonal complement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_matrix;
+		concept_space
+	};;
+*);;
+
+sc_node_class ->
+	concept_linear_space;
+	concept_field;
+	concept_vector;
+	concept_subspace;
+	concept_orthogonal;
+	concept_linear_space;
+	concept_vector;
+	concept_subspace;
+	concept_orthogonal;
+	concept_matrix;
+	concept_space;;
+
+sc_node_role_relation ->
+	rrel_subspace;
+	rrel_orthogonal;
+	rrel_subspace;
+	rrel_orthogonal;;

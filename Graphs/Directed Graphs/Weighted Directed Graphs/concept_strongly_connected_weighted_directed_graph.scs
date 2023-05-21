@@ -1,0 +1,110 @@
+concept_strongly_connected_weighted_directed_graph
+=> nrel_main_idtf:
+	[сильно связанный взвешенный ориентированный граф] (* <- lang_ru;; *);
+	[strongly connected weighted directed graph] (* <- lang_en;; *);;
+
+definition -> definition_of_strongly_connected_weighted_directed_graph (*
+	-> rrel_key_sc_element: concept_strongly_connected_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф, в котором между любой парой вершин есть путь в обоих направлениях и каждому ребру приписана числовая величина] (* <- lang_ru;; *);;
+		-> [A directed graph in which there is a path in both directions between any pair of vertices and each edge is assigned a numerical value] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (сильно связанный взвешенный ориентированный граф)] (* <- lang_ru;; *);
+		[Def. (strongly connected weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_graph_path;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_strongly_connected_component (*
+	-> rrel_key_sc_element: concept_strongly_connected_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В сильно связанном графе каждая вершина принадлежит ровно одной сильно связанной компоненте] (* <- lang_ru;; *);;
+		-> [In a strongly connected graph, each vertex belongs to exactly one strongly connected component] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о сильно связанных компонентах)] (* <- lang_ru;; *);
+		[Stat. (Strongly connected components theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_connectivity;
+		concept_strongly_connected_component;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_strongly_connected_condition (*
+	-> rrel_key_sc_element: concept_strongly_connected_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф является сильно связанным тогда и только тогда, когда для каждой пары вершин существует путь из одной в другую и обратно] (* <- lang_ru;; *);;
+		-> [A directed graph is strongly connected if and only if for every pair of vertices, there is a path from one to the other and vice versa] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Условие наличия сильной связности)] (* <- lang_ru;; *);
+		[Stat. (Strong connectivity condition)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_connectivity;
+		concept_strongly_connected_component;
+		concept_vertex;
+		concept_graph_path;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_strongly_connected_components_count (*
+	-> rrel_key_sc_element: concept_strongly_connected_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В сильно связанном графе число сильно связанных компонент равно числу компонент, получаемых после удаления всех рёбер, которые не принадлежат сильно связанной компоненте] (* <- lang_ru;; *);;
+		-> [In a strongly connected graph, the number of strongly connected components is equal to the number of components obtained by removing all edges that do not belong to a strongly connected component] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о количестве сильно связанных компонент)] (* <- lang_ru;; *);
+		[Stat. (Strongly connected components count theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_connectivity;
+		concept_strongly_connected_component;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_graph_path;
+	concept_vertex;
+	concept_edge;
+	concept_graph_connectivity;
+	concept_strongly_connected_component;
+	concept_vertex;
+	concept_graph_connectivity;
+	concept_strongly_connected_component;
+	concept_vertex;
+	concept_graph_path;
+	concept_graph_connectivity;
+	concept_strongly_connected_component;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;

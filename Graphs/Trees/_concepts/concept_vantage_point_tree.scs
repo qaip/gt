@@ -1,0 +1,46 @@
+concept_vantage_point_tree
+=> nrel_main_idtf:
+	[дерево точек обзора] (* <- lang_ru;; *);
+	[vantage point tree] (* <- lang_en;; *);;
+
+definition -> definition_of_vantage_point_tree (*
+	-> rrel_key_sc_element: concept_vantage_point_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, используемая для быстрого поиска ближайших соседей] (* <- lang_ru;; *);;
+		-> [A data structure used for fast nearest neighbor search] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (дерево точек обзора)] (* <- lang_ru;; *);
+		[Def. (vantage point tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_data_structure;
+		concept_nearest_neighbor_search
+	};;
+*);;
+
+statement -> statement_of_theorem_time_complexity_of_vantage_point_tree (*
+	-> rrel_key_sc_element: concept_vantage_point_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево точек обзора может быть построено и использовано для поиска ближайших соседей в O(log n) времени, где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [A vantage point tree can be constructed and used for nearest neighbor search in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о временной сложности дерева точек обзора)] (* <- lang_ru;; *);
+		[Stat. (Time complexity theorem of vantage point tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_nearest_neighbor_search;
+		concept_time_complexity
+	};;
+*);;
+
+sc_node_class ->
+	concept_data_structure;
+	concept_nearest_neighbor_search;
+	concept_nearest_neighbor_search;
+	concept_time_complexity;;

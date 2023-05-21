@@ -1,0 +1,44 @@
+concept_range_maximum_tree
+=> nrel_main_idtf:
+	[дерево максимумов на отрезках] (* <- lang_ru;; *);
+	[range maximum tree] (* <- lang_en;; *);;
+
+definition -> definition_of_range_maximum_tree (*
+	-> rrel_key_sc_element: concept_range_maximum_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, которая позволяет быстро находить максимальное значение на подотрезке массива] (* <- lang_ru;; *);;
+		-> [Data structure that allows for fast maximum value queries on subsegments of an array] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (дерево максимумов на отрезках)] (* <- lang_ru;; *);
+		[Def. (range maximum tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_range_maximum_tree_query_theorem (*
+	-> rrel_key_sc_element: concept_range_maximum_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Запрос максимума на отрезке в дереве максимумов на отрезках может быть выполнен за время логарифмическое от размера массива] (* <- lang_ru;; *);;
+		-> [Querying for the maximum on a range in a range maximum tree can be done in logarithmic time with respect to the size of the array] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о запросах в дереве максимумов на отрезках)] (* <- lang_ru;; *);
+		[Stat. (Range maximum tree query theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_range_maximum_tree;
+		concept_tree
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_range_maximum_tree;
+	concept_tree;;

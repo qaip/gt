@@ -1,6 +1,6 @@
 concept_graph_diamond
 => nrel_main_idtf:
-	[граф алмаз] (* <- lang_ru;; *);
+	[граф-алмаз] (* <- lang_ru;; *);
 	[graph diamond] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_diamond (*
@@ -12,16 +12,16 @@ definition -> definition_of_graph_diamond (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (граф алмаз)] (* <- lang_ru;; *);
+		[Опр. (граф-алмаз)] (* <- lang_ru;; *);
 		[Def. (graph diamond)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_unoriented_graph;
+		concept_undirected_graph;
 		concept_planar_graph;
-		concept_graph_diamond;
-		concept_graph;
 		concept_edge;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -39,7 +39,6 @@ statement -> statement_of_diamond_graph_property (*
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;
-		concept_graph_diamond;
 		concept_chromatic_index;
 		concept_graph_girth;
 		concept_graph_radius;
@@ -47,16 +46,89 @@ statement -> statement_of_diamond_graph_property (*
 	};;
 *);;
 
+statement -> statement_of_diamond_edge_connectivity (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Рёберная связность графа-алмаза равна 2] (* <- lang_ru;; *);;
+		-> [The edge connectivity of a graph diamond is 2] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Рёберная связность графа-алмаза)] (* <- lang_ru;; *);
+		[Stat. (Edge connectivity of a graph diamond)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge_connectivity
+	};;
+*);;
+
+statement -> statement_of_diamond_vertex_connectivity (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершинная связность графа-алмаза равна 2] (* <- lang_ru;; *);;
+		-> [The vertex connectivity of a graph diamond is 2] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Вершинная связность графа-алмаза)] (* <- lang_ru;; *);
+		[Stat. (Vertex connectivity of a graph diamond)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex_connectivity
+	};;
+*);;
+
+statement -> statement_of_diamond_is_eulerian (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф-алмаз является эйлеровым графом] (* <- lang_ru;; *);;
+		-> [A graph diamond is an eulerian graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Существование эйлерова цикла в графе-алмазе)] (* <- lang_ru;; *);
+		[Stat. (Existence of an euler cycle in a graph diamond)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_eulerian_graph
+	};;
+*);;
+
+statement -> statement_of_diamond_is_bipartite (*
+	-> rrel_key_sc_element: concept_graph_diamond;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф-алмаз является двудольным графом] (* <- lang_ru;; *);;
+		-> [A graph diamond is a bipartite graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двудольность графа-алмаза)] (* <- lang_ru;; *);
+		[Stat. (Bipartiteness of a graph diamond)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_bipartite_graph
+	};;
+*);;
+
 sc_node_class ->
-	concept_unoriented_graph;
+	concept_undirected_graph;
 	concept_planar_graph;
-	concept_graph_diamond;
-	concept_graph;
 	concept_edge;
 	concept_vertex;
 	concept_chromatic_number;
-	concept_graph_diamond;
 	concept_chromatic_index;
 	concept_graph_girth;
 	concept_graph_radius;
-	concept_graph_diametr;;
+	concept_graph_diametr;
+	concept_edge_connectivity;
+	concept_vertex_connectivity;
+	concept_eulerian_graph;
+	concept_bipartite_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;

@@ -1,0 +1,44 @@
+concept_r_tree
+=> nrel_main_idtf:
+	[r-дерево] (* <- lang_ru;; *);
+	[r-tree] (* <- lang_en;; *);;
+
+definition -> definition_of_r_tree (*
+	-> rrel_key_sc_element: concept_r_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Древовидная структура данных, используемая для организации многомерных данных в пространстве] (* <- lang_ru;; *);;
+		-> [Tree-like data structure used for organizing multi-dimensional data in space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (r-дерево)] (* <- lang_ru;; *);
+		[Def. (r-tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_r_tree_search_theorem (*
+	-> rrel_key_sc_element: concept_r_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Поиск в R-дереве выполняется в логарифмическом времени от числа объектов в дереве] (* <- lang_ru;; *);;
+		-> [Searching in an R-tree takes logarithmic time with respect to the number of objects in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о поиске в R-дереве)] (* <- lang_ru;; *);
+		[Stat. (R-tree search theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_r_tree;
+		concept_tree
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_r_tree;
+	concept_tree;;

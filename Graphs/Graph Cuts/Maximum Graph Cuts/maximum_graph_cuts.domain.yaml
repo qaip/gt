@@ -11,6 +11,3 @@ concepts: |
   bipartite_subgraph
   weighted_max_cut
   weighted_max_cut_problem
-
-nrels: |
-  graph_cut

@@ -4,7 +4,6 @@ ru: ациклических графов
 parent: graphs
 
 children: |
-  directed_acyclic_graphs
   forests
 
 max: |
@@ -13,7 +12,6 @@ max: |
 concepts: |
   directed_acyclic_graph
   forest
-  cycle
   tree
 
 rrels: |
