@@ -1,0 +1,29 @@
+ru: дерево максимумов на отрезках
+en: range maximum tree
+
+definition:
+  ru:
+    Структура данных, которая позволяет быстро находить максимальное значение на
+    подотрезке массива
+  en:
+    Data structure that allows for fast maximum value queries on subsegments of
+    an array
+  using:
+    concepts: |
+      tree
+
+statement:
+  range_maximum_tree_query_theorem:
+    title:
+      ru: Теорема о запросах в дереве максимумов на отрезках
+      en: Range maximum tree query theorem
+    ru:
+      Запрос максимума на отрезке в дереве максимумов на отрезках может быть
+      выполнен за время логарифмическое от размера массива
+    en:
+      Querying for the maximum on a range in a range maximum tree can be done in
+      logarithmic time with respect to the size of the array
+    using:
+      concepts: |
+        tree
+        time_complexity
