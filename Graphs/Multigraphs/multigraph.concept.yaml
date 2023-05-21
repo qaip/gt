@@ -45,5 +45,5 @@ statement:
         arc
 
 subclass:
-    - directed_multigraphs
-    - undirected_multigraphs
+    - directed_multigraph
+    - undirected_multigraph

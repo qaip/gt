@@ -25,4 +25,4 @@ statement:
     en: Directed hypergraph is a generalization of directed graphs
     using:
       concepts: |
-        directed_graphs
+        directed_graph

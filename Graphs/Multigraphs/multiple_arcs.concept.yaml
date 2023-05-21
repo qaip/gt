@@ -28,4 +28,4 @@ statement:
     using:
       concepts: |
         multigraph
-        edge_weight
+        rib_weight
