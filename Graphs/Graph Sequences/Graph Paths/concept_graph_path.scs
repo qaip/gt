@@ -1,0 +1,172 @@
+concept_graph_path
+=> nrel_main_idtf:
+	[путь] (* <- lang_ru;; *);
+	[path] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[графовый путь] (* <- lang_ru;; *);
+	[graph path] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_hamiltonian_path;
+concept_path_length;
+concept_graph_path_weight;
+concept_shortest_path;
+concept_longest_path;
+concept_eulerian_path;
+concept_graph_eccentricity;;
+
+definition -> definition_of_graph_path (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Последовательность вершин, в которой каждая вершина соединена со следующей ребром] (* <- lang_ru;; *);;
+		-> [Sequence of vertices where each vertex is connected to the next edge] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (путь)] (* <- lang_ru;; *);
+		[Def. (path)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		concept_graph_sequence;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_property_of_vertex_independency (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два пути вершинно независимы, если они не имеют общих внутренних вершин] (* <- lang_ru;; *);;
+		-> [Two paths are vertex independent if they do not share interior vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство вершинной независимости)] (* <- lang_ru;; *);
+		[Stat. (vertex independence property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_property_of_edges_independency (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два пути рёберно независимы, если они не имеют общих внутренних рёбер] (* <- lang_ru;; *);;
+		-> [Two paths are edge independent if they do not have common interior edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство рёберной независимости)] (* <- lang_ru;; *);
+		[Stat. (Edge independence property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_path_existence_theorem (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В связном графе между любыми двумя вершинами существует путь] (* <- lang_ru;; *);;
+		-> [In a connected graph, there exists a path between any two vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о существовании пути)] (* <- lang_ru;; *);
+		[Stat. (Path existence theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_connected_graph
+	};;
+*);;
+
+statement -> statement_of_path_isomorphism_theorem (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Два пути изоморфны тогда и только тогда, когда они имеют одинаковую длину и соответствующие вершины имеют одинаковую степень] (* <- lang_ru;; *);;
+		-> [Two paths are isomorphic if and only if they have the same length and corresponding vertices have the same degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об изоморфизме путей)] (* <- lang_ru;; *);
+		[Stat. (Isomorphism theorem for paths)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_isomorphism;
+		concept_path_length;
+		concept_vertex_degree
+	};;
+*);;
+
+statement -> statement_of_path_cover_theorem (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное число путей, покрывающих все ребра графа, равно максимальной степени вершины в графе] (* <- lang_ru;; *);;
+		-> [The minimum number of paths covering all edges of a graph is equal to the maximum degree of any vertex in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о покрытии путей)] (* <- lang_ru;; *);
+		[Stat. (Path cover theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex_degree;
+		concept_edge_cover;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_path_matching_theorem (*
+	-> rrel_key_sc_element: concept_graph_path;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В двудольном графе существует максимальный путь соответствия, который покрывает все вершины в левой доле графа] (* <- lang_ru;; *);;
+		-> [In a bipartite graph, there exists a maximum matching path that covers all vertices in the left partition of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о пути соответствия)] (* <- lang_ru;; *);
+		[Stat. (Path matching theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_bipartite_graph;
+		concept_longest_path
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_edge;
+	concept_graph_sequence;
+	concept_vertex;
+	concept_edge;
+	concept_connected_graph;
+	concept_isomorphism;
+	concept_path_length;
+	concept_vertex_degree;
+	concept_vertex_degree;
+	concept_edge_cover;
+	concept_edge;
+	concept_bipartite_graph;
+	concept_longest_path;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;
+	rrel_edge;;
