@@ -56,11 +56,11 @@ statement:
       en: Embeddings of Complete Graphs
       ru: Вложения полных графов
     ru:
-      Всякое вложение полного графа на поверхности рода g имеет не менее 3g-6
-      граней
+      Всякое вложение полного графа на поверхности рода g имеет не менее 3 * g -
+      6 граней
     en:
-      Any embedding of the complete graph on a surface of genus g has at least
-      3g-6 faces
+      Any embedding of the complete graph on a surface of genus g has at least 3
+      * g - 6 faces
     using:
       concepts: |
         complete_graph
@@ -74,10 +74,10 @@ statement:
       ru: Вложения полных двудольных графов
     ru:
       Всякое вложение полного двудольного графа на поверхности рода g имеет не
-      менее 2g-2 граней
+      менее 2 * g - 2 граней
     en:
       Any embedding of the complete bipartite graph on a surface of genus g has
-      at least 2g-2 faces
+      at least 2 * g - 2 faces
     using:
       concepts: |
         complete_graph
