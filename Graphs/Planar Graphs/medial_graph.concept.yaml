@@ -65,8 +65,8 @@ statement:
     title:
       ru: Количество граней медиального графа
       en: Number of faces in a medial graph
-    ru: Медиальный граф на n вершинах имеет 2n-4 грани
-    en: A medial graph with n vertices has 2n-4 faces
+    ru: Медиальный граф на n вершинах имеет 2 * n - 4 грани
+    en: A medial graph with n vertices has 2 * n - 4 faces
     using:
       concepts: |
         vertex

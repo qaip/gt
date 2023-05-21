@@ -69,8 +69,8 @@ statement -> statement_of_embeddings_of_complete_graphs (*
 	-> rrel_key_sc_element: concept_graph_embedding;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Всякое вложение полного графа на поверхности рода g имеет не менее 3g-6 граней] (* <- lang_ru;; *);;
-		-> [Any embedding of the complete graph on a surface of genus g has at least 3g-6 faces] (* <- lang_en;; *);;
+		-> [Всякое вложение полного графа на поверхности рода g имеет не менее 3 * g - 6 граней] (* <- lang_ru;; *);;
+		-> [Any embedding of the complete graph on a surface of genus g has at least 3 * g - 6 faces] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -88,8 +88,8 @@ statement -> statement_of_embeddings_of_complete_bipartite_graphs (*
 	-> rrel_key_sc_element: concept_graph_embedding;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Всякое вложение полного двудольного графа на поверхности рода g имеет не менее 2g-2 граней] (* <- lang_ru;; *);;
-		-> [Any embedding of the complete bipartite graph on a surface of genus g has at least 2g-2 faces] (* <- lang_en;; *);;
+		-> [Всякое вложение полного двудольного графа на поверхности рода g имеет не менее 2 * g - 2 граней] (* <- lang_ru;; *);;
+		-> [Any embedding of the complete bipartite graph on a surface of genus g has at least 2 * g - 2 faces] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
