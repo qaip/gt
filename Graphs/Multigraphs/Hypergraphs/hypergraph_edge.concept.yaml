@@ -28,7 +28,7 @@ statement:
     using:
       concepts: |
         graph
-        hypegraph
+        hypergraph
         vertex
         edge
       rrels: |
