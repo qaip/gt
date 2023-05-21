@@ -1,6 +1,5 @@
 ru: задача максимального разреза графа
 en: maximum graph cut problem
-
 definition:
   ru:
     Задача максимального разреза графа заключается в поиске такого разбиения
@@ -20,7 +19,6 @@ definition:
     rrels: |
       vertex
       edge
-
 statement:
   max_cut_usage:
     title:
@@ -43,7 +41,6 @@ statement:
       rrels: |
         vertex
         edge
-
   max_cut_algorithms:
     title:
       ru: Алгоритмы задачи максимального разреза графа
@@ -62,7 +59,6 @@ statement:
         karger_karp_algorithm
         graph_cut
         fiduccia_mattheyses_algorithm
-
   max_cut_applications:
     title:
       ru: Приложения задачи максимального разреза графа
@@ -82,7 +78,6 @@ statement:
         data_clustering
         graph_cut
         community_detection
-        
   max_cut_complexity:
     title:
       ru: Сложность проблемы максимального разреза графа
