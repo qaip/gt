@@ -1,0 +1,53 @@
+ru: длина пути графа
+en: graph path length
+
+definition:
+  ru:
+    Число рёбер, используемых в пути графа, при этом многократно используемые
+    рёбра считаются соответствующее число раз
+  en:
+    The number of edges used in the path of the graph, while repeatedly used
+    edges are counted the corresponding number of times
+  using:
+    concepts: |
+      graph_path
+      edge
+    rrels: |
+      edge
+
+statement:
+  proposition_weighted_path:
+    title:
+      ru: Взвешенный путь
+      en: Weighted Path
+    ru:
+      Путь в графе, в котором каждому ребру присвоено некоторое число,
+      называется взвешенным путем
+    en:
+      A path in a graph where each edge is assigned a number is called a
+      weighted path
+    using:
+      concepts: |
+        graph_path
+        edge
+      rrels: |
+        edge
+      nrels: |
+        rib_weight
+
+  path_equals_zero:
+    title:
+      ru: Условие эквивалентности длины пути нулю
+      en: Zero path length condition
+    ru:
+      Длина пути графа может равняться нулю, если путь состоит только из одной
+      вершины
+    en:
+      The length of graph path can be zero if the path consists of only one
+      vertex
+    using:
+      concepts: |
+        graph_path
+        vertex
+      rrels: |
+        vertex
