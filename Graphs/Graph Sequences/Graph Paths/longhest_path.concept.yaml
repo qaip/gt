@@ -1,0 +1,27 @@
+ru: самый длинный путь
+en: longest path
+
+definition:
+  ru: самый длинный путь в графе
+  en: the longest path in a graph
+  using:
+    concepts: |
+      graph_path
+      path_length
+
+statement:
+  longest_path_theorem:
+    title:
+      ru: Теорема о самом длинном пути
+      en: Longest path theorem
+    ru:
+      Нахождение самого длинного пути в графе NP-полная задача, которая не может
+      быть решена за полиномиальное время
+    en:
+      Finding the longest path in a graph is an NP-complete problem that cannot
+      be solved in polynomial time
+    using:
+      concepts: |
+        graph
+        path_length
+        longest_path
