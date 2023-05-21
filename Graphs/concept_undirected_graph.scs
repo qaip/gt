@@ -33,14 +33,16 @@ statement -> statement_of_complement_graph_undirected_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (дополнение неориентированного графа)] (* <- lang_ru;; *);
-		[Stat. (complement of an undirected graph)] (* <- lang_en;; *);;
+		[Утв. (Дополнение неориентированного графа)] (* <- lang_ru;; *);
+		[Stat. (Complement of an undirected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
 		concept_edge;
-		concept_complete_graph
+		concept_complete_graph;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -53,14 +55,17 @@ statement -> statement_of_connectedness_undirected_graph (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (связность неориентированных графов)] (* <- lang_ru;; *);
-		[Stat. (connectedness of undirected graphs)] (* <- lang_en;; *);;
+		[Утв. (Связность неориентированных графов)] (* <- lang_ru;; *);
+		[Stat. (Connectedness of undirected graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
 		concept_edge;
-		concept_path
+		concept_graph_connectivity;
+		concept_graph_path;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -75,8 +80,13 @@ sc_node_class ->
 	concept_graph;
 	concept_vertex;
 	concept_edge;
-	concept_path;;
+	concept_graph_connectivity;
+	concept_graph_path;;
 
 sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
 	rrel_vertex;
 	rrel_edge;;

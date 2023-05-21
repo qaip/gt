@@ -38,8 +38,8 @@ statement -> statement_of_null_graph_concept_usage (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (использование понятия нуль графа)] (* <- lang_ru;; *);
-		[Stat. (null graph concept usage)] (* <- lang_en;; *);;
+		[Утв. (Использование понятия нуль графа)] (* <- lang_ru;; *);
+		[Stat. (Null graph concept usage)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;

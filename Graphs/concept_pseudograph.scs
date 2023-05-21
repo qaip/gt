@@ -7,7 +7,7 @@ definition -> definition_of_pseudograph (*
 	-> rrel_key_sc_element: concept_pseudograph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф, содержащим петли и кратные рёбра] (* <- lang_ru;; *);;
+		-> [Псевдограф является графом, содержащим петли и кратные рёбра] (* <- lang_ru;; *);;
 		-> [A pseudograph is a graph that allows loops and multiple edges] (* <- lang_en;; *);;
 	*);;
 
@@ -32,8 +32,8 @@ statement -> statement_of_statement_title (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Название высказывания)] (* <- lang_ru;; *);
-		[Stat. (Statement title)] (* <- lang_en;; *);;
+		[Утв. (Использование понятия псевдографа)] (* <- lang_ru;; *);
+		[Stat. (Pseudograph concept usage)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_multigraph;
@@ -41,12 +41,64 @@ statement -> statement_of_statement_title (*
 	};;
 *);;
 
+statement -> statement_of_pseudograph_properties (*
+	-> rrel_key_sc_element: concept_pseudograph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Псевдографы могут использоваться для моделирования различных систем, таких как транспортные сети, социальные сети и др. Они также могут использоваться для решения различных задач, таких как поиск путей между вершинами и определение свойств графа, таких как связность и деревья] (* <- lang_ru;; *);;
+		-> [Pseudographs can be used to model various systems such as transportation networks, social networks, etc. They can also be used to solve various problems, such as finding paths between vertices and determining graph properties such as connectivity and trees] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства псевдографа)] (* <- lang_ru;; *);
+		[Stat. (Properties of pseudograph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_network;
+		concept_graph_path;
+		concept_tree;
+		concept_graph_connectivity
+	};;
+*);;
+
+statement -> statement_of_weighted_pseudograph (*
+	-> rrel_key_sc_element: concept_pseudograph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Взвешенныйм псевдографом называется граф, у которого каждому ребру ставится в соответствие некоторое значение, или вес. Они используются в различных областях, таких как моделирование социальных сетей, транспортных сетей и пр] (* <- lang_ru;; *);;
+		-> [A weighted pseudograph is a graph in which each edge is assigned some value, or weight. They are used in various fields, such as modeling social networks, transportation networks, etc] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Взвешенный псевдограф)] (* <- lang_ru;; *);
+		[Stat. (Weighted pseudograph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_weighted_graph;
+		concept_network;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
 sc_node_class ->
 	concept_graph;
 	concept_multiple_edges;
-	concept_multigraph;;
+	concept_multigraph;
+	concept_graph;
+	concept_network;
+	concept_graph_path;
+	concept_tree;
+	concept_graph_connectivity;
+	concept_graph;
+	concept_weighted_graph;
+	concept_network;
+	concept_edge;;
 
 sc_node_role_relation ->
 	rrel_multiple_edges;
 	rrel_loop;
-	rrel_loop;;
+	rrel_loop;
+	rrel_edge;;
