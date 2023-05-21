@@ -1,0 +1,94 @@
+concept_incidence_list
+=> nrel_main_idtf:
+	[список инцидентности] (* <- lang_ru;; *);
+	[incidence list] (* <- lang_en;; *);;
+
+definition -> definition_of_incidence_list (*
+	-> rrel_key_sc_element: concept_incidence_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных для представления графа в компьютерной науке. Она представляет собой список попарно несмежных ребер, где каждое ребро является парой, которая содержит индексы двух вершин, которые соединяет это ребро, а также индекс самого ребра] (* <- lang_ru;; *);;
+		-> [A data structure used to represent a graph in computer science. It is a list of pairwise non-adjacent edges, where each edge is a pair containing the indices of the two vertices that the edge connects as well as the index of the edge itself] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (список инцидентности)] (* <- lang_ru;; *);
+		[Def. (incidence list)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge
+	};;
+*);;
+
+statement -> statement_of_incidence_matrix_conversion (*
+	-> rrel_key_sc_element: concept_incidence_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список инцидентности может быть легко преобразован в матрицу инцидентности] (* <- lang_ru;; *);;
+		-> [Incidence list can be easily converted to incidence matrix] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Преобразование списка инцидентности в матрицу инцидентности)] (* <- lang_ru;; *);
+		[Stat. (Conversion of incidence list to incidence matrix)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_incidence_matrix
+	};;
+*);;
+
+statement -> statement_of_incidence_list_vs_adjacency_list (*
+	-> rrel_key_sc_element: concept_incidence_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список инцидентности и список смежности являются наиболее распространенными структурами данных для представления графов] (* <- lang_ru;; *);;
+		-> [Incidence list and adjacency list are the most commonly used data structures for representing graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сравнение списка инцидентности и списка смежности)] (* <- lang_ru;; *);
+		[Stat. (Comparison of incidence list and adjacency list)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_adjacency_list
+	};;
+*);;
+
+statement -> statement_of_weighted_incidence_list (*
+	-> rrel_key_sc_element: concept_incidence_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список инцидентности может быть взвешенным, то есть каждое ребро может иметь свой вес] (* <- lang_ru;; *);;
+		-> [An incidence list can be weighted, meaning that each edge can have its own weight] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Взвешенный список инцидентности)] (* <- lang_ru;; *);
+		[Stat. (Weighted incidence list)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_weighted_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_incidence_matrix;
+	concept_graph;
+	concept_adjacency_list;
+	concept_weighted_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;;
