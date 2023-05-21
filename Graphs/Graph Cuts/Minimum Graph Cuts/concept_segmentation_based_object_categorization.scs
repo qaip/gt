@@ -1,0 +1,29 @@
+concept_segmentation_based_object_categorization
+=> nrel_main_idtf:
+	[сегментация основанная на категоризации объектов] (* <- lang_ru;; *);
+	[segmentation based object categorization] (* <- lang_en;; *);;
+
+definition -> definition_of_segmentation_based_object_categorization (*
+	-> rrel_key_sc_element: concept_segmentation_based_object_categorization;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Процесс разделения изображения на сегменты, каждый из которых соответствует определенной категории объектов] (* <- lang_ru;; *);;
+		-> [A process of dividing an image into segments, each of which corresponds to a specific category of objects] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (сегментация основанная на категоризации объектов)] (* <- lang_ru;; *);
+		[Def. (segmentation based object categorization)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_image;
+		concept_cut;
+		concept_object
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_image;
+	concept_cut;
+	concept_object;;

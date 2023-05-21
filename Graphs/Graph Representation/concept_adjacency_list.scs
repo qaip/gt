@@ -1,0 +1,82 @@
+concept_adjacency_list
+=> nrel_main_idtf:
+	[список смежности] (* <- lang_ru;; *);
+	[adjacency list] (* <- lang_en;; *);;
+
+definition -> definition_of_adjacency_list (*
+	-> rrel_key_sc_element: concept_adjacency_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, используемая для представления графа в компьютерной науке. Представляет собой массив списков, где индекс каждого элемента соответствует вершине графа, а список по этому индексу содержит вершины, смежные с данной] (* <- lang_ru;; *);;
+		-> [A data structure used to represent a graph in computer science. It is an array of lists where the index of each element corresponds to a vertex of the graph, and the list at that index contains the vertices adjacent to that vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (список смежности)] (* <- lang_ru;; *);
+		[Def. (adjacency list)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_weighted_adjacency_list (*
+	-> rrel_key_sc_element: concept_adjacency_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список смежности может быть взвешенным, то есть каждое ребро может иметь свой вес] (* <- lang_ru;; *);;
+		-> [An adjacency list can be weighted, meaning that each edge can have its own weight] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Взвешенный список смежности)] (* <- lang_ru;; *);
+		[Stat. (Weighted adjacency list)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_weighted_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_sparse_graphs (*
+	-> rrel_key_sc_element: concept_adjacency_list;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Список смежности - эффективное представление для разреженных графов] (* <- lang_ru;; *);;
+		-> [Adjacency list is an efficient representation for sparse graphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Представление разреженных графов)] (* <- lang_ru;; *);
+		[Stat. (Representation of sparse graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_sparse_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_weighted_graph;
+	concept_vertex;
+	concept_edge;
+	concept_sparse_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

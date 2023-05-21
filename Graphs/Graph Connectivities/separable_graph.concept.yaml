@@ -1,0 +1,95 @@
+ru: разделимый граф
+en: separable graph
+
+definition:
+  ru:
+    Граф, который может быть разделен на две или более компонент связности при
+    удалении вершины или ребра
+  en:
+    A separable graph is a graph that can be split into two or more connected
+    components by removing a vertex or edge
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    nrels: |
+      connected_component
+    rrels: |
+      vertex
+      edge
+
+statement:
+  separable_graph_vs_non_separable_graph:
+    title:
+      ru: Сравнение разделимых и неразделимых графов
+      en: Comparison of separable and non-separable graphs
+    ru:
+      Разделимые и неразделимые графы отличаются своей структурой и связностью.
+      Разделимые графы могут быть разделены на две или более компонент
+      связности, в то время как неразделимые графы не могут быть разделены на
+      компоненты связности без удаления всех вершин или ребер графа
+    en:
+      Separable and non-separable graphs differ in their structure and
+      connectivity. Separable graphs can be split into two or more connected
+      components, while non-separable graphs cannot be split into connected
+      components without removing all vertices or edges of the graph
+    using:
+      concepts: |
+        connected_component
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
+  trees_as_separable_graphs:
+    title:
+      ru: Деревья как разделимые графы
+      en: Trees as separable graphs
+    ru:
+      Деревья являются разделимыми графами, так как они могут быть разделены на
+      две или более компонент связности при удалении любой вершины, кроме корня
+      дерева
+    en:
+      Trees are separable graphs, since they can be split into two or more
+      connected components by removing any vertex except the root of the tree
+    using:
+      concepts: |
+        tree
+        vertex
+      rrels: |
+        vertex
+
+  separable_graph_in_planarity:
+    title:
+      ru: Разделимые графы в планарной геометрии
+      en: Separable graphs in planar geometry
+    ru:
+      Разделимые графы играют важную роль в теории графов, особенно в планарной
+      геометрии, где они являются ключевым понятием для понимания свойств
+      графов, которые можно нарисовать на плоскости без пересечений ребер
+    en:
+      Separable graphs play an important role in graph theory, especially in
+      planar geometry, where they are a key concept for understanding properties
+      of graphs that can be drawn on a plane without crossing edges
+    using:
+      concepts: |
+        graph_theory
+        planar_graph
+
+  separable_graph_and_cut_vertices:
+    title:
+      ru: Разделимые графы и точки сочленения
+      en: Separable graphs and cut vertices
+    ru:
+      Разделимые графы всегда содержат точки сочленения, которые могут быть
+      удалены для разделения графа на несколько компонент связности
+    en:
+      Separable graphs always contain cut vertices, which can be removed to
+      split the graph into multiple connected components
+    using:
+      concepts: |
+        separable_graph
+      rrels: |
+        cutpoint

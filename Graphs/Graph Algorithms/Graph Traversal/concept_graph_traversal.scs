@@ -1,0 +1,88 @@
+concept_graph_traversal
+=> nrel_main_idtf:
+	[обход графа] (* <- lang_ru;; *);
+	[graph traversal] (* <- lang_en;; *);
+
+=> nrel_subdividing: {
+	concept_breadth_traversal;
+	concept_depth_traversal
+};
+
+=> nrel_inclusion:
+concept_tree_traversal;;
+
+definition -> definition_of_graph_traversal (*
+	-> rrel_key_sc_element: concept_graph_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Процесс систематического просмотра всех ребер, дуг или вершин графа с целью отыскания ребер, дуг или вершин, удовлетворяющих некоторому условию] (* <- lang_ru;; *);;
+		-> [The process of systematically looking through all the edges, arcs or vertices of a graph in order to find edges, arcs or vertices that satisfy some condition] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (обход графа)] (* <- lang_ru;; *);
+		[Def. (graph traversal)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_arc;
+		concept_vertex;
+		rrel_edge;
+		rrel_arc;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_statement_about_graph_traversal_use (*
+	-> rrel_key_sc_element: concept_graph_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [При работе с графами часто приходится выполнять некоторое действие по одному разу с каждой из вершин графа. В таких ситуациях используются обходы графов. В целом, в основе многих алгоритмов на графах лежат обходы графов] (* <- lang_ru;; *);;
+		-> [It is often necessary to perform some action once from each of the vertices of the graph, when working with graphs. In such situations, graph traversals are used. In general, many graph algorithms are based on graph traversals] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Применение обхода графа)] (* <- lang_ru;; *);
+		[Stat. (Graph traversal use)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_graph;
+		concept_graph_algorithm;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_statement_about_graph_traversal_division (*
+	-> rrel_key_sc_element: concept_graph_traversal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обходы графов деляться на обходы в глубину и обходы в ширину] (* <- lang_ru;; *);;
+		-> [Graph traversals are divided into depth traversals and breadth traversals] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Разделение обходов графов)] (* <- lang_ru;; *);
+		[Stat. (Graph traversal division)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_depth_traversal;
+		concept_breadth_traversal
+	};;
+*);;
+
+sc_node_class ->
+	concept_edge;
+	concept_arc;
+	concept_vertex;
+	concept_vertex;
+	concept_graph;
+	concept_graph_algorithm;
+	concept_depth_traversal;
+	concept_breadth_traversal;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_arc;
+	rrel_vertex;
+	rrel_vertex;;
