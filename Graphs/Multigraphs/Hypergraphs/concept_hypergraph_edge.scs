@@ -41,7 +41,7 @@ statement -> statement_of_hypergraph_edge_statement (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_hypegraph;
+		concept_hypergraph;
 		concept_vertex;
 		concept_edge;
 		rrel_vertex;
@@ -53,7 +53,7 @@ sc_node_class ->
 	concept_edge;
 	concept_vertex;
 	concept_graph;
-	concept_hypegraph;
+	concept_hypergraph;
 	concept_vertex;
 	concept_edge;;
 
