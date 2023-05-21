@@ -14,5 +14,6 @@ definition:
       graph
       edge
       partition
+      graph_algorithm
     rrels: |
-      algorithm
+      edge

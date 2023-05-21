@@ -12,14 +12,18 @@ definition:
   using:
     concepts: |
       graph
+      graph_cut
       vertex
       edge
       partition
+    rrels: |
+      vertex
+      edge
 statement:
   max_cut_usage:
     title:
-      ru: использование задачи максимального разреза графа
-      en: usage of maximum graph cut problem
+      ru: Использование задачи максимального разреза графа
+      en: Usage of maximum graph cut problem
     ru:
       Проблема максимального разреза графа используется в задачах оптимизации и
       теории графов, в том числе для решения задачи минимального пути и
@@ -32,11 +36,15 @@ statement:
         graph
         vertex
         edge
+        graph_cut
         partition
+      rrels: |
+        vertex
+        edge
   max_cut_algorithms:
     title:
-      ru: алгоритмы задачи максимального разреза графа
-      en: algorithms for maximum graph cut problem
+      ru: Алгоритмы задачи максимального разреза графа
+      en: Algorithms for maximum graph cut problem
     ru:
       Существует несколько алгоритмов для решения задачи максимального разреза
       графа, включая алгоритм Каргера-Карпа и алгоритм Фидук-Эдмондса, которые
@@ -47,13 +55,14 @@ statement:
       the maximum graph cut in polynomial time
     using:
       concepts: |
-        algorithm
+        graph_algorithm
         karger_karp_algorithm
+        graph_cut
         fiduccia_mattheyses_algorithm
   max_cut_applications:
     title:
-      ru: приложения задачи максимального разреза графа
-      en: applications of maximum graph cut problem
+      ru: Приложения задачи максимального разреза графа
+      en: Applications of maximum graph cut problem
     ru:
       Задача максимального разреза графа используется в различных областях,
       таких как анализ социальных сетей и машинное обучение, для кластеризации
@@ -67,11 +76,12 @@ statement:
         social_network_analysis
         machine_learning
         data_clustering
+        graph_cut
         community_detection
   max_cut_complexity:
     title:
-      ru: сложность проблемы максимального разреза графа
-      en: complexity of maximum graph cut problem
+      ru: Сложность проблемы максимального разреза графа
+      en: Complexity of maximum graph cut problem
     ru:
       Задача максимального разреза графа является NP-полной, что означает, что в
       наихудшем случае время, необходимое для решения этой задачи, растет

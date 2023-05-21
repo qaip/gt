@@ -21,10 +21,10 @@ definition:
 statement:
   weighted_max_cut_usage:
     title:
-      ru: использование задачи максимального взвешенного разреза графа
-      en: usage of weighted maximum graph cut problem
+      ru: Использование задачи максимального взвешенного разреза графа
+      en: Usage of weighted maximum graph cut problem
     ru:
-      Проблема максимального взвешенного разреза графа используется в задачах
+      Задача максимального взвешенного разреза графа используется в задачах
       оптимизации и теории графов, а также в биоинформатике и машинном обучении
     en:
       The weighted maximum graph cut problem is used in optimization problems and
@@ -42,8 +42,8 @@ statement:
         vertex
   weighted_max_cut_algorithms:
     title:
-      ru: алгоритмы задачи максимального взвешенного разреза графа
-      en: algorithms for weighted maximum graph cut problem
+      ru: Алгоритмы задачи максимального взвешенного разреза графа
+      en: Algorithms for weighted maximum graph cut problem
     ru:
       Существует несколько алгоритмов для решения задачи максимального взвешенного
       разреза графа, включая алгоритмы Каргера-Карпа и Фидук-Эдмондса, которые
@@ -54,13 +54,13 @@ statement:
       the maximum graph cut in polynomial time
     using:
       concepts: |
-        algorithm
+        graph_algorithm
         karger_karp_algorithm
         fiduccia_mattheyses_algorithm
   weighted_max_cut_applications:
     title:
-      ru: приложения задачи максимального взвешенного разреза графа
-      en: applications of weighted maximum graph cut problem
+      ru: Приложения задачи максимального взвешенного разреза графа
+      en: Applications of weighted maximum graph cut problem
     ru:
       Задача максимального взвешенного разреза графа используется в различных
       областях, таких как биоинформатика и машинное обучение, для кластеризации
@@ -76,8 +76,8 @@ statement:
         community_detection
   weighted_max_cut_complexity:
     title:
-      ru: сложность проблемы максимального взвешенного разреза графа
-      en: complexity of weighted maximum graph cut problem
+      ru: Сложность проблемы максимального взвешенного разреза графа
+      en: Complexity of weighted maximum graph cut problem
     ru:
       Задача максимального взвешенного разреза графа является NP-трудной, что
       означает, что в наихудшем случае время, необходимое для решения этой задачи,
