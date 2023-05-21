@@ -33,5 +33,5 @@ statement:
         vertex
         tree
         k_d_tree
-    rrels: |
-      vertex
+      rrels: |
+        vertex
