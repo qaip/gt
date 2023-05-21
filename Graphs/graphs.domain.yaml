@@ -6,7 +6,6 @@ parent: graph_theory
 children: |
   directed_graphs
   multigraphs
-  trees
   planar_graphs
   acyclic_graphs
   graph_cuts
