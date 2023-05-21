@@ -1,0 +1,60 @@
+section_subject_domain_of_multigraphs
+
+<- non_atomic_section;
+
+=> nrel_main_idtf:
+	[Раздел. Предметная область мультиграфов] (* <- lang_ru;; *);
+	[Section. Subject domain of multigraphs] (* <- lang_en;; *);
+
+<= nrel_section_decomposition: {
+	section_subject_domain_of_hypergraphs
+};
+
+<- rrel_key_sc_element:
+	subject_domain_of_multigraphs;
+	concept_multigraph;
+	concept_directed_multigraph;
+	concept_undirected_multigraph;
+	nrel_edges_multiplicity;
+	nrel_arcs_multiplicity;
+	nrel_multiple_edges;
+	nrel_multiple_arcs;;
+
+section_subject_domain_of_multigraphs=[*
+	subject_domain_of_multigraphs
+	<- sc_node_struct;
+	<- subject_domain;
+	=> nrel_main_idtf:
+		[Предметная область мультиграфов] (* <- lang_ru;; *);
+		[Subject Domain of multigraphs] (* <- lang_en;; *);
+
+	-> rrel_maximum_studied_object_class:
+		concept_multigraph;
+
+	-> rrel_not_maximum_studied_object_class:
+		concept_directed_multigraph;
+		concept_undirected_multigraph;
+
+	-> rrel_explored_relation:
+		nrel_edges_multiplicity;
+		nrel_arcs_multiplicity;
+		nrel_multiple_edges;
+		nrel_multiple_arcs;
+
+	<= nrel_private_subject_domain:
+		subject_domain_of_graphs;
+
+	=> nrel_private_subject_domain:
+		subject_domain_of_hypergraphs;;
+*];;
+
+sc_node_class ->
+	concept_multigraph;
+	concept_directed_multigraph;
+	concept_undirected_multigraph;;
+
+sc_node_norole_relation ->
+	nrel_edges_multiplicity;
+	nrel_arcs_multiplicity;
+	nrel_multiple_edges;
+	nrel_multiple_arcs;;
