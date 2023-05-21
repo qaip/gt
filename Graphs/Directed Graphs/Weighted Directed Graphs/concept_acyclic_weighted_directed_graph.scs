@@ -1,0 +1,118 @@
+concept_acyclic_weighted_directed_graph
+=> nrel_main_idtf:
+	[ациклический взвешенный ориентированный граф] (* <- lang_ru;; *);
+	[acyclic weighted directed graph] (* <- lang_en;; *);;
+
+definition -> definition_of_acyclic_weighted_directed_graph (*
+	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф без циклов, в котором каждому ребру приписана числовая величина] (* <- lang_ru;; *);;
+		-> [A directed graph without cycles in which each edge is assigned a numerical value] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ациклический взвешенный ориентированный граф)] (* <- lang_ru;; *);
+		[Def. (acyclic weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		rrel_edge;
+		nrel_value
+	};;
+*);;
+
+statement -> statement_of_acyclic_directed_graph_shortest_path (*
+	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ациклическом взвешенном ориентированном графе кратчайший путь между двумя вершинами может быть найден за линейное время] (* <- lang_ru;; *);;
+		-> [In an acyclic weighted directed graph, the shortest path between two vertices can be found in linear time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство кратчайшего пути в ациклическом взвешенном ориентированном графе)] (* <- lang_ru;; *);
+		[Stat. (The shortest path property in an acyclic weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_graph_path;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_minimum_spanning_tree (*
+	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ациклическом взвешенном ориентированном графе минимальное остовное дерево может быть найдено за линейное время] (* <- lang_ru;; *);;
+		-> [In an acyclic weighted directed graph, the minimum spanning tree can be found in linear time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о минимальном остовном дереве)] (* <- lang_ru;; *);
+		[Stat. (Minimum spanning tree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_spanning_tree;
+		concept_directed_graph;
+		concept_edge;
+		concept_vertex;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_acyclic_directed_graph_longest_path (*
+	-> rrel_key_sc_element: concept_acyclic_weighted_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ациклическом взвешенном ориентированном графе самый длинный путь между двумя вершинами может быть найден за линейное время] (* <- lang_ru;; *);;
+		-> [In an acyclic weighted directed graph, the longest path between two vertices can be found in linear time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство самого длинного пути в ациклическом взвешенном ориентированном графе)] (* <- lang_ru;; *);
+		[Stat. (The property of the longest path in an acyclic weighted directed graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_directed_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_directed_graph;
+	concept_graph_path;
+	concept_vertex;
+	concept_edge;
+	concept_spanning_tree;
+	concept_directed_graph;
+	concept_edge;
+	concept_vertex;
+	concept_graph_path;
+	concept_directed_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_norole_relation ->
+	nrel_value;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_edge;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;
