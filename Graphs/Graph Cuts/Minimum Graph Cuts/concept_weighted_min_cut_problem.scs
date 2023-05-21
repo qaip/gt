@@ -7,7 +7,7 @@ definition -> definition_of_weighted_min_cut_problem (*
 	-> rrel_key_sc_element: concept_weighted_min_cut_problem;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [алгоритм, который используется для разделения графа на две части в соответствии с весами его ребер] (* <- lang_ru;; *);;
+		-> [Алгоритм, который используется для разделения графа на две части в соответствии с весами его ребер] (* <- lang_ru;; *);;
 		-> [Weighted minimum cut is an algorithm used to partition a graph into two parts according to the weights of its edges] (* <- lang_en;; *);;
 	*);;
 
