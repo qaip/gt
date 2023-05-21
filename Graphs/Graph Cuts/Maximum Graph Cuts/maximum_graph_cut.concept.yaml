@@ -1,63 +1,31 @@
-ru: взвешенный максимальный разрез
-en: weighted maximum cut
+ru: максимальный разрез графа
+en: maximum graph cut
 definition:
   ru:
-    Алгоритм, который используется для разделения графа на две части в
-    соответствии с весами его ребер, таким образом, чтобы суммарный вес ребер
-    между двумя частями был максимальным
+    Разрез, размер которого не меньше размера любого другого разреза. То есть
+    это разбиение вершин графов на два дополнительных множества S и T, такое,
+    что количество ребер между S и T равно возможный
   en:
-    Weighted maximum cut is an algorithm used to partition a graph into two
-    parts according to the weights of its edges, such that the total weight of
-    the edges between the two parts is maximum
+    A maximum cut is a cut whose size is at least the size of any other cut.
+    That is, it is a partition of the graphs vertices into two complementary
+    sets S and T, such that the number of edges between S and T is as large as
+    possible
   using:
     concepts: |
       graph
       edge
-      partition
-      graph_algorithm
+      vertex
+      graph_cut
     rrels: |
       edge
-statement:
-  weighted_max_cut_usage:
+      vertex
+statement: 
+  finding_max_cut:
     title:
-      ru: Использование взвешенного максимального разреза
-      en: Usage of weighted maximum cut
-    ru:
-      Взвешенный максимальный разрез графа используется в различных областях, таких
-      как машинное обучение и биоинформатика, для кластеризации и анализа
-      данных, а также в задачах оптимизации и теории графов
-    en:
-      Weighted maximum cut is used in various fields such as machine learning
-      and bioinformatics for data clustering and analysis, community detection,
-      as well as in optimization problems and graph theory
+      ru: Нахождение макимального разреза
+      en: Finding max cut
+    ru: Нахождение максимального разреза графа является отдельной задачей
+    en: Finding such a cut is known as the max-cut problem
     using:
       concepts: |
-        machine_learning
-        bioinformatics
-        data_clustering
-        community_detection
-        optimization
-        graph_theory
-        graph_cut
-        graph_algorithm
-  weighted_max_cut_algorithms:
-    title:
-      ru: Алгоритмы взвешенного максимального разреза
-      en: Algorithms for weighted maximum cut
-    ru:
-      Существуют различные алгоритмы для решения задачи взвешенного
-      максимального разреза, такие как алгоритмы Каргера-Карпа и Фидук-Эдмондса,
-      а также мультистартовые алгоритмы и методы декомпозиции. Некоторые из этих
-      алгоритмов могут работать эффективно только для особых классов графов,
-      например, для двудольных графов
-    en:
-      There are various algorithms for solving the weighted maximum cut problem,
-      such as the Karger-Karp and Fiduccia-Mattheyses algorithms, as well as
-      multi-start algorithms and decomposition methods. Some of these algorithms
-      may work efficiently only for special classes of graphs, for example, for
-      bipartite graphs
-    using:
-      concepts: |
-        graph_algorithm
-        graph_cut
-        bipartite_graph
+        max_cut_problem
