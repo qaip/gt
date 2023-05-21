@@ -1,5 +1,6 @@
 ru: двойственный граф
 en: dual graph
+
 definition:
   ru:
     Двойственным графом является граф, построенный на основе заданного графа, в
@@ -22,6 +23,7 @@ definition:
     rrels: |
       vertex
       edge
+
 statement:
   planar_dual_graph:
     title:
@@ -44,6 +46,7 @@ statement:
         point
       nrels: |
         point_adjacency
+
   dual_graph_as_orthogonal_polyhedron:
     title:
       ru: Двойственный граф как ортогональный полиэдр
@@ -61,8 +64,8 @@ statement:
     using:
       concepts: |
         graph
-        dual_graph
         orthogonal_polyhedron
+
   dual_graph_planar_graph:
     title:
       ru: Двойственный граф для планарного графа
@@ -73,7 +76,7 @@ statement:
       concepts: |
         graph
         planar_graph
-        dual_graph
+
   dual_graph_acyclic_graph:
     title:
       ru: Двойственный граф для ациклического графа
@@ -84,8 +87,8 @@ statement:
       concepts: |
         graph
         acyclic_graph
-        dual_graph
         tree
+
   dual_graph_bipartite_graph:
     title:
       ru: Двойственный граф для двудольного графа
@@ -105,7 +108,7 @@ statement:
       concepts: |
         graph
         bipartite_graph
-        dual_graph
+
   dual_graph_line_graph:
     title:
       ru: Двойственный граф для линейного графа
@@ -123,9 +126,9 @@ statement:
       concepts: |
         graph
         line_graph
-        dual_graph
         vertex
         edge
+
   dual_graph_regular_graph:
     title:
       ru: Двойственный граф для регулярного графа
@@ -138,7 +141,7 @@ statement:
       concepts: |
         graph
         regular_graph
-        dual_graph
+
   dual_graph_polyhedral_graph:
     title:
       ru: Двойственный граф для выпуклого многогранника
@@ -161,8 +164,8 @@ statement:
       concepts: |
         graph
         polyhedral_graph
-        dual_graph
         edge
       nrels: |
         face
+      rrels: |
         edge

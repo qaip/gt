@@ -1,10 +1,11 @@
 ru: самодвойственный граф
 en: self-dual graph
+
 definition:
   ru:
-    Самодвойственным графом является граф, который равен своему двойственному графу
-  en:
-    A self-dual graph is a graph that is isomorphic to its dual graph
+    Самодвойственным графом является граф, который равен своему двойственному
+    графу
+  en: A self-dual graph is a graph that is isomorphic to its dual graph
   using:
     concepts: |
       graph
