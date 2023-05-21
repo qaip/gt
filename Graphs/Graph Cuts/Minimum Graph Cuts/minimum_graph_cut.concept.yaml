@@ -1,17 +1,20 @@
-ru: взвешенный минимальный разрез
-en: weighted minimum cut
+ru: минимальный разрез графа
+en:
+  - minimum graph cut
+  - min cut
 definition:
   ru:
-    Алгоритм, который используется для разделения графа на две части в
-    соответствии с весами его ребер
+    Разрез, минимальный по некоторой метрике. Варианты задачи минимального
+    разреза рассматривают взвешенные графы, ориентированные графы и другие
   en:
-    Weighted minimum cut is an algorithm used to partition a graph into two
-    parts according to the weights of its edges
+    A cut that is minimal with respect to some metric. Variants of the minimum
+    cut problem consider weighted graphs, directed graphs
   using:
     concepts: |
       graph
       edge
-      partition
+      weighted_graph
+      directed_graph
       graph_algorithm
     rrels: |
       edge
