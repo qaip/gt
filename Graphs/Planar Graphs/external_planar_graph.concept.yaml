@@ -23,8 +23,8 @@ statement:
     title:
       ru: Формула Эйлера для внешне планарных графов
       en: Eulers formula for external planar graphs
-    ru: Внешне планарный граф на n вершинах имеет n+2 грани
-    en: An external planar graph with n vertices has n+2 faces
+    ru: Внешне планарный граф на n вершинах имеет n + 2 грани
+    en: An external planar graph with n vertices has n + 2 faces
     using:
       concepts: |
         vertex

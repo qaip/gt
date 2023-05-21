@@ -84,8 +84,8 @@ statement -> statement_of_medial_graph_face_count (*
 	-> rrel_key_sc_element: concept_medial_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Медиальный граф на n вершинах имеет 2n-4 грани] (* <- lang_ru;; *);;
-		-> [A medial graph with n vertices has 2n-4 faces] (* <- lang_en;; *);;
+		-> [Медиальный граф на n вершинах имеет 2 * n - 4 грани] (* <- lang_ru;; *);;
+		-> [A medial graph with n vertices has 2 * n - 4 faces] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
