@@ -6,12 +6,12 @@ definition:
     Структура данных для представления графа в компьютерной науке. Она
     представляет собой список попарно несмежных ребер, где каждое ребро является
     парой, которая содержит индексы двух вершин, которые соединяет это ребро, а
-    также индекс самого ребра.
+    также индекс самого ребра
   en:
     A data structure used to represent a graph in computer science. It is a list
     of pairwise non-adjacent edges, where each edge is a pair containing the
     indices of the two vertices that the edge connects as well as the index of
-    the edge itself.
+    the edge itself
   using:
     concepts: |
       graph
