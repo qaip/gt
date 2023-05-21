@@ -1,0 +1,15 @@
+en: graph representation
+ru: представления графов
+
+parent: graphs
+
+max: |
+  graph_representation
+
+concepts: |
+  adjacency_list
+  incidence_list
+  adjacency_matrix
+  incidence_matrix
+  analytical_method_graph_representation
+  graphical_way_graph_representation

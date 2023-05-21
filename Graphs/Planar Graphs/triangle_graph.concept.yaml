@@ -1,0 +1,76 @@
+ru: треугольный граф
+en: triangle graph | graph-triangle
+
+definition:
+  ru:
+    Планарный неориентированный граф с тремя вершинами и тремя рёбрами,
+    образующими треугольник
+  en:
+    A planar undirected graph, that contains 3 vertices and 3 edges, forming a
+    triangle
+  using:
+    concepts: |
+      unoriented_graph
+      planar_graph
+      graph
+      edge
+      vertex
+    rrels: |
+      vertex
+      edge
+
+statement:
+  triangle_graph_property:
+    title:
+      ru: Cвойства треугольного графа
+      en: Properties of a graph-triangle
+    ru:
+      Треугольный граф имеет хроматическое число 3, хроматический индекс 3,
+      радиус 1, диаметр 1 и обхват 3. Он также 2-вершинно связен и 2-рёберно
+      связен
+    en:
+      The graph-triangle has girth 3, diameter 1, radius 1, chromatic number 3,
+      chromatic index 3 and is both 2-vertex-connected and 2-edge-connected
+    using:
+      concepts: |
+        chromatic_number
+        chromatic_index
+        graph_girth
+        graph_radius
+        graph_diametr
+      nrels: |
+        vertex_connectivity
+        edge_connectivity
+
+  triangle_graph_coloring:
+    title:
+      ru: Раскраска треугольного графа
+      en: Coloring of a triangle graph
+    ru: Треугольный граф можно раскрасить тремя цветами
+    en: A triangle graph can be colored with three colors
+    using:
+      concepts: |
+        graph_coloring
+
+  triangle_graph_subgraphs:
+    title:
+      ru: Подграфы треугольного графа
+      en: Subgraphs of a triangle graph
+    ru: Любой подграф треугольного графа является планарным графом
+    en: Any subgraph of a triangle graph is a planar graph
+    using:
+      concepts: |
+        planar_graph
+      nrels: |
+        subgraph
+
+  triangle_graph_embedding:
+    title:
+      ru: Вложение треугольного графа
+      en: Embedding of a triangle graph
+    ru: Треугольный граф можно вложить на плоскость без пересечения рёбер
+    en: A triangle graph can be embedded on a plane without crossing edges
+    using:
+      concepts: |
+        plane
+        graph_embedding
