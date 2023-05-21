@@ -1,0 +1,35 @@
+ru: упорядоченный обход бинарного дерева
+en: in-order depth traversal | in-order traversal
+
+definition:
+  ru: Одна из разновидностей обхода бинарного дерева в глубину
+  en: One of the varieties of binary tree depth traversal
+  using:
+    concepts: |
+      binary_tree
+      depth_traversal
+      tree_traversal
+
+statement:
+  in_order_traversal_explanation:
+    title:
+      ru: Объяснение упорядоченного обхода дерева
+      en: In-order traversal explanation
+    ru:
+      Упорядоченный обход бинарного дерева состоит из трёх этапов. На первом
+      этапе обходится левая смежная с текущей вершина. На втором этапе
+      просматривается текущая вершина. На третьем этапе обходится оставшаяся
+      смежная с текущей вершина
+    en:
+      In-order traversal of binary tree consists of 3 stages. On the first stage
+      left adjecent vertex of the current vertex is traversed. On the second
+      stage the current vertex is checked. On the third stage remaining adjecent
+      vertex of the current vertex is traversed
+    using:
+      concepts: |
+        vertex
+        binary_tree
+      rrels: |
+        vertex
+      nrels: |
+        vertex_adjacency

@@ -1,0 +1,46 @@
+ru: графовая цепь
+en: graph chain
+
+definition:
+  ru:
+    Последовательность вершин графа, такая что каждые две соседние вершины
+    соединены ребром
+  en:
+    A sequence of vertices in a graph such that every two adjacent vertices are
+    connected by an edge
+  using:
+    concepts: |
+      graph_sequence
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+
+statement:
+  theorem_subchain_diameter:
+    title:
+      ru: Теорема о диаметре подцепи
+      en: Subchain diameter theorem
+    ru: Диаметр подцепи в графе равен диаметру между ее концами
+    en:
+      The diameter of a subchain in a graph is equal to the diameter between its
+      endpoints
+    using:
+      concepts: |
+        vertex
+        graph
+        graph_subchain
+      rrels: |
+        vertex
+      nrels: |
+        graph_diameter
+
+subclass:
+  - simple_graph_chain
+  - hamiltonian_chain
+  - alternating_chain
+  - graph_subchain
+  - chain_weight
+  - chain_length
+  - eulerian_chain

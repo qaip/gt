@@ -1,0 +1,56 @@
+concept_sparsest_cuts
+=> nrel_main_idtf:
+	[разреженный разрез графа] (* <- lang_ru;; *);
+	[sparsest cut] (* <- lang_en;; *);;
+
+definition -> definition_of_sparsest_cuts (*
+	-> rrel_key_sc_element: concept_sparsest_cuts;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разрез графа, который минимизирует отношение суммы весов ребер в разрезе к объему меньшей из двух частей разреза] (* <- lang_ru;; *);;
+		-> [A graph cut that minimizes the ratio of the sum of the weights of the edges in the cut to the volume of the smaller of the two parts of the cut] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (разреженный разрез графа)] (* <- lang_ru;; *);
+		[Def. (sparsest cut)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_graph_cut;
+		rrel_edge;
+		nrel_rib_weight
+	};;
+*);;
+
+statement -> statement_of_theorem_sparsest_cut (*
+	-> rrel_key_sc_element: concept_sparsest_cuts;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разрез, минимизирующий объем меньшей из двух частей разреза, может быть найден за O(m log n) времени] (* <- lang_ru;; *);;
+		-> [A cut that minimizes the volume of the smaller of the two parts of the cut can be found in O(m log n) time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о разреженном разрезе)] (* <- lang_ru;; *);
+		[Stat. (Sparsest cut theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cut;
+		concept_time_complexity;
+		nrel_rib_weight
+	};;
+*);;
+
+sc_node_class ->
+	concept_edge;
+	concept_graph_cut;
+	concept_graph_cut;
+	concept_time_complexity;;
+
+sc_node_norole_relation ->
+	nrel_rib_weight;
+	nrel_rib_weight;;
+
+sc_node_role_relation ->
+	rrel_edge;;

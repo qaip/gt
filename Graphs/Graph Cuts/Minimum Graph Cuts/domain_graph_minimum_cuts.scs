@@ -10,14 +10,9 @@ section_subject_domain_of_graph_minimum_cuts
 	subject_domain_of_graph_minimum_cuts;
 	concept_minimum_graph_cut;
 	concept_number_of_minimum_graph_cuts;
-	concept_max_flow_min_cut_theorem;
 	concept_segmentation_based_object_categorization;
-	concept_graph_source;
 	concept_graph_sink;
-	concept_weighted_min_cut;
-	concept_weighted_min_cut_problem;
-	nrel_edge_connectivity;
-	nrel_graph_cut;;
+	concept_weighted_min_cut;;
 
 section_subject_domain_of_graph_minimum_cuts=[*
 	subject_domain_of_graph_minimum_cuts
@@ -32,16 +27,9 @@ section_subject_domain_of_graph_minimum_cuts=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_number_of_minimum_graph_cuts;
-		concept_max_flow_min_cut_theorem;
 		concept_segmentation_based_object_categorization;
-		concept_graph_source;
 		concept_graph_sink;
 		concept_weighted_min_cut;
-		concept_weighted_min_cut_problem;
-
-	-> rrel_explored_relation:
-		nrel_edge_connectivity;
-		nrel_graph_cut;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_cuts;;
@@ -50,13 +38,6 @@ section_subject_domain_of_graph_minimum_cuts=[*
 sc_node_class ->
 	concept_minimum_graph_cut;
 	concept_number_of_minimum_graph_cuts;
-	concept_max_flow_min_cut_theorem;
 	concept_segmentation_based_object_categorization;
-	concept_graph_source;
 	concept_graph_sink;
-	concept_weighted_min_cut;
-	concept_weighted_min_cut_problem;;
-
-sc_node_norole_relation ->
-	nrel_edge_connectivity;
-	nrel_graph_cut;;
+	concept_weighted_min_cut;;

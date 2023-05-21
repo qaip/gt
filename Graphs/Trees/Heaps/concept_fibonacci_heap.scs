@@ -1,0 +1,27 @@
+concept_fibonacci_heap
+=> nrel_main_idtf:
+	[куча Фибоначчи] (* <- lang_ru;; *);
+	[Fibonacci heap] (* <- lang_en;; *);;
+
+definition -> definition_of_fibonacci_heap (*
+	-> rrel_key_sc_element: concept_fibonacci_heap;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, которая представляет собой набор мин-куч, где каждый элемент может содержаться в нескольких кучах] (* <- lang_ru;; *);;
+		-> [A data structure that is a collection of min-heaps, where each element can be stored in multiple heaps] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (куча Фибоначчи)] (* <- lang_ru;; *);
+		[Def. (Fibonacci heap)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_min_heap;
+		concept_heap
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_min_heap;
+	concept_heap;;

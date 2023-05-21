@@ -11,6 +11,8 @@ definition:
       vertex
     nrels: |
       tree_parent
+    rrels: |
+      vertex
 
 statement:
   theorem_multitree_search:

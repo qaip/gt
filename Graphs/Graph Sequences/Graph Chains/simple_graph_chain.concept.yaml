@@ -1,0 +1,34 @@
+ru: простая графовая цепь
+en: simple graph chain
+
+definition:
+  ru:
+    Последовательность вершин простого графа, такая что каждые две соседние
+    вершины соединены ребром и все вершины уникальны
+  en:
+    A sequence of vertices in a simple graph such that every two adjacent
+    vertices are connected by an edge and all vertices are unique
+  using:
+    concepts: |
+      vertex
+      edge
+      graph_sequence
+    rrels: |
+      vertex
+      edge
+
+statement:
+  longest_simple_path_theorem:
+    title:
+      ru: Теорема о самой длинной простой цепи
+      en: Longest simple path theorem
+    ru:
+      Самая длинная простая цепь в графе может быть найдена с помощью алгоритма
+      Дейкстры
+    en:
+      The longest simple chain in a graph can be found using Dijkstras algorithm
+    using:
+      concepts: |
+        graph
+        dijkstra_algorithm
+        chain_length

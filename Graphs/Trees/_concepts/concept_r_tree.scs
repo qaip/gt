@@ -33,12 +33,12 @@ statement -> statement_of_r_tree_search_theorem (*
 		[Stat. (R-tree search theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_r_tree;
-		concept_tree
+		concept_tree;
+		concept_time_complexity
 	};;
 *);;
 
 sc_node_class ->
 	concept_tree;
-	concept_r_tree;
-	concept_tree;;
+	concept_tree;
+	concept_time_complexity;;

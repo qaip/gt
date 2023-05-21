@@ -1,15 +1,34 @@
-ru: остовный маршрут
-en: spanning sequence
+ru: остовный маршрут | охватывающий маршрут
+en: spanning sequence | spanning route
 
 definition:
   ru: Маршрут, содержащий все вершины орграфа
-  en:
-    Spanning sequence is a sequence, that contains all verteces in directed
-    graph
+  en: The sequence, that contains all verteces in directed graph
   using:
     concepts: |
-      sequence
       directed_graph
+      graph_sequence
       vertex
     rrels: |
       vertex
+
+statement:
+  spanning_route_existence_theorem:
+    title:
+      ru: Теорема о существовании охватывающего маршрута
+      en: Spanning route existence theorem
+    ru: В связном графе всегда существует охватывающий маршрут
+    en: In a connected graph, there always exists a spanning route
+    using:
+      concepts: |
+        connected_graph
+
+  spanning_route_uniqueness_theorem:
+    title:
+      ru: Теорема о единственности охватывающего маршрута
+      en: Spanning route uniqueness theorem
+    ru: В связном графе охватывающий маршрут единственный
+    en: In a connected graph, the spanning route is unique
+    using:
+      concepts: |
+        connected_graph

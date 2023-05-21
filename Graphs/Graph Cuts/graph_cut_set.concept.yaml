@@ -1,0 +1,37 @@
+ru: множество разрезов графа
+en: graph cut set
+
+definition:
+  ru: Множество разрезов графа
+  en: A set of graph cuts
+  using:
+    concepts: |
+      graph
+      vertex
+      graph_cut
+    rrels: |
+      vertex
+
+statement:
+  theorem_gomory_hu:
+    title:
+      ru: Теорема Гомори-Ху
+      en: Gomory-Hu theorem
+    ru:
+      Для любого связного неориентированного графа с n вершинами, между любыми
+      двумя вершинами графа существует минимальный разрез, который является
+      разрезом графа между этими двумя вершинами
+    en:
+      For any connected undirected graph with n vertices, there exists a minimum
+      cut between any two vertices of the graph, which is a cut of the graph
+      between these two vertices
+    using:
+      concepts: |
+        graph
+        undirected_graph
+        vertex
+        minimum_graph_cut
+        graph_cut
+        graph_connectivity
+      rrels: |
+        vertex

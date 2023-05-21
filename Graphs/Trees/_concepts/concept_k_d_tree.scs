@@ -56,7 +56,8 @@ statement -> statement_of_balanced_k_d_tree_theorem (*
 		concept_balanced_tree;
 		concept_vertex;
 		concept_tree;
-		concept_k_d_tree
+		concept_k_d_tree;
+		rrel_vertex
 	};;
 *);;
 
@@ -71,4 +72,5 @@ sc_node_class ->
 	concept_k_d_tree;;
 
 sc_node_role_relation ->
+	rrel_vertex;
 	rrel_vertex;;

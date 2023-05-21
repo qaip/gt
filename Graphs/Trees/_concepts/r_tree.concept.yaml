@@ -2,22 +2,27 @@ ru: r-дерево
 en: r-tree
 
 definition:
-  ru: Древовидная структура данных, используемая для организации многомерных
-      данных в пространстве
-  en: Tree-like data structure used for organizing multi-dimensional data in space
+  ru:
+    Древовидная структура данных, используемая для организации многомерных
+    данных в пространстве
+  en:
+    Tree-like data structure used for organizing multi-dimensional data in space
   using:
     concepts: |
       tree
+
 statement:
   r_tree_search_theorem:
     title:
       ru: Теорема о поиске в R-дереве
       en: R-tree search theorem
-    ru: Поиск в R-дереве выполняется в логарифмическом времени от числа объектов
-      в дереве
-    en: Searching in an R-tree takes logarithmic time with respect to the number
+    ru:
+      Поиск в R-дереве выполняется в логарифмическом времени от числа объектов в
+      дереве
+    en:
+      Searching in an R-tree takes logarithmic time with respect to the number
       of objects in the tree
     using:
       concepts: |
-        r_tree
         tree
+        time_complexity

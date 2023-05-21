@@ -10,6 +10,11 @@ concepts: |
   hamiltonian_path
   path_length
   graph_path_weight
+  shortest_path
+  longest_path
+  eulerian_path
+  graph_eccentricity
+
 
 rrels: |
   graph_path
@@ -19,3 +24,5 @@ nrels: |
   not_trivial_path
   shortest_path
   critical_path
+  graph_diameter
+  graph_radius

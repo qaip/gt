@@ -33,12 +33,12 @@ statement -> statement_of_range_maximum_tree_query_theorem (*
 		[Stat. (Range maximum tree query theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_range_maximum_tree;
-		concept_tree
+		concept_tree;
+		concept_time_complexity
 	};;
 *);;
 
 sc_node_class ->
 	concept_tree;
-	concept_range_maximum_tree;
-	concept_tree;;
+	concept_tree;
+	concept_time_complexity;;

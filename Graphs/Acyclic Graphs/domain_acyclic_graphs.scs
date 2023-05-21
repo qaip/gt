@@ -7,7 +7,6 @@ section_subject_domain_of_acyclic_graphs
 	[Section. Subject domain of acyclic graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_directed_acyclic_graphs;
 	section_subject_domain_of_forests
 };
 
@@ -16,7 +15,6 @@ section_subject_domain_of_acyclic_graphs
 	concept_acyclic_graph;
 	concept_directed_acyclic_graph;
 	concept_forest;
-	concept_cycle;
 	concept_tree;
 	nrel_topological_ordering;
 	nrel_transitive_reduction;
@@ -37,7 +35,6 @@ section_subject_domain_of_acyclic_graphs=[*
 	-> rrel_not_maximum_studied_object_class:
 		concept_directed_acyclic_graph;
 		concept_forest;
-		concept_cycle;
 		concept_tree;
 
 	-> rrel_explored_relation:
@@ -50,7 +47,6 @@ section_subject_domain_of_acyclic_graphs=[*
 		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_directed_acyclic_graphs;
 		subject_domain_of_forests;;
 *];;
 
@@ -58,7 +54,6 @@ sc_node_class ->
 	concept_acyclic_graph;
 	concept_directed_acyclic_graph;
 	concept_forest;
-	concept_cycle;
 	concept_tree;;
 
 sc_node_norole_relation ->

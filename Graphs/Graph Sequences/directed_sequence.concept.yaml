@@ -1,5 +1,5 @@
-ru: ориентированный маршрут
-en: directed sequence
+ru: ориентированный маршрут | направленный маршрут
+en: directed sequence | directed route
 
 definition:
   ru:
@@ -12,10 +12,13 @@ definition:
     concepts: |
       vertex
       edge
-      sequence
+      arc
+      graph_sequence
     rrels: |
       vertex
       edge
+      arc
+
 statement:
   directional_and_nondirectional_sequences:
     title:
@@ -30,8 +33,7 @@ statement:
       corresponding open or closed route in the corresponding undirected graph
     using:
       concepts: |
-        sequence
+        graph_sequence
         directed_graph
         undirected_graph
-        closed_sequence
-        cycle
+        graph_cycle

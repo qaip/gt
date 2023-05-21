@@ -11,8 +11,13 @@ definition:
   using:
     concepts: |
       graph
+      vertex
+      edge
       graph_coloring
-      
+    rrels: |
+      vertex
+      edge
+
 statement:
   condition_of_bicoloured:
     title:
@@ -27,3 +32,19 @@ statement:
         graph_coloring
         graph
         graph_cycles
+
+  bicolouring_theorem:
+    title:
+      ru: Теорема о двухцветном подграфе
+      en: Bicolouring theorem
+    ru: Любой граф имеет двухцветный подграф, содержащий каждую вершину
+    en: Every graph has a bicoloured subgraph that contains every vertex
+    using:
+      concepts: |
+        graph
+        subgraph
+        vertex
+      rrels: |
+        vertex
+      nrels: |
+        subgraph

@@ -201,6 +201,8 @@ statement:
         tree_node
         subtree
         centroid_tree
+      nrels: |
+        subtree
 
   tree_traversal_theorem:
     title:
