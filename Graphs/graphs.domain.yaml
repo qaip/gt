@@ -29,15 +29,15 @@ concepts: |
   undirected_graph
   graph_structure
   complete_graph
-  bridge
   bipartite_graph
-  multigraph
+  multigrap
   null_graph
   psuedograph
   network
   super_graph
-  arc
-
+  regular_graph
+  weighted_graph
+  unweighted_graph
 rrels: |
   vertex
   edge
