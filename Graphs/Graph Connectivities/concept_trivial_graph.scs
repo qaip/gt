@@ -1,0 +1,114 @@
+concept_trivial_graph
+=> nrel_main_idtf:
+	[тривиальный граф] (* <- lang_ru;; *);
+	[trivial graph] (* <- lang_en;; *);;
+
+definition -> definition_of_trivial_graph (*
+	-> rrel_key_sc_element: concept_trivial_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, который состоит из одной вершины и не имеет ребер] (* <- lang_ru;; *);;
+		-> [A trivial graph is a graph that consists of only one vertex and no edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (тривиальный граф)] (* <- lang_ru;; *);
+		[Def. (trivial graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_trivial_graph_in_algorithms (*
+	-> rrel_key_sc_element: concept_trivial_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тривиальные графы могут быть использованы в алгоритмах для обработки крайних случаев или для тестирования реализации алгоритмов на простых примерах] (* <- lang_ru;; *);;
+		-> [Trivial graphs can be used in algorithms to handle edge cases or to test algorithm implementations on simple examples] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование тривиальных графов в алгоритмах)] (* <- lang_ru;; *);
+		[Stat. (Using trivial graphs in algorithms)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_algorithm
+	};;
+*);;
+
+statement -> statement_of_trivial_graph_in_graph_theory (*
+	-> rrel_key_sc_element: concept_trivial_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тривиальные графы могут быть использованы для иллюстрации определений и теорем в теории графов] (* <- lang_ru;; *);;
+		-> [Trivial graphs can be used to illustrate definitions and theorems in graph theory] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Тривиальные графы в теории графов)] (* <- lang_ru;; *);
+		[Stat. (Trivial graphs in graph theory)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_theory
+	};;
+*);;
+
+statement -> statement_of_trivial_graph_with_self_loop (*
+	-> rrel_key_sc_element: concept_trivial_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тривиальный граф может содержать петлю, соединяющую его единственную вершину] (* <- lang_ru;; *);;
+		-> [Trivial graph can have a self-loop connecting its only vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Тривиальный граф с петлей)] (* <- lang_ru;; *);
+		[Stat. (Trivial graph with a self-loop)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_loop;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_trivial_graph_and_connected_components (*
+	-> rrel_key_sc_element: concept_trivial_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Тривиальный граф является связным графом, так как он состоит только из одной вершины] (* <- lang_ru;; *);;
+		-> [Trivial graph is a connected graph, since it consists of a single vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Связность тривиального графа)] (* <- lang_ru;; *);
+		[Stat. (Connectivity of trivial graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_connected_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph_algorithm;
+	concept_graph_theory;
+	concept_vertex;
+	concept_connected_graph;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_loop;
+	rrel_vertex;
+	rrel_vertex;;

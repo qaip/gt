@@ -1,0 +1,50 @@
+ru: мультиграф
+en: multigraph
+
+definition:
+  ru:
+    Граф, у которого существует хотя бы одна пара вершин, соединяемых кратными
+    ребрами или кратными дугами
+  en:
+    Graph that has at least one pair of vertices connected by multiple edges or
+    multiple arcs
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      arc
+    rrels: |
+      vertex
+      edge
+      arc
+    nrels: |
+      multiple_edges
+      multiple_arcs
+
+statement:
+  wikipedia_glossary_multigraph_definition:
+    title:
+      ru: Определение мультиграфа из глоссария Википедии по теории графов
+      en: Wikipedia glossary multigraph definition
+    ru:
+      Мультиграфом является граф, в котором в котором может быть пара вершин,
+      которая соединена более чем одним ребром, либо более чем двумя
+      однонаправленными дугами
+    en:
+      A multigraph is a graph in which there can be a pair of vertices that are
+      connected by more than one edge, or more than two arcs in same directions
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+        arc
+      rrels: |
+        vertex
+        edge
+        arc
+
+subclass:
+    - directed_multigraphs
+    - undirected_multigraphs

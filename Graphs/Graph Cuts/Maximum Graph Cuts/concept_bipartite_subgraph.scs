@@ -1,0 +1,33 @@
+concept_bipartite_subgraph
+=> nrel_main_idtf:
+	[двудольный подграф] (* <- lang_ru;; *);
+	[bipartite subgraph] (* <- lang_en;; *);;
+
+definition -> definition_of_bipartite_subgraph (*
+	-> rrel_key_sc_element: concept_bipartite_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подграф графа, который можно разбить на две непересекающиеся независимые вершинные множества. Вершины каждого множества не соединены ребрами между собой, но могут быть соединены ребрами только с вершинами из другого множества] (* <- lang_ru;; *);;
+		-> [A bipartite subgraph of a graph is a subgraph that can be partitioned into two non-overlapping independent vertex sets. The vertices of each set are not connected by edges between themselves, but they can be connected by edges only to vertices in the other set] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (двудольный подграф)] (* <- lang_ru;; *);
+		[Def. (bipartite subgraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_independent_set;
+		concept_partition
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_independent_set;
+	concept_partition;;

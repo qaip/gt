@@ -1,0 +1,52 @@
+concept_directed_multigraph
+=> nrel_main_idtf:
+	[ориентированный мультиграф] (* <- lang_ru;; *);
+	[directed multigraph] (* <- lang_en;; *);;
+
+definition -> definition_of_directed_multigraph (*
+	-> rrel_key_sc_element: concept_directed_multigraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф, в котором разрешены кратные дуги, то есть дуги, имеющие те же начальные и конечные вершины] (* <- lang_ru;; *);;
+		-> [A directed graph that allows multiple arcs, wich means arcs having the same start and end vertices, between the same pair of vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ориентированный мультиграф)] (* <- lang_ru;; *);
+		[Def. (directed multigraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_vertex;
+		rrel_vertex;
+		nrel_multiple_arcs
+	};;
+*);;
+
+statement -> statement_of_directed_multigraphs_and_hypergraphs (*
+	-> rrel_key_sc_element: concept_directed_multigraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированные мультиграфы могут быть рассмотрены как обобщение ориентированных гиперграфов] (* <- lang_ru;; *);;
+		-> [Directed multigraphs can be viewed as a generalization of directed hypergraphs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Ориентированные мультиграфы и гиперграфы)] (* <- lang_ru;; *);
+		[Stat. (Directed Multigraphs and Hypergraphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_hypergraph
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_graph;
+	concept_vertex;
+	concept_directed_hypergraph;;
+
+sc_node_norole_relation ->
+	nrel_multiple_arcs;;
+
+sc_node_role_relation ->
+	rrel_vertex;;
