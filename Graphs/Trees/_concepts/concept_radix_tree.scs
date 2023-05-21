@@ -33,12 +33,12 @@ statement -> statement_of_radix_tree_search_theorem (*
 		[Stat. (Radix tree search theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_radix_tree;
-		concept_tree
+		concept_tree;
+		concept_time_complexity
 	};;
 *);;
 
 sc_node_class ->
 	concept_tree;
-	concept_radix_tree;
-	concept_tree;;
+	concept_tree;
+	concept_time_complexity;;

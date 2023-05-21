@@ -18,7 +18,8 @@ definition -> definition_of_tree_depth (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_tree;
-		concept_forest
+		concept_forest;
+		rrel_vertex
 	};;
 *);;
 
@@ -51,4 +52,5 @@ sc_node_class ->
 	concept_tree_root;;
 
 sc_node_role_relation ->
+	rrel_vertex;
 	rrel_vertex;;

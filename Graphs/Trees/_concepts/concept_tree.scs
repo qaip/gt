@@ -310,7 +310,8 @@ statement -> statement_of_centroid_theorem (*
 	=> nrel_using_constants: {
 		concept_tree_node;
 		concept_subtree;
-		concept_centroid_tree
+		concept_centroid_tree;
+		nrel_subtree
 	};;
 *);;
 
@@ -392,6 +393,7 @@ sc_node_norole_relation ->
 	nrel_tree_node_ancestor;
 	nrel_lowest_common_ancestor;
 	nrel_deepest_tree_node;
+	nrel_subtree;
 	nrel_pre_order_tree_traversal;
 	nrel_in_order_tree_traversal;
 	nrel_post_order_tree_traversal;;
