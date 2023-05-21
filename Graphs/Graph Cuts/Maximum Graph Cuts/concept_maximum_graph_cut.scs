@@ -1,88 +1,54 @@
 concept_maximum_graph_cut
 => nrel_main_idtf:
-	[взвешенный максимальный разрез] (* <- lang_ru;; *);
-	[weighted maximum cut] (* <- lang_en;; *);;
+	[максимальный разрез графа] (* <- lang_ru;; *);
+	[maximum graph cut] (* <- lang_en;; *);;
 
 definition -> definition_of_maximum_graph_cut (*
 	-> rrel_key_sc_element: concept_maximum_graph_cut;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Алгоритм, который используется для разделения графа на две части в соответствии с весами его ребер, таким образом, чтобы суммарный вес ребер между двумя частями был максимальным] (* <- lang_ru;; *);;
-		-> [Weighted maximum cut is an algorithm used to partition a graph into two parts according to the weights of its edges, such that the total weight of the edges between the two parts is maximum] (* <- lang_en;; *);;
+		-> [Разрез, размер которого не меньше размера любого другого разреза. То есть это разбиение вершин графов на два дополнительных множества S и T, такое, что количество ребер между S и T равно возможный] (* <- lang_ru;; *);;
+		-> [A maximum cut is a cut whose size is at least the size of any other cut. That is, it is a partition of the graphs vertices into two complementary sets S and T, such that the number of edges between S and T is as large as possible] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (взвешенный максимальный разрез)] (* <- lang_ru;; *);
-		[Def. (weighted maximum cut)] (* <- lang_en;; *);;
+		[Опр. (максимальный разрез графа)] (* <- lang_ru;; *);
+		[Def. (maximum graph cut)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_edge;
-		concept_partition;
-		concept_graph_algorithm;
-		rrel_edge
+		concept_vertex;
+		concept_graph_cut;
+		rrel_edge;
+		rrel_vertex
 	};;
 *);;
 
-statement -> statement_of_weighted_max_cut_usage (*
+statement -> statement_of_finding_max_cut (*
 	-> rrel_key_sc_element: concept_maximum_graph_cut;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Взвешенный максимальный разрез графа используется в различных областях, таких как машинное обучение и биоинформатика, для кластеризации и анализа данных, а также в задачах оптимизации и теории графов] (* <- lang_ru;; *);;
-		-> [Weighted maximum cut is used in various fields such as machine learning and bioinformatics for data clustering and analysis, community detection, as well as in optimization problems and graph theory] (* <- lang_en;; *);;
+		-> [Нахождение максимального разреза графа является отдельной задачей] (* <- lang_ru;; *);;
+		-> [Finding such a cut is known as the max-cut problem] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Использование взвешенного максимального разреза)] (* <- lang_ru;; *);
-		[Stat. (Usage of weighted maximum cut)] (* <- lang_en;; *);;
+		[Утв. (Нахождение макимального разреза)] (* <- lang_ru;; *);
+		[Stat. (Finding max cut)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_machine_learning;
-		concept_bioinformatics;
-		concept_data_clustering;
-		concept_community_detection;
-		concept_optimization;
-		concept_graph_theory;
-		concept_graph_cut;
-		concept_graph_algorithm
-	};;
-*);;
-
-statement -> statement_of_weighted_max_cut_algorithms (*
-	-> rrel_key_sc_element: concept_maximum_graph_cut;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Существуют различные алгоритмы для решения задачи взвешенного максимального разреза, такие как алгоритмы Каргера-Карпа и Фидук-Эдмондса, а также мультистартовые алгоритмы и методы декомпозиции. Некоторые из этих алгоритмов могут работать эффективно только для особых классов графов, например, для двудольных графов] (* <- lang_ru;; *);;
-		-> [There are various algorithms for solving the weighted maximum cut problem, such as the Karger-Karp and Fiduccia-Mattheyses algorithms, as well as multi-start algorithms and decomposition methods. Some of these algorithms may work efficiently only for special classes of graphs, for example, for bipartite graphs] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Алгоритмы взвешенного максимального разреза)] (* <- lang_ru;; *);
-		[Stat. (Algorithms for weighted maximum cut)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph_algorithm;
-		concept_graph_cut;
-		concept_bipartite_graph
+		concept_max_cut_problem
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
 	concept_edge;
-	concept_partition;
-	concept_graph_algorithm;
-	concept_machine_learning;
-	concept_bioinformatics;
-	concept_data_clustering;
-	concept_community_detection;
-	concept_optimization;
-	concept_graph_theory;
+	concept_vertex;
 	concept_graph_cut;
-	concept_graph_algorithm;
-	concept_graph_algorithm;
-	concept_graph_cut;
-	concept_bipartite_graph;;
+	concept_max_cut_problem;;
 
 sc_node_role_relation ->
-	rrel_edge;;
+	rrel_edge;
+	rrel_vertex;;
