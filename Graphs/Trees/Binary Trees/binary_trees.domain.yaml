@@ -10,6 +10,5 @@ concepts: |
   binary_search_tree
 
 nrels: |
-  sibling_node
-  leaf_descendant
-
+  left_descendant
+  right_descendant

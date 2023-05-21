@@ -1,5 +1,6 @@
 ru: бинарное дерево поиска
 en: binary search tree
+
 definition:
   ru:
     Бинарное дерево, где все левые потомки узла имеют меньшее значение элемента,
@@ -13,7 +14,8 @@ definition:
     concepts: |
       graph
       vertex
-      left_descendant
-      right_descendant
     rrels: |
       vertex
+    nrels: |
+      left_descendant
+      right_descendant
