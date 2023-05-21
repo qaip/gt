@@ -18,7 +18,8 @@ definition -> definition_of_directed_hypergraph (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_hypegraph_edge;
-		rrel_vertex
+		rrel_vertex;
+		rrel_hypergraph_edge
 	};;
 *);;
 
@@ -45,4 +46,5 @@ sc_node_class ->
 	concept_directed_graphs;;
 
 sc_node_role_relation ->
-	rrel_vertex;;
+	rrel_vertex;
+	rrel_hypergraph_edge;;

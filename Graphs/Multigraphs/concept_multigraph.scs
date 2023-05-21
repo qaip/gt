@@ -3,10 +3,10 @@ concept_multigraph
 	[мультиграф] (* <- lang_ru;; *);
 	[multigraph] (* <- lang_en;; *);
 
-=> nrel_subdividing: {
-	concept_directed_multigraphs;
-	concept_undirected_multigraphs
-};;
+
+=> nrel_inclusion:
+concept_directed_multigraphs;
+concept_undirected_multigraphs;;
 
 definition -> definition_of_multigraph (*
 	-> rrel_key_sc_element: concept_multigraph;;
