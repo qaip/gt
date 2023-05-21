@@ -20,8 +20,8 @@ definition:
 statement:
   bt_representation:
     title:
-      ru: изображение бинарного дерева
-      en: bt representation
+      ru: Изображение бинарного дерева
+      en: Binary tree representation
     ru:
       Бинарное дерево удобно изображать в виде рисунка, состоящего из узлов и
       связей между ними. Каждый узел может иметь не более двух потомков, и
