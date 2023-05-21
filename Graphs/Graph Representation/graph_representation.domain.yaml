@@ -4,11 +4,10 @@ ru: представления графов
 parent: graphs
 
 max: |
-  graph
+  graph_representation
 
 concepts: |
   adjacency_list
-  graph_representation
   incidence_list
   adjacency_matrix
   incidence_matrix

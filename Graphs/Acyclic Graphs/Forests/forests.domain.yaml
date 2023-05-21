@@ -7,7 +7,6 @@ max: |
   forest
 
 concepts: |
-  forest
   polyforest
   pseudoforest
   random_forest

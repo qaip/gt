@@ -4,7 +4,7 @@ ru: свойств графов
 parent: graphs
 
 max: |
-  graph
+  graph_property
 
 concepts: |
   graph_property

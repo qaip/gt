@@ -5,6 +5,7 @@ parent: graphs
 
 children: |
   forests
+  trees
 
 max: |
   acyclic_graph
