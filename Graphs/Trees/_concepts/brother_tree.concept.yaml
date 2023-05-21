@@ -12,6 +12,8 @@ definition:
     concepts: |
       binary_tree
       vertex
+    rrels: |
+      vertex
 
 statement:
   vertex_level_explanation:
@@ -36,11 +38,11 @@ statement:
       concepts: |
         vertex
         path_length
-        root
+        tree_root
         leaf
       rrels: |
         vertex
-        root
+        tree_root
         leaf
 
   brother_of_vertex_explanation:

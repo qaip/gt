@@ -3,11 +3,11 @@ en: aa-tree
 
 definition:
   ru:
-    аа-деревом является сбалансированное двоичное дерево поиска, являющееся
+    Аа-деревом является сбалансированное двоичное дерево поиска, являющееся
     разновидностью красно-чёрного дерева, для которого вводятся дополнительные
     условия
   en:
-    aa-tree is a balanced binary search tree, which is a kind of red-black tree
+    Aa-tree is a balanced binary search tree, which is a kind of red-black tree
     with additional conditions
   using:
     concepts: |

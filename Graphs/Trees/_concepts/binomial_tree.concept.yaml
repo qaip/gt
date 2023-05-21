@@ -25,11 +25,11 @@ statement:
         tree
         vertex
         path_length
-        root
+        tree_root
         leaf
       rrels: |
         vertex
-        root
+        tree_root
         leaf
 
   binomial_tree_defining_way:
@@ -56,12 +56,12 @@ statement:
       concepts: |
         tree
         path_length
-        root
+        tree_root
         leaf
         vertex
       nrels: |
         tree_descendant
       rrels: |
         vertex
-        root
+        tree_root
         leaf

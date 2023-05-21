@@ -31,6 +31,7 @@ statement:
       where n is the number of elements in the tree
     using:
       concepts: |
+        tree
         time_complexity
         searching
 
