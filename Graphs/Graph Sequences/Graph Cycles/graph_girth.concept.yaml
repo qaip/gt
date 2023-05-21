@@ -1,0 +1,23 @@
+ru: длина минимального цикла графа
+en: graph girth
+
+definition:
+  ru: Длина минимального цикла графа
+  en: The length of the shortest cycle in the graph
+  using:
+    concepts: |
+      graph_cycle
+      graph
+
+statement:
+  graph_girth_exists:
+    title:
+      ru: Свойства обхвата графа
+      en: Properties of graph girth
+    ru: Обхват графа всегда меньше, чем его диаметр
+    en: he girth of a graph is always less than or equal to its diameter
+    using:
+      concepts: |
+        graph
+      nrels: |
+        graph_diameter

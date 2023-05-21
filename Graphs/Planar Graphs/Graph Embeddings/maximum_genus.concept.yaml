@@ -1,0 +1,10 @@
+en: maximum genus
+ru: максимальный род
+
+definition:
+  ru: Максимальный род среди всех его вложений
+  en: The maximum genus among all of its embeddings
+  using:
+    concepts: |
+      graph_embedding
+      genus
