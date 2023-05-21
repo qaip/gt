@@ -19,7 +19,8 @@ definition -> definition_of_minimum_graph_cut (*
 		concept_graph;
 		concept_edge;
 		concept_partition;
-		rrel_algorithm
+		concept_graph_algorithm;
+		rrel_edge
 	};;
 *);;
 
@@ -27,7 +28,8 @@ definition -> definition_of_minimum_graph_cut (*
 sc_node_class ->
 	concept_graph;
 	concept_edge;
-	concept_partition;;
+	concept_partition;
+	concept_graph_algorithm;;
 
 sc_node_role_relation ->
-	rrel_algorithm;;
+	rrel_edge;;
