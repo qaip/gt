@@ -11,7 +11,8 @@ concept_cyclic_graph;
 concept_eulerian_cycle;
 concept_basic_cycle;
 concept_minimum_weight_cycle;
-concept_cycle_length;;
+concept_cycle_length;
+concept_cycle_weight;;
 
 definition -> definition_of_graph_cycle (*
 	-> rrel_key_sc_element: concept_graph_cycle;;

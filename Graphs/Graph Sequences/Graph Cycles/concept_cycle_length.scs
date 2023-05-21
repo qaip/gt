@@ -72,7 +72,8 @@ statement -> statement_of_cycle_detection_theorem (*
 
 	=> nrel_using_constants: {
 		concept_graph_cycle;
-		concept_graph
+		concept_graph;
+		concept_depth_traversal
 	};;
 *);;
 
@@ -84,7 +85,8 @@ sc_node_class ->
 	concept_graph_cycle;
 	concept_graph;
 	concept_graph_cycle;
-	concept_graph;;
+	concept_graph;
+	concept_depth_traversal;;
 
 sc_node_role_relation ->
 	rrel_edge;;
