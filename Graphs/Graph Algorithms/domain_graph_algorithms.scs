@@ -4,7 +4,7 @@ section_subject_domain_of_graph_algorithms
 
 => nrel_main_idtf:
 	[Раздел. Предметная область алгоритмов на графах] (* <- lang_ru;; *);
-	[Section. Subject domain of graph alhorithms] (* <- lang_en;; *);
+	[Section. Subject domain of graph algorithms] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_graph_traversal;
@@ -25,7 +25,7 @@ section_subject_domain_of_graph_algorithms=[*
 	<- subject_domain;
 	=> nrel_main_idtf:
 		[Предметная область алгоритмов на графах] (* <- lang_ru;; *);
-		[Subject Domain of graph alhorithms] (* <- lang_en;; *);
+		[Subject Domain of graph algorithms] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
 		concept_graph_algorithm;

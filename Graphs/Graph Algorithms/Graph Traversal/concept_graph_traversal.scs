@@ -48,7 +48,7 @@ statement -> statement_of_statement_about_graph_traversal_use (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_graph;
-		concept_graph_algorithms;
+		concept_graph_algorithm;
 		rrel_vertex
 	};;
 *);;
@@ -77,7 +77,7 @@ sc_node_class ->
 	concept_vertex;
 	concept_vertex;
 	concept_graph;
-	concept_graph_algorithms;
+	concept_graph_algorithm;
 	concept_depth_traversal;
 	concept_breadth_traversal;;
 
