@@ -1,0 +1,12 @@
+en: graph embedding
+ru: вложений графов
+
+parent: planar_graphs
+
+max: |
+  graph_embedding
+
+concepts: |
+  genus
+  eulers_genus
+  maximum_genus
