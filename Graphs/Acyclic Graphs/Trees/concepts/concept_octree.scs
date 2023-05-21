@@ -1,0 +1,52 @@
+concept_octree
+=> nrel_main_idtf:
+	[октодерево] (* <- lang_ru;; *);
+	[octree] (* <- lang_en;; *);;
+
+definition -> definition_of_octree (*
+	-> rrel_key_sc_element: concept_octree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево, используемое для поиска объектов в трехмерном пространстве] (* <- lang_ru;; *);;
+		-> [A tree used to search for objects in three-dimensional space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (октодерево)] (* <- lang_ru;; *);
+		[Def. (octree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_octree_theorem (*
+	-> rrel_key_sc_element: concept_octree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Октодерево может быть использовано для быстрого поиска объектов в трехмерном пространстве] (* <- lang_ru;; *);;
+		-> [Octrees can be used for efficient object search in three-dimensional space] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об октодеревьях)] (* <- lang_ru;; *);
+		[Stat. (Octree theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_vertex;
+	concept_tree;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;;

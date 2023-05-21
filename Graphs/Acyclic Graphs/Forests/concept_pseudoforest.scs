@@ -1,0 +1,29 @@
+concept_pseudoforest
+=> nrel_main_idtf:
+	[псевдолес] (* <- lang_ru;; *);
+	[pseudoforest] (* <- lang_en;; *);;
+
+definition -> definition_of_pseudoforest (*
+	-> rrel_key_sc_element: concept_pseudoforest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, состоящий из нескольких компонентов связности, каждый из которых является лесом] (* <- lang_ru;; *);;
+		-> [A graph consisting of several connected components, each of which is a forest] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (псевдолес)] (* <- lang_ru;; *);
+		[Def. (pseudoforest)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_connected_component;
+		concept_forest
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_connected_component;
+	concept_forest;;

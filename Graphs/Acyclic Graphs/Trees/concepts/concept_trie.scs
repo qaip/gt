@@ -1,0 +1,46 @@
+concept_trie
+=> nrel_main_idtf:
+	[бор] (* <- lang_ru;; *);
+	[trie] (* <- lang_en;; *);;
+
+definition -> definition_of_trie (*
+	-> rrel_key_sc_element: concept_trie;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Древовидная структура данных, используемая для хранения ассоциативных массивов] (* <- lang_ru;; *);;
+		-> [A tree-like data structure used to store associative arrays] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (бор)] (* <- lang_ru;; *);
+		[Def. (trie)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_data_structure;
+		concept_associative_array
+	};;
+*);;
+
+statement -> statement_of_theorem_time_complexity_of_trie (*
+	-> rrel_key_sc_element: concept_trie;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Бор может быть построен и использован для поиска элементов в O(m) времени, где m-длина искомой строки] (* <- lang_ru;; *);;
+		-> [A trie can be constructed and used for element search in O(m) time, where m is the length of the searched string] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о временной сложности бора)] (* <- lang_ru;; *);
+		[Stat. (Time complexity theorem of trie)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_string_search
+	};;
+*);;
+
+sc_node_class ->
+	concept_data_structure;
+	concept_associative_array;
+	concept_time_complexity;
+	concept_string_search;;
