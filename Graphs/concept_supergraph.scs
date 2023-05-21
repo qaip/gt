@@ -1,118 +1,92 @@
 concept_supergraph
 => nrel_main_idtf:
-	[суперграф] (* <- lang_ru;; *);
-	[supergraph] (* <- lang_en;; *);;
+	[неориентированный граф] (* <- lang_ru;; *);
+	[undirected graph] (* <- lang_en;; *);;
 
 definition -> definition_of_supergraph (*
 	-> rrel_key_sc_element: concept_supergraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграфом является любой граф содержащий данный] (* <- lang_ru;; *);;
-		-> [A supergraph is any graph containing a given graph] (* <- lang_en;; *);;
+		-> [Пусть V является непустым множеством. Неориентированным графом называется пара множеств V, E, где E является произвольным подмножеством декартова произведения множества V] (* <- lang_ru;; *);;
+		-> [Let V be a nonempty set. An undirected graph is called a pair V, E, where E is a arbitrary subset of graphic works of cartesian product V] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (суперграф)] (* <- lang_ru;; *);
-		[Def. (supergraph)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph
-	};;
-*);;
-
-statement -> statement_of_usage_supergraph (*
-	-> rrel_key_sc_element: concept_supergraph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Суперграфы широко используются в теории графов для решения различных задач] (* <- lang_ru;; *);;
-		-> [Supergraphs are widely used in graph theory to solve various problems and issues] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Использование в теории графов)] (* <- lang_ru;; *);
-		[Stat. (Usage in graph theory)] (* <- lang_en;; *);;
+		[Опр. (неориентированный граф)] (* <- lang_ru;; *);
+		[Def. (undirected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_theory;
-		concept_problems
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
-statement -> statement_of_supergraph_types (*
+statement -> statement_of_complement_graph_undirected_graph (*
 	-> rrel_key_sc_element: concept_supergraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграф может быть ориентированным или неориентированным, взвешенным или невзвешенным, простым или мультиграфом] (* <- lang_ru;; *);;
-		-> [A supergraph can be directed or undirected, weighted or unweighted, simple or multigraph] (* <- lang_en;; *);;
+		-> [Граф, содержащий все недостающие рёбра между вершинами исходного графа, которые не являются рёбрами этого графа] (* <- lang_ru;; *);;
+		-> [The complement of an undirected graph is a graph that contains all the missing edges between the vertices of the original graph that are not already edges of the graph] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Виды суперграфов)] (* <- lang_ru;; *);
-		[Stat. (Types of supergraphs)] (* <- lang_en;; *);;
+		[Утв. (Дополнение неориентированного графа)] (* <- lang_ru;; *);
+		[Stat. (Complement of an undirected graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_directed_graph;
-		concept_undirected_graph;
-		concept_weighted_graph;
-		concept_unweighted_graph;
-		concept_simple_graph;
-		concept_multigraph
+		concept_vertex;
+		concept_edge;
+		concept_complete_graph;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
-statement -> statement_of_connectedness_supergraph (*
+statement -> statement_of_connectedness_undirected_graph (*
 	-> rrel_key_sc_element: concept_supergraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграф связен, если любые две его вершины соединены путем] (* <- lang_ru;; *);;
-		-> [A supergraph is connected if any two of its vertices are connected by a path] (* <- lang_en;; *);;
+		-> [Неориентированный граф называется связным, если для каждой пары вершин графа существует путь, соединяющий эти вершины. Иначе граф называется несвязным] (* <- lang_ru;; *);;
+		-> [An undirected graph is connected if there is a path connecting each pair of vertices in the graph. Otherwise, the graph is called disconnected] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Связность суперграфов)] (* <- lang_ru;; *);
-		[Stat. (Connectedness of supergraphs)] (* <- lang_en;; *);;
+		[Утв. (Связность неориентированных графов)] (* <- lang_ru;; *);
+		[Stat. (Connectedness of undirected graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
+		concept_vertex;
+		concept_edge;
 		concept_graph_connectivity;
-		concept_graph_path
-	};;
-*);;
-
-statement -> statement_of_usage_example_supergraph (*
-	-> rrel_key_sc_element: concept_supergraph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Один из примеров использования суперграфа является поиск путей в графе, который содержит множество других графов] (* <- lang_ru;; *);;
-		-> [One example usage of a supergraph is to find paths in a graph that contains a set of other graphs] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Пример использования суперграфа)] (* <- lang_ru;; *);
-		[Stat. (Supergraph example usage)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_graph_path
+		concept_graph_path;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
+	concept_vertex;
+	concept_edge;
 	concept_graph;
-	concept_graph_theory;
-	concept_problems;
+	concept_vertex;
+	concept_edge;
+	concept_complete_graph;
 	concept_graph;
-	concept_directed_graph;
-	concept_undirected_graph;
-	concept_weighted_graph;
-	concept_unweighted_graph;
-	concept_simple_graph;
-	concept_multigraph;
-	concept_graph;
+	concept_vertex;
+	concept_edge;
 	concept_graph_connectivity;
-	concept_graph_path;
-	concept_graph;
 	concept_graph_path;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
