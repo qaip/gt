@@ -32,4 +32,4 @@ statement:
       rrels: |
         vertex
       nrels: |
-        adjacent
+        vertex_adjacency

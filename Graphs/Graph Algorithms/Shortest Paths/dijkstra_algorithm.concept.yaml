@@ -3,21 +3,18 @@ en: dijkstra algorithm
 
 definition:
   ru:
-    Графовый алгоритм, изобретённый нидерландским
-    учёным Эдсгером Дейкстрой в 1959 году. Находит кратчайшие пути от одной из
-    вершин графа до всех остальных. Алгоритм работает только для графов без
-    рёбер отрицательного веса
+    Графовый алгоритм, изобретённый нидерландским учёным Эдсгером Дейкстрой в
+    1959 году. Находит кратчайшие пути от одной из вершин графа до всех
+    остальных. Алгоритм работает только для графов без рёбер отрицательного веса
   en:
-    Graph algorithm invented by the Dutch scientist
-    Edsger Dijkstra in 1959. Finds the shortest paths from one of the vertices
-    of the graph to all the others. The algorithm works only for graphs without
-    edges of negative weight
+    Graph algorithm invented by the Dutch scientist Edsger Dijkstra in 1959.
+    Finds the shortest paths from one of the vertices of the graph to all the
+    others. The algorithm works only for graphs without edges of negative weight
   using:
     concepts: |
       graph
       vertex
       edge
-      edge_weight
       shortest_path
       graph_algorithm
     rrels: |
@@ -25,6 +22,7 @@ definition:
       edge
     nrels: |
       shortest_path
+      rib_weight
 
 statement:
   dijkstra_algorithm_explanation:

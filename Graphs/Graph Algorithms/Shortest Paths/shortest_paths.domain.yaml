@@ -4,7 +4,7 @@ en: shortest paths
 parent: graph_algorithms
 
 max: |
-  shortest_path
+  shortest_path_problem
 
 concepts: |
   dijkstra_algorithm

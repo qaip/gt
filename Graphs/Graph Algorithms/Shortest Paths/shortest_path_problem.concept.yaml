@@ -3,11 +3,11 @@ en: shortest path problem
 
 definition:
   ru:
-    Задача поиска самого короткого
-    пути между двумя вершинами на графе, в которой минимизируется вес пути
+    Задача поиска самого короткого пути между двумя вершинами на графе, в
+    которой минимизируется вес пути
   en:
-    The problem of finding a path between two vertices
-    in a graph such that the path weight is minimized
+    The problem of finding a path between two vertices in a graph such that the
+    path weight is minimized
   using:
     concepts: |
       graph
@@ -16,7 +16,6 @@ definition:
       graph_path_weight
     rrels: |
       vertex
-      graph_path
 
 statement:
   shortest_path_demand:

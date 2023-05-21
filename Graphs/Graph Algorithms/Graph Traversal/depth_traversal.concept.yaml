@@ -3,13 +3,11 @@ en: depth traversal | depth-first traversal
 
 definition:
   ru:
-    Обход графа, при котором переход к следующей
-    вершине осуществляется только после обхода всех смежных с рассматриваемой
-    вершин
+    Обход графа, при котором переход к следующей вершине осуществляется только
+    после обхода всех смежных с рассматриваемой вершин
   en:
-    A graph traversal in which the transition to the
-    next vertex is carried out only after traversing all vertices adjacent to
-    the considered vertex
+    A graph traversal in which the transition to the next vertex is carried out
+    only after traversing all vertices adjacent to the considered vertex
   using:
     concepts: |
       graph_traversal

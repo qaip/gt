@@ -3,13 +3,12 @@ en: graph traversal
 
 definition:
   ru:
-    Процесс систематического просмотра всех ребер, дуг
-    или вершин графа с целью отыскания ребер, дуг или вершин, удовлетворяющих
-    некоторому условию
+    Процесс систематического просмотра всех ребер, дуг или вершин графа с целью
+    отыскания ребер, дуг или вершин, удовлетворяющих некоторому условию
   en:
-    The process of systematically looking through all the
-    edges, arcs or vertices of a graph in order to find edges, arcs or vertices
-    that satisfy some condition
+    The process of systematically looking through all the edges, arcs or
+    vertices of a graph in order to find edges, arcs or vertices that satisfy
+    some condition
   using:
     concepts: |
       edge
@@ -39,9 +38,10 @@ statement:
       concepts: |
         vertex
         graph
-        graph_algorithms
+        graph_algorithm
       rrels: |
         vertex
+
   statement_about_graph_traversal_division:
     title:
       ru: Разделение обходов графов

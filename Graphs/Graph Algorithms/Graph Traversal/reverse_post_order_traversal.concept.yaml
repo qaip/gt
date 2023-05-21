@@ -27,6 +27,6 @@ statement:
       concepts: |
         vertex
       nrels: |
-        adjacent
+        vertex_adjacency
       rrels: |
         vertex

@@ -3,11 +3,11 @@ en: graph algorithm
 
 definition:
   ru:
-    Последовательность шагов для перебора
-    вершин, поиска определенной вершины или пути между двумя заданными вершинами
+    Последовательность шагов для перебора вершин, поиска определенной вершины
+    или пути между двумя заданными вершинами
   en:
-    A sequence of steps for iterating over vertices,
-    finding a specific vertex, or a path between two given vertices
+    A sequence of steps for iterating over vertices, finding a specific vertex,
+    or a path between two given vertices
   using:
     concepts: |
       graph
