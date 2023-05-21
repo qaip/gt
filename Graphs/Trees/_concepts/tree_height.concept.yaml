@@ -14,6 +14,8 @@ definition:
       graph_path
     rrels: |
       vertex
+      leaf
+      tree_root
 
 statement:
   theorem_height_leaf:
@@ -26,8 +28,8 @@ statement:
       one
     using:
       concepts: |
-        tree_height
         vertex
         tree_root
       rrels: |
         vertex
+        tree_root
