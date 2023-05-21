@@ -9,6 +9,9 @@ definition:
       vertex
       tree
       forest
+    rrels: |
+      vertex
+      
 statement: 
   theorem_depth_leaf:
     title:

@@ -2,28 +2,33 @@ ru: полидерево
 en: polytree
 
 definition:
-  ru: Граф, который является ориентированным деревом, за исключением того, что
+  ru:
+    Граф, который является ориентированным деревом, за исключением того, что
     может быть несколько корней
   en: A graph that is a directed tree, except that there may be multiple roots
   using:
     concepts: |
       directed_graph
       tree
-      root
+      tree_root
+    rrels: |
+      tree_root
+
 statement:
   tree_structure_theorem:
     title:
       ru: Теорема о структуре полидерева
       en: Polytree structure theorem
-    ru: Всякое полидерево может быть получено из ориентированного дерева путем
-        добавления дополнительных ориентированных ребер
-    en: Every polytree can be obtained from a directed tree by adding additional
-        directed edges
+    ru:
+      Всякое полидерево может быть получено из ориентированного дерева путем
+      добавления дополнительных ориентированных ребер
+    en:
+      Every polytree can be obtained from a directed tree by adding additional
+      directed edges
     using:
       concepts: |
-        polytree
         directed_tree
-        directed_edge
+        arc
         edge
       rrels: |
         edge
