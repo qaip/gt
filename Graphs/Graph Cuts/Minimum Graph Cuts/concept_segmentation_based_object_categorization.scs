@@ -7,8 +7,8 @@ definition -> definition_of_segmentation_based_object_categorization (*
 	-> rrel_key_sc_element: concept_segmentation_based_object_categorization;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Сегментация основанная на категоризации объектов является процессом разделения изображения на сегменты, каждый из которых соответствует определенной категории объектов] (* <- lang_ru;; *);;
-		-> [Segmentation based object categorization is the process of dividing an image into segments, each of which corresponds to a specific category of objects] (* <- lang_en;; *);;
+		-> [Процесс разделения изображения на сегменты, каждый из которых соответствует определенной категории объектов] (* <- lang_ru;; *);;
+		-> [A process of dividing an image into segments, each of which corresponds to a specific category of objects] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -17,19 +17,13 @@ definition -> definition_of_segmentation_based_object_categorization (*
 
 	=> nrel_using_constants: {
 		concept_image;
-		concept_segmentation;
-		concept_object_categorization;
-		concept_graph_cut;
-		rrel_categorization
+		concept_cut;
+		concept_object
 	};;
 *);;
 
 
 sc_node_class ->
 	concept_image;
-	concept_segmentation;
-	concept_object_categorization;
-	concept_graph_cut;;
-
-sc_node_role_relation ->
-	rrel_categorization;;
+	concept_cut;
+	concept_object;;
