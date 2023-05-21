@@ -13,7 +13,7 @@ definition -> definition_of_hypergraph (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Граф, в котором рёбра, называемые гиперрёбрами или рёбрами гиперграфа, могут соединять более двух вершин] (* <- lang_ru;; *);;
-		-> [A graph in which edges, called hyperedges or hypergraph edges, may connect more than two nodes] (* <- lang_en;; *);;
+		-> [A graph in which edges, called hyperedges or hypergraph edges, may connect more than two vertices] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
