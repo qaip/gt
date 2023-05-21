@@ -13,10 +13,11 @@ definition:
   using:
     concepts: |
       directed_graph
-      multiple_arcs
       vertex
     rrels: |
       vertex
+    nrels: |
+      multiple_arcs
 
 statement:
   directed_multigraphs_and_hypergraphs:

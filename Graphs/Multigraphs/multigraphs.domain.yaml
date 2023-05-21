@@ -10,11 +10,11 @@ max: |
   multigraph
 
 concepts: |
-  multiple_edges
-  multiple_arcs
   directed_multigraph
   undirected_multigraph
 
 nrels: |
   edges_multiplicity
   arcs_multiplicity
+  multiple_edges
+  multiple_arcs

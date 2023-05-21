@@ -11,10 +11,11 @@ definition:
   using:
     concepts: |
       undirected_graph
-      multiple_edges
       vertex
     rrels: |
       vertex
+    nrels: |
+      multiple_edges
 
 statement:
   undirected_multigraphs_and_hypergraphs:

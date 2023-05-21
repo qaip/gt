@@ -14,12 +14,13 @@ definition:
       vertex
       edge
       arc
-      multiple_edges
-      multiple_arcs
     rrels: |
       vertex
       edge
       arc
+    nrels: |
+      multiple_edges
+      multiple_arcs
 
 statement:
   wikipedia_glossary_multigraph_definition:
