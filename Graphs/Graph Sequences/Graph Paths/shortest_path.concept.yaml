@@ -1,0 +1,41 @@
+ru: кратчайший путь
+en: shortest path
+
+definition:
+  ru: Путь в графе, имеющий наименьшую сумму весов рёбер
+  en: The path in a graph with the smallest sum of edge weights
+  using:
+    concepts: |
+      graph_path
+    nrels: |
+      rib_weight
+
+statement:
+  shortest_path_weight_theorem:
+    title:
+      ru: Теорема о кратчайшем взвешенном пути
+      en: Shortest weighted path theorem
+    ru: Алгоритм Дейкстры находит кратчайший путь во взвешенном графе
+    en: Dijkstras algorithm finds the shortest path in a weighted graph
+    using:
+      concepts: |
+        dijkstra_algorithm
+        weighted_graph
+
+  floyd_warshall_algorithm:
+    title:
+      ru: Алгоритм Флойда-Уоршелла
+      en: Floyd-Warshall algorithm
+    ru:
+      Алгоритм, находящий кратчайшие расстояния между всеми парами вершин в
+      графе
+    en:
+      An algorithm that finds the shortest distances between all pairs of
+      vertices in a graph
+    using:
+      concepts: |
+        floyd_warshall_algorithm
+        graph_path
+        vertex
+      rrels: |
+        vertex
