@@ -28,4 +28,5 @@ statement:
         tree_root
       rrels: |
         vertex
+        tree_root
         
