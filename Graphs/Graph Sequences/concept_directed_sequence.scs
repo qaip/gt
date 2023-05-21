@@ -22,6 +22,7 @@ definition -> definition_of_directed_sequence (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_edge;
+		concept_arc;
 		concept_graph_sequence;
 		rrel_vertex;
 		rrel_edge;
@@ -52,6 +53,7 @@ statement -> statement_of_directional_and_nondirectional_sequences (*
 sc_node_class ->
 	concept_vertex;
 	concept_edge;
+	concept_arc;
 	concept_graph_sequence;
 	concept_graph_sequence;
 	concept_directed_graph;

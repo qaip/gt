@@ -40,7 +40,6 @@ statement -> statement_of_spanning_route_existence_theorem (*
 		[Stat. (Spanning route existence theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_sequence;
 		concept_connected_graph
 	};;
 *);;
@@ -58,7 +57,6 @@ statement -> statement_of_spanning_route_uniqueness_theorem (*
 		[Stat. (Spanning route uniqueness theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_sequence;
 		concept_connected_graph
 	};;
 *);;
@@ -67,9 +65,7 @@ sc_node_class ->
 	concept_directed_graph;
 	concept_graph_sequence;
 	concept_vertex;
-	concept_graph_sequence;
 	concept_connected_graph;
-	concept_graph_sequence;
 	concept_connected_graph;;
 
 sc_node_role_relation ->
