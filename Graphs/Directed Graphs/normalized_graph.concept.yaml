@@ -1,0 +1,63 @@
+ru: нормализованный граф
+en: normalized graph
+
+definition:
+  ru: Ориентированный граф, в котором все вершины расположены на циклах
+  en: A directed graph in which all vertices lie on cycles
+  using:
+    concepts: |
+      directed_graph
+      graph_cycle
+      vertex
+    rrels: |
+      vertex
+
+statement:
+  theorem_hassler_whitney:
+    title:
+      ru: Теорема Хаслера-Уитни
+      en: Hassler-Whitney Theorem
+    ru:
+      Граф нормализован тогда и только тогда, когда каждый его блок нормализован
+    en: A graph is normalized if and only if each of its blocks is normalized
+    using:
+      concepts: |
+        normalized_graph
+      nrels: |
+        graph_block
+
+  theorem_bang_jensen:
+    title:
+      ru: Теорема Бэнга-Дженсена для нормализованных графов
+      en: Bang-Jensens Theorem for normalized graphs
+    ru:
+      Если у нормализованного графа существует вершина, имеющая ровно одно
+      входящее и одно исходящее ребро, то этот граф содержит гамильтонов цикл
+    en:
+      If a normalized graph contains a vertex with exactly one incoming and one
+      outgoing edge, then the graph contains a Hamiltonian cycle
+    using:
+      concepts: |
+        edge
+        vertex
+        hamiltonian_cycle
+      rrels: |
+        vertex
+        edge
+
+  theorem_moon:
+    title:
+      ru: Теорема Муна
+      en: Moons Theorem
+    ru:
+      Граф нормализован тогда и только тогда, когда для любой его пары вершин
+      существует единственный простой путь между ними
+    en:
+      A graph is normalized if and only if there is a unique simple path between
+      any pair of its vertices
+    using:
+      concepts: |
+        vertex
+        graph_path
+      rrels: |
+        vertex

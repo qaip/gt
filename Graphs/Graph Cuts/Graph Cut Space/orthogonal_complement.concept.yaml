@@ -1,0 +1,63 @@
+ru: ортогональное дополнение
+en: orthogonal complement
+
+definition:
+  ru:
+    Пусть V линейное пространство над полем F, W его линейное подпространство.
+    Ортогональным дополнением подпространства W называется множество всех
+    векторов из V, ортогональных каждому вектору из W
+  en:
+    Let V be a vector space over a field F, and let W be a subspace of V. The
+    orthogonal complement of W is the set of all vectors in V that are
+    orthogonal to every vector in W
+  using:
+    concepts: |
+      linear_space
+      field
+      vector
+      subspace
+      orthogonal
+    rrels: |
+      subspace
+      orthogonal
+
+statement:
+  properties_orthogonal_complement:
+    title:
+      ru: Свойства ортогонального дополнения
+      en: Properties of orthogonal complement
+    ru:
+      Ортогональное дополнение подпространства всегда является линейным
+      подпространством пространства, которому оно принадлежит. Однако, оно не
+      является замкнутым относительно прямой суммы подпространства и его
+      ортогонального дополнения
+    en:
+      The orthogonal complement of a subspace is always a linear subspace of the
+      space to which it belongs. However, it is not closed under direct sum of
+      the subspace and its orthogonal complement
+    using:
+      concepts: |
+        linear_space
+        vector
+        subspace
+        orthogonal
+      rrels: |
+        subspace
+        orthogonal
+
+  examples_orthogonal_complement:
+    title:
+      ru: Примеры ортогонального дополнения
+      en: Examples of orthogonal complement
+    ru:
+      Ортогональное дополнение к пространству всех диагональных матриц в
+      пространстве матриц размера n будет являться пространством всех матриц,
+      перпендикулярных этому пространству
+    en:
+      The orthogonal complement of the space of all diagonal matrices in the
+      space of matrices of size n will be the space of all matrices orthogonal
+      to this space
+    using:
+      concepts: |
+        matrix
+        space

@@ -14,16 +14,8 @@ max: |
   graph_cut_set
 
 concepts: |
-  minimum_cut
-  maximum_cut
-  cut_space
-  vector_space
+  maximum_graph_cut
+  minimum_graph_cut
+  graph_cut_space
   s_t_cut
-  bond
-  network_flow
-  max_flow_min_cut_theorem
-  max_cut_problem
-  graph_sparsest_cuts
-
-nrels: |
-  graph_cut
+  sparsest_cuts

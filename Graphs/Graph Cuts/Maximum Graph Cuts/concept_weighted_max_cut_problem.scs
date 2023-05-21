@@ -1,0 +1,138 @@
+concept_weighted_max_cut_problem
+=> nrel_main_idtf:
+	[задача максимального взвешенного разреза графа] (* <- lang_ru;; *);
+	[weighted maximum graph cut problem] (* <- lang_en;; *);;
+
+definition -> definition_of_weighted_max_cut_problem (*
+	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального взвешенного разреза графа заключается в поиске такого разбиения вершин графа на две непересекающиеся части, что суммарное значение весов ребер, идущих между вершинами из разных частей, максимально] (* <- lang_ru;; *);;
+		-> [The weighted maximum graph cut problem consists in finding a partition of the vertices in a graph into two non-overlapping parts such that the sum of the weights of the edges connecting vertices in different parts is maximized] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (задача максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Def. (weighted maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_partition;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_weighted_max_cut_usage (*
+	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального взвешенного разреза графа используется в задачах оптимизации и теории графов, а также в биоинформатике и машинном обучении] (* <- lang_ru;; *);;
+		-> [The weighted maximum graph cut problem is used in optimization problems and graph theory, as well as in bioinformatics and machine learning] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Usage of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_partition;
+		concept_bioinformatics;
+		concept_machine_learning;
+		rrel_graph;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_weighted_max_cut_algorithms (*
+	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Существует несколько алгоритмов для решения задачи максимального взвешенного разреза графа, включая алгоритмы Каргера-Карпа и Фидук-Эдмондса, которые находят максимальный разрез графа за полиномиальное время] (* <- lang_ru;; *);;
+		-> [There are several algorithms for solving the weighted maximum graph cut problem, including the Karger-Karp and Fiduccia-Mattheyses algorithms, which find the maximum graph cut in polynomial time] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритмы задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Algorithms for weighted maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_algorithm;
+		concept_karger_karp_algorithm;
+		concept_fiduccia_mattheyses_algorithm
+	};;
+*);;
+
+statement -> statement_of_weighted_max_cut_applications (*
+	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального взвешенного разреза графа используется в различных областях, таких как биоинформатика и машинное обучение, для кластеризации данных и выделения сообществ] (* <- lang_ru;; *);;
+		-> [The weighted maximum graph cut problem is used in various fields such as bioinformatics and machine learning for data clustering and community detection] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Приложения задачи максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Applications of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_bioinformatics;
+		concept_machine_learning;
+		concept_data_clustering;
+		concept_community_detection
+	};;
+*);;
+
+statement -> statement_of_weighted_max_cut_complexity (*
+	-> rrel_key_sc_element: concept_weighted_max_cut_problem;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Задача максимального взвешенного разреза графа является NP-трудной, что означает, что в наихудшем случае время, необходимое для решения этой задачи, растет экспоненциально с размером входных данных] (* <- lang_ru;; *);;
+		-> [The weighted maximum graph cut problem is NP-hard, which means that in the worst case, the time required to solve this problem grows exponentially with the size of the input data] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сложность проблемы максимального взвешенного разреза графа)] (* <- lang_ru;; *);
+		[Stat. (Complexity of weighted maximum graph cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_computational_complexity_theory;
+		concept_graph;
+		concept_graph_cut
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_partition;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_partition;
+	concept_bioinformatics;
+	concept_machine_learning;
+	concept_graph_algorithm;
+	concept_karger_karp_algorithm;
+	concept_fiduccia_mattheyses_algorithm;
+	concept_bioinformatics;
+	concept_machine_learning;
+	concept_data_clustering;
+	concept_community_detection;
+	concept_computational_complexity_theory;
+	concept_graph;
+	concept_graph_cut;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_graph;
+	rrel_vertex;
+	rrel_edge;;

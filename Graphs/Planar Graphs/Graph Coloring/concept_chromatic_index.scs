@@ -1,0 +1,170 @@
+concept_chromatic_index
+=> nrel_main_idtf:
+	[хроматический индекс] (* <- lang_ru;; *);
+	[chromatic index] (* <- lang_en;; *);;
+
+definition -> definition_of_chromatic_index (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Минимальное количество цветов, необходимых для реберной раскраски графа] (* <- lang_ru;; *);;
+		-> [A minimum number of colors required for an edge coloring of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (хроматический индекс)] (* <- lang_ru;; *);
+		[Def. (chromatic index)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge_coloring
+	};;
+*);;
+
+statement -> statement_of_chromatic_index_property (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс графа не меньше его максимальной степени ребра] (* <- lang_ru;; *);;
+		-> [The chromatic index of a graph is not less than its maximum edge degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства хроматического индекса)] (* <- lang_ru;; *);
+		[Stat. (Properties of chromatic index)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge_degree;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_vizing_theorem (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс графа не больше, чем на 1 превышает его максимальную степень ребра] (* <- lang_ru;; *);;
+		-> [The chromatic index of a graph is at most one more than its maximum edge degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Визинга)] (* <- lang_ru;; *);
+		[Stat. (Vizings theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge_degree;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_bipartite_chromatic_index (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс двудольного графа равен его максимальной степени ребра] (* <- lang_ru;; *);;
+		-> [The chromatic index of a bipartite graph is equal to its maximum edge degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Хроматический индекс двудольного графа)] (* <- lang_ru;; *);
+		[Stat. (Chromatic index of bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge_degree;
+		concept_bipartite_graph
+	};;
+*);;
+
+statement -> statement_of_chromatic_index_planar_graph (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс любого планарного графа не превосходит 4] (* <- lang_ru;; *);;
+		-> [The chromatic index of any planar graph is at most 4] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Хроматический индекс планарного графа)] (* <- lang_ru;; *);
+		[Stat. (Chromatic index of planar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph;
+		concept_chromatic_index
+	};;
+*);;
+
+statement -> statement_of_chromatic_index_upper_bound (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс графа не больше, чем максимальная степень его вершины] (* <- lang_ru;; *);;
+		-> [The chromatic index of a graph is at most its maximum vertex degree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Верхняя оценка хроматического индекса)] (* <- lang_ru;; *);
+		[Stat. (Upper bound for chromatic index)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex_degree;
+		concept_edge_degree;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_chromatic_index_lower_bound (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс графа не меньше, чем максимальная степень его вершины, деленная на два, округленная вверх] (* <- lang_ru;; *);;
+		-> [The chromatic index of a graph is at least the maximum vertex degree divided by two, rounded up] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Нижняя оценка хроматического индекса)] (* <- lang_ru;; *);
+		[Stat. (Lower bound for chromatic index)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex_degree;
+		concept_edge_degree;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_chromatic_index_odd_cycle (*
+	-> rrel_key_sc_element: concept_chromatic_index;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Хроматический индекс связного графа с нечётным циклом не меньше трёх] (* <- lang_ru;; *);;
+		-> [The chromatic index of a connected graph with an odd cycle is at least 3] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Хроматический индекс графа с нечётным циклом)] (* <- lang_ru;; *);
+		[Stat. (Chromatic index of graph with odd cycle)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_chromatic_index;
+		concept_odd_cycle
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge_coloring;
+	concept_edge_degree;
+	concept_graph;
+	concept_edge_degree;
+	concept_graph;
+	concept_edge_degree;
+	concept_bipartite_graph;
+	concept_planar_graph;
+	concept_chromatic_index;
+	concept_vertex_degree;
+	concept_edge_degree;
+	concept_graph;
+	concept_vertex_degree;
+	concept_edge_degree;
+	concept_graph;
+	concept_chromatic_index;
+	concept_odd_cycle;;

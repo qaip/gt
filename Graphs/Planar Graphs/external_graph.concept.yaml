@@ -7,4 +7,4 @@ definition:
   using:
     concepts: |
       external_planar_graph
-      external_graph
+      graph

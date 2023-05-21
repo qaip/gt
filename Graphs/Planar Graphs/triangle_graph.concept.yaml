@@ -11,11 +11,13 @@ definition:
   using:
     concepts: |
       unoriented_graph
-      triangle_graph
       planar_graph
       graph
       edge
       vertex
+    rrels: |
+      vertex
+      edge
 
 statement:
   triangle_graph_property:
@@ -32,7 +34,6 @@ statement:
     using:
       concepts: |
         chromatic_number
-        triangle_graph
         chromatic_index
         graph_girth
         graph_radius
@@ -40,3 +41,36 @@ statement:
       nrels: |
         vertex_connectivity
         edge_connectivity
+
+  triangle_graph_coloring:
+    title:
+      ru: Раскраска треугольного графа
+      en: Coloring of a triangle graph
+    ru: Треугольный граф можно раскрасить тремя цветами
+    en: A triangle graph can be colored with three colors
+    using:
+      concepts: |
+        graph_coloring
+
+  triangle_graph_subgraphs:
+    title:
+      ru: Подграфы треугольного графа
+      en: Subgraphs of a triangle graph
+    ru: Любой подграф треугольного графа является планарным графом
+    en: Any subgraph of a triangle graph is a planar graph
+    using:
+      concepts: |
+        planar_graph
+      nrels: |
+        subgraph
+
+  triangle_graph_embedding:
+    title:
+      ru: Вложение треугольного графа
+      en: Embedding of a triangle graph
+    ru: Треугольный граф можно вложить на плоскость без пересечения рёбер
+    en: A triangle graph can be embedded on a plane without crossing edges
+    using:
+      concepts: |
+        plane
+        graph_embedding

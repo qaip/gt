@@ -1,0 +1,44 @@
+ru: полилес
+en: polyforest
+
+definition:
+  ru: Несколько изолированных лесов
+  en: A collection of isolated forests
+  using:
+    concepts: |
+      forest
+
+statement:
+  forest_count_theorem:
+    title:
+      ru: Теорема о количестве лесов в полилесу
+      en: Theorem on the number of forests in a polyforest
+    ru:
+      Полилес с n узлами имеет k лесов тогда и только тогда, когда он имеет n-k
+      связей
+    en: A polyforest with n nodes has k forests if and only if it has n-k edges
+    using:
+      concepts: |
+        forest
+        edge
+      rrels: |
+        edge
+
+  polyforest_distance_theorem:
+    title:
+      ru: Теорема о расстоянии между лесами в полилесу
+      en: Theorem on distance between forests in a polyforest
+    ru:
+      Расстояние между двумя лесами в полилесу равно длине кратчайшего пути
+      между двумя связующими узлами в двух лесах
+    en:
+      The distance between two forests in a polyforest is equal to the length of
+      the shortest path between two connecting nodes in the two forests
+    using:
+      concepts: |
+        forest
+        vertex
+        distance
+        shortest_path
+      rrels: |
+        vertex

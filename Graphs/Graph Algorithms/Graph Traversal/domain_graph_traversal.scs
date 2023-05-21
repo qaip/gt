@@ -9,9 +9,15 @@ section_subject_domain_of_graph_traversal
 <- rrel_key_sc_element:
 	subject_domain_of_graph_traversal;
 	concept_graph_traversal;
-	concept_breadth_first_search;
-	concept_depth_first_search;
-	concept_subtask_level;;
+	concept_tree_traversal;
+	concept_breadth_traversal;
+	concept_depth_traversal;
+	concept_in_order_traversal;
+	concept_pre_oreder_traversal;
+	concept_post_order_traversal;
+	concept_reverse_pre_order_traversal;
+	concept_reverse_post_order_traversal;
+	concept_reverse_in_order_traversal;;
 
 section_subject_domain_of_graph_traversal=[*
 	subject_domain_of_graph_traversal
@@ -25,9 +31,15 @@ section_subject_domain_of_graph_traversal=[*
 		concept_graph_traversal;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_breadth_first_search;
-		concept_depth_first_search;
-		concept_subtask_level;
+		concept_tree_traversal;
+		concept_breadth_traversal;
+		concept_depth_traversal;
+		concept_in_order_traversal;
+		concept_pre_oreder_traversal;
+		concept_post_order_traversal;
+		concept_reverse_pre_order_traversal;
+		concept_reverse_post_order_traversal;
+		concept_reverse_in_order_traversal;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_algorithms;;
@@ -35,6 +47,12 @@ section_subject_domain_of_graph_traversal=[*
 
 sc_node_class ->
 	concept_graph_traversal;
-	concept_breadth_first_search;
-	concept_depth_first_search;
-	concept_subtask_level;;
+	concept_tree_traversal;
+	concept_breadth_traversal;
+	concept_depth_traversal;
+	concept_in_order_traversal;
+	concept_pre_oreder_traversal;
+	concept_post_order_traversal;
+	concept_reverse_pre_order_traversal;
+	concept_reverse_post_order_traversal;
+	concept_reverse_in_order_traversal;;

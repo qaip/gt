@@ -1,0 +1,56 @@
+ru: взвешенный ориентированный граф
+en: weighted directed graph
+
+definition:
+  ru: Граф, в котором каждому ребру приписана числовая величина
+  en: A graph in which each edge is assigned a numerical value
+  using:
+    concepts: |
+      graph
+      edge
+    rrels: |
+      edge
+    nrels: |
+      value
+
+statement:
+  tweighted_directed_shortest_path:
+    title:
+      ru: Свойство кратчайшего пути в взвешенном ориентированном графе
+      en: The shortest path property in a weighted directed graph
+    ru:
+      Во взвешенном графе любой кратчайший путь между двумя вершинами содержит
+      не более V-1 ребер
+    en:
+      In a weighted graph, any shortest path between two vertices contains no
+      more than V-1 edges
+    using:
+      concepts: |
+        graph_path
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
+  weighted_directed_graph_cycle:
+    title:
+      ru: Теорема о цикле отрицательного веса
+      en: Negative weight cycle theorem
+    ru:
+      Если в взвешенном графе есть цикл отрицательного веса, то нет кратчайшего
+      пути между какой-либо парой вершин
+    en:
+      If a weighted graph contains a negative weight cycle, then there is no
+      shortest path between any pair of vertices
+    using:
+      concepts: |
+        graph_cycle
+        graph_path
+        vertex
+      rrels: |
+        vertex
+
+subclass:
+  - acyclic_weighted_directed_graph
+  - strongly_connected_weighted_directed_graph

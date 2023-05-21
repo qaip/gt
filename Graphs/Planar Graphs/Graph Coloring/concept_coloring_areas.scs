@@ -1,0 +1,74 @@
+concept_coloring_areas
+=> nrel_main_idtf:
+	[зоны раскраски] (* <- lang_ru;; *);
+	[coloring areas] (* <- lang_en;; *);;
+
+definition -> definition_of_coloring_areas (*
+	-> rrel_key_sc_element: concept_coloring_areas;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Области, образованные вершинами, которые имеют одинаковый цвет] (* <- lang_ru;; *);;
+		-> [Regions formed by vertices that have the same color] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (зоны раскраски)] (* <- lang_ru;; *);
+		[Def. (coloring areas)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_coloring_areas_intersection (*
+	-> rrel_key_sc_element: concept_coloring_areas;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Зоны раскраски в графе не пересекаются] (* <- lang_ru;; *);;
+		-> [Coloring areas in a graph do not intersect] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Пересечение цветовой зоны)] (* <- lang_ru;; *);
+		[Stat. (Intersection of color areas)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_coloring_areas_property (*
+	-> rrel_key_sc_element: concept_coloring_areas;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Зона раскраски может содержать одну или несколько вершин] (* <- lang_ru;; *);;
+		-> [A coloring area can contain one or multiple vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство цветовой зоны)] (* <- lang_ru;; *);
+		[Stat. (Property of color areas)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_graph;
+	concept_vertex;
+	concept_graph;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;;

@@ -1,0 +1,40 @@
+ru: граф блоков и точек сочленения
+en: block cutpoint graph
+
+definition:
+  ru:
+    Граф, который не имеет мостов, но может быть разбит на блоки и точки
+    сочленения
+  en:
+    A blockcut point graph is a graph that has no bridges but can be decomposed into
+    blocks and cutpoints
+  using:
+    concepts: |
+      graph
+      bridge
+    nrels: |
+      block
+    rrels: |
+      cutpoint
+
+statement:
+  block_cutpoint_graph_vs_biconnected_graph:
+    title:
+      ru: Сравнение графа с блоками и точками сочленения и двусвязного графа
+      en: Comparison of a block-cutpoint graph and a biconnected graph
+    ru:
+      Граф с блоками и точками сочленения и биконнективный граф являются особыми
+      типами связности графов. Однако, графы с блоками и точками сочленения
+      могут быть разбиты на блоки и точки сочленения, в то время как
+      биконнективные графы не могут быть разбиты на блоки
+    en:
+      Block-cutpoint graphs and biconnected graphs are special types of graph
+      connectivity. However, block-cutpoint graphs can be decomposed into blocks
+      and cutpoints, while biconnected graphs cannot be decomposed into blocks
+    using:
+      concepts: |
+        biconnected_graph
+      nrels: |
+        block
+      rrels: |
+        cutpoint
