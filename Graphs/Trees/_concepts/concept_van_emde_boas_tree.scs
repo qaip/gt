@@ -1,0 +1,54 @@
+concept_van_emde_boas_tree
+=> nrel_main_idtf:
+	[Ван Эмде Боас дерево] (* <- lang_ru;; *);
+	[van Emde Boas tree] (* <- lang_en;; *);;
+
+definition -> definition_of_van_emde_boas_tree (*
+	-> rrel_key_sc_element: concept_van_emde_boas_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Структура данных, используемая для быстрого поиска, вставки и удаления элементов из упорядоченного множества] (* <- lang_ru;; *);;
+		-> [A data structure used for fast searching, insertion, and deletion of elements from an ordered set] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Ван Эмде Боас дерево)] (* <- lang_ru;; *);
+		[Def. (van Emde Boas tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_data_structure;
+		concept_searching;
+		concept_ordered_set
+	};;
+*);;
+
+statement -> statement_of_theorem_time_complexity_of_van_emde_boas_tree (*
+	-> rrel_key_sc_element: concept_van_emde_boas_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ван Эмде Боас дерево может быть построено и использовано для поиска, вставки и удаления элементов из упорядоченного множества в O(log log u) времени, где u-максимальный элемент множества] (* <- lang_ru;; *);;
+		-> [A van Emde Boas tree can be constructed and used for searching, insertion, and deletion of elements from an ordered set in O(log log u) time, where u is the maximum element in the set] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о временной сложности дерева Ван Эмде Боас)] (* <- lang_ru;; *);
+		[Stat. (Time complexity theorem of van Emde Boas tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_searching;
+		concept_insertion;
+		concept_deletion;
+		concept_ordered_set
+	};;
+*);;
+
+sc_node_class ->
+	concept_data_structure;
+	concept_searching;
+	concept_ordered_set;
+	concept_time_complexity;
+	concept_searching;
+	concept_insertion;
+	concept_deletion;
+	concept_ordered_set;;

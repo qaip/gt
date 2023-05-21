@@ -1,0 +1,64 @@
+concept_aa_tree
+=> nrel_main_idtf:
+	[аа-дерево] (* <- lang_ru;; *);
+	[aa-tree] (* <- lang_en;; *);;
+
+definition -> definition_of_aa_tree (*
+	-> rrel_key_sc_element: concept_aa_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [аа-деревом является сбалансированное двоичное дерево поиска, являющееся разновидностью красно-чёрного дерева, для которого вводятся дополнительные условия] (* <- lang_ru;; *);;
+		-> [aa-tree is a balanced binary search tree, which is a kind of red-black tree with additional conditions] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (аа-дерево)] (* <- lang_ru;; *);
+		[Def. (aa-tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_balanced_tree;
+		concept_binary_search_tree;
+		concept_red_black_tree
+	};;
+*);;
+
+statement -> statement_of_additional_conditions_of_aa_tree (*
+	-> rrel_key_sc_element: concept_aa_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Условно обозначим значение равное Лм-Лв + 1, где Лм есть значение максимальной длины пути от корня дерева до его листов, Лв есть значение длины пути от корня дерева до выбранной вершины, как уровень вершины (уровень соответствует выбранной вершине). Для аа-дерева вводятся 5 дополнительных условий. Во-первых, уровень каждого листа равен 1. Во-вторых уровень левого потомка какой-либо вершины В на один меньше, чем у самой вершины В. В-третьих, уровень каждого правого потомка какой-либо вершины В равен либо на один меньше, чем уровень самой вершины В. В-четвёртых, уровень каждого правого потомка какой-либо вершины В, если это потомок через одну вершину, а не непосредственный потомок, строго меньше, чем у вершины В. В-пятых, каждая вершина с уровнем больше 1 имеет двоих непосредственных потомков] (* <- lang_ru;; *);;
+		-> [We conditionally denote the value equal to Lm-Lv + 1, where Lm is the value of the maximum length of the path from the tree root to its leaves, Ls is the value of the path length from the tree root to the selected vertex, as the level of the vertex (the level corresponds to the selected vertex). For aa-tree, 5 additional conditions are introduced. Firstly, the level of each leaf is 1. Secondly, the level of the left descendant of any vertex V is one less than the level of the vertex V. Thirdly, the level of each right descendant of any vertex V is equal to or one less than the level of the vertex V. Fourth, the level of each right descendant of some vertex V, if it is a descendant through one vertex and not an immediate descendant, is strictly less than the level of vertex V. Fifth, every vertex with level greater than 1 has two immediate descendants] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Дополнительные условия аа-дерева)] (* <- lang_ru;; *);
+		[Stat. (Additional conditions of aa tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		concept_tree_root;
+		concept_leaf;
+		concept_vertex;
+		rrel_leaf;
+		rrel_tree_root;
+		rrel_vertex;
+		nrel_tree_descendant
+	};;
+*);;
+
+sc_node_class ->
+	concept_balanced_tree;
+	concept_binary_search_tree;
+	concept_red_black_tree;
+	concept_path_length;
+	concept_tree_root;
+	concept_leaf;
+	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_tree_descendant;;
+
+sc_node_role_relation ->
+	rrel_leaf;
+	rrel_tree_root;
+	rrel_vertex;;

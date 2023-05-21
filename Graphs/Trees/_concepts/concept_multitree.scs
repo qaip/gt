@@ -1,0 +1,110 @@
+concept_multitree
+=> nrel_main_idtf:
+	[мультитри] (* <- lang_ru;; *);
+	[multitree] (* <- lang_en;; *);;
+
+definition -> definition_of_multitree (*
+	-> rrel_key_sc_element: concept_multitree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Древовидная структура данных, в которой узлы могут иметь несколько родителей] (* <- lang_ru;; *);;
+		-> [A tree-like data structure in which nodes can have multiple parents] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (мультитри)] (* <- lang_ru;; *);
+		[Def. (multitree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex;
+		nrel_tree_parent
+	};;
+*);;
+
+statement -> statement_of_theorem_multitree_search (*
+	-> rrel_key_sc_element: concept_multitree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Поиск элемента в мультитри может быть выполнен за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Searching for an element in a multitree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о поиске в мультитри)] (* <- lang_ru;; *);
+		[Stat. (Search theorem in a multitree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_searching
+	};;
+*);;
+
+statement -> statement_of_theorem_multitree_insertion (*
+	-> rrel_key_sc_element: concept_multitree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вставка элемента в мультитри может быть выполнена за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Inserting an element into a multitree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о вставке в мультитри)] (* <- lang_ru;; *);
+		[Stat. (Insertion theorem in a multitree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_insertion
+	};;
+*);;
+
+statement -> statement_of_theorem_multitree_deletion (*
+	-> rrel_key_sc_element: concept_multitree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Удаление элемента из мультитри может быть выполнено за время O(log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [Deleting an element from a multitree can be done in O(log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об удалении из мультитри)] (* <- lang_ru;; *);
+		[Stat. (Deletion theorem in a multitree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_time_complexity;
+		concept_deletion
+	};;
+*);;
+
+statement -> statement_of_theorem_multitree_balancing (*
+	-> rrel_key_sc_element: concept_multitree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Мультитри может быть сбалансировано за время O(n log n), где n-количество элементов в дереве] (* <- lang_ru;; *);;
+		-> [A multitree can be balanced in O(n log n) time, where n is the number of elements in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о балансировке мультитри)] (* <- lang_ru;; *);
+		[Stat. (Balancing theorem in a multitree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_balancing;
+		concept_time_complexity
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_vertex;
+	concept_time_complexity;
+	concept_searching;
+	concept_time_complexity;
+	concept_insertion;
+	concept_time_complexity;
+	concept_deletion;
+	concept_balancing;
+	concept_time_complexity;;
+
+sc_node_norole_relation ->
+	nrel_tree_parent;;
