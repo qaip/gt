@@ -22,22 +22,23 @@ definition -> definition_of_path_length (*
 	};;
 *);;
 
-statement -> statement_of_path_length_theorem (*
+statement -> statement_of_proposition_weighted_path (*
 	-> rrel_key_sc_element: concept_path_length;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Длина пути в графе равна числу ребер, входящих в этот путь] (* <- lang_ru;; *);;
-		-> [The length of a path in a graph is equal to the number of edges in the path] (* <- lang_en;; *);;
+		-> [Путь в графе, в котором каждому ребру присвоено некоторое число, называется взвешенным путем] (* <- lang_ru;; *);;
+		-> [A path in a graph where each edge is assigned a number is called a weighted path] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема о длине пути)] (* <- lang_ru;; *);
-		[Stat. (Path length theorem)] (* <- lang_en;; *);;
+		[Утв. (Взвешенный путь)] (* <- lang_ru;; *);
+		[Stat. (Weighted Path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph_path;
 		concept_edge;
-		rrel_edge
+		rrel_edge;
+		nrel_rib_weight
 	};;
 *);;
 
@@ -67,6 +68,9 @@ sc_node_class ->
 	concept_edge;
 	concept_graph_path;
 	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_rib_weight;;
 
 sc_node_role_relation ->
 	rrel_edge;

@@ -55,8 +55,8 @@ statement -> statement_of_eccentricity_center_theorem (*
 		[Stat. (Central vertex theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path;
-		concept_graph_length
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
@@ -73,7 +73,7 @@ statement -> statement_of_eccentricity_diameter_theorem (*
 		[Stat. (Theorem on the eccentricity of diametrical vertices)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_length;
+		concept_graph;
 		nrel_graph_diameter
 	};;
 *);;
@@ -83,9 +83,8 @@ sc_node_class ->
 	concept_graph;
 	concept_path_length;
 	concept_path_length;
-	concept_graph_path;
-	concept_graph_length;
-	concept_graph_length;;
+	concept_vertex;
+	concept_graph;;
 
 sc_node_norole_relation ->
 	nrel_graph_radius;
@@ -93,4 +92,5 @@ sc_node_norole_relation ->
 	nrel_graph_diameter;;
 
 sc_node_role_relation ->
+	rrel_vertex;
 	rrel_vertex;;

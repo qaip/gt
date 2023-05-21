@@ -49,26 +49,6 @@ statement -> statement_of_hamiltonian_path_problem (*
 	};;
 *);;
 
-statement -> statement_of_hamiltonian_cycle_theorem (*
-	-> rrel_key_sc_element: concept_hamiltonian_path;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Граф содержит гамильтонов цикл, если степень каждой вершины не меньше, чем половина числа вершин в графе] (* <- lang_ru;; *);;
-		-> [A graph contains a Hamiltonian cycle if the degree of each vertex is at least half the number of vertices in the graph] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема о Гамильтоновом цикле)] (* <- lang_ru;; *);
-		[Stat. (Hamiltonian cycle theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_vertex;
-		concept_hamiltonian_cycle;
-		concept_vertex_degree;
-		rrel_vertex
-	};;
-*);;
-
 statement -> statement_of_dirac_theorem (*
 	-> rrel_key_sc_element: concept_hamiltonian_path;;
 
@@ -97,14 +77,10 @@ sc_node_class ->
 	concept_vertex;
 	concept_graph;
 	concept_vertex;
-	concept_hamiltonian_cycle;
-	concept_vertex_degree;
-	concept_vertex;
 	concept_vertex_degree;;
 
 sc_node_role_relation ->
 	rrel_edge;
-	rrel_vertex;
 	rrel_vertex;
 	rrel_vertex;
 	rrel_vertex;;

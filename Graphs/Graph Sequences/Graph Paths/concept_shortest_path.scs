@@ -16,7 +16,6 @@ definition -> definition_of_shortest_path (*
 		[Def. (shortest path)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path_length;
 		concept_graph_path;
 		nrel_rib_weight
 	};;
@@ -35,7 +34,8 @@ statement -> statement_of_shortest_path_weight_theorem (*
 		[Stat. (Shortest weighted path theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_path_length
+		concept_dijkstra_algorithm;
+		concept_weighted_graph
 	};;
 *);;
 
@@ -52,24 +52,22 @@ statement -> statement_of_floyd_warshall_algorithm (*
 		[Stat. (Floyd-Warshall algorithm)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_path_weight;
-		concept_path_length;
+		concept_floyd_warshall_algorithm;
+		concept_graph_path;
 		concept_vertex;
-		rrel_vertex;
-		nrel_rib_weight
+		rrel_vertex
 	};;
 *);;
 
 sc_node_class ->
-	concept_path_length;
 	concept_graph_path;
-	concept_path_length;
-	concept_graph_path_weight;
-	concept_path_length;
+	concept_dijkstra_algorithm;
+	concept_weighted_graph;
+	concept_floyd_warshall_algorithm;
+	concept_graph_path;
 	concept_vertex;;
 
 sc_node_norole_relation ->
-	nrel_rib_weight;
 	nrel_rib_weight;;
 
 sc_node_role_relation ->
