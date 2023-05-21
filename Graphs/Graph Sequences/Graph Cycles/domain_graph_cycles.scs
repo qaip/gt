@@ -13,7 +13,6 @@ section_subject_domain_of_graph_cycles
 	concept_hamiltonian_cycle;
 	concept_eulerian_cycle;
 	concept_basic_cycle;
-	concept_elementary_cycle;
 	concept_minimum_weight_cycle;
 	concept_cycle_length;
 	concept_graph_girth;
@@ -37,7 +36,6 @@ section_subject_domain_of_graph_cycles=[*
 		concept_hamiltonian_cycle;
 		concept_eulerian_cycle;
 		concept_basic_cycle;
-		concept_elementary_cycle;
 		concept_minimum_weight_cycle;
 		concept_cycle_length;
 		concept_graph_girth;
@@ -57,7 +55,6 @@ sc_node_class ->
 	concept_hamiltonian_cycle;
 	concept_eulerian_cycle;
 	concept_basic_cycle;
-	concept_elementary_cycle;
 	concept_minimum_weight_cycle;
 	concept_cycle_length;
 	concept_graph_girth;

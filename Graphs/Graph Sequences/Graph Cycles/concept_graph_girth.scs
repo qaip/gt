@@ -1,0 +1,48 @@
+concept_graph_girth
+=> nrel_main_idtf:
+	[длина минимального цикла графа] (* <- lang_ru;; *);
+	[graph girth] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_girth (*
+	-> rrel_key_sc_element: concept_graph_girth;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длина минимального цикла графа] (* <- lang_ru;; *);;
+		-> [The length of the shortest cycle in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (длина минимального цикла графа)] (* <- lang_ru;; *);
+		[Def. (graph girth)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cycle;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_graph_girth_exists (*
+	-> rrel_key_sc_element: concept_graph_girth;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Обхват графа всегда меньше, чем его диаметр] (* <- lang_ru;; *);;
+		-> [he girth of a graph is always less than or equal to its diameter] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства обхвата графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of graph girth)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		nrel_graph_diameter
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_cycle;
+	concept_graph;
+	concept_graph;;
+
+sc_node_norole_relation ->
+	nrel_graph_diameter;;
