@@ -39,8 +39,8 @@ statement -> statement_of_bt_representation (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (изображение бинарного дерева)] (* <- lang_ru;; *);
-		[Stat. (bt representation)] (* <- lang_en;; *);;
+		[Утв. (Изображение бинарного дерева)] (* <- lang_ru;; *);
+		[Stat. (Binary tree representation)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
