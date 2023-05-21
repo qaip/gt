@@ -18,8 +18,8 @@ definition:
 statement:
   decision_tree_representation:
     title:
-      ru: изображение дерева решений
-      en: decision tree representation
+      ru: Изображение дерева решений
+      en: Decision tree representation
     ru:
       Дерево решений представляет собой структуру, в которой каждый узел
       соответствует признаку объекта, а каждое ребро соответствует значению

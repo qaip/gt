@@ -23,8 +23,8 @@ definition:
 statement:
   spanning_tree_representation:
     title:
-      ru: изображение покрывающих деревьев
-      en: spanning trees representation
+      ru: Изображение покрывающих деревьев
+      en: Spanning trees representation
     ru:
       Покрывающие деревья удобно изображать в виде рисунков, состоящих из точек,
       соответствующих вершинам, и линий, соединяющих эти точки, соответствующих

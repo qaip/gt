@@ -17,20 +17,13 @@ definition:
     concepts: |
       data_structure
       array
-      query
-      range
-    rrels: |
-      data_structure
-      array
-      element
-      query
-      sum
-      range
+      binary_tree
+      graph
 statement:
   fenwick_tree_representation:
     title:
-      ru: изображение дерева Фенвика
-      en: fenwick tree representation
+      ru: Изображение дерева Фенвика
+      en: Fenwick tree representation
     ru:
       Дерево Фенвика представляет собой бинарное дерево, где каждый узел
       соответствует некоторому подмассиву исходного массива. Каждый узел
