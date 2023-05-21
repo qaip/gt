@@ -1,5 +1,6 @@
 ru: взвешенный максимальный разрез графа
 en: weighted max cut
+
 definition:
   ru:
     Взвешенный максимальный разрез является разбиением вершин взвешенного графа
@@ -18,3 +19,5 @@ definition:
     rrels: |
       edge
       vertex
+    nrels: |
+      rib_weight

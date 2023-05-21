@@ -1,5 +1,6 @@
 ru: максимальный разрез графа
 en: maximum graph cut
+
 definition:
   ru:
     Разрез, размер которого не меньше размера любого другого разреза. То есть
@@ -19,7 +20,8 @@ definition:
     rrels: |
       edge
       vertex
-statement: 
+
+statement:
   finding_max_cut:
     title:
       ru: Нахождение макимального разреза
