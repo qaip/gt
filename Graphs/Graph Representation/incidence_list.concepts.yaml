@@ -30,21 +30,6 @@ statement:
       concepts: |
         incidence_matrix
 
-  incidence_list_vs_adjacency_list:
-    title:
-      ru: Сравнение списка инцидентности и списка смежности
-      en: Comparison of incidence list and adjacency list
-    ru:
-      Список инцидентности и список смежности являются наиболее
-      распространенными структурами данных для представления графов
-    en:
-      Incidence list and adjacency list are the most commonly used data
-      structures for representing graphs
-    using:
-      concepts: |
-        graph
-        adjacency_list
-
   weighted_incidence_list:
     title:
       ru: Взвешенный список инцидентности
