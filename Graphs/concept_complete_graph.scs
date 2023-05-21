@@ -8,7 +8,7 @@ definition -> definition_of_complete_graph (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Граф, в котором каждая пара различных вершин смежна] (* <- lang_ru;; *);;
-		-> [Complete graph is a simple undirected graph in which every pair of distinct vertices is connected by a unique edge] (* <- lang_en;; *);;
+		-> [A simple undirected graph in which every pair of distinct vertices is connected by a unique edge] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
