@@ -1,0 +1,92 @@
+concept_undirected_graph
+=> nrel_main_idtf:
+	[неориентированный граф] (* <- lang_ru;; *);
+	[undirected graph] (* <- lang_en;; *);;
+
+definition -> definition_of_undirected_graph (*
+	-> rrel_key_sc_element: concept_undirected_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Пусть V является непустым множеством. Неориентированным графом называется пара множеств V, E, где E является произвольным подмножеством декартова произведения множества V] (* <- lang_ru;; *);;
+		-> [Let V be a nonempty set. An undirected graph is called a pair V, E, where E is a arbitrary subset of graphic works of cartesian product V] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (неориентированный граф)] (* <- lang_ru;; *);
+		[Def. (undirected graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_complement_graph_undirected_graph (*
+	-> rrel_key_sc_element: concept_undirected_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, содержащий все недостающие рёбра между вершинами исходного графа, которые не являются рёбрами этого графа] (* <- lang_ru;; *);;
+		-> [The complement of an undirected graph is a graph that contains all the missing edges between the vertices of the original graph that are not already edges of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Дополнение неориентированного графа)] (* <- lang_ru;; *);
+		[Stat. (Complement of an undirected graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_complete_graph;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_connectedness_undirected_graph (*
+	-> rrel_key_sc_element: concept_undirected_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неориентированный граф называется связным, если для каждой пары вершин графа существует путь, соединяющий эти вершины. Иначе граф называется несвязным] (* <- lang_ru;; *);;
+		-> [An undirected graph is connected if there is a path connecting each pair of vertices in the graph. Otherwise, the graph is called disconnected] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Связность неориентированных графов)] (* <- lang_ru;; *);
+		[Stat. (Connectedness of undirected graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_graph_connectivity;
+		concept_graph_path;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_complete_graph;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph_connectivity;
+	concept_graph_path;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

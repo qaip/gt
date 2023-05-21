@@ -1,0 +1,54 @@
+concept_alternating_chain
+=> nrel_main_idtf:
+	[чередующаяся цепь] (* <- lang_ru;; *);
+	[alternating chain] (* <- lang_en;; *);;
+
+definition -> definition_of_alternating_chain (*
+	-> rrel_key_sc_element: concept_alternating_chain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Последовательность вершин в графе, в которой соседние вершины чередуются между различными подмножествами вершин] (* <- lang_ru;; *);;
+		-> [A sequence of vertices in a graph in which adjacent vertices alternate between different subsets of vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (чередующаяся цепь)] (* <- lang_ru;; *);
+		[Def. (alternating chain)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_graph;
+		concept_graph_sequence;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_alternating_path_theorem (*
+	-> rrel_key_sc_element: concept_alternating_chain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой двудольный граф имеет чередующуюся цепь максимального размера] (* <- lang_ru;; *);;
+		-> [Every bipartite graph has an alternating path of maximum size] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о чередующейся цепи)] (* <- lang_ru;; *);
+		[Stat. (Alternating path theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_bipartite_graph;
+		concept_chain_length
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_graph;
+	concept_graph_sequence;
+	concept_graph;
+	concept_bipartite_graph;
+	concept_chain_length;;
+
+sc_node_role_relation ->
+	rrel_vertex;;
