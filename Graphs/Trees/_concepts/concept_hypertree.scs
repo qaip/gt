@@ -50,6 +50,7 @@ statement -> statement_of_theorem_hypertree_search (*
 		[Stat. (Search theorem in a hypertree)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
+		concept_tree;
 		concept_time_complexity;
 		concept_searching
 	};;
@@ -129,6 +130,7 @@ statement -> statement_of_theorem_hypertree_balancing (*
 sc_node_class ->
 	concept_tree;
 	concept_tree_height;
+	concept_tree;
 	concept_time_complexity;
 	concept_searching;
 	concept_subtree;

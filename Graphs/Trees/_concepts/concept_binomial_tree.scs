@@ -36,10 +36,10 @@ statement -> statement_of_amount_of_vertexes_in_binomial_tree (*
 		concept_tree;
 		concept_vertex;
 		concept_path_length;
-		concept_root;
+		concept_tree_root;
 		concept_leaf;
 		rrel_vertex;
-		rrel_root;
+		rrel_tree_root;
 		rrel_leaf
 	};;
 *);;
@@ -59,11 +59,11 @@ statement -> statement_of_binomial_tree_defining_way (*
 	=> nrel_using_constants: {
 		concept_tree;
 		concept_path_length;
-		concept_root;
+		concept_tree_root;
 		concept_leaf;
 		concept_vertex;
 		rrel_vertex;
-		rrel_root;
+		rrel_tree_root;
 		rrel_leaf;
 		nrel_tree_descendant
 	};;
@@ -74,11 +74,11 @@ sc_node_class ->
 	concept_tree;
 	concept_vertex;
 	concept_path_length;
-	concept_root;
+	concept_tree_root;
 	concept_leaf;
 	concept_tree;
 	concept_path_length;
-	concept_root;
+	concept_tree_root;
 	concept_leaf;
 	concept_vertex;;
 
@@ -87,8 +87,8 @@ sc_node_norole_relation ->
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_root;
+	rrel_tree_root;
 	rrel_leaf;
 	rrel_vertex;
-	rrel_root;
+	rrel_tree_root;
 	rrel_leaf;;

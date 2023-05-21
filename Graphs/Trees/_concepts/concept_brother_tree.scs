@@ -17,7 +17,8 @@ definition -> definition_of_brother_tree (*
 
 	=> nrel_using_constants: {
 		concept_binary_tree;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
@@ -36,10 +37,10 @@ statement -> statement_of_vertex_level_explanation (*
 	=> nrel_using_constants: {
 		concept_vertex;
 		concept_path_length;
-		concept_root;
+		concept_tree_root;
 		concept_leaf;
 		rrel_vertex;
-		rrel_root;
+		rrel_tree_root;
 		rrel_leaf
 	};;
 *);;
@@ -68,7 +69,7 @@ sc_node_class ->
 	concept_vertex;
 	concept_vertex;
 	concept_path_length;
-	concept_root;
+	concept_tree_root;
 	concept_leaf;
 	concept_vertex;;
 
@@ -77,6 +78,7 @@ sc_node_norole_relation ->
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_root;
+	rrel_vertex;
+	rrel_tree_root;
 	rrel_leaf;
 	rrel_vertex;;

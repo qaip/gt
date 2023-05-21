@@ -7,8 +7,8 @@ definition -> definition_of_aa_tree (*
 	-> rrel_key_sc_element: concept_aa_tree;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [аа-деревом является сбалансированное двоичное дерево поиска, являющееся разновидностью красно-чёрного дерева, для которого вводятся дополнительные условия] (* <- lang_ru;; *);;
-		-> [aa-tree is a balanced binary search tree, which is a kind of red-black tree with additional conditions] (* <- lang_en;; *);;
+		-> [Аа-деревом является сбалансированное двоичное дерево поиска, являющееся разновидностью красно-чёрного дерева, для которого вводятся дополнительные условия] (* <- lang_ru;; *);;
+		-> [Aa-tree is a balanced binary search tree, which is a kind of red-black tree with additional conditions] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
