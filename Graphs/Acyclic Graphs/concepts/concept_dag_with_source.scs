@@ -1,0 +1,59 @@
+concept_dag_with_source
+=> nrel_main_idtf:
+	[ориентированный ациклический граф с источником] (* <- lang_ru;; *);
+	[directed acyclic graph with source] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_dag_with_source_and_sink;
+concept_dag_with_single_source_and_sink;;
+
+definition -> definition_of_dag_with_source (*
+	-> rrel_key_sc_element: concept_dag_with_source;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный ациклический граф, имеющий одну вершину-источник, из которой выходят все остальные ребра графа] (* <- lang_ru;; *);;
+		-> [A directed acyclic graph with one source vertex, from which all other edges in the graph originate] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ориентированный ациклический граф с источником)] (* <- lang_ru;; *);
+		[Def. (directed acyclic graph with source)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_acyclic_graph;
+		concept_source_vertex;
+		concept_edge;
+		nrel_outgoing_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_dag_source (*
+	-> rrel_key_sc_element: concept_dag_with_source;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В ориентированном ациклическом графе с источником каждая вершина, кроме источника, достижима из источника] (* <- lang_ru;; *);;
+		-> [In a directed acyclic graph with source, every vertex except the source is reachable from the source] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство ориентированного ациклического графа с источником)] (* <- lang_ru;; *);
+		[Stat. (Property of a directed acyclic graph with source)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_source_vertex;
+		concept_vertex;
+		nrel_reachable_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_directed_acyclic_graph;
+	concept_source_vertex;
+	concept_edge;
+	concept_source_vertex;
+	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_outgoing_edge;
+	nrel_reachable_vertex;;

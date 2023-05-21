@@ -1,0 +1,27 @@
+ru: полный граф
+en: complete graph
+definition:
+  ru: Граф, в котором каждая пара различных вершин смежна
+  en:
+    A simple undirected graph in which every pair of distinct vertices is connected
+    by a unique edge
+  using:
+    concepts: |
+      simple_graph
+      undirected_graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+statement:
+  regular_graphs_algorithm:
+    title:
+      ru: Регулярные графы и алгоритмы
+      en: Rregualr graphs and algorithms
+    ru: Регулярные графы представляют особую сложность для многих алгоритмов
+    en: Regular graphs are especially difficult for many algorithms
+    using:
+      concepts: |
+        graph
+        graph_algorithm

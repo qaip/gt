@@ -1,0 +1,28 @@
+en: acyclic graphs
+ru: ациклических графов
+
+parent: graphs
+
+children: |
+  forests
+  trees
+
+max: |
+  acyclic_graph
+
+concepts: |
+  dag
+  forest
+  tree
+  dag_with_single_source_and_sink
+  dag_with_source_and_sink
+  dag_with_source
+  dag_with_sink
+  topological_sorting
+
+rrels: |
+  acyclic_orientation
+
+nrels: |
+  topological_ordering
+  transitive_reduction

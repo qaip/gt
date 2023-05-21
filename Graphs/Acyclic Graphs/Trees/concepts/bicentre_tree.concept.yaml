@@ -1,0 +1,35 @@
+ru: бицентральное дерево
+en: bicentre tree
+
+definition:
+  ru: Дерево, центр которого состоит из двух смежных вершин
+  en: A tree whose center consists of two adjacent vertices
+  using:
+    concepts: |
+      tree
+      vertex
+    rrels: |
+      vertex
+    nrels: |
+      adjacent
+
+statement:
+  statement_about_graph_center:
+    title:
+      ru: Утверждение о центре графа
+      en: Statement about graph center
+    ru:
+      Под центром дерева понимается вершина или несколько вершин, входящих в
+      наибольший из путей между двумя любыми вершинами дерева. При этом сам путь
+      делится этими вершинами на две равные части
+    en:
+      The center of a tree is a vertex or several vertices included in the
+      largest paths between any two vertices in the tree. At the same time, the
+      path itself is divided these vertices into two equal parts
+    using:
+      concepts: |
+        tree
+        vertex
+        path_length
+      rrels: |
+        vertex

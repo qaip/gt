@@ -1,0 +1,45 @@
+ru: растущее дерево
+en: growing tree
+definition:
+  ru:
+    Дерево, в котором есть все вершины графа, а рёбра соединяют их таким
+    образом, что получается дерево. То есть, растущее дерево подграф исходного
+    графа, который содержит все вершины исходного графа и является деревом
+  en:
+    A growing tree is a subgraph of a graph that contains all the vertices of
+    the graph and is a tree. That is, a growing tree is a subgraph of the
+    original graph that contains all the vertices of the original graph and is a
+    tree
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      tree
+    rrels: |
+      vertex
+      edge
+statement:
+  growing_tree_representation:
+    title:
+      ru: Изображение растущих деревьев
+      en: Growing trees representation
+    ru:
+      Растущие деревья удобно изображать в виде рисунков, состоящих из точек,
+      соответствующих вершинам, и линий, соединяющих эти точки, соответствующих
+      рёбрам. При этом в растущих деревьях всегда находится одна вершина, из
+      которой исходят все остальные вершины, и она называется корневой
+    en:
+      It is convenient to depict growing trees in the form of drawings
+      consisting of dots, corresponding to the vertices, and lines connecting
+      these points, corresponding ribs. At the same time, in growing trees there
+      is always one vertex, from which all other vertices emanate, and it is
+      called the root
+    using:
+      concepts: |
+        vertex
+        edge
+        tree
+      rrels: |
+        edge
+        vertex

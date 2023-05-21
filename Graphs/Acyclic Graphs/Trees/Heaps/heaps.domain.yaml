@@ -1,0 +1,16 @@
+en: heaps
+ru: куч
+
+parent: trees
+
+max: |
+  heap
+
+concepts: |
+  binary_heap
+  biparental_heap
+  d_ary_heap
+  fibonacci_heap
+  leftist_heap
+  max_heap
+  min_heap

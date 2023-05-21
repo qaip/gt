@@ -1,0 +1,116 @@
+ru: красно-черное дерево
+en: red-black tree
+
+definition:
+  ru:
+    Сбалансированное двоичное дерево поиска, в котором каждый узел помечен
+    красным или черным цветом
+  en:
+    A balanced binary search tree in which each node is colored either red or
+    black
+  using:
+    concepts: |
+      binary_search_tree
+      balanced_tree
+      vertex
+    nrels: |
+      color
+    rrels: |
+      vertex
+
+statement:
+  theorem_red_black_property:
+    title:
+      ru: Теорема о свойствах красно-черных деревьев
+      en: Properties of red-black trees theorem
+    ru:
+      Для любого красно-черного дерева с n внутренними узлами глубина дерева не
+      превышает 2 * log(n + 1)
+    en:
+      For any red-black tree with n internal nodes, the depth of the tree is at
+      most 2 * log(n + 1)
+    using:
+      concepts: |
+        tree_depth
+        vertex
+      rrels: |
+        vertex
+
+  insertion_into_red_black_tree:
+    title:
+      ru: Алгоритм вставки в красно-черное дерево
+      en: Red-black tree insertion algorithm
+    ru:
+      Алгоритм вставки в красно-черное дерево поддерживает свойства
+      красно-черного дерева и работает за O(log n) времени
+    en:
+      The red-black tree insertion algorithm maintains the properties of the
+      red-black tree and runs in O(log n) time
+    using:
+      concepts: |
+        insertion
+        time_complexity
+
+  deletion_from_red_black_tree:
+    title:
+      ru: Алгоритм удаления из красно-черного дерева
+      en: Red-black tree deletion algorithm
+    ru:
+      Алгоритм удаления из красно-черного дерева поддерживает свойства
+      красно-черного дерева и работает за O(log n) времени
+    en:
+      The red-black tree deletion algorithm maintains the properties of the
+      red-black tree and runs in O(log n) time
+    using:
+      concepts: |
+        deletion
+        time_complexity
+
+  height_red_black_tree:
+    title:
+      ru: Высота красно-черного дерева
+      en: Height of a red-black tree
+    ru:
+      Высота красно-черного дерева не превышает 2 * log(n + 1), где n-количество
+      узлов в дереве
+    en:
+      The height of a red-black tree is no more than 2 * log(n + 1), where n is
+      the number of nodes in the tree
+    using:
+      concepts: |
+        tree_height
+        vertex
+      rrels: |
+        vertex
+
+  balancing_red_black_tree:
+    title:
+      ru: Балансировка красно-черного дерева
+      en: Balancing a red-black tree
+    ru:
+      Балансировка красно-черного дерева производится путем поворотов
+      поддеревьев, сохраняя свойства красно-черного дерева
+    en:
+      Balancing a red-black tree is achieved through subtree rotations, while
+      maintaining the properties of the red-black tree
+    using:
+      concepts: |
+        balancing
+        subtree
+
+  applications_red_black_tree:
+    title:
+      ru: Применения красно-черных деревьев
+      en: Applications of red-black trees
+    ru:
+      Красно-черные деревья часто используются в реализации алгоритмов
+      сбалансированного двоичного дерева поиска, например, в Java Collections
+    en:
+      Red-black trees are widely used in implementing balanced binary search
+      tree algorithms, for example in Java Collections
+    using:
+      concepts: |
+        binary_search_tree
+
+subclass:
+  - aa_tree

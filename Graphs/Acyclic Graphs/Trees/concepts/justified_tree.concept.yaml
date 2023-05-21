@@ -1,0 +1,42 @@
+ru: оправданное дерево
+en: justified_tree
+
+definition:
+  ru: Дерево, в котором для каждого узла соблюдается условие минимальности
+  en: A tree in which each node satisfies a minimality condition
+  using:
+    concepts: |
+      tree
+      vertex
+    rrels: |
+      vertex
+statement:
+  justifiable_tree_theorem:
+    title:
+      ru: Теорема о оправданном дереве
+      en: Justified tree theorem
+    ru:
+      Дерево является оправданным тогда и только тогда, когда каждый узел
+      является оптимальным по отношению к своим потомкам
+    en:
+      A tree is justified if and only if each node is optimal with respect to
+      its children
+    using:
+      concepts: |
+        vertex
+        subtree
+        justified_tree
+      rrels: |
+        vertex
+  balanced_tree_theorem:
+    title:
+      ru: Теорема о сбалансированном дереве
+      en: Balanced tree theorem
+    ru: Сбалансированное дерево является оправданным
+    en: A balanced tree is a justified tree
+    using:
+      concepts: |
+        balanced_tree
+        justified_tree
+        tree
+

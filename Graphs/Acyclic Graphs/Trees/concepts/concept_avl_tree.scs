@@ -1,0 +1,298 @@
+concept_avl_tree
+=> nrel_main_idtf:
+	[авл-дерево] (* <- lang_ru;; *);
+	[avl-tree] (* <- lang_en;; *);;
+
+definition -> definition_of_avl_tree (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [АВЛ-деревом является сбалансированное бинарное дерево поиска] (* <- lang_ru;; *);;
+		-> [An AVL-tree is a balanced binary search tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (авл-дерево)] (* <- lang_ru;; *);
+		[Def. (avl-tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_balanced_tree;
+		concept_binary_search_tree
+	};;
+*);;
+
+statement -> statement_of_name_origin (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Название дерева является аббривиатурой, образованной первыми буквами фамилий создателей, которыми являются советские учёные Адельсон-Вельский Георгий Максимович и Ландис Евгений Михайлович] (* <- lang_ru;; *);;
+		-> [The name of the tree is an abbreviation formed by the first letters of the names of the creators, which are Soviet scientists Adelson-Velsky Georgy Maksimovich and Landis Evgeny Mikhailovich] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Происхождение названия)] (* <- lang_ru;; *);
+		[Stat. (Name origin)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree
+	};;
+*);;
+
+statement -> statement_of_comparsion_with_red_black_tree (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Максимальная длина пути от корня до листьев в АВЛ-дереве меньше, чем в красно-чёрном дереве при одинаковом количестве вершин (максимально длина пути в красно-чёрном дереве больше в 1.388 раз). Поэтому поиск в АВЛ-деревьях может осуществляться быстрее вплоть до 39 процентов в сравнении с красно-чёрным деревом. Кроме того, добавление новых вершин и балансировка в АВЛ-деревьях происходит быстрее. Однако из-за особенностей удаления вершин, удаление в красно-чёрном дереве происходит быстрее в общем случае, но это происходит только при значительном количестве вершин, входящих в дерево. В данном контексте речь шла о программной реализации деревьев] (* <- lang_ru;; *);;
+		-> [The maximum length of the path from the root to the leaves in the AVL tree is less than in the red-black tree with the same number of vertices (the maximum path length in the red-black tree is 1.388 times longer). Therefore, AVL trees can be searched faster by up to 39 percent compared to red-black trees. In addition, adding new vertices and balancing in AVL trees is faster. However, due to the nature of deleting vertices, deletion in a red-black tree is faster in the general case, but this happens only with a significant number of vertices included in the tree. In this context, it was about the software implementation of trees] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сравнение с красно-чёрным деревом)] (* <- lang_ru;; *);
+		[Stat. (Comparsion with red black tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		concept_leaf;
+		concept_red_black_tree;
+		concept_vertex;
+		concept_tree;
+		rrel_leaf;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_balancing_explanation (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Относительно АВЛ-дерева балансировкой вершины называется операция, которая изменяет отношения предок-потомок в поддереве данной вершины при помощи вращений поддерева данной вершины. Выделяется 4 вида вращения. Малое левое вращение, большое левое вращение, малое правое вращение, большое правое вращение] (* <- lang_ru;; *);;
+		-> [Balancing a vertex in AVL-tree is an operation that changes the parent-descendant relationship in a subtree of a given vertex by rotating the subtree of that vertex. There are 4 types of rotation. Small left rotation, large left rotation, small right rotation, large right rotation] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение балансировки)] (* <- lang_ru;; *);
+		[Stat. (Balancing explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex;
+		nrel_tree_parent;
+		nrel_tree_descendant;
+		nrel_subtree
+	};;
+*);;
+
+statement -> statement_of_small_left_turn_explanation (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Будем называть вершину, которую необходимо сбалансировать, В; корень её левого поддерева будем называть Л, корень её правого поддерева Р; левый потомок вершины Р будем называть Ц; правый потомок вершины Р будем называть Т. Вращение осуществляется в случае, если максимальная длина пути от корня левого поддерева вершины В до его листьев больше, чем максимальная длина пути от корня правого поддерева вершины В до его листьев на 2. Кроме того, максимальная длина пути от корня до листьев в левом поддереве вершины Р меньше либо равна максимальной длине пути от корня до листьев в правом поддереве вершины Р. Вращение заключается в том, что левым потомком вершины Р становится вершина В, а правым потомком вершины В становится вершина Ц. Если это у вершины В имеется предок, который будем вершина П, то потомком вершины П станет вершина Р, а предком вершины В, в соответствии с предыдущими преобразованиями, станет вершина Р. Остальные отношения предок-потомок остаются неизменными. Результатом поворота является дерево, коренем которого является Р; левым потомком Р является В, правым потомком Р является Т; левым потомком В является Л; правым потомком В является Ц; если вершина В изначально имела предка П, то П станет предком для Р] (* <- lang_ru;; *);;
+		-> [We will call the vertex to be balanced V; the root of its left subtree will be called L, the root of its right subtree R; the left descendant of the vertex R will be called C; the right descendant of vertex R will be called T. Rotation is performed if the maximum length of the path from the root of the left subtree of vertex V to its leaves is greater than the maximum length of the path from the root of the right subtree of vertex V to its leaves by 2. In addition, the maximum length of the path from the root to the leaves in the left subtree of R is less than or equal to the maximum length of the path from the root to the leaves in the right subtree of R. The rotation is that the left descendant vertex R becomes vertex V, and vertex C becomes the right descendant of vertex V. If vertex V has a parent, which will be vertex P, then vertex R will become a descendant of vertex P, and vertex R will become a parent of vertex V, in accordance with the previous transformations. The rest of the parent-descendant relationship remains unchanged. The result of the rotation is a tree whose root is R; the left descendant of R is V, the right descendant of R is T; the left descendant of V is L; the right descendant of V is C; if vertex V originally had a parent P, P will become a parent of R] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение левого малого поворота)] (* <- lang_ru;; *);
+		[Stat. (Small left turn explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree_root;
+		concept_leaf;
+		concept_path_length;
+		rrel_vertex;
+		rrel_tree_root;
+		rrel_leaf;
+		nrel_subtree;
+		nrel_tree_descendant;
+		nrel_tree_parent
+	};;
+*);;
+
+statement -> statement_of_small_right_turn_explanation (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Будем называть вершину, которую необходимо сбалансировать, В; корень её левого поддерева будем называть Л, корень её правого поддерева Р; левый потомок вершины Л будем называть Ц; правый потомок вершины Л будем называть Т. Вращение осуществляется в случае, если максимальная длина пути от корня правого поддерева вершины В до его листьев больше, чем максимальная длина пути от корня левого поддерева вершины В до его листьев на 2. Кроме того, максимальная длина пути от корня до листьев в левом поддереве вершины Ц больше либо равна максимальной длине пути от корня до листьев в правом поддереве вершины Л. Вращение заключается в том, что правым потомком вершины Л становится вершина В, а левым потомком вершины В становится вершина Т. Если это у вершины В имеется предок, который будем вершина П, то потомком вершины П станет вершина Л, а предком вершины В, в соответствии с предыдущими преобразованиями, станет вершина Л. Остальные отношения предок-потомок остаются неизменными. Результатом поворота является дерево, коренем которого является Л; левым потомком Л является Ц, правым потомком Л является В; левым потомком В является Т; правым потомком В является Р; если вершина В изначально имела предка П, то П станет предком для Л] (* <- lang_ru;; *);;
+		-> [We will call the vertex to be balanced V; the root of its left subtree will be called L, the root of its right subtree R; the left descendant of the vertex A will be called C; the right descendant of the vertex L will be called T. The rotation is carried out if the maximum length of the path from the root of the right subtree of the vertex V to its leaves is greater than the maximum length of the path from the root of the left subtree of the vertex V to its leaves by 2. In addition, the maximum length of the path from the root to the leaves in the left subtree of vertex C is greater than or equal to the maximum length of the path from the root to the leaves in the right subtree of vertex L. The rotation is that the right descendant of the vertex L becomes the vertex V, and the left descendant of the vertex V becomes the vertex T. If the vertex V has an parent, which will be the vertex P, then the descendant of the vertex P will become the vertex L, and the parent of the vertex V, in accordance with the previous transformations, will become the vertex L The rest of the parent-descendant relationship remains unchanged. The result of the rotation is a tree whose root is L; the left descendant of L is C, the right descendant of L is V; the left descendant of V is T; the right descendant of V is R; if vertex V originally had a parent P, P will become a parent of L] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение правого малого поворота)] (* <- lang_ru;; *);
+		[Stat. (Small right turn explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree_root;
+		concept_leaf;
+		concept_path_length;
+		rrel_vertex;
+		rrel_tree_root;
+		rrel_leaf;
+		nrel_subtree;
+		nrel_tree_descendant;
+		nrel_tree_parent
+	};;
+*);;
+
+statement -> statement_of_big_left_turn_explanation (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Будем называть вершину, которую необходимо сбалансировать, А; корень её левого поддерева будем называть Л, корень её правого поддерева Б; левый потомок вершины Б будем называть Ц; правый потомок вершины Б будем называть Р; левый потомок вершины Ц будем называть М; правый потомок вершины Ц будем называть К. Вращение осуществляется в случае, если максимальная длина пути от корня левого поддерева вершины А до его листьев больше, чем максимальная длина пути от корня правого поддерева вершины А до его листьев на 2. Кроме того, максимальная длина пути от корня до листьев в левом поддереве вершины Б больше максимальной длины пути от корня до листьев в правом поддереве вершины Б. Вращение состоит из двух этапов. На первом этапе осуществляется правый малый поворот относительно вершины Б (вращается дерево, корнем которого является вершина Б). На втором этапе осуществляется левый малый поворот относительно вершины А (вращается дерево, корнем которого является вершина А). Результатом поворота является дерево, коренем которого является Ц; левым потомком Ц является А; правым потомком Ц является Б; левым потомком А является Л; правым потомком А является М; левым потомком Б является К; правым потомком Б является Р; если вершина А изначально имела предка П, то П станет предком для Ц] (* <- lang_ru;; *);;
+		-> [We will call the vertex to be balanced A; the root of its left subtree will be called L, the root of its right subtree B; the left descendant of the vertex B will be called C; the right descendant of the vertex B will be called R; the left descendant of the vertex C will be called M; the right descendant of vertex C will be called K. The rotation is performed if the maximum length of the path from the root of the left subtree of vertex A to its leaves is greater than the maximum length of the path from the root of the right subtree of vertex A to its leaves by 2. In addition, the maximum length of the path from the root to leaves in the left subtree of vertex B is greater than the maximum length of the path from the root to the leaves in the right subtree of vertex B. The rotation consists of two stages. At the first stage, a right small rotation is performed relative to the vertex B (the tree whose root is the vertex B is rotated). At the second stage, a left small turn is carried out relative to the vertex A (the tree whose root is the vertex A is rotated). The result of the rotation is a tree whose root is C; the left descendant of C is A; the right descendant of C is B; the left descendant of A is L; the right descendant of A is M; the left descendant of B is K; the right descendant of B is R; if vertex A originally had a parent P, then P will become a parent for C] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение большого левого поворота)] (* <- lang_ru;; *);
+		[Stat. (Big left turn explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree_root;
+		concept_leaf;
+		concept_path_length;
+		rrel_vertex;
+		rrel_tree_root;
+		rrel_leaf;
+		nrel_subtree;
+		nrel_tree_descendant;
+		nrel_tree_parent
+	};;
+*);;
+
+statement -> statement_of_big_right_turn_explanation (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Будем называть вершину, которую необходимо сбалансировать, А; корень её левого поддерева будем называть Б, корень её правого поддерева Р; левый потомок вершины Б будем называть Л; правый потомок вершины Б будем называть Ц; левый потомок вершины Ц будем называть М; правый потомок вершины Ц будем называть К. Вращение осуществляется в случае, если максимальная длина пути от корня правого поддерева вершины А до его листьев больше, чем максимальная длина пути от корня левого поддерева вершины А до его листьев на 2. Кроме того, максимальная длина пути от корня до листьев в правом поддереве вершины Б больше максимальная длины пути от корня до листьев в левом поддереве вершины Б. Вращение состоит из двух этапов. На первом этапе осуществляется левый малый поворот относительно вершины Б (вращается дерево, корнем которого является вершина Б). На втором этапе осуществляется правый малый поворот относительно вершины А (вращается дерево, корнем которого является вершина А). Результатом поворота является дерево, коренем которого является Ц; левым потомком Ц является Б; правым потомком Ц является А; левым потомком Б является Л; правым потомком Б является М; левым потомком А является К; правым потомком А является Р; если вершина А изначально имела предка П, то П станет предком для Ц] (* <- lang_ru;; *);;
+		-> [We will call the vertex to be balanced A; the root of its left subtree will be called B, the root of its right subtree R; the left descendant of the vertex B will be called L; the right descendant of the vertex B will be called C; the left descendant of the vertex C will be called M; the right descendant of vertex C will be called K. Rotation is performed if the maximum length of the path from the root of the right subtree of vertex A to its leaves is greater than the maximum length of the path from the root of the left subtree of vertex A to its leaves by 2. In addition, the maximum length of the path from the root to leaves in the right subtree of vertex B is greater than the maximum length of the path from the root to the leaves in the left subtree of vertex B. The rotation consists of two stages. At the first stage, a left small rotation is carried out relative to vertex B (the tree rotates, the root of which is vertex B). At the second stage, a right small rotation is carried out relative to vertex A (the tree rotates, the root of which is vertex A). The result of the rotation is a tree whose root is C; the left descendant of C is B; the right descendant of C is A; the left descendant of B is L; the right descendant of B is M; the left descendant of A is K; the right descendant of A is R; if vertex A originally had a parent P, then P will become a parent for C] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объяснение большого правого поворота)] (* <- lang_ru;; *);
+		[Stat. (Big right turn explanation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree_root;
+		concept_leaf;
+		concept_path_length;
+		rrel_vertex;
+		rrel_tree_root;
+		rrel_leaf;
+		nrel_subtree;
+		nrel_tree_descendant;
+		nrel_tree_parent
+	};;
+*);;
+
+statement -> statement_of_balancing_after_adding_new_vertex (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [После добавления вершины требуется не более двух малых поворотов] (* <- lang_ru;; *);;
+		-> [After adding a vertex, no more than two small rotations are required] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Балансировка после добавления вершины)] (* <- lang_ru;; *);
+		[Stat. (Balancing after adding new vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_balancing_after_deleting_vertex (*
+	-> rrel_key_sc_element: concept_avl_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [После удаления вершины может потребоваться n поворотов, где n есть наибольшая длина пути от корня дерева, до его листьев] (* <- lang_ru;; *);;
+		-> [After removing the vertex, n turns may be required, where n is the maximum length of the path from the root of the tree to its leaves] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Балансировка после удаления вершины)] (* <- lang_ru;; *);
+		[Stat. (Balancing after deleting vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_path_length;
+		concept_tree_root;
+		concept_leaf;
+		rrel_vertex;
+		rrel_tree_root;
+		rrel_leaf
+	};;
+*);;
+
+sc_node_class ->
+	concept_balanced_tree;
+	concept_binary_search_tree;
+	concept_tree;
+	concept_path_length;
+	concept_leaf;
+	concept_red_black_tree;
+	concept_vertex;
+	concept_tree;
+	concept_vertex;
+	concept_vertex;
+	concept_tree_root;
+	concept_leaf;
+	concept_path_length;
+	concept_vertex;
+	concept_tree_root;
+	concept_leaf;
+	concept_path_length;
+	concept_vertex;
+	concept_tree_root;
+	concept_leaf;
+	concept_path_length;
+	concept_vertex;
+	concept_tree_root;
+	concept_leaf;
+	concept_path_length;
+	concept_vertex;
+	concept_vertex;
+	concept_path_length;
+	concept_tree_root;
+	concept_leaf;;
+
+sc_node_norole_relation ->
+	nrel_tree_parent;
+	nrel_tree_descendant;
+	nrel_subtree;
+	nrel_subtree;
+	nrel_tree_descendant;
+	nrel_tree_parent;
+	nrel_subtree;
+	nrel_tree_descendant;
+	nrel_tree_parent;
+	nrel_subtree;
+	nrel_tree_descendant;
+	nrel_tree_parent;
+	nrel_subtree;
+	nrel_tree_descendant;
+	nrel_tree_parent;;
+
+sc_node_role_relation ->
+	rrel_leaf;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_tree_root;
+	rrel_leaf;
+	rrel_vertex;
+	rrel_tree_root;
+	rrel_leaf;
+	rrel_vertex;
+	rrel_tree_root;
+	rrel_leaf;
+	rrel_vertex;
+	rrel_tree_root;
+	rrel_leaf;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_tree_root;
+	rrel_leaf;;

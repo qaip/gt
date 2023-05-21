@@ -1,0 +1,69 @@
+concept_balanced_tree
+=> nrel_main_idtf:
+	[сбалансированное дерево] (* <- lang_ru;; *);
+	[balanced tree] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_b_tree;
+concept_red_black_tree;
+concept_avl_tree;
+concept_aa_tree;;
+
+definition -> definition_of_balanced_tree (*
+	-> rrel_key_sc_element: concept_balanced_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево называется сбалансированным тогда и только тогда, когда для каждой его вершины длина пути от этой вершины до каждого из листьев поддерева, образованного этой вершиной, отличается не более, чем на 1] (* <- lang_ru;; *);;
+		-> [A tree is said to be balanced if and only if, for each of its vertices, the length of the path from this vertex to each of the leaves of the subtree formed by this vertex differs by no more than 1] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (сбалансированное дерево)] (* <- lang_ru;; *);
+		[Def. (balanced tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex;
+		concept_path_length;
+		concept_leaf;
+		rrel_vertex;
+		rrel_leaf;
+		nrel_subtree
+	};;
+*);;
+
+statement -> statement_of_statement_about_perfectly_balanced_tree (*
+	-> rrel_key_sc_element: concept_balanced_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Сбалансированное дерево называется идеально сбалансированным, если в каждом из поддеревьев, образованных каждой из его вершин, количество входящих вершин отличается не более, чем на 1] (* <- lang_ru;; *);;
+		-> [A balanced tree is said to be perfectly balanced if the number of incoming vertices in each of the subtrees formed by each of its vertices differs by no more than 1] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение об идельно сбалансированном дереве)] (* <- lang_ru;; *);
+		[Stat. (Statement about perfectly balanced tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex;
+		nrel_subtree
+	};;
+*);;
+
+sc_node_class ->
+	concept_tree;
+	concept_vertex;
+	concept_path_length;
+	concept_leaf;
+	concept_vertex;;
+
+sc_node_norole_relation ->
+	nrel_subtree;
+	nrel_subtree;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_leaf;
+	rrel_vertex;;
