@@ -12,7 +12,7 @@ definition:
   using:
     concepts: |
       vertex
-      hypegraph_edge
+      hypergraph_edge
     rrels: |
       vertex
       hypergraph_edge
