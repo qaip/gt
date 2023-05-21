@@ -10,6 +10,8 @@ definition:
     multiple arcs
   using:
     concepts: |
+      multiple_edges
+      multiple_arcs
       graph
       vertex
       edge
@@ -18,9 +20,6 @@ definition:
       vertex
       edge
       arc
-    nrels: |
-      multiple_edges
-      multiple_arcs
 
 statement:
   wikipedia_glossary_multigraph_definition:
