@@ -91,25 +91,6 @@ statement -> statement_of_path_existence_theorem (*
 	};;
 *);;
 
-statement -> statement_of_longest_path_theorem (*
-	-> rrel_key_sc_element: concept_graph_path;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Нахождение самого длинного пути в графе NP-полная задача, которая не может быть решена за полиномиальное время] (* <- lang_ru;; *);;
-		-> [Finding the longest path in a graph is an NP-complete problem that cannot be solved in polynomial time] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Теорема о самом длинном пути)] (* <- lang_ru;; *);
-		[Stat. (Longest path theorem)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_path_length;
-		concept_longest_path
-	};;
-*);;
-
 statement -> statement_of_path_isomorphism_theorem (*
 	-> rrel_key_sc_element: concept_graph_path;;
 
@@ -174,9 +155,6 @@ sc_node_class ->
 	concept_vertex;
 	concept_edge;
 	concept_connected_graph;
-	concept_graph;
-	concept_path_length;
-	concept_longest_path;
 	concept_isomorphism;
 	concept_path_length;
 	concept_vertex_degree;
