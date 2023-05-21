@@ -1,0 +1,56 @@
+concept_eulerian_chain
+=> nrel_main_idtf:
+	[эйлерова цепь] (* <- lang_ru;; *);
+	[eulerian chain] (* <- lang_en;; *);;
+
+definition -> definition_of_eulerian_chain (*
+	-> rrel_key_sc_element: concept_eulerian_chain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Цепь в графе, которая проходит по каждому ребру ровно один раз] (* <- lang_ru;; *);;
+		-> [A chain in a graph that passes through each edge exactly once] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (эйлерова цепь)] (* <- lang_ru;; *);
+		[Def. (eulerian chain)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_graph_chain;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_eulerian_chain_theorem (*
+	-> rrel_key_sc_element: concept_eulerian_chain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф имеет эйлерову цепь, если и только если он является связным и степени всех вершин четные] (* <- lang_ru;; *);;
+		-> [A graph has an eulerian chain if and only if it is connected and the degree of every vertex is even] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об эйлеровой цепи)] (* <- lang_ru;; *);
+		[Stat. (Eulerian chain theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_chain;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_graph_chain;
+	concept_graph;
+	concept_chain;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;;

@@ -1,0 +1,132 @@
+concept_graph_subchain
+=> nrel_main_idtf:
+	[подцепь графа] (* <- lang_ru;; *);
+	[graph subchain] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_subchain (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Последовательность вершин в графе, являющаяся подмножеством другой цепи или цикла в графе] (* <- lang_ru;; *);;
+		-> [A sequence of vertices in a graph that is a subset of another chain or cycle in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (подцепь графа)] (* <- lang_ru;; *);
+		[Def. (graph subchain)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequence;
+		concept_graph_chain;
+		concept_graph_cycle;
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_subchain_length (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длина максимальной подцепи в графе равна длине максимального пути в графе между двумя вершинами] (* <- lang_ru;; *);;
+		-> [The length of the longest subchain in a graph is equal to the length of the longest path in the graph between any two vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о длине подцепи)] (* <- lang_ru;; *);
+		[Stat. (Subchain length theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_subchain;
+		concept_graph_path;
+		concept_vertex;
+		concept_path_length;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_subchain_connectivity (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подцепочка в графе является связной тогда и только тогда, когда она содержит все вершины между своими концами] (* <- lang_ru;; *);;
+		-> [A subchain in a graph is connected if and only if it contains all vertices between its endpoints] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о связности подцепи)] (* <- lang_ru;; *);
+		[Stat. (Subchain connectivity theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_connectivity;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_subchain_partition (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф может быть разбит на подцепи таким образом, что каждая вершина принадлежит только одной подцепочке] (* <- lang_ru;; *);;
+		-> [Any graph can be partitioned into subchains such that each vertex belongs to exactly one subchain] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о разбиении графа на подцепи)] (* <- lang_ru;; *);
+		[Stat. (Subchain partition theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_theorem_subchain_coloring (*
+	-> rrel_key_sc_element: concept_graph_subchain;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф можно раскрасить в два цвета таким образом, что все вершины в каждой подцепочке имеют разные цвета] (* <- lang_ru;; *);;
+		-> [Any graph can be colored with two colors such that all vertices in each subchain have different colors] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о раскраске подцепи)] (* <- lang_ru;; *);
+		[Stat. (Subchain coloring theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_coloring;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph_sequence;
+	concept_graph_chain;
+	concept_graph_cycle;
+	concept_graph;
+	concept_vertex;
+	concept_graph_subchain;
+	concept_graph_path;
+	concept_vertex;
+	concept_path_length;
+	concept_graph;
+	concept_graph_connectivity;
+	concept_vertex;
+	concept_graph;
+	concept_vertex;
+	concept_graph;
+	concept_graph_coloring;
+	concept_vertex;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;;
