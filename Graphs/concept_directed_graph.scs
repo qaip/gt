@@ -5,7 +5,7 @@ concept_directed_graph
 
 => nrel_idtf:
 	[орграф] (* <- lang_ru;; *);
-	[igraph] (* <- lang_en;; *);
+	[digraph] (* <- lang_en;; *);
 
 
 => nrel_inclusion:
@@ -36,7 +36,11 @@ definition -> definition_of_directed_graph (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		nrel_arc
+		concept_edge;
+		concept_arc;
+		rrel_edge;
+		rrel_arc;
+		rrel_vertex
 	};;
 *);;
 
@@ -44,27 +48,125 @@ statement -> statement_of_theorem_menger (*
 	-> rrel_key_sc_element: concept_directed_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Для любых двух вершин в ориентированном графе минимальное число вершин, которые нужно удалить, чтобы отсечь все пути между ними, равно максимальному числу не пересекающихся путей между ними] (* <- lang_ru;; *);;
-		-> [For any two vertices in a directed graph, the minimum number of vertices that must be removed to disconnect all paths between them is equal to the maximum number of non-intersecting paths between them] (* <- lang_en;; *);;
+		-> [Ориентированный граф слабый тогда и только тогда, когда он имеет цепь] (* <- lang_ru;; *);;
+		-> [A directed graph is weak if it has a chain] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема Менгера)] (* <- lang_ru;; *);
-		[Stat. (Mengers Theorem)] (* <- lang_en;; *);;
+		[Утв. (Слабость орграфа)] (* <- lang_ru;; *);
+		[Stat. (Digraph weakness)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		concept_path;
-		nrel_intersection
+		rrel_vertex;
+		nrel_chain
+	};;
+*);;
+
+statement -> statement_of_strongly_connected_directed_graph (*
+	-> rrel_key_sc_element: concept_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф сильно связный, если для каждой пары вершин в графе существует путь, идущий из первой вершины во вторую] (* <- lang_ru;; *);;
+		-> [A directed graph is strongly connected if there is a path from any vertex to any other vertex in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сильная связность орграфа)] (* <- lang_ru;; *);
+		[Stat. (Strong connectivity of a digraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_graph_path;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_acyclic_directed_graph (*
+	-> rrel_key_sc_element: concept_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентированный граф является ациклическим, если в нём нет ориентированных циклов] (* <- lang_ru;; *);;
+		-> [A directed graph is acyclic if there are no directed cycles in it] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Ациклический орграф)] (* <- lang_ru;; *);
+		[Stat. (Acyclic digraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_cycle
+	};;
+*);;
+
+statement -> statement_of_topological_sorting (*
+	-> rrel_key_sc_element: concept_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Топологической сортировкой называется упорядочивание вершин орграфа таким образом, что каждое ребро идёт от вершины с меньшим номером к вершине с большим номером] (* <- lang_ru;; *);;
+		-> [Topological sorting is arranging vertices of a digraph so that every directed edge goes from a vertex with a smaller number to a vertex with a larger number] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Топологическая сортировка)] (* <- lang_ru;; *);
+		[Stat. (Topological sorting)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_graph_reduction_directed_graph (*
+	-> rrel_key_sc_element: concept_directed_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой граф можно свести к ориентированному графу, присваивая каждому ребру направление] (* <- lang_ru;; *);;
+		-> [Any graph can be reduced to a directed graph by assigning a direction to each edge] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сведение графа к орграфу)] (* <- lang_ru;; *);
+		[Stat. (Graph reduction to a digraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_arc;
+		rrel_edge;
+		rrel_arc
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
 	concept_vertex;
+	concept_edge;
+	concept_arc;
 	concept_vertex;
-	concept_path;;
+	concept_graph_path;
+	concept_graph_path;
+	concept_vertex;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_edge;
+	concept_arc;;
 
 sc_node_norole_relation ->
-	nrel_arc;
-	nrel_intersection;;
+	nrel_chain;
+	nrel_cycle;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_arc;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;
+	rrel_edge;
+	rrel_arc;;

@@ -19,8 +19,8 @@ definition:
 statement:
   graphs_representation:
     title:
-      ru: изображение графов
-      en: graphs representation
+      ru: Изображение графов
+      en: Graphs representation
     ru:
       Графы удобно изображать в виде рисунков, состоящих из точек и линий,
       соединяющих некоторые из этих точек. При этом точки соответствуют вершинам
@@ -36,3 +36,63 @@ statement:
       rrels: |
         vertex
         edge
+  edges_in_graph:
+    title:
+      ru: Рёбра графа
+      en: Graph edges
+    ru: Граф может иметь как и ориентированные, так и неориентированные рёбра
+    en: A graph can have both directed and undirected edges
+    using:
+      concepts: |
+        edge
+        vertex
+        arc
+      rrels: |
+        edge
+        vertex
+        arc
+  usage_in_problems:
+    title:
+      ru: Использование в задачах
+      en: Usage in problems
+    ru:
+      Графы используются для решения различных задач. Если в задаче удаётся
+      использовать графы, то это придаёт задаче наглядность и простоту.
+      Например, графы незаменимы в проектировании транспортных сетей
+    en:
+      Graphs are used to solve various problems. If the graph is used
+      successfully in the task, then this gives the task clarity and simplicity.
+      For example, graphs are indispensable in designing profitable networks
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+subclass:
+  - directed_graph
+  - complete_graph
+  - undirected_graph
+  - hypergraph
+  - multigraph
+  - tightened_graph
+  - graph_halina
+  - external_planar_graph
+  - medial_graph
+  - graph_diamond
+  - triangle_graph
+  - planar_graph
+  - simple_graph
+  - unweighted_graph
+  - supergraph
+  - tree
+  - heap
+  - acyclic_weighted_directed_graph
+  - external_graph
+  - unplanar_graph
+  - one_planar_graph
+  - tournament_graph
+  - normalized_graph
+  - mixed_graph
+  - counterfunctional_graph

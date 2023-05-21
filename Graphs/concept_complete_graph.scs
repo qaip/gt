@@ -1,18 +1,13 @@
 concept_complete_graph
 => nrel_main_idtf:
 	[полный граф] (* <- lang_ru;; *);
-	[complete graph] (* <- lang_en;; *);
-
-
-=> nrel_inclusion:
-concept_regular_graph;
-concept_connected_graph;;
+	[complete graph] (* <- lang_en;; *);;
 
 definition -> definition_of_complete_graph (*
 	-> rrel_key_sc_element: concept_complete_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Простой граф, в котором каждая пара различных вершин смежна] (* <- lang_ru;; *);;
+		-> [Граф, в котором каждая пара различных вершин смежна] (* <- lang_ru;; *);;
 		-> [A simple undirected graph in which every pair of distinct vertices is connected by a unique edge] (* <- lang_en;; *);;
 	*);;
 
@@ -30,12 +25,31 @@ definition -> definition_of_complete_graph (*
 	};;
 *);;
 
+statement -> statement_of_regular_graphs_algorithm (*
+	-> rrel_key_sc_element: concept_complete_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Регулярные графы представляют особую сложность для многих алгоритмов] (* <- lang_ru;; *);;
+		-> [Regular graphs are especially difficult for many algorithms] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Регулярные графы и алгоритмы)] (* <- lang_ru;; *);
+		[Stat. (Rregualr graphs and algorithms)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_algorithm
+	};;
+*);;
 
 sc_node_class ->
 	concept_simple_graph;
 	concept_undirected_graph;
 	concept_vertex;
-	concept_edge;;
+	concept_edge;
+	concept_graph;
+	concept_graph_algorithm;;
 
 sc_node_role_relation ->
 	rrel_vertex;

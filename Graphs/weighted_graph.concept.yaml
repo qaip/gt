@@ -1,0 +1,83 @@
+ru: взвешенный граф
+en: weighted graph
+definition:
+  ru: Граф, в котором каждому ребру соответсвтвует некотрое значение, или вес
+  en:
+    A weighted graph is a graph in which each edge corresponds to some value, or
+    weight
+  using:
+    concepts: |
+      graph
+      edge
+    rrels: |
+      edge
+statement:
+  usage_weighted_graph:
+    title:
+      ru: Использование взвешенных графов
+      en: Usage of weighted graphs
+    ru:
+      Взвешенные графы находят применение во многих областях, включая
+      транспорт, связь, сети и теорию риска. Они используются для моделирования
+      сложных систем и анализа свойств систем
+    en:
+      Weighted graphs are used in many areas, including transportation,
+      communication, networks, and risk theory. They are used to model complex
+      systems and analyze the properties of systems
+    using:
+      concepts: |
+        graph
+        weighted_graph
+  shortest_path:
+    title:
+      ru: Кратчайший путь в графе
+      en: Shortest path in a graph
+    ru:
+      Взвешенные графы используются для решения задач кратчайшего пути.
+      Различные алгоритмы, такие как алгоритм Дейкстры и алгоритм Беллмана-Форда,
+      используются для нахождения кратчайшего пути в взвешенных графах
+    en:
+      Weighted graphs are used to solve shortest path problems. Various
+      algorithms, such as Dijkstra algorithm and Bellman-Ford algorithm, are
+      used to find the shortest path in weighted graphs
+    using:
+      concepts: |
+        graph
+        weighted_graph
+        algorithms
+        shortest_path
+        graph_algorithm
+  minimum_spanning_tree:
+    title:
+      ru: Минимальное остовное дерево
+      en: Minimum spanning tree
+    ru:
+      Взвешенные графы используются для решения задач нахождения минимального
+      остовного дерева. Алгоритмы, такие как алгоритм Прима и алгоритм Крускала,
+      используются для нахождения минимального остовного дерева в взвешенных графах
+    en:
+      Weighted graphs are used to solve minimum spanning tree problems.
+      Algorithms such as Prims algorithm and Kruskals algorithm are used to
+      find the minimum spanning tree in weighted graphs
+    using:
+      concepts: |
+        graph
+        weighted_graph
+        algorithms
+        minimum_spanning_tree
+  clustering_coefficient:
+    title:
+      ru: Коэффициент кластеризации
+      en: Clustering coefficient
+    ru:
+      Коэффициент кластеризации взвешенного графа определяется как отношение
+      числа треугольников в графе к числу подграфов, изоморфных треугольнику
+    en:
+      The clustering coefficient of a weighted graph is defined as the ratio
+      of the number of triangles in the graph to the number of subgraphs
+      isomorphic to a triangle
+    using:
+      concepts: |
+        graph
+        subgraph
+        clustering_coefficient

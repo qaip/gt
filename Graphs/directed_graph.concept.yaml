@@ -3,8 +3,7 @@ ru:
   - орграф
 en:
   - directed graph
-  - igraph
-
+  - digraph
 definition:
   ru:
     Граф, в котором для каждой упорядоченной пары вершин определена
@@ -14,29 +13,84 @@ definition:
     concepts: |
       graph
       vertex
-    nrels: |
+      edge
       arc
+    rrels: |
+      edge
+      arc
+      vertex
 
 statement:
   theorem_menger:
     title:
-      ru: Теорема Менгера
-      en: Mengers Theorem
-    ru:
-      Для любых двух вершин в ориентированном графе минимальное число вершин,
-      которые нужно удалить, чтобы отсечь все пути между ними, равно
-      максимальному числу не пересекающихся путей между ними
-    en:
-      For any two vertices in a directed graph, the minimum number of vertices
-      that must be removed to disconnect all paths between them is equal to the
-      maximum number of non-intersecting paths between them
+      ru: Слабость орграфа
+      en: Digraph weakness
+    ru: Ориентированный граф слабый тогда и только тогда, когда он имеет цепь
+    en: A directed graph is weak if it has a chain
     using:
       concepts: |
         vertex
-        path
+      rrels: |
+        vertex
       nrels: |
-        intersection
-
+        chain
+  strongly_connected_directed_graph:
+    title:
+      ru: Сильная связность орграфа
+      en: Strong connectivity of a digraph
+    ru: Ориентированный граф сильно связный, если для каждой пары вершин в графе
+        существует путь, идущий из первой вершины во вторую
+    en: A directed graph is strongly connected if there is a path from any vertex
+        to any other vertex in the graph
+    using:
+      concepts: |
+        graph_path
+        graph_path
+        vertex
+      rrels: |
+        vertex
+  acyclic_directed_graph:
+    title:
+      ru: Ациклический орграф
+      en: Acyclic digraph
+    ru: Ориентированный граф является ациклическим, если в нём нет ориентированных
+        циклов
+    en: A directed graph is acyclic if there are no directed cycles in it
+    using:
+      nrels: |
+        cycle
+  topological_sorting:
+    title:
+      ru: Топологическая сортировка
+      en: Topological sorting
+    ru: Топологической сортировкой называется упорядочивание вершин орграфа таким
+        образом, что каждое ребро идёт от вершины с меньшим номером к вершине
+        с большим номером
+    en: Topological sorting is arranging vertices of a digraph so that every directed
+        edge goes from a vertex with a smaller number to a vertex with a larger number
+    using:
+      concepts: |
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+  graph_reduction_directed_graph:
+    title:
+      ru: Сведение графа к орграфу
+      en: Graph reduction to a digraph
+    ru: Любой граф можно свести к ориентированному графу, присваивая каждому
+        ребру направление
+    en: Any graph can be reduced to a directed graph by assigning a direction to
+        each edge
+    using:
+      concepts: |
+        graph
+        edge
+        arc
+      rrels: |
+        edge
+        arc
 subclass:
   - tournament_graph
   - directed_forest
