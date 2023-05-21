@@ -35,7 +35,6 @@ graph LR;
   Graph_Operations --> Dual_Graphs([Dual Graphs])
   
   Graphs --> Acyclic_Graphs([Acyclic Graphs])
-  Acyclic_Graphs --> Directed_Acyclic_Graphs([Directed Acyclic Graphs])
   Acyclic_Graphs --> Forests([Forests])
   Acyclic_Graphs --> Trees([Trees])
  
