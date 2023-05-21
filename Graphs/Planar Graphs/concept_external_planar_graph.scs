@@ -32,8 +32,8 @@ statement -> statement_of_euler_formula_external_planar_graph (*
 	-> rrel_key_sc_element: concept_external_planar_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Внешне планарный граф на n вершинах имеет n+2 грани] (* <- lang_ru;; *);;
-		-> [An external planar graph with n vertices has n+2 faces] (* <- lang_en;; *);;
+		-> [Внешне планарный граф на n вершинах имеет n + 2 грани] (* <- lang_ru;; *);;
+		-> [An external planar graph with n vertices has n + 2 faces] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

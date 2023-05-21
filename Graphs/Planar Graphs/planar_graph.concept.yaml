@@ -33,11 +33,11 @@ statement:
       en: Kuratowskis Theorem
     ru:
       Граф планарен тогда и только тогда, когда он не содержит подграфов,
-      гомеоморфных графам К5 (полный граф на 5 вершинах) и К3, 3 (двудольный
+      гомеоморфных графам К-5 (полный граф на 5 вершинах) и К-3, 3 (двудольный
       граф с 3 вершинами в одной доле и 3 вершинами в другой доле)
     en:
       A graph is planar if and only if it does not contain subgraphs
-      homeomorphic to K5 (the complete graph on 5 vertices) or K3, 3 (a
+      homeomorphic to K-5 (the complete graph on 5 vertices) or K-3, 3 (a
       bipartite graph with 3 vertices in each part)
     using:
       concepts: |
