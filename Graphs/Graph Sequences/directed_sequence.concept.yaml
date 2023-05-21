@@ -12,11 +12,13 @@ definition:
     concepts: |
       vertex
       edge
+      arc
       graph_sequence
     rrels: |
       vertex
       edge
       arc
+
 statement:
   directional_and_nondirectional_sequences:
     title:

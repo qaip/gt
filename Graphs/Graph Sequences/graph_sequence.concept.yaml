@@ -2,44 +2,57 @@ ru: последовательность | маршрут | графовая п�
 en: sequence | route | graph sequence
 
 definition:
-  ru: 
-    - Некоторая последовательность m рёбер, такая, что вершины двух соседних рёбер последовательности совпадают
-    - Такая последовательность вершин, что любая соседняя пара вершин является ребром графа
-  en: 
-    - Some sequence of m edges such that the vertices of two adjacent edges of the sequence coincide
-    - A sequence of vertices that any neighboring pair of vertices is an edge of the graph
+  ru:
+    - Некоторая последовательность m рёбер, такая, что вершины двух соседних
+      рёбер последовательности совпадают
+    - Такая последовательность вершин, что любая соседняя пара вершин является
+      ребром графа
+  en:
+    - Some sequence of m edges such that the vertices of two adjacent edges of
+      the sequence coincide
+    - A sequence of vertices that any neighboring pair of vertices is an edge of
+      the graph
   using:
-    concepts:  |
+    concepts: |
       edge
       graph
       vertex
-    rrels:  |
+    rrels: |
       edge
       vertex
-statement: 
+
+statement:
   sequnce_vertexes_naming:
     title:
       ru: Распределение названий между вершинами последовательности
       en: Distribution of names between the vertices of the sequence
-    ru: Верршина 0 последовательности длины k называется начальной, а вершина k называется конечной, все остальные вершины назвываются внутренними
-    en: Vertex 0 of a sequence of length k is called initial, and vertex k is called final, all other vertices are called internal
+    ru:
+      Верршина 0 последовательности длины k называется начальной, а вершина k
+      называется конечной, все остальные вершины назвываются внутренними
+    en:
+      Vertex 0 of a sequence of length k is called initial, and vertex k is
+      called final, all other vertices are called internal
     using:
       concepts: |
         graph
         vertex
       rrels: |
         vertex
+
   havel_hakimi_algorithm:
     title:
       ru: Алгоритм Хавела-Хакими
       en: Havel-Hakimi algorithm
     ru:
-      Алгоритм Гавела Хакими-это алгоритм для построения графа с заданной графовой последовательностью
+      Алгоритм Гавела Хакими-это алгоритм для построения графа с заданной
+      графовой последовательностью
     en:
-      The Havel-Hakimi algorithm is an algorithm for constructing a graph with a given graph sequence
+      The Havel-Hakimi algorithm is an algorithm for constructing a graph with a
+      given graph sequence
     using:
       concepts: |
         graph
+
 subclass:
   - graph_path
   - graph_cycle

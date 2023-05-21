@@ -3,9 +3,7 @@ en: spanning sequence | spanning route
 
 definition:
   ru: Маршрут, содержащий все вершины орграфа
-  en:
-    The sequence, that contains all verteces in directed
-    graph
+  en: The sequence, that contains all verteces in directed graph
   using:
     concepts: |
       directed_graph
@@ -13,6 +11,7 @@ definition:
       vertex
     rrels: |
       vertex
+
 statement:
   spanning_route_existence_theorem:
     title:
@@ -22,8 +21,8 @@ statement:
     en: In a connected graph, there always exists a spanning route
     using:
       concepts: |
-        graph_sequence
         connected_graph
+
   spanning_route_uniqueness_theorem:
     title:
       ru: Теорема о единственности охватывающего маршрута
@@ -32,5 +31,4 @@ statement:
     en: In a connected graph, the spanning route is unique
     using:
       concepts: |
-        graph_sequence
         connected_graph

@@ -17,13 +17,20 @@ definition:
     rrels: |
       vertex
       edge
+      
 statement:
   tightened_graph_properties:
     title:
       ru: Свойства сжатого графа
       en: Properties of a tightened graph
-    ru: Сжатый граф имеет меньшее количество вершин, чем исходный граф. Все свойства сжатого графа, такие как его радиус, диаметр и так далее, могут быть вычислены на основе исходного графа
-    en: The tightened graph has fewer vertices than the original graph. All properties of the tightened graph, such as its radius, diameter, and et cetera, can be computed based on the original graph
+    ru:
+      Сжатый граф имеет меньшее количество вершин, чем исходный граф. Все
+      свойства сжатого графа, такие как его радиус, диаметр и так далее, могут
+      быть вычислены на основе исходного графа
+    en:
+      The tightened graph has fewer vertices than the original graph. All
+      properties of the tightened graph, such as its radius, diameter, and et
+      cetera, can be computed based on the original graph
     using:
       concepts: |
         graph

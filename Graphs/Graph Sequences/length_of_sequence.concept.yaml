@@ -10,6 +10,7 @@ definition:
       graph_sequence
     rrels: |
       edge
+
 statement:
   length_of_sequence_equals_zero:
     title:
@@ -23,30 +24,39 @@ statement:
         graph_sequence
       rrels: |
         vertex
+
   route_shortest_path_theorem:
     title:
       ru: Теорема о кратчайшем пути
       en: Shortest path theorem
-    ru: Длина кратчайшего пути между двумя вершинами в графе равна числу рёбер в кратчайшем маршруте между этими вершинами
-    en: The length of the shortest path between two vertices in a graph is equal to the number of edges in the shortest route between those vertices
+    ru:
+      Длина кратчайшего пути между двумя вершинами в графе равна числу рёбер в
+      кратчайшем маршруте между этими вершинами
+    en:
+      The length of the shortest path between two vertices in a graph is equal
+      to the number of edges in the shortest route between those vertices
     using:
       concepts: |
         graph_sequence
         edge
       rrels: |
         edge
+
   route_longest_path_theorem:
     title:
       ru: Теорема о самом длинном маршруте
       en: Longest route theorem
     ru:
-      Нахождение самого длинного маршрута в графе NP-полная задача, которая не может быть решена за полиномиальное время
+      Нахождение самого длинного маршрута в графе NP-полная задача, которая не
+      может быть решена за полиномиальное время
     en:
-      Finding the longest route in a graph is an NP-complete problem that cannot be solved in polynomial time
+      Finding the longest route in a graph is an NP-complete problem that cannot
+      be solved in polynomial time
     using:
       concepts: |
         graph_sequence
         polynimial_time
+
   route_existence_theorem:
     title:
       ru: Теорема о существовании маршрута
