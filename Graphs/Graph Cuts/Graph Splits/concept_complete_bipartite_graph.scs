@@ -39,7 +39,9 @@ statement -> statement_of_properties_complete_bipartite_graph (*
 	=> nrel_using_constants: {
 		concept_edge;
 		concept_bipartite_graph;
-		rrel_edge
+		concept_vertex;
+		rrel_edge;
+		rrel_vertex
 	};;
 *);;
 
@@ -69,6 +71,7 @@ sc_node_class ->
 	concept_edge;
 	concept_edge;
 	concept_bipartite_graph;
+	concept_vertex;
 	concept_student;
 	concept_course;
 	concept_edge;;
@@ -77,4 +80,5 @@ sc_node_role_relation ->
 	rrel_edge;
 	rrel_vertex;
 	rrel_edge;
+	rrel_vertex;
 	rrel_edge;;

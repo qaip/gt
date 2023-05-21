@@ -18,7 +18,8 @@ definition -> definition_of_graph_splits_decomposition (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_subgraph;
-		concept_partition
+		concept_partition;
+		nrel_subgraph
 	};;
 *);;
 
@@ -27,3 +28,6 @@ sc_node_class ->
 	concept_graph;
 	concept_subgraph;
 	concept_partition;;
+
+sc_node_norole_relation ->
+	nrel_subgraph;;

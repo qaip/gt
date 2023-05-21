@@ -1,7 +1,14 @@
 concept_graph_split
 => nrel_main_idtf:
 	[разбиение графа] (* <- lang_ru;; *);
-	[graph split] (* <- lang_en;; *);;
+	[graph split] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_complete_bipartite_graph;
+concept_graph_split_decomposition;
+concept_distance_hereditary_graph;
+concept_circle_graph;;
 
 definition -> definition_of_graph_split (*
 	-> rrel_key_sc_element: concept_graph_split;;
@@ -31,11 +38,12 @@ statement -> statement_of_properties_graph_split (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (свойства разбиения графа)] (* <- lang_ru;; *);
-		[Stat. (properties)] (* <- lang_en;; *);;
+		[Утв. (Cвойства разбиения графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of graph split)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph_separator
+		concept_graph_separator;
+		concept_bipartite_graph
 	};;
 *);;
 
@@ -48,12 +56,11 @@ statement -> statement_of_algorithms_graph_split (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (алгоритмы разбиения графа)] (* <- lang_ru;; *);
-		[Stat. (algorithms)] (* <- lang_en;; *);;
+		[Утв. (Алгоритмы разбиения графа)] (* <- lang_ru;; *);
+		[Stat. (Algorithms of graph split)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_polynomial_time_algorithm;
-		concept_np_hard_problem
+		concept_polynomial_time
 	};;
 *);;
 
@@ -66,8 +73,8 @@ statement -> statement_of_examples_graph_split (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (примеры разбиения графа)] (* <- lang_ru;; *);
-		[Stat. (examples)] (* <- lang_en;; *);;
+		[Утв. (Примеры разбиения графа)] (* <- lang_ru;; *);
+		[Stat. (Examples of graph split)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_vertex_degree
@@ -83,14 +90,14 @@ statement -> statement_of_related_concepts_graph_split (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (связанные понятия разбиения графа)] (* <- lang_ru;; *);
-		[Stat. (related concepts)] (* <- lang_en;; *);;
+		[Утв. (Связанные понятия разбиения графа)] (* <- lang_ru;; *);
+		[Stat. (Related concepts of graph split)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_maximum_flow;
-		concept_minimum_cut;
-		concept_bipartite_graph_problem;
-		concept_graaph
+		concept_minimum_graph_cut;
+		concept_bipartite_graph;
+		concept_graph
 	};;
 *);;
 
@@ -104,7 +111,7 @@ statement -> statement_of_applications_graph_split (*
 
 	=> nrel_main_idtf:
 		[Утв. (Применения разбиения графа)] (* <- lang_ru;; *);
-		[Stat. (Applications)] (* <- lang_en;; *);;
+		[Stat. (Applications of graph split)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_clustering;
@@ -124,13 +131,13 @@ sc_node_class ->
 	concept_graph_cut;
 	concept_bipartite_graph;
 	concept_graph_separator;
-	concept_polynomial_time_algorithm;
-	concept_np_hard_problem;
+	concept_bipartite_graph;
+	concept_polynomial_time;
 	concept_vertex_degree;
 	concept_maximum_flow;
-	concept_minimum_cut;
-	concept_bipartite_graph_problem;
-	concept_graaph;
+	concept_minimum_graph_cut;
+	concept_bipartite_graph;
+	concept_graph;
 	concept_clustering;
 	concept_community_detection;
 	concept_subgraph_extraction;

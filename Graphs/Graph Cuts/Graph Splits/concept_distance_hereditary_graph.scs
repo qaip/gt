@@ -21,8 +21,8 @@ definition -> definition_of_distance_hereditary_graph (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_subgraph;
-		concept_distance_between_vertices
+		concept_induced_subgraph;
+		concept_graph_path
 	};;
 *);;
 
@@ -116,8 +116,8 @@ statement -> statement_of_related_concepts_distance_hereditary_graph (*
 
 sc_node_class ->
 	concept_graph;
-	concept_subgraph;
-	concept_distance_between_vertices;
+	concept_induced_subgraph;
+	concept_graph_path;
 	concept_bioinformatics;
 	concept_graph_theory;
 	concept_transitively_orientable_graph;
