@@ -1,5 +1,6 @@
 ru: разбиение графа
 en: graph split
+
 definition:
   ru:
     Разбиением графа называют разрез, множество разрезов которого образует
@@ -10,58 +11,59 @@ definition:
       graph
       graph_cut
       bipartite_graph
+
 statement:
   properties_graph_split:
     title:
-      ru: свойства разбиения графа
-      en: properties
+      ru: Cвойства разбиения графа
+      en: Properties of graph split
     ru:
       Разбиение графа на две части всегда является разбиением графа, но не
-      обязательно полным двудольным графом. Разбиение графа является
-      сепаратором графа. Любой граф можно разбить на множество разбиений
+      обязательно полным двудольным графом. Разбиение графа является сепаратором
+      графа. Любой граф можно разбить на множество разбиений
     en:
       Splitting a graph into two parts is always a split of the graph, but not
-      necessarily a complete bipartite graph. A graph split is a separator of the
-      graph. Any graph can be split into a set of splits
+      necessarily a complete bipartite graph. A graph split is a separator of
+      the graph. Any graph can be split into a set of splits
     using:
       concepts: |
         graph_separator
+        bipartite_graph
 
   algorithms_graph_split:
     title:
-      ru: алгоритмы разбиения графа
-      en: algorithms
+      ru: Алгоритмы разбиения графа
+      en: Algorithms of graph split
     ru:
       Разбиение графа можно найти за полиномиальное время, используя алгоритм
-      Каргера-Стейнера. В общем случае, нахождение оптимального разбиения является
-      NP-полной задачей
+      Каргера-Стейнера. В общем случае, нахождение оптимального разбиения
+      является NP-полной задачей
     en:
       A graph split can be found in polynomial time using the Karger-Stein
       algorithm. In general, finding an optimal split is an NP-hard problem
     using:
       concepts: |
-        polynomial_time_algorithm
-        np_hard_problem
+        polynomial_time
 
   examples_graph_split:
     title:
-      ru: примеры разбиения графа
-      en: examples
+      ru: Примеры разбиения графа
+      en: Examples of graph split
     ru:
       Примером разбиения графа является разбиение графа на две части, где одна
       часть содержит вершины с чётными степенями, а другая с нечётными
     en:
       An example of a graph split is splitting a graph into two parts, where one
-      part contains vertices with even degrees and the other part contains vertices
-      with odd degrees
+      part contains vertices with even degrees and the other part contains
+      vertices with odd degrees
     using:
       concepts: |
         vertex_degree
 
   related_concepts_graph_split:
     title:
-      ru: связанные понятия разбиения графа
-      en: related concepts
+      ru: Связанные понятия разбиения графа
+      en: Related concepts of graph split
     ru:
       Разбиение графа связано с такими понятиями, как максимальный поток и
       минимальный разрез. Разбиение графа может быть использовано для решения
@@ -72,13 +74,14 @@ statement:
     using:
       concepts: |
         maximum_flow
-        minimum_cut
-        bipartite_graph_problem
-        graaph
+        minimum_graph_cut
+        bipartite_graph
+        graph
+
   applications_graph_split:
     title:
       ru: Применения разбиения графа
-      en: Applications
+      en: Applications of graph split
     ru:
       Разбиение графа применяется в задачах кластеризации, группировки вершин,
       поиска сообществ, выделения подграфов, а также в анализе социальных и
@@ -99,3 +102,9 @@ statement:
         network
       nrels: |
         subgraph
+
+subclass:
+  - complete_bipartite_graph
+  - graph_split_decomposition
+  - distance_hereditary_graph
+  - circle_graph

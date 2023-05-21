@@ -1,5 +1,6 @@
 ru: круговой граф
 en: circle graph
+
 definition:
   ru:
     Граф, представленный в виде окружности, в которой
@@ -17,6 +18,8 @@ definition:
     rrels: |
       edge
       vertex
+      loop
+
 statement:
   applications_circle_graph:
     title:
@@ -32,6 +35,7 @@ statement:
       concepts: |
         data_analysis
         graph_theory
+
   properties_circle_graph:
     title:
       ru: Свойства кругового графа
@@ -46,8 +50,11 @@ statement:
       a Cartesian product graph and a tree
     using:
       concepts: |
-        cartesian_product_graph
+        graph
         tree
+      nrels: |
+        graph_product
+
   examples_circle_graph:
     title:
       ru: Примеры круговых графов

@@ -4,6 +4,7 @@ ru:
 en:
   - distance-hereditary graph
   - completely separable graph
+
 definition:
   ru:
     Граф, в котором любой индуцированный подграф имеет одинаковый набор
@@ -14,8 +15,9 @@ definition:
   using:
     concepts: |
       graph
-      subgraph
-      distance_between_vertices
+      induced_subgraph
+      graph_path
+
 statement:
   application_distance_hereditary_graph:
     title:
@@ -31,6 +33,7 @@ statement:
       concepts: |
         bioinformatics
         graph_theory
+
   properties_distance_hereditary_graph:
     title:
       ru: Свойства дистанционно-наследственного графа
@@ -44,6 +47,7 @@ statement:
     using:
       concepts: |
         transitively_orientable_graph
+
   algorithms_distance_hereditary_graph:
     title:
       ru: Алгоритмы дистанционно-наследственного графа
@@ -58,6 +62,7 @@ statement:
       concepts: |
         dynamic_programming
         graph_algorithm
+
   examples_distance_hereditary_graph:
     title:
       ru: Примеры дистанционно-наследственного графа
@@ -69,6 +74,7 @@ statement:
     using:
       concepts: |
         molecule
+
   related_concepts_distance_hereditary_graph:
     title:
       ru: Связанные понятия с дистанционно-наследственным графом

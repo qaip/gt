@@ -1,5 +1,6 @@
 ru: полный двудольный граф
 en: complete bipartite graph
+
 definition:
   ru:
     Граф, в котором любые две вершины принадлежат разным долям и каждая вершина
@@ -15,6 +16,7 @@ definition:
     rrels: |
       edge
       vertex
+
 statement:
   properties_complete_bipartite_graph:
     title:
@@ -33,8 +35,11 @@ statement:
       concepts: |
         edge
         bipartite_graph
+        vertex
       rrels: |
         edge
+        vertex
+
   examples_complete_bipartite_graph:
     title:
       ru: Примеры полного двудольного графа

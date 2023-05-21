@@ -12,3 +12,5 @@ definition:
       graph
       subgraph
       partition
+    nrels: |
+      subgraph
