@@ -11,9 +11,7 @@ section_subject_domain_of_graph_cut_space
 	concept_graph_cut_space;
 	concept_vector_space;
 	concept_orthogonal_complement;
-	concept_gomory_hu_tree;
-	concept_maximum_graph_cut;
-	concept_minimum_graph_cut;;
+	concept_gomory_hu_tree;;
 
 section_subject_domain_of_graph_cut_space=[*
 	subject_domain_of_graph_cut_space
@@ -30,8 +28,6 @@ section_subject_domain_of_graph_cut_space=[*
 		concept_vector_space;
 		concept_orthogonal_complement;
 		concept_gomory_hu_tree;
-		concept_maximum_graph_cut;
-		concept_minimum_graph_cut;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_cuts;;
@@ -41,6 +37,4 @@ sc_node_class ->
 	concept_graph_cut_space;
 	concept_vector_space;
 	concept_orthogonal_complement;
-	concept_gomory_hu_tree;
-	concept_maximum_graph_cut;
-	concept_minimum_graph_cut;;
+	concept_gomory_hu_tree;;
