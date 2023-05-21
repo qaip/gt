@@ -45,7 +45,8 @@ statement -> statement_of_weighted_max_cut_usage (*
 		concept_bioinformatics;
 		concept_machine_learning;
 		rrel_graph;
-		rrel_vertex
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -133,4 +134,5 @@ sc_node_role_relation ->
 	rrel_edge;
 	rrel_vertex;
 	rrel_graph;
-	rrel_vertex;;
+	rrel_vertex;
+	rrel_edge;;
