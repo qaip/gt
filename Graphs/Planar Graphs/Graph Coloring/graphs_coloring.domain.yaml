@@ -1,0 +1,21 @@
+en: graph coloring
+ru: раскрасок графов
+
+parent: planar_graphs
+
+max: |
+  graph_coloring
+
+concepts: |
+  vertex_coloring
+  edge_coloring
+  color_class
+  chromatic_polynomial
+  coloring_areas
+  total_coloring
+  chromatic_number
+  chromatic_index
+
+rrels: |
+  chromatic_number
+  chromatic_index

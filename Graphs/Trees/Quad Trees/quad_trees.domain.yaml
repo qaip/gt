@@ -1,0 +1,10 @@
+en: quadtrees
+ru: квадродеревьев
+
+parent: trees
+
+max: |
+  quadtree
+
+concepts: |
+  polygonal_map_quadtree
