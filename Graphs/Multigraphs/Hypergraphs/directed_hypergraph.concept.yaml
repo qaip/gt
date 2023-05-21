@@ -7,7 +7,7 @@ definition:
     котором гиперрёбра упорядоченные пары
   en:
     Hypergraph, that consists of a set of vertices V and a set of hypergraph
-    edges H, where a hypegraph edges are ordered pair
+    edges H, where a hypergraph edges are ordered pair
   using:
     concepts: |
       vertex
