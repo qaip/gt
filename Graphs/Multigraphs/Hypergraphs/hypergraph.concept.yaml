@@ -7,7 +7,7 @@ definition:
     или рёбрами гиперграфа, могут соединять более двух вершин
   en:
     A graph in which edges, called hyperedges or hypergraph
-    edges, may connect more than two nodes
+    edges, may connect more than two vertices
   using:
     concepts: |
       graph
