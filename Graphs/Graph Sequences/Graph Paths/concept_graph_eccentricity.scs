@@ -1,0 +1,96 @@
+concept_graph_eccentricity
+=> nrel_main_idtf:
+	[эксцентриситет вершины] (* <- lang_ru;; *);
+	[vertex eccentricity] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_eccentricity (*
+	-> rrel_key_sc_element: concept_graph_eccentricity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Наибольшее расстояние между вершиной и всеми остальными вершинами графа] (* <- lang_ru;; *);;
+		-> [The greatest distance between a vertex and all other vertices in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (эксцентриситет вершины)] (* <- lang_ru;; *);
+		[Def. (vertex eccentricity)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_graph;
+		concept_path_length;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_eccentricity_radius_diameter_theorem (*
+	-> rrel_key_sc_element: concept_graph_eccentricity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Эксцентриситет вершины графа не превосходит радиуса графа, который в свою очередь не превосходит диаметра графа] (* <- lang_ru;; *);;
+		-> [The eccentricity of a vertex in a graph does not exceed the radius of the graph, which in turn does not exceed the diameter of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о связи эксцентриситета радиуса и диаметра графа)] (* <- lang_ru;; *);
+		[Stat. (Theorem on the relationship between eccentricity radius and diameter of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_path_length;
+		nrel_graph_radius;
+		nrel_graph_diameter
+	};;
+*);;
+
+statement -> statement_of_eccentricity_center_theorem (*
+	-> rrel_key_sc_element: concept_graph_eccentricity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Центральная вершина графа имеет минимальный эксцентриситет] (* <- lang_ru;; *);;
+		-> [The central vertex of a graph has the minimum eccentricity] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о центральной вершине)] (* <- lang_ru;; *);
+		[Stat. (Central vertex theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_eccentricity_diameter_theorem (*
+	-> rrel_key_sc_element: concept_graph_eccentricity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Эксцентриситет каждой диаметральной вершины графа равен его диаметру] (* <- lang_ru;; *);;
+		-> [The eccentricity of each diametrical vertex of a graph is equal to its diameter] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о эксцентриситете диаметральных вершин)] (* <- lang_ru;; *);
+		[Stat. (Theorem on the eccentricity of diametrical vertices)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		nrel_graph_diameter
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_graph;
+	concept_path_length;
+	concept_path_length;
+	concept_vertex;
+	concept_graph;;
+
+sc_node_norole_relation ->
+	nrel_graph_radius;
+	nrel_graph_diameter;
+	nrel_graph_diameter;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;;
