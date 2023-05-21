@@ -12,10 +12,9 @@ definition:
     concepts: |
       undirected_graph
       vertex
+      multiple_edges
     rrels: |
       vertex
-    nrels: |
-      multiple_edges
 
 statement:
   undirected_multigraphs_and_hypergraphs:
