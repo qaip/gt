@@ -1,0 +1,61 @@
+ru: полный двудольный граф
+en: complete bipartite graph
+
+definition:
+  ru:
+    Граф, в котором любые две вершины принадлежат разным долям и каждая вершина
+    из одной доли соединена со всеми вершинами из другой доли
+  en:
+    A graph in which any two vertices belong to different parts and each vertex
+    in one part is connected to all vertices in the other part
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    rrels: |
+      edge
+      vertex
+
+statement:
+  properties_complete_bipartite_graph:
+    title:
+      ru: Свойства полного двудольного графа
+      en: Properties of complete bipartite graph
+    ru:
+      В полном двудольном графе количество рёбер равно произведению размерностей
+      двух долей. Также он является двудольным графом, в котором каждая вершина
+      первой доли соединена со всеми вершинами второй доли и наоборот
+    en:
+      In a complete bipartite graph, the number of edges is equal to the product
+      of the dimensions of the two parts. It is also a bipartite graph in which
+      each vertex of the first part is connected to all vertices of the second
+      part and vice versa
+    using:
+      concepts: |
+        edge
+        bipartite_graph
+        vertex
+      rrels: |
+        edge
+        vertex
+
+  examples_complete_bipartite_graph:
+    title:
+      ru: Примеры полного двудольного графа
+      en: Examples of complete bipartite graph
+    ru:
+      Примером полного двудольного графа является граф, где первая доля является
+      множеством студентов, а вторая множеством курсов. Ребро между студентом и
+      курсом существует, если студент посещает этот курс
+    en:
+      An example of a complete bipartite graph is a graph where the first part
+      is the set of students and the second is the set of courses. An edge
+      between a student and a course exists if the student attends that course
+    using:
+      concepts: |
+        student
+        course
+        edge
+      rrels: |
+        edge

@@ -1,0 +1,12 @@
+en: graph cut space
+ru: пространств разрезов графа
+
+parent: graph_cuts
+
+max: |
+  graph_cut_space
+
+concepts: |
+  vector_space
+  orthogonal_complement
+  gomory_hu_tree

@@ -1,0 +1,31 @@
+ru: максимальный разрез графа
+en: maximum graph cut
+definition:
+  ru:
+    Разрез, размер которого не меньше размера любого другого разреза. То есть
+    это разбиение вершин графов на два дополнительных множества S и T, такое,
+    что количество ребер между S и T равно возможный
+  en:
+    A maximum cut is a cut whose size is at least the size of any other cut.
+    That is, it is a partition of the graphs vertices into two complementary
+    sets S and T, such that the number of edges between S and T is as large as
+    possible
+  using:
+    concepts: |
+      graph
+      edge
+      vertex
+      graph_cut
+    rrels: |
+      edge
+      vertex
+statement: 
+  finding_max_cut:
+    title:
+      ru: Нахождение макимального разреза
+      en: Finding max cut
+    ru: Нахождение максимального разреза графа является отдельной задачей
+    en: Finding such a cut is known as the max-cut problem
+    using:
+      concepts: |
+        max_cut_problem

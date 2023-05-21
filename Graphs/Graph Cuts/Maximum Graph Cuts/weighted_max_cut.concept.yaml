@@ -1,0 +1,20 @@
+ru: взвешенный максимальный разрез графа
+en: weighted max cut
+definition:
+  ru:
+    Взвешенный максимальный разрез является разбиением вершин взвешенного графа
+    на два непересекающихся подмножества, такие, что сумма весов ребер, которые
+    пересечение перегородки максимально
+  en:
+    A weighted max cut is a partition of the vertices of a weighted graph into
+    two disjoint subsets, such that the sum of the weights of the edges that
+    cross the partition is maximized
+  using:
+    concepts: |
+      weighted_graph
+      graph
+      edge
+      vertex
+    rrels: |
+      edge
+      vertex
