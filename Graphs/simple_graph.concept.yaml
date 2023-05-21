@@ -12,15 +12,16 @@ definition:
     rrels: |
       vertex
       edge
+
 statement:
   handshaking_theorem:
     title:
       ru: Теорема о рукопожатиях
       en: Handshaking theorem
-    ru:
-      Сумма степеней вершин графа равна удвоенному количеству его ребер
+    ru: Сумма степеней вершин графа равна удвоенному количеству его ребер
     en:
-      The sum of the degrees of the vertices in a graph is equal to twice the number of edges
+      The sum of the degrees of the vertices in a graph is equal to twice the
+      number of edges
     using:
       concepts: |
         graph
