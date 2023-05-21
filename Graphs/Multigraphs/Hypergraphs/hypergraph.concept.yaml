@@ -17,6 +17,7 @@ definition:
     rrels: |
       edge
       vertex
+      hypergraph_edge
 
 statement:
   wikipedia_glossary_hypergraph_definition:
@@ -31,8 +32,8 @@ statement:
         hypergraph_edge
       rrels: |
         vertex
+        hypergraph_edge
 
 subclass:
-  - |
-    directed_hypergraphs
-    undirected_hypergraphs
+  - directed_hypergraphs
+  - undirected_hypergraphs

@@ -3,11 +3,11 @@ en: undirected multigraph
 
 definition:
   ru:
-    Неориентированный граф, в котором
-    разрешены кратные рёбра, тоесть рёбра, соединяющие одну и ту же пару вершин
+    Неориентированный граф, в котором разрешены кратные рёбра, тоесть рёбра,
+    соединяющие одну и ту же пару вершин
   en:
-    An undirected graph in which multiple edges,
-    wich means edges connecting the same pair of vertices, are allowed
+    An undirected graph in which multiple edges, wich means edges connecting the
+    same pair of vertices, are allowed
   using:
     concepts: |
       undirected_graph

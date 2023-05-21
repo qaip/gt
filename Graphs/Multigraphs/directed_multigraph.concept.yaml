@@ -3,13 +3,11 @@ en: directed multigraph
 
 definition:
   ru:
-    Ориентированный граф, в котором
-    разрешены кратные дуги, то есть дуги, имеющие те же начальные и конечные
-    вершины
+    Ориентированный граф, в котором разрешены кратные дуги, то есть дуги,
+    имеющие те же начальные и конечные вершины
   en:
-    A directed graph that allows multiple arcs, wich
-    means arcs having the same start and end vertices, between the same pair of
-    vertices
+    A directed graph that allows multiple arcs, wich means arcs having the same
+    start and end vertices, between the same pair of vertices
   using:
     concepts: |
       directed_graph

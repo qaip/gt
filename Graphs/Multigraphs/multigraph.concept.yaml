@@ -44,7 +44,7 @@ statement:
         vertex
         edge
         arc
+
 subclass:
-  - |
-    directed_multigraphs
-    undirected_multigraphs
+    - directed_multigraphs
+    - undirected_multigraphs

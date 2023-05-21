@@ -11,5 +11,8 @@ concepts: |
   undirected_hypergraph
   hypergraph_edge
 
+rrels: |
+  hypergraph_edge
+
 nrels: |
   transvinsal

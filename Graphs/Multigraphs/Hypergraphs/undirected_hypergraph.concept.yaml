@@ -15,6 +15,7 @@ definition:
       hypegraph_edge
     rrels: |
       vertex
+      hypergraph_edge
 
 statement:
   undirected_hypergraphs_statement:
