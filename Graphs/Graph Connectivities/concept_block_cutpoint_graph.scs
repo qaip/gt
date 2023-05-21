@@ -37,18 +37,18 @@ statement -> statement_of_block_cutpoint_graph_vs_biconnected_graph (*
 
 	=> nrel_using_constants: {
 		concept_biconnected_graph;
-		concept_block;
-		rrel_cutpoint
+		rrel_cutpoint;
+		nrel_block
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
 	concept_bridge;
-	concept_biconnected_graph;
-	concept_block;;
+	concept_biconnected_graph;;
 
 sc_node_norole_relation ->
+	nrel_block;
 	nrel_block;;
 
 sc_node_role_relation ->

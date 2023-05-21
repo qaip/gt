@@ -37,7 +37,8 @@ statement -> statement_of_connected_graph_and_pathfinding (*
 
 	=> nrel_using_constants: {
 		concept_connected_graph;
-		concept_graph_algorithm
+		concept_graph_algorithm;
+		concept_graph_sequence
 	};;
 *);;
 
@@ -55,7 +56,11 @@ statement -> statement_of_connected_graph_and_spanning_tree (*
 
 	=> nrel_using_constants: {
 		concept_connected_graph;
-		concept_spanning_tree
+		concept_spanning_tree;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -73,7 +78,7 @@ statement -> statement_of_connected_graph_and_minimum_spanning_tree (*
 
 	=> nrel_using_constants: {
 		concept_connected_graph;
-		concept_minimum_spanning_tree;
+		concept_spanning_tree;
 		concept_weighted_graph
 	};;
 *);;
@@ -84,11 +89,16 @@ sc_node_class ->
 	concept_vertex;
 	concept_connected_graph;
 	concept_graph_algorithm;
+	concept_graph_sequence;
 	concept_connected_graph;
 	concept_spanning_tree;
+	concept_vertex;
+	concept_edge;
 	concept_connected_graph;
-	concept_minimum_spanning_tree;
+	concept_spanning_tree;
 	concept_weighted_graph;;
 
 sc_node_role_relation ->
-	rrel_vertex;;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_edge;;

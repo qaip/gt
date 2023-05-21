@@ -71,8 +71,9 @@ statement -> statement_of_trivial_graph_with_self_loop (*
 		[Stat. (Trivial graph with a self-loop)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_trivial_graph;
-		rrel_loop
+		concept_vertex;
+		rrel_loop;
+		rrel_vertex
 	};;
 *);;
 
@@ -89,7 +90,9 @@ statement -> statement_of_trivial_graph_and_connected_components (*
 		[Stat. (Connectivity of trivial graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_connected_graph
+		concept_connected_graph;
+		concept_vertex;
+		rrel_vertex
 	};;
 *);;
 
@@ -99,10 +102,13 @@ sc_node_class ->
 	concept_edge;
 	concept_graph_algorithm;
 	concept_graph_theory;
-	concept_trivial_graph;
-	concept_connected_graph;;
+	concept_vertex;
+	concept_connected_graph;
+	concept_vertex;;
 
 sc_node_role_relation ->
 	rrel_vertex;
 	rrel_edge;
-	rrel_loop;;
+	rrel_loop;
+	rrel_vertex;
+	rrel_vertex;;
