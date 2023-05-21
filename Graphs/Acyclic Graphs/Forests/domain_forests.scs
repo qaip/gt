@@ -9,7 +9,6 @@ section_subject_domain_of_forests
 <- rrel_key_sc_element:
 	subject_domain_of_forests;
 	concept_forest;
-	concept_forest;
 	concept_polyforest;
 	concept_pseudoforest;
 	concept_random_forest;
@@ -29,7 +28,6 @@ section_subject_domain_of_forests=[*
 		concept_forest;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_forest;
 		concept_polyforest;
 		concept_pseudoforest;
 		concept_random_forest;
@@ -42,7 +40,6 @@ section_subject_domain_of_forests=[*
 *];;
 
 sc_node_class ->
-	concept_forest;
 	concept_forest;
 	concept_polyforest;
 	concept_pseudoforest;

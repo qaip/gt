@@ -37,7 +37,7 @@ statement -> statement_of_multiple_arcs_statement (*
 
 	=> nrel_using_constants: {
 		concept_multigraph;
-		concept_edge_weight
+		concept_rib_weight
 	};;
 *);;
 
@@ -45,7 +45,7 @@ sc_node_class ->
 	concept_arc;
 	concept_vertex;
 	concept_multigraph;
-	concept_edge_weight;;
+	concept_rib_weight;;
 
 sc_node_role_relation ->
 	rrel_arc;
