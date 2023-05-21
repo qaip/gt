@@ -1,0 +1,37 @@
+ru: лес условной инференции
+en: conditional inference forest
+
+definition:
+  ru:
+    Алгоритм машинного обучения, который использует лес решающих деревьев для
+    задач классификации и регрессии, учитывая условия на признаки
+  en:
+    A machine learning algorithm that uses a forest of decision trees for
+    classification and regression tasks, taking into account conditions on the
+    features
+  using:
+    concepts: |
+      decision_tree
+      classification
+      regression
+      feature_condition
+
+statement:
+  conditional_inference_algorithm:
+    title:
+      ru: Алгоритм леса условной инференции
+      en: Conditional inference forest algorithm
+    ru:
+      Алгоритм леса условной инференции включает в себя построение леса решающих
+      деревьев, каждое из которых строится с учетом условий на признаки и
+      обучается на случайной подвыборке обучающей выборки
+    en:
+      The conditional inference forest algorithm involves constructing a forest
+      of decision trees, each of which is built taking into account conditions
+      on the features and trained on a random subset of the training data
+    using:
+      concepts: |
+        decision_tree
+        feature_condition
+        random_sampling
+        training_data

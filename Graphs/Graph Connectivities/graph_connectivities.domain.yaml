@@ -1,0 +1,30 @@
+en: graph connectivities
+ru: связности графа
+
+parent: graphs
+
+max: |
+  graph_connectivity
+
+concepts: |
+  bridge
+  non_separable_graph
+  separable_graph
+  trivial_graph
+  block_cutpoint_graph
+  weakly_connected_component
+  strongly_connected_component
+  conncected_graph
+  disconnected_graph
+
+nrels: |
+  vertex_connectivity
+  edge_connectivity
+  weakly_connected_component
+  strongly_connected_component
+  graph_block
+  connected_component
+  block
+
+rrels: |
+  cutpoint

@@ -1,0 +1,65 @@
+ru: ориентированное дерево
+en: directed tree
+
+definition:
+  ru:
+    Ориентированный граф, в котором любые две вершины соединены ровно одним
+    путём
+  en:
+    A directed graph in which any two vertices are connected by exactly one path
+  using:
+    concepts: |
+      directed_graph
+      vertex
+      path
+    nrels: |
+      intersection
+
+statement:
+  theorem_labeled_directed_tree:
+    title:
+      ru: Теорема о количестве помеченных ориентированных деревьев
+      en: Theorem on the Number of Labeled Directed Trees
+    ru:
+      Количество помеченных ориентированных деревьев на n вершинах равно n^(n-1)
+    en: The number of labeled directed trees on n vertices is equal to n^(n-1)
+    using:
+      concepts: |
+        labeled_directed_tree
+        vertex
+      rrels: |
+        vertex
+
+  theorem_maximum_indegree:
+    title:
+      ru: Теорема о максимальной степени входа
+      en: Theorem on Maximum Indegree
+    ru:
+      В любом ориентированном дереве с n вершинами максимальная степень входа
+      любой вершины не превосходит n-1
+    en:
+      In any directed tree with n vertices, the maximum indegree of any vertex
+      is at most n-1
+    using:
+      concepts: |
+        vertex
+        indegree
+      rrels: |
+        vertex
+
+  theorem_indegree_outdegree:
+    title:
+      ru: Теорема о степенях вершин
+      en: Theorem on Vertex Degrees
+    ru:
+      В любом ориентированном дереве с n вершинами сумма степеней всех вершин
+      равна 2(n-1)
+    en:
+      In any directed tree with n vertices, the sum of degrees of all vertices
+      is equal to 2(n-1)
+    using:
+      concepts: |
+        vertex
+        vertex_degree
+      rrels: |
+        vertex

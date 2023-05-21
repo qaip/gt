@@ -1,0 +1,31 @@
+ru: обход с обрадным предпросмотром
+en: reverse pre-order depth traversal | reverse pre-order traversal
+
+definition:
+  ru: Одна из разновидностей обхода бинарного дерева в глубину
+  en: One of the varieties of binary tree depth traversal
+  using:
+    concepts: |
+      binary_tree
+      depth_traversal
+      tree_traversal
+
+statement:
+  pre_order_traversal_explanation:
+    title:
+      ru: Объяснение обхода дерева с обратным предпросмотром
+      en: Reverse pre-order traversal explanation
+    ru:
+      Во время обхода с обратным предпросмотром сначала просматривается текущая
+      вершина, затем выполняется обход каждой смежной с ней вершины справа
+      налево
+    en:
+      During a reverse pre-order depth traversal, the current vertex is first
+      checked, then each vertex adjacent to it from right to left is traversed
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        vertex_adjacency
+      rrels: |
+        vertex

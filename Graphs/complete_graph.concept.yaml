@@ -1,0 +1,21 @@
+ru: полный граф
+en: complete graph
+definition:
+  ru:
+    Простой граф, в котором каждая пара различных вершин
+    смежна
+  en:
+    A simple undirected graph in which every pair of distinct vertices is
+    connected by a unique edge
+  using:
+    concepts: |
+      simple_graph
+      undirected_graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+subclass:
+  - regular_graph
+  - connected_graph

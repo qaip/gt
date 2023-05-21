@@ -1,0 +1,69 @@
+ru: связный граф
+en: connected graph
+definition:
+  ru: Граф, в котором между любой парой вершин есть путь
+  en:
+    A connected graph is a graph in which there is a path between any two
+    vertices
+  using:
+    concepts: |
+      graph
+      graph_path
+      vertex
+    rrels: |
+      vertex
+
+statement:
+  connected_graph_and_pathfinding:
+    title:
+      ru: Связные графы и поиск пути
+      en: Connected graphs and pathfinding
+    ru:
+      Алгоритмы поиска пути используют связные графы для поиска оптимальных
+      маршрутов между двумя точками в графе
+    en:
+      Pathfinding algorithms use connected graphs to find optimal routes between
+      two points in the graph
+    using:
+      concepts: |
+        connected_graph
+        graph_algorithm
+        graph_sequence
+
+  connected_graph_and_spanning_tree:
+    title:
+      ru: Связные графы и остовные деревья
+      en: Connected graphs and spanning trees
+    ru:
+      Связные графы могут быть использованы для построения остовных деревьев,
+      которые являются подмножеством ребер графа, связывающих все его вершины
+    en:
+      Connected graphs can be used to construct spanning trees, which are a
+      subset of the graph edges that connect all of its vertices
+    using:
+      concepts: |
+        connected_graph
+        spanning_tree
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge
+
+  connected_graph_and_minimum_spanning_tree:
+    title:
+      ru: Связные графы и минимальные остовные деревья
+      en: Connected graphs and minimum spanning trees
+    ru:
+      Минимальные остовные деревья используют связные графы для построения
+      дерева, которое является подмножеством ребер графа, связывающих все его
+      вершины, и имеет наименьшую сумму весов ребер
+    en:
+      Minimum spanning trees use connected graphs to construct a tree that is a
+      subset of the graph edges that connect all of its vertices and has the
+      smallest sum of edge weights
+    using:
+      concepts: |
+        connected_graph
+        spanning_tree
+        weighted_graph

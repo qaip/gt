@@ -1,0 +1,56 @@
+ru: разрез s-t
+en: s-t cut
+
+definition:
+  ru: Разрез графа, который пересекает путь между вершинами s и t
+  en: A graph cut that intersects the path between s and t
+  using:
+    concepts: |
+      graph
+      vertex
+      graph_cut
+      path
+    rrels: |
+      vertex
+    nrels: |
+      intersection
+
+statement:
+  theorem_st_cut_problem:
+    title:
+      ru: Задача о разрезе s-t
+      en: s-t cut problem
+    ru: Найти минимальный разрез графа, пересекающий путь между s и t
+    en: Find the minimum cut of a graph that intersects the path between s and t
+    using:
+      concepts: |
+        graph
+        vertex
+        minimum_graph_cut
+        path
+      rrels: |
+        vertex
+      nrels: |
+        intersection
+
+  theorem_s_t_reachability:
+    title:
+      ru: Достижимость в сети
+      en: Reachability in a network
+    ru:
+      В сети существует путь между s и t, если и только если минимальный разрез
+      между s и t равен 0
+    en:
+      There exists a path between s and t in a network if and only if the
+      minimum cut between s and t is equal to 0
+    using:
+      concepts: |
+        graph
+        vertex
+        network_flow
+        minimum_graph_cut
+        path
+      rrels: |
+        vertex
+      nrels: |
+        intersection

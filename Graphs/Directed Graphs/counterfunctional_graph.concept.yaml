@@ -1,0 +1,88 @@
+ru: контрфункциональный граф
+en: counterfunctional graph
+
+definition:
+  ru:
+    Ориентированный граф, в котором для любых двух вершин существует ровно один
+    путь между ними
+  en:
+    A directed graph in which there exists exactly one path between any two
+    vertices
+  using:
+    concepts: |
+      directed_graph
+      vertex
+      graph_path
+    rrels: |
+      vertex
+
+statement:
+  theorem_wang:
+    title:
+      ru: Теорема Вана
+      en: Wangs Theorem
+    ru:
+      Контрфункциональный граф является полным тогда и только тогда, когда он
+      имеет ровно один цикл, проходящий через все вершины
+    en:
+      A counterfunctional graph is complete if and only if it has exactly one
+      cycle passing through all vertices
+    using:
+      concepts: |
+        complete_graph
+        graph_cycle
+        vertex
+      rrels: |
+        vertex
+
+  theorem_bang_jensen:
+    title:
+      ru: Теорема Бэнга-Дженсена
+      en: Bang-Jensens Theorem
+    ru:
+      Контрфункциональный граф содержит гамильтонов путь, проходящий через все
+      его вершины
+    en:
+      A counterfunctional graph contains a Hamiltonian path passing through all
+      its vertices
+    using:
+      concepts: |
+        hamiltonian_path
+        vertex
+      rrels: |
+        vertex
+
+  theorem_nash_williams:
+    title:
+      ru: Теорема Нэша-Уильямса
+      en: Nash-Williams Theorem
+    ru:
+      Любой контрфункциональный граф может быть разложен на несколько деревьев и
+      не более чем один цикл, проходящий через все вершины
+    en:
+      Any counterfunctional graph can be decomposed into several trees and at
+      most one cycle passing through all vertices
+    using:
+      concepts: |
+        tree
+        graph_cycle
+        vertex
+      rrels: |
+        vertex
+
+  theorem_brooks:
+    title:
+      ru: Теорема Брукса
+      en: Brooks Theorem
+    ru:
+      В любом контрфункциональном графе, кроме полных и нечётных циклов,
+      хроматическое число не превосходит максимальной степени вершины
+    en:
+      In any counterfunctional graph, except for complete graphs and odd cycles,
+      the chromatic number does not exceed the maximum degree of a vertex
+    using:
+      concepts: |
+        chromatic_number
+        vertex_degree
+        complete_graph
+        odd_cycle
