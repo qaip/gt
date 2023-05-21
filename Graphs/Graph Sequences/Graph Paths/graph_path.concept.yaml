@@ -2,17 +2,20 @@ ru: путь | графовый путь
 en: path | graph path
 
 definition:
-  ru: Последовательность вершин, в которой каждая вершина соединена со следующей ребром
+  ru:
+    Последовательность вершин, в которой каждая вершина соединена со следующей
+    ребром
   en: Sequence of vertices where each vertex is connected to the next edge
-  using: 
-    concepts:  |
+  using:
+    concepts: |
       vertex
       edge
       graph_sequence
-    rrels:  |
+    rrels: |
       edge
       vertex
-statement: 
+
+statement:
   property_of_vertex_independency:
     title:
       ru: Свойство вершинной независимости
@@ -20,10 +23,11 @@ statement:
     ru: Два пути вершинно независимы, если они не имеют общих внутренних вершин
     en: Two paths are vertex independent if they do not share interior vertices
     using:
-      concepts:  |
+      concepts: |
         vertex
       rrels: |
         vertex
+
   property_of_edges_independency:
     title:
       ru: Свойство рёберной независимости
@@ -31,10 +35,11 @@ statement:
     ru: Два пути рёберно независимы, если они не имеют общих внутренних рёбер
     en: Two paths are edge independent if they do not have common interior edges
     using:
-      concepts:  |
+      concepts: |
         edge
       rrels: |
         edge
+
   path_existence_theorem:
     title:
       ru: Теорема о существовании пути
@@ -44,22 +49,14 @@ statement:
     using:
       concepts: |
         connected_graph
-  shortest_path_theorem:
-    title:
-      ru: Теорема о кратчайшем пути
-      en: Shortest path theorem
-    ru: Алгоритм Дейкстры находит кратчайший путь во взвешенном графе
-    en: Dijkstras algorithm finds the shortest path in a weighted graph
-    using:
-      concepts: |
-        shortest_path
+
   longest_path_theorem:
     title:
       ru: Теорема о самом длинном пути
       en: Longest path theorem
     ru:
-      Нахождение самого длинного пути в графе NP-полная задача, которая не
-      может быть решена за полиномиальное время
+      Нахождение самого длинного пути в графе NP-полная задача, которая не может
+      быть решена за полиномиальное время
     en:
       Finding the longest path in a graph is an NP-complete problem that cannot
       be solved in polynomial time
@@ -67,20 +64,24 @@ statement:
       concepts: |
         graph
         path_length
+        longest_path
+
   path_isomorphism_theorem:
     title:
       ru: Теорема об изоморфизме путей
       en: Isomorphism theorem for paths
     ru:
-      Два пути изоморфны тогда и только тогда, когда они имеют одинаковую
-      длину и соответствующие вершины имеют одинаковую степень
+      Два пути изоморфны тогда и только тогда, когда они имеют одинаковую длину
+      и соответствующие вершины имеют одинаковую степень
     en:
       Two paths are isomorphic if and only if they have the same length and
       corresponding vertices have the same degree
     using:
       concepts: |
         isomorphism
+        path_length
         vertex_degree
+
   path_cover_theorem:
     title:
       ru: Теорема о покрытии путей
@@ -98,6 +99,7 @@ statement:
         edge
       rrels: |
         edge
+
   path_matching_theorem:
     title:
       ru: Теорема о пути соответствия
@@ -111,12 +113,13 @@ statement:
     using:
       concepts: |
         bipartite_graph
-        matching
-        vertex_partition
+        longest_path
+
 subclass:
-  - shortest_path
-  - longest_path
   - hamiltonian_path
-  - eulerian_path
   - path_length
   - graph_path_weight
+  - shortest_path
+  - longest_path
+  - eulerian_path
+  - graph_eccentricity

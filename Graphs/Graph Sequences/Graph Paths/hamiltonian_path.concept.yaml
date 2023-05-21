@@ -13,6 +13,7 @@ definition:
     rrels: |
       edge
       vertex
+
 statement:
   hamiltonian_path_problem:
     title:
@@ -34,27 +35,19 @@ statement:
         graph
       rrels: |
         vertex
-  hamiltonian_cycle_theorem:
-    title:
-      ru: Теорема о Гамильтоновом цикле
-      en: Hamiltonian cycle theorem
-    ru: Граф содержит гамильтонов цикл, если степень каждой вершины не меньше, чем половина числа вершин в графе
-    en: A graph contains a Hamiltonian cycle if the degree of each vertex is at least half the number of vertices in the graph
-    using:
-      concepts:  |
-        vertex
-        hamiltonian_cycle
-        vertex_degree
-      rrels: |
-        vertex
+
   dirac_theorem:
     title:
       ru: Теорема Дирака
       en: Diracs theorem
-    ru: Граф содержит гамильтонов путь, если степень каждой вершины в графе не меньше, чем половина числа вершин в графе
-    en: A graph contains a Hamiltonian path if the degree of each vertex in the graph is at least half the number of vertices in the graph
+    ru:
+      Граф содержит гамильтонов путь, если степень каждой вершины в графе не
+      меньше, чем половина числа вершин в графе
+    en:
+      A graph contains a Hamiltonian path if the degree of each vertex in the
+      graph is at least half the number of vertices in the graph
     using:
-      concepts:  |
+      concepts: |
         vertex
         vertex_degree
       rrels: |

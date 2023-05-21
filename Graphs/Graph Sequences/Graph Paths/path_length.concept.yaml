@@ -14,19 +14,27 @@ definition:
       edge
     rrels: |
       edge
+
 statement:
-  path_length_theorem:
+  proposition_weighted_path:
     title:
-      ru: Теорема о длине пути
-      en: Path length theorem
-    ru: Длина пути в графе равна числу ребер, входящих в этот путь
-    en: The length of a path in a graph is equal to the number of edges in the path
+      ru: Взвешенный путь
+      en: Weighted Path
+    ru:
+      Путь в графе, в котором каждому ребру присвоено некоторое число,
+      называется взвешенным путем
+    en:
+      A path in a graph where each edge is assigned a number is called a
+      weighted path
     using:
       concepts: |
         graph_path
         edge
       rrels: |
         edge
+      nrels: |
+        rib_weight
+
   path_equals_zero:
     title:
       ru: Условие эквивалентности длины пути нулю

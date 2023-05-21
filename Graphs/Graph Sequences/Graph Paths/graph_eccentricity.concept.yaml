@@ -11,19 +11,27 @@ definition:
       path_length
     rrels: |
       vertex
+
 statement:
   eccentricity_radius_diameter_theorem:
     title:
       ru: Теорема о связи эксцентриситета радиуса и диаметра графа
-      en: Theorem on the relationship between eccentricity radius and diameter of a graph
-    ru: Эксцентриситет вершины графа не превосходит радиуса графа, который в свою очередь не превосходит диаметра графа
-    en: The eccentricity of a vertex in a graph does not exceed the radius of the graph, which in turn does not exceed the diameter of the graph
+      en:
+        Theorem on the relationship between eccentricity radius and diameter of
+        a graph
+    ru:
+      Эксцентриситет вершины графа не превосходит радиуса графа, который в свою
+      очередь не превосходит диаметра графа
+    en:
+      The eccentricity of a vertex in a graph does not exceed the radius of the
+      graph, which in turn does not exceed the diameter of the graph
     using:
       concepts: |
         path_length
       nrels: |
         graph_radius
         graph_diameter
+
   eccentricity_center_theorem:
     title:
       ru: Теорема о центральной вершине
@@ -32,17 +40,20 @@ statement:
     en: The central vertex of a graph has the minimum eccentricity
     using:
       concepts: |
-        graph_path
-        graph_length
+        vertex
+      rrels: |
+        vertex
 
   eccentricity_diameter_theorem:
     title:
       ru: Теорема о эксцентриситете диаметральных вершин
       en: Theorem on the eccentricity of diametrical vertices
     ru: Эксцентриситет каждой диаметральной вершины графа равен его диаметру
-    en: The eccentricity of each diametrical vertex of a graph is equal to its diameter
+    en:
+      The eccentricity of each diametrical vertex of a graph is equal to its
+      diameter
     using:
       concepts: |
-        graph_length
+        graph
       nrels: |
         graph_diameter

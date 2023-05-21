@@ -6,7 +6,6 @@ definition:
   en: The path in a graph with the smallest sum of edge weights
   using:
     concepts: |
-      path_length
       graph_path
     nrels: |
       rib_weight
@@ -20,20 +19,23 @@ statement:
     en: Dijkstras algorithm finds the shortest path in a weighted graph
     using:
       concepts: |
-        path_length
+        dijkstra_algorithm
+        weighted_graph
 
   floyd_warshall_algorithm:
     title:
       ru: Алгоритм Флойда-Уоршелла
       en: Floyd-Warshall algorithm
-    ru: Алгоритм, находящий кратчайшие расстояния между всеми парами вершин в графе
-    en: An algorithm that finds the shortest distances between all pairs of vertices in a graph
+    ru:
+      Алгоритм, находящий кратчайшие расстояния между всеми парами вершин в
+      графе
+    en:
+      An algorithm that finds the shortest distances between all pairs of
+      vertices in a graph
     using:
       concepts: |
-        graph_path_weight
-        path_length
+        floyd_warshall_algorithm
+        graph_path
         vertex
       rrels: |
         vertex
-      nrels: |
-        rib_weight

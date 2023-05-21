@@ -19,22 +19,28 @@ statement:
     title:
       ru: Существование эйлерова пути
       en: Existence of Eulerian path
-    ru: В связном графе существует эйлеров путь тогда и только тогда, когда степень каждой вершины чётна
-    en: In a connected graph, an Eulerian path exists if and only if the degree of each vertex is even
+    ru:
+      В связном графе существует эйлеров путь тогда и только тогда, когда
+      степень каждой вершины чётна
+    en:
+      In a connected graph, an Eulerian path exists if and only if the degree of
+      each vertex is even
     using:
       concepts: |
         connected_graph
         vertex_degree
-        graph_path
 
   semi_eulerian_path_exists:
     title:
       ru: Существование полуэйлерова пути
       en: Existence of semi-Eulerian path
-    ru: В связном графе существует полуэйлеров путь тогда и только тогда, когда ровно две вершины имеют нечётную степень
-    en: In a connected graph, a semi-Eulerian path exists if and only if exactly two vertices have odd degree
+    ru:
+      В связном графе существует полуэйлеров путь тогда и только тогда, когда
+      ровно две вершины имеют нечётную степень
+    en:
+      In a connected graph, a semi-Eulerian path exists if and only if exactly
+      two vertices have odd degree
     using:
       concepts: |
         connected_graph
         vertex_degree
-        graph_path
