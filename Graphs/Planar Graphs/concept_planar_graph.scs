@@ -6,7 +6,7 @@ concept_planar_graph
 
 => nrel_inclusion:
 concept_one_planar_graph;
-concept_triangular_graph;
+concept_triangle_graph;
 concept_graph_diamond;
 concept_medial_graph;
 concept_external_planar_graph;

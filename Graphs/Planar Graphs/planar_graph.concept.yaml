@@ -63,7 +63,7 @@ statement:
 
 subclass:
   - one_planar_graph
-  - triangular_graph
+  - triangle_graph
   - graph_diamond
   - medial_graph
   - external_planar_graph
