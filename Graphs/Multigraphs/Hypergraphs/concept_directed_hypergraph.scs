@@ -7,8 +7,8 @@ definition -> definition_of_directed_hypergraph (*
 	-> rrel_key_sc_element: concept_directed_hypergraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Направленным является гиперграф, который состоит из множества вершин V и множества гиперрёбер H, в котором гиперрёбра упорядоченные пары] (* <- lang_ru;; *);;
-		-> [Directed Hipergraph is such hypergraph, that consists of a set of vertices V and a set of hypergraph edges H, where a hypegraph edges are ordered pair] (* <- lang_en;; *);;
+		-> [Гиперграф, который состоит из множества вершин V и множества гиперрёбер H, в котором гиперрёбра упорядоченные пары] (* <- lang_ru;; *);;
+		-> [Hypergraph, that consists of a set of vertices V and a set of hypergraph edges H, where a hypegraph edges are ordered pair] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

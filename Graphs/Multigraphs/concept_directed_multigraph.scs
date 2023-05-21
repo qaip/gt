@@ -7,8 +7,8 @@ definition -> definition_of_directed_multigraph (*
 	-> rrel_key_sc_element: concept_directed_multigraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Ориентированным мультиграфом называют ориентированный граф, в котором разрешены кратные дуги, то есть дуги, имеющие те же начальные и конечные вершины] (* <- lang_ru;; *);;
-		-> [A directed multigraph is a directed graph that allows multiple arcs, wich means arcs having the same start and end vertices, between the same pair of vertices] (* <- lang_en;; *);;
+		-> [Ориентированный граф, в котором разрешены кратные дуги, то есть дуги, имеющие те же начальные и конечные вершины] (* <- lang_ru;; *);;
+		-> [A directed graph that allows multiple arcs, wich means arcs having the same start and end vertices, between the same pair of vertices] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

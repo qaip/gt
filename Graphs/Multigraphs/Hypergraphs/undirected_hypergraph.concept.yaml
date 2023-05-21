@@ -3,11 +3,11 @@ en: undirected hypergraph
 
 definition:
   ru:
-    Ненаправленным называют гиперграф, который состоит из множества вершин V из
+    Гиперграф, который состоит из множества вершин V из
     множества гиперрёбер H, в котором гиперрёбра не являются упорядоченными
     парами
   en:
-    An undirected hypergraph is a hypergraph that consists of a set of vertices
+    A hypergraph that consists of a set of vertices
     V from a set of hyperedges H, in which the hyperedges are not ordered pairs
   using:
     concepts: |
