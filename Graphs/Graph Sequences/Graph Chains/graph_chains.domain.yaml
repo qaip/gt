@@ -1,0 +1,19 @@
+en: graph chains
+ru: цепей графа
+
+parent: graph_sequences
+
+max: |
+  graph_chain
+
+concepts: |
+  simple_graph_chain
+  hamiltonian_chain
+  alternating_chain
+  graph_subchain
+  chain_weight
+  chain_length
+  eulerian_chain
+
+nrels: |
+  arcs_adjacency

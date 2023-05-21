@@ -1,0 +1,18 @@
+ru: топологическая сортировка
+en: Topological sort
+
+definition:
+  ru:
+    Алгоритм, который упорядочивает вершины ориентированного ациклического графа
+    таким образом, чтобы для каждого ребра u и v вершина u предшествовала
+    вершине v в этом упорядочении
+  en:
+    An algorithm that orders the vertices of a directed acyclic graph such that
+    for every edge u and v, vertex u comes before vertex v in the ordering
+  using:
+    concepts: |
+      directed_acyclic_graph
+      vertex
+      edge
+    nrels: |
+      ordering
