@@ -36,14 +36,14 @@ statement -> statement_of_directed_hypergraphs_statement (*
 		[Stat. (Directed hypergraphs statement)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_directed_graphs
+		concept_directed_graph
 	};;
 *);;
 
 sc_node_class ->
 	concept_vertex;
 	concept_hypergraph_edge;
-	concept_directed_graphs;;
+	concept_directed_graph;;
 
 sc_node_role_relation ->
 	rrel_vertex;

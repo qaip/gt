@@ -5,8 +5,8 @@ concept_multigraph
 
 
 => nrel_inclusion:
-concept_directed_multigraphs;
-concept_undirected_multigraphs;;
+concept_directed_multigraph;
+concept_undirected_multigraph;;
 
 definition -> definition_of_multigraph (*
 	-> rrel_key_sc_element: concept_multigraph;;
