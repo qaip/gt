@@ -1,6 +1,6 @@
 concept_segmentation_based_object_categorization
 => nrel_main_idtf:
-	[segmentation based object categorization] (* <- lang_ru;; *);
+	[сегментация основанная на категоризации объектов] (* <- lang_ru;; *);
 	[segmentation based object categorization] (* <- lang_en;; *);;
 
 definition -> definition_of_segmentation_based_object_categorization (*
@@ -12,7 +12,7 @@ definition -> definition_of_segmentation_based_object_categorization (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (segmentation based object categorization)] (* <- lang_ru;; *);
+		[Опр. (сегментация основанная на категоризации объектов)] (* <- lang_ru;; *);
 		[Def. (segmentation based object categorization)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
