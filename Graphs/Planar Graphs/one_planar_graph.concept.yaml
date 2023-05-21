@@ -21,8 +21,8 @@ statement:
     title:
       ru: Свойство 1-планарного графа
       en: Property of a 1-planar graph
-    ru: Любой 1-планарный граф с n вершинами имеет не более 4n-8 рёбер
-    en: Any 1-planar graph with n vertices has at most 4n-8 edges
+    ru: Любой 1-планарный граф с n вершинами имеет не более 4 * n - 8 рёбер
+    en: Any 1-planar graph with n vertices has at most 4 * n - 8 edges
     using:
       concepts: |
         vertex
