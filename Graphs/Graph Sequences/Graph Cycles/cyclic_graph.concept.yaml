@@ -14,8 +14,14 @@ statement:
     title:
       ru: Использование циклического графа в схемотехнике
       en: Ciclic graph usage in circuit design
-    ru: Циклические графики используются в схемотехнике для представления соединений между электронными компонентами и анализа их поведения. Цепь с циклом может вызвать колебания или нестабильность в цепи
-    en: Cyclic graphs are used in circuit design to represent the connections between electronic components and analyze their behavior. A circuit with a cycle can cause oscillations or instability in the circuit
+    ru:
+      Циклические графики используются в схемотехнике для представления
+      соединений между электронными компонентами и анализа их поведения. Цепь с
+      циклом может вызвать колебания или нестабильность в цепи
+    en:
+      Cyclic graphs are used in circuit design to represent the connections
+      between electronic components and analyze their behavior. A circuit with a
+      cycle can cause oscillations or instability in the circuit
     using:
       concepts: |
         graph_cycle

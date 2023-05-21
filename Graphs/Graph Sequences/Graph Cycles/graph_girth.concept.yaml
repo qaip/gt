@@ -21,4 +21,3 @@ statement:
         graph
       nrels: |
         graph_diameter
-        

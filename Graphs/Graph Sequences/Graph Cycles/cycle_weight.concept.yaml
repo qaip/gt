@@ -18,8 +18,12 @@ statement:
     title:
       ru: Теорема о минимальном весе цикла
       en: Minimum cycle weight theorem
-    ru: Минимальный вес цикла в графе является минимальным из весов циклов, проходящих через данный узел
-    en: The minimum weight of a cycle in a graph is the minimum weight among cycles passing through a given node
+    ru:
+      Минимальный вес цикла в графе является минимальным из весов циклов,
+      проходящих через данный узел
+    en:
+      The minimum weight of a cycle in a graph is the minimum weight among
+      cycles passing through a given node
     using:
       concepts: |
         graph_cycle
@@ -33,12 +37,15 @@ statement:
     title:
       ru: Теорема о весе гамильтонова цикла
       en: Hamiltonian cycle weight theorem
-    ru: Взвешенный связный граф содержит гамильтонов цикл, если его вес не превышает веса любого другого цикла в графе
-    en: A weighted connected graph contains a Hamiltonian cycle if its weight does not exceed the weight of any other cycle in the graph
+    ru:
+      Взвешенный связный граф содержит гамильтонов цикл, если его вес не
+      превышает веса любого другого цикла в графе
+    en:
+      A weighted connected graph contains a Hamiltonian cycle if its weight does
+      not exceed the weight of any other cycle in the graph
     using:
       concepts: |
         hamiltonian_cycle
         weighted_graph
       nrels: |
         rib_weight
-  

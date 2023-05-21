@@ -16,14 +16,18 @@ definition:
     nrels: |
       rib_weight
 
-
 statement:
   minimum_weight_cycle_exists:
     title:
       ru: Существование цикла минимального веса
       en: Existence of minimum weight cycle
-    ru: В связном взвешенном графе с n вершинами и m ребрами существует цикл минимального веса тогда и только тогда, когда он содержит цикл отрицательного веса
-    en: In a connected weighted graph with n vertices and m edges, a minimum weight cycle exists if and only if it contains a negative weight cycle
+    ru:
+      В связном взвешенном графе с n вершинами и m ребрами существует цикл
+      минимального веса тогда и только тогда, когда он содержит цикл
+      отрицательного веса
+    en:
+      In a connected weighted graph with n vertices and m edges, a minimum
+      weight cycle exists if and only if it contains a negative weight cycle
     using:
       concepts: |
         connected_graph

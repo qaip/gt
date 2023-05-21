@@ -17,8 +17,12 @@ statement:
     title:
       ru: Существование эйлерова цикла
       en: Existence of Eulerian cycle
-    ru: В связном графе существует эйлеров цикл тогда и только тогда, когда степень каждой вершины чётна
-    en: In a connected graph, an Eulerian cycle exists if and only if the degree of each vertex is even
+    ru:
+      В связном графе существует эйлеров цикл тогда и только тогда, когда
+      степень каждой вершины чётна
+    en:
+      In a connected graph, an Eulerian cycle exists if and only if the degree
+      of each vertex is even
     using:
       concepts: |
         connected_graph
@@ -26,4 +30,3 @@ statement:
         vertex
       rrels: |
         vertex
-  
