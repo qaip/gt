@@ -17,3 +17,47 @@ definition:
       graph_algorithm
     rrels: |
       edge
+statement:
+  weighted_max_cut_usage:
+    title:
+      ru: Использование взвешенного максимального разреза
+      en: Usage of weighted maximum cut
+    ru:
+      Взвешенный максимальный разрез графа используется в различных областях, таких
+      как машинное обучение и биоинформатика, для кластеризации и анализа
+      данных, а также в задачах оптимизации и теории графов
+    en:
+      Weighted maximum cut is used in various fields such as machine learning
+      and bioinformatics for data clustering and analysis, community detection,
+      as well as in optimization problems and graph theory
+    using:
+      concepts: |
+        machine_learning
+        bioinformatics
+        data_clustering
+        community_detection
+        optimization
+        graph_theory
+        graph_cut
+        graph_algorithm
+  weighted_max_cut_algorithms:
+    title:
+      ru: Алгоритмы взвешенного максимального разреза
+      en: Algorithms for weighted maximum cut
+    ru:
+      Существуют различные алгоритмы для решения задачи взвешенного
+      максимального разреза, такие как алгоритмы Каргера-Карпа и Фидук-Эдмондса,
+      а также мультистартовые алгоритмы и методы декомпозиции. Некоторые из этих
+      алгоритмов могут работать эффективно только для особых классов графов,
+      например, для двудольных графов
+    en:
+      There are various algorithms for solving the weighted maximum cut problem,
+      such as the Karger-Karp and Fiduccia-Mattheyses algorithms, as well as
+      multi-start algorithms and decomposition methods. Some of these algorithms
+      may work efficiently only for special classes of graphs, for example, for
+      bipartite graphs
+    using:
+      concepts: |
+        graph_algorithm
+        graph_cut
+        bipartite_graph
