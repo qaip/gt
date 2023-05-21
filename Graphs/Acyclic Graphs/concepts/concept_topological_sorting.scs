@@ -1,0 +1,33 @@
+concept_topological_sorting
+=> nrel_main_idtf:
+	[топологическая сортировка] (* <- lang_ru;; *);
+	[Topological sort] (* <- lang_en;; *);;
+
+definition -> definition_of_topological_sorting (*
+	-> rrel_key_sc_element: concept_topological_sorting;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм, который упорядочивает вершины ориентированного ациклического графа таким образом, чтобы для каждого ребра u и v вершина u предшествовала вершине v в этом упорядочении] (* <- lang_ru;; *);;
+		-> [An algorithm that orders the vertices of a directed acyclic graph such that for every edge u and v, vertex u comes before vertex v in the ordering] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (топологическая сортировка)] (* <- lang_ru;; *);
+		[Def. (Topological sort)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_acyclic_graph;
+		concept_vertex;
+		concept_edge;
+		nrel_ordering
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_directed_acyclic_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_norole_relation ->
+	nrel_ordering;;

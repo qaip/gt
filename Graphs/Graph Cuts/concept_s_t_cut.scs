@@ -1,0 +1,96 @@
+concept_s_t_cut
+=> nrel_main_idtf:
+	[разрез s-t] (* <- lang_ru;; *);
+	[s-t cut] (* <- lang_en;; *);;
+
+definition -> definition_of_s_t_cut (*
+	-> rrel_key_sc_element: concept_s_t_cut;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Разрез графа, который пересекает путь между вершинами s и t] (* <- lang_ru;; *);;
+		-> [A graph cut that intersects the path between s and t] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (разрез s-t)] (* <- lang_ru;; *);
+		[Def. (s-t cut)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_graph_cut;
+		concept_path;
+		rrel_vertex;
+		nrel_intersection
+	};;
+*);;
+
+statement -> statement_of_theorem_st_cut_problem (*
+	-> rrel_key_sc_element: concept_s_t_cut;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Найти минимальный разрез графа, пересекающий путь между s и t] (* <- lang_ru;; *);;
+		-> [Find the minimum cut of a graph that intersects the path between s and t] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Задача о разрезе s-t)] (* <- lang_ru;; *);
+		[Stat. (s-t cut problem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_minimum_graph_cut;
+		concept_path;
+		rrel_vertex;
+		nrel_intersection
+	};;
+*);;
+
+statement -> statement_of_theorem_s_t_reachability (*
+	-> rrel_key_sc_element: concept_s_t_cut;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В сети существует путь между s и t, если и только если минимальный разрез между s и t равен 0] (* <- lang_ru;; *);;
+		-> [There exists a path between s and t in a network if and only if the minimum cut between s and t is equal to 0] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Достижимость в сети)] (* <- lang_ru;; *);
+		[Stat. (Reachability in a network)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_network_flow;
+		concept_minimum_graph_cut;
+		concept_path;
+		rrel_vertex;
+		nrel_intersection
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_graph_cut;
+	concept_path;
+	concept_graph;
+	concept_vertex;
+	concept_minimum_graph_cut;
+	concept_path;
+	concept_graph;
+	concept_vertex;
+	concept_network_flow;
+	concept_minimum_graph_cut;
+	concept_path;;
+
+sc_node_norole_relation ->
+	nrel_intersection;
+	nrel_intersection;
+	nrel_intersection;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;;

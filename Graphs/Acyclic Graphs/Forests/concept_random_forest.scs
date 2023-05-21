@@ -1,0 +1,68 @@
+concept_random_forest
+=> nrel_main_idtf:
+	[случайный лес] (* <- lang_ru;; *);
+	[random forest] (* <- lang_en;; *);;
+
+definition -> definition_of_random_forest (*
+	-> rrel_key_sc_element: concept_random_forest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм машинного обучения, основанный на построении множества решающих деревьев и ансамблировании их ответов] (* <- lang_ru;; *);;
+		-> [A machine learning algorithm based on constructing a set of decision trees and aggregating their outputs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (случайный лес)] (* <- lang_ru;; *);
+		[Def. (random forest)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_decision_tree;
+		concept_ensemble_learning
+	};;
+*);;
+
+statement -> statement_of_random_forest_algorithm (*
+	-> rrel_key_sc_element: concept_random_forest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм случайного леса включает в себя построение множества решающих деревьев, каждое из которых обучается на случайной подвыборке обучающей выборки] (* <- lang_ru;; *);;
+		-> [The random forest algorithm involves constructing a set of decision trees, each of which is trained on a random subset of the training data] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Алгоритм случайного леса)] (* <- lang_ru;; *);
+		[Stat. (Random forest algorithm)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_decision_tree;
+		concept_random_sampling;
+		concept_training_data
+	};;
+*);;
+
+statement -> statement_of_feature_importance_theorem_random_forest (*
+	-> rrel_key_sc_element: concept_random_forest;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Алгоритм случайного леса может быть использован для оценки важности признаков] (* <- lang_ru;; *);;
+		-> [The random forest algorithm can be used to assess feature importance] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о важности признаков случайного леса)] (* <- lang_ru;; *);
+		[Stat. (Feature importance theorem of random forest)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_decision_tree;
+		concept_feature_importance
+	};;
+*);;
+
+sc_node_class ->
+	concept_decision_tree;
+	concept_ensemble_learning;
+	concept_decision_tree;
+	concept_random_sampling;
+	concept_training_data;
+	concept_decision_tree;
+	concept_feature_importance;;
