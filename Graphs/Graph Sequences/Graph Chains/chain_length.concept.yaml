@@ -1,0 +1,32 @@
+ru: длина цепи
+en: chain length
+
+definition:
+  ru: Количество ребер в цепи
+  en: The number of edges in a chain
+  using:
+    concepts: |
+      edge
+      graph_chain
+    rrels: |
+      edge
+
+statement:
+  longest_chain_theorem:
+    title:
+      ru: Теорема о самой длинной цепи
+      en: Longest chain theorem
+    ru:
+      Самая длинная цепь в графе является путь, который содержит максимальное
+      число ребер
+    en:
+      The longest chain in a graph is a path that contains the maximum number of
+      edges
+    using:
+      concepts: |
+        graph
+        edge
+        graph_chain
+        graph_path
+      rrels: |
+        edge
