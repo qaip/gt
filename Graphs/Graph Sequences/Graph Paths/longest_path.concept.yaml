@@ -2,8 +2,8 @@ ru: самый длинный путь
 en: longest path
 
 definition:
-  ru: самый длинный путь в графе
-  en: the longest path in a graph
+  ru: Самый длинный путь в графе
+  en: The longest path in a graph
   using:
     concepts: |
       graph_path
@@ -24,4 +24,3 @@ statement:
       concepts: |
         graph
         path_length
-        longest_path
