@@ -2,8 +2,12 @@ ru: подцепь графа
 en: graph subchain
 
 definition:
-  ru: Последовательность вершин в графе, являющаяся подмножеством другой цепи или цикла в графе
-  en: A sequence of vertices in a graph that is a subset of another chain or cycle in the graph
+  ru:
+    Последовательность вершин в графе, являющаяся подмножеством другой цепи или
+    цикла в графе
+  en:
+    A sequence of vertices in a graph that is a subset of another chain or cycle
+    in the graph
   using:
     concepts: |
       graph_sequence
@@ -13,17 +17,18 @@ definition:
       vertex
     rrels: |
       vertex
+      
 statement:
   theorem_subchain_length:
     title:
       ru: Теорема о длине подцепи
       en: Subchain length theorem
     ru:
-      Длина максимальной подцепи в графе равна длине максимального пути в
-      графе между двумя вершинами
+      Длина максимальной подцепи в графе равна длине максимального пути в графе
+      между двумя вершинами
     en:
-      The length of the longest subchain in a graph is equal to the length of the
-      longest path in the graph between any two vertices
+      The length of the longest subchain in a graph is equal to the length of
+      the longest path in the graph between any two vertices
     using:
       concepts: |
         graph_subchain
@@ -32,6 +37,7 @@ statement:
         path_length
       rrels: |
         vertex
+
   theorem_subchain_connectivity:
     title:
       ru: Теорема о связности подцепи
@@ -45,6 +51,7 @@ statement:
     using:
       concepts: |
         graph
+        graph_connectivity
         vertex
       rrels: |
         vertex
@@ -54,8 +61,8 @@ statement:
       ru: Теорема о разбиении графа на подцепи
       en: Subchain partition theorem
     ru:
-      Любой граф может быть разбит на подцепи таким образом, что каждая
-      вершина принадлежит только одной подцепочке
+      Любой граф может быть разбит на подцепи таким образом, что каждая вершина
+      принадлежит только одной подцепочке
     en:
       Any graph can be partitioned into subchains such that each vertex belongs
       to exactly one subchain
@@ -71,8 +78,8 @@ statement:
       ru: Теорема о раскраске подцепи
       en: Subchain coloring theorem
     ru:
-      Любой граф можно раскрасить в два цвета таким образом, что все вершины
-      в каждой подцепочке имеют разные цвета
+      Любой граф можно раскрасить в два цвета таким образом, что все вершины в
+      каждой подцепочке имеют разные цвета
     en:
       Any graph can be colored with two colors such that all vertices in each
       subchain have different colors
@@ -81,5 +88,5 @@ statement:
         graph
         graph_coloring
         vertex
-      rrels: |  
+      rrels: |
         vertex

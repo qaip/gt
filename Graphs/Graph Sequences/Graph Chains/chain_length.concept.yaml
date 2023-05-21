@@ -10,8 +10,9 @@ definition:
       graph_chain
     rrels: |
       edge
-statement: 
- longest_chain_theorem:
+
+statement:
+  longest_chain_theorem:
     title:
       ru: Теорема о самой длинной цепи
       en: Longest chain theorem
@@ -29,4 +30,3 @@ statement:
         graph_path
       rrels: |
         edge
-        

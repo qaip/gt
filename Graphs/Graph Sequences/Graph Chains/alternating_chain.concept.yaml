@@ -2,8 +2,12 @@ ru: чередующаяся цепь
 en: alternating chain
 
 definition:
-  ru: Последовательность вершин в графе, в которой соседние вершины чередуются между различными подмножествами вершин
-  en: A sequence of vertices in a graph in which adjacent vertices alternate between different subsets of vertices
+  ru:
+    Последовательность вершин в графе, в которой соседние вершины чередуются
+    между различными подмножествами вершин
+  en:
+    A sequence of vertices in a graph in which adjacent vertices alternate
+    between different subsets of vertices
   using:
     concepts: |
       vertex
@@ -11,18 +15,16 @@ definition:
       graph_sequence
     rrels: |
       vertex
+
 statement:
   alternating_path_theorem:
     title:
       ru: Теорема о чередующейся цепи
       en: Alternating path theorem
-    ru:
-      Любой двудольный граф имеет чередующуюся цепь максимального размера
-    en:
-      Every bipartite graph has an alternating path of maximum size
+    ru: Любой двудольный граф имеет чередующуюся цепь максимального размера
+    en: Every bipartite graph has an alternating path of maximum size
     using:
       concepts: |
         graph
         bipartite_graph
         chain_length
-        

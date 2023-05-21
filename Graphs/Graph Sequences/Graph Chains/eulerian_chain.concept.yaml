@@ -11,17 +11,18 @@ definition:
       graph_chain
     rrels: |
       edge
+
 statement:
   eulerian_chain_theorem:
     title:
       ru: Теорема об эйлеровой цепи
       en: Eulerian chain theorem
     ru:
-      Граф имеет эйлерову цепь, если и только если он является связным и
-      степени всех вершин четные
+      Граф имеет эйлерову цепь, если и только если он является связным и степени
+      всех вершин четные
     en:
-      A graph has an eulerian chain if and only if it is connected and the degree
-      of every vertex is even
+      A graph has an eulerian chain if and only if it is connected and the
+      degree of every vertex is even
     using:
       concepts: |
         graph
@@ -29,4 +30,3 @@ statement:
         vertex
       rrels: |
         vertex
-  

@@ -12,21 +12,68 @@ definition:
       edge
     nrels: |
       rib_weight
-statement: 
-   maximal_weight_chain_theorem:
+
+statement:
+  proposition_chain_shortest_weight:
     title:
-      ru: Теорема о цепи максимального веса
-      en: Maximal weight chain theorem
-    ru:
-      Цепь с максимальной суммой весов рёбер
-    en:
-      Chain with maximum sum of edge weights
+      ru: Свойство кратчайшего веса цепи
+      en: Shortest Chain Weight Property
+    ru: Кратчайшая цепь между двумя вершинами является единственной
+    en: The chain with the shortest weight between two vertices is unique
     using:
       concepts: |
-        graph
-        edge
         graph_chain
-      rrels: |
-        edge
       nrels: |
         rib_weight
+      rrels: |
+        vertex
+
+  proposition_chain_longest_weight:
+    title:
+      ru: Свойство длиннейшего веса цепи
+      en: Longest Chain Weight Property
+    ru: Длиннейшая цепь между двумя вершинами является единственной
+    en: The chain with the longest weight between two vertices is unique
+    using:
+      concepts: |
+        graph_chain
+      nrels: |
+        rib_weight
+      rrels: |
+        vertex
+
+  proposition_chain_additivity:
+    title:
+      ru: Аддитивность веса цепей
+      en: Additivity of Chain Weights
+    ru:
+      Вес цепи, соединяющей две вершины, равен сумме весов цепей, соединяющих
+      эти вершины через промежуточные вершины
+    en:
+      The weight of the chain connecting two vertices is equal to the sum of the
+      weights of the chains connecting these vertices through intermediate
+      vertices
+    using:
+      concepts: |
+        graph_chain
+      nrels: |
+        rib_weight
+      rrels: |
+        vertex
+
+  proposition_spanning_chain:
+    title:
+      ru: Охватывающая цепь
+      en: Spanning Chain
+    ru:
+      Цепь, проходящая через каждую вершину графа ровно один раз, называется
+      охватывающей цепью
+    en:
+      A chain that passes through every vertex of a graph exactly once is called
+      a spanning chain
+    using:
+      concepts: |
+        graph_chain
+        graph
+      rrels: |
+        vertex
