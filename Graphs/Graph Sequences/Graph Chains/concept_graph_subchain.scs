@@ -60,6 +60,7 @@ statement -> statement_of_theorem_subchain_connectivity (*
 
 	=> nrel_using_constants: {
 		concept_graph;
+		concept_graph_connectivity;
 		concept_vertex;
 		rrel_vertex
 	};;
@@ -115,6 +116,7 @@ sc_node_class ->
 	concept_vertex;
 	concept_path_length;
 	concept_graph;
+	concept_graph_connectivity;
 	concept_vertex;
 	concept_graph;
 	concept_vertex;

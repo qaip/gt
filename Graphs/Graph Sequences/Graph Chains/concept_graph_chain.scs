@@ -51,7 +51,6 @@ statement -> statement_of_theorem_subchain_diameter (*
 		concept_graph;
 		concept_graph_subchain;
 		rrel_vertex;
-		rrel_endpoints;
 		nrel_graph_diameter
 	};;
 *);;
@@ -70,5 +69,4 @@ sc_node_norole_relation ->
 sc_node_role_relation ->
 	rrel_vertex;
 	rrel_edge;
-	rrel_vertex;
-	rrel_endpoints;;
+	rrel_vertex;;

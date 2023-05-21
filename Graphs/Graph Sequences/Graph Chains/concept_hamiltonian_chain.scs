@@ -8,9 +8,9 @@ definition -> definition_of_hamiltonian_chain (*
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Цепь в графе, проходящая через каждую вершину в точности один раз] (* <- lang_ru;; *);;
-		-> [Гамильтонова цепь-это цепь, которая содержит все вершины графа, a рёбра могут повторяться] (* <- lang_ru;; *);;
+		-> [Цепь, которая содержит все вершины графа, a рёбра могут повторяться] (* <- lang_ru;; *);;
 		-> [A path through a graph that includes every other vertex exactly once] (* <- lang_en;; *);;
-		-> [A Hamiltonian path is a path that contains all the vertices of a graph, and the edges may be repeated] (* <- lang_en;; *);;
+		-> [A path that contains all the vertices of a graph, and the edges may be repeated] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:

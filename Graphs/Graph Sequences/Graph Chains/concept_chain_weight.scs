@@ -23,38 +23,100 @@ definition -> definition_of_chain_weight (*
 	};;
 *);;
 
-statement -> statement_of_maximal_weight_chain_theorem (*
+statement -> statement_of_proposition_chain_shortest_weight (*
 	-> rrel_key_sc_element: concept_chain_weight;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Цепь с максимальной суммой весов рёбер] (* <- lang_ru;; *);;
-		-> [Chain with maximum sum of edge weights] (* <- lang_en;; *);;
+		-> [Кратчайшая цепь между двумя вершинами является единственной] (* <- lang_ru;; *);;
+		-> [The chain with the shortest weight between two vertices is unique] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Теорема о цепи максимального веса)] (* <- lang_ru;; *);
-		[Stat. (Maximal weight chain theorem)] (* <- lang_en;; *);;
+		[Утв. (Свойство кратчайшего веса цепи)] (* <- lang_ru;; *);
+		[Stat. (Shortest Chain Weight Property)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_graph;
-		concept_edge;
 		concept_graph_chain;
-		rrel_edge;
+		rrel_vertex;
 		nrel_rib_weight
+	};;
+*);;
+
+statement -> statement_of_proposition_chain_longest_weight (*
+	-> rrel_key_sc_element: concept_chain_weight;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Длиннейшая цепь между двумя вершинами является единственной] (* <- lang_ru;; *);;
+		-> [The chain with the longest weight between two vertices is unique] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство длиннейшего веса цепи)] (* <- lang_ru;; *);
+		[Stat. (Longest Chain Weight Property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_chain;
+		rrel_vertex;
+		nrel_rib_weight
+	};;
+*);;
+
+statement -> statement_of_proposition_chain_additivity (*
+	-> rrel_key_sc_element: concept_chain_weight;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вес цепи, соединяющей две вершины, равен сумме весов цепей, соединяющих эти вершины через промежуточные вершины] (* <- lang_ru;; *);;
+		-> [The weight of the chain connecting two vertices is equal to the sum of the weights of the chains connecting these vertices through intermediate vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Аддитивность веса цепей)] (* <- lang_ru;; *);
+		[Stat. (Additivity of Chain Weights)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_chain;
+		rrel_vertex;
+		nrel_rib_weight
+	};;
+*);;
+
+statement -> statement_of_proposition_spanning_chain (*
+	-> rrel_key_sc_element: concept_chain_weight;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Цепь, проходящая через каждую вершину графа ровно один раз, называется охватывающей цепью] (* <- lang_ru;; *);;
+		-> [A chain that passes through every vertex of a graph exactly once is called a spanning chain] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Охватывающая цепь)] (* <- lang_ru;; *);
+		[Stat. (Spanning Chain)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_chain;
+		concept_graph;
+		rrel_vertex
 	};;
 *);;
 
 sc_node_class ->
 	concept_edge;
 	concept_graph_chain;
-	concept_graph;
-	concept_edge;
-	concept_graph_chain;;
+	concept_graph_chain;
+	concept_graph_chain;
+	concept_graph_chain;
+	concept_graph_chain;
+	concept_graph;;
 
 sc_node_norole_relation ->
+	nrel_rib_weight;
+	nrel_rib_weight;
 	nrel_rib_weight;
 	nrel_rib_weight;;
 
 sc_node_role_relation ->
 	rrel_edge;
-	rrel_edge;;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;
+	rrel_vertex;;
