@@ -36,7 +36,7 @@ section_subject_domain_of_graphs
 	concept_null_graph;
 	concept_psuedograph;
 	concept_network;
-	concept_super_graph;
+	concept_supergraph;
 	concept_regular_graph;
 	concept_weighted_graph;
 	concept_unweighted_graph;
@@ -85,7 +85,7 @@ section_subject_domain_of_graphs=[*
 		concept_null_graph;
 		concept_psuedograph;
 		concept_network;
-		concept_super_graph;
+		concept_supergraph;
 		concept_regular_graph;
 		concept_weighted_graph;
 		concept_unweighted_graph;
@@ -144,7 +144,7 @@ sc_node_class ->
 	concept_null_graph;
 	concept_psuedograph;
 	concept_network;
-	concept_super_graph;
+	concept_supergraph;
 	concept_regular_graph;
 	concept_weighted_graph;
 	concept_unweighted_graph;;

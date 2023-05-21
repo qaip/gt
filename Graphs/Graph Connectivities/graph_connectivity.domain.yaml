@@ -12,9 +12,7 @@ concepts: |
   separable_graph
   trivial_graph
   block_cutpoint_graph
-  weakly_connected_component
-  strongly_connected_component
-  conncected_graph
+  connected_graph
   disconnected_graph
 
 nrels: |
