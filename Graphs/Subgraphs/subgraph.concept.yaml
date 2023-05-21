@@ -3,7 +3,9 @@ en: subgraph
 
 definition:
   ru: Граф, полученный путем удаления некоторых вершин и ребер исходного графа
-  en: A graph that is obtained by removing some vertices and edges from the original graph
+  en:
+    A graph that is obtained by removing some vertices and edges from the
+    original graph
   using:
     concepts: |
       graph
@@ -11,9 +13,10 @@ definition:
       edge
     rrels: |
       vertex
+      edge
     nrels: |
       subgraph
-    
+
 statement:
   subgraph_isomorphism_theorem:
     title:
@@ -31,14 +34,13 @@ statement:
         isomorphic_graph
       nrels: |
         subgraph
+
   edge_subgraph_theorem:
     title:
       ru: Теорема о подграфе ребер
       en: Edge subgraph theorem
-    ru:
-      Подграф ребер графа является подграфом его линейного пространства
-    en:
-      The edge subgraph of a graph is a subgraph of its linear space
+    ru: Подграф ребер графа является подграфом его линейного пространства
+    en: The edge subgraph of a graph is a subgraph of its linear space
     using:
       concepts: |
         graph
@@ -47,6 +49,7 @@ statement:
         edge
       nrels: |
         subgraph
+
   connected_subgraph_theorem:
     title:
       ru: Теорема о связном подграфе
@@ -60,26 +63,25 @@ statement:
         vertex
       rrels: |
         vertex
-      nrels: |  
+      nrels: |
         subgraph
+
   maximum_weight_subgraph_theorem:
     title:
       ru: Теорема о подграфе максимального веса
       en: Maximum weight subgraph theorem
-    ru:
-      Любой граф имеет подграф максимального веса, содержащий каждую вершину
-    en:
-      Every graph has a maximum weight subgraph that contains every vertex
+    ru: Любой граф имеет подграф максимального веса, содержащий каждую вершину
+    en: Every graph has a maximum weight subgraph that contains every vertex
     using:
       concepts: |
         graph
-        subgraph
         vertex
       rrels: |
         vertex
       nrels: |
         rib_weight
         subgraph
+
 subclass:
   - bicoloured_subgraph
   - isometric_subgraph

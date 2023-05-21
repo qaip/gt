@@ -10,25 +10,22 @@ definition:
       vertex
       edge
       subgraph
-      connectivity
     rrels: |
       vertex
       edge
     nrels: |
       subgraph
+
 statement:
   complete_subgraph_theorem:
     title:
       ru: Теорема о полном подграфе
       en: Complete subgraph theorem
-    ru:
-      Любой граф имеет полный подграф максимального размера
-    en:
-      Every graph has a complete subgraph of maximum size
+    ru: Любой граф имеет полный подграф максимального размера
+    en: Every graph has a complete subgraph of maximum size
     using:
       concepts: |
         graph
         subgraph
       nrels: |
         subgraph
-  
