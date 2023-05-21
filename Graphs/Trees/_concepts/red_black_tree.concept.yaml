@@ -25,10 +25,10 @@ statement:
       en: Properties of red-black trees theorem
     ru:
       Для любого красно-черного дерева с n внутренними узлами глубина дерева не
-      превышает 2log(n + 1)
+      превышает 2 * log(n + 1)
     en:
       For any red-black tree with n internal nodes, the depth of the tree is at
-      most 2log(n + 1)
+      most 2 * log(n + 1)
     using:
       concepts: |
         tree_depth
@@ -71,10 +71,10 @@ statement:
       ru: Высота красно-черного дерева
       en: Height of a red-black tree
     ru:
-      Высота красно-черного дерева не превышает 2 log_2 (n + 1), где
-      n-количество узлов в дереве
+      Высота красно-черного дерева не превышает 2 * log(n + 1), где n-количество
+      узлов в дереве
     en:
-      The height of a red-black tree is no more than 2 log_2 (n + 1), where n is
+      The height of a red-black tree is no more than 2 * log(n + 1), where n is
       the number of nodes in the tree
     using:
       concepts: |
@@ -104,11 +104,10 @@ statement:
       en: Applications of red-black trees
     ru:
       Красно-черные деревья часто используются в реализации алгоритмов
-      сбалансированного двоичного дерева поиска, например, в STL C++ и Java
-      Collections
+      сбалансированного двоичного дерева поиска, например, в Java Collections
     en:
       Red-black trees are widely used in implementing balanced binary search
-      tree algorithms, for example in STL C++ and Java Collections
+      tree algorithms, for example in Java Collections
     using:
       concepts: |
         binary_search_tree
