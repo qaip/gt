@@ -9,7 +9,6 @@ section_subject_domain_of_graphs
 <= nrel_section_decomposition: {
 	section_subject_domain_of_directed_graphs;
 	section_subject_domain_of_multigraphs;
-	section_subject_domain_of_trees;
 	section_subject_domain_of_planar_graphs;
 	section_subject_domain_of_acyclic_graphs;
 	section_subject_domain_of_graph_cuts;
@@ -118,7 +117,6 @@ section_subject_domain_of_graphs=[*
 	=> nrel_private_subject_domain:
 		subject_domain_of_directed_graphs;
 		subject_domain_of_multigraphs;
-		subject_domain_of_trees;
 		subject_domain_of_planar_graphs;
 		subject_domain_of_acyclic_graphs;
 		subject_domain_of_graph_cuts;

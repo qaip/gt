@@ -7,7 +7,8 @@ section_subject_domain_of_acyclic_graphs
 	[Section. Subject domain of acyclic graphs] (* <- lang_en;; *);
 
 <= nrel_section_decomposition: {
-	section_subject_domain_of_forests
+	section_subject_domain_of_forests;
+	section_subject_domain_of_trees
 };
 
 <- rrel_key_sc_element:
@@ -55,7 +56,8 @@ section_subject_domain_of_acyclic_graphs=[*
 		subject_domain_of_graphs;
 
 	=> nrel_private_subject_domain:
-		subject_domain_of_forests;;
+		subject_domain_of_forests;
+		subject_domain_of_trees;;
 *];;
 
 sc_node_class ->

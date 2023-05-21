@@ -8,9 +8,8 @@ section_subject_domain_of_graph_representation
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_representation;
-	concept_graph;
-	concept_adjacency_list;
 	concept_graph_representation;
+	concept_adjacency_list;
 	concept_incidence_list;
 	concept_adjacency_matrix;
 	concept_incidence_matrix;
@@ -26,11 +25,10 @@ section_subject_domain_of_graph_representation=[*
 		[Subject Domain of graph representation] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
-		concept_graph;
+		concept_graph_representation;
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_adjacency_list;
-		concept_graph_representation;
 		concept_incidence_list;
 		concept_adjacency_matrix;
 		concept_incidence_matrix;
@@ -42,9 +40,8 @@ section_subject_domain_of_graph_representation=[*
 *];;
 
 sc_node_class ->
-	concept_graph;
-	concept_adjacency_list;
 	concept_graph_representation;
+	concept_adjacency_list;
 	concept_incidence_list;
 	concept_adjacency_matrix;
 	concept_incidence_matrix;

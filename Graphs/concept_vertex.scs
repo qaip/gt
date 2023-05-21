@@ -1,19 +1,98 @@
 concept_vertex
 => nrel_main_idtf:
-	[взвешенный граф] (* <- lang_ru;; *);
-	[weighted graph] (* <- lang_en;; *);;
+	[вершина] (* <- lang_ru;; *);
+	[vertex] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[узел] (* <- lang_ru;; *);
+	[node] (* <- lang_en;; *);;
 
 definition -> definition_of_vertex (*
 	-> rrel_key_sc_element: concept_vertex;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Граф, в котором каждому ребру соответсвтвует некотрое значение, или вес] (* <- lang_ru;; *);;
-		-> [A weighted graph is a graph in which each edge corresponds to some value, or weight] (* <- lang_en;; *);;
+		-> [Вершина является основным понятием теории графов. Это фундаментальная еденица, образующая графы. На рисунках, представляющих граф, вершина обычно представляется кружком с меткой] (* <- lang_ru;; *);;
+		-> [A vertex is the basic concept of graphs. This is the fundamental unit that forms graphs. The graph is usually represented by a circle with a label] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (взвешенный граф)] (* <- lang_ru;; *);
-		[Def. (weighted graph)] (* <- lang_en;; *);;
+		[Опр. (вершина)] (* <- lang_ru;; *);
+		[Def. (vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_usage_in_graphical_models (*
+	-> rrel_key_sc_element: concept_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершины являются основными элементами графических моделей. В графических моделях вершины представляют объекты, а ребра между вершинами представляют отношения между объектами] (* <- lang_ru;; *);;
+		-> [Vertices are the main elements of graphical models. In graphical models, vertices represent objects, and edges between vertices represent relationships between objects] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Использование в графических моделях)] (* <- lang_ru;; *);
+		[Stat. (Usage in graphical models)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graphical_model;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_degree_of_a_vertex (*
+	-> rrel_key_sc_element: concept_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Степенью вершины называется количество ребер, исходящих из этой вершины. В невзвешенных графах степень вершины равна количеству смежных вершин] (* <- lang_ru;; *);;
+		-> [The degree of a vertex is the number of edges that are incident to the vertex. In unweighted graphs, the degree of a vertex is equal to the number of adjacent vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Степень вершины)] (* <- lang_ru;; *);
+		[Stat. (Degree of a vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_unweighted_graph;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_vertex_coloring (*
+	-> rrel_key_sc_element: concept_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Раскраской вершин графа называется такое отображение множества вершин графа в множество цветов, что смежные вершины отображаются в разные цвета] (* <- lang_ru;; *);;
+		-> [Vertex coloring of a graph is a mapping of the vertices of the graph to a set of colors such that adjacent vertices are mapped to different colors] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Раскраска вершин)] (* <- lang_ru;; *);
+		[Stat. (Vertex coloring)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_coloring
+	};;
+*);;
+
+statement -> statement_of_isolated_vertex (*
+	-> rrel_key_sc_element: concept_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Изолированной вершиной называется вершина графа, которая не соединяется ни с одной другой вершиной графа] (* <- lang_ru;; *);;
+		-> [An isolated vertex is a vertex of a graph that is not connected to any other vertex of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Изолированная вершина)] (* <- lang_ru;; *);
+		[Stat. (Isolated vertex)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
@@ -22,101 +101,20 @@ definition -> definition_of_vertex (*
 	};;
 *);;
 
-statement -> statement_of_usage_weighted_graph (*
-	-> rrel_key_sc_element: concept_vertex;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Взвешенные графы находят применение во многих областях, включая транспорт, связь, сети и теорию риска. Они используются для моделирования сложных систем и анализа свойств систем] (* <- lang_ru;; *);;
-		-> [Weighted graphs are used in many areas, including transportation, communication, networks, and risk theory. They are used to model complex systems and analyze the properties of systems] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Использование взвешенных графов)] (* <- lang_ru;; *);
-		[Stat. (Usage of weighted graphs)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_weighted_graph
-	};;
-*);;
-
-statement -> statement_of_shortest_path (*
-	-> rrel_key_sc_element: concept_vertex;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Взвешенные графы используются для решения задач кратчайшего пути. Различные алгоритмы, такие как алгоритм Дейкстры и алгоритм Беллмана-Форда, используются для нахождения кратчайшего пути в взвешенных графах] (* <- lang_ru;; *);;
-		-> [Weighted graphs are used to solve shortest path problems. Various algorithms, such as Dijkstra algorithm and Bellman-Ford algorithm, are used to find the shortest path in weighted graphs] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Кратчайший путь в графе)] (* <- lang_ru;; *);
-		[Stat. (Shortest path in a graph)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_weighted_graph;
-		concept_algorithms;
-		concept_shortest_path;
-		concept_graph_algorithm
-	};;
-*);;
-
-statement -> statement_of_minimum_spanning_tree (*
-	-> rrel_key_sc_element: concept_vertex;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Взвешенные графы используются для решения задач нахождения минимального остовного дерева. Алгоритмы, такие как алгоритм Прима и алгоритм Крускала, используются для нахождения минимального остовного дерева в взвешенных графах] (* <- lang_ru;; *);;
-		-> [Weighted graphs are used to solve minimum spanning tree problems. Algorithms such as Prims algorithm and Kruskals algorithm are used to find the minimum spanning tree in weighted graphs] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Минимальное остовное дерево)] (* <- lang_ru;; *);
-		[Stat. (Minimum spanning tree)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_weighted_graph;
-		concept_algorithms;
-		concept_minimum_spanning_tree
-	};;
-*);;
-
-statement -> statement_of_clustering_coefficient (*
-	-> rrel_key_sc_element: concept_vertex;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Коэффициент кластеризации взвешенного графа определяется как отношение числа треугольников в графе к числу подграфов, изоморфных треугольнику] (* <- lang_ru;; *);;
-		-> [The clustering coefficient of a weighted graph is defined as the ratio of the number of triangles in the graph to the number of subgraphs isomorphic to a triangle] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Коэффициент кластеризации)] (* <- lang_ru;; *);
-		[Stat. (Clustering coefficient)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_subgraph;
-		concept_clustering_coefficient
-	};;
-*);;
-
 sc_node_class ->
 	concept_graph;
+	concept_graph;
+	concept_graphical_model;
 	concept_edge;
 	concept_graph;
-	concept_weighted_graph;
+	concept_unweighted_graph;
+	concept_edge;
 	concept_graph;
-	concept_weighted_graph;
-	concept_algorithms;
-	concept_shortest_path;
-	concept_graph_algorithm;
+	concept_graph_coloring;
 	concept_graph;
-	concept_weighted_graph;
-	concept_algorithms;
-	concept_minimum_spanning_tree;
-	concept_graph;
-	concept_subgraph;
-	concept_clustering_coefficient;;
+	concept_edge;;
 
 sc_node_role_relation ->
+	rrel_edge;
+	rrel_edge;
 	rrel_edge;;

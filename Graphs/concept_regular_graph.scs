@@ -1,118 +1,111 @@
 concept_regular_graph
 => nrel_main_idtf:
-	[суперграф] (* <- lang_ru;; *);
-	[supergraph] (* <- lang_en;; *);;
+	[регулярный граф] (* <- lang_ru;; *);
+	[regular graph] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[однородный граф] (* <- lang_ru;; *);;
 
 definition -> definition_of_regular_graph (*
 	-> rrel_key_sc_element: concept_regular_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграфом является любой граф содержащий данный] (* <- lang_ru;; *);;
-		-> [A supergraph is any graph containing a given graph] (* <- lang_en;; *);;
+		-> [Граф, у которого степени всех вершин равны, каждая вершина имеет одинаковое количество соседей] (* <- lang_ru;; *);;
+		-> [A regular graph is a graph in which the degrees of all vertices are equal, each vertex has the same number of neighbors] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (суперграф)] (* <- lang_ru;; *);
-		[Def. (supergraph)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph
-	};;
-*);;
-
-statement -> statement_of_usage_supergraph (*
-	-> rrel_key_sc_element: concept_regular_graph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Суперграфы широко используются в теории графов для решения различных задач] (* <- lang_ru;; *);;
-		-> [Supergraphs are widely used in graph theory to solve various problems and issues] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Использование в теории графов)] (* <- lang_ru;; *);
-		[Stat. (Usage in graph theory)] (* <- lang_en;; *);;
+		[Опр. (регулярный граф)] (* <- lang_ru;; *);
+		[Def. (regular graph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_theory;
-		concept_problems
+		concept_vertex;
+		rrel_vertex;
+		nrel_vertex_degree
 	};;
 *);;
 
-statement -> statement_of_supergraph_types (*
+statement -> statement_of_applications_of_regular_graphs (*
 	-> rrel_key_sc_element: concept_regular_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграф может быть ориентированным или неориентированным, взвешенным или невзвешенным, простым или мультиграфом] (* <- lang_ru;; *);;
-		-> [A supergraph can be directed or undirected, weighted or unweighted, simple or multigraph] (* <- lang_en;; *);;
+		-> [Регулярные графы применяются в различных областях, например, в комбинаторике, криптографии, теории кодирования и сетевом проектировании] (* <- lang_ru;; *);;
+		-> [Regular graphs are used in various areas, such as combinatorics, cryptography, coding theory, and network design] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Виды суперграфов)] (* <- lang_ru;; *);
-		[Stat. (Types of supergraphs)] (* <- lang_en;; *);;
+		[Утв. (Применение регулярных графов)] (* <- lang_ru;; *);
+		[Stat. (Applications of regular graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_directed_graph;
-		concept_undirected_graph;
-		concept_weighted_graph;
-		concept_unweighted_graph;
-		concept_simple_graph;
-		concept_multigraph
+		rrel_cryptography;
+		rrel_coding_theory;
+		rrel_network_design
 	};;
 *);;
 
-statement -> statement_of_connectedness_supergraph (*
+statement -> statement_of_regular_bipartite_graphs (*
 	-> rrel_key_sc_element: concept_regular_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Суперграф связен, если любые две его вершины соединены путем] (* <- lang_ru;; *);;
-		-> [A supergraph is connected if any two of its vertices are connected by a path] (* <- lang_en;; *);;
+		-> [Двудольный регулярный граф является регулярным графом, у которого вершины разбиты на две непересекающиеся доли, причём все рёбра идут между долями] (* <- lang_ru;; *);;
+		-> [A regular bipartite graph is a regular graph in which the vertices are divided into two non-overlapping parts, and all edges go between the parts] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Связность суперграфов)] (* <- lang_ru;; *);
-		[Stat. (Connectedness of supergraphs)] (* <- lang_en;; *);;
+		[Утв. (Двудольные регулярные графы)] (* <- lang_ru;; *);
+		[Stat. (Regular bipartite graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_connectivity;
-		concept_graph_path
+		concept_bipartite_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
-statement -> statement_of_usage_example_supergraph (*
+statement -> statement_of_spectral_properties_regular_graphs (*
 	-> rrel_key_sc_element: concept_regular_graph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Один из примеров использования суперграфа является поиск путей в графе, который содержит множество других графов] (* <- lang_ru;; *);;
-		-> [One example usage of a supergraph is to find paths in a graph that contains a set of other graphs] (* <- lang_en;; *);;
+		-> [Спектральные свойства регулярных графов широко исследовались в математике и теории графов. Например, собственные значения и собственные векторы регулярных графов могут быть использованы для анализа их свойств и структуры] (* <- lang_ru;; *);;
+		-> [Spectral properties of regular graphs have been widely studied in mathematics and graph theory. For example, the eigenvalues and eigenvectors of regular graphs can be used to analyze their properties and structure] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
-		[Утв. (Пример использования суперграфа)] (* <- lang_ru;; *);
-		[Stat. (Supergraph example usage)] (* <- lang_en;; *);;
+		[Утв. (Спектральные свойства регулярных графов)] (* <- lang_ru;; *);
+		[Stat. (Spectral properties of regular graphs)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_path
+		concept_eigenvalues;
+		concept_eigenvectors
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
+	concept_vertex;
 	concept_graph;
-	concept_graph_theory;
-	concept_problems;
 	concept_graph;
-	concept_directed_graph;
-	concept_undirected_graph;
-	concept_weighted_graph;
-	concept_unweighted_graph;
-	concept_simple_graph;
-	concept_multigraph;
+	concept_bipartite_graph;
+	concept_vertex;
+	concept_edge;
 	concept_graph;
-	concept_graph_connectivity;
-	concept_graph_path;
-	concept_graph;
-	concept_graph_path;;
+	concept_eigenvalues;
+	concept_eigenvectors;;
+
+sc_node_norole_relation ->
+	nrel_vertex_degree;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_cryptography;
+	rrel_coding_theory;
+	rrel_network_design;
+	rrel_vertex;
+	rrel_edge;;
