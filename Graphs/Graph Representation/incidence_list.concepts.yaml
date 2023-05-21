@@ -17,6 +17,9 @@ definition:
       graph
       vertex
       edge
+    rrels: |
+      vertex
+      edge
 
 statement:
   incidence_matrix_conversion:

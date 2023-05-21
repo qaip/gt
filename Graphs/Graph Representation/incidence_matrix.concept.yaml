@@ -42,7 +42,7 @@ statement:
     ru:
       Матрица инцидентности для неориентированного графа имеет размерность NM,
       где N-количество вершин, а M-количество ребер. Для ориентированного графа
-      размерность матрицы инцидентности равна NL, где L-количество дуг
+      размерность матрицы инцидентности равна NL, где L-количество дуг 
     en:
       The incidence matrix for an undirected graph has dimensions NM, where N is
       the number of vertices and M is the number of edges. For a directed graph,

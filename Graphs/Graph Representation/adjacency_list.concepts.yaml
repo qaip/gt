@@ -9,7 +9,7 @@ definition:
   en:
     A data structure used to represent a graph in computer science. It is an
     array of lists where the index of each element corresponds to a vertex of
-    the graph, and the list at that index contains the vertices adjacent to that
+    the graph, and the list at that index contains the vertices adjacent to that 
     vertex.
   using:
     concepts: |

@@ -1,0 +1,22 @@
+ru: представление графа
+en: graph representation
+
+definition:
+  ru: Способ отображения графа в компьютерной науке
+  en: The method of displaying a graph in computer science
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+
+subclass:
+  - adjacency_list
+  - incidence_list
+  - adjacency_matrix
+  - incidence_matrix
+  - analytical_method_graph_representation
+  - graphical_way_graph_representation
