@@ -1,0 +1,20 @@
+ru:
+  - ориентированное ребро
+  - дуга
+en:
+  - arc
+  - oriented edge
+definition:
+  ru:
+    - Дуга является связкой, соединяющей две вершины орграфа
+    - Дуга является ребром, которое имеет направление
+  en:
+    - An oriented edge is the connection between vertices of the digraph
+    - An arc is an edge which has direction
+  using:
+    concepts: |
+      graph
+      edge
+      directed_graph
+    rrels: |
+      edge

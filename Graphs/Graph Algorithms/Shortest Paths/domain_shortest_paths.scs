@@ -8,7 +8,7 @@ section_subject_domain_of_shortest_paths
 
 <- rrel_key_sc_element:
 	subject_domain_of_shortest_paths;
-	concept_shortest_path;
+	concept_shortest_path_problem;
 	concept_dijkstra_algorithm;
 	concept_floyd_warshall_algorithm;
 	nrel_shortest_path;;
@@ -22,7 +22,7 @@ section_subject_domain_of_shortest_paths=[*
 		[Subject Domain of shortest paths] (* <- lang_en;; *);
 
 	-> rrel_maximum_studied_object_class:
-		concept_shortest_path;
+		concept_shortest_path_problem;
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_dijkstra_algorithm;
@@ -36,7 +36,7 @@ section_subject_domain_of_shortest_paths=[*
 *];;
 
 sc_node_class ->
-	concept_shortest_path;
+	concept_shortest_path_problem;
 	concept_dijkstra_algorithm;
 	concept_floyd_warshall_algorithm;;
 

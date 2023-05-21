@@ -1,0 +1,31 @@
+concept_perfectly_balanced_tree
+=> nrel_main_idtf:
+	[идеально сбалансированное дерево] (* <- lang_ru;; *);
+	[perfectly balanced tree] (* <- lang_en;; *);;
+
+definition -> definition_of_perfectly_balanced_tree (*
+	-> rrel_key_sc_element: concept_perfectly_balanced_tree;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дерево, в котором все уровни имеют одинаковое количество узлов] (* <- lang_ru;; *);;
+		-> [A tree in which all levels have the same number of nodes] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (идеально сбалансированное дерево)] (* <- lang_ru;; *);
+		[Def. (perfectly balanced tree)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_tree;
+		rrel_vertex
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_vertex;
+	concept_tree;;
+
+sc_node_role_relation ->
+	rrel_vertex;;

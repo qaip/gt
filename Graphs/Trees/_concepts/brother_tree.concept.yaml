@@ -1,0 +1,60 @@
+ru: братское дерево
+en: brother tree
+
+definition:
+  ru:
+    Бинарное дерево, у которого листы находятся на одном уровне и каждая вершина
+    с одним потомком имеет брата
+  en:
+    A binary tree in which the dangling vertices are at the same level and each
+    vertex with one child has a brother
+  using:
+    concepts: |
+      binary_tree
+      vertex
+    rrels: |
+      vertex
+
+statement:
+  vertex_level_explanation:
+    title:
+      ru: Объяснение уровня вершины
+      en: Vertex level explanation
+    ru:
+      Обозначим значение равное Лм-Лв + 1, где Лм есть значение максимальной
+      длины пути от корня дерева до его листов, Лв есть значение длины пути от
+      корня дерева до выбранной вершины, как уровень вершины (уровень
+      соответствует выбранной вершине). Таким образом, листы в братском дереве
+      находятся на равном расстоянии от корня (длины путей от корня до листьев
+      равны)
+    en:
+      Define the value equal to Lm-Lv + 1, where Lm is the value of the maximum
+      length of the path from the tree root to its leaves, Ls is the value of
+      the path length from the tree root to the selected vertex, as the level of
+      the vertex (the level corresponds to the selected vertex). So, leaves in
+      brother tree are located on the same distance from the root (path lengths
+      from the root to the leaves are equal)
+    using:
+      concepts: |
+        vertex
+        path_length
+        tree_root
+        leaf
+      rrels: |
+        vertex
+        tree_root
+        leaf
+
+  brother_of_vertex_explanation:
+    title:
+      ru: Объяснение братских вершин
+      en: Brother vertices explanation
+    ru: Братскими называются вершины, у которых один и тот же предок
+    en: Vertices are called brothers if they have the same parent
+    using:
+      concepts: |
+        vertex
+      nrels: |
+        tree_parent
+      rrels: |
+        vertex

@@ -1,0 +1,67 @@
+concept_hypergraph
+=> nrel_main_idtf:
+	[гиперграф] (* <- lang_ru;; *);
+	[hypergraph] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_directed_hypergraph;
+concept_undirected_hypergraph;;
+
+definition -> definition_of_hypergraph (*
+	-> rrel_key_sc_element: concept_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, в котором рёбра, называемые гиперрёбрами или рёбрами гиперграфа, могут соединять более двух вершин] (* <- lang_ru;; *);;
+		-> [A graph in which edges, called hyperedges or hypergraph edges, may connect more than two vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (гиперграф)] (* <- lang_ru;; *);
+		[Def. (hypergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		concept_vertex;
+		concept_hypergraph_edge;
+		rrel_edge;
+		rrel_vertex;
+		rrel_hypergraph_edge
+	};;
+*);;
+
+statement -> statement_of_wikipedia_glossary_hypergraph_definition (*
+	-> rrel_key_sc_element: concept_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Совокупность из множества вершин и множества гиперрёбер] (* <- lang_ru;; *);;
+		-> [A collection of a set of vertices and a set of hyperedges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Определение гиперграфа из глоссария Википедии по теории графов)] (* <- lang_ru;; *);
+		[Stat. (Wikipedia glossary hypergraph definition)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_hypergraph_edge;
+		rrel_vertex;
+		rrel_hypergraph_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_edge;
+	concept_vertex;
+	concept_hypergraph_edge;
+	concept_vertex;
+	concept_hypergraph_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_hypergraph_edge;
+	rrel_vertex;
+	rrel_hypergraph_edge;;

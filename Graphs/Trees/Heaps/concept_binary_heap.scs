@@ -1,0 +1,51 @@
+concept_binary_heap
+=> nrel_main_idtf:
+	[бинарная куча] (* <- lang_ru;; *);
+	[binary heap] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[двоичная куча] (* <- lang_ru;; *);;
+
+definition -> definition_of_binary_heap (*
+	-> rrel_key_sc_element: concept_binary_heap;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Cтруктура данных, которая представляет собой двоичное дерево] (* <- lang_ru;; *);;
+		-> [A heap data structure that takes the form of a binary tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (бинарная куча)] (* <- lang_ru;; *);
+		[Def. (binary heap)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_binary_tree;
+		concept_tree_descendant;
+		concept_tree_parent
+	};;
+*);;
+
+statement -> statement_of_binary_heap_property (*
+	-> rrel_key_sc_element: concept_binary_heap;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В двоичной куче родительский узел меньше или равен своим потомкам] (* <- lang_ru;; *);;
+		-> [In a binary heap, the parent node is less than or equal to its children] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойство двоичной кучи)] (* <- lang_ru;; *);
+		[Stat. (Binary heap property)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree_descendant;
+		concept_tree_parent
+	};;
+*);;
+
+sc_node_class ->
+	concept_binary_tree;
+	concept_tree_descendant;
+	concept_tree_parent;
+	concept_tree_descendant;
+	concept_tree_parent;;

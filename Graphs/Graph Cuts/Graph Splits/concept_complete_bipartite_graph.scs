@@ -1,0 +1,84 @@
+concept_complete_bipartite_graph
+=> nrel_main_idtf:
+	[полный двудольный граф] (* <- lang_ru;; *);
+	[complete bipartite graph] (* <- lang_en;; *);;
+
+definition -> definition_of_complete_bipartite_graph (*
+	-> rrel_key_sc_element: concept_complete_bipartite_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, в котором любые две вершины принадлежат разным долям и каждая вершина из одной доли соединена со всеми вершинами из другой доли] (* <- lang_ru;; *);;
+		-> [A graph in which any two vertices belong to different parts and each vertex in one part is connected to all vertices in the other part] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (полный двудольный граф)] (* <- lang_ru;; *);
+		[Def. (complete bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_properties_complete_bipartite_graph (*
+	-> rrel_key_sc_element: concept_complete_bipartite_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В полном двудольном графе количество рёбер равно произведению размерностей двух долей. Также он является двудольным графом, в котором каждая вершина первой доли соединена со всеми вершинами второй доли и наоборот] (* <- lang_ru;; *);;
+		-> [In a complete bipartite graph, the number of edges is equal to the product of the dimensions of the two parts. It is also a bipartite graph in which each vertex of the first part is connected to all vertices of the second part and vice versa] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства полного двудольного графа)] (* <- lang_ru;; *);
+		[Stat. (Properties of complete bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		concept_bipartite_graph;
+		concept_vertex;
+		rrel_edge;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_examples_complete_bipartite_graph (*
+	-> rrel_key_sc_element: concept_complete_bipartite_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Примером полного двудольного графа является граф, где первая доля является множеством студентов, а вторая множеством курсов. Ребро между студентом и курсом существует, если студент посещает этот курс] (* <- lang_ru;; *);;
+		-> [An example of a complete bipartite graph is a graph where the first part is the set of students and the second is the set of courses. An edge between a student and a course exists if the student attends that course] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Примеры полного двудольного графа)] (* <- lang_ru;; *);
+		[Stat. (Examples of complete bipartite graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_student;
+		concept_course;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_edge;
+	concept_bipartite_graph;
+	concept_vertex;
+	concept_student;
+	concept_course;
+	concept_edge;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

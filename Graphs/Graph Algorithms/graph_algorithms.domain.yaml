@@ -1,23 +1,18 @@
-en: graph alhorithms
 ru: алгоритмов на графах
+en: graph algorithms
 
 parent: graphs
 
 children: |
   graph_traversal
   shortest_paths
-  tree_traversal
 
 max: |
   graph_algorithm
 
 concepts: |
   graph_traversal
-  shortest_paths
-  tree_traversal
-  algorithm_complexity
+  shortest_paths_problem
 
 nrels: |
-  graph_traversal
   shortest_paths
-  tree_traversal

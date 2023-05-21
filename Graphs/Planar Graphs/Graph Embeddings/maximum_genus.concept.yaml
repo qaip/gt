@@ -6,7 +6,5 @@ definition:
   en: The maximum genus among all of its embeddings
   using:
     concepts: |
-      maximum_genus
-      graph
       graph_embedding
       genus

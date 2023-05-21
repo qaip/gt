@@ -1,0 +1,50 @@
+concept_undirected_hypergraph
+=> nrel_main_idtf:
+	[неориентированный гиперграф] (* <- lang_ru;; *);
+	[undirected hypergraph] (* <- lang_en;; *);;
+
+definition -> definition_of_undirected_hypergraph (*
+	-> rrel_key_sc_element: concept_undirected_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Гиперграф, который состоит из множества вершин V из множества гиперрёбер H, в котором гиперрёбра не являются упорядоченными парами] (* <- lang_ru;; *);;
+		-> [A hypergraph that consists of a set of vertices V from a set of hyperedges H, in which the hyperedges are not ordered pairs] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (неориентированный гиперграф)] (* <- lang_ru;; *);
+		[Def. (undirected hypergraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_hypergraph_edge;
+		rrel_vertex;
+		rrel_hypergraph_edge
+	};;
+*);;
+
+statement -> statement_of_undirected_hypergraphs_statement (*
+	-> rrel_key_sc_element: concept_undirected_hypergraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неориентированный гиперграф является обощением неориентированного графа] (* <- lang_ru;; *);;
+		-> [An undirected hypergraph is a generalization of an undirected graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о ненаправленном гиперграфе)] (* <- lang_ru;; *);
+		[Stat. (Undirected hypergraphs statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_undirected_graph
+	};;
+*);;
+
+sc_node_class ->
+	concept_vertex;
+	concept_hypergraph_edge;
+	concept_undirected_graph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_hypergraph_edge;;

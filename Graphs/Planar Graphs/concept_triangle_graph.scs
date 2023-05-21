@@ -20,11 +20,12 @@ definition -> definition_of_triangle_graph (*
 
 	=> nrel_using_constants: {
 		concept_unoriented_graph;
-		concept_triangle_graph;
 		concept_planar_graph;
 		concept_graph;
 		concept_edge;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -42,7 +43,6 @@ statement -> statement_of_triangle_graph_property (*
 
 	=> nrel_using_constants: {
 		concept_chromatic_number;
-		concept_triangle_graph;
 		concept_chromatic_index;
 		concept_graph_girth;
 		concept_graph_radius;
@@ -52,20 +52,80 @@ statement -> statement_of_triangle_graph_property (*
 	};;
 *);;
 
+statement -> statement_of_triangle_graph_coloring (*
+	-> rrel_key_sc_element: concept_triangle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Треугольный граф можно раскрасить тремя цветами] (* <- lang_ru;; *);;
+		-> [A triangle graph can be colored with three colors] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Раскраска треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Coloring of a triangle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_coloring
+	};;
+*);;
+
+statement -> statement_of_triangle_graph_subgraphs (*
+	-> rrel_key_sc_element: concept_triangle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Любой подграф треугольного графа является планарным графом] (* <- lang_ru;; *);;
+		-> [Any subgraph of a triangle graph is a planar graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Подграфы треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Subgraphs of a triangle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph;
+		nrel_subgraph
+	};;
+*);;
+
+statement -> statement_of_triangle_graph_embedding (*
+	-> rrel_key_sc_element: concept_triangle_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Треугольный граф можно вложить на плоскость без пересечения рёбер] (* <- lang_ru;; *);;
+		-> [A triangle graph can be embedded on a plane without crossing edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Вложение треугольного графа)] (* <- lang_ru;; *);
+		[Stat. (Embedding of a triangle graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_plane;
+		concept_graph_embedding
+	};;
+*);;
+
 sc_node_class ->
 	concept_unoriented_graph;
-	concept_triangle_graph;
 	concept_planar_graph;
 	concept_graph;
 	concept_edge;
 	concept_vertex;
 	concept_chromatic_number;
-	concept_triangle_graph;
 	concept_chromatic_index;
 	concept_graph_girth;
 	concept_graph_radius;
-	concept_graph_diametr;;
+	concept_graph_diametr;
+	concept_graph_coloring;
+	concept_planar_graph;
+	concept_plane;
+	concept_graph_embedding;;
 
 sc_node_norole_relation ->
 	nrel_vertex_connectivity;
-	nrel_edge_connectivity;;
+	nrel_edge_connectivity;
+	nrel_subgraph;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;

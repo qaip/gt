@@ -1,0 +1,48 @@
+ru: дерево решений
+en: decision tree
+definition:
+  ru:
+    Дерево решений, метод машинного обучения, который позволяет построить
+    модель, которая способна классифицировать объекты на основании их признаков
+  en:
+    A decision tree is a machine learning method that allows you to build a
+    model that can classify objects based on their features
+  using:
+    concepts: |
+      machine_learning
+      model
+      classification
+      object
+      feature
+      tree
+statement:
+  decision_tree_representation:
+    title:
+      ru: Изображение дерева решений
+      en: Decision tree representation
+    ru:
+      Дерево решений представляет собой структуру, в которой каждый узел
+      соответствует признаку объекта, а каждое ребро соответствует значению
+      этого признака. Листы дерева соответствуют классам объектов, которые можно
+      классифицировать на основании значений признаков. Классификация нового
+      объекта происходит следующим образом начиная с корня дерева, мы проходим
+      по рёбрам, выбирая те, которые соответствуют значениям признаков объекта,
+      пока не дойдём до листа дерева, который соответствует классу, к которому
+      относится этот объект
+    en:
+      A decision tree is a structure in which each node corresponds to a feature
+      of an object, and each edge corresponds to the value of that feature. The
+      leaves of the tree correspond to the classes of objects that can be
+      classified based on the values of the features. The classification of a
+      new object occurs as follows starting from the root of the tree, we
+      traverse the edges, selecting those that correspond to the values of the
+      objects features until we reach a leaf of the tree that corresponds to the
+      class to which this object belongs
+    using:
+      concepts: |
+        machine_learning
+        model
+        classification
+        object
+        feature
+        tree

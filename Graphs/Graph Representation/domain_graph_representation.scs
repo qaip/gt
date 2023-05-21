@@ -10,11 +10,12 @@ section_subject_domain_of_graph_representation
 	subject_domain_of_graph_representation;
 	concept_graph;
 	concept_adjacency_list;
+	concept_graph_representation;
 	concept_incidence_list;
 	concept_adjacency_matrix;
 	concept_incidence_matrix;
-	concept_analytical_method;
-	concept_graphical_way;;
+	concept_analytical_method_graph_representation;
+	concept_graphical_way_graph_representation;;
 
 section_subject_domain_of_graph_representation=[*
 	subject_domain_of_graph_representation
@@ -29,11 +30,12 @@ section_subject_domain_of_graph_representation=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_adjacency_list;
+		concept_graph_representation;
 		concept_incidence_list;
 		concept_adjacency_matrix;
 		concept_incidence_matrix;
-		concept_analytical_method;
-		concept_graphical_way;
+		concept_analytical_method_graph_representation;
+		concept_graphical_way_graph_representation;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;;
@@ -42,8 +44,9 @@ section_subject_domain_of_graph_representation=[*
 sc_node_class ->
 	concept_graph;
 	concept_adjacency_list;
+	concept_graph_representation;
 	concept_incidence_list;
 	concept_adjacency_matrix;
 	concept_incidence_matrix;
-	concept_analytical_method;
-	concept_graphical_way;;
+	concept_analytical_method_graph_representation;
+	concept_graphical_way_graph_representation;;

@@ -1,0 +1,27 @@
+concept_graphical_way_graph_representation
+=> nrel_main_idtf:
+	[графический способ представления графов] (* <- lang_ru;; *);
+	[graphical way of graph representation] (* <- lang_en;; *);;
+
+definition -> definition_of_graphical_way_graph_representation (*
+	-> rrel_key_sc_element: concept_graphical_way_graph_representation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Метод представления графов, основанный на использовании изображений и графических элементов] (* <- lang_ru;; *);;
+		-> [A method of graph representation based on the use of images and graphical elements] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (графический способ представления графов)] (* <- lang_ru;; *);
+		[Def. (graphical way of graph representation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graphic_element
+	};;
+*);;
+
+
+sc_node_class ->
+	concept_graph;
+	concept_graphic_element;;

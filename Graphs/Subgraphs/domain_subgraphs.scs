@@ -13,10 +13,12 @@ section_subject_domain_of_subgraphs
 	concept_isometric_subgraph;
 	concept_induced_subgraph;
 	concept_tightened_subgraph;
+	concept_complete_subgraph;
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
-	nrel_edge_induced_subgraph;;
+	nrel_edge_induced_subgraph;
+	nrel_subgraph;;
 
 section_subject_domain_of_subgraphs=[*
 	subject_domain_of_subgraphs
@@ -34,12 +36,14 @@ section_subject_domain_of_subgraphs=[*
 		concept_isometric_subgraph;
 		concept_induced_subgraph;
 		concept_tightened_subgraph;
+		concept_complete_subgraph;
 
 	-> rrel_explored_relation:
 		nrel_induced_subgraph;
 		nrel_vertex_adjacency;
 		nrel_vertex_induced_subgraph;
 		nrel_edge_induced_subgraph;
+		nrel_subgraph;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;;
@@ -50,10 +54,12 @@ sc_node_class ->
 	concept_bicoloured_subgraph;
 	concept_isometric_subgraph;
 	concept_induced_subgraph;
-	concept_tightened_subgraph;;
+	concept_tightened_subgraph;
+	concept_complete_subgraph;;
 
 sc_node_norole_relation ->
 	nrel_induced_subgraph;
 	nrel_vertex_adjacency;
 	nrel_vertex_induced_subgraph;
-	nrel_edge_induced_subgraph;;
+	nrel_edge_induced_subgraph;
+	nrel_subgraph;;

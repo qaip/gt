@@ -1,0 +1,20 @@
+ru: неприводимое дерево
+en: irreducible_tree
+
+definition:
+  ru: Дерево, которое нельзя разложить на меньшие деревья
+  en: A tree that cannot be broken down into smaller trees  
+  using:
+    concepts: |
+      tree
+statement: 
+  example:
+    title:
+      ru: Пример неприводимого дерева
+      en: An example of an irreducible tree
+    ru: Кэлиево дерево является примером неразложимого дерева
+    en: The Cayley tree is an example of an irreducible tree
+    using:
+      concepts: |
+        tree
+        graph

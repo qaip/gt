@@ -4,20 +4,22 @@ ru: ациклических графов
 parent: graphs
 
 children: |
-  directed_acyclic_graphs
   forests
 
 max: |
   acyclic_graph
 
 concepts: |
-  directed_acyclic_graph
+  dag
   forest
-  cycle
   tree
+  dag_with_single_source_and_sink
+  dag_with_source_and_sink
+  dag_with_source
+  dag_with_sink
+  topological_sorting
 
 rrels: |
-  topological_sorting
   acyclic_orientation
 
 nrels: |

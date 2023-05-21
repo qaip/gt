@@ -1,7 +1,11 @@
 concept_graph_embedding
 => nrel_main_idtf:
 	[вложение графа] (* <- lang_ru;; *);
-	[graph embedding] (* <- lang_en;; *);;
+	[graph embedding] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_genus;;
 
 definition -> definition_of_graph_embedding (*
 	-> rrel_key_sc_element: concept_graph_embedding;;
@@ -17,10 +21,11 @@ definition -> definition_of_graph_embedding (*
 
 	=> nrel_using_constants: {
 		concept_graph;
-		concept_graph_embedding;
 		concept_surface;
 		concept_edge;
-		concept_vertex
+		concept_vertex;
+		rrel_vertex;
+		rrel_edge
 	};;
 *);;
 
@@ -38,7 +43,7 @@ statement -> statement_of_planar_embedding (*
 
 	=> nrel_using_constants: {
 		concept_planar_graph;
-		concept_graph_embedding
+		concept_plane
 	};;
 *);;
 
@@ -56,17 +61,68 @@ statement -> statement_of_non_planar_embedding (*
 
 	=> nrel_using_constants: {
 		concept_unplanar_graph;
-		concept_graph_embedding
+		concept_plane
+	};;
+*);;
+
+statement -> statement_of_embeddings_of_complete_graphs (*
+	-> rrel_key_sc_element: concept_graph_embedding;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Всякое вложение полного графа на поверхности рода g имеет не менее 3 * g - 6 граней] (* <- lang_ru;; *);;
+		-> [Any embedding of the complete graph on a surface of genus g has at least 3 * g - 6 faces] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Вложения полных графов)] (* <- lang_ru;; *);
+		[Stat. (Embeddings of Complete Graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_complete_graph;
+		concept_genus;
+		nrel_face
+	};;
+*);;
+
+statement -> statement_of_embeddings_of_complete_bipartite_graphs (*
+	-> rrel_key_sc_element: concept_graph_embedding;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Всякое вложение полного двудольного графа на поверхности рода g имеет не менее 2 * g - 2 граней] (* <- lang_ru;; *);;
+		-> [Any embedding of the complete bipartite graph on a surface of genus g has at least 2 * g - 2 faces] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Вложения полных двудольных графов)] (* <- lang_ru;; *);
+		[Stat. (Embeddings of Complete Bipartite Graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_complete_graph;
+		concept_bipartite_graph;
+		concept_genus;
+		nrel_face
 	};;
 *);;
 
 sc_node_class ->
 	concept_graph;
-	concept_graph_embedding;
 	concept_surface;
 	concept_edge;
 	concept_vertex;
 	concept_planar_graph;
-	concept_graph_embedding;
+	concept_plane;
 	concept_unplanar_graph;
-	concept_graph_embedding;;
+	concept_plane;
+	concept_complete_graph;
+	concept_genus;
+	concept_complete_graph;
+	concept_bipartite_graph;
+	concept_genus;;
+
+sc_node_norole_relation ->
+	nrel_face;
+	nrel_face;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;;
