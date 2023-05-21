@@ -1,0 +1,30 @@
+ru: радиус графа
+en: graph radius
+
+definition:
+  ru: Минимальный эксцентриситет вершины графа
+  en: The minimum eccentricity of a vertex in the graph
+  using:
+    concepts: |
+      vertex
+      graph
+      eccentricity
+    rrels: |
+      vertex
+statement:
+  radius_center_theorem:
+    title:
+      ru: Теорема о радиусе и центре
+      en: Radius and center theorem
+    ru: Центр графа-это множество вершин, у которых эксцентриситет равен радиусу графа
+    en: The center of a graph is the set of vertices that have an eccentricity equal to the radius of the graph
+    using:
+      concepts: |
+        graph_center
+        graph_eccentricity
+        vertex
+      rrels: |
+        vertex
+      nrels: |
+        graph_radius
+

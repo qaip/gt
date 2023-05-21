@@ -1,0 +1,20 @@
+ru: разрез графа
+en: graph cut
+
+definition:
+  ru: Графический разрез графа на две части
+  en: A partition of the vertices of a graph into two disjoint sets
+  using:
+    concepts: |
+      graph
+      vertex
+      partition
+    rrels: |
+      vertex
+
+subclass:
+  - maximum_graph_cut
+  - minimum_graph_cut
+  - graph_cut_space
+  - s_t_cut
+  - sparsest_cuts

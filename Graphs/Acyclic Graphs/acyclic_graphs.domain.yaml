@@ -1,0 +1,23 @@
+en: acyclic graphs
+ru: ациклических графов
+
+parent: graphs
+
+children: |
+  forests
+
+max: |
+  acyclic_graph
+
+concepts: |
+  directed_acyclic_graph
+  forest
+  tree
+
+rrels: |
+  topological_sorting
+  acyclic_orientation
+
+nrels: |
+  topological_ordering
+  transitive_reduction

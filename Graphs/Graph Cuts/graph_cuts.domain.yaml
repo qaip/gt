@@ -1,0 +1,21 @@
+en: graph cuts
+ru: разрезов графа
+
+parent: graphs
+
+children: |
+  minimum_graph_cuts
+  maximum_graph_cuts
+  graph_cut_space
+  graph_splits
+
+max: |
+  graph_cut
+  graph_cut_set
+
+concepts: |
+  maximum_graph_cut
+  minimum_graph_cut
+  graph_cut_space
+  s_t_cut
+  sparsest_cuts

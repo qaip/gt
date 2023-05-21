@@ -1,0 +1,25 @@
+ru: минимальная куча
+en: min heap
+
+definition:
+  ru:
+    Структура данных, которая представляет собой дерево, где каждый узел имеет
+    значение, меньшее или равное значению его потомков
+  en:
+    A data structure that is a tree where each node has a value less than or
+    equal to the value of its children
+  using:
+    concepts: |
+      tree
+      tree_descendant
+
+statement:
+  min_heap_property:
+    title:
+      ru: Свойство минимальной кучи
+      en: Property of min heap
+    ru: Корень кучи имеет наименьшее значение
+    en: The root of the heap has the smallest value
+    using:
+      concepts: |
+        tree_root
