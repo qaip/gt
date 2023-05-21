@@ -1,5 +1,5 @@
-en: uhypergraphs
 ru: гиперграфов
+en: uhypergraphs
 
 parent: multigraphs
 
@@ -9,9 +9,10 @@ max: |
 concepts: |
   directed_hypergraph
   undirected_hypergraph
-  hypergraph_vertex
+  hypergraph_edge
+
+rrels: |
   hypergraph_edge
 
 nrels: |
-  vertexes_of_edge_set
   transvinsal
