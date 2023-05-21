@@ -1,5 +1,6 @@
 ru: пространство разрезов графа
 en: graph cut space
+
 definition:
   ru:
     Пространством сечения графа называют линейное подпространство пространства
@@ -16,3 +17,4 @@ definition:
       vector_space
       graph
       graph_cuts
+      spacegraph_cycle

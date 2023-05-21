@@ -1,5 +1,6 @@
 ru: векторное пространство
 en: vector space
+
 definition:
   ru:
     Векторным пространством является множество элементов, которые называются
@@ -15,9 +16,9 @@ definition:
   using:
     concepts: |
       field
-    nrels: |
       element
       vector
+    nrels: |
       scalar
       addition
       multiplication

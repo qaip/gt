@@ -1,5 +1,6 @@
 ru: ортогональное дополнение
 en: orthogonal complement
+
 definition:
   ru:
     Пусть V линейное пространство над полем F, W его линейное подпространство.
@@ -19,8 +20,9 @@ definition:
     rrels: |
       subspace
       orthogonal
+
 statement:
-  properties:
+  properties_orthogonal_complement:
     title:
       ru: Свойства ортогонального дополнения
       en: Properties of orthogonal complement
@@ -42,7 +44,8 @@ statement:
       rrels: |
         subspace
         orthogonal
-  examples:
+
+  examples_orthogonal_complement:
     title:
       ru: Примеры ортогонального дополнения
       en: Examples of orthogonal complement
@@ -57,3 +60,4 @@ statement:
     using:
       concepts: |
         matrix
+        space
