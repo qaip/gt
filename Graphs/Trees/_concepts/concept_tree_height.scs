@@ -20,7 +20,9 @@ definition -> definition_of_tree_height (*
 		concept_leaf;
 		concept_tree_root;
 		concept_graph_path;
-		rrel_vertex
+		rrel_vertex;
+		rrel_leaf;
+		rrel_tree_root
 	};;
 *);;
 
@@ -37,10 +39,10 @@ statement -> statement_of_theorem_height_leaf (*
 		[Stat. (Leaf height theorem)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_tree_height;
 		concept_vertex;
 		concept_tree_root;
-		rrel_vertex
+		rrel_vertex;
+		rrel_tree_root
 	};;
 *);;
 
@@ -49,10 +51,12 @@ sc_node_class ->
 	concept_leaf;
 	concept_tree_root;
 	concept_graph_path;
-	concept_tree_height;
 	concept_vertex;
 	concept_tree_root;;
 
 sc_node_role_relation ->
 	rrel_vertex;
-	rrel_vertex;;
+	rrel_leaf;
+	rrel_tree_root;
+	rrel_vertex;
+	rrel_tree_root;;
