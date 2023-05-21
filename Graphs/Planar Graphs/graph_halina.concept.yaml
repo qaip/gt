@@ -31,7 +31,7 @@ statement:
       concepts: |
         graph
         vertex
-        graph_connectivities
+        graph_connectivity
       rrels: |
         vertex
 
@@ -49,7 +49,7 @@ statement:
       concepts: |
         edge
         graph
-        graph_connectivities
+        graph_connectivity
       rrels: |
         edge
 

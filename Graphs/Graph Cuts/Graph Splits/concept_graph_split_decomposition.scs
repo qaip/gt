@@ -1,10 +1,10 @@
-concept_graph_splits_decomposition
+concept_graph_split_decomposition
 => nrel_main_idtf:
 	[декомпозиция разбиения графа] (* <- lang_ru;; *);
 	[graph splits decomposition] (* <- lang_en;; *);;
 
-definition -> definition_of_graph_splits_decomposition (*
-	-> rrel_key_sc_element: concept_graph_splits_decomposition;;
+definition -> definition_of_graph_split_decomposition (*
+	-> rrel_key_sc_element: concept_graph_split_decomposition;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Разбиение графа на подграфы, каждый из которых является графом, чтобы получить новые графы, которые являются разбиением исходного графа] (* <- lang_ru;; *);;

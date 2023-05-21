@@ -38,7 +38,7 @@ statement -> statement_of_halina_graph_property (*
 	=> nrel_using_constants: {
 		concept_graph;
 		concept_vertex;
-		concept_graph_connectivities;
+		concept_graph_connectivity;
 		rrel_vertex
 	};;
 *);;
@@ -58,7 +58,7 @@ statement -> statement_of_halina_graph_connectiviti (*
 	=> nrel_using_constants: {
 		concept_edge;
 		concept_graph;
-		concept_graph_connectivities;
+		concept_graph_connectivity;
 		rrel_edge
 	};;
 *);;
@@ -92,10 +92,10 @@ sc_node_class ->
 	concept_tree;
 	concept_graph;
 	concept_vertex;
-	concept_graph_connectivities;
+	concept_graph_connectivity;
 	concept_edge;
 	concept_graph;
-	concept_graph_connectivities;
+	concept_graph_connectivity;
 	concept_edge;
 	concept_graph;
 	concept_hamiltonian_cycle;

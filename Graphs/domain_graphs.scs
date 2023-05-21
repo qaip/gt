@@ -17,7 +17,7 @@ section_subject_domain_of_graphs
 	section_subject_domain_of_graph_properties;
 	section_subject_domain_of_graph_representation;
 	section_subject_domain_of_graph_operations;
-	section_subject_domain_of_graph_connectivities;
+	section_subject_domain_of_graph_connectivity;
 	section_subject_domain_of_graph_algorithms
 };
 
@@ -32,11 +32,11 @@ section_subject_domain_of_graphs
 	concept_graph_structure;
 	concept_complete_graph;
 	concept_bipartite_graph;
-	concept_multigrap;
+	concept_multigraph;
 	concept_null_graph;
-	concept_psuedograph;
+	concept_pseudograph;
 	concept_network;
-	concept_super_graph;
+	concept_supergraph;
 	concept_regular_graph;
 	concept_weighted_graph;
 	concept_unweighted_graph;
@@ -81,11 +81,11 @@ section_subject_domain_of_graphs=[*
 		concept_graph_structure;
 		concept_complete_graph;
 		concept_bipartite_graph;
-		concept_multigrap;
+		concept_multigraph;
 		concept_null_graph;
-		concept_psuedograph;
+		concept_pseudograph;
 		concept_network;
-		concept_super_graph;
+		concept_supergraph;
 		concept_regular_graph;
 		concept_weighted_graph;
 		concept_unweighted_graph;
@@ -126,7 +126,7 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_graph_properties;
 		subject_domain_of_graph_representation;
 		subject_domain_of_graph_operations;
-		subject_domain_of_graph_connectivities;
+		subject_domain_of_graph_connectivity;
 		subject_domain_of_graph_algorithms;;
 *];;
 
@@ -140,11 +140,11 @@ sc_node_class ->
 	concept_graph_structure;
 	concept_complete_graph;
 	concept_bipartite_graph;
-	concept_multigrap;
+	concept_multigraph;
 	concept_null_graph;
-	concept_psuedograph;
+	concept_pseudograph;
 	concept_network;
-	concept_super_graph;
+	concept_supergraph;
 	concept_regular_graph;
 	concept_weighted_graph;
 	concept_unweighted_graph;;

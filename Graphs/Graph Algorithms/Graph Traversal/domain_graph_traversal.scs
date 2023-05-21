@@ -13,7 +13,7 @@ section_subject_domain_of_graph_traversal
 	concept_breadth_traversal;
 	concept_depth_traversal;
 	concept_in_order_traversal;
-	concept_pre_oreder_traversal;
+	concept_pre_order_traversal;
 	concept_post_order_traversal;
 	concept_reverse_pre_order_traversal;
 	concept_reverse_post_order_traversal;
@@ -35,7 +35,7 @@ section_subject_domain_of_graph_traversal=[*
 		concept_breadth_traversal;
 		concept_depth_traversal;
 		concept_in_order_traversal;
-		concept_pre_oreder_traversal;
+		concept_pre_order_traversal;
 		concept_post_order_traversal;
 		concept_reverse_pre_order_traversal;
 		concept_reverse_post_order_traversal;
@@ -51,7 +51,7 @@ sc_node_class ->
 	concept_breadth_traversal;
 	concept_depth_traversal;
 	concept_in_order_traversal;
-	concept_pre_oreder_traversal;
+	concept_pre_order_traversal;
 	concept_post_order_traversal;
 	concept_reverse_pre_order_traversal;
 	concept_reverse_post_order_traversal;

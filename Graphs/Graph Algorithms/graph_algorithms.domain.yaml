@@ -6,14 +6,13 @@ parent: graphs
 children: |
   graph_traversal
   shortest_paths
-  tree_traversal
 
 max: |
   graph_algorithm
 
 concepts: |
   graph_traversal
-  shortest_paths
+  shortest_paths_problem
 
 nrels: |
   shortest_paths

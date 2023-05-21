@@ -14,7 +14,7 @@ children: |
   graph_properties
   graph_representation
   graph_operations
-  graph_connectivities
+  graph_connectivity
   graph_algorithms
 
 max: |
@@ -29,14 +29,15 @@ concepts: |
   graph_structure
   complete_graph
   bipartite_graph
-  multigrap
+  multigraph
   null_graph
-  psuedograph
+  pseudograph
   network
-  super_graph
+  supergraph
   regular_graph
   weighted_graph
   unweighted_graph
+
 rrels: |
   vertex
   edge

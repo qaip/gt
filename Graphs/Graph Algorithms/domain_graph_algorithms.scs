@@ -8,15 +8,14 @@ section_subject_domain_of_graph_algorithms
 
 <= nrel_section_decomposition: {
 	section_subject_domain_of_graph_traversal;
-	section_subject_domain_of_shortest_paths;
-	section_subject_domain_of_tree_traversal
+	section_subject_domain_of_shortest_paths
 };
 
 <- rrel_key_sc_element:
 	subject_domain_of_graph_algorithms;
 	concept_graph_algorithm;
 	concept_graph_traversal;
-	concept_shortest_paths;
+	concept_shortest_paths_problem;
 	nrel_shortest_paths;;
 
 section_subject_domain_of_graph_algorithms=[*
@@ -32,7 +31,7 @@ section_subject_domain_of_graph_algorithms=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_graph_traversal;
-		concept_shortest_paths;
+		concept_shortest_paths_problem;
 
 	-> rrel_explored_relation:
 		nrel_shortest_paths;
@@ -42,14 +41,13 @@ section_subject_domain_of_graph_algorithms=[*
 
 	=> nrel_private_subject_domain:
 		subject_domain_of_graph_traversal;
-		subject_domain_of_shortest_paths;
-		subject_domain_of_tree_traversal;;
+		subject_domain_of_shortest_paths;;
 *];;
 
 sc_node_class ->
 	concept_graph_algorithm;
 	concept_graph_traversal;
-	concept_shortest_paths;;
+	concept_shortest_paths_problem;;
 
 sc_node_norole_relation ->
 	nrel_shortest_paths;;
