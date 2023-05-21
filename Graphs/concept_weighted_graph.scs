@@ -40,27 +40,6 @@ statement -> statement_of_usage_weighted_graph (*
 	};;
 *);;
 
-statement -> statement_of_shortest_path (*
-	-> rrel_key_sc_element: concept_weighted_graph;;
-
-	<= nrel_sc_text_translation: ... (*
-		-> [Взвешенные графы используются для решения задач кратчайшего пути. Различные алгоритмы, такие как алгоритм Дейкстры и алгоритм Беллмана-Форда, используются для нахождения кратчайшего пути в взвешенных графах] (* <- lang_ru;; *);;
-		-> [Weighted graphs are used to solve shortest path problems. Various algorithms, such as Dijkstra algorithm and Bellman-Ford algorithm, are used to find the shortest path in weighted graphs] (* <- lang_en;; *);;
-	*);;
-
-	=> nrel_main_idtf:
-		[Утв. (Кратчайший путь в графе)] (* <- lang_ru;; *);
-		[Stat. (Shortest path in a graph)] (* <- lang_en;; *);;
-
-	=> nrel_using_constants: {
-		concept_graph;
-		concept_weighted_graph;
-		concept_algorithms;
-		concept_shortest_path;
-		concept_graph_algorithm
-	};;
-*);;
-
 statement -> statement_of_minimum_spanning_tree (*
 	-> rrel_key_sc_element: concept_weighted_graph;;
 
@@ -105,11 +84,6 @@ sc_node_class ->
 	concept_edge;
 	concept_graph;
 	concept_weighted_graph;
-	concept_graph;
-	concept_weighted_graph;
-	concept_algorithms;
-	concept_shortest_path;
-	concept_graph_algorithm;
 	concept_graph;
 	concept_weighted_graph;
 	concept_algorithms;
