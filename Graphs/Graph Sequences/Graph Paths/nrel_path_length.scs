@@ -74,6 +74,7 @@ nrel_path_length=>nrel_first_domain:concept_graph;
 	(*
 		 <=nrel_combination:
         {
+			number;
             concept_graph
         };;
 	*);;

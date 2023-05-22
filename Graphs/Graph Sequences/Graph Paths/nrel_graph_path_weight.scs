@@ -61,7 +61,8 @@ nrel_path_weight=>nrel_first_domain:concept_graph;
 	(*
 		 <=nrel_combination:
         {
-            concept_graph
+            concept_graph;
+			number
         };;
 	*);;
 
