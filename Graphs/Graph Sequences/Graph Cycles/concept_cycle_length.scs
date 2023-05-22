@@ -90,6 +90,7 @@ nrel_cycle_length=>nrel_first_domain:concept_graph;
 	(*
 		 <=nrel_combination:
         {
+			number
             concept_graph
         };;
 	*);;
@@ -102,7 +103,7 @@ binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_cycle_length;;*);
     =>nrel_inclusion:antisymmetric_relation(*->nrel_cycle_length;;*);;
     oriented_relation->nrel_cycle_length;;
 
-sc_node_norole_relation -> nrel_path_length;;
+sc_node_norole_relation -> nrel_cycle_length;;
 
 sc_node_class ->
 	concept_graph_cycle;
