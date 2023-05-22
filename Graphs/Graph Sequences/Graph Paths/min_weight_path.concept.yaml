@@ -8,8 +8,9 @@ definition:
     concepts: |
       graph_path
       graph_path_weight
-      rib_weight
       edge
+    nrels: |
+      rib_weight
     rrels: |
       edge
 
@@ -23,7 +24,8 @@ statement:
     using:
       concepts: |
         graph_path
-        rib_weight
         edge
+      nrels: |
+        rib_weight
       rrels: |
         edge
