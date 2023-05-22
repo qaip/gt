@@ -3,11 +3,11 @@ nrel_chromatic_index
 	[хроматический индекс*] (* <- lang_ru;; *);
 	[chromatic index*] (* <- lang_en;; *);;
 
-nrel_skewness => arity: 2 (* <- number ;;*);;
+nrel_chromatic_index => arity: 2 (* <- number ;;*);;
 
-nrel_skewness <- binary_relation;;
-nrel_skewness <- antireflexive_relation;;
-nrel_skewness <- antisymmetric_relation;;
+nrel_chromatic_index <- binary_relation;;
+nrel_chromatic_index <- antireflexive_relation;;
+nrel_chromatic_index <- antisymmetric_relation;;
 
 definition -> definition_of_chromatic_index (*
 	-> rrel_key_sc_element: nrel_chromatic_index;;
