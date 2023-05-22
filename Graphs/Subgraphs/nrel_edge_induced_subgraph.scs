@@ -1,0 +1,73 @@
+nrel_edge_induced_subgraph
+=> nrel_main_idtf:
+	[подграф, индуцированный ребрами*] (* <- lang_ru;; *);
+	[edge-induced subgraph*] (* <- lang_en;; *);;
+
+nrel_edge_induced_subgraph => arity: 2 (* <- number ;;*);;
+
+nrel_edge_induced_subgraph <- binary_relation;;
+nrel_edge_induced_subgraph <- antireflexive_relation;;
+nrel_edge_induced_subgraph <- antisymmetric_relation;;
+nrel_edge_induced_subgraph <- antitransitive_relation;;
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: nrel_edge_induced_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подграф, вершинами которого являются вершины исходного графа, соединенные ребрами, принадлежащими заданным множествам ребер] (* <- lang_ru;; *);;
+		-> [A subgraph whose vertices are vertices of the original graph, connected by edges belonging to the given sets of edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (подграф, индуцированный ребрами)] (* <- lang_ru;; *);
+		[Def. (edge-induced subgraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+        concept_edge;
+        rrel_edge;
+        rrel_vertex;
+        concept_subgraph;
+        nrel_subgraph
+	};;
+*);;
+
+statement -> statement_of_edge_induced_subgraph_properties (*
+	-> rrel_key_sc_element: nrel_edge_induced_subgraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Подграф, индуцированный ребрами, содержит только те ребра, которые входят в заданное множество ребер. Количество вершин в подграфе может быть меньше, чем в исходном графе] (* <- lang_ru;; *);;
+		-> [The edge-induced subgraph contains only those edges that belong to the given set of edges. The number of vertices in the subgraph may be less than in the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства подграфа, индуцированного ребрами)] (* <- lang_ru;; *);
+		[Stat. (Properties of an edge-induced subgraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+        concept_edge;
+        rrel_edge;
+        concept_vertex;
+        rrel_vertex;
+        graph;
+		concept_vertex_degree;
+		concept_graph
+	};;
+*);;
+
+nrel_edge_induced_subgraph => nrel_first_domain: concept_graph;;
+nrel_edge_induced_subgraph => nrel_second_domain: graph;;
+
+nrel_edge_induced_subgraph => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_edge_induced_subgraph;;
+
+
