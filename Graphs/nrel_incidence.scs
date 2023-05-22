@@ -1,0 +1,50 @@
+nrel_incidence
+=> nrel_main_idtf:
+	[ инцидентность* ] (* <- lang_ru;; *);
+	[ incidence* ] (* <- lang_en;; *);;
+
+nrel_incidence => arity: 2 (* <- number ;;*);;
+
+nrel_incidence <- binary_relation;;
+nrel_incidence <- antireflexive_relation;;
+nrel_incidence <- antisymmetric_relation;;
+nrel_incidence <- antitransitive_relation;;
+
+definition -> definition_of_incidence (*
+	-> rrel_key_sc_element: nrel_incidence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Инцидентность - это когда вершина является одной из двух вершин, которые соединяет ребро.] (* <- lang_ru;; *);;
+		-> [Incidence is when a vertex is one of the two vertices the edge connects.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (инцидентность)] (* <- lang_ru;; *);
+		[Def. (incidence)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+
+nrel_incidence => nrel_first_domain: concept_graph;;
+nrel_incidence => nrel_second_domain: number;;
+
+nrel_incidence => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination:
+		{
+			concept_vertex;
+			concept_edge;
+			rrel_vertex;
+			rrel_edge
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_incidence;;

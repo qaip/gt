@@ -1,0 +1,52 @@
+nrel_condensation_of_the_digraph
+=> nrel_main_idtf:
+	[ конденсация орграфа* ] (* <- lang_ru;; *);
+	[ condensation of the digraph* ] (* <- lang_en;; *);;
+
+nrel_condensation_of_the_digraph => arity: 2 (* <- number ;;*);;
+
+nrel_condensation_of_the_digraph <- binary_relation;;
+nrel_condensation_of_the_digraph <- antireflexive_relation;;
+nrel_condensation_of_the_digraph <- antisymmetric_relation;;
+nrel_condensation_of_the_digraph <- antitransitive_relation;;
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: nrel_condensation_of_the_digraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Конденсацией орграфа G называют такой орграф G', вершинами которого служат компоненты сильной связности G,
+		 	а дуга в G' присутствует только если существует хотя бы одно ребро между вершинами, входящими в
+			соответствующие компоненты связности. Конденсация графа не содержит кратных ребер.] (* <- lang_ru;; *);;
+		-> [Condensation of the digraph G is a digraph G' whose vertices are the strongly connected components of G,
+			and an arc in G' is present only if there is at least one edge between the vertices included in 
+			the corresponding connected components. The graph condensation does not contain multiple edges.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (конденсация орграфа)] (* <- lang_ru;; *);
+		[Def. (condensation of the digraph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex;
+		concept_edge;
+		rrel_vertex
+	};;
+*);;
+
+
+nrel_condensation_of_the_digraph => nrel_first_domain: concept_directed_graph;;
+nrel_condensation_of_the_digraph => nrel_second_domain: concept_strongly_connected_component;;
+
+nrel_condensation_of_the_digraph => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination:
+		{
+			concept_directed_graph;
+			concept_strongly_connected_component
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_condensation_of_the_digraph;;
