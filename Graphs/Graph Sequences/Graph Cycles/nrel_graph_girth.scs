@@ -1,10 +1,17 @@
-concept_graph_girth
+nrel_graph_girth
 => nrel_main_idtf:
-	[длина минимального цикла графа] (* <- lang_ru;; *);
-	[graph girth] (* <- lang_en;; *);;
+	[длина минимального цикла графа*] (* <- lang_ru;; *);
+	[graph girth*] (* <- lang_en;; *);;
+
+nrel_graph_girth => arity: 2 (* <- number ;;*);;
+
+nrel_graph_girth <- binary_relation;;
+nrel_graph_girth <- antireflexive_relation;;
+nrel_graph_girth <- antisymmetric_relation;;
+nrel_graph_girth <- antitransitive_relation;;
 
 definition -> definition_of_graph_girth (*
-	-> rrel_key_sc_element: concept_graph_girth;;
+	-> rrel_key_sc_element: nrel_graph_girth;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Длина минимального цикла графа] (* <- lang_ru;; *);;
@@ -17,12 +24,13 @@ definition -> definition_of_graph_girth (*
 
 	=> nrel_using_constants: {
 		concept_graph_cycle;
-		concept_graph
+		concept_graph;
+		rrel_graph_cycle
 	};;
 *);;
 
 statement -> statement_of_graph_girth_exists (*
-	-> rrel_key_sc_element: concept_graph_girth;;
+	-> rrel_key_sc_element: nrel_graph_girth;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Обхват графа всегда меньше, чем его диаметр] (* <- lang_ru;; *);;
@@ -39,10 +47,18 @@ statement -> statement_of_graph_girth_exists (*
 	};;
 *);;
 
-sc_node_class ->
-	concept_graph_cycle;
-	concept_graph;
-	concept_graph;;
+nrel_graph_girth => nrel_first_domain: concept_graph_cycle;;
+nrel_graph_girth => nrel_second_domain: number;;
+
+nrel_graph_girth => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph_cycle;
+			number
+        };;
+	*);;
+
 
 sc_node_norole_relation ->
-	nrel_graph_diameter;;
+	nrel_graph_girth;;
