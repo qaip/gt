@@ -5,8 +5,8 @@ nrel_semiroute_in_digraph
 
 => nrel_idtf:
 	[орграфовый полумаршрут*] (* <- lang_ru;; *);
-	[digraph semiroute*] (* <- lang_en;; *);
-definition -> definition_of_tightened_graph (*
+	[digraph semiroute*] (* <- lang_en;; *);;
+	definition -> definition_of_semiroute_in_digraph(*
 	-> rrel_key_sc_element: concept_tightened_graph;;
 
 	<= nrel_sc_text_translation: ... (*
@@ -24,7 +24,7 @@ definition -> definition_of_tightened_graph (*
 		concept_vertex;
 		rrel_vertex;
 		rrel_edge
-		}
+		};;
 		*);;
 arity->...
     (*
