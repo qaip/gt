@@ -23,14 +23,8 @@ concepts: |
   counterfunctional_graph
 
 rrels: |
-  arc
   deadlock
-  anti_deadlock
-  sequence
-  path
 
 nrels: |
-  adjacent_arcs
-  adjacent_vretex
-  in_vertex_degree
-  out_vertex_degree
+  in_vertex_arc
+  out_vertex_arc
