@@ -1,10 +1,16 @@
-concept_chromatic_number
+nrel_chromatic_number
 => nrel_main_idtf:
-	[хроматическое число] (* <- lang_ru;; *);
-	[chromatic number] (* <- lang_en;; *);;
+	[хроматическое число*] (* <- lang_ru;; *);
+	[chromatic number*] (* <- lang_en;; *);;
+
+nrel_skewness => arity: 2 (* <- number ;;*);;
+
+nrel_skewness <- binary_relation;;
+nrel_skewness <- antireflexive_relation;;
+nrel_skewness <- antisymmetric_relation;;
 
 definition -> definition_of_chromatic_number (*
-	-> rrel_key_sc_element: concept_chromatic_number;;
+	-> rrel_key_sc_element: nrel_chromatic_number;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Минимальное количество цветов, необходимых для вершинной раскраски графа] (* <- lang_ru;; *);;
@@ -22,7 +28,7 @@ definition -> definition_of_chromatic_number (*
 *);;
 
 statement -> statement_of_chromatic_number_property (*
-	-> rrel_key_sc_element: concept_chromatic_number;;
+	-> rrel_key_sc_element: nrel_chromatic_number;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Хроматическое число графа не меньше его максимальной степени вершины] (* <- lang_ru;; *);;
@@ -40,7 +46,7 @@ statement -> statement_of_chromatic_number_property (*
 *);;
 
 statement -> statement_of_brooks_theorem (*
-	-> rrel_key_sc_element: concept_chromatic_number;;
+	-> rrel_key_sc_element: nrel_chromatic_number;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Для любого связного графа, кроме полных и нечетных циклов, хроматическое число не превосходит максимальной степени вершины] (* <- lang_ru;; *);;
@@ -57,10 +63,19 @@ statement -> statement_of_brooks_theorem (*
 	};;
 *);;
 
-sc_node_class ->
-	concept_graph;
-	concept_vertex_coloring;
-	concept_vertex_degree;
-	concept_graph;
-	concept_graph_connectivity;
-	concept_vertex_degree;;
+nrel_chromatic_number => nrel_first_domain: concept_graph;;
+nrel_chromatic_number => nrel_second_domain: number;;
+
+nrel_chromatic_number => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			number
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_chromatic_number;;
+
+
