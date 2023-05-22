@@ -50,7 +50,7 @@ nrel_transvinsal=> nrel_definitional_domain:
 		};;
 	*);;
 
-nrel_chromatic_number=>arity:2(*<-number;;*);;
+nrel_transvinsal=>arity:2(*<-number;;*);;
 
 antireflexive_relation->nrel_transvinsal;;
 oriented_relation->nrel_transvinsal;;
