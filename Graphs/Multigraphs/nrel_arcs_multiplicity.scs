@@ -76,7 +76,7 @@ nrel_arcs_multiplicity=> nrel_definitional_domain:
 		};;
 	*);;
 
-nrel_chromatic_number=>arity:2(*<-number;;*);;
+nrel_arcs_multiplicity=>arity:2(*<-number;;*);;
 
 antireflexive_relation->nrel_arcs_multiplicity;;
 oriented_relation->nrel_arcs_multiplicity;;
