@@ -11,12 +11,19 @@ nrel_graph_sequence
 arity->...
     (*
         ->nrel_graph_sequence;;
-        =>nrel_measurement:concept_2;;
+        =>nrel_measurement:2;;
     *);;
 
 nrel_graph_sequence=>nrel_first_domain:concept_graph;
     =>nrel_second_domain:concept_graph;
-    =>nrel_area:concept_graph;;
+        => nrel_definitional_domain:
+	...
+	(*
+		 <=nrel_combination:
+        {
+            concept_graph
+        };;
+	*);;
 
     relation=>nrel_inclusion:binary_relation;;
     relation=>nrel_inclusion:oriented_relation;;
