@@ -8,9 +8,4 @@ max: |
 
 concepts: |
   self_dual_graph
-
-nrels: |
   abstract_dual_graph
-  self_dual_graph
-  dual_graph
-  product_of_graphs
