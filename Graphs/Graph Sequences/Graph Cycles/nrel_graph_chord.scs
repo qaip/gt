@@ -1,0 +1,72 @@
+nrel_graph_chord
+=> nrel_main_idtf:
+	[хорда графа*] (* <- lang_ru;; *);
+	[graph chord*] (* <- lang_en;; *);;
+
+nrel_graph_chord => arity: 2 (* <- number ;;*);;
+
+nrel_graph_chord <- binary_relation;;
+nrel_graph_chord <- antireflexive_relation;;
+nrel_graph_chord <- antisymmetric_relation;;
+nrel_graph_chord <- antitransitive_relation;;
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: nrel_graph_chord;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ребро, соединяющее две не смежные вершины графа и лежащее внутри цикла графа] (* <- lang_ru;; *);;
+		-> [An edge that connects two non-adjacent vertices of a graph and lies inside a cycle of the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (хорда графа)] (* <- lang_ru;; *);
+		[Def. (graph chord)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_graph_cycle;
+		concept_edge;
+        rrel_edge;
+        concept_vertex;
+        rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_graph_chord_teorem (*
+	-> rrel_key_sc_element: concept_minimum_weight_cycle;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В любом цикле графа с пятью и более вершинами существует хотя бы одна хорда] (* <- lang_ru;; *);;
+		-> [In any cycle of a graph with five or more vertices, there is at least one chord] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о хордах графа)] (* <- lang_ru;; *);
+		[Stat. (Graph chord theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cycle;
+		concept_vertex;
+		concept_graph;
+        concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+nrel_graph_chord => nrel_first_domain: concept_graph;;
+nrel_graph_chord => nrel_second_domain: edge;;
+
+nrel_graph_chord => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			edge
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_graph_chord;;
+
+
