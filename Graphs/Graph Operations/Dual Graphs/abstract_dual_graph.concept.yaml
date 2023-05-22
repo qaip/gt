@@ -1,0 +1,99 @@
+ru: абстрактный двойственный граф
+en: abstract dual graph
+
+definition:
+  ru:
+    Двойственный граф, создаваемый из другого графа путём замены его вершин и
+    рёбер
+  en:
+    The dual graph created from another graph by replacing its vertices and
+    edges
+  using:
+    concepts: |
+      dual_graph
+      vertex
+      edge
+      graph
+    rrels: |
+      vertex
+      edge
+
+statement:
+  theorem_eulers_formula_dual_graph:
+    title:
+      ru: Формула Эйлера
+      en: Eulers formula
+    ru:
+      Формула, связывающая число вершин, рёбер и граней двумерной связной
+      триангулированной поверхности
+    en:
+      A formula relating the number of vertices, edges, and faces of a
+      two-dimensional connected triangulated surface
+    using:
+      concepts: |
+        vertex
+        edge
+        triangulated_surface
+      rrels: |
+        vertex
+        edge
+      nrels: |
+        face
+
+  dual_of_dual:
+    title:
+      ru: Двойственный граф двойственного графа
+      en: Dual graph of dual graph
+    ru: Двойственный граф двойственного графа является исходным графом
+    en: The dual graph of a dual graph is the original graph
+    using:
+      concepts: |
+        dual_graph
+        graph
+
+  dual_is_planar:
+    title:
+      ru: Планарность двойственного графа
+      en: Planarity of the dual graph
+    ru: Двойственный граф планарного графа также является планарным
+    en: The dual graph of a planar graph is also planar
+    using:
+      concepts: |
+        planar_graph
+        dual_graph
+
+  dual_has_same_chromatic_number:
+    title:
+      ru: Хроматическое число двойственного графа
+      en: Chromatic number of the dual graph
+    ru:
+      Двойственный граф имеет ту же хроматическую численность, что и исходный
+      граф
+    en: The dual graph has the same chromatic number as the original graph
+    using:
+      concepts: |
+        dual_graph
+      nrels: |
+        chromatic_number
+
+  dual_preserves_planarity:
+    title:
+      ru: Сохранение планарности двойственным графом
+      en: Preservation of planarity by dual graph
+    ru: Двойственный граф не меняет планарность исходного графа
+    en: The dual graph does not change the planarity of the original graph
+    using:
+      concepts: |
+        dual_graph
+        planar_graph
+
+  dual_preserves_k_colorability:
+    title:
+      ru: Сохранение k-раскрашиваемости двойственным графом
+      en: Preservation of k-colorability by dual graph
+    ru: Если граф k-раскрашиваем, то его двойственный граф тоже k-раскрашиваем
+    en: If a graph is k-colorable, then its dual graph is also k-colorable
+    using:
+      concepts: |
+        dual_graph
+        k_colorable_graph
