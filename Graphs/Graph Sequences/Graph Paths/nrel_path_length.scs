@@ -86,7 +86,7 @@ binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_graph_radius;;*);
     =>nrel_inclusion:antisymmetric_relation(*->nrel_graph_radius;;*);;
     oriented_relation->nrel_graph_radius;;
 
-sc_node_norole_relation -> nrel_graph_radius;;
+sc_node_norole_relation -> nrel_path_length;;
 
 sc_node_class ->
 	concept_graph_path;
