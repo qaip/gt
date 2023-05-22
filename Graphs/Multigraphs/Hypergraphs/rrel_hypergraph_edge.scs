@@ -1,0 +1,66 @@
+rrel_hypergraph_edge
+=> nrel_main_idtf:
+	[ребро гиперграфа'] (* <- lang_ru;; *);
+	[hypergraph edge'] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[гиперребро'] (* <- lang_ru;; *);
+	[hyperedge'] (* <- lang_en;; *);;
+
+definition -> definition_of_rrel_hypergraph_edge (*
+	-> rrel_key_sc_element: rrel_hypergraph_edge;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ролевое отношение, связывающие гиперграф с его гиперрёбрами] (* <- lang_ru;; *);;
+		-> [Role relation connecting a hypergraph with its hyperedges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ребро гиперграфа')] (* <- lang_ru;; *);
+		[Def. (hypergraph edge')] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_hypergraph;
+		concept_hypergraph_edge
+	};;
+*);;
+
+statement -> statement_of_rrel_hypergraph_edge_statement (*
+	-> rrel_key_sc_element: rrel_hypergraph_edge;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Отношение гипперребро' можно рассматривать как более общий случай отношения ребро'] (* <- lang_ru;; *);;
+		-> [Relation hyperedge' can be considered as a more general case of relation edge'] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Высказывание о гиперребре')] (* <- lang_ru;; *);
+		[Stat. (Hyperedge' statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		rrel_edge
+	};;
+*);;
+
+rrel_hypergraph_edge=>nrel_first_domain:concept_hypergraph;;
+rrel_hypergraph_edge=>nrel_second_domain:concept_hypergraph_edge;;
+rrel_hypergraph_edge=> nrel_definitional_domain:
+    ...
+    (*
+	    <= nrel_integration:
+        ...
+	    (*
+		    ->concept_hypergraph;;
+		    ->concept_hypergraph_edge;;
+	    *);;
+    *);;
+
+
+sc_node_class ->
+    concept_hypergraph_edge;
+	concept_hypergraph;;
+
+sc_node_role_relation ->
+    rrel_hypergraph_edge;
+	rrel_edge;
+	rrel_edge;;
