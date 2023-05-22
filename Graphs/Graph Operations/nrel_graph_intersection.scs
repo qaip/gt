@@ -1,0 +1,83 @@
+nrel_graph_intersection
+=> nrel_main_idtf:
+	[пересечение графов*] (* <- lang_ru;; *);
+	[graph intersection*] (* <- lang_en;; *);
+
+definition -> definition_of_nrel_graph_intersection (*
+	-> rrel_key_sc_element: nrel_graph_intersection;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неролевое отношение, областью определения которого являются графы. При этом граф G(V, E), где V - множество является пересечением графов G(a) = (V(a), E(a)) и G(b) = (V(b), E(b)) тогда и только тогда, когда V - пересечение множеств V(a) и V(b), а E - пересечение множеств E(a) и E(b). V - множество вершин графа G, E - множество рёбер(дуг) графа G, V(a) - множество вершин графа G(a), E(a) - множество рёбер(дуг) графа G(a), V(b) - множество вершин графа G(b), E(b) - множество рёбер(дуг) графа G(b)] (* <- lang_ru;; *);;
+		-> [A non-role relation whose scope is graphs. Moreover, the graph G(V, E), where V is a set, is the intersection of the graphs G(a) = (V(a), E(a)) and G(b) = (V(b), E(b)) if and only if V is the intersection of the sets V(a) and V(b) and E is the intersection of the sets E(a) and E(b). V - set of vertices of G, E - set of edges(arcs) of G, V(a) - set of vertices of G(a), E(a) - set of edges(arcs) of G(a), V(b) - set of vertices of G(b), E(b) - set of edges(arcs) of G(b)] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (пересечение графов*)] (* <- lang_ru;; *);
+		[Def. (Graph intersection*)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_edge;
+        concept_arc;
+        concept_vertex;
+        rrel_edge;
+        rrel_arc;
+        rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_nrel_graph_intersection (*
+	-> rrel_key_sc_element: nrel_graph_intersection;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Можно сказать, что результатом пересечения графов будет граф, каждая вершина, ребро и дуга которого входит соответсвенно во множество вершин, рёбер и дуг всех исходных графов] (* <- lang_ru;; *);;
+		-> [We can say that the result of combining graphs will be a graph, each vertex, edge and arc of which is respectively included in the set of vertices, edges and arcs of all original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Неформальное пояснение пересечения графов*)] (* <- lang_ru;; *);
+		[Stat. (Informal explanation of graph intersection*)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_vertex;
+        concept_edge;
+        concept_arc
+        rrel_vertex;
+        rrel_edge;
+        rrel_arc
+	};;
+*);;
+
+nrel_graph_intersection=>nrel_first_domain:concept_graph;;
+nrel_graph_intersection=>nrel_second_domain:concept_graph;;
+nrel_graph_intersection=> nrel_definitional_domain:
+	...
+	(*
+	    <= nrel_combination:
+	    {
+			concept_graph
+		};;
+	*);;
+
+
+
+reflexive_relation->nrel_graph_intersection;;
+oriented_relation->nrel_graph_intersection;;
+antisymmetric_relation->nrel_graph_intersection;;
+transitive_relation->nrel_graph_intersection;;
+
+sc_node_norole_relation->nrel_graph_intersection;;
+
+quasybinary_relation->nrel_graph_intersection;;
+
+sc_node_class ->
+    concept_graph;
+    concept_edge;
+    concept_arc;
+    concept_vertex;;
+
+sc_node_role_relation ->
+    rrel_edge;
+    rrel_arc;
+    rrel_vertex;;
