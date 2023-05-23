@@ -32,7 +32,7 @@ nrel_subgraph=>nrel_first_domain:concept_graph;
     relation=>nrel_inclusion:oriented_relation;;
 
 binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_subgraph;;*);
-    =>nrel_inclusion:antitransitive_relation(*->nrel_subgraph;;*);
+    =>nrel_inclusion:transitive_relation(*->nrel_subgraph;;*);
     =>nrel_inclusion:antisymmetric_relation(*->nrel_subgraph;;*);;
     oriented_relation->nrel_subgraph;;
 
