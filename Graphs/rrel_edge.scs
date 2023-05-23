@@ -9,11 +9,10 @@ rrel_edge
 rrel_edge => nrel_definitional_domain: 
 	...
 	(*
-	<= nrel_combination: 
-		{
-		concept_graph;
-		concept_vertex
-		};;
+		<= nrel_combination: 
+			{
+			concept_vertex
+			};;
 	*);;
 
 sc_node_role_relation->rrel_vertex;;

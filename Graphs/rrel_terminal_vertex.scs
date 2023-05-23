@@ -1,0 +1,81 @@
+rrel_terminal_vertex
+	=> nrel_main_idtf:
+	[ висячая вершина' ] (* <-lang_ru;; *);
+	[ terminal vertex' ] (* <-lang_en;; *);;
+
+
+definition -> definition_of_rrel_terminal_vertex (*
+	-> rrel_key_sc_element: rrel_terminal_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершина, степень которой равна 1.] (* <- lang_ru;; *);;
+		-> [Vertex which degree is 1.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (висячая вершина)] (* <- lang_ru;; *);
+		[Def. (terminal vertex)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		nrel_connected_component;
+		rrel_edge;
+		nrel_vertex_degree
+	};;
+*);;
+
+
+statement -> statement_of_terminal_vertex_in_wheel (*
+	-> rrel_key_sc_element: terminal_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В колесе не может быть висячих вершин.] (* <- lang_ru;; *);;
+		-> [A terminal vertex can't be in wheel graph.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Висячая вершина в колесе)] (* <- lang_ru;; *);
+		[Stat. (Terminal vertex in wheel)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_wheel
+	};;
+*);;
+
+
+statement -> statement_of_terminal_vertex_in_cycle (*
+	-> rrel_key_sc_element: terminal_vertex;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Через висячую вершину не может проходить цикл.] (* <- lang_ru;; *);;
+		-> [A cycle doesn't contain a terminal_vertex.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Висячая вершина в цикле)] (* <- lang_ru;; *);
+		[Stat. (Terminal vertex in cycele)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_cycle
+	};;
+*);;
+
+
+rrel_terminal_vertex => nrel_first_domain: concept_edge;;
+rrel_terminal_vertex => nrel_second_domain: concept_vertex;;
+
+rrel_terminal_vertex => nrel_definitional_domain:
+	... 
+	(*
+		<= nrel_combination:
+			{
+				concept_edge;
+				concept_vertex
+			};;
+	*);;
+
+
+sc_node_role_relation->rrel_terminal_vertex;;

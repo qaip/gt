@@ -10,7 +10,7 @@ nrel_condensation_of_the_digraph <- antireflexive_relation;;
 nrel_condensation_of_the_digraph <- antisymmetric_relation;;
 nrel_condensation_of_the_digraph <- antitransitive_relation;;
 
-definition -> definition_of_chromatic_number (*
+definition -> definition_of_condensation_of_digraph (*
 	-> rrel_key_sc_element: nrel_condensation_of_the_digraph;;
 
 	<= nrel_sc_text_translation: ... (*
