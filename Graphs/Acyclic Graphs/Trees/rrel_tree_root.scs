@@ -1,16 +1,16 @@
-rreal_tree_root
+rrel_tree_root
 => nrel_main_idtf:
 	[корень дерева'] (* <- lang_ru;; *);
 	[tree root'] (* <- lang_en;; *);;
 
-rreal_tree_root <- binary_relation;;
-rreal_tree_root <- antireflexive_relation;;
-rreal_tree_root <- antisymmetric_relation;;
-rreal_tree_root <- antitransitive_relation;;
-rreal_tree_root => nrel_first_domain: concept_tree;;
-rreal_tree_root => nrel_second_domain: concept_vertex;;
+rrel_tree_root <- binary_relation;;
+rrel_tree_root <- antireflexive_relation;;
+rrel_tree_root <- antisymmetric_relation;;
+rrel_tree_root <- antitransitive_relation;;
+rrel_tree_root => nrel_first_domain: concept_tree;;
+rrel_tree_root => nrel_second_domain: concept_vertex;;
 
-rreal_tree_root => nrel_definitional_domain:
+rrel_tree_root => nrel_definitional_domain:
 	... (*
 	<= nrel_combination:
 		{
@@ -20,4 +20,4 @@ rreal_tree_root => nrel_definitional_domain:
 	*);;
 
 sc_node_role_relation -> 
-	rreal_tree_root;;
+	rrel_tree_root;;

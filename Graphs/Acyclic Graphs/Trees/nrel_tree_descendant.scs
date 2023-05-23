@@ -8,7 +8,7 @@ nrel_tree_descendant => arity: 2 (* <- number ;;*);;
 nrel_tree_descendant <- binary_relation;;
 nrel_tree_descendant <- antireflexive_relation;;
 nrel_tree_descendant <- antisymmetric_relation;;
-nrel_tree_descendant <- antitransitive_relation;;
+nrel_tree_descendant <- transitive_relation;;
 
 definition -> definition_of_tree_descendant (*
 	-> rrel_key_sc_element: nrel_tree_descendant;;
