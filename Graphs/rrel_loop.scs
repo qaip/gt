@@ -38,7 +38,7 @@ statement -> statement_of_loop_in_multigraph (*
 		[Stat. (Loops in multigraph)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
-		concept_pseudograph;
+		concept_multigraph;
 		concept_vertex;
 		concept_edge;
 		rrel_vertex;

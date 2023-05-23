@@ -7,8 +7,8 @@ definition -> definition_of_point_of_articulation (*
 	-> rrel_key_sc_element: rrel_point_of_articulation;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Вершина, при удалении которой в G увеличивается число компонент связности.] (* <- lang_ru;; *);;
-		-> [Vertex, when you delete that of G, increases the number of connected components.] (* <- lang_en;; *);;
+		-> [Вершина, при удалении которой в графе увеличивается число компонент связности.] (* <- lang_ru;; *);;
+		-> [Vertex, when you delete it, then the number of connected components  increases in graph.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -61,7 +61,6 @@ statement -> statement_of_necessary_condition_for_point_of_articulation (*
 
 	=> nrel_using_constants: {
 		concept_vertex;
-		rrel_terminal_vertex;
 		rrel_vertex
 	};;
 *);;

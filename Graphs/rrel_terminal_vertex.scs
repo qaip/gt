@@ -21,7 +21,6 @@ definition -> definition_of_rrel_terminal_vertex (*
 		concept_vertex;
 		concept_edge;
 		rrel_vertex;
-		nrel_connected_component;
 		rrel_edge;
 		nrel_vertex_degree
 	};;
