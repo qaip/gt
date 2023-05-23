@@ -1,0 +1,63 @@
+nrel_tree_descendant
+=> nrel_main_idtf:
+	[потомок дерева*] (* <- lang_ru;; *);
+	[tree descendant*] (* <- lang_en;; *);;
+
+nrel_tree_descendant => arity: 2 (* <- number ;;*);;
+
+nrel_tree_descendant <- binary_relation;;
+nrel_tree_descendant <- antireflexive_relation;;
+nrel_tree_descendant <- antisymmetric_relation;;
+nrel_tree_descendant <- antitransitive_relation;;
+
+definition -> definition_of_tree_descendant (*
+	-> rrel_key_sc_element: nrel_tree_descendant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В дереве потомков каждой вершины находятся все вершины, которые находятся ниже нее в дерев] (* <- lang_ru;; *);;
+		-> [In a descendant tree of each vertex are all vertices that are below it in the tree] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (потомок дерева)] (* <- lang_ru;; *);
+		[Def. (tree descendant)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex_coloring
+	};;
+*);;
+
+statement -> statement_of_descendant_existence_theorem (*
+	-> rrel_key_sc_element: nrel_tree_descendant;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [У каждой вершины дерева есть хотя бы один потомок] (* <- lang_ru;; *);;
+		-> [Each vertex of a tree has at least one descendant] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема о существовании потомков)] (* <- lang_ru;; *);
+		[Stat. (Descendant existence theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_tree;
+		concept_vertex;
+        rrel_vertex
+	};;
+*);;
+
+nrel_tree_descendant => nrel_first_domain: concept_vertex;;
+nrel_tree_descendant => nrel_second_domain: concept_tree;;
+
+nrel_tree_descendant => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_tree;
+			concept_vertex
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_tree_descendant;;

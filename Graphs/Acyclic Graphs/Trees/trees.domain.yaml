@@ -71,5 +71,7 @@ rrels: |
   tree_root
 
 nrels: |
+  tree_depth
+  tree_height
   tree_descendant
   tree_parent

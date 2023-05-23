@@ -1,0 +1,23 @@
+nrel_tree_height
+=> nrel_main_idtf:
+	[высота дерева*] (* <- lang_ru;; *);
+	[tree height*] (* <- lang_en;; *);;
+
+nrel_tree_height <- binary_relation;;
+nrel_tree_height <- antireflexive_relation;;
+nrel_tree_height <- antisymmetric_relation;;
+nrel_tree_height <- antitransitive_relation;;
+nrel_tree_height => nrel_first_domain: concept_graph;;
+nrel_tree_height => nrel_second_domain: number;;
+
+nrel_tree_height => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_tree;
+			number
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_tree_height;;
