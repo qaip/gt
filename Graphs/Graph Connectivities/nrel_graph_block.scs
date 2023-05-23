@@ -7,8 +7,6 @@ nrel_graph_block
 nrel_graph_block => nrel_arity_of_relations: 2 (* <- number;; *);;
 
 nrel_graph_block <- binary_relation;;
-
-nrel_graph_block <- binary_relation;;
 nrel_graph_block <- antireflexive_relation;;
 nrel_graph_block <- antisymmetric_relation;;
 nrel_graph_block <- antitransitive_relation;;
@@ -62,7 +60,8 @@ nrel_graph_block => nrel_first_domain: concept_graph;;
 nrel_graph_block => nrel_second_domain: concept_graph;;
 
 nrel_graph_block => nrel_definitional_domain:
-	... (*
+	...
+	(*
 	<= nrel_combination:
 		{
 			concept_graph

@@ -1,7 +1,7 @@
 rrel_loop
 => nrel_main_idtf:
-[ петля* ] (* <- lang_ru;; *);
-[ loop* ] (* <- lang_en;; *);;
+[ петля' ] (* <- lang_ru;; *);
+[ loop' ] (* <- lang_en;; *);;
 
 
 definition -> definition_of_loop (*
