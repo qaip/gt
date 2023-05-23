@@ -17,6 +17,5 @@ nrels: |
   graph_intersection
   graph_cartesian_product
   graph_annular_sum
-  graph_symmetric_difference
   graph_difference
   graph_complement
