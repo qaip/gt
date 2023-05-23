@@ -33,9 +33,9 @@ nrel_graph_cycle=>nrel_first_domain:concept_graph;
     relation=>nrel_inclusion:binary_relation;;
     relation=>nrel_inclusion:oriented_relation;;
 
-binary_relation=>nrel_inclusion:reflexive_relation(*->nrel_graph_cycle;;*);
-    =>nrel_inclusion:transitive_relation(*->nrel_graph_cycle;;*);
-    =>nrel_inclusion:symmetric_relation(*->nrel_graph_cycle;;*);;
+binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_graph_cycle;;*);
+    =>nrel_inclusion:antitransitive_relation(*->nrel_graph_cycle;;*);
+    =>nrel_inclusion:asymmetric_relation(*->nrel_graph_cycle;;*);;
     oriented_relation->nrel_graph_cycle;;
 
 sc_node_norole_relation -> 

@@ -1,10 +1,10 @@
-concept_cycle_weight
+nrel_cycle_weight
 => nrel_main_idtf:
 	[вес цикла*] (* <- lang_ru;; *);
 	[cycle weight*] (* <- lang_en;; *);;
 
 definition -> definition_of_cycle_weight (*
-	-> rrel_key_sc_element: concept_cycle_weight;;
+	-> rrel_key_sc_element: nrel_cycle_weight;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Суммарный вес ребер в цикле графа] (* <- lang_ru;; *);;
@@ -24,7 +24,7 @@ definition -> definition_of_cycle_weight (*
 *);;
 
 statement -> statement_of_cycle_weight_minimum_theorem (*
-	-> rrel_key_sc_element: concept_cycle_weight;;
+	-> rrel_key_sc_element: nrel_cycle_weight;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Минимальный вес цикла в графе является минимальным из весов циклов, проходящих через данный узел] (* <- lang_ru;; *);;
@@ -44,7 +44,7 @@ statement -> statement_of_cycle_weight_minimum_theorem (*
 *);;
 
 statement -> statement_of_hamiltonian_cycle_weight_theorem (*
-	-> rrel_key_sc_element: concept_cycle_weight;;
+	-> rrel_key_sc_element: nrel_cycle_weight;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Взвешенный связный граф содержит гамильтонов цикл, если его вес не превышает веса любого другого цикла в графе] (* <- lang_ru;; *);;
@@ -64,18 +64,18 @@ statement -> statement_of_hamiltonian_cycle_weight_theorem (*
 
 arity->...
     (*
-        ->concept_cycle_weight;;
+        ->nrel_cycle_weight;;
         =>nrel_measurement:2;;
     *);;
 
-concept_cycle_weight=>nrel_first_domain:concept_graph;
+nrel_cycle_weight=>nrel_first_domain:concept_graph;
     =>nrel_second_domain:number;
         => nrel_definitional_domain:
 	...
 	(*
 		 <=nrel_combination:
         {
-			number
+			number;
             concept_graph
         };;
 	*);;
@@ -83,12 +83,12 @@ concept_cycle_weight=>nrel_first_domain:concept_graph;
     relation=>nrel_inclusion:binary_relation;;
     relation=>nrel_inclusion:oriented_relation;;
 
-binary_relation=>nrel_inclusion:antireflexive_relation(*->concept_cycle_weight;;*);
-    =>nrel_inclusion:antitransitive_relation(*->concept_cycle_weight;;*);
-    =>nrel_inclusion:antisymmetric_relation(*->concept_cycle_weight;;*);;
-    oriented_relation->concept_cycle_weight;;
+binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_cycle_weight;;*);
+    =>nrel_inclusion:antitransitive_relation(*->nrel_cycle_weight;;*);
+    =>nrel_inclusion:antisymmetric_relation(*->nrel_cycle_weight;;*);;
+    oriented_relation->nrel_cycle_weight;;
 
-sc_node_norole_relation -> concept_cycle_weight;;
+sc_node_norole_relation -> nrel_cycle_weight;;
 
 sc_node_class ->
 	concept_graph_cycle;

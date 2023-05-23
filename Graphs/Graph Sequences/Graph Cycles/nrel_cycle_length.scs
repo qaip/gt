@@ -90,7 +90,7 @@ nrel_cycle_length=>nrel_first_domain:concept_graph;
 	(*
 		 <=nrel_combination:
         {
-			number
+			number;
             concept_graph
         };;
 	*);;
