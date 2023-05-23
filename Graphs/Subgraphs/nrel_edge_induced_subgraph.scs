@@ -57,13 +57,13 @@ statement -> statement_of_edge_induced_subgraph_properties (*
 *);;
 
 nrel_edge_induced_subgraph => nrel_first_domain: concept_graph;;
-nrel_edge_induced_subgraph => nrel_second_domain: graph;;
+nrel_edge_induced_subgraph => nrel_second_domain: concept_graph;;
 
 nrel_edge_induced_subgraph => nrel_definitional_domain:
 	... (*
 	<= nrel_combination:
 		{
-			concept_graph;
+			concept_graph
         };;
 	*);;
 

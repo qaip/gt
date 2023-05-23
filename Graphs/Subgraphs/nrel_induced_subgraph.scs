@@ -13,7 +13,7 @@ arity->...
     *);;
 
 nrel_induced_subgraph=>nrel_first_domain:concept_graph;
-    =>nrel_second_domain:graph;
+    =>nrel_second_domain:concept_graph;
         => nrel_definitional_domain:
 	...
 	(*
