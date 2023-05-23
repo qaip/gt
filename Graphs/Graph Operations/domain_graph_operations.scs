@@ -16,10 +16,8 @@ section_subject_domain_of_graph_operations
 	concept_dual_graph;
 	nrel_graph_union;
 	nrel_graph_intersection;
-	nrel_graph_cartesian_sum;
+	nrel_graph_cartesian_product;
 	nrel_graph_annular_sum;
-	nrel_graph_product;
-	nrel_graph_symmetric_difference;
 	nrel_graph_difference;
 	nrel_graph_complement;;
 
@@ -40,10 +38,8 @@ section_subject_domain_of_graph_operations=[*
 	-> rrel_explored_relation:
 		nrel_graph_union;
 		nrel_graph_intersection;
-		nrel_graph_cartesian_sum;
+		nrel_graph_cartesian_product;
 		nrel_graph_annular_sum;
-		nrel_graph_product;
-		nrel_graph_symmetric_difference;
 		nrel_graph_difference;
 		nrel_graph_complement;
 
@@ -61,9 +57,7 @@ sc_node_class ->
 sc_node_norole_relation ->
 	nrel_graph_union;
 	nrel_graph_intersection;
-	nrel_graph_cartesian_sum;
+	nrel_graph_cartesian_product;
 	nrel_graph_annular_sum;
-	nrel_graph_product;
-	nrel_graph_symmetric_difference;
 	nrel_graph_difference;
 	nrel_graph_complement;;
