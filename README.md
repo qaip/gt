@@ -3,7 +3,6 @@
 ```mermaid
 graph LR;
   Graphs([Graphs])
-  Graphs --> Simple_Graphs([Simple Graphs])
   Graphs --> Graph_Representation([Graph Representation])
   Graphs --> Graph_Properties([Graph Properties])
   Graphs --> Graph_Connectivity([Graph Connectivity])
@@ -72,13 +71,10 @@ timeline
     : Graph Paths
     : Graph Cycle
     : Graph Chain
-    : Simple Graphs
     : Subgraphs
   Artur
     : Acyclic Graphs
-    : Directed Acyclic Graphs
     : Forests
-    : Trees
     : Binary Trees
     : Graph Cuts
     : Graph Minimum Cuts
@@ -102,4 +98,5 @@ timeline
     : Tree Traversal
     : Multigraphs
     : Hypergraphs
+    : Trees
 ```
