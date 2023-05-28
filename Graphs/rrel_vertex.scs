@@ -3,7 +3,7 @@ rrel_vertex
 	[вершина'] (* <- lang_ru;; *);
 	[vertex'] (* <- lang_en;; *);
 
-=> nrel_first_domain: concept_graph;;
+=> nrel_first_domain: concept_graph;
 => nrel_second_domain: concept_vertex;;
 
 rrel_vertex => nrel_definitional_domain: 

@@ -17,7 +17,7 @@ definition -> definition_of_edges_multiplicity (*
 
 	=> nrel_using_constants: {
 		concept_edge;
-		concept_multigraph
+		concept_multigraph;
 		concept_vertex;
 		rrel_edge;
 		rrel_vertex
@@ -92,7 +92,7 @@ sc_node_class ->
 	concept_adjacency_list;
 	concept_adjacency_matrix;
 	concept_incidence_list;
-	concept_incidence_matrix
+	concept_incidence_matrix;
 	concept_multigraph;;
 
 sc_node_role_relation ->
