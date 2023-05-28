@@ -1,7 +1,7 @@
 nrel_graph_annular_sum
 => nrel_main_idtf:
 	[кольцевая сумма графов*] (* <- lang_ru;; *);
-	[graph annular sum*] (* <- lang_en;; *);
+	[graph annular sum*] (* <- lang_en;; *);;
 
 definition -> definition_of_nrel_graph_annular_sum (*
 	-> rrel_key_sc_element: nrel_graph_annular_sum;;
@@ -45,14 +45,7 @@ statement -> statement_of_nrel_graph_annular_sum (*
 
 nrel_graph_annular_sum=>nrel_first_domain:concept_graph;;
 nrel_graph_annular_sum=>nrel_second_domain:concept_graph;;
-nrel_graph_annular_sum=> nrel_definitional_domain:
-	...
-	(*
-	    <= nrel_combination:
-	    {
-			concept_graph
-		};;
-	*);;
+nrel_graph_annular_sum=> nrel_definitional_domain:concept_graph;;
 
 
 
