@@ -13,9 +13,7 @@ concepts: |
   chromatic_polynomial
   coloring_areas
   total_coloring
-  chromatic_number
-  chromatic_index
 
-rrels: |
+nrels: |
   chromatic_number
   chromatic_index

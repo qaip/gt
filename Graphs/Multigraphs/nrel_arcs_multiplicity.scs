@@ -1,0 +1,100 @@
+nrel_arcs_multiplicity
+=> nrel_main_idtf:
+	[кратность дуг*] (* <- lang_ru;; *);
+	[arcs multiplicity*] (* <- lang_en;; *);;
+
+definition -> definition_of_arcs_multiplicity (*
+	-> rrel_key_sc_element: nrel_arcs_multiplicity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неролевое отношение связывающее дугу в мультиграфе с числом, соответсвующим количеству дуг с такими же начальной и конечной вершинами(к этому количеству относится и сама дуга)] (* <- lang_ru;; *);;
+		-> [A non-role relation connecting an arc in a multigraph with a number corresponding to the amount of arcs with the same initial and final vertices (the arc itself belongs to this amount)] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (кратность дуг*)] (* <- lang_ru;; *);
+		[Def. (arcs multiplicity*)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_arc;
+		concept_multigraph
+		concept_vertex;
+		rrel_arc;
+		rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_replacement_of_multiple_arcs_by_arcs_multiplicity (*
+	-> rrel_key_sc_element: nrel_arcs_multiplicity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [При представлении мультиграфов можно заменить К кратных между собой дуг на одну дугу с кратностью* К] (* <- lang_ru;; *);;
+		-> [When representing multigraphs, one can replace K arcs that are multiples of each other by one arc with arcs multiplicity* K] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о замене кратных дуг с помощью кратности дуг*)] (* <- lang_ru;; *);
+		[Stat. (Statement of replacement of multiple arcs by arcs multiplicity*)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_multigraph;
+		concept_multiple_arcs;
+		concept_arc;
+		rrel_arc
+	};;
+*);;
+
+statement -> statement_of_arcs_multiplicity (*
+	-> rrel_key_sc_element: nrel_arcs_multiplicity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Кратность дуг* имеет особое значение при использовании списков и матриц смежности, списков и матриц инцидентности] (* <- lang_ru;; *);;
+		-> [The multiplicity of arcs* is of particular importance when using adjacency lists and matrices, incidence lists and matrices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Утверждение о кратности дуг*)] (* <- lang_ru;; *);
+		[Stat. (Arcs multiplicity* statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_adjacency_list;
+		concept_adjacency_matrix;
+		concept_incidence_list;
+		concept_incidence_matrix
+	};;
+*);;
+
+nrel_arcs_multiplicity=>nrel_first_domain:concept_arc;;
+nrel_arcs_multiplicity=>nrel_second_domain:number;;
+nrel_arcs_multiplicity=> nrel_definitional_domain:
+	...
+	(*
+	    <= nrel_combination:
+	    {
+			number;
+			concept_arc
+		};;
+	*);;
+
+nrel_arcs_multiplicity=>arity:2(*<-number;;*);;
+
+antireflexive_relation->nrel_arcs_multiplicity;;
+oriented_relation->nrel_arcs_multiplicity;;
+antisymmetric_relation->nrel_arcs_multiplicity;;
+antitransitive_relation->nrel_arcs_multiplicity;;
+
+sc_node_norole_relation->nrel_arcs_multiplicity;;
+
+sc_node_class ->
+	concept_arc;
+	concept_vertex;
+	concept_multiple_arcs;
+	concept_adjacency_list;
+	concept_adjacency_matrix;
+	concept_incidence_list;
+	concept_incidence_matrix
+	concept_multigraph;;
+
+sc_node_role_relation ->
+	rrel_arc;
+	rrel_vertex;;

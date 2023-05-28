@@ -43,7 +43,7 @@ rrels: |
   arc
   multiple_edge
   loop
-  point_of_articulation
+  cutpoint
   center_of_graph
   hinge
   terminal_vertex

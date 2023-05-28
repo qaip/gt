@@ -1,0 +1,166 @@
+concept_abstract_dual_graph
+=> nrel_main_idtf:
+	[абстрактный двойственный граф] (* <- lang_ru;; *);
+	[abstract dual graph] (* <- lang_en;; *);;
+
+definition -> definition_of_abstract_dual_graph (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф, создаваемый из другого графа путём замены его вершин и рёбер] (* <- lang_ru;; *);;
+		-> [The dual graph created from another graph by replacing its vertices and edges] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (абстрактный двойственный граф)] (* <- lang_ru;; *);
+		[Def. (abstract dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dual_graph;
+		concept_vertex;
+		concept_edge;
+		concept_graph;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+statement -> statement_of_theorem_eulers_formula_dual_graph (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Формула, связывающая число вершин, рёбер и граней двумерной связной триангулированной поверхности] (* <- lang_ru;; *);;
+		-> [A formula relating the number of vertices, edges, and faces of a two-dimensional connected triangulated surface] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Формула Эйлера)] (* <- lang_ru;; *);
+		[Stat. (Eulers formula)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_edge;
+		concept_triangulated_surface;
+		rrel_vertex;
+		rrel_edge;
+		nrel_face
+	};;
+*);;
+
+statement -> statement_of_dual_of_dual (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф двойственного графа является исходным графом] (* <- lang_ru;; *);;
+		-> [The dual graph of a dual graph is the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Двойственный граф двойственного графа)] (* <- lang_ru;; *);
+		[Stat. (Dual graph of dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dual_graph;
+		concept_graph
+	};;
+*);;
+
+statement -> statement_of_dual_is_planar (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф планарного графа также является планарным] (* <- lang_ru;; *);;
+		-> [The dual graph of a planar graph is also planar] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Планарность двойственного графа)] (* <- lang_ru;; *);
+		[Stat. (Planarity of the dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph;
+		concept_dual_graph
+	};;
+*);;
+
+statement -> statement_of_dual_has_same_chromatic_number (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф имеет ту же хроматическую численность, что и исходный граф] (* <- lang_ru;; *);;
+		-> [The dual graph has the same chromatic number as the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Хроматическое число двойственного графа)] (* <- lang_ru;; *);
+		[Stat. (Chromatic number of the dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dual_graph;
+		nrel_chromatic_number
+	};;
+*);;
+
+statement -> statement_of_dual_preserves_planarity (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Двойственный граф не меняет планарность исходного графа] (* <- lang_ru;; *);;
+		-> [The dual graph does not change the planarity of the original graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сохранение планарности двойственным графом)] (* <- lang_ru;; *);
+		[Stat. (Preservation of planarity by dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dual_graph;
+		concept_planar_graph
+	};;
+*);;
+
+statement -> statement_of_dual_preserves_k_colorability (*
+	-> rrel_key_sc_element: concept_abstract_dual_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Если граф k-раскрашиваем, то его двойственный граф тоже k-раскрашиваем] (* <- lang_ru;; *);;
+		-> [If a graph is k-colorable, then its dual graph is also k-colorable] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Сохранение k-раскрашиваемости двойственным графом)] (* <- lang_ru;; *);
+		[Stat. (Preservation of k-colorability by dual graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_dual_graph;
+		concept_k_colorable_graph
+	};;
+*);;
+
+sc_node_class ->
+	concept_dual_graph;
+	concept_vertex;
+	concept_edge;
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_triangulated_surface;
+	concept_dual_graph;
+	concept_graph;
+	concept_planar_graph;
+	concept_dual_graph;
+	concept_dual_graph;
+	concept_dual_graph;
+	concept_planar_graph;
+	concept_dual_graph;
+	concept_k_colorable_graph;;
+
+sc_node_norole_relation ->
+	nrel_face;
+	nrel_chromatic_number;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

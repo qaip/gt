@@ -10,10 +10,7 @@ section_subject_domain_of_dual_graphs
 	subject_domain_of_dual_graphs;
 	concept_dual_graph;
 	concept_self_dual_graph;
-	nrel_abstract_dual_graph;
-	nrel_self_dual_graph;
-	nrel_dual_graph;
-	nrel_product_of_graphs;;
+	concept_abstract_dual_graph;;
 
 section_subject_domain_of_dual_graphs=[*
 	subject_domain_of_dual_graphs
@@ -28,12 +25,7 @@ section_subject_domain_of_dual_graphs=[*
 
 	-> rrel_not_maximum_studied_object_class:
 		concept_self_dual_graph;
-
-	-> rrel_explored_relation:
-		nrel_abstract_dual_graph;
-		nrel_self_dual_graph;
-		nrel_dual_graph;
-		nrel_product_of_graphs;
+		concept_abstract_dual_graph;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_operations;;
@@ -41,10 +33,5 @@ section_subject_domain_of_dual_graphs=[*
 
 sc_node_class ->
 	concept_dual_graph;
-	concept_self_dual_graph;;
-
-sc_node_norole_relation ->
-	nrel_abstract_dual_graph;
-	nrel_self_dual_graph;
-	nrel_dual_graph;
-	nrel_product_of_graphs;;
+	concept_self_dual_graph;
+	concept_abstract_dual_graph;;

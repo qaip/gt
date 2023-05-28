@@ -1,0 +1,75 @@
+rrel_acyclic_orientation
+=> nrel_main_idtf:
+	[ациклическая ориентация'] (* <- lang_ru;; *);
+	[acyclic orientation'] (* <- lang_en;; *);;
+
+definition -> definition_of_acyclic_orientation (*
+	-> rrel_key_sc_element: rrel_acyclic_orientation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ориентация графа, в которой нет циклов] (* <- lang_ru;; *);;
+		-> [An orientation of a graph that has no cycles] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (ациклическая ориентация)] (* <- lang_ru;; *);
+		[Def. (acyclic orientation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_graph_cycle
+	};;
+*);;
+
+statement -> statement_of_theorem_acyclic_orientation (*
+	-> rrel_key_sc_element: rrel_acyclic_orientation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Если граф является двудольным, то его можно ориентировать без циклов] (* <- lang_ru;; *);;
+		-> [If a graph is bipartite, it can be oriented without cycles] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об ациклической ориентации)] (* <- lang_ru;; *);
+		[Stat. (Theorem about acyclic orientation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_graph_cycle;
+		concept_bipartite_graph
+	};;
+*);;
+
+statement -> statement_of_acyclic_orientation_properties (*
+	-> rrel_key_sc_element: rrel_acyclic_orientation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Ациклическая ориентация графа всегда существует. Количество ациклических ориентаций графа может быть экспоненциальным относительно числа ребер в графе] (* <- lang_ru;; *);;
+		-> [An acyclic orientation of a graph always exists. The number of acyclic orientations of a graph can be exponential in the number of edges in the graph] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Свойства ациклической ориентации)] (* <- lang_ru;; *);
+		[Stat. (Properties of acyclic orientation)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_edge;
+		rrel_edge
+	};;
+*);;
+
+rrel_acyclic_orientation => nrel_first_domain: concept_graph;;
+rrel_acyclic_orientation => nrel_second_domain: concept_acyclic_graph;;
+
+rrel_acyclic_orientation => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			concept_acyclic_graph
+        };;
+	*);;
+
+sc_node_role_relation -> 
+	rrel_acyclic_orientation;;

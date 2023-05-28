@@ -8,15 +8,13 @@ max: |
 
 concepts: |
   graph_property
+  graph_eccentricity
 
 rrels: |
-  multiple_edge
+  center_of_graph
 
 nrels: |
-  reflexivity
-  anti_reflexivity
-  cyclicity
-  acyclicity
-  eccentricity
-  isomorphism
-  multiple_edge
+  vertex_degree
+  graph_diameter
+  graph_radius
+  graph_girth

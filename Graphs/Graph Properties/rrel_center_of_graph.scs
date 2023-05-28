@@ -1,0 +1,75 @@
+rrel_center_of_graph
+=> nrel_main_idtf:
+	[центр графа'] (* <- lang_ru;; *);
+	[center of a graph'] (* <- lang_en;; *);;
+
+definition -> definition_of_center_of_graph (*
+	-> rrel_key_sc_element: rrel_center_of_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершина графа, которая имеет наименьшую максимальную дистанцию до всех остальных вершин] (* <- lang_ru;; *);;
+		-> [A vertex of a graph that has the smallest maximum distance to all other vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (центр графа)] (* <- lang_ru;; *);
+		[Def. (center of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+		concept_graph;
+        rrel_vertex
+	};;
+*);;
+
+statement -> statement_of_center_unique (*
+	-> rrel_key_sc_element: rrel_center_of_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Если граф связный, то он имеет единственный центр] (* <- lang_ru;; *);;
+		-> [If a graph is connected, it has a unique center] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Единственность центра графа)] (* <- lang_ru;; *);
+		[Stat. (Uniqueness of the center of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		connected_graph
+	};;
+*);;
+
+statement -> statement_of_finding_center (*
+	-> rrel_key_sc_element: rrel_center_of_graph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для нахождения центра графа необходимо найти все радиусы графа и выбрать вершину с наименьшим радиусом] (* <- lang_ru;; *);;
+		-> [To find the center of a graph, we need to find all the radii of the graph and choose the vertex with the smallest radius] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Нахождение центра графа)] (* <- lang_ru;; *);
+		[Stat. (Finding the center of a graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		nrel_graph_radius;
+        concept_vertex;
+        rrel_vertex
+	};;
+*);;
+
+rrel_center_of_graph => nrel_first_domain: concept_graph;;
+rrel_center_of_graph => nrel_second_domain: concept_vertex;;
+
+rrel_center_of_graph => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			concept_vertex
+        };;
+	*);;
+
+sc_node_role_relation -> 
+	rrel_center_of_graph;;
+

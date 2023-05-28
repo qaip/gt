@@ -1,0 +1,66 @@
+nrel_coarseness 
+=> nrel_main_idtf:
+    [крупность*] (* <- lang_ru;; *);
+    [coarseness*] (* <- lang_en;; *);;
+
+
+nrel_coarseness <- binary_relation;;
+nrel_coarseness => arity: 2 (* <- number ;;*);;
+nrel_coarseness <- antireflexive_relation;;
+nrel_coarseness <- antisymmetric_relation;;
+nrel_coarseness <- antitransitive_relation;;
+
+definition -> definition_of_coarseness (*
+    -> rrel_key_sc_element: nrel_coarseness;;
+
+    <= nrel_sc_text_translation:... (*
+        -> [Наибольшее число непланарных подграфов, не пересекающихся по ребрам и содержащихся в данном графе] (* <- lang_ru;; *);;
+        -> [The largest number of non-planar subgraphs that do not intersect along edges and are contained in this graph] (* <- lang_en;; *);;
+    *);;
+
+    => nrel_main_idtf:
+        [Опр. (крупность)] (* <- lang_ru;; *);
+		[Def. (coarseness)] (* <- lang_en;; *);;
+    
+    => nrel_using_constants:
+		{
+			concept_unplanar_graph;
+			rrel_edge;
+            concept_subgraph;
+            nrel_subgraph;
+            concept_edge;
+            concept_graph
+		};;
+*);;
+
+statement -> statement_of_coarseness_property (*
+	-> rrel_key_sc_element: nrel_coarseness;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Крупность планарного графа всегда равна нулю] (* <- lang_ru;; *);;
+		-> [The size of a planar graph is always zero] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Крупность планарного графа)] (* <- lang_ru;; *);
+		[Stat. (The size of a planar graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_planar_graph
+	};;
+*);;
+
+
+nrel_coarseness => nrel_first_domain: concept_graph;;
+nrel_coarseness => nrel_second_domain: number;;
+
+nrel_coarseness => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			number
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_coarseness;;

@@ -1,0 +1,48 @@
+nrel_circuit
+	=> nrel_main_idtf:
+	[ контур' ] (* <-lang_ru;; *);
+	[ circuit' ] (* <-lang_en;; *);;
+
+nrel_circuit => arity: 2 (* <- number ;;*);;
+
+nrel_circuit <- binary_relation;;
+nrel_circuit <- reflexive_relation;;
+nrel_circuit <- antisymmetric_relation;;
+nrel_circuit <- transitive_relation;;
+
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: nrel_condensation_of_the_digraph;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Путь в графе, начальная и конечная вершины которого совпадают.] (* <- lang_ru;; *);;
+		-> [Path in a graph which start and end vertices are the same.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (контур графа)] (* <- lang_ru;; *);
+		[Def. (graph circuit)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_path;
+		concept_vertex;
+		rrel_vertex
+	};;
+*);;
+
+
+nrel_circuit => nrel_first_domain: concept_path;;
+nrel_circuit => nrel_second_domain: concept_vertex;;
+
+nrel_circuit => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_path;
+			concept_vertex
+		};;
+	*);;
+
+
+sc_node_norole_relation -> nrel_circuit;;

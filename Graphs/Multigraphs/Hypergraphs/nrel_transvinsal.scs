@@ -1,0 +1,64 @@
+nrel_transvinsal
+=> nrel_main_idtf:
+	[трансверсаль*] (* <- lang_ru;; *);
+	[transvinsal*] (* <- lang_en;; *);
+
+definition -> definition_of_nrel_transvinsal (*
+	-> rrel_key_sc_element: nrel_transvinsal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Неролевое отношение, связывающее гиперграф с некоторым непустым множеством его вершин, при чём множество содержит непустое пересечение с каждым гиперребром] (* <- lang_ru;; *);;
+		-> [A non-role relation connecting a hypergraph with some non-empty set of its vertices, moreover, the set contains a non-empty intersection with each hyperedge] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (трансверсаль*)] (* <- lang_ru;; *);
+		[Def. (transvinsal*)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_hypergraph;
+		concept_hypergraph_edge
+	};;
+*);;
+
+statement -> statement_of_nrel_transvinsal_statement (*
+	-> rrel_key_sc_element: nrel_transvinsal;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Трансверсаль* гиперграфа является минимальной, если никакое из её подмножеств не является трансверсалью*] (* <- lang_ru;; *);;
+		-> [A transversal* of a hypergraph is minimal if none of its subsets is a transversal*] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Высказывание о трансверсали*)] (* <- lang_ru;; *);
+		[Stat. (Transversal* statement)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_hypergraph
+	};;
+*);;
+
+nrel_transvinsal=>nrel_first_domain:concept_hypergraph;;
+nrel_transvinsal=>nrel_second_domain:set;;
+nrel_transvinsal=> nrel_definitional_domain:
+	...
+	(*
+	    <= nrel_combination:
+	    {
+			set;
+			concept_hypergraph
+		};;
+	*);;
+
+nrel_transvinsal=>arity:2(*<-number;;*);;
+
+antireflexive_relation->nrel_transvinsal;;
+oriented_relation->nrel_transvinsal;;
+antisymmetric_relation->nrel_transvinsal;;
+antitransitive_relation->nrel_transvinsal;;
+
+sc_node_norole_relation->nrel_transvinsal
+
+sc_node_class ->
+    concept_hypergraph_edge;
+	concept_hypergraph;;

@@ -1,0 +1,63 @@
+nrel_graph_path
+=> nrel_main_idtf:
+	[путь*] (* <- lang_ru;; *);
+	[path*] (* <- lang_en;; *);
+
+=> nrel_idtf:
+	[графовый путь*] (* <- lang_ru;; *);
+	[graph path*] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_hamiltonian_path;
+concept_path_length;
+concept_graph_path_weight;
+concept_shortest_path;
+concept_longest_path;
+concept_eulerian_path;
+concept_graph_eccentricity;;
+
+arity->...
+    (*
+        ->nrel_graph_path;;
+        =>nrel_measurement:2;;
+    *);;
+
+nrel_graph_path=>nrel_first_domain:concept_graph;
+    =>nrel_second_domain:concept_graph;
+        => nrel_definitional_domain:
+	...
+	(*
+		 <=nrel_combination:
+        {
+            concept_graph
+        };;
+	*);;
+
+    relation=>nrel_inclusion:binary_relation;;
+    relation=>nrel_inclusion:oriented_relation;;
+
+binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_graph_path;;*);
+    =>nrel_inclusion:antitransitive_relation(*->nrel_graph_path;;*);
+    =>nrel_inclusion:antisymmetric_relation(*->nrel_graph_path;;*);;
+    oriented_relation->nrel_graph_path;;
+
+sc_node_class ->
+	concept_vertex;
+	concept_edge;
+	concept_graph_sequence;
+	concept_vertex;
+	concept_connected_graph;
+	concept_isomorphism;
+	concept_path_length;
+	concept_vertex_degree;
+	concept_edge_cover;
+	concept_bipartite_graph;
+	concept_longest_path;;
+
+sc_node_role_relation ->
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;
+
+sc_node_norole_relation -> nrel_graph_path;;

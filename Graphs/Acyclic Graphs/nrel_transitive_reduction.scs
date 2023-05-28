@@ -1,0 +1,41 @@
+nrel_transitive_reduction
+=> nrel_main_idtf:
+	[транзитивное замыкание*] (* <- lang_ru;; *);
+	[transitive closure*] (* <- lang_en;; *);;
+
+nrel_transitive_reduction => arity: 2 (* <- number ;;*);;
+
+nrel_transitive_reduction <- binary_relation;;
+nrel_transitive_reduction <- antireflexive_relation;;
+nrel_transitive_reduction <- antisymmetric_relation;;
+nrel_transitive_reduction <- antitransitive_relation;;
+
+definition -> definition_of_transitive_reduction (*
+	-> rrel_key_sc_element: nrel_transitive_reduction;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Граф, полученный добавлением дополнительных ребер, чтобы учесть транзитивные связи между вершинами] (* <- lang_ru;; *);;
+		-> [A graph obtained by adding additional edges to account for the transitive relationships between vertices] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (транзитивное замыкание)] (* <- lang_ru;; *);
+		[Def. (transitive closure)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_vertex;
+        rrel_vertex;
+        concept_edge;
+        rrel_edge
+	};;
+*);;
+
+nrel_transitive_reduction => nrel_first_domain: concept_graph;;
+nrel_transitive_reduction => nrel_second_domain: concept_graph;;
+
+nrel_transitive_reduction => nrel_definitional_domain:
+	concept_graph;;
+
+sc_node_norole_relation -> 
+	nrel_transitive_reduction;;

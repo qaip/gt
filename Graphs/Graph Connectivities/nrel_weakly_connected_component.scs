@@ -1,0 +1,67 @@
+nrel_weakly_connected_component
+=> nrel_main_idtf:
+	[ компонента слабой связности* ] (* <- lang_ru;; *);
+	[ weakly connected component* ] (* <- lang_en;; *);;
+
+
+nrel_weakly_connected_component => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_weakly_connected_component <- binary_relation;;
+nrel_weakly_connected_component <- reflexive_relation;;
+nrel_weakly_connected_component <- antisymmetric_relation;; 
+nrel_weakly_connected_component <- antitransitive_relation;;
+
+
+definition -> definition_of_weakly_connected_component (*
+	-> rrel_key_sc_element: nrel_weakly_connected_component;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Компонентами слабой связности ориентированного графа называются его максимальные по включению слабо связные подграфы.] (* <- lang_ru;; *);;
+		-> [The weakly connected components of an arbitrary directed graph form a partition into subgraphs that are themselves weakly connected.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (компонента слабой связности)] (* <- lang_ru;; *);
+		[Def. (weakly connected component)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+			concept_directed_graph;
+			concept_vertex;
+			concept_arc;
+			nrel_subgraph
+	};;
+*);;
+
+
+statement -> statement_of_brooks_theorem (*
+	-> rrel_key_sc_element: nrel_weakly_connected_component;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Односторонние компоненты содержатся, как правило, в некоторой слабой компоненте графа.] (* <- lang_ru;; *);;
+		-> [Unilateral components are contained in a weakly connected component of a digraph.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема Брукса)] (* <- lang_ru;; *);
+		[Stat. (Brooks theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+			concept_directed_graph;
+			nrel_subgraph
+	};;
+*);;
+
+
+nrel_weakly_connected_component => nrel_first_domain: concept_directed_graph;;
+nrel_weakly_connected_component => nrel_second_domain: concept_directed_graph;;
+
+nrel_weakly_connected_component => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination:
+		{
+			concept_directed_graph
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_chromatic_number;;

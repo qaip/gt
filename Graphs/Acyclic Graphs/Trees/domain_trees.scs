@@ -68,6 +68,8 @@ section_subject_domain_of_trees
 	concept_tree_depth;
 	concept_tree_root;
 	concept_tree_height;
+	nrel_tree_depth;
+	nrel_tree_height;
 	nrel_tree_descendant;
 	nrel_tree_parent;
 	rrel_leaf;
@@ -140,6 +142,8 @@ section_subject_domain_of_trees=[*
 		concept_tree_height;
 
 	-> rrel_explored_relation:
+		nrel_tree_depth;
+		nrel_tree_height;
 		nrel_tree_descendant;
 		nrel_tree_parent;
 		rrel_leaf;
@@ -211,6 +215,8 @@ sc_node_class ->
 	concept_tree_height;;
 
 sc_node_norole_relation ->
+	nrel_tree_depth;
+	nrel_tree_height;
 	nrel_tree_descendant;
 	nrel_tree_parent;;
 

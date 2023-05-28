@@ -38,5 +38,5 @@ statement:
         shortest_path
 
 subclass:
-  - shortest_path
+  - shortest_path_problem
   - graph_traversal

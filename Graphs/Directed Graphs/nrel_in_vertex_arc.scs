@@ -1,0 +1,48 @@
+nrel_in_vertex_arc
+=> nrel_main_idtf:
+	[заходящее ребро*] (* <- lang_ru;; *);
+	[in-vertex arc*] (* <- lang_en;; *);;
+
+nrel_in_vertex_arc => arity: 2 (* <- number ;;*);;
+
+nrel_in_vertex_arc <- binary_relation;;
+nrel_in_vertex_arc <- antireflexive_relation;;
+nrel_in_vertex_arc <- antisymmetric_relation;;
+nrel_in_vertex_arc <- antitransitive_relation;;
+
+definition -> definition_of_in_vertex_arc (*
+	-> rrel_key_sc_element: nrel_in_vertex_arc;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дуга в орграфе, которое входит в вершину] (* <- lang_ru;; *);;
+		-> [An arc in a directed graph that enters a vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (заходящее ребро)] (* <- lang_ru;; *);
+		[Def. (in-vertex arc)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_vertex;
+        concept_arc;
+        rrel_arc;
+        rrel_vertex
+	};;
+*);;
+
+nrel_in_vertex_arc => nrel_first_domain: concept_arc;;
+nrel_in_vertex_arc => nrel_second_domain: concept_vertex;;
+
+nrel_in_vertex_arc => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_vertex;
+			concept_arc
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_in_vertex_arc;;
+

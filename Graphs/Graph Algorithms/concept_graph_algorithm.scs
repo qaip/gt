@@ -8,7 +8,7 @@ concept_graph_algorithm
 
 
 => nrel_inclusion:
-concept_shortest_path;
+concept_shortest_path_problem;
 concept_graph_traversal;;
 
 definition -> definition_of_graph_algorithm (*

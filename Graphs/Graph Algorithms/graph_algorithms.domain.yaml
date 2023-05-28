@@ -13,6 +13,3 @@ max: |
 concepts: |
   graph_traversal
   shortest_path_problem
-
-nrels: |
-  shortest_paths

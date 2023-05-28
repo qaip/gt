@@ -1,0 +1,84 @@
+nrel_edge_connectivity => nrel_main_idtf:
+	[ реберная связность* ](* <-lang_ru;; *);
+	[ edge connectivity* ](* <-lang_en;; *);;
+
+
+nrel_edge_connectivity => nrel_arity_of_relations: 2(* <- number ;;*);;
+
+nrel_edge_connectivity <- binary_relation;;
+nrel_edge_connectivity <- antireflexive_relation;;
+nrel_edge_connectivity <- antisymmetric_relation;;
+nrel_edge_connectivity <- antitransitive_relation;;
+
+
+definition -> definition_of_edge_connectivity (*
+	-> rrel_key_sc_element: nrel_edge_connectivity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Наименьшее число вершин, которое нужно удалить, чтобы граф перестал быть связным.] (* <- lang_ru;; *);;
+		-> [The minimum number of vertecex that should be deleted to transform this graph into disconnected graph.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (реберная связность)] (* <- lang_ru;; *);
+		[Def. (edge connectivity)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+			concept_edge;
+			concept_connected_graph
+	};;
+*);;
+
+
+
+statement -> statement_of_edge_connectivity_of_disconected_graph (*
+	-> rrel_key_sc_element: nrel_edge_connectivity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для несвязного графа вершинная связность равна нулю.] (* <- lang_ru;; *);;
+		-> [edge connectivity of disconnected graph is equals to 0.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Реберная связность несвязного графа)] (* <- lang_ru;; *);
+		[Stat. (Edge connectivity of disconnected graph)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_disconnected_graph
+	};;
+*);;
+
+
+statement -> statement_of_vertex_connectivity_of_conected_graph_with_bridge (*
+	-> rrel_key_sc_element: nrel_edge_connectivity;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Для связного графа с единственным мостом рёберная связность равна единице.] (* <- lang_ru;; *);;
+		-> [Edge connectivity of connected graph with one bridge is equals to 1.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Реберная связность связного графа с единственным мостом)] (* <- lang_ru;; *);
+		[Stat. (Edge connectivity of connected graph with one bridge)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_connected_graph;
+		concept_bridge
+	};;
+*);;
+
+
+nrel_edge_connectivity => nrel_first_domain: concept_vertex;;
+nrel_edge_connectivity => nrel_second_domain: concept_edge;;
+nrel_edge_connectivity => nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+			concept_vertex;
+			concept_edge
+		};;
+	*);;
+
+
+sc_node_norole_relation -> nrel_vertex_connectivity;;

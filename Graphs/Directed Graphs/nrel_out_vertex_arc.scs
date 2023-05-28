@@ -1,0 +1,48 @@
+nrel_out_vertex_arc
+=> nrel_main_idtf:
+	[выходящее ребро*] (* <- lang_ru;; *);
+	[out-vertex arc*] (* <- lang_en;; *);;
+
+nrel_out_vertex_arc => arity: 2 (* <- number ;;*);;
+
+nrel_out_vertex_arc <- binary_relation;;
+nrel_out_vertex_arc <- antireflexive_relation;;
+nrel_out_vertex_arc <- antisymmetric_relation;;
+nrel_out_vertex_arc <- antitransitive_relation;;
+
+definition -> definition_of_out_vertex_arc (*
+	-> rrel_key_sc_element: nrel_out_vertex_arc;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Дуга в орграфе, которое выходит из вершину] (* <- lang_ru;; *);;
+		-> [An arc in a digraph that exits a vertex] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (выходящее ребро)] (* <- lang_ru;; *);
+		[Def. (out-vertex arc)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_directed_graph;
+		concept_vertex;
+        concept_arc;
+        rrel_arc;
+        rrel_vertex
+	};;
+*);;
+
+nrel_out_vertex_arc => nrel_first_domain: concept_vertex;;
+nrel_out_vertex_arc => nrel_second_domain: concept_arc;;
+
+nrel_out_vertex_arc => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_vertex;
+			concept_arc
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_out_vertex_arc;;
+
