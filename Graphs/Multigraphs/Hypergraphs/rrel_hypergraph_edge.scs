@@ -1,7 +1,7 @@
 rrel_hypergraph_edge
 => nrel_main_idtf:
 	[ребро гиперграфа'] (* <- lang_ru;; *);
-	[hypergraph edge'] (* <- lang_en;; *);
+	[hypergraph edge'] (* <- lang_en;; *);;
 
 => nrel_idtf:
 	[гиперребро'] (* <- lang_ru;; *);
@@ -45,15 +45,14 @@ statement -> statement_of_rrel_hypergraph_edge_statement (*
 rrel_hypergraph_edge=>nrel_first_domain:concept_hypergraph;;
 rrel_hypergraph_edge=>nrel_second_domain:concept_hypergraph_edge;;
 rrel_hypergraph_edge=> nrel_definitional_domain:
-    ...
-    (*
-	    <= nrel_integration:
-        ...
-	    (*
-		    ->concept_hypergraph;;
-		    ->concept_hypergraph_edge;;
-	    *);;
-    *);;
+  ...
+	(*
+	    <= nrel_combination:
+	    {
+			concept_hypergraph;
+			concept_hypergraph_edge
+		};;
+	*);;
 
 
 sc_node_class ->
