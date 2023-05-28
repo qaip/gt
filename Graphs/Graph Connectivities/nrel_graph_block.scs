@@ -1,0 +1,71 @@
+nrel_graph_block
+=> nrel_main_idtf:
+	[ блок графа* ] (* <- lang_ru;; *);
+	[ graph block* ] (* <- lang_en;; *);;
+
+
+nrel_graph_block => nrel_arity_of_relations: 2 (* <- number;; *);;
+
+nrel_graph_block <- binary_relation;;
+nrel_graph_block <- antireflexive_relation;;
+nrel_graph_block <- antisymmetric_relation;;
+nrel_graph_block <- antitransitive_relation;;
+
+
+definition -> definition_of_graph_block (*
+	-> rrel_key_sc_element: nrel_graph_block;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Cвязный, непустой, не имеющий собственных точек сочленения 
+            максимальный подграф неориентированного графа.] (* <- lang_ru;; *);;
+		-> [A connected, non-empty, maximum subgraph of an undirected graph that does not have its own articulation points.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (блок графа)] (* <- lang_ru;; *);
+		[Def. (graph block)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_connected_graph;
+		concept_null_graph;
+		concept_subgraph;
+		rrel_cutpoint
+	};;
+*);;
+
+statement -> statement_of_graph_block_edge_belonging (*
+	-> rrel_key_sc_element: nrel_graph_block;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Каждое ребро графа принадлежит точно одному из его блоков, так же как и каждая вершина, не являющаяся ни изолированной, ни точкой сочленения] (* <- lang_ru;; *);;
+		-> [Every edge of a graph belongs to exactly one of its blocks, as does every vertex that is neither isolated nor an articulation point.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Принадлежность ребра блоку)] (* <- lang_ru;; *);
+		[Stat. (Edge belonging to a block)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_edge;
+		rrel_edge;
+		concept_vertex;
+		rrel_vertex;
+		rrel_cutpoint
+	};;
+*);;
+
+
+nrel_graph_block => nrel_first_domain: concept_graph;;
+nrel_graph_block => nrel_second_domain: concept_graph;;
+
+nrel_graph_block => nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_graph
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_graph_block;;

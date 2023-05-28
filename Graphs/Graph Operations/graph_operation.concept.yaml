@@ -1,0 +1,45 @@
+ru: Операции над графами
+en: Graph operations
+definition:
+  ru: Действия, которые можно выполнять над графами,
+      такие как объединение графов, нахождение подграфов, построение дополнений
+      графов, выделение компонент связности и прочие
+  en: Actions that can be performed on graphs, such as union
+      of graphs, finding subgraphs, constructing complements of graphs,
+      identifying connected components, etc
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+      subgraph
+      connected_components
+      union_of_graphs
+      complement_of_graphs
+    nrels: |
+      connected_component
+    rrels: |
+      vertex
+      edge
+
+statement:
+  union_of_graphs_operation:
+    title:
+      ru: Объединение графов
+      en: Union of graphs
+    ru:
+      Объединение графов - это операция, которая создает новый граф, содержащий
+      все вершины и рёбра обоих графов. Если графы не пересекаются, то их
+      объединение является дизъюнктным объединением
+    en:
+      The union of graphs is an operation that creates a new graph containing
+      all the vertices and edges of both graphs. If the graphs do not overlap,
+      their union is a disjoint union
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+      rrels: |
+        vertex
+        edge

@@ -1,0 +1,72 @@
+concept_graph_operation
+=> nrel_main_idtf:
+	[Операции над графами] (* <- lang_ru;; *);
+	[Graph operations] (* <- lang_en;; *);;
+
+definition -> definition_of_graph_operation (*
+	-> rrel_key_sc_element: concept_graph_operation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Действия, которые можно выполнять над графами, такие как объединение графов, нахождение подграфов, построение дополнений графов, выделение компонент связности и прочие] (* <- lang_ru;; *);;
+		-> [Actions that can be performed on graphs, such as union of graphs, finding subgraphs, constructing complements of graphs, identifying connected components, etc] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (Операции над графами)] (* <- lang_ru;; *);
+		[Def. (Graph operations)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		concept_subgraph;
+		concept_connected_components;
+		concept_union_of_graphs;
+		concept_complement_of_graphs;
+		rrel_vertex;
+		rrel_edge;
+		nrel_connected_component
+	};;
+*);;
+
+statement -> statement_of_union_of_graphs_operation (*
+	-> rrel_key_sc_element: concept_graph_operation;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Объединение графов - это операция, которая создает новый граф, содержащий все вершины и рёбра обоих графов. Если графы не пересекаются, то их объединение является дизъюнктным объединением] (* <- lang_ru;; *);;
+		-> [The union of graphs is an operation that creates a new graph containing all the vertices and edges of both graphs. If the graphs do not overlap, their union is a disjoint union] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Объединение графов)] (* <- lang_ru;; *);
+		[Stat. (Union of graphs)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		concept_edge;
+		rrel_vertex;
+		rrel_edge
+	};;
+*);;
+
+sc_node_class ->
+	concept_graph;
+	concept_vertex;
+	concept_edge;
+	concept_subgraph;
+	concept_connected_components;
+	concept_union_of_graphs;
+	concept_complement_of_graphs;
+	concept_graph;
+	concept_vertex;
+	concept_edge;;
+
+sc_node_norole_relation ->
+	nrel_connected_component;;
+
+sc_node_role_relation ->
+	rrel_vertex;
+	rrel_edge;
+	rrel_vertex;
+	rrel_edge;;

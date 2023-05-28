@@ -1,0 +1,40 @@
+ru: связность графа
+en: graph connectivity
+definition:
+  ru:
+    Cвойство графа, которое определяет, насколько просто можно достичь одной
+    вершины из другой через рёбра графа
+  en:
+    Property of a graph that determines how easily one vertex can be reached
+    from another via the edges of the graph
+  using:
+    concepts: |
+      graph
+      vertex
+      edge
+    rrels: |
+      vertex
+      edge
+
+statement:
+  connectivity_types:
+    title:
+      ru: Типы связности графов
+      en: Types of graph connectivity
+    ru:
+      Существует несколько типов связности графов, таких как сильная связность,
+      слабая связность
+    en:
+      There are several types of graph connectivity, such as strong
+      connectivity, weak connectivity
+    using:
+      concepts: |
+        graph
+        vertex
+        edge
+      nrels: |
+        weakly_connected_component
+        strongly_connected_component
+      rrels: |
+        vertex
+        edge

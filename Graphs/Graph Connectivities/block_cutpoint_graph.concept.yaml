@@ -6,14 +6,14 @@ definition:
     Граф, который не имеет мостов, но может быть разбит на блоки и точки
     сочленения
   en:
-    A blockcut point graph is a graph that has no bridges but can be decomposed into
-    blocks and cutpoints
+    A blockcut point graph is a graph that has no bridges but can be decomposed
+    into blocks and cutpoints
   using:
     concepts: |
       graph
       bridge
     nrels: |
-      block
+      graph_block
     rrels: |
       cutpoint
 
@@ -35,6 +35,6 @@ statement:
       concepts: |
         biconnected_graph
       nrels: |
-        block
+        graph_block
       rrels: |
         cutpoint

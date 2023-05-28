@@ -1,0 +1,63 @@
+nrel_strongly_connected_component
+=> nrel_main_idtf:
+	[ компонента сильной связности* ] (* <- lang_ru;; *);
+	[ strongly connected component* ] (* <- lang_en;; *);;
+
+nrel_strongly_connected_component => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_strongly_connected_component <- binary_relation;;
+nrel_strongly_connected_component <- reflexive_relation;;
+nrel_strongly_connected_component <- antisymmetric_relation;; 
+nrel_strongly_connected_component <- antitransitive_relation;;
+
+
+definition -> definition_of_strongly_connected_component (*
+	-> rrel_key_sc_element: nrel_strongly_connected_component;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Компонентами сильной связности ориентированного графа называются его максимальные по включению сильно связные подграфы.] (* <- lang_ru;; *);;
+		-> [The strongly connected components of an arbitrary directed graph form a partition into subgraphs that are themselves strongly connected.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (компонента сильной связности)] (* <- lang_ru;; *);
+		[Def. (strongly connected component)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+			concept_directed_graph;
+			nrel_subgraph
+	};;
+*);;
+
+
+statement -> statement_of_graph_block_edge_belonging (*
+	-> rrel_key_sc_element: nrel_strongly_connected_component;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Наиболее быстрыми алгоритмами для поиска компонент сильной связности являются алгоритмы Косарайю, Габова и Тарьяна.] (* <- lang_ru;; *);;
+		-> [The fastest algorithms to detect strongly connected components are: Kosaraju's algorithm, Tarjan's strongly connected components algorithm and The path-based strong component algorithm.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Наиболее быстрые алгоритмы для поиска компонент сильной связности)] (* <- lang_ru;; *);
+		[Stat. (The fastest algorithms to detect strongly connected components)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_algorithm
+	};;
+*);;
+
+
+nrel_strongly_connected_component => nrel_first_domain: concept_directed_graph;;
+nrel_strongly_connected_component => nrel_second_domain: concept_directed_graph;;
+
+nrel_strongly_connected_component => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination:
+		{
+			concept_directed_graph
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_strongly_connected_component;;

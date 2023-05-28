@@ -5,6 +5,7 @@ concept_arc
 
 => nrel_idtf:
 	[дуга] (* <- lang_ru;; *);
+	[directed edge] (* <- lang_en;; *);
 	[oriented edge] (* <- lang_en;; *);;
 
 definition -> definition_of_arc (*
