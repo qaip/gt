@@ -1,0 +1,68 @@
+nrel_tree_parent
+=> nrel_main_idtf:
+	[родитель вершины*] (* <- lang_ru;; *);
+	[vertex parent*] (* <- lang_en;; *);;
+
+nrel_tree_parent => arity: 2 (* <- number ;;*);;
+
+nrel_tree_parent <- binary_relation;;
+nrel_tree_parent <- antireflexive_relation;;
+nrel_tree_parent <- antisymmetric_relation;;
+nrel_tree_parent <- transitive_relation;;
+
+definition -> definition_of_chromatic_number (*
+	-> rrel_key_sc_element: nrel_tree_parent;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Вершина дерева, которая имеет непосредственное соединение с другой вершиной, называемой ее потомком] (* <- lang_ru;; *);;
+		-> [A node in a tree that has a direct connection to another node, called its child] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (родитель вершины)] (* <- lang_ru;; *);
+		[Def. (vertex parent)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+        concept_tree;
+        nrel_tree_descendant;
+        rrel_arc;
+        rrel_veretex
+	};;
+*);;
+
+
+statement -> statement_of_tree_parent_uniqueness_theorem (*
+	-> rrel_key_sc_element: nrel_tree_parent;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [В дереве у любого узла есть только один родитель] (* <- lang_ru;; *);;
+		-> [In a tree, any node has only one parent] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Утв. (Теорема об единственности родителя)] (* <- lang_ru;; *);
+		[Stat. (Tree parent uniqueness theorem)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_vertex;
+        rrel_vertex
+	};;
+*);;
+
+nrel_tree_parent => nrel_first_domain: concept_vertex;;
+nrel_tree_parent => nrel_second_domain: concept_vertex;;
+
+nrel_tree_parent => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_vertex
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_tree_parent;;
+
+

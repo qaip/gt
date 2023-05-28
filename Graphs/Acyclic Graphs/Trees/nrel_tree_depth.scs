@@ -1,0 +1,23 @@
+nrel_tree_depth
+=> nrel_main_idtf:
+	[глубина дерева*] (* <- lang_ru;; *);
+	[tree depth*] (* <- lang_en;; *);;
+
+nrel_tree_depth <- binary_relation;;
+nrel_tree_depth <- antireflexive_relation;;
+nrel_tree_depth <- antisymmetric_relation;;
+nrel_tree_depth <- antitransitive_relation;;
+nrel_tree_depth => nrel_first_domain: concept_graph;;
+nrel_tree_depth => nrel_second_domain: number;;
+
+nrel_tree_depth => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_tree;
+			number
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_tree_depth;;

@@ -1,0 +1,24 @@
+nrel_subtree
+=> nrel_main_idtf:
+	[поддерево*] (* <- lang_ru;; *);
+	[subtree*] (* <- lang_en;; *);;
+
+nrel_subtree <- binary_relation;;
+nrel_subtree <- antireflexive_relation;;
+nrel_subtree <- antisymmetric_relation;;
+nrel_subtree <- transitive_relation;;
+nrel_subtree => nrel_first_domain: concept_graph;;
+nrel_subtree => nrel_second_domain: concept_tree;;
+
+nrel_subtree => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+            concept_tree
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+	nrel_subtree;;
+
