@@ -17,7 +17,7 @@ definition -> definition_of_edges_multiplicity (*
 
 	=> nrel_using_constants: {
 		concept_edge;
-		concept_multigraph
+		concept_multigraph;
 		concept_vertex;
 		rrel_edge;
 		rrel_vertex
