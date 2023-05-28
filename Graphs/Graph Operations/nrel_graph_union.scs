@@ -42,7 +42,7 @@ statement -> statement_of_nrel_graph_union (*
 		concept_graph;
         concept_vertex;
         concept_edge;
-        concept_arc
+        concept_arc;
         rrel_vertex;
         rrel_edge;
         rrel_arc
