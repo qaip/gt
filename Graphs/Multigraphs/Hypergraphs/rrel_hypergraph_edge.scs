@@ -1,7 +1,7 @@
 rrel_hypergraph_edge
 => nrel_main_idtf:
 	[ребро гиперграфа'] (* <- lang_ru;; *);
-	[hypergraph edge'] (* <- lang_en;; *);;
+	[hypergraph edge'] (* <- lang_en;; *);
 
 => nrel_idtf:
 	[гиперребро'] (* <- lang_ru;; *);
