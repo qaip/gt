@@ -22,10 +22,6 @@ section_subject_domain_of_planar_graphs
 	concept_external_graph;
 	concept_unplanar_graph;
 	concept_one_planar_graph;
-	nrel_isomorphism;
-	nrel_neighboring_vertex;
-	nrel_intersection;
-	nrel_laying;
 	nrel_skewness;
 	nrel_coarseness;
 	nrel_thickness_of_graph;;
@@ -52,10 +48,6 @@ section_subject_domain_of_planar_graphs=[*
 		concept_one_planar_graph;
 
 	-> rrel_explored_relation:
-		nrel_isomorphism;
-		nrel_neighboring_vertex;
-		nrel_intersection;
-		nrel_laying;
 		nrel_skewness;
 		nrel_coarseness;
 		nrel_thickness_of_graph;
@@ -80,10 +72,6 @@ sc_node_class ->
 	concept_one_planar_graph;;
 
 sc_node_norole_relation ->
-	nrel_isomorphism;
-	nrel_neighboring_vertex;
-	nrel_intersection;
-	nrel_laying;
 	nrel_skewness;
 	nrel_coarseness;
 	nrel_thickness_of_graph;;

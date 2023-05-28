@@ -21,10 +21,6 @@ concepts: |
   one_planar_graph
 
 nrels: |
-  isomorphism
-  neighboring_vertex
-  intersection
-  laying
   skewness
   coarseness
   thickness_of_graph

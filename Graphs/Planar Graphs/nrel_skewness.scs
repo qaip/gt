@@ -1,0 +1,47 @@
+nrel_skewness
+=> nrel_main_idtf: 
+	[искаженность*] (* <- lang_ru;; *);
+	[skewness*] (* <- lang_en;; *);;
+
+nrel_skewness => arity: 2 (* <- number ;;*);;
+
+nrel_skewness <- binary_relation;;
+nrel_skewness <- antireflexive_relation;;
+nrel_skewness <- antisymmetric_relation;;
+nrel_skewness <- antitransitive_relation;;
+
+
+definition -> definition_of_skewness (*
+    -> rrel_key_sc_element: nrel_skewness;;
+
+    <= nrel_sc_text_translation:... (*
+        -> [Наименьшее число ребер, удаление которых приводит к планарному графу] (* <- lang_ru;; *);;
+        -> [The smallest number of edges whose removal leads to a planar graph] (* <- lang_en;; *);;
+    *);;
+
+    => nrel_main_idtf:
+        [Опр. (искаженность)] (* <- lang_ru;; *);
+		[Def. (skewness)] (* <- lang_en;; *);;
+    
+    => nrel_using_constants:
+		{
+			concept_planar_graph;
+			rrel_edge;
+            concept_edge
+		};;
+*);;
+
+nrel_skewness => nrel_first_domain: concept_graph;;
+nrel_skewness => nrel_second_domain: number;; 
+
+nrel_skewness => nrel_definitional_domain:
+	... (*
+	<= nrel_combination:
+		{
+			concept_graph;
+			concept_vertex
+        };;
+	*);;
+
+sc_node_norole_relation -> 
+    nrel_skewness;;
