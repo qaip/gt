@@ -13,10 +13,9 @@ section_subject_domain_of_graph_chains
 	concept_hamiltonian_chain;
 	concept_alternating_chain;
 	concept_graph_subchain;
-	concept_chain_weight;
-	concept_chain_length;
 	concept_eulerian_chain;
-	nrel_arcs_adjacency;;
+	nrel_chain_weight;
+	nrel_chain_length;;
 
 section_subject_domain_of_graph_chains=[*
 	subject_domain_of_graph_chains
@@ -34,12 +33,11 @@ section_subject_domain_of_graph_chains=[*
 		concept_hamiltonian_chain;
 		concept_alternating_chain;
 		concept_graph_subchain;
-		concept_chain_weight;
-		concept_chain_length;
 		concept_eulerian_chain;
 
 	-> rrel_explored_relation:
-		nrel_arcs_adjacency;
+		nrel_chain_weight;
+		nrel_chain_length;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_sequences;;
@@ -51,9 +49,8 @@ sc_node_class ->
 	concept_hamiltonian_chain;
 	concept_alternating_chain;
 	concept_graph_subchain;
-	concept_chain_weight;
-	concept_chain_length;
 	concept_eulerian_chain;;
 
 sc_node_norole_relation ->
-	nrel_arcs_adjacency;;
+	nrel_chain_weight;
+	nrel_chain_length;;
