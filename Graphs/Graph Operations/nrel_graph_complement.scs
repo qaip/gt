@@ -1,7 +1,7 @@
 nrel_graph_complement
 => nrel_main_idtf:
 	[дополнение графа*] (* <- lang_ru;; *);
-	[graph complement*] (* <- lang_en;; *);
+	[graph complement*] (* <- lang_en;; *);;
 
 definition -> definition_of_nrel_graph_complement (*
 	-> rrel_key_sc_element: nrel_graph_complement;;
@@ -47,14 +47,8 @@ statement -> statement_of_nrel_graph_complement (*
 
 nrel_graph_complement=>nrel_first_domain:concept_graph;;
 nrel_graph_complement=>nrel_second_domain:concept_graph;;
-nrel_graph_complement=> nrel_definitional_domain:
-	...
-	(*
-	    <= nrel_combination:
-	    {
-			concept_graph
-		};;
-	*);;
+nrel_graph_complement=> nrel_definitional_domain:concept_graph;;
+
 
 
 antireflexive_relation->nrel_graph_complement;;

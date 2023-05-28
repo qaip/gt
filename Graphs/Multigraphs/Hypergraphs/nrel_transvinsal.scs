@@ -1,7 +1,7 @@
 nrel_transvinsal
 => nrel_main_idtf:
 	[трансверсаль*] (* <- lang_ru;; *);
-	[transvinsal*] (* <- lang_en;; *);
+	[transvinsal*] (* <- lang_en;; *);;
 
 definition -> definition_of_nrel_transvinsal (*
 	-> rrel_key_sc_element: nrel_transvinsal;;
