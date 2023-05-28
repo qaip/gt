@@ -14,11 +14,11 @@ section_subject_domain_of_graph_cycles
 	concept_eulerian_cycle;
 	concept_basic_cycle;
 	concept_minimum_weight_cycle;
-	concept_cycle_length;
 	concept_graph_girth;
-	concept_cycle_weight;
 	nrel_arcs_adjacency;
-	nrel_graph_chord;;
+	nrel_graph_chord;
+	nrel_cycle_weight;
+	nrel_cycle_length;;
 
 section_subject_domain_of_graph_cycles=[*
 	subject_domain_of_graph_cycles
@@ -37,13 +37,13 @@ section_subject_domain_of_graph_cycles=[*
 		concept_eulerian_cycle;
 		concept_basic_cycle;
 		concept_minimum_weight_cycle;
-		concept_cycle_length;
 		concept_graph_girth;
-		concept_cycle_weight;
 
 	-> rrel_explored_relation:
 		nrel_arcs_adjacency;
 		nrel_graph_chord;
+		nrel_cycle_weight;
+		nrel_cycle_length;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_sequences;;
@@ -56,10 +56,10 @@ sc_node_class ->
 	concept_eulerian_cycle;
 	concept_basic_cycle;
 	concept_minimum_weight_cycle;
-	concept_cycle_length;
-	concept_graph_girth;
-	concept_cycle_weight;;
+	concept_graph_girth;;
 
 sc_node_norole_relation ->
 	nrel_arcs_adjacency;
-	nrel_graph_chord;;
+	nrel_graph_chord;
+	nrel_cycle_weight;
+	nrel_cycle_length;;
