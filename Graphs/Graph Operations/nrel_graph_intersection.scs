@@ -42,7 +42,7 @@ statement -> statement_of_nrel_graph_intersection (*
 		concept_graph;
         concept_vertex;
         concept_edge;
-        concept_arc
+        concept_arc;
         rrel_vertex;
         rrel_edge;
         rrel_arc
@@ -51,14 +51,7 @@ statement -> statement_of_nrel_graph_intersection (*
 
 nrel_graph_intersection=>nrel_first_domain:concept_graph;;
 nrel_graph_intersection=>nrel_second_domain:concept_graph;;
-nrel_graph_intersection=> nrel_definitional_domain:
-	...
-	(*
-	    <= nrel_combination:
-	    {
-			concept_graph
-		};;
-	*);;
+nrel_graph_intersection=> nrel_definitional_domain: concept_graph;;
 
 
 
