@@ -18,6 +18,6 @@ concepts: |
   length_of_sequence
 
 nrels: |
-  arcs_adjacency
   semiroute_in_the_digraph
   tightened_graph
+  length_of_sequence
