@@ -4,12 +4,12 @@ nrel_vertex_adjacency
 	[ vertex adjacency* ] (* <-lang_en;; *);
 
 
-=> nrel_arity_of_relations: 2 (* <- number ;;*);;
+=> nrel_arity_of_relations: 2 (* <- number ;;*);
 
 <- binary_relation;
 <- antireflexive_relation;
 <- symmetric_relation;
-<- antitransitive_relation;
+<- antitransitive_relation;;
 
 
 definition -> definition_of_vertex_adjacency (*
