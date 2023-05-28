@@ -1,0 +1,41 @@
+nrel_topological_ordering
+=> nrel_main_idtf:
+	[топологическая сортировка*] (* <- lang_ru;; *);
+	[topological ordering*] (* <- lang_en;; *);;
+
+nrel_topological_ordering => arity: 2 (* <- number ;;*);;
+
+nrel_topological_ordering <- binary_relation;;
+nrel_topological_ordering <- antireflexive_relation;;
+nrel_topological_ordering <- antisymmetric_relation;;
+nrel_topological_ordering <- antitransitive_relation;;
+
+definition -> definition_of_topological_ordering (*
+	-> rrel_key_sc_element: nrel_topological_ordering;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Упорядочивание вершин графа в линейную последовательность таким образом, чтобы каждое ребро шло от вершины, предшествующей в линейной последовательности, к вершине, следующей за ней] (* <- lang_ru;; *);;
+		-> [Ordering the vertices of a graph into a linear sequence such that every edge goes from a vertex that precedes to a vertex that follows it] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (топологическая сортировка)] (* <- lang_ru;; *);
+		[Def. (topological ordering)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+        concept_vertex;
+        rrel_vertex;
+        concept_edge;
+        rrel_edge
+	};;
+*);;
+
+nrel_topological_ordering => nrel_first_domain: concept_graph;;
+nrel_topological_ordering => nrel_second_domain: concept_graph;;
+
+nrel_topological_ordering => nrel_definitional_domain:
+	concept_graph;;
+
+sc_node_norole_relation -> 
+	nrel_topological_ordering;;
