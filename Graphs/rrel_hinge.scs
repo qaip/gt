@@ -10,8 +10,8 @@ definition -> definition_of_rrel_hinge (*
 	-> rrel_key_sc_element: rrel_hinge;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Вершина графа, в результате удаления которой вместе со всеми инцидентными ей рёбрами количество компонент связности в графе возрастает.] (* <- lang_ru;; *);;
-		-> [A vertex, as a result of which removal with all the edges incident to it, the number of connected components in the graph increases.] (* <- lang_en;; *);;
+		-> [Шарнир — вершина графа, в результате удаления которой вместе со всеми инцидентными ей рёбрами количество компонент связности в графе возрастает.] (* <- lang_ru;; *);;
+		-> [A hinge is a vertex of a graph, as a result of which, together with all the edges incident to it, the number of connected components in the graph increases as a result of its removal.] (* <- lang_en;; *);;
 	*);;
 
 	=> nrel_main_idtf:
@@ -33,13 +33,14 @@ rrel_hinge => nrel_first_domain: concept_graph;;
 rrel_hinge => nrel_second_domain: concept_vertex;;
 
 rrel_hinge => nrel_definitional_domain:
-	... 
+	...
 	(*
-		<= nrel_combination:
-			{
-				concept_edge;
-				concept_vertex
-			};;
+	<= nrel_combination::
+		...
+		(*
+			->concept_graph;;
+			->concept_vertex;;
+		*);;
 	*);;
 
 
