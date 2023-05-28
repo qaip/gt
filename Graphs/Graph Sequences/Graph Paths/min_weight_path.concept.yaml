@@ -1,0 +1,31 @@
+ru: путь с минимальным весом
+en: path with minimum weight
+
+definition:
+  ru: Путь в графе с минимальной суммой весов рёбер
+  en: The path in a graph with the smallest sum of edge weights
+  using:
+    concepts: |
+      graph_path
+      graph_path_weight
+      edge
+    nrels: |
+      rib_weight
+    rrels: |
+      edge
+
+statement:
+  path_weight_optimality_theorem:
+    title:
+      ru: Теорема об оптимальности пути с минимальным весом
+      en: Path weight optimality theorem
+    ru: Если все веса рёбер графа положительны, то путь с минимальным весом является оптимальным
+    en: If all edge weights in a graph are positive, then the path with minimum weight is optimal
+    using:
+      concepts: |
+        graph_path
+        edge
+      nrels: |
+        rib_weight
+      rrels: |
+        edge
