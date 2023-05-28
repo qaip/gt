@@ -1,7 +1,7 @@
 nrel_graph_union
 => nrel_main_idtf:
 	[объединение графов*] (* <- lang_ru;; *);
-	[graph union*] (* <- lang_en;; *);
+	[graph union*] (* <- lang_en;; *);;
 
 definition -> definition_of_nrel_graph_union (*
 	-> rrel_key_sc_element: nrel_graph_union;;
@@ -51,14 +51,8 @@ statement -> statement_of_nrel_graph_union (*
 
 nrel_graph_union=>nrel_first_domain:concept_graph;;
 nrel_graph_union=>nrel_second_domain:concept_graph;;
-nrel_graph_union=> nrel_definitional_domain:
-	...
-	(*
-	    <= nrel_combination:
-	    {
-			concept_graph
-		};;
-	*);;
+nrel_graph_union=> nrel_definitional_domain:concept_graph;;
+
 
 
 
