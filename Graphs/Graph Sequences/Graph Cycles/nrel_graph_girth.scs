@@ -1,6 +1,6 @@
 nrel_graph_girth
 => nrel_main_idtf:
-	[длина минимального цикла графа*] (* <- lang_ru;; *);
+	[обхват графа*] (* <- lang_ru;; *);
 	[graph girth*] (* <- lang_en;; *);;
 
 nrel_graph_girth => arity: 2 (* <- number ;;*);;
@@ -19,7 +19,7 @@ definition -> definition_of_graph_girth (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (длина минимального цикла графа)] (* <- lang_ru;; *);
+		[Опр. (обхват графа)] (* <- lang_ru;; *);
 		[Def. (graph girth)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
