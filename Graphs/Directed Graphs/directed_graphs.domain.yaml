@@ -28,4 +28,4 @@ rrels: |
 nrels: |
   in_vertex_arc
   out_vertex_arc
-  nrel_condensation_of_the_digraph
+  condensation_of_the_digraph
