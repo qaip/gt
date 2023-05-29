@@ -9,7 +9,6 @@ section_subject_domain_of_graph_properties
 <- rrel_key_sc_element:
 	subject_domain_of_graph_properties;
 	concept_graph_property;
-	concept_graph_property;
 	concept_graph_eccentricity;
 	nrel_vertex_degree;
 	nrel_graph_diameter;
@@ -29,7 +28,6 @@ section_subject_domain_of_graph_properties=[*
 		concept_graph_property;
 
 	-> rrel_not_maximum_studied_object_class:
-		concept_graph_property;
 		concept_graph_eccentricity;
 
 	-> rrel_explored_relation:
@@ -44,7 +42,6 @@ section_subject_domain_of_graph_properties=[*
 *];;
 
 sc_node_class ->
-	concept_graph_property;
 	concept_graph_property;
 	concept_graph_eccentricity;;
 

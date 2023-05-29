@@ -7,7 +7,6 @@ max: |
   graph_property
 
 concepts: |
-  graph_property
   graph_eccentricity
 
 rrels: |

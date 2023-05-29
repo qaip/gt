@@ -9,7 +9,7 @@ concept_depth_traversal
 
 => nrel_inclusion:
 concept_in_order_traversal;
-concept_pre_oreder_traversal;
+concept_pre_order_traversal;
 concept_post_order_traversal;
 concept_reverse_in_order_traversal;
 concept_reverse_pre_order_traversal;
@@ -49,7 +49,7 @@ statement -> statement_of_statement_about_depth_search_division (*
 
 	=> nrel_using_constants: {
 		concept_in_order_traversal;
-		concept_pre_oreder_traversal;
+		concept_pre_order_traversal;
 		concept_post_order_traversal;
 		concept_reverse_in_order_traversal;
 		concept_reverse_pre_order_traversal;
@@ -61,7 +61,7 @@ sc_node_class ->
 	concept_graph_traversal;
 	concept_vertex;
 	concept_in_order_traversal;
-	concept_pre_oreder_traversal;
+	concept_pre_order_traversal;
 	concept_post_order_traversal;
 	concept_reverse_in_order_traversal;
 	concept_reverse_pre_order_traversal;

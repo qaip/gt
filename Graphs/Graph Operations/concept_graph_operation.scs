@@ -1,7 +1,7 @@
 concept_graph_operation
 => nrel_main_idtf:
-	[Операции над графами] (* <- lang_ru;; *);
-	[Graph operations] (* <- lang_en;; *);;
+	[операции над графами] (* <- lang_ru;; *);
+	[graph operations] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_operation (*
 	-> rrel_key_sc_element: concept_graph_operation;;
@@ -12,8 +12,8 @@ definition -> definition_of_graph_operation (*
 	*);;
 
 	=> nrel_main_idtf:
-		[Опр. (Операции над графами)] (* <- lang_ru;; *);
-		[Def. (Graph operations)] (* <- lang_en;; *);;
+		[Опр. (операции над графами)] (* <- lang_ru;; *);
+		[Def. (graph operations)] (* <- lang_en;; *);;
 
 	=> nrel_using_constants: {
 		concept_graph;
