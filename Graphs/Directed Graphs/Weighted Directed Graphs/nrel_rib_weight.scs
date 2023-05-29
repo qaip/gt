@@ -1,7 +1,7 @@
 nrel_rib_weight
 => nrel_main_idtf:
-	[вес ребра] (* <- lang_ru;; *);
-	[rib weight] (* <- lang_en;; *);;
+	[вес ребра*] (* <- lang_ru;; *);
+	[rib weight*] (* <- lang_en;; *);;
 
 nrel_rib_weight => arity: 2 (* <- number ;;*);;
 
