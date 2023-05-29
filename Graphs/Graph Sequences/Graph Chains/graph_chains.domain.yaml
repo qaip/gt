@@ -16,3 +16,4 @@ concepts: |
 nrels: |
   chain_weight
   chain_length
+  graph_chain

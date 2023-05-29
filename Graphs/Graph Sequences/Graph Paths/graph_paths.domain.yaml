@@ -13,8 +13,12 @@ concepts: |
   eulerian_path
   graph_eccentricity
   min_weight_path
+  not_trivial_path
+
 
 nrels: |
-  not_trivial_path
   graph_path_weight
   path_length
+  graph_radius
+  graph_diameter
+  graph_path
