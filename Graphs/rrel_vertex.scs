@@ -12,7 +12,7 @@ rrel_vertex => nrel_definitional_domain:
 	<= nrel_combination: 
 		{
 		concept_graph;
-    concept_vertex
+    	concept_vertex
 		};;
 	*);;
 

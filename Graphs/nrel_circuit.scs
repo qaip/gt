@@ -3,7 +3,6 @@ nrel_circuit
 	[ контур' ] (* <-lang_ru;; *);
 	[ circuit' ] (* <-lang_en;; *);;
 
-nrel_circuit => arity: 2 (* <- number ;;*);;
 
 nrel_circuit <- binary_relation;;
 nrel_circuit <- reflexive_relation;;

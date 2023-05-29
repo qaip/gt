@@ -41,7 +41,6 @@ rrels: |
   vertex
   edge
   arc
-  multiple_edge
   loop
   cutpoint
   center_of_graph
@@ -53,7 +52,6 @@ nrels: |
   vertex_degree
   vertex_adjacency
   connected_component
-  complement_graph
   circuit
   face
   condensation_of_the_digraph

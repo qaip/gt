@@ -3,7 +3,6 @@ nrel_condensation_of_the_digraph
 	[ конденсация орграфа* ] (* <- lang_ru;; *);
 	[ condensation of the digraph* ] (* <- lang_en;; *);;
 
-nrel_condensation_of_the_digraph => arity: 2 (* <- number ;;*);;
 
 nrel_condensation_of_the_digraph <- binary_relation;;
 nrel_condensation_of_the_digraph <- antireflexive_relation;;

@@ -3,7 +3,6 @@ nrel_edge_connectivity => nrel_main_idtf:
 	[ edge connectivity* ](* <-lang_en;; *);;
 
 
-nrel_edge_connectivity => nrel_arity_of_relations: 2(* <- number ;;*);;
 
 nrel_edge_connectivity <- binary_relation;;
 nrel_edge_connectivity <- antireflexive_relation;;

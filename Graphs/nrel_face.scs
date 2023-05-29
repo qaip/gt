@@ -1,0 +1,46 @@
+nrel_face
+=> nrel_main_idtf:
+	[ грань графа* ] (* <- lang_ru;; *);
+	[ face* ] (* <- lang_en;; *);;
+
+nrel_face <- binary_relation;;
+nrel_face <- antireflexive_relation;;
+nrel_face <- antisymmetric_relation;;
+nrel_face <- antitransitive_relation;;
+
+definition -> definition_of_face (*
+	-> rrel_key_sc_element: nrel_face;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Область, ограниченная набором ребер и вершин во вложении.] (* <- lang_ru;; *);;
+		-> [A region bounded by a set of edges and vertices in the embedding.] (* <- lang_en;; *);;
+	*);;
+
+	=> nrel_main_idtf:
+		[Опр. (грани графа)] (* <- lang_ru;; *);
+		[Def. (face)] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph;
+		concept_vertex;
+		rrel_vertex;
+		concept_edge;
+		rrel_vertex
+	};;
+*);;
+
+
+nrel_face => nrel_first_domain: concept_vertex;;
+nrel_face => nrel_second_domain: concept_edge;;
+
+nrel_face => nrel_definitional_domain:
+	... 
+	(*
+	<= nrel_combination:
+		{
+			concept_vertex;
+			concept_edge
+        };;
+	*);;
+
+sc_node_norole_relation -> nrel_face;;
