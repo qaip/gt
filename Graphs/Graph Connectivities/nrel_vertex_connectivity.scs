@@ -4,7 +4,6 @@ nrel_vertex_connectivity
 	[ vertex connectivity* ] (* <- lang_en;; *);;
 
 
-nrel_vertex_connectivity => nrel_arity_of_relations: 2(* <- number ;;*);;
 
 nrel_vertex_connectivity <- binary_relation;;
 nrel_vertex_connectivity <- antireflexive_relation;;

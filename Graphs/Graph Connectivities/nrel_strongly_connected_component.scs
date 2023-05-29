@@ -3,7 +3,7 @@ nrel_strongly_connected_component
 	[ компонента сильной связности* ] (* <- lang_ru;; *);
 	[ strongly connected component* ] (* <- lang_en;; *);;
 
-nrel_strongly_connected_component => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
 
 nrel_strongly_connected_component <- binary_relation;;
 nrel_strongly_connected_component <- reflexive_relation;;
@@ -51,13 +51,6 @@ statement -> statement_of_graph_block_edge_belonging (*
 nrel_strongly_connected_component => nrel_first_domain: concept_directed_graph;;
 nrel_strongly_connected_component => nrel_second_domain: concept_directed_graph;;
 
-nrel_strongly_connected_component => nrel_definitional_domain:
-	... 
-	(*
-	<= nrel_combination:
-		{
-			concept_directed_graph
-        };;
-	*);;
+nrel_strongly_connected_component => nrel_definitional_domain:concept_directed_graph;;
 
 sc_node_norole_relation -> nrel_strongly_connected_component;;

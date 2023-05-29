@@ -4,8 +4,6 @@ nrel_vertex_adjacency
 	[ vertex adjacency* ] (* <-lang_en;; *);
 
 
-=> nrel_arity_of_relations: 2 (* <- number ;;*);
-
 <- binary_relation;
 <- antireflexive_relation;
 <- symmetric_relation;
@@ -42,8 +40,7 @@ nrel_vertex_adjacency => nrel_definitional_domain:
 	<= nrel_combination: 
 		{
 			concept_graph;
-			concept_vertex;
-			rrel_vertex
+			concept_vertex
 		};;
 	*);;
 

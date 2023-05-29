@@ -4,7 +4,6 @@ nrel_graph_block
 	[ graph block* ] (* <- lang_en;; *);;
 
 
-nrel_graph_block => nrel_arity_of_relations: 2 (* <- number;; *);;
 
 nrel_graph_block <- binary_relation;;
 nrel_graph_block <- antireflexive_relation;;
@@ -59,13 +58,6 @@ statement -> statement_of_graph_block_edge_belonging (*
 nrel_graph_block => nrel_first_domain: concept_graph;;
 nrel_graph_block => nrel_second_domain: concept_graph;;
 
-nrel_graph_block => nrel_definitional_domain:
-	...
-	(*
-	<= nrel_combination:
-		{
-			concept_graph
-        };;
-	*);;
+nrel_graph_block => nrel_definitional_domain:concept_graph;;
 
 sc_node_norole_relation -> nrel_graph_block;;
