@@ -13,4 +13,4 @@ concepts: |
   circle_graph
 
 nrels: |
-  split_decomposition
+  graph_split_decomposition
