@@ -18,10 +18,10 @@ section_subject_domain_of_graph_sequences
 	concept_tightened_graph;
 	concept_spanning_sequence;
 	concept_directed_sequence;
-	concept_length_of_sequence;
 	nrel_semiroute_in_the_digraph;
 	nrel_tightened_graph;
-	nrel_length_of_sequence;;
+	nrel_length_of_sequence;
+	nrel_graph_sequence;;
 
 section_subject_domain_of_graph_sequences=[*
 	subject_domain_of_graph_sequences
@@ -38,12 +38,12 @@ section_subject_domain_of_graph_sequences=[*
 		concept_tightened_graph;
 		concept_spanning_sequence;
 		concept_directed_sequence;
-		concept_length_of_sequence;
 
 	-> rrel_explored_relation:
 		nrel_semiroute_in_the_digraph;
 		nrel_tightened_graph;
 		nrel_length_of_sequence;
+		nrel_graph_sequence;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graphs;
@@ -58,10 +58,10 @@ sc_node_class ->
 	concept_graph_sequence;
 	concept_tightened_graph;
 	concept_spanning_sequence;
-	concept_directed_sequence;
-	concept_length_of_sequence;;
+	concept_directed_sequence;;
 
 sc_node_norole_relation ->
 	nrel_semiroute_in_the_digraph;
 	nrel_tightened_graph;
-	nrel_length_of_sequence;;
+	nrel_length_of_sequence;
+	nrel_graph_sequence;;

@@ -15,9 +15,12 @@ section_subject_domain_of_graph_paths
 	concept_eulerian_path;
 	concept_graph_eccentricity;
 	concept_min_weight_path;
-	nrel_not_trivial_path;
+	concept_not_trivial_path;
 	nrel_graph_path_weight;
-	nrel_path_length;;
+	nrel_path_length;
+	nrel_graph_radius;
+	nrel_graph_diameter;
+	nrel_graph_path;;
 
 section_subject_domain_of_graph_paths=[*
 	subject_domain_of_graph_paths
@@ -37,11 +40,14 @@ section_subject_domain_of_graph_paths=[*
 		concept_eulerian_path;
 		concept_graph_eccentricity;
 		concept_min_weight_path;
+		concept_not_trivial_path;
 
 	-> rrel_explored_relation:
-		nrel_not_trivial_path;
 		nrel_graph_path_weight;
 		nrel_path_length;
+		nrel_graph_radius;
+		nrel_graph_diameter;
+		nrel_graph_path;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_sequences;;
@@ -54,9 +60,12 @@ sc_node_class ->
 	concept_longest_path;
 	concept_eulerian_path;
 	concept_graph_eccentricity;
-	concept_min_weight_path;;
+	concept_min_weight_path;
+	concept_not_trivial_path;;
 
 sc_node_norole_relation ->
-	nrel_not_trivial_path;
 	nrel_graph_path_weight;
-	nrel_path_length;;
+	nrel_path_length;
+	nrel_graph_radius;
+	nrel_graph_diameter;
+	nrel_graph_path;;
