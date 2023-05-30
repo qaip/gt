@@ -1,0 +1,27 @@
+nrel_graph_split_decomposition
+=> nrel_main_idtf:
+	[декомпозиция разбиения графа*] (* <- lang_ru;; *);
+	[graph splits decomposition*] (* <- lang_en;; *);;
+
+
+nrel_graph_split_decomposition=>nrel_first_domain:concept_graph;
+    =>nrel_second_domain:concept_subgraph;
+        => nrel_definitional_domain:
+	...
+	(*
+		 <=nrel_combination:
+        {
+            concept_graph;
+            concept_subgraph
+        };;
+	*);;
+
+nrel_graph_split_decomposition <- binary_relation;;
+nrel_graph_split_decomposition <- antireflexive_relation;;
+nrel_graph_split_decomposition <- antisymmetric_relation;;
+nrel_graph_split_decomposition <- antitransitive_relation;;
+
+
+
+sc_node_norole_relation ->
+	nrel_graph_split_decomposition;;
