@@ -1,7 +1,7 @@
 nrel_graph_path
 => nrel_main_idtf:
 	[путь*] (* <- lang_ru;; *);
-	[path*] (* <- lang_en;; *);
+	[path*] (* <- lang_en;; *);;
 
 => nrel_idtf:
 	[графовый путь*] (* <- lang_ru;; *);
