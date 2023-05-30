@@ -1,7 +1,7 @@
 nrel_subgraph
 => nrel_main_idtf:
 	[подграф*] (* <- lang_ru;; *);
-	[subgraph*] (* <- lang_en;; *);
+	[subgraph*] (* <- lang_en;; *);;
 
 arity->...
     (*
