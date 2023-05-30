@@ -13,7 +13,7 @@ section_subject_domain_of_graph_splits
 	concept_graph_split_decomposition;
 	concept_distance_hereditary_graph;
 	concept_circle_graph;
-	nrel_split_decomposition;;
+	nrel_graph_split_decomposition;;
 
 section_subject_domain_of_graph_splits=[*
 	subject_domain_of_graph_splits
@@ -33,7 +33,7 @@ section_subject_domain_of_graph_splits=[*
 		concept_circle_graph;
 
 	-> rrel_explored_relation:
-		nrel_split_decomposition;
+		nrel_graph_split_decomposition;
 
 	<= nrel_private_subject_domain:
 		subject_domain_of_graph_cuts;;
@@ -47,4 +47,4 @@ sc_node_class ->
 	concept_circle_graph;;
 
 sc_node_norole_relation ->
-	nrel_split_decomposition;;
+	nrel_graph_split_decomposition;;
