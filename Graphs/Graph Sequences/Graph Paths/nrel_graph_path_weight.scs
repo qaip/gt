@@ -1,4 +1,4 @@
-nrel_path_weight
+nrel_graph_path_weight
 => nrel_main_idtf:
 	[вес пути графа*] (* <- lang_ru;; *);
 	[graph path_weight*] (* <- lang_en;; *);
@@ -10,7 +10,7 @@ nrel_path_weight
 	[length of path*] (* <- lang_en;; *);;
 
 definition -> definition_of_graph_path_weight (*
-	-> rrel_key_sc_element: nrel_path_weight;;
+	-> rrel_key_sc_element: nrel_graph_path_weight;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Сумма весов рёбер пути во взвешенном графе] (* <- lang_ru;; *);;
@@ -30,7 +30,7 @@ definition -> definition_of_graph_path_weight (*
 *);;
 
 statement -> statement_of_bellman_ford_algorithm (*
-	-> rrel_key_sc_element: nrel_path_weight;;
+	-> rrel_key_sc_element: nrel_graph_path_weight;;
 
 	<= nrel_sc_text_translation: ... (*
 		-> [Алгоритм, который находит кратчайший путь во взвешенном графе с отрицательными весами ребер] (* <- lang_ru;; *);;
@@ -50,11 +50,11 @@ statement -> statement_of_bellman_ford_algorithm (*
 
 arity->...
     (*
-        ->nrel_path_weight;;
+        ->nrel_graph_path_weight;;
         =>nrel_measurement:2;;
     *);;
 
-nrel_path_weight=>nrel_first_domain:concept_graph;
+nrel_graph_path_weight=>nrel_first_domain:concept_graph;
     =>nrel_second_domain:number;
         => nrel_definitional_domain:
 	...
@@ -69,12 +69,12 @@ nrel_path_weight=>nrel_first_domain:concept_graph;
     relation=>nrel_inclusion:binary_relation;;
     relation=>nrel_inclusion:oriented_relation;;
 
-binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_path_weight;;*);
-    =>nrel_inclusion:antitransitive_relation(*->nrel_path_weight;;*);
-    =>nrel_inclusion:antisymmetric_relation(*->nrel_path_weight;;*);;
-    oriented_relation->nrel_path_weight;;
+binary_relation=>nrel_inclusion:antireflexive_relation(*->nrel_graph_path_weight;;*);
+    =>nrel_inclusion:antitransitive_relation(*->nrel_graph_path_weight;;*);
+    =>nrel_inclusion:antisymmetric_relation(*->nrel_graph_path_weight;;*);;
+    oriented_relation->nrel_graph_path_weight;;
 
-sc_node_norole_relation -> nrel_path_weight;;
+sc_node_norole_relation -> nrel_graph_path_weight;;
 
 sc_node_class ->
 	concept_weighted_graph;
