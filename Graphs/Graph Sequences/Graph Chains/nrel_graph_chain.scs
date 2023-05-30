@@ -1,7 +1,7 @@
 nrel_graph_chain
 => nrel_main_idtf:
 	[графовая цепь*] (* <- lang_ru;; *);
-	[graph chain*] (* <- lang_en;; *);
+	[graph chain*] (* <- lang_en;; *);;
 
 arity->...
     (*

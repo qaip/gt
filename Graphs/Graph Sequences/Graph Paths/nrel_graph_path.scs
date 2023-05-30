@@ -5,7 +5,7 @@ nrel_graph_path
 
 => nrel_idtf:
 	[графовый путь*] (* <- lang_ru;; *);
-	[graph path*] (* <- lang_en;; *);
+	[graph path*] (* <- lang_en;; *);;
 
 arity->...
     (*
