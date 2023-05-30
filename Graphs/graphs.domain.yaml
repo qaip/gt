@@ -15,6 +15,7 @@ children: |
   graph_operations
   graph_connectivity
   graph_algorithms
+  subgraphs
 
 max: |
   graph
