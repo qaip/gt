@@ -1,7 +1,7 @@
 nrel_graph_cycle
 => nrel_main_idtf:
 	[цикл графа*] (* <- lang_ru;; *);
-	[graph cycle*] (* <- lang_en;; *);
+	[graph cycle*] (* <- lang_en;; *);;
 
 arity->...
     (*
