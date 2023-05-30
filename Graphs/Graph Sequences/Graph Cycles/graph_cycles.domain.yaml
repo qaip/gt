@@ -12,10 +12,10 @@ concepts: |
   eulerian_cycle
   basic_cycle
   minimum_weight_cycle
-  graph_girth
 
 nrels: |
-  arcs_adjacency
   graph_chord
   cycle_weight
   cycle_length
+  graph_girth
+  graph_cycle

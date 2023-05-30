@@ -15,9 +15,9 @@ concepts: |
   tightened_graph
   spanning_sequence
   directed_sequence
-  length_of_sequence
 
 nrels: |
   semiroute_in_the_digraph
   tightened_graph
   length_of_sequence
+  graph_sequence

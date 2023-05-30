@@ -7,16 +7,6 @@ nrel_graph_path
 	[графовый путь*] (* <- lang_ru;; *);
 	[graph path*] (* <- lang_en;; *);
 
-
-=> nrel_inclusion:
-concept_hamiltonian_path;
-concept_path_length;
-concept_graph_path_weight;
-concept_shortest_path;
-concept_longest_path;
-concept_eulerian_path;
-concept_graph_eccentricity;;
-
 arity->...
     (*
         ->nrel_graph_path;;
@@ -25,14 +15,7 @@ arity->...
 
 nrel_graph_path=>nrel_first_domain:concept_graph;
     =>nrel_second_domain:concept_graph;
-        => nrel_definitional_domain:
-	...
-	(*
-		 <=nrel_combination:
-        {
-            concept_graph
-        };;
-	*);;
+        => nrel_definitional_domain:concept_graph;;
 
     relation=>nrel_inclusion:binary_relation;;
     relation=>nrel_inclusion:oriented_relation;;
