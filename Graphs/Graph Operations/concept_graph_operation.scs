@@ -1,7 +1,13 @@
 concept_graph_operation
 => nrel_main_idtf:
 	[операции над графами] (* <- lang_ru;; *);
-	[graph operations] (* <- lang_en;; *);;
+	[graph operations] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_dual_graph;
+concept_self_dual_graph;
+concept_abstract_dual_graph;;
 
 definition -> definition_of_graph_operation (*
 	-> rrel_key_sc_element: concept_graph_operation;;

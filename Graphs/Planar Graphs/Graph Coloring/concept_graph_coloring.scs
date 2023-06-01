@@ -7,6 +7,9 @@ concept_graph_coloring
 => nrel_inclusion:
 concept_vertex_coloring;
 concept_edge_coloring;
+concept_color_class;
+concept_chromatic_polynomial;
+concept_coloring_areas;
 concept_total_coloring;;
 
 definition -> definition_of_graph_coloring (*
