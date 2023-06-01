@@ -38,3 +38,11 @@ statement:
       rrels: |
         vertex
         edge
+subclass:
+  - bridge
+  - non_separable_graph
+  - separable_graph
+  - trivial_graph
+  - block_cutpoint_graph
+  - connected_graph
+  - disconnected_graph

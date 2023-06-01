@@ -13,8 +13,22 @@ definition:
       vertex
 
 subclass:
-  - maximum_graph_cut
-  - minimum_graph_cut
-  - graph_cut_space
   - s_t_cut
   - sparsest_cuts
+  - number_of_minimum_graph_cuts
+  - segmentation_based_object_categorization
+  - graph_sink
+  - minimum_graph_cut
+  - max_cut_problem
+  - bipartite_subgraph
+  - weighted_max_cut
+  - weighted_max_cut_problem
+  - graph_split
+  - complete_bipartite_graph
+  - graph_split_decomposition
+  - distance_hereditary_graph
+  - circle_graph
+  - vector_space
+  - orthogonal_complement
+  - gomory_hu_tree
+  - graph_cut_space

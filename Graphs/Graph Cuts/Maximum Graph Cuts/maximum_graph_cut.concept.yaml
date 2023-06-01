@@ -29,3 +29,8 @@ statement:
     using:
       concepts: |
         max_cut_problem
+subclass:
+  - max_cut_problem
+  - bipartite_subgraph
+  - weighted_max_cut
+  - weighted_max_cut_problem

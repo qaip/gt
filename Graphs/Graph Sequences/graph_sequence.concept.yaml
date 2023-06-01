@@ -61,3 +61,25 @@ subclass:
   - length_of_sequence
   - spanning_sequence
   - tightened_graph
+  - simple_graph_chain
+  - hamiltonian_chain
+  - alternating_chain
+  - graph_subchain
+  - chain_weight
+  - chain_length
+  - eulerian_chain
+  - hamiltonian_cycle
+  - graph_girth
+  - cyclic_graph
+  - eulerian_cycle
+  - basic_cycle
+  - minimum_weight_cycle
+  - cycle_length
+  - cycle_weight
+  - hamiltonian_path
+  - path_length
+  - graph_path_weight
+  - shortest_path
+  - longest_path
+  - eulerian_path
+  - graph_eccentricity

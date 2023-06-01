@@ -62,9 +62,20 @@ statement:
         euler_characteristic
 
 subclass:
-  - one_planar_graph
   - triangle_graph
   - graph_diamond
   - medial_graph
   - external_planar_graph
   - graph_halina
+  - external_graph
+  - unplanar_graph
+  - one_planar_graph
+  - vertex_coloring
+  - edge_coloring
+  - color_class
+  - chromatic_polynomial
+  - coloring_areas
+  - total_coloring
+  - genus
+  - eulers_genus
+  - maximum_genus

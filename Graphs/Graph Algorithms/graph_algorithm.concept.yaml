@@ -40,3 +40,14 @@ statement:
 subclass:
   - shortest_path_problem
   - graph_traversal
+  - dijkstra_algorithm
+  - floyd_warshall_algorithm
+  - tree_traversal
+  - breadth_traversal
+  - depth_traversal
+  - in_order_traversal
+  - pre_order_traversal
+  - post_order_traversal
+  - reverse_pre_order_traversal
+  - reverse_post_order_traversal
+  - reverse_in_order_traversal

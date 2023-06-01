@@ -88,3 +88,5 @@ statement:
 
 subclass:
   - genus
+  - eulers_genus
+  - maximum_genus
