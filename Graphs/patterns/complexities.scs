@@ -1,0 +1,913 @@
+concept_decision_tree
+=> year_of_invention: year_1950;
+=> inventors: {
+    person_C_A_R_Hoare
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_descartes_tree
+=> year_of_invention: year_1980;
+=> inventors: {
+    person_Y_L_Smith;
+    person_J_D_Bowen
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_quadtree
+=> year_of_invention: year_1974;
+=> inventors: {
+    person_F_M_Coelho;
+    person_J_L_Bentley
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_sqrt_n;
+=> nrel_amortized_insert_complexity: complexity_O_sqrt_n;
+=> nrel_amortized_delete_complexity: complexity_O_sqrt_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_sqrt_n;
+=> nrel_worst_insert_complexity: complexity_O_sqrt_n;
+=> nrel_worst_delete_complexity: complexity_O_sqrt_n;;
+
+
+concept_polygonal_map_quadtree
+=> year_of_invention: year_1994;
+=> inventors: {
+    person_M_van_Kreveld;
+    person_B_Snoeyink;
+    person_M_de_Berg;
+    person_O_Clap;
+    person_M_Overmars
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n_log_n;
+=> nrel_amortized_search_complexity: complexity_O_sqrt_n_plus_k;
+=> nrel_amortized_insert_complexity: complexity_O_sqrt_n_plus_k;
+=> nrel_amortized_delete_complexity: complexity_O_sqrt_n_plus_k;
+=> nrel_worst_space_complexity: complexity_O_n_log_n;
+=> nrel_worst_search_complexity: complexity_O_sqrt_n_plus_k;
+=> nrel_worst_insert_complexity: complexity_O_sqrt_n_plus_k;
+=> nrel_worst_delete_complexity: complexity_O_sqrt_n_plus_k;;
+
+
+concept_fibonacci_tree
+=> year_of_invention: year_1890;
+=> inventors: {
+    person_Lucas_Edouard;
+    person_Neil_Fredman;
+    person_Robert_Tarjan
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_dancing_tree
+=> year_of_invention: year_2001;
+=> inventors: {
+    person_Michael_Bender;
+    person_Martin_Farach_Colton
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_cartesian_tree
+=> year_of_invention: year_1980;
+=> inventors: {
+    person_J_L_Ramshaw;
+    person_Jean_Vuillemin
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_growing_tree
+=> year_of_invention: year_1981;
+=> inventors: {
+    person_H_Fredlund
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_binary_search_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_n;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_binary_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Michael_A_Harrison;
+    person_John_von_Neumann;
+    person_Grace_Hopper;
+    person_Alan_Turing
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_n;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_matrix_tree
+=> year_of_invention: year_1932;
+=> inventors: {
+    person_Harold_W_Kuhn
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n_pow_2;
+=> nrel_amortized_search_complexity: complexity_O_1;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_1;
+=> nrel_worst_space_complexity: complexity_O_n_pow_2;
+=> nrel_worst_search_complexity: complexity_O_1;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_1;;
+
+
+concept_cover_tree
+=> year_of_invention: year_2005;
+=> inventors: {
+    person_Alina_E_Efrat;
+    person_Sivan_Har_Peled
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_fenwick_tree
+=> year_of_invention: year_1994;
+=> inventors: {
+    person_Peter_Fenwick
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+concept_hypertree
+=> year_of_invention: year_2004;
+=> inventors: {
+    person_D_Eppstein
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_tree_root
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_n;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_b_tree
+=> year_of_invention: year_1970;
+=> inventors: {
+    person_Rudolf_Bayer;
+    person_E_M_McCreight
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_irreducible_tree
+=> year_of_invention: year_1991;
+=> inventors: {
+    person_M_L_Fredman;
+    person_D_S_Johnson
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_two_three_tree
+=> year_of_invention: year_1962;
+=> inventors: {
+    person_Arne_A_Nilsson
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_red_black_tree
+=> year_of_invention: year_1972;
+=> inventors: {
+    person_Rudolf_Bayer;
+    person_E_M_McCreight
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_bsp_tree
+=> year_of_invention: year_1979;
+=> inventors: {
+    person_Finkel_Raphael
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n_plus_k;
+=> nrel_amortized_insert_complexity: complexity_O_log_n_plus_k;
+=> nrel_amortized_delete_complexity: complexity_O_log_n_plus_k;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n_pow_2;
+=> nrel_worst_insert_complexity: complexity_O_n_pow_2;
+=> nrel_worst_delete_complexity: complexity_O_n_pow_2;;
+
+
+concept_justified_tree
+=> year_of_invention: year_1986;
+=> inventors: {
+    person_Helen_Kam;
+    person_Cyril_Allen
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_minimum_spanning_tree
+=> year_of_invention: year_1926;
+=> inventors: {
+    person_Otto_Krasselt;
+    person_Ernest_Moore;
+    person_Joseph_Kruskal
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n_plus_m;
+=> nrel_amortized_search_complexity: complexity_O_n_plus_m;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_1;
+=> nrel_worst_space_complexity: complexity_O_n_plus_m;
+=> nrel_worst_search_complexity: complexity_O_n_pow_2;
+=> nrel_worst_insert_complexity: complexity_O_n_pow_2;
+=> nrel_worst_delete_complexity: complexity_O_n_pow_2;;
+
+
+cocnept_brother_tree
+=> year_of_invention: year_1962;
+=> inventors: {
+    person_Arne_A_Nilsson
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_sorting_tree
+=> year_of_invention: year_1973;
+=> inventors: {
+    person_C_A_R_Hoare
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_n_pow_2;
+=> nrel_amortized_delete_complexity: complexity_O_n_pow_2;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_n_pow_2;
+=> nrel_worst_delete_complexity: complexity_O_n_pow_2;;
+
+
+concept_tree_depth
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Michael_A_Harrison;
+    person_John_von_Neumann;
+    person_Grace_Hopper;
+    person_Alan_Turing
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_left_linear_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Michael_A_Harrison;
+    person_John_von_Neumann;
+    person_Grace_Hopper;
+    person_Alan_Turing
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_multitree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Michael_A_Harrison;
+    person_John_von_Neumann;
+    person_Grace_Hopper;
+    person_Alan_Turing
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n_log_n;
+=> nrel_amortized_search_complexity: complexity_O_n_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_n_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_n_log_n;
+=> nrel_worst_space_complexity: complexity_O_n_log_n;
+=> nrel_worst_search_complexity: complexity_O_n_log_n;
+=> nrel_worst_insert_complexity: complexity_O_n_log_n;
+=> nrel_worst_delete_complexity: complexity_O_n_log_n;;
+
+
+concept_aa_tree
+=> year_of_invention: year_1993;
+=> inventors: {
+    person_Arne_A_Nilsson
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_vantage_point_tree
+=> year_of_invention: year_1991;
+=> inventors: {
+    person_Jonathan_R_Shewchuk
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_sqrt_n;
+=> nrel_amortized_insert_complexity: complexity_O_sqrt_n;
+=> nrel_amortized_delete_complexity: complexity_O_sqrt_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_sqrt_n;
+=> nrel_worst_insert_complexity: complexity_O_sqrt_n;
+=> nrel_worst_delete_complexity: complexity_O_sqrt_n;;
+
+
+concept_k_d_tree
+=> year_of_invention: year_1975;
+=> inventors: {
+    person_Jon_L_Bentley
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_sqrt_n;
+=> nrel_amortized_insert_complexity: depends_on_dimensionality;
+=> nrel_amortized_delete_complexity: depends_on_dimensionality;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_sqrt_n;
+=> nrel_worst_insert_complexity: depends_on_dimensionality;
+=> nrel_worst_delete_complexity: depends_on_dimensionality;;
+
+
+concept_ordered_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_n;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_n;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_bicentre_tree
+=> year_of_invention: year_1983;
+=> inventors: {
+    person_Hans_L_Bodlaender
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_subtree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_binomial_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Jacques_Binet;
+    person_Tom_Koornwinder;
+    person_Terence_Bisson
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_van_emde_boas_tree
+=> year_of_invention: year_1975;
+=> inventors: {
+    person_Peter_van_Emde_Boas
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_log_n;;
+
+
+concept_perfectly_balanced_tree
+=> year_of_invention: year_1983;
+=> inventors: {
+    person_Samuel_Harper
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_tree_height
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_range_maximum_tree
+=> year_of_invention: year_1977;
+=> inventors: {
+    person_Haim_Kaplan;
+    person_Robert_E_Tarjan;
+    person_Uzi_Vishkin
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_spanning_tree
+=> year_of_invention: year_1930;
+=> inventors: {
+    person_Otto_Krasselt;
+    person_Ernest_Moore;
+    person_Joseph_Kruskal
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_octree
+=> year_of_invention: year_1974;
+=> inventors: {
+    person_Boris_Southey
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_undirected_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_ternary_search_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Dana_Scott
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_radix_tree
+=> year_of_invention: year_1963;
+=> inventors: {
+    person_Michael_Burrows;
+    person_Jonathan_R_Shewchuk
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_n_ary_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_balanced_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_Adelson_Velsky;
+    person_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_segment_tree
+=> year_of_invention: year_1975;
+=> inventors: {
+    person_Jon_L_Bentley
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_rooted_tree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_r_tree
+=> year_of_invention: year_1984;
+=> inventors: {
+    person_Antonin_Guttman
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_sqrt_n;
+=> nrel_worst_insert_complexity: complexity_O_sqrt_n;
+=> nrel_worst_delete_complexity: complexity_O_sqrt_n;;
+
+
+concept_suffix_tree
+=> year_of_invention: year_1973;
+=> inventors: {
+    person_Edward_McCreight;
+    person_Robert_Tarjan
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_m_;
+=> nrel_amortized_insert_complexity: complexity_O_m_;
+=> nrel_amortized_delete_complexity: complexity_O_m_;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_m_;
+=> nrel_worst_insert_complexity: complexity_O_m_;
+=> nrel_worst_delete_complexity: complexity_O_m_;;
+
+
+concept_avl_tree
+=> year_of_invention: year_1962;
+=> inventors: {
+    person_Georgy_Adelson_Velsky;
+    person_Evgene_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_polytree
+=> year_of_invention: year_1960;
+=> inventors: {
+    person_G_M_Adel_son_Vel_skii;
+    person_E_M_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_n;;
+
+
+concept_self_balancing_search_tree
+=> year_of_invention: year_1962;
+=> inventors: {
+    person_Georgy_Adelson_Velsky;
+    person_Evgene_Landis
+};
+
+=> nrel_amortized_space_complexity: complexity_O_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_log_n;
+=> nrel_amortized_delete_complexity: complexity_O_log_n;
+=> nrel_worst_space_complexity: complexity_O_n;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_log_n;
+=> nrel_worst_delete_complexity: complexity_O_log_n;;
+
+
+concept_extra_trees_forest
+=> year_of_invention: year_2006;
+=> inventors: {
+    person_Pierre_Gelebart;
+    person_Antoine_Brousseau;
+    person_Gilles_Louppe
+};
+
+=> nrel_amortized_space_complexity: complexity_O_ndlog_n;
+=> nrel_amortized_search_complexity: complexity_O_log_n;
+=> nrel_amortized_insert_complexity: complexity_O_1;
+=> nrel_amortized_delete_complexity: complexity_O_1;
+=> nrel_worst_space_complexity: complexity_O_nd;
+=> nrel_worst_search_complexity: complexity_O_log_n;
+=> nrel_worst_insert_complexity: complexity_O_1;
+=> nrel_worst_delete_complexity: complexity_O_1;;

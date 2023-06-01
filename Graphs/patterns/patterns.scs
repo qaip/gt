@@ -1,0 +1,415 @@
+pattern_hoare_tree
+=> nrel_main_idtf:
+  [Pattern of a decision tree] (* <- lang_en;; *);
+  [Паттерн дерева Хора] (* <- lang_ru;; *);;
+
+pattern_hoare_tree = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_C_A_R_Hoare;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> year_of_invention:: year_1966;;
+*];;
+
+
+
+pattern_tree_year_1980_bowen
+=> nrel_main_idtf:
+  [Паттерн Декартова дерева] (* <- lang_ru;; *);
+  [Pattern of Descartes tree] (* <- lang_en;; *);;
+
+pattern_tree_year_1980_bowen = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_J_D_Bowen;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> year_of_invention:: year_1980;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_tree_beantley_coelho
+=> nrel_main_idtf:
+  [Pattern of Bentley and Coelho] (* <- lang_en;; *);
+  [Паттерн дерево Бентли и Коэльо] (* <- lang_ru;; *);;
+
+pattern_tree_beantley_coelho = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_F_M_Coelho; _-> person_J_L_Bentley;;
+  _target _=> year_of_invention:: year_1974;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_sqrt_n;;
+*];;
+
+
+
+pattern_amortized_delete_complexity_O_sqrt_n_plus_k_1994
+=> nrel_main_idtf:
+  [Pattern of a tree of Overmars and year 1994] (* <- lang_en;; *);
+  [Паттерн дерева Оверварса, 1994 год] (* <- lang_ru;; *);;
+
+pattern_amortized_delete_complexity_O_sqrt_n_plus_k_1994 = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_B_Snoeyink; _-> person_Mark_Overmars;;
+  _target _=> year_of_invention:: year_1994;;
+  _target _=>  nrel_amortized_delete_complexity:: complexity_O_sqrt_n_plus_k;;
+  _target _=>  nrel_worst_insert_complexity:: complexity_O_sqrt_n_plus_k;;
+  _target _=>  nrel_worst_delete_complexity:: complexity_O_sqrt_n_plus_k;;
+*];;
+
+
+
+pattern_terjan_tree
+=> nrel_main_idtf:
+  [Pattern Tarjan tree] (* <- lang_en;; *);
+  [Паттерн дерева Тарьяна] (* <- lang_ru;; *);;
+
+pattern_terjan_tree = [*
+  _target _<- concept_binary_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Neil_Fredman; _-> person_Lucas_Edouard; _-> person_Robert_Tarjan;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_bender_year_2001
+=> nrel_main_idtf:
+  [Pattern of Bender's tree in 2001] (* <- lang_en;; *);
+  [Паттерн дерева Бендера в 2001] (* <- lang_ru;; *);;
+
+pattern_bender_year_2001 = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_2001;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Michael_Bender;;
+*];;
+
+
+
+pattern_fredlund_year_1981
+=> nrel_main_idtf:
+  [Pattern of Fredlund's tree in 1981] (* <- lang_en;; *);
+  [Паттерн дерева Фредлунда в 1981] (* <- lang_ru;; *);;
+
+pattern_fredlund_year_1981 = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_H_Fredlund;;
+  _target _=> year_of_invention:: year_1981;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_1960_tree
+=> nrel_main_idtf:
+  [Pattern of a tree of 1960] (* <- lang_en;; *);
+  [Паттерн дерева 1960](* <- lang_ru;; *);;
+
+pattern_1960_tree = [*
+  _target _<- concept_tree;;
+  _target _-> concept_binary_search_tree;;
+  _target _=> year_of_invention:: year_1960;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_G_M_Adel_son_Vel_skii; _-> person_E_M_Landis;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_n;;
+*];;
+
+
+pattern_kuhn_tree
+=> nrel_main_idtf:
+  [Pattern of a Kuhn's tree] (* <- lang_en;; *);
+  [Паттерн дерева Куна] (* <- lang_ru;; *);;
+
+pattern_kuhn_tree = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Harold_W_Kuhn;;
+  _target _=> year_of_invention:: year_1932;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_1;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_1;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_1;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_1;;
+*];;
+
+
+
+pattern_matrix_tree
+=> nrel_main_idtf:
+  [Matrix tree pattern] (* <- lang_en;; *);
+  [Паттерн матричного дерева] (* <- lang_ru;; *);;
+
+pattern_matrix_tree = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_1932;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_1;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_1;;
+*];;
+
+
+
+pattern_cover_tree
+=> nrel_main_idtf:
+  [Pattern of cover tree] (* <- lang_en;; *);
+  [Паттерн покрывающего дерева] (* <- lang_ru;; *);;
+
+pattern_cover_tree = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Alina_Efimova; _-> person_Leonid_Boytsov;;
+  _target _=> year_of_invention:: year_2006;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_tree_invented_by_Rudolf_Bayer
+=> nrel_main_idtf:
+  [Pattern of B-tree] (* <- lang_en;; *);
+  [Паттерн B-дерева] (* <- lang_ru;; *);;
+
+pattern_tree_invented_by_Rudolf_Bayer = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_1970;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Rudolf_Bayer; _-> person_Edward_McCreight;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+*];;
+
+
+
+pattern_invented_by_Peter_Fenwick
+=> nrel_main_idtf:
+  [Pattern of Fenwick tree] (* <- lang_en;; *);
+  [Паттерн дерева Фенвика] (* <- lang_ru;; *);;
+
+pattern_invented_by_Peter_Fenwick = [*
+  _target _=> year_of_invention:: year_1994;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Peter_Fenwick;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_invented_by_Matthias_Kaufmann
+=> nrel_main_idtf:
+  [Pattern of a Kaufmann tree] (* <- lang_en;; *);
+  [Паттерн дерева Кауфмана] (* <- lang_ru;; *);;
+
+pattern_hypertree_invented_by_Matthias_Kaufmann = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_2001;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Matthias_Kaufmann;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_1;;
+*];;
+
+
+
+pattern_of_nilsson_tree
+=> nrel_main_idtf:
+  [Pattern of a Nilsson tree] (* <- lang_en;; *);
+  [Паттерн дерева Нильсона] (* <- lang_ru;; *);;
+
+pattern_of_nilsson_tree = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Arne_A_Nilsson;;
+  _target _=> year_of_invention:: year_1962;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_bayers_tree_1972
+=> nrel_main_idtf:
+  [Pattern of Bayers tree year 1972] (* <- lang_en;; *);
+  [Паттерн дерева Байера 1972] (* <- lang_ru;; *);;
+
+pattern_bayers_tree_1972 = [*
+  _target _<- concept_binary_search_tree;;
+  _target _=> year_of_invention:: year_1972;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Rudolf_Bayer; _-> person_Leo_Velikovich;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_tree_1979
+=> nrel_main_idtf:
+  [Pattern of year 1979] (* <- lang_en;; *);
+  [Паттерн дерева 1979] (* <- lang_ru;; *);;
+
+pattern_tree_1979 = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_1979;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Finkel_Raphael;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n_plus_k;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n_plus_k;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n_plus_k;;
+*];;
+
+
+
+pattern_moore_krasselt_tree
+=> nrel_main_idtf:
+  [Pattern of a Moore Krasselt tree] (* <- lang_en;; *);
+  [Паттерн дерева Мура и Красета] (* <- lang_ru;; *);;
+
+pattern_moore_krasselt_tree = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_1926;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Otto_Krasselt; person_Ernest_Moore;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n_plus_m;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_n_pow_2;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n_plus_m;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_n_plus_m;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_1;;
+*];;
+
+
+
+pattern_nilssson_tree_1962
+=> nrel_main_idtf:
+  [Pattern of a Nilsson tree 1926e] (* <- lang_en;; *);
+  [Паттерн дерева Нильсона  1962] (* <- lang_ru;; *);;
+
+pattern_nilssson_tree_1962 = [*
+  _target _<- concept_tree;;
+  _target _=> year_of_invention:: year_1962;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Joost_Engelfriet;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_1;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_n;;
+*];;
+
+
+
+pattern_hoare_tree_1973
+=> nrel_main_idtf:
+  [Pattern of a Hoare tree 1973] (* <- lang_en;; *);
+  [Паттерн дерева Хора 1973] (* <- lang_ru;; *);;
+
+pattern_hoare_tree_1973 = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_C_A_R_Hoare;;
+  _target _=> year_of_invention:: year_1973;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+pattern_of_harrison_tree
+=> nrel_main_idtf:
+  [Pattern of a Harrison tree] (* <- lang_en;; *);
+  [Паттерн дерева Харрисона] (* <- lang_ru;; *);;
+
+pattern_of_harrison_tree = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Michael_A_Harrison;;
+  _target _=> year_of_invention:: year_1960;;
+*];;
+
+
+
+pattern_nilsson_1993
+=> nrel_main_idtf:
+  [Pattern of Nilsson 1993] (* <- lang_en;; *);
+  [Паттерн дерева Нильсона 1993] (* <- lang_ru;; *);;
+
+pattern_nilsson_1993 = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Arne_A_Nilsson;;
+  _target _=> year_of_invention:: year_1993;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_log_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_log_n;;
+*];;
+
+
+
+pattern_1991_tree_amortized_space_complxity_o_n
+=> nrel_main_idtf:
+  [Pattern of Shewcjuck] (* <- lang_en;; *);
+  [Паттерн дерева Нильсона 1993] (* <- lang_ru;; *);;
+
+pattern_1991_tree_amortized_space_complxity_o_n = [*
+  _target _<- concept_tree;;
+  _target _=> nrel_inventors:: _set;;
+  _set _-> person_Arne_A_Nilsson;;
+  _target _=> year_of_invention:: year_1991;;
+  _target _=> nrel_worst_space_complexity:: complexity_O_n;;
+  _target _=> nrel_worst_search_complexity:: complexity_O_sqrt_n;;
+  _target _=> nrel_worst_insert_complexity:: complexity_O_sqrt_n;;
+  _target _=> nrel_worst_delete_complexity:: complexity_O_sqrt_n;;
+  _target _=> nrel_amortized_space_complexity:: complexity_O_n;;
+  _target _=> nrel_amortized_search_complexity:: complexity_O_sqrt_n;;
+  _target _=> nrel_amortized_insert_complexity:: complexity_O_sqrt_n;;
+  _target _=> nrel_amortized_delete_complexity:: complexity_O_sqrt_n;;
+*];;
+
+
