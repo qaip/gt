@@ -1,7 +1,17 @@
 concept_graph_connectivity
 => nrel_main_idtf:
 	[связность графа] (* <- lang_ru;; *);
-	[graph connectivity] (* <- lang_en;; *);;
+	[graph connectivity] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_bridge;
+concept_non_separable_graph;
+concept_separable_graph;
+concept_trivial_graph;
+concept_block_cutpoint_graph;
+concept_connected_graph;
+concept_disconnected_graph;;
 
 definition -> definition_of_graph_connectivity (*
 	-> rrel_key_sc_element: concept_graph_connectivity;;

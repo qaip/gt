@@ -43,3 +43,7 @@ statement:
       rrels: |
         vertex
         edge
+subclass:
+  - dual_graph
+  - self_dual_graph
+  - abstract_dual_graph

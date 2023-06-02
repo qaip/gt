@@ -37,3 +37,4 @@ statement:
 subclass:
   - directed_hypergraph
   - undirected_hypergraph
+  - hypergraph_edge

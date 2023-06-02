@@ -1,7 +1,13 @@
 concept_graph_cut_space
 => nrel_main_idtf:
 	[пространство разрезов графа] (* <- lang_ru;; *);
-	[graph cut space] (* <- lang_en;; *);;
+	[graph cut space] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_vector_space;
+concept_orthogonal_complement;
+concept_gomory_hu_tree;;
 
 definition -> definition_of_graph_cut_space (*
 	-> rrel_key_sc_element: concept_graph_cut_space;;

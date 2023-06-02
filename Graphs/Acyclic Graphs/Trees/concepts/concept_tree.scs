@@ -36,7 +36,6 @@ concept_r_tree;
 concept_radix_tree;
 concept_range_maximum_tree;
 concept_red_black_tree;
-concept_quadtree;
 concept_rooted_tree;
 concept_segment_tree;
 concept_self_balancing_search_tree;
@@ -52,7 +51,17 @@ concept_vantage_point_tree;
 concept_bipartite_graph;
 concept_hypertree;
 concept_multitree;
-concept_subtree;;
+concept_subtree;
+concept_binary_heap;
+concept_biparental_heap;
+concept_d_ary_heap;
+concept_fibonacci_heap;
+concept_leftist_heap;
+concept_max_heap;
+concept_min_heap;
+concept_h;
+concept_polygonal_map_quadtree;
+concept_quadtree;;
 
 definition -> definition_of_tree (*
 	-> rrel_key_sc_element: concept_tree;;

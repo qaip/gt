@@ -19,3 +19,7 @@ definition:
       graph_algorithm
     rrels: |
       edge
+subclass:
+  - number_of_minimum_graph_cuts
+  - segmentation_based_object_categorization
+  - graph_sink

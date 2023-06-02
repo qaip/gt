@@ -1,7 +1,14 @@
 concept_maximum_graph_cut
 => nrel_main_idtf:
 	[максимальный разрез графа] (* <- lang_ru;; *);
-	[maximum graph cut] (* <- lang_en;; *);;
+	[maximum graph cut] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_max_cut_problem;
+concept_bipartite_subgraph;
+concept_weighted_max_cut;
+concept_weighted_max_cut_problem;;
 
 definition -> definition_of_maximum_graph_cut (*
 	-> rrel_key_sc_element: concept_maximum_graph_cut;;

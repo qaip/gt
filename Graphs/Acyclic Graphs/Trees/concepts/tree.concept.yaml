@@ -256,7 +256,6 @@ subclass:
   - radix_tree
   - range_maximum_tree
   - red_black_tree
-  - quadtree
   - rooted_tree
   - segment_tree
   - self_balancing_search_tree
@@ -273,3 +272,13 @@ subclass:
   - hypertree
   - multitree
   - subtree
+  - binary_heap
+  - biparental_heap
+  - d_ary_heap
+  - fibonacci_heap
+  - leftist_heap
+  - max_heap
+  - min_heap
+  - h
+  - polygonal_map_quadtree
+  - quadtree

@@ -18,3 +18,7 @@ definition:
       graph
       graph_cuts
       spacegraph_cycle
+subclass:
+  - vector_space
+  - orthogonal_complement
+  - gomory_hu_tree

@@ -5,7 +5,9 @@ concept_graph_embedding
 
 
 => nrel_inclusion:
-concept_genus;;
+concept_genus;
+concept_eulers_genus;
+concept_maximum_genus;;
 
 definition -> definition_of_graph_embedding (*
 	-> rrel_key_sc_element: concept_graph_embedding;;

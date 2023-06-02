@@ -9,7 +9,18 @@ concept_graph_algorithm
 
 => nrel_inclusion:
 concept_shortest_path_problem;
-concept_graph_traversal;;
+concept_graph_traversal;
+concept_dijkstra_algorithm;
+concept_floyd_warshall_algorithm;
+concept_tree_traversal;
+concept_breadth_traversal;
+concept_depth_traversal;
+concept_in_order_traversal;
+concept_pre_order_traversal;
+concept_post_order_traversal;
+concept_reverse_pre_order_traversal;
+concept_reverse_post_order_traversal;
+concept_reverse_in_order_traversal;;
 
 definition -> definition_of_graph_algorithm (*
 	-> rrel_key_sc_element: concept_graph_algorithm;;

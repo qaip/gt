@@ -4,7 +4,13 @@ concept_minimum_graph_cut
 	[minimum graph cut] (* <- lang_en;; *);
 
 => nrel_idtf:
-	[min cut] (* <- lang_en;; *);;
+	[min cut] (* <- lang_en;; *);
+
+
+=> nrel_inclusion:
+concept_number_of_minimum_graph_cuts;
+concept_segmentation_based_object_categorization;
+concept_graph_sink;;
 
 definition -> definition_of_minimum_graph_cut (*
 	-> rrel_key_sc_element: concept_minimum_graph_cut;;

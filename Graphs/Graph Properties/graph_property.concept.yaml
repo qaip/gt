@@ -12,3 +12,5 @@ definition:
     concepts: |
       graph
       characteristic
+subclass:
+  - graph_eccentricity

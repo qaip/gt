@@ -103,3 +103,7 @@ subclass:
   - directed_multigraph
   - inverse_graph
   - counterfunctional_graph
+  - weighted_edge
+  - acyclic_weighted_directed_graph
+  - strongly_connected_weighted_directed_graph
+  - weighted_directed_graph

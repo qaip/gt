@@ -47,3 +47,8 @@ statement:
 subclass:
     - directed_multigraph
     - undirected_multigraph
+    - multiple_edges
+    - multiple_arcs
+    - directed_hypergraph
+    - undirected_hypergraph
+    - hypergraph_edge

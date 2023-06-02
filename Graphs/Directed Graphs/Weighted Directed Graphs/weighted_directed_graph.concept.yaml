@@ -54,3 +54,4 @@ statement:
 subclass:
   - acyclic_weighted_directed_graph
   - strongly_connected_weighted_directed_graph
+  - weighted_edge

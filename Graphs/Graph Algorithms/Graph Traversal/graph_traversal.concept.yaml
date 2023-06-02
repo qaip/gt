@@ -59,3 +59,9 @@ subclass:
     breadth_traversal
     depth_traversal
   - tree_traversal
+  - in_order_traversal
+  - pre_order_traversal
+  - post_order_traversal
+  - reverse_pre_order_traversal
+  - reverse_post_order_traversal
+  - reverse_in_order_traversal
