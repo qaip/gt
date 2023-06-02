@@ -17,7 +17,8 @@ section_subject_domain_of_graphs
 	section_subject_domain_of_graph_representation;
 	section_subject_domain_of_graph_operations;
 	section_subject_domain_of_graph_connectivity;
-	section_subject_domain_of_graph_algorithms
+	section_subject_domain_of_graph_algorithms;
+	section_subject_domain_of_subgraphs
 };
 
 <- rrel_key_sc_element:
@@ -115,6 +116,7 @@ section_subject_domain_of_graphs=[*
 		subject_domain_of_graph_representation;
 		subject_domain_of_graph_operations;
 		subject_domain_of_graph_connectivity;
+		subject_domain_of_subgraphs;
 		subject_domain_of_graph_algorithms;;
 *];;
 
