@@ -6,11 +6,12 @@ nrel_semiroute_in_the_digraph
 => nrel_idtf:
 	[орграфовый полумаршрут*] (* <- lang_ru;; *);
 	[digraph semiroute*] (* <- lang_en;; *);;
+
 	definition -> definition_of_semiroute_in_digraph(*
-	-> rrel_key_sc_element: concept_tightened_graph;;
+	-> rrel_key_sc_element: nrel_semiroute_in_the_digraph;;
 
 	<= nrel_sc_text_translation: ... (*
-		-> [Маршрут, который может проходить по ребрам графа только в одном направлении. В связном орграфе из каждой вершины есть как минимум один полумаршрут в любую сторону] (* <- lang_ru;; *);;
+		-> [Маршрут, который* может проходить по ребрам графа только в одном направлении. В связном орграфе из каждой вершины есть как минимум один полумаршрут в любую сторону] (* <- lang_ru;; *);;
 		-> [A route that can only pass through the edges of the graph in one direction. In a connected digraph, there is at least one semiroute in any direction from each vertex] (* <- lang_en;; *);;
 	*);;
 	=> nrel_main_idtf:

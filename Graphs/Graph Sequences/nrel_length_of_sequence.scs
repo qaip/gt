@@ -8,6 +8,23 @@ nrel_length_of_sequence
 	[длина последовательности графа*] (* <- lang_ru;; *);
 	[length of graph sequence*] (* <- lang_en;; *);
 	[length of graph route*] (* <- lang_en;; *);;
+definition -> definition_of_length_of_sequence(*
+	-> rrel_key_sc_element: nrel_length_of_sequence;;
+
+	<= nrel_sc_text_translation: ... (*
+		-> [Количество рёбер в маршруте учитывая повторения] (* <- lang_ru;; *);;
+		-> [The number of edges in the sequence, taking into account repetitions] (* <- lang_en;; *);;
+	*);;
+	=> nrel_main_idtf:
+		[Опр. (длина маршрута)*] (* <- lang_ru;; *);
+		[Def. (length of sequence)*] (* <- lang_en;; *);;
+
+	=> nrel_using_constants: {
+		concept_graph_sequences;
+		concept_edge;
+		rrel_edge
+		};;
+		*);;
 arity->...
     (*
         ->nrel_length_of_sequence;;
